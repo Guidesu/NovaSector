@@ -1,18 +1,16 @@
 #define BLOOD_DRIP_RATE_MOD 90 //Greater number means creating blood drips more often while bleeding
-// Conversion between internal drunk power and common blood alcohol content
-#define DRUNK_POWER_TO_BLOOD_ALCOHOL 0.003
 
 /****************************************************
 				BLOOD SYSTEM
 ****************************************************/
 
 // Takes care blood loss and regeneration
-/mob/living/carbon/human/handle_blood(seconds_per_tick, times_fired)
+/mob/living/carbon/human/handle_blood(delta_time, times_fired)
 
-	if(HAS_TRAIT(src, TRAIT_NOBLOOD) || (HAS_TRAIT(src, TRAIT_FAKEDEATH)))
+	if(NOBLOOD in dna.species.species_traits || HAS_TRAIT(src, TRAIT_NOBLEED) || (HAS_TRAIT(src, TRAIT_FAKEDEATH)))
 		return
 
-	if(bodytemperature < BLOOD_STOP_TEMP || (HAS_TRAIT(src, TRAIT_HUSK))) //cold or husked people do not pump the blood.
+	if(bodytemperature < TCRYO || (HAS_TRAIT(src, TRAIT_HUSK))) //cryosleep or husked people do not pump the blood.
 		return
 
 	//Blood regeneration if there is some space
@@ -31,53 +29,49 @@
 				nutrition_ratio = 1
 		if(satiety > 80)
 			nutrition_ratio *= 1.25
-		adjust_nutrition(-nutrition_ratio * HUNGER_FACTOR * seconds_per_tick)
-		blood_volume = min(blood_volume + (BLOOD_REGEN_FACTOR * nutrition_ratio * seconds_per_tick), BLOOD_VOLUME_NORMAL)
-
-	// we call lose_blood() here rather than quirk/process() to make sure that the blood loss happens in sync with life()
-	if(HAS_TRAIT(src, TRAIT_BLOOD_DEFICIENCY))
-		var/datum/quirk/blooddeficiency/blooddeficiency = get_quirk(/datum/quirk/blooddeficiency)
-		if(!isnull(blooddeficiency))
-			blooddeficiency.lose_blood(seconds_per_tick)
+		adjust_nutrition(-nutrition_ratio * HUNGER_DECAY * delta_time)
+		blood_volume = min(blood_volume + (BLOOD_REGEN_FACTOR * nutrition_ratio * delta_time), BLOOD_VOLUME_NORMAL)
 
 	//Effects of bloodloss
 	var/word = pick("dizzy","woozy","faint")
 	switch(blood_volume)
-		if(BLOOD_VOLUME_MAX_LETHAL to INFINITY)
-			if(SPT_PROB(7.5, seconds_per_tick))
-				to_chat(src, span_userdanger("Blood starts to tear your skin apart. You're going to burst!"))
-				investigate_log("has been gibbed by having too much blood.", INVESTIGATE_DEATHS)
-				inflate_gib()
 		if(BLOOD_VOLUME_EXCESS to BLOOD_VOLUME_MAX_LETHAL)
-			if(SPT_PROB(5, seconds_per_tick))
-				to_chat(src, span_warning("You feel your skin swelling."))
+			if(DT_PROB(7.5, delta_time))
+				to_chat(src, span_userdanger("Blood starts to tear your skin apart. You're going to burst!"))
+				inflate_gib()
 		if(BLOOD_VOLUME_MAXIMUM to BLOOD_VOLUME_EXCESS)
-			if(SPT_PROB(5, seconds_per_tick))
+			if(DT_PROB(5, delta_time))
 				to_chat(src, span_warning("You feel terribly bloated."))
 		if(BLOOD_VOLUME_OKAY to BLOOD_VOLUME_SAFE)
-			if(SPT_PROB(2.5, seconds_per_tick))
+			if(DT_PROB(2.5, delta_time))
 				to_chat(src, span_warning("You feel [word]."))
-			adjustOxyLoss(round(0.005 * (BLOOD_VOLUME_NORMAL - blood_volume) * seconds_per_tick, 1))
+			adjustOxyLoss(round(0.005 * (BLOOD_VOLUME_NORMAL - blood_volume) * delta_time, 1))
 		if(BLOOD_VOLUME_BAD to BLOOD_VOLUME_OKAY)
-			adjustOxyLoss(round(0.01 * (BLOOD_VOLUME_NORMAL - blood_volume) * seconds_per_tick, 1))
-			if(SPT_PROB(2.5, seconds_per_tick))
-				set_eye_blur_if_lower(12 SECONDS)
+			adjustOxyLoss(round(0.01 * (BLOOD_VOLUME_NORMAL - blood_volume) * delta_time, 1))
+			if(DT_PROB(2.5, delta_time))
+				blur_eyes(6)
 				to_chat(src, span_warning("You feel very [word]."))
 		if(BLOOD_VOLUME_SURVIVE to BLOOD_VOLUME_BAD)
-			adjustOxyLoss(2.5 * seconds_per_tick)
-			if(SPT_PROB(7.5, seconds_per_tick))
+			adjustOxyLoss(2.5 * delta_time)
+			if(DT_PROB(7.5, delta_time))
 				Unconscious(rand(20,60))
 				to_chat(src, span_warning("You feel extremely [word]."))
 		if(-INFINITY to BLOOD_VOLUME_SURVIVE)
 			if(!HAS_TRAIT(src, TRAIT_NODEATH))
-				investigate_log("has died of bloodloss.", INVESTIGATE_DEATHS)
 				death()
 
 	var/temp_bleed = 0
+
 	//Bleeding out
 	for(var/obj/item/bodypart/iter_part as anything in bodyparts)
 		var/iter_bleed_rate = iter_part.get_modified_bleed_rate()
-		temp_bleed += iter_bleed_rate * seconds_per_tick
+		temp_bleed += iter_bleed_rate * delta_time
+		if(iter_part.bodypart_flags & BP_HAS_BLOOD)
+			iter_part.bodypart_flags &= ~BP_BLEEDING
+			for(var/datum/wound/W as anything in iter_part.wounds)
+				if(W.bleeding())
+					W.bleed_timer--
+					iter_part.bodypart_flags |= BP_BLEEDING
 
 		if(iter_part.generic_bleedstacks) // If you don't have any bleedstacks, don't try and heal them
 			iter_part.adjustBleedStacks(-1, 0)
@@ -93,17 +87,17 @@
 
 //Makes a blood drop, leaking amt units of blood from the mob
 /mob/living/carbon/proc/bleed(amt)
-	if(!blood_volume || (status_flags & GODMODE))
+	if(!blood_volume)
 		return
 	blood_volume = max(blood_volume - amt, 0)
 
 	//Blood loss still happens in locker, floor stays clean
 	if(isturf(loc) && prob(sqrt(amt)*BLOOD_DRIP_RATE_MOD))
-		add_splatter_floor(loc, (amt <= 10))
+		add_splatter_floor(loc, (amt >= 10))
 
 /mob/living/carbon/human/bleed(amt)
 	amt *= physiology.bleed_mod
-	if(!HAS_TRAIT(src, TRAIT_NOBLOOD))
+	if(!(NOBLOOD in dna.species.species_traits))
 		..()
 
 /// A helper to see how much blood we're losing per tick
@@ -111,13 +105,12 @@
 	if(!blood_volume)
 		return
 	var/bleed_amt = 0
-	for(var/X in bodyparts)
-		var/obj/item/bodypart/iter_bodypart = X
+	for(var/obj/item/bodypart/iter_bodypart as anything in bodyparts)
 		bleed_amt += iter_bodypart.get_modified_bleed_rate()
 	return bleed_amt
 
 /mob/living/carbon/human/get_bleed_rate()
-	if(HAS_TRAIT(src, TRAIT_NOBLOOD))
+	if((NOBLOOD in dna.species.species_traits))
 		return
 	. = ..()
 	. *= physiology.bleed_mod
@@ -140,6 +133,7 @@
 
 	var/bleeding_severity = ""
 	var/next_cooldown = BLEEDING_MESSAGE_BASE_CD
+	var/rate_of_change
 
 	switch(bleed_amt)
 		if(-INFINITY to 0)
@@ -159,30 +153,14 @@
 		if(7 to INFINITY)
 			bleeding_severity = "Your heartbeat thrashes wildly trying to keep up with your bloodloss"
 
-	var/rate_of_change = ", but it's getting better." // if there's no wounds actively getting bloodier or maintaining the same flow, we must be getting better!
 	if(HAS_TRAIT(src, TRAIT_COAGULATING)) // if we have coagulant, we're getting better quick
 		rate_of_change = ", but it's clotting up quickly!"
-	else
-		// flick through our wounds to see if there are any bleeding ones getting worse or holding flow (maybe move this to handle_blood and cache it so we don't need to cycle through the wounds so much)
-		for(var/i in all_wounds)
-			var/datum/wound/iter_wound = i
-			if(!iter_wound.blood_flow)
-				continue
-			var/iter_wound_roc = iter_wound.get_bleed_rate_of_change()
-			switch(iter_wound_roc)
-				if(BLOOD_FLOW_INCREASING) // assume the worst, if one wound is getting bloodier, we focus on that
-					rate_of_change = ", <b>and it's getting worse!</b>"
-					break
-				if(BLOOD_FLOW_STEADY) // our best case now is that our bleeding isn't getting worse
-					rate_of_change = ", and it's holding steady."
-				if(BLOOD_FLOW_DECREASING) // this only matters if none of the wounds fit the above two cases, included here for completeness
-					continue
 
 	to_chat(src, span_warning("[bleeding_severity][rate_of_change]"))
 	COOLDOWN_START(src, bleeding_message_cd, next_cooldown)
 
 /mob/living/carbon/human/bleed_warn(bleed_amt = 0, forced = FALSE)
-	if(!HAS_TRAIT(src, TRAIT_NOBLOOD))
+	if(!(NOBLOOD in dna.species.species_traits))
 		return ..()
 
 /mob/living/proc/restore_blood()
@@ -266,7 +244,7 @@
 		else if(last_mind)
 			blood_data["ckey"] = ckey(last_mind.key)
 
-		if(!HAS_TRAIT_FROM(src, TRAIT_SUICIDED, REF(src)))
+		if(!suiciding)
 			blood_data["cloneable"] = 1
 		blood_data["blood_type"] = dna.blood_type
 		blood_data["gender"] = gender
@@ -288,13 +266,13 @@
 		return /datum/reagent/blood
 
 /mob/living/carbon/human/get_blood_id()
-	if(HAS_TRAIT(src, TRAIT_HUSK) || !dna)
+	if(HAS_TRAIT(src, TRAIT_HUSK))
 		return
-	if(check_holidays(APRIL_FOOLS) && is_clown_job(mind?.assigned_role))
+	if(SSevents.holidays && SSevents.holidays[APRIL_FOOLS] && is_clown_job(mind?.assigned_role))
 		return /datum/reagent/colorful_reagent
 	if(dna.species.exotic_blood)
 		return dna.species.exotic_blood
-	else if(HAS_TRAIT(src, TRAIT_NOBLOOD))
+	else if((NOBLOOD in dna.species.species_traits))
 		return
 	return /datum/reagent/blood
 
@@ -314,7 +292,8 @@
 		"O-" = list("O-"),
 		"O+" = list("O-", "O+"),
 		"L" = list("L"),
-		"U" = list("A-", "A+", "B-", "B+", "O-", "O+", "AB-", "AB+", "L", "U")
+		"U" = list("A-", "A+", "B-", "B+", "O-", "O+", "AB-", "AB+", "L", "U"),
+		"S" = list("S")
 	)
 
 	var/safe = bloodtypes_safe[bloodtype]
@@ -327,8 +306,6 @@
 		return
 	if(!T)
 		T = get_turf(src)
-	if(isclosedturf(T) || (isgroundlessturf(T) && !GET_TURF_BELOW(T)))
-		return
 
 	var/list/temp_blood_DNA
 	if(small_drip)
@@ -341,7 +318,7 @@
 				drop.transfer_mob_blood_dna(src)
 				return
 			else
-				temp_blood_DNA = GET_ATOM_BLOOD_DNA(drop) //we transfer the dna from the drip to the splatter
+				temp_blood_DNA = drop.return_blood_DNA() //we transfer the dna from the drip to the splatter
 				qdel(drop)//the drip is replaced by a bigger splatter
 		else
 			drop = new(T, get_static_viruses())
@@ -360,7 +337,7 @@
 		B.add_blood_DNA(temp_blood_DNA)
 
 /mob/living/carbon/human/add_splatter_floor(turf/T, small_drip)
-	if(!HAS_TRAIT(src, TRAIT_NOBLOOD))
+	if(!(NOBLOOD in dna.species.species_traits))
 		..()
 
 /mob/living/carbon/alien/add_splatter_floor(turf/T, small_drip)
@@ -377,14 +354,3 @@
 	var/obj/effect/decal/cleanable/oil/B = locate() in T.contents
 	if(!B)
 		B = new(T)
-
-/mob/living/proc/get_blood_alcohol_content()
-	var/blood_alcohol_content = 0
-	var/datum/status_effect/inebriated/inebriation = has_status_effect(/datum/status_effect/inebriated)
-	if(!isnull(inebriation))
-		blood_alcohol_content = round(inebriation.drunk_value * DRUNK_POWER_TO_BLOOD_ALCOHOL, 0.01)
-
-	return blood_alcohol_content
-
-#undef BLOOD_DRIP_RATE_MOD
-#undef DRUNK_POWER_TO_BLOOD_ALCOHOL
