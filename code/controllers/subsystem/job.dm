@@ -27,9 +27,10 @@ SUBSYSTEM_DEF(job)
 	var/run_divide_occupation_pure = FALSE
 
 	var/list/prioritized_jobs = list()
-	var/list/latejoin_trackers = list()
 
-	var/overflow_role = /datum/job/assistant
+	var/list/latejoin_trackers = list() //Don't read this list, use GetLateJoinTurfs() instead
+
+	var/overflow_role
 
 	var/list/level_order = list(JP_HIGH,JP_MEDIUM,JP_LOW)
 
@@ -108,10 +109,9 @@ SUBSYSTEM_DEF(job)
 	return overflow_jobs
 
 /datum/controller/subsystem/job/proc/set_overflow_role(new_overflow_role)
-	var/datum/job/new_overflow = ispath(new_overflow_role) ? GetJobType(new_overflow_role) : GetJob(new_overflow_role)
-	if(!new_overflow)
-		JobDebug("Failed to set new overflow role: [new_overflow_role]")
-		CRASH("set_overflow_role failed | new_overflow_role: [isnull(new_overflow_role) ? "null" : new_overflow_role]")
+	if(!new_overflow_role)
+		new_overflow_role = SSmapping.config.overflow_job
+	var/datum/job/new_overflow = GetJobType(new_overflow_role)
 	var/cap = CONFIG_GET(number/overflow_cap)
 
 	new_overflow.allow_bureaucratic_error = FALSE
@@ -130,10 +130,12 @@ SUBSYSTEM_DEF(job)
 	overflow_role = new_overflow.type
 	JobDebug("Overflow role set to : [new_overflow.type]")
 
+/datum/controller/subsystem/job/proc/SetupOccupations(faction)
+	if(!faction)
+		faction = SSmapping.config.job_faction
 
-/datum/controller/subsystem/job/proc/SetupOccupations()
-	name_occupations = list()
 	type_occupations = list()
+	name_occupations = list()
 
 	var/list/all_jobs = subtypesof(/datum/job)
 	if(!length(all_jobs))
@@ -159,6 +161,23 @@ SUBSYSTEM_DEF(job)
 			log_job_debug("Removed [job.title] due to map config")
 			continue
 		new_all_occupations += job
+
+		//Register the job in the global lists
+		if(/datum/job_department/command in job.departments_list)
+			GLOB.command_positions[job.title] = TRUE
+		if(/datum/job_department/security in job.departments_list)
+			GLOB.security_positions[job.title] = TRUE
+		if(/datum/job_department/service in job.departments_list)
+			GLOB.service_positions[job.title] = TRUE
+		if(/datum/job_department/cargo in job.departments_list)
+			GLOB.supply_positions[job.title] = TRUE
+		if(/datum/job_department/engineering in job.departments_list)
+			GLOB.engineering_positions[job.title] = TRUE
+		if(/datum/job_department/medical in job.departments_list)
+			GLOB.medical_positions[job.title] = TRUE
+		if(/datum/job_department/silicon in job.departments_list)
+			GLOB.nonhuman_positions[job.title] = TRUE
+
 		name_occupations[job.title] = job
 		for(var/alt_title in job.alternate_titles)
 			name_occupations[alt_title] = job

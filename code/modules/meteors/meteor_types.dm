@@ -26,6 +26,8 @@
 	var/list/meteordrop = list(/obj/item/stack/ore/iron)
 	///How much stuff to spawn when you die
 	var/dropamt = 2
+	/// How much damage the meteor would need to deal to the shields to be completely dispersed
+	var/shield_damage = 5
 
 	///The thing we're moving towards, usually a turf
 	var/atom/dest
@@ -34,6 +36,7 @@
 
 	///Used by Stray Meteor event to indicate meteor type (the type of sensor that "detected" it) in announcement
 	var/signature = "motion"
+	var/del_timer
 
 /obj/effect/meteor/Initialize(mapload, turf/target)
 	. = ..()
@@ -44,6 +47,8 @@
 	chase_target(target)
 
 /obj/effect/meteor/Destroy()
+	if (del_timer)
+		deltimer(del_timer)
 	GLOB.meteor_list -= src
 	return ..()
 
@@ -56,7 +61,7 @@
 		var/turf/T = get_turf(loc)
 		ram_turf(T)
 
-		if(prob(10) && !ispassmeteorturf(T))//randomly takes a 'hit' from ramming
+		if(prob(10) && !isspaceturf(T) && !isopenspaceturf(T))//randomly takes a 'hit' from ramming
 			get_hit()
 
 	if(z != z_original || loc == get_turf(dest))
@@ -65,6 +70,16 @@
 
 /obj/effect/meteor/Process_Spacemove(movement_dir = 0, continuous_move = FALSE)
 	return TRUE //Keeps us from drifting for no reason
+
+/obj/effect/meteor/Initialize(mapload, target)
+	. = ..()
+	z_original = z
+	GLOB.meteor_list += src
+	SSaugury.register_doom(src, threat)
+	SpinAnimation()
+	del_timer = QDEL_IN(src, lifetime)
+	dest = target
+	chase_target(target)
 
 /obj/effect/meteor/Bump(atom/A)
 	. = ..() //What could go wrong
@@ -211,6 +226,7 @@
 	meteorsound = 'sound/weapons/gun/smg/shot.ogg'
 	meteordrop = list(/obj/item/stack/ore/glass)
 	threat = 1
+	shield_damage = 2
 
 //Medium-sized
 /obj/effect/meteor/medium
@@ -230,6 +246,7 @@
 	heavy = TRUE
 	dropamt = 4
 	threat = 10
+	shield_damage = 10
 
 /obj/effect/meteor/big/meteor_effect()
 	..()
@@ -246,6 +263,7 @@
 	meteordrop = list(/obj/item/stack/ore/plasma)
 	threat = 20
 	signature = "thermal"
+	shield_damage = 15
 
 /obj/effect/meteor/flaming/meteor_effect()
 	..()
@@ -261,6 +279,8 @@
 	meteordrop = list(/obj/item/stack/ore/uranium)
 	threat = 35
 	signature = "radiation"
+	shield_damage = 15
+
 
 /obj/effect/meteor/irradiated/meteor_effect()
 	..()
@@ -441,6 +461,7 @@
 	meteordrop = list(/obj/item/stack/ore/plasma)
 	threat = 50
 	signature = "armageddon"
+	shield_damage = 30
 
 /obj/effect/meteor/tunguska/Move()
 	. = ..()

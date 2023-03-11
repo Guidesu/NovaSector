@@ -28,6 +28,9 @@
 ///Xenobio slime containment turf
 #define XENOBIO_BZ GAS_BZ + "=100;TEMP=293.15"
 
+//Define to be used in inital_gas if you want it to be planetary
+#define PLANETARY_ATMOS "PLANETARY_ATMOS"
+
 //ATMOSPHERICS DEPARTMENT GAS TANK TURFS
 #define ATMOS_TANK_N2O GAS_N2O + "=6000;TEMP=293.15"
 #define ATMOS_TANK_CO2 GAS_CO2 + "=50000;TEMP=293.15"
@@ -54,10 +57,6 @@
 //LAVALAND
 /// what pressure you have to be under to increase the effect of equipment meant for lavaland
 #define LAVALAND_EQUIPMENT_EFFECT_PRESSURE 50
-
-//ATMOS MIX IDS
-#define LAVALAND_DEFAULT_ATMOS "LAVALAND_ATMOS"
-#define ICEMOON_DEFAULT_ATMOS "ICEMOON_ATMOS"
 
 //AIRLOCK CONTROLLER TAGS
 
