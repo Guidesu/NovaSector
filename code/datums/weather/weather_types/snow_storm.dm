@@ -13,20 +13,26 @@
 	weather_duration_upper = 4 MINUTES
 
 	end_duration = 100
+	end_overlay = "snowfall_light"
 	end_message = "<span class='boldannounce'>The snowfall dies down, it should be safe to go outside again.</span>"
+	end_skyblock = 0.2
 
 	area_type = /area
 	protect_indoors = TRUE
-	target_trait = ZTRAIT_SNOWSTORM
 
 	immunity_type = TRAIT_SNOWSTORM_IMMUNE
 
 	barometer_predictable = TRUE
+	affects_underground = FALSE
 
 	///Lowest we can cool someone randomly per weather act. Positive values only
 	var/cooling_lower = 5
 	///Highest we can cool someone randomly per weather act. Positive values only
 	var/cooling_upper = 15
+	sound_active_outside = /datum/looping_sound/active_outside_ashstorm
+	sound_active_inside = /datum/looping_sound/active_inside_ashstorm
+	sound_weak_outside = /datum/looping_sound/weak_outside_ashstorm
+	sound_weak_inside = /datum/looping_sound/weak_inside_ashstorm
 
 /datum/weather/snow_storm/weather_act(mob/living/living)
 	living.adjust_bodytemperature(-rand(cooling_lower, cooling_upper))

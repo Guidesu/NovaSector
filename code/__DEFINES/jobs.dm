@@ -221,6 +221,8 @@
 #define DEPARTMENT_CAPTAIN "Captain"
 #define DEPARTMENT_BITFLAG_CENTRAL_COMMAND (1<<10) //NOVA EDIT CHANGE
 #define DEPARTMENT_CENTRAL_COMMAND "Central Command" //NOVA EDIT CHANGE
+#define DEPARTMENT_BITFLAG_CIVILLIAN (1<<10)
+#define DEPARTMENT_BITFLAG_MISC (1<<11)
 
 /* Job datum job_flags */
 /// Whether the mob is announced on arrival.

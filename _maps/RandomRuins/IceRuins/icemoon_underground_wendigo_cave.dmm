@@ -261,7 +261,7 @@
 "W" = (
 /mob/living/simple_animal/hostile/megafauna/wendigo,
 /turf/open/indestructible/necropolis{
-	initial_gas_mix = "ICEMOON_ATMOS"
+	initial_gas_mix = "PLANETARY_ATMOS"
 	},
 /area/icemoon/underground/explored)
 "X" = (
@@ -269,7 +269,7 @@
 	dir = 6
 	},
 /turf/open/indestructible/necropolis{
-	initial_gas_mix = "ICEMOON_ATMOS"
+	initial_gas_mix = "PLANETARY_ATMOS"
 	},
 /area/icemoon/underground/explored)
 "Y" = (
@@ -277,7 +277,7 @@
 	dir = 4
 	},
 /turf/open/indestructible/necropolis{
-	initial_gas_mix = "ICEMOON_ATMOS"
+	initial_gas_mix = "PLANETARY_ATMOS"
 	},
 /area/icemoon/underground/explored)
 "Z" = (

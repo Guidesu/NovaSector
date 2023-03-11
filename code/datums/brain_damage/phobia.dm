@@ -187,34 +187,6 @@
 	phobia_type = "greytide"
 	random_gain = FALSE
 
-/datum/brain_trauma/mild/phobia/guns
-	phobia_type = "guns"
-	random_gain = FALSE
-
-/datum/brain_trauma/mild/phobia/heresy
-	phobia_type = "heresy"
-	random_gain = FALSE
-
-/datum/brain_trauma/mild/phobia/insects
-	phobia_type = "insects"
-	random_gain = FALSE
-
-/datum/brain_trauma/mild/phobia/lizards
-	phobia_type = "lizards"
-	random_gain = FALSE
-
-/datum/brain_trauma/mild/phobia/ocky_icky
-	phobia_type = "ocky icky"
-	random_gain = FALSE
-
-/datum/brain_trauma/mild/phobia/robots
-	phobia_type = "robots"
-	random_gain = FALSE
-
-/datum/brain_trauma/mild/phobia/security
-	phobia_type = "security"
-	random_gain = FALSE
-
 /datum/brain_trauma/mild/phobia/skeletons
 	phobia_type = "skeletons"
 	random_gain = FALSE
