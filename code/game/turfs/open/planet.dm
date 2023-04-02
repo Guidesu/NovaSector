@@ -81,7 +81,7 @@
 	return list("jungle_damaged")
 
 /turf/open/misc/grass/jungle/lavaland
-	initial_gas_mix = LAVALAND_DEFAULT_ATMOS
+	initial_gas_mix = PLANETARY_ATMOS
 
 /turf/closed/mineral/random/jungle
 	baseturfs = /turf/open/misc/dirt/dark/jungle

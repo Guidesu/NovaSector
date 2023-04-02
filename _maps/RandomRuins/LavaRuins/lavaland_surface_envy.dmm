@@ -18,7 +18,9 @@
 /turf/open/floor/plating,
 /area/ruin/unpowered)
 "f" = (
-/obj/structure/mirror/broken/directional/east,
+/obj/structure/mirror/directional/east{
+	icon_state = "mirror_broke"
+	},
 /obj/effect/mapping_helpers/burnt_floor,
 /turf/open/floor/plating,
 /area/ruin/unpowered)
@@ -39,12 +41,16 @@
 /turf/open/floor/plating,
 /area/ruin/unpowered)
 "k" = (
-/obj/structure/mirror/broken/directional/north,
-/obj/item/knife/envy,
+/obj/structure/mirror/directional/north{
+	icon_state = "mirror_broke"
+	},
+/obj/item/knife/plastic,
 /turf/open/floor/plating,
 /area/ruin/unpowered)
 "l" = (
-/obj/structure/mirror/broken/directional/east,
+/obj/structure/mirror/directional/east{
+	icon_state = "mirror_broke"
+	},
 /turf/open/floor/plating,
 /area/ruin/unpowered)
 "m" = (
@@ -68,6 +74,10 @@
 /obj/effect/mapping_helpers/no_lava,
 /turf/open/misc/asteroid/basalt/lava_land_surface,
 /area/lavaland/surface/outdoors)
+"J" = (
+/obj/item/knife/ritual,
+/turf/open/floor/plating,
+/area/ruin/unpowered)
 
 (1,1,1) = {"
 a
@@ -184,7 +194,7 @@ c
 d
 d
 d
-d
+J
 d
 d
 k

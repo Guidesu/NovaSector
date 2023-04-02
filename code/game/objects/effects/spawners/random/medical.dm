@@ -159,7 +159,6 @@
 		/obj/machinery/iv_drip = 1,
 		/obj/structure/closet/crate/freezer/blood = 1,
 		/obj/structure/closet/crate/freezer/surplus_limbs = 1,
-		/obj/item/storage/backpack/duffelbag/med/surgery = 1,
 		/obj/item/storage/organbox = 1
 	)
 
@@ -170,7 +169,6 @@
 		/obj/item/stack/medical/ointment= 5,
 		/obj/item/reagent_containers/hypospray/medipen = 5,
 		/obj/item/stack/medical/gauze/twelve = 5,
-		/obj/item/stack/medical/bone_gel/four = 5,
 		/obj/item/stack/medical/suture = 5,
 		/obj/item/stack/medical/mesh = 5,
 		/obj/effect/spawner/random/engineering/toolbox = 1,

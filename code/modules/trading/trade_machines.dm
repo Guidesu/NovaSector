@@ -139,7 +139,7 @@
 
 /obj/machinery/computer/trade_console/ui_interact(mob/user, datum/tgui/ui)
 	. = ..()
-	if(!isliving(user) || !user.canUseTopic(src, BE_CLOSE, FALSE, NO_TK))
+	if(!isliving(user) || !user(src, BE_CLOSE, FALSE))
 		return
 	if(!linked_pad)
 		try_link_pad()
@@ -311,7 +311,7 @@
 /obj/machinery/computer/trade_console/Topic(href, href_list)
 	. = ..()
 	var/mob/living/living_user = usr
-	if(!istype(living_user) || !living_user.canUseTopic(src, BE_CLOSE, FALSE, NO_TK))
+	if(!istype(living_user) || !living_user(src, BE_CLOSE, FALSE))
 		return
 	switch(href_list["task"])
 		if("trader_task")

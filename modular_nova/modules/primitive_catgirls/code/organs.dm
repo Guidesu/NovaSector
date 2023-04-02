@@ -9,7 +9,7 @@
 /obj/item/organ/internal/lungs/icebox_adapted/Initialize(mapload)
 	. = ..()
 
-	var/datum/gas_mixture/immutable/planetary/mix = SSair.planetary[ICEMOON_DEFAULT_ATMOS]
+	var/datum/gas_mixture/immutable/planetary/mix = SSair.planetary[PLANETARY_ATMOS]
 
 	if(!mix?.total_moles()) // If there is no icemoon atmos then we have problems, return now
 		return

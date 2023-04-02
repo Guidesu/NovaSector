@@ -84,10 +84,10 @@
 
 /obj/machinery/power/mining_drill/proc/RegisterNode(datum/ore_node/node)
 	current_node = node
-	RegisterSignal(current_node, COMSIG_PARENT_QDELETING, PROC_REF(UnregisterNode))
+	RegisterSignal(current_node, PROC_REF(UnregisterNode))
 
 /obj/machinery/power/mining_drill/proc/UnregisterNode()
-	UnregisterSignal(current_node, COMSIG_PARENT_QDELETING, PROC_REF(UnregisterNode))
+	UnregisterSignal(current_node, PROC_REF(UnregisterNode))
 	current_node = null
 
 /obj/machinery/power/mining_drill/examine(mob/user)
@@ -325,7 +325,7 @@
 		new_mining_speed += 5 * L.rating
 		new_power_usage += 10 * L.rating
 	mining_speed = new_mining_speed
-	for(var/obj/item/stock_parts/manipulator/M in component_parts)
+	for(var/obj/item/stock_parts/servo/M in component_parts)
 		new_power_usage -= 10 * M.rating
 	active_power_usage = new_power_usage
 
@@ -347,7 +347,7 @@
 	build_path = /obj/machinery/power/mining_drill
 	req_components = list(
 		/obj/item/stock_parts/micro_laser = 3,
-		/obj/item/stock_parts/manipulator = 3)
+		/obj/item/stock_parts/servo = 3)
 	needs_anchored = FALSE
 
 #undef DRILL_MINING_SPEED

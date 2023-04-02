@@ -135,7 +135,7 @@
 	undertile_pixel_x = 4
 	undertile_pixel_y = 4
 
-	initial_gas_mix = ICEMOON_DEFAULT_ATMOS
+	initial_gas_mix = PLANETARY_ATMOS
 	planetary_atmos = TRUE
 
 	underlay_tile = /turf/open/misc/asteroid/snow/icemoon

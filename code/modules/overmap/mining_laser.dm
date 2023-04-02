@@ -32,7 +32,7 @@
 	greyscale_colors = CIRCUIT_COLOR_ENGINEERING
 	build_path = /obj/machinery/mining_laser
 	req_components = list(/obj/item/stock_parts/micro_laser = 5,
-							/obj/item/stock_parts/manipulator  = 2)
+							/obj/item/stock_parts/servo  = 2)
 
 /obj/effect/temp_visual/mining_laser_fire
 	icon = 'icons/obj/machines/mining_laser.dmi'

@@ -75,7 +75,7 @@
 	initial_gas_mix = AIRLESS_ATMOS
 
 /turf/open/floor/wood/lavaland
-	initial_gas_mix = LAVALAND_DEFAULT_ATMOS
+	initial_gas_mix = PLANETARY_ATMOS
 
 /turf/open/floor/wood/tile
 	icon_state = "wood_tile"
@@ -167,7 +167,7 @@
 	desc = "It turns out grass doesn't grow very well in hell."
 	icon_state = "sand"
 	broken = TRUE
-	initial_gas_mix = LAVALAND_DEFAULT_ATMOS
+	initial_gas_mix = PLANETARY_ATMOS
 	damaged_dmi = 'icons/turf/damaged.dmi'
 
 /turf/open/floor/grass/lavaland/spawniconchange()
@@ -284,7 +284,7 @@
 	floor_tile = /obj/item/stack/tile/carpet/symbol
 
 /turf/open/floor/carpet/lone/lavaland
-	initial_gas_mix = LAVALAND_DEFAULT_ATMOS
+	initial_gas_mix = PLANETARY_ATMOS
 
 /turf/open/floor/carpet/lone/star
 	icon = 'icons/turf/floors/floor_variations.dmi'
@@ -830,7 +830,7 @@
 	initial_gas_mix = AIRLESS_ATMOS
 
 /turf/open/floor/carpet/blue/lavaland
-	initial_gas_mix = LAVALAND_DEFAULT_ATMOS
+	initial_gas_mix = PLANETARY_ATMOS
 
 /turf/open/floor/fakepit
 	desc = "A clever illusion designed to look like a bottomless pit."

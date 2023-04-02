@@ -13,7 +13,7 @@
 /turf/open/water/cursed_spring
 	baseturfs = /turf/open/water/cursed_spring
 	planetary_atmos = TRUE
-	initial_gas_mix = ICEMOON_DEFAULT_ATMOS
+	initial_gas_mix = PLANETARY_ATMOS
 /* NOVA EDIT REMOVAL
 	initial_gas_mix = PLANETARY_ATMOS
 

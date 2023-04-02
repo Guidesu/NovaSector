@@ -1,4 +1,4 @@
-
+/*
 GLOBAL_VAR_INIT(meteor_wave_delay, 625) //minimum wait between waves in tenths of seconds
 //set to at least 100 unless you want evarr ruining every round
 // This spelling mistake? Name? is older then git, I'm scared to touch it
@@ -27,3 +27,4 @@ GLOBAL_LIST_INIT(meteors_stray, list(/obj/effect/meteor/medium=15, /obj/effect/m
 GLOBAL_LIST_INIT(meteors_sandstorm, list(/obj/effect/meteor/sand=45, /obj/effect/meteor/dust=5)) //for sandstorm event
 
 GLOBAL_LIST_INIT(meteorsSPOOKY, list(/obj/effect/meteor/pumpkin=1))
+*/

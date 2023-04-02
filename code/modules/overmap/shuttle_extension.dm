@@ -40,14 +40,14 @@
 		WARNING("Shuttle extension registered to a shuttle, while already registered to one")
 		return
 	shuttle = shuttle_to_add
-	shuttle.all_extensions += src
+	shuttle += src
 	if(shuttle.my_overmap_object)
 		AddToOvermapObject(shuttle.my_overmap_object)
 
 /datum/shuttle_extension/proc/RemoveFromShuttle()
 	if(shuttle.my_overmap_object)
 		RemoveFromOvermapObject()
-	shuttle.all_extensions -= src
+	shuttle -= src
 	shuttle = null
 
 /datum/shuttle_extension/proc/AddToOvermapObject(datum/overmap_object/shuttle/object_to_add)
@@ -109,10 +109,10 @@
 
 /datum/shuttle_extension/engine/AddToShuttle(obj/docking_port/mobile/shuttle_to_add)
 	..()
-	shuttle.engine_extensions += src
+	shuttle += src
 
 /datum/shuttle_extension/engine/RemoveFromShuttle()
-	shuttle.engine_extensions -= src
+	shuttle -= src
 	..()
 
 /datum/shuttle_extension/engine/burst

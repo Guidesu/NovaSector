@@ -10,7 +10,8 @@
 #define OVERLAY_LIGHT_BEAM 4
 /// Nonesensical value for light color, used for null checks.
 #define NONSENSICAL_VALUE -99999
-
+#define MOVABLE_LIGHT 2
+#define MOVABLE_LIGHT_DIRECTIONAL 3
 /// Is our overlay light source attached to another movable (its loc), meaning that the lighting component should go one level deeper.
 #define LIGHT_ATTACHED (1<<0)
 /// Freezes a light in its current state, blocking any attempts at modification

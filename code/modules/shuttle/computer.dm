@@ -37,6 +37,14 @@
 	connect_to_shuttle(mapload, SSshuttle.get_containing_shuttle(src))
 
 /obj/machinery/computer/shuttle/ui_interact(mob/user, datum/tgui/ui)
+	. = ..()
+	if(is_station_level(user.z) && user.mind && IS_HEAD_REVOLUTIONARY(user) && !(user.mind in dumb_rev_heads)) //Rev heads will get a one-time warning that they shouldn't leave
+		to_chat(user, span_warning("You get a feeling that leaving the station might be a REALLY dumb idea..."))
+		dumb_rev_heads += user.mind
+		return
+	if (HAS_TRAIT(user, TRAIT_FORBID_MINING_SHUTTLE_CONSOLE_OUTSIDE_STATION) && !is_station_level(user.z)) //Free golems and other mobs with this trait will not be able to use the shuttle from outside the station Z
+		to_chat(user, span_warning("You get the feeling you shouldn't mess with this."))
+
 	..()
 	if(uses_overmap)
 		var/obj/docking_port/mobile/M = SSshuttle.getShuttle(shuttleId)
@@ -81,8 +89,14 @@
 
 /obj/machinery/computer/shuttle/Topic(href, href_list)
 	var/mob/user = usr
-	if(!isliving(user) || !user.canUseTopic(src, BE_CLOSE, FALSE, NO_TK))
+	if(!isliving(user) || !user(src, BE_CLOSE, FALSE))
 		return
+	if(!user.can_read(src, reading_check_flags = READING_CHECK_LITERACY)) //Illiterate mobs which aren't otherwise blocked from using computers will send the shuttle to a random valid destination
+		to_chat(user, span_warning("You start mashing buttons at random!"))
+		if(do_after(user, 10 SECONDS, target = src))
+			var/list/dest_list = get_valid_destinations()
+			if(!dest_list.len) //No valid destinations
+				to_chat(user, span_warning("The console shows a flashing error message, but you can't comprehend it."))
 	var/obj/docking_port/mobile/M = SSshuttle.getShuttle(shuttleId)
 	switch(href_list["task"])
 		if("engines_off")
@@ -95,6 +109,9 @@
 			if(M.my_overmap_object)
 				M.my_overmap_object.GrantOvermapView(usr, get_turf(src))
 				return
+			var/list/destination = pick(dest_list)
+			switch (send_shuttle(destination["id"], user))
+				if (SHUTTLE_CONSOLE_SUCCESS)
 		if("overmap_ship_controls")
 			if(M.my_overmap_object)
 				M.my_overmap_object.DisplayUI(usr, get_turf(src))

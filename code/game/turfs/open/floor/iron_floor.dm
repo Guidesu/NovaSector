@@ -36,7 +36,7 @@
 	initial_gas_mix = PLANETARY_ATMOS
 
 /turf/open/floor/iron/lavaland
-	initial_gas_mix = LAVALAND_DEFAULT_ATMOS
+	initial_gas_mix = PLANETARY_ATMOS
 
 /turf/open/floor/iron/edge
 	icon_state = "floor_edge"
@@ -94,7 +94,7 @@
 	floor_tile = /obj/item/stack/tile/iron/diagonal
 
 /turf/open/floor/iron/diagonal/lavaland
-	initial_gas_mix = LAVALAND_DEFAULT_ATMOS
+	initial_gas_mix = PLANETARY_ATMOS
 
 /turf/open/floor/iron/herringbone
 	icon_state = "herringbone"
@@ -433,7 +433,7 @@
 	initial_gas_mix = AIRLESS_ATMOS
 
 /turf/open/floor/iron/freezer/lavaland
-	initial_gas_mix = LAVALAND_DEFAULT_ATMOS
+	initial_gas_mix = PLANETARY_ATMOS
 
 /turf/open/floor/iron/kitchen_coldroom
 	name = "cold room floor"

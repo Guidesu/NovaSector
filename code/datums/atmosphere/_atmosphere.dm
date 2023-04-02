@@ -11,10 +11,13 @@
 	var/list/restricted_gases = list()
 	/// Chance to pick a restricted gas
 	var/restricted_chance = 0
-
+	var/gasmix
+	var/gastype
+	var/amount
 	var/minimum_pressure
 	var/maximum_pressure
-
+	var/return_pressure
+	var/garbage_collect
 	var/minimum_temp
 	var/maximum_temp
 
@@ -58,10 +61,10 @@
 	target_pressure = clamp(target_pressure, minimum_pressure + (gaslist[gastype][MOLES] * 0.1), maximum_pressure)
 
 	// That last one put us over the limit, remove some of it
-	while(gasmix.return_pressure() > target_pressure)
+	while(gasmix() > target_pressure)
 		gaslist[gastype][MOLES] -= gaslist[gastype][MOLES] * 0.1
 	gaslist[gastype][MOLES] = FLOOR(gaslist[gastype][MOLES], 0.1)
-	gasmix.garbage_collect()
+	gasmix()
 	var/total_gas_weight = 0
 	for(var/gas_type in gas_weights)
 		total_gas_weight += gas_weights[gas_type]

@@ -108,8 +108,6 @@ SUBSYSTEM_DEF(job)
 		overflow_jobs += check_job
 	return overflow_jobs
 
-	generate_selectable_species()
-	set_overflow_role()
 	return SS_INIT_SUCCESS
 
 /datum/controller/subsystem/job/proc/set_overflow_role(new_overflow_role)

@@ -38,4 +38,4 @@
 	greyscale_colors = CIRCUIT_COLOR_ENGINEERING
 	build_path = /obj/machinery/transporter
 	req_components = list(/obj/item/stock_parts/micro_laser = 2,
-							/obj/item/stock_parts/manipulator  = 4)
+							/obj/item/stock_parts/servo  = 4)

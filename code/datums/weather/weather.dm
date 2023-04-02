@@ -84,7 +84,10 @@
 
 	/// The stage of the weather, from 1-4
 	var/stage = END_STAGE
-
+	/// Weight amongst other eligible weather. If zero, will never happen randomly.
+	var/probability = 0
+	/// The z-level trait to affect when run randomly or when not overridden.
+	var/target_trait = ZTRAIT_STATION
 	/// Whether a barometer can predict when the weather will happen
 	var/barometer_predictable = FALSE
 	/// For barometers to know when the next storm will hit
@@ -116,7 +119,7 @@
 	/// Overlays for the lightning effect
 	var/obj/effect/lightning_add/lightning_add
 	var/obj/effect/lightning_overlay/lightning_overlay
-
+	/datum/weather/New(z_levels)
 /datum/weather/New(datum/weather_controller/passed_controller)
 	..()
 	lightning_add = new

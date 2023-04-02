@@ -104,8 +104,3 @@
 	if(!holder.has_reagent(reagent_type))
 		return FALSE
 	return TRUE
-
-/datum/bought_goods/reagent/GetAmount(atom/movable/movable_atom_to_validate)
-	var/datum/reagents/holder = movable_atom_to_validate.reagents
-	var/datum/reagent/reagent = holder.get_reagent(reagent_type)
-	return reagent.volume

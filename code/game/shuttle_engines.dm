@@ -18,6 +18,7 @@
 	use_power = NO_POWER_USE
 	circuit = /obj/item/circuitboard/machine/engine
 
+
 	///How well the engine affects the ship's speed.
 	var/engine_power = 1
 	///Construction state of the Engine.

@@ -5,21 +5,25 @@ SUBSYSTEM_DEF(weather)
 	wait = 10
 	runlevels = RUNLEVEL_GAME
 	var/list/weather_controllers = list()
+	var/list/processing = list()
+	var/list/eligible_zlevels = list()
+	var/list/next_hit_by_zlevel = list() //Used by barometers to know when the next storm is coming
 
 /datum/controller/subsystem/weather/fire()
 	// process active weather controllers
+	// process active weather
+	for(var/V in processing)
+		var/datum/weather/our_event = V
+		if(our_event.aesthetic || our_event.stage != MAIN_STAGE)
+			continue
+		for(var/mob/act_on as anything in GLOB.mob_living_list)
+			if(our_event.can_weather_act(act_on))
+				our_event.weather_act(act_on)
 	for(var/i in weather_controllers)
 		var/datum/weather_controller/iterated_controller = i
 		iterated_controller.process()
 
 	// start random weather on relevant levels
-	for(var/z in eligible_zlevels)
-		var/possible_weather = eligible_zlevels[z]
-		var/datum/weather/our_event = pick_weight(possible_weather)
-		run_weather(our_event, list(text2num(z)))
-		eligible_zlevels -= z
-		var/randTime = rand(3000, 6000)
-		next_hit_by_zlevel["[z]"] = addtimer(CALLBACK(src, PROC_REF(make_eligible), z, possible_weather), randTime + initial(our_event.weather_duration_upper), TIMER_UNIQUE|TIMER_STOPPABLE) //Around 5-10 minutes between weathers
 
 /datum/controller/subsystem/weather/Initialize()
 	for(var/V in subtypesof(/datum/weather))
@@ -30,8 +34,6 @@ SUBSYSTEM_DEF(weather)
 		// any weather with a probability set may occur at random
 		if (probability)
 			for(var/z in SSmapping.levels_by_trait(target_trait))
-				LAZYINITLIST(eligible_zlevels["[z]"])
-				eligible_zlevels["[z]"][W] = probability
 	return SS_INIT_SUCCESS
 
 /datum/controller/subsystem/weather/proc/update_z_level(datum/space_level/level)

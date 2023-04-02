@@ -1,6 +1,6 @@
 #define MAP_EDGE_PAD 5
 
-/proc/spawn_meteors(number = 10, list/meteor_types, direction)
+/*/proc/spawn_meteors(number = 10, list/meteor_types, direction)
 	for(var/i in 1 to number)
 		spawn_meteor(meteor_types, direction)
 
@@ -66,7 +66,7 @@
 			endy = rand((TRANSITIONEDGE + MAP_EDGE_PAD),world.maxy-(TRANSITIONEDGE + MAP_EDGE_PAD))
 			endx = world.maxx-(TRANSITIONEDGE + MAP_EDGE_PAD)
 	. = locate(endx, endy, Z)
-
+*/
 /**
  * Receives a mob candidate, transforms them into a changeling, and hurls them at the station inside of a changeling meteor
  *
