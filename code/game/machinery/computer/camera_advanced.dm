@@ -345,6 +345,4 @@
 	if(!do_after(user, 5 SECONDS, src))
 		return ITEM_INTERACT_BLOCKING
 	tool.play_tool_sound(src, 40)
-	new /obj/item/secure_camera_console_pod(get_turf(src))
-	qdel(src)
 	return ITEM_INTERACT_SUCCESS

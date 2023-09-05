@@ -30,5 +30,5 @@
 // Free Union of Vulken minebot
 
 /mob/living/basic/mining_drone/interdyne
-	name = "\improper Free Union of Vulken minebot"
+	name = "\improper Interdyne minebot"
 	faction = list(FACTION_NEUTRAL, ROLE_SYNDICATE)

@@ -104,31 +104,10 @@
 	desc = "Grants you Lunar Parade, a spell that - after a short charge - sends a carnival forward \
 		when hitting someone they are forced to join the parade and suffer hallucinations."
 	gain_text = "The music like a reflection of the soul compelled them, like moths to a flame they followed"
-	next_knowledge = list(/datum/heretic_knowledge/moon_amulette)
 	spell_to_add = /datum/action/cooldown/spell/pointed/projectile/moon_parade
 	cost = 1
 	route = PATH_MOON
 
-
-/datum/heretic_knowledge/moon_amulette
-	name = "Moonlight Amulette"
-	desc = "Allows you to transmute 2 sheets of glass, a heart and a tie \
-			if the item is used on someone with low sanity they go berserk attacking everyone \
-			, if their sanity isnt low enough it decreases their mood."
-	gain_text = "At the head of the parade he stood, the moon condensed into one mass, a reflection of the soul."
-	next_knowledge = list(
-		/datum/heretic_knowledge/blade_upgrade/moon,
-		/datum/heretic_knowledge/unfathomable_curio,
-		/datum/heretic_knowledge/curse/paralysis,
-	)
-	required_atoms = list(
-		/obj/item/organ/internal/heart = 1,
-		/obj/item/stack/sheet/glass = 2,
-		/obj/item/clothing/neck/tie = 1,
-	)
-	result_atoms = list(/obj/item/clothing/neck/heretic_focus/moon_amulette)
-	cost = 1
-	route = PATH_MOON
 
 /datum/heretic_knowledge/blade_upgrade/moon
 	name = "Moonlight Blade"

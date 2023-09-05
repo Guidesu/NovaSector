@@ -46,8 +46,6 @@
 /obj/item/minebot_remote_control/afterattack(atom/attacked_atom, mob/living/user, proximity)
 	. = ..()
 
-	. |= AFTERATTACK_PROCESSED_ITEM
-
 	if(!primed)
 		user.balloon_alert(user, "not primed!")
 		return

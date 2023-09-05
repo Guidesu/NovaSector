@@ -609,11 +609,6 @@
 	item_path = /obj/item/clothing/gloves/ring/hypno/nuke
 
 
-/datum/loadout_item/head/somerandomowl
-	name = "Starry Witch Hat"
-	item_path = /obj/item/clothing/head/costume/strigihat
-
-
 /datum/loadout_item/head/razurathhat
 	name = "Golden Free Union Of Vulken Officer Cap"
 	item_path = /obj/item/clothing/head/razurathhat
