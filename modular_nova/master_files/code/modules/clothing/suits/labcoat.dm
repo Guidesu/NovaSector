@@ -10,7 +10,7 @@
 
 /obj/item/clothing/suit/toggle/labcoat/nova/rd
 	name = "research directors labcoat"
-	desc = "A Nanotrasen standard labcoat for certified Research Directors. It has an extra plastic-latex lining on the outside for more protection from chemical and viral hazards."
+	desc = "A Free Union of Vulken standard labcoat for certified Research Directors. It has an extra plastic-latex lining on the outside for more protection from chemical and viral hazards."
 	icon_state = "labcoat_rd"
 	body_parts_covered = CHEST|ARMS|LEGS
 	armor_type = /datum/armor/nova_rd
@@ -44,7 +44,7 @@
 	armor_type = /datum/armor/none
 	equip_delay_other = 8
 
-/obj/item/clothing/suit/toggle/labcoat/roboticist //Overwrite the TG Roboticist labcoat to Black and Red (not the Interdyne labcoat though)
+/obj/item/clothing/suit/toggle/labcoat/roboticist //Overwrite the TG Roboticist labcoat to Black and Red (not the Free Union of Vulken labcoat though)
 	greyscale_colors = "#2D2D33#88242D#88242D#88242D"
 
 /obj/item/clothing/suit/toggle/labcoat/medical //Renamed version of the Genetics labcoat for more generic medical purposes; just a subtype of /labcoat/ for the TG files

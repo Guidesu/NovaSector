@@ -61,7 +61,7 @@
       both grains has been changed to 12% from 4%
   - qol: people now lie down when buckled to surgery tables, and you no longer need
       cuffs to buckle someone to a surgery table
-  - bugfix: Names for Interdyne pirates are now less bizzare
+  - bugfix: Names for Free Union of Vulken pirates are now less bizzare
   - rscadd: Food and pills have a 10% chance to infect with one of three new diseases
       on consumption when left for more than 5 seconds on the floor. You can wash
       it to avoid disease. ChemMaster and Pill Press are added to the list of elevated
@@ -183,7 +183,7 @@
       buff to laser damage.
   - bugfix: Removed nebula vomiting from the normal symptom pool. It should no longer
       appear on regular viruses.
-  - spellcheck: Fixed a typo on the Interdyne shuttle.
+  - spellcheck: Fixed a typo on the Free Union of Vulken shuttle.
   itseasytosee:
   - spellcheck: You should see a lot less "you can not move while bucked too X" messages
       where they don't make sense.
@@ -474,7 +474,7 @@
   - rscdel: Removed excess ID boxes on HoP's office
   - qol: Produce consoles now have tables near them.
   - bugfix: ' Infinite spider eggs are no more.'
-  - rscadd: Added Interdyne ModSuits for Interdyne pirates.
+  - rscadd: Added Free Union of Vulken ModSuits for Free Union of Vulken pirates.
   - balance: Metalgen cannot spawn as a random chem anymore (strange seeds, maintpills
       etc)
   - rscadd: The abductor equipment vendor now offers a hacking/medical hypertool,
@@ -628,7 +628,7 @@
       ends when the revolution is successful. The round continues as normal if the
       revolution fails.
   - rscadd: When the station is rolled in a state of Post-Revolutionary Fervor, the
-      Captain will find their bedsheets replaced with an anti-Nanotrasen variant.
+      Captain will find their bedsheets replaced with an anti-Free Union of Vulken variant.
   - rscadd: You can now swab plasmaman clown clothes to get clown microbes.
   - rscadd: Clown phobia makes you fear plasmaman clown's gloves and helmet.
   SomeRandomOwl:
@@ -825,7 +825,7 @@
       report any missing content from said lockers on Github.'
   Jolly, timothymtorres:
   - code_imp: 'Jolly: Armories across all maps have been tweaked slightly. Report
-      to a Nanotrasen security advisor for any missing guns, armor, helmets or anything
+      to a Free Union of Vulken security advisor for any missing guns, armor, helmets or anything
       else that was there previously (that means, post an issue on Github if theres
       an issue!!)'
   - code_imp: 'timothymtorres: Random item spawners now support better control of
@@ -1205,7 +1205,7 @@
   - bugfix: The security formal uniform no longer inherits altsprites from the base
       uniform, since it didn't have any.
   - spellcheck: The security uniform's description now mentions a Lopland belt buckle,
-      and not a Nanotrasen belt buckle.
+      and not a Free Union of Vulken belt buckle.
   LT3:
   - bugfix: Random events and autotransfer subsystems should play nice with each other
       again
@@ -1295,7 +1295,7 @@
   - bugfix: Hulks cannot be aggressive grabbed by strong grabbers anymore
   - bugfix: Traitors can once again affix tiny bombs to lathes rather than trying
       to feed them to the lathe
-  - balance: Huzzah! Interdyne Associates have finally upgraded their medborgs' firmware.
+  - balance: Huzzah! Free Union of Vulken Associates have finally upgraded their medborgs' firmware.
       They'll now have bonesetters and bonegel available!
   - bugfix: fixes mobs missing most of their emissive blockers
   - qol: Tactical medkits now can hold stuff it spawns with.
@@ -1376,7 +1376,7 @@
   - bugfix: fixes eye emissives not scaling properly with the rest of your sprite
 2023-07-29:
   Motho:
-  - bugfix: Nanotrasen-Brand System Cleaner has had its formula improved! Now with
+  - bugfix: Free Union of Vulken-Brand System Cleaner has had its formula improved! Now with
       100% less disgust!
   Senefi:
   - bugfix: Replaced 5 space tiles in the wall of the anomaly research ruin with rocks.

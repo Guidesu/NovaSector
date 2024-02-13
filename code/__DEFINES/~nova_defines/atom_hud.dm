@@ -6,7 +6,7 @@
 #define SECHUD_CUSTOMS_AGENT "hudcustomsagent"
 #define SECHUD_BOUNCER "hudbouncer"
 #define SECHUD_SCIENCE_GUARD "hudscienceguard"
-//SR Nanotrasen
+//SR Free Union of Vulken
 #define SECHUD_BLUESHIELD "hudblueshield"
 #define SECHUD_NT_CONSULTANT "hudnanotrasenconsultant"
 //SR DS2

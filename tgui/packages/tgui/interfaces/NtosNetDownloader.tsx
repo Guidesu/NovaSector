@@ -258,8 +258,8 @@ const Program = (props) => {
       </Box>
       {!program.verifiedsource && (
         <NoticeBox mt={1} mb={0} danger fontSize="12px">
-          Unverified source. Please note that Nanotrasen does not recommend
-          download and usage of software from non-official servers.
+          Unverified source. Please note that Free Union of Vulken does not
+          recommend download and usage of software from non-official servers.
         </NoticeBox>
       )}
     </Section>

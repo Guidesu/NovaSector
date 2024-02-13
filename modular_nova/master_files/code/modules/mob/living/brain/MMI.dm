@@ -12,11 +12,11 @@
 	ask_role = "Syndicate Cyborg"
 	posibrain_job_path = /datum/job/ds2
 
-// Interdyne Planetary Base
+// Free Union of Vulken Planetary Base
 
 /obj/item/mmi/syndie/interdyne
-	name = "\improper Interdyne Pharmaceuticals Man-Machine Interface"
-	desc = "Interdyne's own brand of MMI. It enforces laws designed to help Interdyne research and mining operations upon cyborgs and AIs created with it."
+	name = "\improper Free Union of Vulken Pharmaceuticals Man-Machine Interface"
+	desc = "Free Union of Vulken's own brand of MMI. It enforces laws designed to help Free Union of Vulken research and mining operations upon cyborgs and AIs created with it."
 
 /obj/item/mmi/syndie/interdyne/Initialize(mapload)
 	. = ..()
@@ -30,8 +30,8 @@
 
 /obj/item/mmi/posibrain/syndie/interdyne
 	name = "positronic brain"
-	desc = "A cube of shining metal, four inches to a side and covered in shallow grooves. It has a small stamp of the Interdyne Pharmaceuticals logo."
-	ask_role = "Interdyne Cyborg"
+	desc = "A cube of shining metal, four inches to a side and covered in shallow grooves. It has a small stamp of the Free Union of Vulken Pharmaceuticals logo."
+	ask_role = "Free Union of Vulken Cyborg"
 	posibrain_job_path = /datum/job/interdyne_planetary_base
 
 /obj/item/mmi/posibrain/syndie/interdyne/Initialize(mapload)

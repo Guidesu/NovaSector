@@ -11,7 +11,7 @@ const commandJobs = [
   'Research Director',
   'Chief Medical Officer',
   'Quartermaster', // NOVA EDIT
-  'Nanotrasen Consultant', // NOVA EDIT
+  'Free Union of Vulken Consultant', // NOVA EDIT
 ];
 
 // NOVA EDIT CHANGE BEGIN - ALTERNATIVE_JOB_TITLES

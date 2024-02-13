@@ -268,7 +268,7 @@
   Singularbyte:
   - bugfix: Dead bodies no longer freak out about phobias
   'The Dreamweaver (Sprites: Onule)':
-  - rscdel: Nanotrasen's Lavaland research team has discovered that the alien brain
+  - rscdel: Free Union of Vulken's Lavaland research team has discovered that the alien brain
       has disappeared from necropolis chests.
   - rscadd: In it's place they have discovered a new artifact, the Rod of Asclepius,
       a strange rod with a magnitude of healing properties, and an even higher magnitude
@@ -302,7 +302,7 @@
   - imageadd: Redded borg transformation animations
   - imageadd: adjust mining borg animation to new colors.
   Xhuis:
-  - rscadd: The Nanotrasen Meteorology Division has identified the aurora caelus in
+  - rscadd: The Free Union of Vulken Meteorology Division has identified the aurora caelus in
       your sector. If you are lucky, you may get a chance to witness it with your
       own eyes.
   ninjanomnom:
@@ -351,7 +351,7 @@
   Polyphynx:
   - tweak: Medical sprays can now be stored in medical belts and smartfridges.
   The Dreamweaver:
-  - rscadd: Both of Nanotrasen brand totally-for-adult-use footwear, Wheely-heels,
+  - rscadd: Both of Free Union of Vulken brand totally-for-adult-use footwear, Wheely-heels,
       the cool and hip new shoes with built in roller-wheels, and Kindle Kicks, the
       fun and flashy light up sneakers, are now available as rare prizes at your nearest
       arcade machine!

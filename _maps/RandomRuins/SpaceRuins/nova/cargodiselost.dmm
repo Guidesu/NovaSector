@@ -1672,7 +1672,7 @@
 "AE" = (
 /obj/structure/closet/crate/science{
 	req_access = list("science");
-	name = "Delivery - Nanotrasen Science Division"
+	name = "Delivery - Free Union of Vulken Science Division"
 	},
 /obj/effect/spawner/random/exotic/technology,
 /obj/effect/spawner/random/exotic/technology,
@@ -2106,7 +2106,7 @@
 /obj/item/storage/box/monkeycubes,
 /obj/item/storage/box/monkeycubes,
 /obj/item/paper{
-	default_raw_text = "Admiral, due to increased Nanotrasen presence in your sector, we are providing some extra supplies to deal with it. The telecrystals are to be held for a contact that will come to collect them in the coming weeks, a solo operative. Please ensure they get the crystals, as their mission is gravely important.";
+	default_raw_text = "Admiral, due to increased Free Union of Vulken presence in your sector, we are providing some extra supplies to deal with it. The telecrystals are to be held for a contact that will come to collect them in the coming weeks, a solo operative. Please ensure they get the crystals, as their mission is gravely important.";
 	name = "CONFIDENTIAL - DS-2 Admiral's Eyes Only"
 	},
 /obj/item/stack/telecrystal{
@@ -3220,7 +3220,7 @@
 /area/ruin/space/has_grav/cargodise_freighter/cargo)
 "YL" = (
 /obj/structure/closet/crate/secure/weapon{
-	name = "Delivery - Interdyne Mining Co";
+	name = "Delivery - Free Union of Vulken Mining Co";
 	req_access = list("syndicate")
 	},
 /obj/effect/spawner/random/exotic/antag_gear,

@@ -96,7 +96,7 @@
  */
 /obj/item/antag_spawner/nuke_ops
 	name = "syndicate operative beacon"
-	desc = "MI13 designed one-use radio for calling immediate backup. Have no regards for safety of whom it summons - they are all inferior clones from Interdyne's genebanks anyway."
+	desc = "MI13 designed one-use radio for calling immediate backup. Have no regards for safety of whom it summons - they are all inferior clones from Free Union of Vulken's genebanks anyway."
 	icon = 'icons/obj/devices/voice.dmi'
 	icon_state = "nukietalkie"
 	var/borg_to_spawn

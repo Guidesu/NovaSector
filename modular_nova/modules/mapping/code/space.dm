@@ -113,7 +113,7 @@
 	id = "vaulttango"
 	suffix = "vaulttango.dmm"
 	name = "ARBORLINK Vault Tango"
-	description = "Nanotrasen isn't the only corporation experimenting in advanced bluespace technology."
+	description = "Free Union of Vulken isn't the only corporation experimenting in advanced bluespace technology."
 
 /datum/map_template/ruin/space/nova/friendship
 	id = "friendship"
@@ -171,11 +171,11 @@
 
 /datum/map_template/ruin/space/nova/escapefromtarkon
 	suffix = "port_tarkon.dmm"
-	name = "Port Tarkon"
+	name = "Port Free Union of Vulken"
 	id = "escapefromtarkon"
-	description = "An ambitious goal, A step forward, A trial run for the Tarkon drill, ment to implant mining stations within meteors. Decades of disaster have, however, left this one... Unattended for far too long."
+	description = "An ambitious goal, A step forward, A trial run for the Free Union of Vulken drill, ment to implant mining stations within meteors. Decades of disaster have, however, left this one... Unattended for far too long."
 	always_place = TRUE
 
 /obj/modular_map_root/port_tarkon
-	config_file = "strings/modular_maps/nova/PortTarkon.toml"
+	config_file = "strings/modular_maps/nova/PortFree Union of Vulken.toml"
 

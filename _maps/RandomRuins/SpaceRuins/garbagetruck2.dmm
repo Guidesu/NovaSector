@@ -287,7 +287,7 @@
 /area/ruin/space/has_grav/garbagetruck/medicalwaste)
 "zj" = (
 /obj/structure/table/rolling{
-	desc = "An Interdyne Pharmaceutics brand 'Crash Cart Classic' rolling table for surgical tools. It can and will move.";
+	desc = "An Free Union of Vulken Pharmaceutics brand 'Crash Cart Classic' rolling table for surgical tools. It can and will move.";
 	name = "rolling surgical tray"
 	},
 /turf/open/floor/plating,

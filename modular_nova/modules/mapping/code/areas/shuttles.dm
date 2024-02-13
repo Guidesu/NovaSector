@@ -12,14 +12,14 @@
 	name = "Blackmarket Chevvy"
 
 /area/shuttle/interdyne_cargo
-	name = "Interdyne Cargo Shuttle"
+	name = "Free Union of Vulken Cargo Shuttle"
 
 /area/shuttle/syndicate/slaver
 	name = "Slave Ship"
 	requires_power = TRUE
 
 /area/shuttle/tarkon_driver
-	name = "Tarkon Driver"
+	name = "Free Union of Vulken Driver"
 	requires_power = TRUE
 
 /area/shuttle/trader/bridge

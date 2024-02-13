@@ -415,7 +415,7 @@
   - code_imp: there can now be more than one grey tide event running at once.
   - bugfix: Made the table in Kilostation's QM office reachable.
   Zergspower:
-  - imageadd: Containers - New Interdyne Container with new mapping default icon
+  - imageadd: Containers - New Free Union of Vulken Container with new mapping default icon
   - bugfix: Containers - unified the apperance of each one, fixed blemishes and stray
       pixels
 2022-12-13:
@@ -708,7 +708,7 @@
       alert code, to make it require a lot less copy-paste to handle new cases.
   - bugfix: Offering a kiss no longer requires the receiver to have free hands to
       accept said kiss!
-  - bugfix: Nanotrasen will now no longer mount the HoPline's Ticket Machines on windows
+  - bugfix: Free Union of Vulken will now no longer mount the HoPline's Ticket Machines on windows
       for Meta, IceBox, and Tram.
   - bugfix: Moves virology fridge on nukie base in to a wall
   Zergspower:

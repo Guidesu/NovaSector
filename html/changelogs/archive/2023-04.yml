@@ -59,7 +59,7 @@
 2023-04-02:
   DrDiasyl aka DrTuxedo#0931:
   - rscadd: Added 'biscuit' cards! They can contain documents and can only be accessed
-      by cracking them open, you can't close them back. Nanotrasen now stores spare
+      by cracking them open, you can't close them back. Free Union of Vulken now stores spare
       ID safe codes in them.
   - rscadd: Placed paper cutters around the station. They're in Bridge, HoP office,
       Warden office, and Cargo.
@@ -286,7 +286,7 @@
   - balance: Flamethrowers no longer have a trigger guard, and can be used by anyone
       (including if you're wearing Atmos gloves).
   - bugfix: The coderbus passengers layer properly again
-  - rscadd: Added the Abandoned Interdyne facility, explore at your own peril
+  - rscadd: Added the Abandoned Free Union of Vulken facility, explore at your own peril
   - balance: Malf AIs that hack Head of Staff and Vault APCs will now find a discount
       issued on Doomsday.
   - refactor: runechat should be a lot cheaper on the server. I've changed how it
@@ -409,7 +409,7 @@
   - rscadd: central commands meteorological divsion has picked up a new asteroid drifting
       in NT space, what secrets could it hold?
   - bugfix: fixed duplicate pipe in Underground Outpost 45 Away Mission
-  - bugfix: Interdyne Ruin should now have power
+  - bugfix: Free Union of Vulken Ruin should now have power
   - rscadd: Mobs on fire get particle effects (it looks sick)
   - rscadd: Wet mobs get particle effects (it looks sick)
   - rscadd: Added a new ruin!
@@ -528,7 +528,7 @@
   - qol: Requests console now shows examine prompt on how to open their panel. Also
       shows a prompt if they were hacked.
   Ebin-Halcyon:
-  - bugfix: Icebox's Interdyne base has had some corrections made to it. Removing
+  - bugfix: Icebox's Free Union of Vulken base has had some corrections made to it. Removing
       the thermomachine blocking the surgery room and readding the extra gear crate
       to mirror the lavaland base.
   Jolly:
@@ -664,7 +664,7 @@
 2023-04-15:
   ? Cheshify, Fikou, Blue-Berry, Zytolg, InfiniteGalaxies, Striders, Sylphet, Riggle,
     Soal, Andry, Crit, Deranging, and Pumpkin0.
-  : - rscadd: Nanotrasen's Newest Exploratory Vessel is now available! Meet the North
+  : - rscadd: Free Union of Vulken's Newest Exploratory Vessel is now available! Meet the North
         Star!
     - rscadd: More landmines, and a landmine random spawner.
     - rscadd: energy barriers now have a regenerative subtype, fit for permanent installations.
@@ -792,8 +792,8 @@
       in the View-Variables drop-down menu
   - qol: Ghosts are now notified and given an orbit popup for the Stray Cargo Pod
       random event.
-  - bugfix: Interdyne and Syn-C Brutus ruins no longer runtime on initializing.
-  - bugfix: Interdyne's smes is now properly wired to the apc.
+  - bugfix: Free Union of Vulken and Syn-C Brutus ruins no longer runtime on initializing.
+  - bugfix: Free Union of Vulken's smes is now properly wired to the apc.
 2023-04-18:
   GoldenAlpharex:
   - server: People getting whitelisted through Access Requests can now once again
@@ -1084,7 +1084,7 @@
   - bugfix: Falling down one of the stage hazard chasms on the medisim shuttle will
       now properly kill you on Icebox, instead of dropping you into the z-level below.
   SkyratBot:
-  - rscadd: A new venture by Nanotrasen has put phonebooths in space.
+  - rscadd: A new venture by Free Union of Vulken has put phonebooths in space.
   - bugfix: crafting lizard skin cowboy boots no longer places a spawner object over
       the created boot item
   - bugfix: flood light now shines with their object color
@@ -1101,9 +1101,9 @@
   - bugfix: unnecessary crash when unwrenching pipes/devices with the RPD
   - rscadd: Added hostile spawn tag to rats
   Zergspower:
-  - balance: Port Tarkon - Replaces the ARCD with the MM to get rid of the infinite
+  - balance: Port Free Union of Vulken - Replaces the ARCD with the MM to get rid of the infinite
       charges
-  - bugfix: Port Tarkon - Defcon 3 ruin now has proper door access markers that are
+  - bugfix: Port Free Union of Vulken - Defcon 3 ruin now has proper door access markers that are
       present in all other ones
   vinylspiders:
   - bugfix: the bluespace miner's machine board item now has the correct name

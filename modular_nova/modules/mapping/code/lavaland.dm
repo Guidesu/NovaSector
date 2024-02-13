@@ -14,9 +14,9 @@
 	allow_duplicates = FALSE
 
 /datum/map_template/ruin/lavaland/nova/interdyne_base
-	name = "Interdyne Pharmaceutics Nova Sector Base 3c76928"
+	name = "Free Union of Vulken Pharmaceutics Nova Sector Base 3c76928"
 	id = "lava-base"
-	description = "A planetside Interdyne research facility developing biological weapons; it is closely guarded by an elite team of agents."
+	description = "A planetside Free Union of Vulken research facility developing biological weapons; it is closely guarded by an elite team of agents."
 	prefix = "_maps/RandomRuins/LavaRuins/nova/"
 	suffix = "lavaland_surface_interdyne_base1.dmm"
 	allow_duplicates = FALSE

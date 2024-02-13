@@ -123,7 +123,7 @@ GLOBAL_LIST_INIT(heavy_pirate_gangs, init_pirate_gangs(is_heavy = TRUE))
 	response_too_late = "Too late to beg for mercy!"
 	response_not_enough = "Trying to cheat us? You'll regret this!"
 
-///Expirienced formed employes of Interdyne Pharmaceutics now in a path of thievery and reckoning
+///Expirienced formed employes of Free Union of Vulken Pharmaceutics now in a path of thievery and reckoning
 /datum/pirate_gang/interdyne
 	name = "Restless Ex-Pharmacists"
 
@@ -143,7 +143,7 @@ GLOBAL_LIST_INIT(heavy_pirate_gangs, init_pirate_gangs(is_heavy = TRUE))
 	response_not_enough = "This is not nearly enough for our operations. I'm afraid we'll have to borrow some."
 	announcement_color = "purple"
 
-///Previous Nanotrasen Assitant workers fired for many reasons now looking for revenge and your bank account.
+///Previous Free Union of Vulken Assitant workers fired for many reasons now looking for revenge and your bank account.
 /datum/pirate_gang/grey
 	name = "The Grey Tide"
 

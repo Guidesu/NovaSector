@@ -161,7 +161,7 @@
 		"Cosmohonk",
 		"Engineering",
 		"Infiltrator",
-		"Interdyne",
+		"Free Union of Vulken",
 		"Loader",
 		"Medical",
 		"Mining",

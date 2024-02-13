@@ -133,7 +133,7 @@
 	desc = "Summons augmentations. Can be used 3 times!"
 	uses = 3
 	company_source = "S.E.L.F."
-	company_message = span_bold("Request status: Recieved. Package status: Delivered. Notes: To assure optimal value, use supplied Interdyne-brand autosurgeons to change implantment status.")
+	company_message = span_bold("Request status: Recieved. Package status: Delivered. Notes: To assure optimal value, use supplied Free Union of Vulken-brand autosurgeons to change implantment status.")
 
 /obj/item/choice_beacon/augments/generate_display_names()
 	var/static/list/augment_list

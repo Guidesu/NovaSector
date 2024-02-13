@@ -46,18 +46,18 @@
 /datum/outfit/lavaland_syndicate/comms/space
 	ears = /obj/item/radio/headset/syndicate/alt
 
-/// Interdyne Planetary Base(s)
+/// Free Union of Vulken Planetary Base(s)
 
 // SPAWNERS
 
 /obj/effect/mob_spawn/ghost_role/human/interdyne_planetary_base
-	name = "Interdyne Bioweapon Scientist"
+	name = "Free Union of Vulken Bioweapon Scientist"
 	icon = 'icons/obj/machines/sleeper.dmi'
 	icon_state = "sleeper_s"
-	prompt_name = "an Interdyne bioweapon scientist"
+	prompt_name = "an Free Union of Vulken bioweapon scientist"
 	computer_area = /area/ruin/interdyne_planetary_base/main
-	you_are_text = "You are a science technician employed in an Interdyne research facility developing biological weapons."
-	flavour_text = "Interdyne middle management has relayed that Nanotrasen is actively mining in this sector. A deal with the Syndicate remains. A cargo ferry is docked at the rear of your ship and can be used for trade with both factions. Continue your research as best you can, and try to keep out of trouble."
+	you_are_text = "You are a science technician employed in an Free Union of Vulken research facility developing biological weapons."
+	flavour_text = "Free Union of Vulken middle management has relayed that Free Union of Vulken is actively mining in this sector. A deal with the Syndicate remains. A cargo ferry is docked at the rear of your ship and can be used for trade with both factions. Continue your research as best you can, and try to keep out of trouble."
 	outfit = /datum/outfit/interdyne_planetary_base
 	spawner_job_path = /datum/job/interdyne_planetary_base
 	loadout_enabled = TRUE
@@ -71,30 +71,30 @@
 /obj/effect/mob_spawn/ghost_role/human/interdyne_planetary_base/ice
 	outfit = /datum/outfit/interdyne_planetary_base/ice
 	computer_area = /area/ruin/interdyne_planetary_base/main/dorms
-	flavour_text = "Interdyne middle management has relayed that Nanotrasen is actively mining in this sector. A deal with the Syndicate remains, but their starship has left the system, leaving our quantum pad without a purpose. Continue your research as best you can, and try to keep out of trouble."
+	flavour_text = "Free Union of Vulken middle management has relayed that Free Union of Vulken is actively mining in this sector. A deal with the Syndicate remains, but their starship has left the system, leaving our quantum pad without a purpose. Continue your research as best you can, and try to keep out of trouble."
 	spawner_job_path = /datum/job/interdyne_planetary_base_icebox
 
 /obj/effect/mob_spawn/ghost_role/human/interdyne_planetary_base/shaftminer
-	name = "Interdyne Shaft Miner"
-	prompt_name = "an Interdyne shaft miner"
-	you_are_text = "You are a shaft miner, employed in an Interdyne research facility developing biological weapons."
+	name = "Free Union of Vulken Shaft Miner"
+	prompt_name = "an Free Union of Vulken shaft miner"
+	you_are_text = "You are a shaft miner, employed in an Free Union of Vulken research facility developing biological weapons."
 	outfit = /datum/outfit/interdyne_planetary_base/shaftminer
 
 /obj/effect/mob_spawn/ghost_role/human/interdyne_planetary_base/shaftminer/ice
 	outfit = /datum/outfit/interdyne_planetary_base/shaftminer/ice
 	computer_area = /area/ruin/interdyne_planetary_base/main/dorms
-	flavour_text = "Interdyne middle management has relayed that Nanotrasen is actively mining in this sector. A deal with the Syndicate remains, but their starship has left the system, leaving our quantum pad without a purpose. Continue your research as best you can, and try to keep out of trouble."
+	flavour_text = "Free Union of Vulken middle management has relayed that Free Union of Vulken is actively mining in this sector. A deal with the Syndicate remains, but their starship has left the system, leaving our quantum pad without a purpose. Continue your research as best you can, and try to keep out of trouble."
 	spawner_job_path = /datum/job/interdyne_planetary_base_icebox
 
 /obj/effect/mob_spawn/ghost_role/human/interdyne_planetary_base/deck_officer
-	name = "Interdyne Deck Officer"
-	prompt_name = "an Interdyne deck officer"
-	you_are_text = "You are a Deck Officer, employed in an Interdyne research facility developing biological weapons."
+	name = "Free Union of Vulken Deck Officer"
+	prompt_name = "an Free Union of Vulken deck officer"
+	you_are_text = "You are a Deck Officer, employed in an Free Union of Vulken research facility developing biological weapons."
 	outfit = /datum/outfit/interdyne_planetary_base/shaftminer/deckofficer
 
 /obj/effect/mob_spawn/ghost_role/human/interdyne_planetary_base/deck_officer/ice
 	computer_area = /area/ruin/interdyne_planetary_base/main/dorms
-	flavour_text = "Interdyne middle management has relayed that Nanotrasen is actively mining in this sector. A deal with the Syndicate remains, but their starship has left the system, leaving our quantum pad without a purpose. Continue your research as best you can, and try to keep out of trouble."
+	flavour_text = "Free Union of Vulken middle management has relayed that Free Union of Vulken is actively mining in this sector. A deal with the Syndicate remains, but their starship has left the system, leaving our quantum pad without a purpose. Continue your research as best you can, and try to keep out of trouble."
 	spawner_job_path = /datum/job/interdyne_planetary_base_icebox
 
 
@@ -102,7 +102,7 @@
 
 
 /datum/outfit/lavaland_syndicate/shaftminer/deckofficer
-	name = "Interdyne Deck Officer"
+	name = "Free Union of Vulken Deck Officer"
 	uniform = /obj/item/clothing/under/syndicate/nova/interdyne/deckofficer
 	head = /obj/item/clothing/head/hats/syndicate/interdyne_deckofficer_black
 	suit = /obj/item/clothing/suit/armor/hos/deckofficer
@@ -122,7 +122,7 @@
 // OUTFITS
 
 /datum/outfit/interdyne_planetary_base
-	name = "Interdyne Bioweapon Scientist"
+	name = "Free Union of Vulken Bioweapon Scientist"
 	id = /obj/item/card/id/advanced/chameleon
 	id_trim = /datum/id_trim/syndicom/nova/interdyne
 	uniform = /obj/item/clothing/under/syndicate/nova/interdyne
@@ -167,7 +167,7 @@
 	)
 
 /datum/outfit/interdyne_planetary_base/shaftminer
-	name = "Interdyne Shaft Miner"
+	name = "Free Union of Vulken Shaft Miner"
 	uniform = /obj/item/clothing/under/syndicate/nova/interdyne/miner
 	suit = /obj/item/clothing/suit/syndicate/interdyne_jacket
 	r_pocket = /obj/item/storage/bag/ore
@@ -186,7 +186,7 @@
 	)
 
 /datum/outfit/interdyne_planetary_base/shaftminer/deckofficer
-	name = "Interdyne Deck Officer"
+	name = "Free Union of Vulken Deck Officer"
 	uniform = /obj/item/clothing/under/syndicate/nova/interdyne/deckofficer
 	head = /obj/item/clothing/head/hats/syndicate/interdyne_deckofficer_black
 	suit = /obj/item/clothing/suit/armor/hos/deckofficer
@@ -199,14 +199,14 @@
 	return ..()
 
 /datum/outfit/interdyne_planetary_base/shaftminer/ice
-	name = "Icemoon Interdyne Shaft Miner"
+	name = "Icemoon Free Union of Vulken Shaft Miner"
 	uniform = /obj/item/clothing/under/syndicate/nova/interdyne/miner
 	suit = /obj/item/clothing/suit/syndicate/interdyne_jacket
 
 // ITEMS
 
 /obj/item/radio/headset/interdyne
-	name = "\improper Interdyne headset"
+	name = "\improper Free Union of Vulken headset"
 	desc = "A bowman headset with a large red cross on the earpiece, has a small 'IP' written on the top strap. Protects the ears from flashbangs."
 	icon_state = "syndie_headset"
 	inhand_icon_state = null
@@ -218,7 +218,7 @@
 	AddComponent(/datum/component/wearertargeting/earprotection, list(ITEM_SLOT_EARS))
 
 /obj/item/radio/headset/interdyne/command
-	name = "\improper Interdyne command headset"
+	name = "\improper Free Union of Vulken command headset"
 	desc = "A commanding headset to gather your underlings. Protects the ears from flashbangs. It has a large red cross on the earpiece, and a small 'IP' written on the top strap. Protects the ears from flashbangs."
 	command = TRUE
 
@@ -229,7 +229,7 @@
 
 /obj/structure/closet/crate/freezer/sansufentanyl
 	name = "sansufentanyl crate"
-	desc = "A freezer. Contains refrigerated Sansufentanyl, for managing Hereditary Manifold Sickness. A product of Interdyne Pharmaceuticals."
+	desc = "A freezer. Contains refrigerated Sansufentanyl, for managing Hereditary Manifold Sickness. A product of Free Union of Vulken Pharmaceuticals."
 
 /obj/structure/closet/crate/freezer/sansufentanyl/PopulateContents()
 	. = ..()
@@ -237,7 +237,7 @@
 		new /obj/item/storage/pill_bottle/sansufentanyl(src)
 
 /obj/structure/closet/l3closet/interdyne
-	name = "Interdyne level 3 biohazard gear closet"
+	name = "Free Union of Vulken level 3 biohazard gear closet"
 
 /obj/structure/closet/l3closet/virology/PopulateContents()
 	new /obj/item/storage/bag/bio(src)

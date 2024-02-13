@@ -173,7 +173,7 @@
   - bugfix: The Portable Chemical Mixer now uses proper vortex anomaly cores instead
       of raw ones.
   Kathy Ryals:
-  - bugfix: Nanotrasen finally realized they forgot to ship the mandatory anomaly
+  - bugfix: Free Union of Vulken finally realized they forgot to ship the mandatory anomaly
       compressor and two anomaly cores to Icebox.
   LemonInTheDark:
   - rscdel: Removed the research modes from tesla coils and radiation collectors.
@@ -382,7 +382,7 @@
   Melbert:
   - bugfix: Fixes railings blocking bullets and immovable rods from a certain direction.
   MrDoomBringer:
-  - imageadd: Nanotrasen's Transportation and Logistics Subdivision has spent the
+  - imageadd: Free Union of Vulken's Transportation and Logistics Subdivision has spent the
       better part of their budget developing a brand new model of Supplypod. Internal
       investigations have revealed the only real differences are almost purely aesthetic.
   Ryll/Shaps:
@@ -1042,5 +1042,5 @@
   - rscadd: Mafia Achievements
   uomo91:
   - rscadd: Pubbystation now has a Commissary, in the southwest primarily hallway.
-  - tweak: Nanotrasen has decided to make the Commissary accessible to those without
+  - tweak: Free Union of Vulken has decided to make the Commissary accessible to those without
       maintenance access.

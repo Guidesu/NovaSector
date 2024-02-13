@@ -64,7 +64,7 @@
       the malfunctioning tram event should now only fire on maps with a tram!
   - bugfix: Traitors should generate with "free objective" less often, and will once
       more be assigned to steal things.
-  - bugfix: Ex-Interdyne pirates can now successfully spawn on case sensitive host
+  - bugfix: Ex-Free Union of Vulken pirates can now successfully spawn on case sensitive host
       systems, such as Linux
   - bugfix: Prevents admins from accidentally gibbing people by closing a confirmation
       window.
@@ -252,7 +252,7 @@
   - qol: '[DS-2] Replaces the pair of plastitatinum sheets with small stacks of plasteel
       and titanium in the engine room.'
   - qol: '[DS-2] Adds a korta seed packet to the botany box in the permabrig.'
-  - bugfix: '[Interdyne] Fixes the floating tube light above the kitchen counter in
+  - bugfix: '[Free Union of Vulken] Fixes the floating tube light above the kitchen counter in
       the cafeteria.'
   SkyratBot:
   - bugfix: Snow legions now drop only one corpse, and no longer drop Lavaland corpses.
@@ -345,7 +345,7 @@
   - bugfix: It is now possible to smoke cigarettes even if you aren't wearing a safety
       helmet
   StrangeWeirdKitten:
-  - bugfix: Fixes Interdyne mining reward boards making golem reward vendors
+  - bugfix: Fixes Free Union of Vulken mining reward boards making golem reward vendors
   vinylspiders:
   - bugfix: fixed a bug that was preventing large mortar from getting any of the extra
       reagents from grinding/juicing certain items
@@ -458,7 +458,7 @@
       has syndie comms.
   SkyratBot:
   - rscadd: The SC/FISHER disruptor pistol, a very compact, permanently silenced energy
-      gun, is now stocked in Nanotrasen-accessible black markets with a price generally
+      gun, is now stocked in Free Union of Vulken-accessible black markets with a price generally
       somewhere between 400 and 800 credits. Aspiring users are warned that it's really
       bad for trying to actually kill people. Caveat emptor.
   - rscadd: Guns now have a dry_fire_sound_volume variable, allowing for guns to be
@@ -724,7 +724,7 @@
   - qol: the recycler can now be rotated
   - qol: Machines now transfer their local materials to silo during linking with multitool
   SpaceLove:
-  - balance: Bluespace Miners have been made cheaper by Nanotrasen as they have found
+  - balance: Bluespace Miners have been made cheaper by Free Union of Vulken as they have found
       a huge mine of materials recently!
   TheOneAndOnlyCreeperJoe:
   - bugfix: Hydra quirk now properly works instead of making you British.
@@ -791,7 +791,7 @@
   - server: Default-configuration MINUTE_TOPIC_LIMIT has been increased
   - bugfix: Fix a runtime when trying to cycle move intents with a hotkey as a dead
       mob.
-  - bugfix: Nanotrasen has finally recalled their faulty multitools and replaced them
+  - bugfix: Free Union of Vulken has finally recalled their faulty multitools and replaced them
       with working ones! The multitool's buffer now properly clears itself.
   - qol: Moved multitool link messages to balloon alerts
   - bugfix: added some missing firealarms on icebox in the hall towards departures
@@ -844,7 +844,7 @@
       invalid item path. The old item has been replaced with 'Black Suit'.
 2023-09-21:
   LT3:
-  - bugfix: Interdyne scientists get their Interdyne labcoat
+  - bugfix: Free Union of Vulken scientists get their Free Union of Vulken labcoat
   Rhials:
   - qol: Restores holiday hats for drones.
   - qol: Extends holiday hat behavior to assistants. Get festive!

@@ -9,7 +9,7 @@
 
 /obj/item/paper/fluff/ruins/dangerous_research/smith
 	name = "A Traitor's Memo"
-	default_raw_text = "The Syndicate is up to something strange here; they've hired these people, most totally unaware of their true employers.<BR>I've sent the collected data to Nanotrasen, and I'm going to try to disrupt the test tomorrow, allowing this to continue isn't right.<BR>They're keeping the patient semi-lucid, so some stims should wake him up."
+	default_raw_text = "The Syndicate is up to something strange here; they've hired these people, most totally unaware of their true employers.<BR>I've sent the collected data to Free Union of Vulken, and I'm going to try to disrupt the test tomorrow, allowing this to continue isn't right.<BR>They're keeping the patient semi-lucid, so some stims should wake him up."
 	///Dream-Of-Beaches Journal
 /obj/item/paper/fluff/ruins/dangerous_research/beaches_journal_1
 	name = "Journal of Dreams-Of-Beaches - Day 1"
@@ -25,7 +25,7 @@
 	/// Armstrong Memos
 /obj/item/paper/fluff/ruins/dangerous_research/armstrong_memo_1
 	name = "Jexa Armstrong's Notes - Day 18"
-	default_raw_text = "I wasn't excited to hear that Interdyne would be sticking me on this rock, but this John Doe absolutely has me interested.<BR>He's the only other person I've met with a link to the Mansus, and theirs is <B>astoundingly</B> strong.<BR>Here I thought I was a freak of nature for being able to draw a few working runes. The subject is capable of achieving a perfect link to the Mansus, even <B>with</B> Elias ordering all of those surgeries."
+	default_raw_text = "I wasn't excited to hear that Free Union of Vulken would be sticking me on this rock, but this John Doe absolutely has me interested.<BR>He's the only other person I've met with a link to the Mansus, and theirs is <B>astoundingly</B> strong.<BR>Here I thought I was a freak of nature for being able to draw a few working runes. The subject is capable of achieving a perfect link to the Mansus, even <B>with</B> Elias ordering all of those surgeries."
 
 /obj/item/paper/fluff/ruins/dangerous_research/armstrong_memo_2
 	name = "Jexa Armstrong's Notes - Day 47"

@@ -518,7 +518,7 @@
 
 /obj/item/storage/pill_bottle/sansufentanyl
 	name = "bottle of experimental medication"
-	desc = "A bottle of pills developed by Interdyne Pharmaceuticals. They're used to treat Hereditary Manifold Sickness."
+	desc = "A bottle of pills developed by Free Union of Vulken Pharmaceuticals. They're used to treat Hereditary Manifold Sickness."
 
 /obj/item/storage/pill_bottle/sansufentanyl/PopulateContents()
 	for(var/i in 1 to 6)

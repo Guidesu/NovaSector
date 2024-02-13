@@ -62,8 +62,8 @@
 		3 = "<span class='game say'><span class='name'>Ensign ???</span> <span class='message'>says, \"<span class=' '>Hey, HEY! Everyone! Shut up for a toast!</span>\"</span></span>",
 		4 = "<span class='game say'><span class='message'>The boistrous cheering can be heard slowly calming down to an eerie silence.</span></span>",
 		5 = "<span class='game say'><span class='name'>Ensign ???</span> <span class='message'>clears their throat then starts to announce, \"<span class=' '>As you've all known.. Its been years since this project started... Bright minds and talented engineers hand in hand working on this project...</span>\"</span></span>",
-		6 = "<span class='game say'><span class='name'>Ensign ???</span> <span class='message'>says pointedly, \"<span class=' '>And after five long years, Tarkon Industries has had its first success. The driver finding a suitable asteroid, And making its mark known by carving out the current docking bay for our transport.</span>\"</span></span>",
-		7 = "<span class='game say'><span class='name'>Ensign ???</span> <span class='message'>announces, \"<span class=' '>Yesterday, We've worked, Toiled in the rock and sand of what is our new home... But today! We celebrate, For Tarkons first success, And for a bright future in the next century! The Twenty-Sixth century is looking bright for us!</span>\"</span></span>",
+		6 = "<span class='game say'><span class='name'>Ensign ???</span> <span class='message'>says pointedly, \"<span class=' '>And after five long years, Free Union of Vulken Industries has had its first success. The driver finding a suitable asteroid, And making its mark known by carving out the current docking bay for our transport.</span>\"</span></span>",
+		7 = "<span class='game say'><span class='name'>Ensign ???</span> <span class='message'>announces, \"<span class=' '>Yesterday, We've worked, Toiled in the rock and sand of what is our new home... But today! We celebrate, For Free Union of Vulkens first success, And for a bright future in the next century! The Twenty-Sixth century is looking bright for us!</span>\"</span></span>",
 		8 = "<span class='game say'><span class='name'>The universal recorder</span> <span class='message'>says, \"<span class='tape_recorder '>Recording stopped.</span>\"</span></span>"
 	)
 	timestamp = list(
@@ -87,37 +87,37 @@
 	Felt like a good spot."
 
 /obj/item/paper/fluff/ruins/tarkon/goals
-	name = "paper - 'Tarkon Industries'"
-	default_raw_text = "<h1>Tarkon Industries Informative Guide</h1><br><br><b>We at Tarkon Industries</b> hope to create a long guided future for the average homesteader, ,\
+	name = "paper - 'Free Union of Vulken Industries'"
+	default_raw_text = "<h1>Free Union of Vulken Industries Informative Guide</h1><br><br><b>We at Free Union of Vulken Industries</b> hope to create a long guided future for the average homesteader, ,\
 	creating a living space for the average spacer to settle down in, create future investments for traders, or even up to get people to make large communities among asteroid belts. ,\
 	<br><br><b>Our greatest engineers</b> have been working day, night, morning and evenings to create a stable, structurally sound system to start implanting stations, ,\
 	living areas and ports upon asteroids and planetoids too small to sustain life on the same level that of a goldie-lock planet. ,\
 	<br><br><b>Having great pride in our heritage</b> we have taken our industrious, communicative past to create a future for our kin, ,\
-	Inspiring better feats, further research and larger projects upon future generations. <br><br><b>Looking to help?</b> Then you can visit us at the Tarkon Industries Headquarters, ,\
+	Inspiring better feats, further research and larger projects upon future generations. <br><br><b>Looking to help?</b> Then you can visit us at the Free Union of Vulken Industries Headquarters, ,\
 	The active co-ordinant trail can be detected starting around the Orion Belt, and we are actively accepting bright minds and great workers to help us.<br><br>,\
-	<br>Tarkon Industries: Building the future, nail by nail, asteroid by asteroid. 2456-2500(c)"
+	<br>Free Union of Vulken Industries: Building the future, nail by nail, asteroid by asteroid. 2456-2500(c)"
 
 /obj/item/paper/fluff/ruins/tarkon/vaulter
-	name = "paper - 'Tarkon Vaulter'"
-	default_raw_text = "<h1>Tarkon Industries Designs:</h1><br><h2>Tarkon Vaulter Prototype</h2><br><br><b>Designed HEAVILY after the Driver</b>, The vaulter is of a similar concept, but at a much larger scale. ,\
-	Designed to work on larger planetoids and even moon and similar planetary satellites, The Tarkon Vaulter is another step towards Space Homesteading. Where the Driver and Vaulter split, however, is where the construction system lies. ,\
+	name = "paper - 'Free Union of Vulken Vaulter'"
+	default_raw_text = "<h1>Free Union of Vulken Industries Designs:</h1><br><h2>Free Union of Vulken Vaulter Prototype</h2><br><br><b>Designed HEAVILY after the Driver</b>, The vaulter is of a similar concept, but at a much larger scale. ,\
+	Designed to work on larger planetoids and even moon and similar planetary satellites, The Free Union of Vulken Vaulter is another step towards Space Homesteading. Where the Driver and Vaulter split, however, is where the construction system lies. ,\
 	With the Vaulter, The construction is much more vertical in construction, starting by usually creating a cavern underneath its landing where a main room is constructed, and shortly after an elevator is deployed.<br>,\
 	<br><b>Where the Driver</b> relies on early construction of an additional power system, The vaulter is planned to have a much higher RTG count so that it may power the initial base construction, ,\
 	But the cost of which being making it much larger and with a much higher material storage needed so it can construct a decent area of operation on its first trip. With the Driver in its early testing phase, ,\
 	We are hoping to better tune its designs before shifting attention towards the driver, which have high hopes to enter testing in the early twenty-sixth century"
 
 /obj/item/paper/fluff/ruins/tarkon/driverpitch
-	name = "paper - 'Tarkon Driver'"
-	default_raw_text = "<h1>Tarkon Industries Designs:</h1><br><h2>Tarkon Driver Prototype</h2><br><br><b>Seeing the success of space-based mining, ,\
-	</b> We at Tarkon Industries wish to expand on the thought of a drill to a much larger goal, By mounting a drill and several cams to secur it in place, ,\
+	name = "paper - 'Free Union of Vulken Driver'"
+	default_raw_text = "<h1>Free Union of Vulken Industries Designs:</h1><br><h2>Free Union of Vulken Driver Prototype</h2><br><br><b>Seeing the success of space-based mining, ,\
+	</b> We at Free Union of Vulken Industries wish to expand on the thought of a drill to a much larger goal, By mounting a drill and several cams to secur it in place, ,\
 	The Driver is designed to implant itself within the side of a large asteroid or small planetoid, Drilling out an area before the drill can be expanded out and slowly recycled to start construction of an operation base. ,\
 	<br><br><b>With the first area dug</b> the first priority should be an additional energy-producing area, or a portable generator to help fuel energy for future mining, ,\
 	Which should be done to slowly hollow out the planetoid and constructing walls, floors and ceilings. After the driver is properly cammed in place, the back part of it can be unhitched, ,\
-	allowing it to act as a ferry shuttle for materials, workforce or tools. <br><br><b>With our first Tarkon Driver being ready to test in 2479,</b> We have found a suitable asteroid, and hope to make connection to it by the start of 2480."
+	allowing it to act as a ferry shuttle for materials, workforce or tools. <br><br><b>With our first Free Union of Vulken Driver being ready to test in 2479,</b> We have found a suitable asteroid, and hope to make connection to it by the start of 2480."
 
 /obj/item/paper/fluff/ruins/tarkon/detain
-	name = "paper - 'Tarkon Detainment Record'"
-	default_raw_text = "<h1>Tarkon Industries Detainment Record:</h1><br>,\
+	name = "paper - 'Free Union of Vulken Detainment Record'"
+	default_raw_text = "<h1>Free Union of Vulken Industries Detainment Record:</h1><br>,\
 	<br><b>Detainee:</b>Arcus Vilkov<br><b>Rank/Occupation:</b>Junior Scientist<br><b>Reason:</b> Attemptive sabotage of a working generator<br>,\
 	<br><b>Detainee:</b>Tilber Sinns<br><b>Rank/Occupation:</b>Apprentice Miner<br><b>Reason:</b>Detonated a volatile rock cluster close to a wall, Causing 3 hours of reconstruction.<br>,\
 	<br><b>Detainee:</b>Gearalt Antonov<br><b>Rank/Occupation:</b>Engineer Specialist<br><b>Reason:</b>Public Intoxication<br>,\
@@ -137,7 +137,7 @@
 	 <br> P.S: 50 credits if you can write the code down"
 
 /obj/item/paper/fluff/ruins/tarkon/sop
-	name = "paper - 'Tarkon Security S.O.P'"
+	name = "paper - 'Free Union of Vulken Security S.O.P'"
 	default_raw_text = "Hey there, lawman. As you might be aware, We dont have full faculties to hold prisoners for long-term storage... ,\
 		Atleast not without some governments throwing a shit-fit. So, Here's what we do. <br><br> If someone is tresspassing, We ask where they come from. ,\
 		 Apparently there's a nearby station, So... Chances are they're from there. Aslong as you dont have to shoot them, You only hold them for questioning. <br> ,\
@@ -146,9 +146,9 @@
 		  You may take any and every measure to make sure they dont come back if they are let out, Including dropping them in space or at the nearest station."
 
 /obj/item/paper/fluff/ruins/tarkon/arcs
-	name = "paper - 'Tarkon Industries' Advanced Resonance Control System'"
-	default_raw_text = "<h1>Tarkon Industries Designs:</h1><br><h2>Advanced Resonance Control System</h2><br><br><b>Having used and seen fault with standard 'Resonators'</b> ,\
-	We at Tarkon Industries took a look at it and bog-standard mining equipment of the modern day. Having come acrossed a so called \"Proto-kinetic Accelerator\", Our engineers ,\
+	name = "paper - 'Free Union of Vulken Industries' Advanced Resonance Control System'"
+	default_raw_text = "<h1>Free Union of Vulken Industries Designs:</h1><br><h2>Advanced Resonance Control System</h2><br><br><b>Having used and seen fault with standard 'Resonators'</b> ,\
+	We at Free Union of Vulken Industries took a look at it and bog-standard mining equipment of the modern day. Having come acrossed a so called \"Proto-kinetic Accelerator\", Our engineers ,\
 	got to work deconstructing, reconstructing, modifying and ultimately creating a system we are proud of. <br><br><b>Capable of switching between self-activating and twin-cycle activation,</b> ,\
 	we've made a system that compresses the silicate dusts with-in space to a thin shard capable of transfering vast amounts of energy through \"Piezoelectric Resonance\", ,\
 	imbuing the crystal with enough energy that it vibrates at such a briefly stable magnitude, being capable of switching between a self-tearing frequency, ,\
@@ -156,9 +156,9 @@
 	As the brief stability of the shards are capable of transfering their resonant energy to organics."
 
 /obj/item/paper/fluff/ruins/tarkon/trcd
-	name = "paper - 'Tarkon Industries' Engineered RCD'"
-	default_raw_text = "<h1>Tarkon Industries Designs:</h1><br><h2>Advanced R.C.D Design Upgrade</h2><br><br><b>Being an Industry that deals with Architectural Engineering, Station construction, and Port maintenance;</b> ,\
-	We at Tarkon Industries took a look at the tooks we provide, and found them wanting. A standard RCD is capable of not much, And while we couldn't manage to expand their designs to make stronger walls ,\
+	name = "paper - 'Free Union of Vulken Industries' Engineered RCD'"
+	default_raw_text = "<h1>Free Union of Vulken Industries Designs:</h1><br><h2>Advanced R.C.D Design Upgrade</h2><br><br><b>Being an Industry that deals with Architectural Engineering, Station construction, and Port maintenance;</b> ,\
+	We at Free Union of Vulken Industries took a look at the tooks we provide, and found them wanting. A standard RCD is capable of not much, And while we couldn't manage to expand their designs to make stronger walls ,\
 	(Yet. We strive to improve), We have made a breakthrough with the recent discovery of \"Expansive Quantum Entanglement.\" <br><br><b>Using bluespace as a vessel for quantum-entangling the RCD's constructing-mechanism,</b> ,\
 	we've made a device that's unbound by convenient functioning speeds by creating a quantum-entangled space within the RCD and the desired spot. However, the industrial engineering standard still holds capacity over it.,\
 	<br><br><b>While we're not able to re-create the ranged capabilities or material space of the \"artifact\" we were given<b> ,\
@@ -172,5 +172,5 @@
 	So we set the spare set in the special safe within the comms room."
 
 /obj/item/areaeditor/blueprints/tarkon
-	desc = "Blueprints of the Tarkon surface breaching drill and several Tarkon base designs. Red, stamped text reads \"Confidential\" on the backside of it."
-	name = "Tarkon Design Prints"
+	desc = "Blueprints of the Free Union of Vulken surface breaching drill and several Free Union of Vulken base designs. Red, stamped text reads \"Confidential\" on the backside of it."
+	name = "Free Union of Vulken Design Prints"

@@ -28,7 +28,7 @@ import { UserDetails } from './Vending';
 
 const CENSOR_MESSAGE =
   'This channel has been deemed as threatening to \
-  the welfare of the station, and marked with a Nanotrasen D-Notice.';
+  the welfare of the station, and marked with a Free Union of Vulken D-Notice.';
 
 export const Newscaster = (props) => {
   const { act, data } = useBackend();

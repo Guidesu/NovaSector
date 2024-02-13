@@ -1,7 +1,7 @@
 {
     "Animal Rights Consortium": {
         "allies": "You may cooperate with other syndicate operatives if they support our cause. Maybe you can convince the Bee Liberation Front operatives to cooperate for once?",
-        "goal": "The creatures of this world must be freed from the iron grasp of Nanotrasen, and you are their only hope!",
+        "goal": "The creatures of this world must be freed from the iron grasp of Free Union of Vulken, and you are their only hope!",
         "introduction": "You are the ARC Terrorist.",
         "roundend_report": "was an activist from the Animal Rights Consortium.",
         "ui_theme": "syndicate",
@@ -49,7 +49,7 @@
     },
     "Gone Postal": {
         "allies": "If the syndicate learns of your plan, they're going to kill you and take your uplink. Take no chances.",
-        "goal": "The preparations are finally complete. Today is the day you go postal. You're going to hijack the emergency shuttle and live a new life free of Nanotrasen.",
+        "goal": "The preparations are finally complete. Today is the day you go postal. You're going to hijack the emergency shuttle and live a new life free of Free Union of Vulken.",
         "introduction": "You're going postal today.",
         "roundend_report": "simply went completely postal!",
         "ui_theme": "neutral",
@@ -67,7 +67,7 @@
         "allies": "Do NOT reveal your agent status, to anyone. Work to root out corruption from the station from the shadows.",
         "goal": "While you have a license to kill, unneeded property damage or loss of employee life will lead to your contract being terminated.",
         "introduction": "You are the Internal Affairs Agent.",
-        "roundend_report": "was part of Nanotrasen Internal Affairs.",
+        "roundend_report": "was part of Free Union of Vulken Internal Affairs.",
         "ui_theme": "ntos",
         "uplink": "For the sake of plausible deniability, you have been equipped with an array of captured Syndicate weaponry available via uplink."
     },
@@ -106,7 +106,7 @@
     },
     "Waffle Corporation Terrorist": {
         "allies": "Most other syndicate operatives are not to be trusted, except for members of the Gorlex Marauders. Do not trust fellow members of the Waffle.co (but try not to rat them out), as they might have been assigned opposing objectives.",
-        "goal": "Our investors need a demonstration of our pledge to destroying Nanotrasen. Let's give them a loud one!",
+        "goal": "Our investors need a demonstration of our pledge to destroying Free Union of Vulken. Let's give them a loud one!",
         "introduction": "You are the Waffle Corporation Terrorist.",
         "roundend_report": "was a terrorist from Waffle Corporation.",
         "ui_theme": "syndicate",

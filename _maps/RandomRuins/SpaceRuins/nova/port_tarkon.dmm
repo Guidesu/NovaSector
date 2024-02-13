@@ -3372,7 +3372,7 @@
 	dir = 4;
 	dwidth = 6;
 	height = 16;
-	name = "Port Tarkon";
+	name = "Port Free Union of Vulken";
 	roundstart_template = /datum/map_template/shuttle/ruin/tarkon_driver;
 	shuttle_id = "port_tarkon";
 	width = 14
@@ -3568,7 +3568,7 @@
 	dir = 4
 	},
 /obj/item/gps/computer/space{
-	gpstag = "Port Tarkon"
+	gpstag = "Port Free Union of Vulken"
 	},
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/port_tarkon/mining)

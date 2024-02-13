@@ -58,7 +58,7 @@
   Floyd / Qustinnus:
   - bugfix: Liver damage is now healed when fully_heal is called on carbon mobs
   MrDoomBringer:
-  - rscadd: Nanotrasen's ID cards are once again clearly readable from a distance,
+  - rscadd: Free Union of Vulken's ID cards are once again clearly readable from a distance,
       meaning employees can  show their ID's to eachother again. The Director of ID-Card
       technology promises that the temporary unreadability of said cards was not an
       oversight, and was in fact an intended, yet undocumented feature. promise. Alt+Clicking
@@ -84,7 +84,7 @@
   - tweak: Light bulbs now shatter and hurt people when stepped on.
   - tweak: Light bulbs that have been sabotaged with plasma will spill it when they
       shatter.
-  - tweak: Nanotrasen has started shipping more types of bedsheets to its stations.
+  - tweak: Free Union of Vulken has started shipping more types of bedsheets to its stations.
   Floyd / Qustinnus:
   - bugfix: Fixes vehicle bug which caused you to keep special actions when you were
       forcemoved out of them through weird means (Admin intervention, special items)
@@ -293,7 +293,7 @@
   - bugfix: Fixed urinal cakes being inedible
 2018-10-16:
   ShizCalev:
-  - bugfix: Due to a recent policy review by Nanotrasen Central Command, we have determined
+  - bugfix: Due to a recent policy review by Free Union of Vulken Central Command, we have determined
       that personnel who have committed suicide are too great of a risk to be borged,
       and are making half of the Robotics staff's job redundant (we pay them good
       money to do that!) As such, suicide is now considered a PERMANENT decision.
@@ -614,7 +614,7 @@
       technology!
 2018-10-28:
   Buggy:
-  - rscadd: Nanotrasen has added the Overlord lawset to their AI law database. Nonetheless,
+  - rscadd: Free Union of Vulken has added the Overlord lawset to their AI law database. Nonetheless,
       they strongly advise against using it under any circumstances, and insist that
       it is intended for research purposes only.
   Ikacid:

@@ -132,7 +132,7 @@
   - rscadd: Hairbrushes - now you can brush people's hair for a small mood boost.
   unit0016:
   - rscadd: NSS Journey now has a drone bay.
-  - bugfix: The catwalks are no longer non-existent on DS-2 and Interdyne.
+  - bugfix: The catwalks are no longer non-existent on DS-2 and Free Union of Vulken.
 2021-07-05:
   Nari Harimoto:
   - bugfix: the autolathe shockwire is properly defined again, autolathes may now
@@ -167,8 +167,8 @@
   Gandalf2k15:
   - bugfix: Beepsky no longer hardstuns.
   GoldenAlpharex:
-  - imageadd: A fresh coat of paint was applied to the Nanotrasen Representative's
-      closet on behalf of the Nanotrasen Branding Committee. Rejoice!
+  - imageadd: A fresh coat of paint was applied to the Free Union of Vulken Representative's
+      closet on behalf of the Free Union of Vulken Branding Committee. Rejoice!
   Melbert:
   - bugfix: Changelings birthed from headslugs that weren't already changelings (for
       example, from the icebox mutation pool) are no longer full changeling antagonists,
@@ -247,7 +247,7 @@
       materials, light replacer/RLD and bulbs, engi skillchips, toolbelts.'
   - rscadd: Replaced maint garden area with an old sauna, complete with blood, dust,
       and grime, broken lights for extra flair.
-  - rscadd: Interdyne comms keys to the Admiral and corporate liaison lockers.
+  - rscadd: Free Union of Vulken comms keys to the Admiral and corporate liaison lockers.
   - rscadd: Replaced the syndicate tome in the safe with a CQC manual.
   - rscadd: Another door to the quantum pad room that leads out into the science hall,
       both doors made unusable by AI.
@@ -288,7 +288,7 @@
   - refactor: refactor almost all of the rust heretic atom procs
   - rscadd: Wirebrush for advanced rust removal
   - bugfix: fix issue with the thermomachine rotation when pulled/pushed
-  - balance: Nanotrasen has released experimental new laser lenses for laser rifles,
+  - balance: Free Union of Vulken has released experimental new laser lenses for laser rifles,
       energy guns, and illegal hellfire modkits, increasing the number of shots they
       can fire from full charge by roughly 20%.
   - rscadd: Added a name to clown.txt
@@ -553,8 +553,8 @@
   - bugfix: Fixed HTML encoding of automatic evac news alerts emergency_reason.
   - rscdel: deletes a door from deltastation mining shuttle
   Wallem:
-  - rscadd: Due to a leak in Nanotrasen Brand Ant Farms during shipping, a large influx
-      of space-ants have been inadvertently dumped onto every Nanotrasen station.
+  - rscadd: Due to a leak in Free Union of Vulken Brand Ant Farms during shipping, a large influx
+      of space-ants have been inadvertently dumped onto every Free Union of Vulken station.
       Don't go leaving food around too long, and please be sure to watch your step,
       we're pretty sure they bite...
   - imageadd: New giant ant sprite by Doshmobile
@@ -672,7 +672,7 @@
   - balance: Long-term terraforming projects have proven partially successful, as
       miners no longer report the cold rocks of LV-669 as airless voids! Safety regulations
       have dropped to allow for low-pressure suits instead of full EVA gear.
-  - rscadd: With this new information, Nanotrasen has officially re-vamped their efforts
+  - rscadd: With this new information, Free Union of Vulken has officially re-vamped their efforts
       to mine the plentiful ores, re-locating their mining station to what was once
       a populated area of the planet. Aside from the newly modeled station, expect
       to find some old run-down ruins.
@@ -773,7 +773,7 @@
   - bugfix: fixed some oddities with the wheelchair wheels overlay.
   - rscadd: Gas masks now properly filter gases when a filter is applied (can be made
       roundstart from any lathe and every gas mask starts with one in them)
-  - bugfix: A CABAL of syndicate hackers broke Nanotrasen protections, allowing malfunctions
+  - bugfix: A CABAL of syndicate hackers broke Free Union of Vulken protections, allowing malfunctions
       in AI to finally happen again
   - bugfix: fixed hfr crate having the wrong parts
   - bugfix: lavaland syndie base and seed vault no longer explode into green tiles
@@ -813,12 +813,12 @@
   - rscadd: Added weak curator katana
   - rscadd: Added ronin kit to curator's heroic beacon
   FlamingLily:
-  - rscdel: Nanotrasen Nanomachine programmers have been fired.
+  - rscdel: Free Union of Vulken Nanomachine programmers have been fired.
   ForrestWick:
   - rscadd: 'gives black market dealer some more items and ingredients qol: allows
       black market dealer to have a bag and holofan roundstart'
   GoldenAlpharex, with some help of Imaginos (PositiveEntropy):
-  - imageadd: 'Added a new badge to display on future berets. expansion: Nanotrasen''s
+  - imageadd: 'Added a new badge to display on future berets. expansion: Free Union of Vulken''s
       fashion department decided to release a brand new series of berets, meant to
       replace the old collection and featuring a wider array of possibilities!'
   - refactor: Berets are now converted to GAGS, with more options for customization
@@ -919,7 +919,7 @@
   timothymtorres, SomeoneYouProbablyKnow:
   - imageadd: Added referee costume
   unit0016:
-  - bugfix: Interdyne having half a base most rounds, and also the FREE ROUNDSTART
+  - bugfix: Free Union of Vulken having half a base most rounds, and also the FREE ROUNDSTART
       (BASE /TG/) SECURITY EQUIPMENT ON ROCKPLANET.
   - rscdel: Cybersun has been disabled.
 2021-07-30:
@@ -947,13 +947,13 @@
   - balance: Medigun Crates now cost 2x more.
   - bugfix: Charge rate is closer to what I intended.
   unit0016:
-  - bugfix: Interdyne and DS-2 no longer have empty alcoves where nanites used to
+  - bugfix: Free Union of Vulken and DS-2 no longer have empty alcoves where nanites used to
       be.
 2021-07-31:
   GoldenAlpharex:
-  - imageadd: More badges have made their way in Nanotrasen's Beret Production Line,
+  - imageadd: More badges have made their way in Free Union of Vulken's Beret Production Line,
       resulting in a wider variety of berets being possible!
-  - refactor: Nanotrasen's Fashion Division went through another thorough revision
+  - refactor: Free Union of Vulken's Fashion Division went through another thorough revision
       of its beret selection, improving its consistency and its looks in its brand
       new "Beret-lliant" collection!
   SkyratBot:

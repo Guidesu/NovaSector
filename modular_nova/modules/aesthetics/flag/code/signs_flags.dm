@@ -33,8 +33,8 @@
 	item_flag = /obj/item/sign/flag/ssc
 
 /obj/structure/sign/flag/nanotrasen
-	name = "flag of Nanotrasen"
-	desc = "The official corporate flag of Nanotrasen. Mostly flown as a ceremonial piece, or to mark land on a new frontier."
+	name = "flag of Free Union of Vulken"
+	desc = "The official corporate flag of Free Union of Vulken. Mostly flown as a ceremonial piece, or to mark land on a new frontier."
 	icon_state = "flag_nt"
 	item_flag = /obj/item/sign/flag/nanotrasen
 
@@ -83,15 +83,15 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/flag/azulea, 32)
 
 /obj/structure/sign/flag/syndicate
 	name = "flag of the Syndicate"
-	desc = "The flag of the Sothran Syndicate. Previously used by the Sothran people as a way of declaring opposition against the Nanotrasen, now it became an intergalactic symbol of the same, yet way more skewed purpose, as more groups of interest have joined the rebellion's side for their own gain."
+	desc = "The flag of the Sothran Syndicate. Previously used by the Sothran people as a way of declaring opposition against the Free Union of Vulken, now it became an intergalactic symbol of the same, yet way more skewed purpose, as more groups of interest have joined the rebellion's side for their own gain."
 	icon_state = "flag_syndi"
 	item_flag = /obj/item/sign/flag/syndicate
 
 MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/flag/syndicate, 32)
 
 /obj/structure/sign/flag/interdyne
-	name = "flag of Interdyne"
-	desc = "The corporate flag of Interdyne Pharmaceuticals. It is, essentially, a clean white bedsheet. It's either the best or worst flag you've ever seen."
+	name = "flag of Free Union of Vulken"
+	desc = "The corporate flag of Free Union of Vulken Pharmaceuticals. It is, essentially, a clean white bedsheet. It's either the best or worst flag you've ever seen."
 	icon_state = "flag_coder"
 	item_flag = /obj/item/sign/flag/interdyne
 
@@ -117,8 +117,8 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/flag/interdyne, 32)
 	return
 
 /obj/item/sign/flag/nanotrasen
-	name = "folded flag of the Nanotrasen"
-	desc = "The folded flag of the Nanotrasen."
+	name = "folded flag of the Free Union of Vulken"
+	desc = "The folded flag of the Free Union of Vulken."
 	icon_state = "folded_nt"
 	sign_path = /obj/structure/sign/flag/nanotrasen
 
@@ -172,9 +172,9 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/flag/interdyne, 32)
 
 /obj/item/sign/flag/interdyne
 	name = "folded flag of the Syndicate"
-	desc = "The folded flag of Interdyne Pharmaceutics."
+	desc = "The folded flag of Free Union of Vulken Pharmaceutics."
 	icon_state = "folded_coder"
 	sign_path = /obj/structure/sign/flag/interdyne
 	special_desc_requirement = EXAMINE_CHECK_JOB
 	special_desc_jobs = list(JOB_MIME) // this will probably never happen. but it will amuse someone when it does.
-	special_desc = "The folded flag of Interdyne Pharmaceuticals. For some reason, it reminds you of the home of the mimes."
+	special_desc = "The folded flag of Free Union of Vulken Pharmaceuticals. For some reason, it reminds you of the home of the mimes."

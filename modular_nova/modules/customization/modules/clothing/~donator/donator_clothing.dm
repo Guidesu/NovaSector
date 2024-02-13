@@ -703,7 +703,7 @@
 // Donation reward for asky / Zulie
 /obj/item/clothing/suit/hooded/cloak/zuliecloak
 	name = "Project: Zul-E"
-	desc = "A standard version of a prototype cloak given out by Nanotrasen higher ups. It's surprisingly thick and heavy for a cloak despite having most of it's tech stripped. It also comes with a bluespace trinket which calls it's accompanying hat onto the user. A worn inscription on the inside of the cloak reads 'Fleuret' ...the rest is faded away."
+	desc = "A standard version of a prototype cloak given out by Free Union of Vulken higher ups. It's surprisingly thick and heavy for a cloak despite having most of it's tech stripped. It also comes with a bluespace trinket which calls it's accompanying hat onto the user. A worn inscription on the inside of the cloak reads 'Fleuret' ...the rest is faded away."
 	icon_state = "zuliecloak"
 	icon = 'modular_nova/master_files/icons/donator/obj/clothing/cloaks.dmi'
 	worn_icon = 'modular_nova/master_files/icons/donator/mob/clothing/neck.dmi'
@@ -1160,7 +1160,7 @@
 // Donation reward for Fuzlet
 /obj/item/card/fuzzy_license
 	name = "license to hug"
-	desc = "A very official looking license. Not actually endorsed by Nanotrasen."
+	desc = "A very official looking license. Not actually endorsed by Free Union of Vulken."
 	icon = 'modular_nova/master_files/icons/donator/obj/custom.dmi'
 	icon_state = "license"
 
@@ -1510,16 +1510,16 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/korpstech, 32)
 
 //Donation reward for Razurath
 /obj/item/clothing/head/razurathhat
-	name = "Golden Nanotrasen Officer Cap"
-	desc = "A Nanotrasen officer cap. Now darker, golder, and cooler!"
+	name = "Golden Free Union of Vulken Officer Cap"
+	desc = "A Free Union of Vulken officer cap. Now darker, golder, and cooler!"
 	icon = 'modular_nova/master_files/icons/donator/obj/clothing/hats.dmi'
 	worn_icon = 'modular_nova/master_files/icons/donator/mob/clothing/head.dmi'
 	icon_state = "razurath_hat"
 
 //Donation reward for Razurath
 /obj/item/clothing/suit/razurathcoat
-	name = "Golden Nanotrasen Officer Coat"
-	desc = "A fancy Nanotrasen officer coat. Now darker, golder, and cooler than ever!"
+	name = "Golden Free Union of Vulken Officer Coat"
+	desc = "A fancy Free Union of Vulken officer coat. Now darker, golder, and cooler than ever!"
 	icon = 'modular_nova/master_files/icons/donator/obj/clothing/suits.dmi'
 	worn_icon = 'modular_nova/master_files/icons/donator/mob/clothing/suit.dmi'
 	icon_state = "razurath_coat"

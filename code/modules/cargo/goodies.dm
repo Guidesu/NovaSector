@@ -6,7 +6,7 @@
 	discountable = SUPPLY_PACK_STD_DISCOUNTABLE
 
 /datum/supply_pack/goody/clear_pda
-	name = "Mint Condition Nanotrasen Clear PDA"
+	name = "Mint Condition Free Union of Vulken Clear PDA"
 	desc = "Mint condition, freshly repackaged! A valuable collector's item normally valued at over 2.5 million credits, now available for a steal!"
 	cost = 100000
 	contains = list(/obj/item/modular_computer/pda/clear)
@@ -48,7 +48,7 @@
 
 /datum/supply_pack/goody/Survivalknives_single
 	name = "Survival Knife Single-Pack"
-	desc = "Contains one sharpened survival knive. Guaranteed to fit snugly inside any Nanotrasen-standard boot."
+	desc = "Contains one sharpened survival knive. Guaranteed to fit snugly inside any Free Union of Vulken-standard boot."
 	cost = PAYCHECK_COMMAND * 1.75
 	contains = list(/obj/item/knife/combat/survival)
 
@@ -61,7 +61,7 @@
 
 /datum/supply_pack/goody/disabler_single
 	name = "Disabler Single-Pack"
-	desc = "Contains one disabler, the nonlethal workhorse of Nanotrasen security everywehere. Comes in a energy holster, just in case you happen to have an extra disabler."
+	desc = "Contains one disabler, the nonlethal workhorse of Free Union of Vulken security everywehere. Comes in a energy holster, just in case you happen to have an extra disabler."
 	cost = PAYCHECK_COMMAND * 3
 	access_view = ACCESS_WEAPONS
 	contains = list(/obj/item/storage/belt/holster/energy/disabler)
@@ -75,7 +75,7 @@
 
 /datum/supply_pack/goody/laser_single
 	name = "Laser Gun Single-Pack"
-	desc = "Contains one laser gun, the lethal workhorse of Nanotrasen security everywehere."
+	desc = "Contains one laser gun, the lethal workhorse of Free Union of Vulken security everywehere."
 	cost = PAYCHECK_COMMAND * 6
 	access_view = ACCESS_WEAPONS
 	contains = list(/obj/item/gun/energy/laser)
@@ -274,7 +274,7 @@
 	contains = list(/obj/item/reagent_containers/cup/glass/mug)
 
 /datum/supply_pack/goody/nt_mug
-	name = "Nanotrasen Coffee Mug"
+	name = "Free Union of Vulken Coffee Mug"
 	desc = "A blue mug bearing the logo of your corporate masters. Usually given out at inductions or events, we'll send one out special for a nominal fee."
 	cost = PAYCHECK_LOWER
 	contains = list(/obj/item/reagent_containers/cup/glass/mug/nanotrasen)

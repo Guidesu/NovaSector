@@ -13,16 +13,16 @@
 	assignment = "Syndicate Operative"
 	access = list(ACCESS_SYNDICATE, ACCESS_ROBOTICS)
 
-/// Interdyne medical Staff
+/// Free Union of Vulken medical Staff
 /datum/id_trim/syndicom/Interdyne/pharmacist
-	assignment = "Interdyne Pharmacist"
+	assignment = "Free Union of Vulken Pharmacist"
 	trim_state = "trim_medicaldoctor"
 	sechud_icon_state = SECHUD_SYNDICATE_INTERDYNE
 	access = list(ACCESS_SYNDICATE, ACCESS_ROBOTICS, ACCESS_SURGERY)
 
-/// Interdyne head medical Staff
+/// Free Union of Vulken head medical Staff
 /datum/id_trim/syndicom/Interdyne/pharmacist_director
-	assignment = "Interdyne Pharmacist Director"
+	assignment = "Free Union of Vulken Pharmacist Director"
 	trim_state = "trim_medicaldoctor"
 	department_color = COLOR_SYNDIE_RED_HEAD
 	subdepartment_color = COLOR_SYNDIE_RED_HEAD

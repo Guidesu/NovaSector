@@ -1,6 +1,6 @@
 /obj/item/advanced_choice_beacon
 	name = "advanced choice beacon"
-	desc = "A beacon that will send whatever your heart desires, providing Nanotrasen approves it."
+	desc = "A beacon that will send whatever your heart desires, providing Free Union of Vulken approves it."
 	icon = 'icons/obj/devices/remote.dmi'
 	icon_state = "gangtool-red"
 	inhand_icon_state = null

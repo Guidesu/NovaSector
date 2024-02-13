@@ -537,7 +537,7 @@
   - imageadd: Sprites for Meat and Chaos Donuts
 2019-06-23:
   bgobandit:
-  - rscadd: After receiving many complaints about mimes who never pantomime, Nanotrasen
+  - rscadd: After receiving many complaints about mimes who never pantomime, Free Union of Vulken
       has liquidated its mime personnel and hired new mimes who know more routines.
   - rscadd: 'The mime gets the choice of two new spells: Invisible Chair and Invisible
       Box. They work much like the Invisible Wall spell does and disappear after a
@@ -562,10 +562,10 @@
       as well as janitor tech (trashbags of holding)
   - balance: the bluespace bodybag is now unlocked with mini BS research
   Jerry Derpington, baldest of the balds:
-  - rscdel: Nanotrasen has lost communication to two away mission sites that contained
-      a beach for Nanotrasen employees.
-  - rscadd: Nanotrasen has been able to locate a new away mission site that ALSO has
-      a beach. Nanotrasen employees will be able to enjoy the beach after all!
+  - rscdel: Free Union of Vulken has lost communication to two away mission sites that contained
+      a beach for Free Union of Vulken employees.
+  - rscadd: Free Union of Vulken has been able to locate a new away mission site that ALSO has
+      a beach. Free Union of Vulken employees will be able to enjoy the beach after all!
   Jgta4444:
   - bugfix: Dna scanner now correctly calculate its precision coefficient
   Skoglol:

@@ -1,7 +1,7 @@
 /obj/machinery/computer/terminal/museum
 	name = "exhibit info terminal"
 	desc = "A relatively low-tech info board. Not as low-tech as an actual sign though. Appears to be quite old."
-	upperinfo = "Nanotrasen Museum Exhibit Info"
+	upperinfo = "Free Union of Vulken Museum Exhibit Info"
 	icon_state = "plaque"
 	icon_screen = "plaque_screen"
 	icon_keyboard = null

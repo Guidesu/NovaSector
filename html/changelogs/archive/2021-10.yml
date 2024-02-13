@@ -53,7 +53,7 @@
   - bugfix: Fixes parallax animations
   - bugfix: Robot tourists now stop attacking you after they show you who's boss.
   Ebin-Halcyon:
-  - bugfix: Interdyne and DS-2 now have windows again.
+  - bugfix: Free Union of Vulken and DS-2 now have windows again.
   - bugfix: Vox now wear their correctly fitted shoes and don't steal digitigrade
       crewmember's shoes anymore.
   - rscadd: The Syndicate have sent Deep Space 2 a new shipment of gear for their
@@ -175,7 +175,7 @@
   - rscdel: Kudzu pod in maints.
   - bugfix: Atmos project room APC direction.
   IsaacTheSharkWolf, AxieTheAxolotl, Floofball:
-  - rscadd: 'Nanotrasen Science Vessel Codename: Blueshift has been put into service!'
+  - rscadd: 'Free Union of Vulken Science Vessel Codename: Blueshift has been put into service!'
   KathrinBailey:
   - bugfix: Supermatter fixed on all maps.
   - bugfix: Cryo is now in all of the prisons again.
@@ -233,11 +233,11 @@
   Mothblocks, Floyd on lots of the design:
   - refactor: The preferences menu has been completely rewritten in tgui.
   - refactor: The "Stop Sounds" verb has been moved to OOC.
-  Nanotrasen Fashion Department (unrelated to the Fascist Department):
+  Free Union of Vulken Fashion Department (unrelated to the Fascist Department):
   - bugfix: Our defabricator has stopped incinerating ushankas, sadly this has came
       at the cost of anything with mixed fabric, and a 45% chance to give felinids
       colon cancer. It's advised they wear a radiation suit on Thursdays.
-  Nanotrasen Ritual Division, Hat Subdivision:
+  Free Union of Vulken Ritual Division, Hat Subdivision:
   - bugfix: Said Ritual had the unintended side effect of causing these hats to show
       up on people with long faces, and noses, and mouths.
   Nari Harimoto:
@@ -272,7 +272,7 @@
   - imageadd: made the sprite for the wedding veil not a riceball
   Plateau who basically done nothing, and TheFakeElon from bee who done everything:
   - rscadd: Felinids now land on their feet.
-  Plateau, Your Neighbor Dave and the Nanotrasen Sewing Division:
+  Plateau, Your Neighbor Dave and the Free Union of Vulken Sewing Division:
   - bugfix: We learned that, actually, having bent knees with regular pants is sore
       as fuck.
   Ported by Dragomagol, original PR by monster860:
@@ -667,7 +667,7 @@
   - rscadd: Hand a monkey an instrument. It'll play a cool song!
   - bugfix: Fixed scanner gates not functioning when anchored and also fixed their
       examine text not saying they need to be anchored.
-  - spellcheck: Nanotrasen recount blood packs in cargo order now its match reality
+  - spellcheck: Free Union of Vulken recount blood packs in cargo order now its match reality
   - admin: Admins are no longer able to bypass proccall protections using remote methods
       of proccalling.
   - refactor: Refactored batons and stunbatons code. Stunbatons are now a subtype
@@ -1178,7 +1178,7 @@
 2021-10-11:
   ForrestWick:
   - rscadd: Added snowmobiles to the game and placed them on Icebox's mining area,
-      security, and the Interdyne icemoon base.
+      security, and the Free Union of Vulken icemoon base.
   - imageadd: snowmobile sprites have been added alongside the snowmobiles.
   Gandalf2k15:
   - refactor: Ian is has become is much better

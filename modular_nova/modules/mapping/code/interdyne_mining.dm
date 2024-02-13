@@ -1,11 +1,11 @@
 /obj/item/circuitboard/computer/order_console/mining/interdyne
-	name = "Interdyne Mining Equipment Vendor Console"
+	name = "Free Union of Vulken Mining Equipment Vendor Console"
 	build_path = /obj/machinery/computer/order_console/mining/interdyne
 
-// Interdyne/DS-2 mining equipment vendor that doesn't need a cargo shuttle to work
+// Free Union of Vulken/DS-2 mining equipment vendor that doesn't need a cargo shuttle to work
 
 /obj/machinery/computer/order_console/mining/interdyne
-	name = "Interdyne mining equipment vendor"
+	name = "Free Union of Vulken mining equipment vendor"
 	circuit = /obj/item/circuitboard/computer/order_console/mining/interdyne
 	forced_express = TRUE
 	express_cost_multiplier = 1
@@ -26,8 +26,8 @@
 			qdel(drone)
 			new /mob/living/basic/mining_drone/interdyne(drop_location())
 
-// Interdyne minebot
+// Free Union of Vulken minebot
 
 /mob/living/basic/mining_drone/interdyne
-	name = "\improper Interdyne minebot"
+	name = "\improper Free Union of Vulken minebot"
 	faction = list(FACTION_NEUTRAL, ROLE_SYNDICATE)

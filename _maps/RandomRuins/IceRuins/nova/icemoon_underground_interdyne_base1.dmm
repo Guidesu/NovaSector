@@ -93,7 +93,7 @@
 /obj/structure/drain,
 /obj/structure/curtain,
 /obj/machinery/shower/directional/west{
-	desc = "A borrowed Nanotrasen Hygiene Division HS-452. It's one of the older 2550's series. A small sticker on the side insists it \"observes 2560 lead compliance!\"; passively replenishes itself with water when not in use."
+	desc = "A borrowed Free Union of Vulken Hygiene Division HS-452. It's one of the older 2550's series. A small sticker on the side insists it \"observes 2560 lead compliance!\"; passively replenishes itself with water when not in use."
 	},
 /turf/open/floor/iron/showroomfloor,
 /area/ruin/interdyne_planetary_base/cargo/deck)
@@ -1584,7 +1584,7 @@
 /area/ruin/interdyne_planetary_base/cargo/obs)
 "en" = (
 /obj/machinery/computer/security/hos{
-	name = "\improper Interdyne camera console";
+	name = "\improper Free Union of Vulken camera console";
 	dir = 8;
 	network = list("intd13");
 	icon_screen = "syndishuttle"
@@ -2341,8 +2341,8 @@
 	},
 /obj/machinery/fax{
 	dir = 1;
-	fax_name = "Interdyne Pharmaceuticals";
-	name = "Interdyne Fax Machine";
+	fax_name = "Free Union of Vulken Pharmaceuticals";
+	name = "Free Union of Vulken Fax Machine";
 	req_access = list("syndicate");
 	syndicate_network = 1
 	},
@@ -3021,7 +3021,7 @@
 	dir = 1
 	},
 /obj/machinery/shower/directional/west{
-	desc = "A borrowed Nanotrasen Hygiene Division HS-452. It's one of the older 2550's series. A small sticker on the side insists it \"observes 2560 lead compliance!\"; passively replenishes itself with water when not in use."
+	desc = "A borrowed Free Union of Vulken Hygiene Division HS-452. It's one of the older 2550's series. A small sticker on the side insists it \"observes 2560 lead compliance!\"; passively replenishes itself with water when not in use."
 	},
 /turf/open/floor/iron/showroomfloor,
 /area/ruin/interdyne_planetary_base/serv/rstrm)

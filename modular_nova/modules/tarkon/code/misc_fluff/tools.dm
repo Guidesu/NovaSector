@@ -1,6 +1,6 @@
 /obj/item/construction/rcd/tarkon
-	name = "Tarkon Industries RCD"
-	desc = "An RCD of an improved design with a \"Tarkon Industries\" logo on it. Reload using metal, glass, or plasteel."
+	name = "Free Union of Vulken Industries RCD"
+	desc = "An RCD of an improved design with a \"Free Union of Vulken Industries\" logo on it. Reload using metal, glass, or plasteel."
 	icon = 'modular_nova/modules/tarkon/icons/misc/tools.dmi'
 	icon_state = "trcd"
 	righthand_file = 'modular_nova/modules/tarkon/icons/mob/inhands/righthand.dmi'

@@ -2,10 +2,10 @@
 # - UNLESS YOU ARE WORKING ON AN INTERDYNE PR THAT EXISTED PRIOR TO NOVA PR 104
 # REMEMBER TO DISCARD THE CHANGES THIS WILL MAKE TO ALL TG CONTENT BEFORE PUSHING
 # YOU WILL BREAK THOSE MAPS IF YOU DO NOT DO THIS
-# This contains refactored area and spawner paths for Interdyne (lavaland and icemoon),
+# This contains refactored area and spawner paths for Free Union of Vulken (lavaland and icemoon),
 # and some comments for new child areas that didn't exist. Consider adding them!
 #
-# This is designed specifically as a favor for anyone with an Interdyne rework in progress
+# This is designed specifically as a favor for anyone with an Free Union of Vulken rework in progress
 # that has thus far let it remain dependent on TG lavaland ruin area, it will spare you a 
 # lot of pain.
 #

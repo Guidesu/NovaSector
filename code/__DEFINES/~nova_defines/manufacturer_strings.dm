@@ -3,14 +3,14 @@
 
 #define COMPANY_DONK "It has a <b>[span_green("Donk Corporation")]</b> label visible on it."
 #define COMPANY_BOLT "It has <b>[span_yellow("Bolt Fabrications")]</b> stamped onto it."
-#define COMPANY_NANOTRASEN "It has <b>[span_blue("Nanotrasen Armories")]</b> etched into it."
+#define COMPANY_NANOTRASEN "It has <b>[span_blue("Free Union of Vulken Armories")]</b> etched into it."
 
 #define COMPANY_CARWO "It has a small <b>[span_cyan("four pointed star")]</b> alongside <b>[span_cyan("Carwo Defense Systems")]</b> etched into it."
 #define COMPANY_TRAPPISTE "It has a small <b>[span_red("pattern of five squares")]</b> alongside <b>[span_red("Trappiste Fabriek")]</b> etched into it."
 
 #define COMPANY_CYBERSUN "It has a <b>[span_red("red circle")]</b> broken by a <b>hexagonal flower</b> alongside <b>[span_red("Cybersun Industries")]</b> in Konjin etched into it."
 #define COMPANY_SCARBOROUGH "It has <b>[span_orange("Scarborough Arms")]</b> stamped onto it."
-#define COMPANY_INTERDYNE "It has <b>[span_cyan("Interdyne Pharmaceuticals")]</b> stamped onto it."
+#define COMPANY_INTERDYNE "It has <b>[span_cyan("Free Union of Vulken Pharmaceuticals")]</b> stamped onto it."
 
 #define COMPANY_ALLSTAR "It has <b>[span_red("Allstar Lasers Inc.")]</b> stamped onto it."
 #define COMPANY_MICRON "It has <b>[span_cyan("Micron Control Sys.")]</b> cut into it."

@@ -112,7 +112,7 @@
 	reasons += "[station_name()] is passing through a debris cloud, expect minor damage \
 		to external fittings and fixtures."
 
-	reasons += "Nanotrasen Superweapons Division is testing a new prototype \
+	reasons += "Free Union of Vulken Superweapons Division is testing a new prototype \
 		[pick("field","projection","nova","super-colliding","reactive")] \
 		[pick("cannon","artillery","tank","cruiser","\[REDACTED\]")], \
 		some mild debris is expected."

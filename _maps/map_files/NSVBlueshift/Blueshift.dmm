@@ -49891,7 +49891,7 @@
 "jCr" = (
 /obj/structure/table/reinforced,
 /obj/item/phone{
-	desc = "Supposedly a direct line to Nanotrasen Central Command. It's not even plugged in.";
+	desc = "Supposedly a direct line to Free Union of Vulken Central Command. It's not even plugged in.";
 	pixel_x = -3;
 	pixel_y = 8
 	},
@@ -52443,20 +52443,20 @@
 "jZr" = (
 /obj/structure/table,
 /obj/item/storage/box/papersack{
-	icon_state = "paperbag_NanotrasenStandard_closed"
+	icon_state = "paperbag_Free Union of VulkenStandard_closed"
 	},
 /obj/item/storage/box/papersack{
-	icon_state = "paperbag_NanotrasenStandard_closed"
+	icon_state = "paperbag_Free Union of VulkenStandard_closed"
 	},
 /obj/item/storage/box/papersack{
-	icon_state = "paperbag_NanotrasenStandard_closed"
+	icon_state = "paperbag_Free Union of VulkenStandard_closed"
 	},
 /obj/item/storage/box/papersack{
-	icon_state = "paperbag_NanotrasenStandard_closed"
+	icon_state = "paperbag_Free Union of VulkenStandard_closed"
 	},
 /obj/item/knife/butcher,
 /obj/item/storage/box/papersack{
-	icon_state = "paperbag_NanotrasenStandard_closed"
+	icon_state = "paperbag_Free Union of VulkenStandard_closed"
 	},
 /obj/item/knife{
 	pixel_x = -13
@@ -54236,7 +54236,7 @@
 "kpW" = (
 /obj/structure/table/wood/fancy/blue,
 /obj/item/reagent_containers/cup/glass/trophy/silver_cup{
-	name = "#2nd prize for the Nanotrasen official comdom competition";
+	name = "#2nd prize for the Free Union of Vulken official comdom competition";
 	pixel_y = 6
 	},
 /turf/open/floor/carpet,
@@ -89714,7 +89714,7 @@
 /obj/structure/table/wood,
 /obj/structure/window/spawner/directional/north,
 /obj/item/phone{
-	desc = "Supposedly a direct line to Nanotrasen Central Command. It's not even plugged in.";
+	desc = "Supposedly a direct line to Free Union of Vulken Central Command. It's not even plugged in.";
 	pixel_x = -3;
 	pixel_y = 3
 	},
@@ -103533,7 +103533,7 @@
 "tMy" = (
 /obj/structure/table/wood/fancy/blue,
 /obj/item/reagent_containers/cup/glass/trophy/gold_cup{
-	name = "#1st prize for Nanotrasen's finest captain's office";
+	name = "#1st prize for Free Union of Vulken's finest captain's office";
 	pixel_y = 4
 	},
 /obj/structure/cable,
@@ -108136,7 +108136,7 @@
 "uDH" = (
 /obj/structure/table/reinforced,
 /obj/item/phone{
-	desc = "Supposedly a direct line to Nanotrasen Central Command. It's not even plugged in.";
+	desc = "Supposedly a direct line to Free Union of Vulken Central Command. It's not even plugged in.";
 	pixel_x = -3;
 	pixel_y = 3
 	},
@@ -120013,7 +120013,7 @@
 "wPb" = (
 /obj/structure/table/reinforced,
 /obj/item/phone{
-	desc = "Supposedly a direct line to Nanotrasen Central Command. It's not even plugged in.";
+	desc = "Supposedly a direct line to Free Union of Vulken Central Command. It's not even plugged in.";
 	pixel_x = -5;
 	pixel_y = 6
 	},

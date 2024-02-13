@@ -39,7 +39,7 @@
   Motho:
   - rscadd: Adds five new difficult dwarven-themed drinks with (some) special effects.
   Remuluson2:
-  - bugfix: After pressure from Nanotrasen, Space Wizard Federation made glass and
+  - bugfix: After pressure from Free Union of Vulken, Space Wizard Federation made glass and
       bone knives non-conductive again.
   SkyratBot:
   - refactor: Spider healing abilities have been refactored to reuse the same code
@@ -192,7 +192,7 @@
   Vlada - VastKilleroOm:
   - imageadd: added 1 hairstyle icon
   tf-4:
-  - bugfix: Monkeys are no longer able to teleport out of the Interdyne xenobio slime
+  - bugfix: Monkeys are no longer able to teleport out of the Free Union of Vulken xenobio slime
       pens.
 2023-03-06:
   LT3:
@@ -234,7 +234,7 @@
   - balance: Cult can no longer draw runes in survival pods.
   Zergspower:
   - rscadd: 'Added missing job titles to SR specific ghost roles: BMD, DS2, Freighter,
-      Port Tarkon and Ghost Cafe!'
+      Port Free Union of Vulken and Ghost Cafe!'
   - qol: SR Specific ghost roles will now be itemized and tracked inside your hour
       window
   coiax:
@@ -242,7 +242,7 @@
       number of chickens and chicks are tracked. It's now possible for admins to make
       anything into an egg.
   dessysalta, Cheshify:
-  - rscadd: Nanotrasen has added a martial artist gi to the AutoDrobe for those who
+  - rscadd: Free Union of Vulken has added a martial artist gi to the AutoDrobe for those who
       want to go even further byond.
   - imageadd: Aforementioned gi sprites.
   tf-4:
@@ -1037,7 +1037,7 @@
       are fixed and are all now on RMB when aggressive grabbing (or above) someone.
   LT3:
   - code_imp: Modularised roundstart station traits
-  - balance: Nanotrasen will now put more effort into announcing employee birthdays
+  - balance: Free Union of Vulken will now put more effort into announcing employee birthdays
   Melbert:
   - bugfix: Fixes rare human arm melting condition
   SkyratBot:
@@ -1099,7 +1099,7 @@
   - bugfix: Stray Cargo Pod false alarms will once again play an announcement when
       they occur.
   - bugfix: NODISMEMBER mobs can now be attacked by the flesh worm.
-  - rscadd: Nanotrasen has given the crew access to a brand new emergency shuttle!
+  - rscadd: Free Union of Vulken has given the crew access to a brand new emergency shuttle!
       Watch out for it's destructive entrance!
   - bugfix: heck suit no longer bugs out worn boots/gloves icons
   - bugfix: Failing a kickflip no longer shows the chat messages to the wrong people.
@@ -1115,7 +1115,7 @@
       input pumps and liquid output pumps
 2023-03-24:
   Gyran:
-  - rscadd: Added Cencom gloves to the Nanotrasen Rep locker and command vendor
+  - rscadd: Added Cencom gloves to the Free Union of Vulken Rep locker and command vendor
   SkyratBot:
   - bugfix: fixes gondola meatslab not being able to be placed into the DNA infuser
   softcerv:
@@ -1398,7 +1398,7 @@
   sqnztb:
   - qol: rearranged DS-2 botany and kitchen
   - bugfix: fixed access on a few of the APCs in DS-2
-  - rscadd: ammo bench, cryotube, secdrobe, and some extra handcuffs added to Interdyne
+  - rscadd: ammo bench, cryotube, secdrobe, and some extra handcuffs added to Free Union of Vulken
 2023-03-30:
   LT3:
   - qol: Janitor access keys now show up on the Custodial Locator tablet app
@@ -1442,7 +1442,7 @@
   - imagedel: Removes the sprite for the Advanced Wirebrush
   - rscadd: re-added normal doors to qm's office on tram.
   - bugfix: fixed hos' shutters not being existant on tram.
-  - rscadd: The Nanotrasen Costuming Department has released specifications for how
+  - rscadd: The Free Union of Vulken Costuming Department has released specifications for how
       to convert the Head of Security's cap into a shako.
   - bugfix: 'The Syndicate have gotten their hands on the most dangerous weapon: A
       photocopier that doesn''t require any money. God save us all.'
@@ -1496,7 +1496,7 @@
       madness as they should
   vinylspiders:
   - bugfix: synth heart sprite is no longer invisible
-  - bugfix: DS2/Interdyne ranks will now display properly during announcements and
+  - bugfix: DS2/Free Union of Vulken ranks will now display properly during announcements and
       in the ghost records.
   - bugfix: sleepers on DS-2 will now properly announce when someone has woken from
       cryo sleep.

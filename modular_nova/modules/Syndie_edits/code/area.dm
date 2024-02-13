@@ -2,38 +2,38 @@
 	always_unpowered = FALSE
 
 /area/ruin/syndicate_lava_base/engineering
-	name = "Interdyne Engineering"
+	name = "Free Union of Vulken Engineering"
 
 /area/ruin/syndicate_lava_base/medbay
-	name = "Interdyne Medbay"
+	name = "Free Union of Vulken Medbay"
 
 /area/ruin/syndicate_lava_base/arrivals
-	name = "Interdyne Arrivals"
+	name = "Free Union of Vulken Arrivals"
 
 /area/ruin/syndicate_lava_base/bar
-	name = "Interdyne Bar"
+	name = "Free Union of Vulken Bar"
 
 /area/ruin/syndicate_lava_base/lounge
-	name = "Interdyne Lounge"
+	name = "Free Union of Vulken Lounge"
 
 /area/ruin/syndicate_lava_base/main
-	name = "Interdyne Primary Hallway"
+	name = "Free Union of Vulken Primary Hallway"
 
 /area/ruin/syndicate_lava_base/cargo
-	name = "Interdyne Cargo Bay"
+	name = "Free Union of Vulken Cargo Bay"
 
 /area/ruin/syndicate_lava_base/chemistry
-	name = "Interdyne Chemistry"
+	name = "Free Union of Vulken Chemistry"
 
 /area/ruin/syndicate_lava_base/virology
-	name = "Interdyne Virology"
+	name = "Free Union of Vulken Virology"
 
 /area/ruin/syndicate_lava_base/testlab
-	name = "Interdyne Experimentation Lab"
+	name = "Free Union of Vulken Experimentation Lab"
 	area_flags = XENOBIOLOGY_COMPATIBLE
 
 /area/ruin/syndicate_lava_base/dormitories
-	name = "Interdyne Dormitories"
+	name = "Free Union of Vulken Dormitories"
 
 /area/ruin/syndicate_lava_base/telecomms
-	name = "Interdyne Telecommunications"
+	name = "Free Union of Vulken Telecommunications"

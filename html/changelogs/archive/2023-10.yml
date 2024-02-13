@@ -8,7 +8,7 @@
       to TG balance standards. Knockdown on hit, 60 instead of 110 damage, etc. etc.
   - bugfix: .50 Soporific was removed because disruptor ammo was right there and nobody
       realized it existed.
-  - bugfix: After review of a missing equipment complaint, Nanotrasen remembered to
+  - bugfix: After review of a missing equipment complaint, Free Union of Vulken remembered to
       pay Lopland's quartermasters to put the customary flashbang and teargas grenade
       boxes into the Void Raptor's armory.
   Melbert:
@@ -227,7 +227,7 @@
   Majkl-J:
   - bugfix: Table to the cafe food processor
   RatFromTheJungle:
-  - balance: Interdyne now spawns with Sidano SMG's, instead of .50 snipers
+  - balance: Free Union of Vulken now spawns with Sidano SMG's, instead of .50 snipers
   - bugfix: you can now actually wear the 'LIZARED' top, yippie!
   SkyratBot:
   - bugfix: The Galactic Materials Market now offers things for sale as it should.
@@ -307,7 +307,7 @@
   - rscadd: '3 new cargo packs to science: 2 chilled hercuri, a synth trauma kit,
       and synth medicine'
   - balance: Quadruple amputee can now be picked with frail
-  - rscadd: Interdyne/DS2 now have advanced synthetic trauma kits in their medbays
+  - rscadd: Free Union of Vulken/DS2 now have advanced synthetic trauma kits in their medbays
 2023-10-08:
   LT3:
   - image: Text alignment on ID cards slightly adjusted
@@ -392,7 +392,7 @@
   - rscadd: Bitrunners can now have alternative job titles. FTU urges that these titles
       are purely cosmetic and not representative of bitrunning ability.
   - rscadd: Barbers, Botanists, Warehouse Techs, Coroners, Curators, Cyborgs, Geneticists,
-      Mimes, Nanotrasen Consultants, Roboticists, and Virologists enjoy new alternative
+      Mimes, Free Union of Vulken Consultants, Roboticists, and Virologists enjoy new alternative
       job titles.
   - rscadd: Certain jobs now have Trainee/Newbie alternative job titles ordered at
       the very bottom of the title selection dialog. If you or your character are
@@ -628,7 +628,7 @@
   - bugfix: 10mm Reaper can't be printed in ammo benches like it was intended. If
       you don't know what this means, don't worry about it.
   LT3:
-  - rscadd: Introducing Nanotrasen Wave! A Nanotrasen exclusive, Waveallows your PDA
+  - rscadd: Introducing Free Union of Vulken Wave! A Free Union of Vulken exclusive, Waveallows your PDA
       to be charged wirelessly through microwave frequencies. You can Wave-charge
       your device by placing it inside a compatible microwave and selecting the charge
       mode.
@@ -661,7 +661,7 @@
   - image: Inhands for the Sakhno and related rifles will no longer be way too high
       or big
   burgerenergy:
-  - qol: Both versions of Interdyne received some map touch ups. Standouts include;
+  - qol: Both versions of Free Union of Vulken received some map touch ups. Standouts include;
       a fax machine, dorm locks, a make shift brig area, a revamped bathroom, botany,
       and kitchen, as well as backporting Icemoon improvements to the Lavaland version.
   nikothedude:
@@ -836,7 +836,7 @@
 2023-10-18:
   LT3:
   - refactor: Tram process/industrial lift refactored into transport subsystem
-  - refactor: Nanotrasen has traded in last year's tram for a new 2563 model!
+  - refactor: Free Union of Vulken has traded in last year's tram for a new 2563 model!
   - rscadd: Tram spoilers can be emagged to cause extra damage on collision
   - rscadd: Tram can now be manually driven from the controller cabinet using TGUI
   - rscadd: Tram floor tiles can be created using plastic sheets
@@ -904,8 +904,8 @@
   - qol: The wizard's den no longer looks like a flying cucumber and has received
       a major overhaul. Hooray!
   Hatterhat:
-  - qol: Interdyne miners now spawn with a point transfer card in their backpacks.
-  - qol: Sansufentanyl now spawns in the Interdyne base, since it's something they
+  - qol: Free Union of Vulken miners now spawn with a point transfer card in their backpacks.
+  - qol: Sansufentanyl now spawns in the Free Union of Vulken base, since it's something they
       make in-lore. It can be found in a freezer crate next to their blood freezer.
   LT3:
   - spellcheck: More announcement CSS fixes, now including light mode
@@ -1253,7 +1253,7 @@
   OrionTheFox:
   - balance: the flatpacked Fabricator and RTG are now restricted-access imports
   SkyratBot:
-  - refactor: Hostile Nanotrasen mobs now use the basic mob framework. This should
+  - refactor: Hostile Free Union of Vulken mobs now use the basic mob framework. This should
       make them a little smarter and more dangerous. Please report any bugs.
   - bugfix: Russian mobs will now actually use those knives they're holding.
   - bugfix: fixed hair gradients not applying correctly to huge afros
@@ -1361,7 +1361,7 @@
   SkyratBot:
   - bugfix: Mobs without the "advanced tool user" trait - such as monkeys - are no
       longer able to interact with camera consoles.
-  - bugfix: Every misaligned railing ending has been corrected by the Nanotrasen Hall
+  - bugfix: Every misaligned railing ending has been corrected by the Free Union of Vulken Hall
       Monitor's Lunchclub.
   - bugfix: Wigs now properly follow your head when you're any non-standard height
   - bugfix: If a mob you are shapeshifted into attempts to grow up into a different

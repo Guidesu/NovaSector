@@ -142,7 +142,7 @@
 	priority_announce(
 		text = "One of your crew was captured by a rival organisation - we've needed to pay their ransom to bring them back. \
 		As is policy we've taken a portion of the station's funds to offset the overall cost.",
-		sender_override = "Nanotrasen Asset Protection")
+		sender_override = "Free Union of Vulken Asset Protection")
 
 	addtimer(CALLBACK(src, PROC_REF(finish_enter)), 3 SECONDS)
 

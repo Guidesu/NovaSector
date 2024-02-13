@@ -346,9 +346,9 @@
   - balance: removes mecha pilots and elites from the summoning pool
   - bugfix: You can no longer beetlejuice yourself!
   uomo91:
-  - tweak: Nanotrasen's pet budget has increased, and missing pets have been dispatched
+  - tweak: Free Union of Vulken's pet budget has increased, and missing pets have been dispatched
       to various departments.
-  - rscadd: Nanotrasen's signage department has funded the design and placement of
+  - rscadd: Free Union of Vulken's signage department has funded the design and placement of
       signs for the Lawyer's office and courtroom.
 2020-08-11:
   Bumtickley00:
@@ -386,7 +386,7 @@
   actioninja:
   - rscadd: big slapps
   uomo91:
-  - bugfix: Nanotrasen has fixed a supply chain problem with green stockings.
+  - bugfix: Free Union of Vulken has fixed a supply chain problem with green stockings.
   zxaber:
   - rscadd: Added support for modular PC expansion bays, or hardware bays designed
       to be used by nonessential hardware. Devices have a limited number of bays (tablets
@@ -492,7 +492,7 @@
   Arkatos:
   - rscadd: pAIs now use a radial menu to choose their holochassis skins.
   CRITAWAKETS:
-  - bugfix: Nanotrasen has fixed the missing connectors on their lattices and have
+  - bugfix: Free Union of Vulken has fixed the missing connectors on their lattices and have
       removed the ultraviolet paint from their operating tables.
   Fikou:
   - bugfix: fixes goliath tentacle crusher trophy not working
@@ -519,7 +519,7 @@
   ArcaneMusic:
   - bugfix: Virology civilian bounties can now be completed again.
   CRITAWAKETS:
-  - rscdel: Nanotrasen has removed their outdated teslas, singularities, TEGs and
+  - rscdel: Free Union of Vulken has removed their outdated teslas, singularities, TEGs and
       Mrs. Pacman generators from their servers and warehouse.
   IndieanaJones:
   - bugfix: Swarmers are not able to teleport their subdued targets again
@@ -628,7 +628,7 @@
   Bampotio:
   - tweak: adds floral somatory to botany belt storage
   CRITAWAKETS:
-  - balance: Nanotrasen has "accidentally" had a virus implanted in their nanite servers
+  - balance: Free Union of Vulken has "accidentally" had a virus implanted in their nanite servers
       which somehow caused some nanite programs to be less effective.
   - bugfix: Numerous bluespace artilery units have been recalled following incidents
       of their components being made out of air. This manufacturing defect has been
@@ -723,7 +723,7 @@
   - spellcheck: fixed a few typos with plasmamen envirosuits
   - spellcheck: fixed all the typos where people say "availible" instead of "available"
   uomo91:
-  - bugfix: Nanotrasen software division has fixed an issue with station holodecks
+  - bugfix: Free Union of Vulken software division has fixed an issue with station holodecks
       creating invisible tables and floor decals.
   - tweak: Tool belts can now hold airlock and decal painters inside them.
   - tweak: Holsters should now hold appropriate weapons and their ammo types.
@@ -790,7 +790,7 @@
   - bugfix: Plants getting random reagents due to high instability now properly upgrade
       instead of stack.
   EOBGames:
-  - imageadd: Gamers, rejoice, as Nanotrasen has finally recalled faulty stocks of
+  - imageadd: Gamers, rejoice, as Free Union of Vulken has finally recalled faulty stocks of
       arcade carpet, replacing them with new authentic carpet. Just add pizza stains
       and spilled soda for the authentic arcade experience!
   Fikou:

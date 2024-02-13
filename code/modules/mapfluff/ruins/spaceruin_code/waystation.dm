@@ -23,9 +23,9 @@
 	NAME Raymond Johnson
 	SAY All right boys, The mission is simple.
 	DELAY 20
-	SAY You will be breaching an distant waystation on the fringe of Nanotrasen territory.
+	SAY You will be breaching an distant waystation on the fringe of Free Union of Vulken territory.
 	DELAY 25
-	SAY Your main objective is to secure highly classified documents about recent Nanotrasen expansion in the Spinward sector.
+	SAY Your main objective is to secure highly classified documents about recent Free Union of Vulken expansion in the Spinward sector.
 	DELAY 20
 	SAY The documents are located in the secure storage room.
 	DELAY 25

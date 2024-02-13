@@ -103,7 +103,7 @@
 	},
 /obj/machinery/computer/terminal/museum{
 	dir = 4;
-	content = list("Sometime long ago, someone accidentally slipped in the design for gloves that work like batons into the basic employee craftsmanship teaching program. Naturally, this was not a good thing and all the ruffians onstation would usually have one of these. As Nanotrasen found out and removed the design, these are no longer ever seen, for nobody knows how to make them.")
+	content = list("Sometime long ago, someone accidentally slipped in the design for gloves that work like batons into the basic employee craftsmanship teaching program. Naturally, this was not a good thing and all the ruffians onstation would usually have one of these. As Free Union of Vulken found out and removed the design, these are no longer ever seen, for nobody knows how to make them.")
 	},
 /turf/open/floor/iron/dark,
 /area/awaymission/museum)
@@ -862,7 +862,7 @@
 	},
 /obj/machinery/computer/terminal/museum{
 	dir = 4;
-	content = list("2005 - By the early 2000s, Nanotrasen had long observed the computer gaming industry since its inception during the 1980s, and in 2005 would finally make their own entry into the market via the Nanoplay: the world’s first game console with built-in internet connectivity capabilities, bringing the gamers of the world together.")
+	content = list("2005 - By the early 2000s, Free Union of Vulken had long observed the computer gaming industry since its inception during the 1980s, and in 2005 would finally make their own entry into the market via the Nanoplay: the world’s first game console with built-in internet connectivity capabilities, bringing the gamers of the world together.")
 	},
 /obj/effect/turf_decal/tile/neutral/opposingcorners,
 /turf/open/floor/iron/dark,
@@ -955,7 +955,7 @@
 /area/awaymission/museum)
 "iE" = (
 /obj/structure/fluff/wallsign/directional/west{
-	name = "History of Nanotrasen"
+	name = "History of Free Union of Vulken"
 	},
 /obj/effect/turf_decal/tile/neutral/opposingcorners,
 /obj/effect/turf_decal/siding/dark_blue{
@@ -1496,7 +1496,7 @@
 	},
 /obj/machinery/computer/terminal/museum{
 	dir = 8;
-	content = list("The so-called Hands Of God, loyal devotees of some illegal eldritch force. Their effect on the world weakened and crumbled as Nanotrasen loyal employees destroyed these so called Gods. Remember, only follow the faith of the chaplain and his regulated religions!")
+	content = list("The so-called Hands Of God, loyal devotees of some illegal eldritch force. Their effect on the world weakened and crumbled as Free Union of Vulken loyal employees destroyed these so called Gods. Remember, only follow the faith of the chaplain and his regulated religions!")
 	},
 /turf/open/floor/iron/dark,
 /area/awaymission/museum)
@@ -1630,7 +1630,7 @@
 "ox" = (
 /obj/machinery/computer/terminal/museum{
 	dir = 8;
-	content = list("1998 - Dale Knox, the cofounder of Nanotrasen, would leave for health reasons.")
+	content = list("1998 - Dale Knox, the cofounder of Free Union of Vulken, would leave for health reasons.")
 	},
 /obj/effect/turf_decal/tile/neutral/opposingcorners,
 /obj/effect/turf_decal/siding/dark_blue{
@@ -1716,7 +1716,7 @@
 "pv" = (
 /obj/machinery/computer/terminal/museum{
 	dir = 4;
-	content = list("Nanotrasen used to have much more volatile welding fuel mixtures because it was cheap. This backfired when a review revealed that infiltrators would use the fuel tanks to destroy bodies of their victims, leading to Nanotrasen developing a less unstable mixture months later.")
+	content = list("Free Union of Vulken used to have much more volatile welding fuel mixtures because it was cheap. This backfired when a review revealed that infiltrators would use the fuel tanks to destroy bodies of their victims, leading to Free Union of Vulken developing a less unstable mixture months later.")
 	},
 /obj/effect/turf_decal/tile/neutral/opposingcorners,
 /obj/effect/turf_decal/siding/dark_blue{
@@ -2660,7 +2660,7 @@
 	},
 /obj/machinery/computer/terminal/museum{
 	dir = 1;
-	content = list("1995 - By the early 90s, as computers became smaller and technology more compact, Trasen-Knox saw the need to create more of a recognisable brand. They would officially change their name to Nanotrasen in 1995, and the name would stick for the company.")
+	content = list("1995 - By the early 90s, as computers became smaller and technology more compact, Trasen-Knox saw the need to create more of a recognisable brand. They would officially change their name to Free Union of Vulken in 1995, and the name would stick for the company.")
 	},
 /obj/effect/turf_decal/tile/neutral/opposingcorners,
 /obj/effect/turf_decal/siding/dark_blue{
@@ -2799,7 +2799,7 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/computer/terminal/museum{
 	dir = 8;
-	content = list("Galaxywise Shipyards (Field: General Aerospace) - Much of Nanotrasen's strength as a megacorporation comes from their ability to practice what is essentially autarky- the production of all required goods from raw material to finalised item, with little to no reliance on external companies or factors. To this end, Galaxywise is critical to Nanotrasen's practice of autarky- from their orbital shipyards above Adasta, Nanotrasen is able to produce a wide range of important vessels, from small single-man scouting vessels to large-scale freighters and everything inbetween. Unfortunately for Nanotrasen, however, their autarky chain is broken by limitations imposed by TerraGov stating that only licensed corporations are capable of producing heavily armed vessels (the Merchant Marine Act states that any vessel capable of bearing armaments in excess of Class 2, the highest legal civilian grade, may be produced by licensed companies only)- a license Galaxywise has been unable to secure due to politicking by corporate rivals at the senate. ")
+	content = list("Galaxywise Shipyards (Field: General Aerospace) - Much of Free Union of Vulken's strength as a megacorporation comes from their ability to practice what is essentially autarky- the production of all required goods from raw material to finalised item, with little to no reliance on external companies or factors. To this end, Galaxywise is critical to Free Union of Vulken's practice of autarky- from their orbital shipyards above Adasta, Free Union of Vulken is able to produce a wide range of important vessels, from small single-man scouting vessels to large-scale freighters and everything inbetween. Unfortunately for Free Union of Vulken, however, their autarky chain is broken by limitations imposed by TerraGov stating that only licensed corporations are capable of producing heavily armed vessels (the Merchant Marine Act states that any vessel capable of bearing armaments in excess of Class 2, the highest legal civilian grade, may be produced by licensed companies only)- a license Galaxywise has been unable to secure due to politicking by corporate rivals at the senate. ")
 	},
 /turf/open/floor/iron/dark,
 /area/awaymission/museum)
@@ -2871,7 +2871,7 @@
 /obj/structure/window/bronze/spawner/directional/north,
 /obj/machinery/computer/terminal/museum{
 	pixel_y = -6;
-	content = list("Ratvar was once a powerful entity competing with the likes of Nar-Sie. It resided on a plane known as “Reebee” or the “City of cogs.” Supposedly, it was a clockwork city made of brass in which its cultists could enter once they had realized its power. However, this plane was also Ratvar’s prison from which it yearned to escape. While Reebee is gone, it is assumed that other structures such as temples or engines of the cult's creation still exist although it is unknown if they still have the power once bestowed to them by Ratvar. The fall of Reebe was an event in which Reebe, Ratvar, and all of its cultists were struck down by Nanotrasen. The cult was preparing Reebe for the freeing of Ratvar where the Veil was weak. Outpost 17, a small nanotrasen asteroid mining station was the target. Brave crewmembers managed to slip through the cracks in the veil and into the heart of Reebe with a bluespace artillery beacon in tow. With a desperate plea being sent out to a nearby security outpost, Reebe was obliterated along with the crewmembers of Outpost 17.")
+	content = list("Ratvar was once a powerful entity competing with the likes of Nar-Sie. It resided on a plane known as “Reebee” or the “City of cogs.” Supposedly, it was a clockwork city made of brass in which its cultists could enter once they had realized its power. However, this plane was also Ratvar’s prison from which it yearned to escape. While Reebee is gone, it is assumed that other structures such as temples or engines of the cult's creation still exist although it is unknown if they still have the power once bestowed to them by Ratvar. The fall of Reebe was an event in which Reebe, Ratvar, and all of its cultists were struck down by Free Union of Vulken. The cult was preparing Reebe for the freeing of Ratvar where the Veil was weak. Outpost 17, a small nanotrasen asteroid mining station was the target. Brave crewmembers managed to slip through the cracks in the veil and into the heart of Reebe with a bluespace artillery beacon in tow. With a desperate plea being sent out to a nearby security outpost, Reebe was obliterated along with the crewmembers of Outpost 17.")
 	},
 /turf/open/floor/iron/dark,
 /area/awaymission/museum)
@@ -4413,7 +4413,7 @@
 "OD" = (
 /obj/machinery/computer/terminal/museum{
 	dir = 8;
-	content = list("2560 - The Nanotrasen Cloning Incident; Did you know that Nanotrasen used to provide cloning for profitable employees? No? Good! Because in 2560, there was a terrorist backed sabotage on one of our cloning material supply facilities, resulting in a Feline serum being dumped into the carefully curated output. This resulted in horrible cat mutations for anyone who got cloned, weeks later. Facing outlash, Nanotrasen had to shut down all cloning clinics.")
+	content = list("2560 - The Free Union of Vulken Cloning Incident; Did you know that Free Union of Vulken used to provide cloning for profitable employees? No? Good! Because in 2560, there was a terrorist backed sabotage on one of our cloning material supply facilities, resulting in a Feline serum being dumped into the carefully curated output. This resulted in horrible cat mutations for anyone who got cloned, weeks later. Facing outlash, Free Union of Vulken had to shut down all cloning clinics.")
 	},
 /obj/effect/turf_decal/tile/neutral/opposingcorners,
 /obj/effect/turf_decal/siding/dark_blue{
@@ -5005,7 +5005,7 @@
 /area/awaymission/museum)
 "Un" = (
 /obj/structure/fluff/wallsign/directional/west{
-	name = "History of Nanotrasen"
+	name = "History of Free Union of Vulken"
 	},
 /obj/effect/turf_decal/tile/neutral/opposingcorners,
 /obj/effect/turf_decal/siding/dark_blue{
@@ -5360,7 +5360,7 @@
 /area/awaymission/museum)
 "WT" = (
 /obj/machinery/computer/terminal/museum{
-	content = list("2008 - Nanotrasen would buy out and merge with the Wulfe Group, a German company known for their manufacture of industrial equipment. Rebranding the company as Nanotrasen Heavy Industry (or NTHI), this would be Nanotrasen’s first step towards new horizons beyond computing. In a series of purchases, Nanotrasen would expand its range of products considerably, acquiring a chemical and oil subsidiary in Texas Chemical (now Nanotrasen Chemical Supply), a consumer goods subsidiary in Seowon Appliances (now Nanotrasen Consumer Goods)")
+	content = list("2008 - Free Union of Vulken would buy out and merge with the Wulfe Group, a German company known for their manufacture of industrial equipment. Rebranding the company as Free Union of Vulken Heavy Industry (or NTHI), this would be Free Union of Vulken’s first step towards new horizons beyond computing. In a series of purchases, Free Union of Vulken would expand its range of products considerably, acquiring a chemical and oil subsidiary in Texas Chemical (now Free Union of Vulken Chemical Supply), a consumer goods subsidiary in Seowon Appliances (now Free Union of Vulken Consumer Goods)")
 	},
 /obj/effect/turf_decal/tile/neutral/opposingcorners,
 /turf/open/floor/iron/dark,

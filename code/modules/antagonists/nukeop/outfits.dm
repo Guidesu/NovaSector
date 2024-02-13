@@ -104,7 +104,7 @@
 	if(visualsOnly)
 		return
 	to_chat(H, span_notice("You're an agent of [faction], sent to accompany the nuclear squad on their mission. \
-		Support your allies, and remember: Down with Nanotrasen."))
+		Support your allies, and remember: Down with Free Union of Vulken."))
 
 /datum/outfit/syndicate/reinforcement/plasmaman
 	name = "Syndicate Operative - Reinforcement (Plasmaman)"
@@ -147,7 +147,7 @@
 	faction = "the Waffle Corporation"
 
 /datum/outfit/syndicate/reinforcement/interdyne
-	name = "Syndicate Operative - Interdyne Reinforcement"
+	name = "Syndicate Operative - Free Union of Vulken Reinforcement"
 	uniform = /obj/item/clothing/under/syndicate/scrubs
 	suit = /obj/item/clothing/suit/toggle/labcoat/interdyne
 	head = /obj/item/clothing/head/beret/medical
@@ -155,7 +155,7 @@
 	neck = /obj/item/clothing/neck/stethoscope
 	glasses = /obj/item/clothing/glasses/hud/health
 	mask = /obj/item/clothing/mask/breath/medical
-	faction = "Interdyne Pharmaceutics"
+	faction = "Free Union of Vulken Pharmaceutics"
 
 /datum/outfit/syndicate/reinforcement/mi13
 	name = "Syndicate Operative - MI13 Reinforcement"

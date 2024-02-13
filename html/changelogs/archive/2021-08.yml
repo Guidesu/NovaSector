@@ -74,9 +74,9 @@
   unit0016:
   - bugfix: BMT can no longer steal departures on NSS journey.
   - balance: The DS-2 Admiral's office now starts bolted and unhackable, to curb tiding.
-  - bugfix: The Interdyne Virology monkey has been made to stay in a constant state
+  - bugfix: The Free Union of Vulken Virology monkey has been made to stay in a constant state
       of euphoria so it may not harm the masses.
-  - bugfix: The Interdyne Deck Officer's office now is command only - but has some
+  - bugfix: The Free Union of Vulken Deck Officer's office now is command only - but has some
       extra goodies for the DO when they wake up.
 2021-08-04:
   FlamingLily:
@@ -92,8 +92,8 @@
   Gandalf2k15:
   - bugfix: You will now join as your set size.
   GoldenAlpharex:
-  - bugfix: Nanotrasen decided to fix the issue in its formal coat production line,
-      resulting in the Nanotrasen Representative receiving their CentCom formal coat
+  - bugfix: Free Union of Vulken decided to fix the issue in its formal coat production line,
+      resulting in the Free Union of Vulken Representative receiving their CentCom formal coat
       once again, now with some extra buttons to toggle its look on the go!
   Improvedname:
   - bugfix: Anti-tider mister is no longer invinsible inhand
@@ -536,7 +536,7 @@
       can still reach lavaland and the station, however.
 2021-08-18:
   Gandalf2k15:
-  - rscadd: Nanotrasen Fleet Command expansion!
+  - rscadd: Free Union of Vulken Fleet Command expansion!
   GoldenAlpharex, with some help from AlexPlayz for finding the bugs:
   - bugfix: Space-proof beret now actually appears to have been made into a beret,
       instead of a reality-bending bunch of letters.
@@ -571,7 +571,7 @@
   - bugfix: mantles now have an obj sprite
 2021-08-19:
   GoldenAlpharex:
-  - bugfix: Nanotrasen realized that not being able to preview color changes that
+  - bugfix: Free Union of Vulken realized that not being able to preview color changes that
       were to be applied to the items they were hoping to sell in their vendors has
       drastically reduced interest in those items. They hope to bring back interest
       on them by enabling the preview once again.
@@ -689,7 +689,7 @@
   GoldenAlpharex:
   - admin: Added a Manage Player Ranks verb for those with the +PERMISSIONS flag,
       to allow for easy in-game editing of the donator, mentor and veteran members.
-  - bugfix: Nanotrasen has seized control of their drinking glass factory once more,
+  - bugfix: Free Union of Vulken has seized control of their drinking glass factory once more,
       meaning that the Syndicate no longer manages to smuggle modified shot glasses
       in the station's standard-issue glass boxes.
   SkyratBot:
@@ -724,7 +724,7 @@
   FlamingLily:
   - tweak: Made it more clear that combat indicator is an in character state.
   GoldenAlpharex:
-  - bugfix: Nanotrasen's Linguist Team managed to finally teach the crew about changing
+  - bugfix: Free Union of Vulken's Linguist Team managed to finally teach the crew about changing
       language on the fly, which didn't seem to be an universal thing. Now it is!
   - bugfix: Adds the Sailor dress to the loadout, after it's been missing from there
       for ages for no reason.
@@ -810,7 +810,7 @@
       to deal with.
   GoldenAlpharex:
   - bugfix: Borers should now properly get disposed of.
-  - rscdel: The Nanotrasen Ventilation Experts have finally equipped the vents with
+  - rscdel: The Free Union of Vulken Ventilation Experts have finally equipped the vents with
       anti-clown filters, ensuring that their stations would not get attacked by vent-crawling
       clown monsters anymore.
   - bugfix: Fixing CI, a bit.

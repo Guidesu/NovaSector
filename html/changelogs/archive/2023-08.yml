@@ -781,7 +781,7 @@
   - rscadd: Adds a unique medibot to the Syndicate Infiltrator. It doesn't like nukes
       - when one is armed, disarmed, or detonating, it says an unique line. Players
       can optionally enable personalities on it if they want to. Probably best to
-      just let it stay on the shuttle though. (It's also in the Interdyne Pharmaceuticals
+      just let it stay on the shuttle though. (It's also in the Free Union of Vulken Pharmaceuticals
       ship, renamed)
   - bugfix: Fixed an issue that made mapload medibots unable to load custom skins.
   - bugfix: fixed missing seating at the All American Diner
@@ -1396,7 +1396,7 @@
       a to_chat message. Hopefully we all get buckle stuck processing why our inputs
       are not working less often for now on.
   Ldip999:
-  - qol: Space hotel and Tarkon now comes with range ovens
+  - qol: Space hotel and Free Union of Vulken now comes with range ovens
   Motho:
   - rscadd: MODLink Scryer necklaces are now available in the loadout.
   Paxilmaniac:
@@ -1431,7 +1431,7 @@
       in the Sound category of the game preferences.
   - bugfix: Compact fishing toolboxes no longer break space and time to contain any
       normal-sized object. Instead, they only break space and time to contain fishing
-      rods. Settlers migrating to Nanotrasen space have no reasonable explanation
+      rods. Settlers migrating to Free Union of Vulken space have no reasonable explanation
       for this phenomenon.
   - refactor: sheets are merged in a better way when ejected from machines & material
       related stuff

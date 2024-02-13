@@ -467,7 +467,7 @@
       removed from the liquid electricity found in blood, which has less electrical
       properties. Enriched liquid electricity can also raise an ethereals blood levels
   Ryll/Shaps:
-  - rscadd: Nanotrasen's Human Resources department would like to remind crewmembers
+  - rscadd: Free Union of Vulken's Human Resources department would like to remind crewmembers
       that shattering mirrors, whether by striking them or shooting them, will bring
       you bad luck and probably also get you maimed. Don't do it!
   Sparkezel:
@@ -714,7 +714,7 @@
   - bugfix: You can repair trophy cases with a welding tool.
   Trigg:
   - bugfix: The reactive tesla armor prototype has been given a remote firmware update.
-      Nanotrasen denies any claims that given prototype was able to give anyone permanent
+      Free Union of Vulken denies any claims that given prototype was able to give anyone permanent
       shock immunity after simply being held and dropped.
   Unoki:
   - rscadd: Added a computer vendor to Kilo Station.
@@ -969,7 +969,7 @@
       areas for water
   - rscadd: MetaStation chem lab now has two empty plumbing storage tanks
   Imaginos16:
-  - rscdel: Nanotrasen, after receiving many complaints, removed the flash that used
+  - rscdel: Free Union of Vulken, after receiving many complaints, removed the flash that used
       to sit at the entrance of the science department.
   LemonInTheDark:
   - server: the Total Hard Deletes section of garbage logging is now separated by

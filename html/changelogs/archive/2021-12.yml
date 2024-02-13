@@ -109,7 +109,7 @@
   - balance: Reload times now take an amount of time.
   - rscdel: Removed proprietary temporary hardlight guns.
   GoldenAlpharex:
-  - bugfix: Nanotrasen's Paranormal Containment team had some budget cuts, meaning
+  - bugfix: Free Union of Vulken's Paranormal Containment team had some budget cuts, meaning
       that ghosts are no longer stripped of their hair colors- You can finally sport
       that bright pink floor bedhead even in death once again!
   - spellcheck: Fixes a spelling mistake in the feedback for fishing something.
@@ -269,7 +269,7 @@
       objects may get buffed or nerfed. Mostly buffed.
   - bugfix: Hints in bureaucracy forms
   - rscadd: You can now become patron of your favorite painting by buying sponsorship
-      from Nanotrasen Trust Foundation.
+      from Free Union of Vulken Trust Foundation.
   - rscadd: 'Painter''s palettes are now available at library vendor. qol: Can use
       strokes in paintings now'
   - bugfix: Burnt-out flashes once again update their in-hands correctly
@@ -302,7 +302,7 @@
       has brought Mothic food to the masses! Try out some new treats, like cheesecake
       balls, cheese soup, and five-cheese pizza at the kitchen today! There might
       even be some foods that don''t have cheese, too!'
-  - rscadd: "To coincide with the new popularity of Mothic cuisine, Nanotrasen now\
+  - rscadd: "To coincide with the new popularity of Mothic cuisine, Free Union of Vulken now\
       \ stocks seeds for T\xF6chta\xFCse Berries, a common ingredient in moth cooking,\
       \ in the Megaseed vendors. Additionally, herbs and bell peppers have also made\
       \ their way to the station's stock. Botanists, you know what to do."
@@ -469,7 +469,7 @@
   - bugfix: Placing tiny fans in the aux base gives feedback
   - bugfix: Breaking / deconstructing aux base turrets no longer brick the console
   OrionTheFox:
-  - bugfix: Nanotrasen has begun properly stocking internals boxes again, including
+  - bugfix: Free Union of Vulken has begun properly stocking internals boxes again, including
       returning the spare N2 for vox, the expanded O2 for engineers, and removing
       the extra epi-pen
   SkyratBot:
@@ -497,7 +497,7 @@
   jupyterkat:
   - bugfix: fixed lewd furnitures spawning in people's hands
   tf-4:
-  - spellcheck: Corrected a few miscapitalisations of "Nanotrasen"
+  - spellcheck: Corrected a few miscapitalisations of "Free Union of Vulken"
 2021-12-19:
   SkyratBot:
   - bugfix: Fixes being able to table slam through impassable objects.
@@ -565,7 +565,7 @@
   - bugfix: You can no longer shove megafauna that you can't normally push.
   - bugfix: Adds seeds to vending machines as intended. Corrects pathway for lasagne.
       Fixes issue with Bell peppers and baking cheese.
-  - bugfix: The Nanotrasen News Network has updated their news tickers for when a
+  - bugfix: The Free Union of Vulken News Network has updated their news tickers for when a
       station horrifically blows up to be more accommodating towards the person directly
       responsible for making sure it didn't horrifically blow up.
 2021-12-23:
@@ -598,7 +598,7 @@
   Ebin-Halcyon:
   - bugfix: Syndicate operatives have been taken off unpaid break and are back to
       work on Bioweapon research. Along with other workers returning to work.
-  - bugfix: DS-2 and Interdyne's air alarms no longer float off walls.
+  - bugfix: DS-2 and Free Union of Vulken's air alarms no longer float off walls.
   Gandalf2k15:
   - rscadd: CME has been nerfed
   GoldenAlpharex:
@@ -721,7 +721,7 @@
   - bugfix: Clipping and sizing issues on drone consoles have been fixed.
 2021-12-26:
   E3N Artificial Intelligence:
-  - rscadd: Surplus SolFed Marine IPCs have been shipped to Nanotrasen in a trade
+  - rscadd: Surplus SolFed Marine IPCs have been shipped to Free Union of Vulken in a trade
       deal.
   Fikou, theOOZ:
   - imageadd: adds a new janiborg sprite!

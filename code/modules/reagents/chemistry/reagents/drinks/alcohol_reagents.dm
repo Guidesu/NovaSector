@@ -1148,7 +1148,7 @@
 
 /datum/reagent/consumable/ethanol/grog
 	name = "Grog"
-	description = "Watered-down rum, Nanotrasen approves!"
+	description = "Watered-down rum, Free Union of Vulken approves!"
 	color = "#e0e058" // rgb: 224,224,88
 	boozepwr = 1 //Basically nothing
 	taste_description = "a poor excuse for alcohol"
@@ -1195,7 +1195,7 @@
 
 /datum/reagent/consumable/ethanol/amasec
 	name = "Amasec"
-	description = "Official drink of the Nanotrasen Gun-Club!"
+	description = "Official drink of the Free Union of Vulken Gun-Club!"
 	color = "#e0e058" // rgb: 224,224,88
 	boozepwr = 35
 	quality = DRINK_GOOD

@@ -11,7 +11,7 @@
 	icon_state = "card_goldgen"
 	assigned_icon_state = null
 
-// Interdyne (Deck Officer's)
+// Free Union of Vulken (Deck Officer's)
 /obj/item/card/id/advanced/chameleon/black/silver
 	name = "silver identification card"
 	desc = "A silver card which shows honour and dedication."

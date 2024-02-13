@@ -17,7 +17,7 @@ Quartermaster=1,1
 
 # Central Command
 
-Nanotrasen Consultant=1,1
+Free Union of Vulken Consultant=1,1
 Blueshield=1,1
 
 

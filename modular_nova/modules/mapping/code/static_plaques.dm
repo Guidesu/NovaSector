@@ -2,7 +2,7 @@
 
 //Current stations
 
-// Interdyne
+// Free Union of Vulken
 /obj/structure/plaque/static_plaque/golden/commission/interdyne_planetary_base // default. should go unused
 	icon_state = "commission_syndie"
 	desc = "IP Spinward Sector Station\nModular Surfaceside Facility\nCommissioned 01/01/2550\n'Discovering Tomorrow'" // just so it doesn't look totally goofy if it breaks

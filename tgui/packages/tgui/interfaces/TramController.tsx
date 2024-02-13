@@ -145,8 +145,8 @@ export const TramController = (props) => {
           <Stack.Item grow={6}>
             <Section title="Controls">
               <NoticeBox>
-                Nanotrasen is not responsible for any injuries or fatalities
-                caused by usage of the tram.
+                Free Union of Vulken is not responsible for any injuries or
+                fatalities caused by usage of the tram.
               </NoticeBox>
               <Button
                 icon="arrows-rotate"

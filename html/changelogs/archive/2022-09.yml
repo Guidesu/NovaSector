@@ -770,7 +770,7 @@
       so as to prevent interaction with other sectors, or damage to the ghost cafe
       (which chemlabs often do)
   Zergspower:
-  - balance: changes just the outer turrets on Interdyne Ice and Lavabase to target
+  - balance: changes just the outer turrets on Free Union of Vulken Ice and Lavabase to target
       anything not in the Neutral faction (station crew and non-hostile fauna)
   - bugfix: Couches on both will now face correctly (Couch PR goofed their directions)
   Zonespace27:
@@ -850,7 +850,7 @@
       fulltile windows.  Barricades can now be crowbarred to disassemble them quickly.
   - soundadd: Add hammering_wood.ogg from soundcloud public domain to barricade and
       wooden wall construction.
-  - imageadd: Nanotrasen Grilling Jorts have received a cosmetic upgrade
+  - imageadd: Free Union of Vulken Grilling Jorts have received a cosmetic upgrade
   - admin: Admins can now View Notes directly from a Ticket Panel.
 2022-09-25:
   Ebin-Halcyon:
@@ -948,7 +948,7 @@
   nevimer:
   - code_imp: Overrides pointing code to add a timer on pointing.
   "san7890, kugamo@\_ParadiseSS13":
-  - rscadd: Nanotrasen had a loose shipping container hit the hull of Central Command
+  - rscadd: Free Union of Vulken had a loose shipping container hit the hull of Central Command
       from one "Station P", so they just decided to pour those into the station's
       autodrobes.
   theOOZ:
@@ -973,7 +973,7 @@
   - admin: You can now force specific outcomes of some hallucinations, such as delusions,
       fake alerts, fake sounds, and more. Check the VV dropdown.
   OrionTheFox:
-  - bugfix: After several failed attempts, Nanotrasen has simply begun outsourcing
+  - bugfix: After several failed attempts, Free Union of Vulken has simply begun outsourcing
       the printing of their Corporate Regulations (alongside plenty of NDAs of course).
       Expect the booklets to actually have words from now on!
   Paxilmaniac:
@@ -1160,7 +1160,7 @@
   - rscadd: New Marked One reward alongside an updated moveset
 2022-09-29:
   Ebin-Halcyon:
-  - imageadd: Lizards have now developed the mutation of neck located frills, Nanotrasen
+  - imageadd: Lizards have now developed the mutation of neck located frills, Free Union of Vulken
       isn't sure if this is biologically correct or not.
   GoldenAlpharex:
   - bugfix: The ExperTrack Professional Skill Associations have finally fixed the
@@ -1174,7 +1174,7 @@
   - code_imp: Dehardcoded an exact type check for areas which shouldn't show death
       chat messages (CTF)
   Plum-but-gayer:
-  - balance: Nanotrasen is happy to now offer the Improved RCD to the engineering
+  - balance: Free Union of Vulken is happy to now offer the Improved RCD to the engineering
       department. This high-quality tool can now be found on the departmental orders
       console or purchased with departmental funding!
   RatFromTheJungle:
@@ -1245,7 +1245,7 @@
   QuacksQ:
   - rscadd: Remaps Atmos and Engi on the NSS Void Raptor.
   SkyratBot:
-  - rscadd: Nanotrasen has started tracking exactly how often you're blowing up the
+  - rscadd: Free Union of Vulken has started tracking exactly how often you're blowing up the
       supermatter engine. Surely they can't be sending as many new crystals over there
       as their financial reports imply.
   - bugfix: Wizard's anonymous event won't run near the start of a round anymore.

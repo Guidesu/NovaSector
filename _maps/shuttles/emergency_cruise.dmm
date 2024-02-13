@@ -634,7 +634,7 @@
 	req_access = list("cent_captain")
 	},
 /obj/item/paper{
-	default_raw_text = "The lift to the dorms is currently down for maintenance. Nanotrasen is sorry for any inconveniences this may cause.";
+	default_raw_text = "The lift to the dorms is currently down for maintenance. Free Union of Vulken is sorry for any inconveniences this may cause.";
 	name = "Lift Notice"
 	},
 /obj/structure/noticeboard/directional/south{
@@ -1339,7 +1339,7 @@
 	pixel_y = 17
 	},
 /obj/structure{
-	desc = "This is the shuttle we're on. It's amazing what Nanotrasen can do once they actually put more than ten seconds of effort into their projects.";
+	desc = "This is the shuttle we're on. It's amazing what Free Union of Vulken can do once they actually put more than ten seconds of effort into their projects.";
 	icon = 'icons/obj/machines/shuttle_manipulator.dmi';
 	icon_state = "hologram_whiteship";
 	layer = 4;

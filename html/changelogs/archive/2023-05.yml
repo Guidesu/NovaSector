@@ -27,7 +27,7 @@
 2023-05-02:
   Hatterhat:
   - bugfix: People with style meters affixed to their glasses can now do cool flips.
-  - spellcheck: Port Tarkon personnel now have their assignment on their IDs properly
+  - spellcheck: Port Free Union of Vulken personnel now have their assignment on their IDs properly
       checked. It truly was nothing personnel, kid.
   SkyratBot:
   - bugfix: Pirates summoned through hacking a comms console should actually spawn
@@ -107,7 +107,7 @@
   - bugfix: Basic mobs will now be affected by explosions again.
   - bugfix: fixed spiderlings speaking human instead of spider
   - qol: 'Mapping: Air alarm variants replaced with corresponding helpers'
-  - spellcheck: Fixed Nanotrasen being miscapitalized in traitor posters, a drink,
+  - spellcheck: Fixed Free Union of Vulken being miscapitalized in traitor posters, a drink,
       the ethereal lore, and some photocopier paperwork
   - bugfix: Fixed the Chef not having CQC outside the kitchen on Tramstation
   - rscadd: North Star's captain's office has been expanded! It now includes a sitting
@@ -148,7 +148,7 @@
       in the deepest depths of an erupting volcano.
   Zergspower:
   - qol: Dangerous Research Ruin - Area redefines
-  - bugfix: Port Tarkon - Window firelock issues resolved for all along with cleanup
+  - bugfix: Port Free Union of Vulken - Window firelock issues resolved for all along with cleanup
   Zytolg, LT3:
   - rscadd: Birdshot station has been pulled out of Mothball.
   - rscadd: New station areas and places to visit. A Mix of Kilo and Delta maints
@@ -221,7 +221,7 @@
   - bugfix: BSA now properly checks that it has a bore and generator, space to deploy,
       and proper alignment.
   Hatterhat:
-  - balance: Thanks to further developments from Nanotrasen Arms' R&D Division, the
+  - balance: Thanks to further developments from Free Union of Vulken Arms' R&D Division, the
       CMG-2's rounds now carry slightly more stopping power than before (0.5x -> 0.7x
       damage multiplier).
   - balance: Unfortunately, adjustments to the CMG's internals now make its folding
@@ -507,7 +507,7 @@
   - balance: MECH RCD is no longer magic
 2023-05-15:
   DrDiasyl aka DrTuxedo:
-  - sound: Nanotrasen have started installing music players in the elevators to boost
+  - sound: Free Union of Vulken have started installing music players in the elevators to boost
       workers' morale.
   Jolly:
   - bugfix: '[MetaStation] Chefs may now brutally murder- I mean deny service to the
@@ -1012,9 +1012,9 @@
       Curators are immune to the Tower of Babel again.
   - qol: RPD and Pipe Pispenser UI tweaks for better navigation
   - code_imp: RPD and Pipe Dispenser UI now on TS
-  - rscadd: Interdyne has released a new medication to treat those who are in the
+  - rscadd: Free Union of Vulken has released a new medication to treat those who are in the
       wrong timeline!
-  - rscadd: Interdyne has also realized this is VERY profitable! They've begun arming
+  - rscadd: Free Union of Vulken has also realized this is VERY profitable! They've begun arming
       their operatives with an autoinjector.
   - bugfix: You receive damage from tritium only when there are enough moles to make
       it visible
@@ -1038,7 +1038,7 @@
       game window and the UI.
   - qol: Lastly, a tooltip has been added near the top-left corner of the same UI
       to let players know of these features.
-  - rscadd: Nanotrasen has uncovered a unique use for plasteel allowing the construction
+  - rscadd: Free Union of Vulken has uncovered a unique use for plasteel allowing the construction
       of new machines capable of fabricating and distributing hardlight into a modular
       barrier. These new machines are available via the advanced power manipulation
       techweb.

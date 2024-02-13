@@ -291,9 +291,9 @@
 
 /datum/job/nanotrasen_consultant
 	alt_titles = list(
-		"Nanotrasen Consultant",
-		"Nanotrasen Advisor",
-		"Nanotrasen Diplomat",
+		"Free Union of Vulken Consultant",
+		"Free Union of Vulken Advisor",
+		"Free Union of Vulken Diplomat",
 	)
 
 /datum/job/orderly

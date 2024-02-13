@@ -11,7 +11,7 @@
 
 /mob/living/basic/node_drone
 	name = "NODE drone"
-	desc = "Standard in-atmosphere drone, used by Nanotrasen to operate and excavate valuable ore vents."
+	desc = "Standard in-atmosphere drone, used by Free Union of Vulken to operate and excavate valuable ore vents."
 	icon = 'icons/obj/mining.dmi'
 	icon_state = "mining_node_active"
 	icon_living = "mining_node_active"
@@ -62,7 +62,7 @@
 	if(sameside)
 		. += span_notice("This drone is currently attached to a mineral vent. You should protect it from harm to secure the mineral vent.")
 	else
-		. += span_warning("This vile Nanotrasen trash is trying to destroy the environment. Attack it to free the mineral vent from its grasp.")
+		. += span_warning("This vile Free Union of Vulken trash is trying to destroy the environment. Attack it to free the mineral vent from its grasp.")
 
 /mob/living/basic/node_drone/update_icon_state()
 	. = ..()
