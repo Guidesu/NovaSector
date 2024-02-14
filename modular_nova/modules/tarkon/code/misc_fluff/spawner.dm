@@ -92,9 +92,12 @@
 	id = /obj/item/card/id/advanced/tarkon/engi
 	id_trim = /datum/id_trim/away/tarkon/eng
 	neck = /obj/item/clothing/neck/security_cape/tarkon
-	l_hand = /obj/item/inducer
 	l_pocket = /obj/item/tank/internals/emergency_oxygen/engi
 	r_pocket = /obj/item/stack/cable_coil
+	backpack_contents = list(
+		/obj/item/crowbar = 1,
+		/obj/item/inducer = 1
+		)
 
 /obj/effect/mob_spawn/ghost_role/human/tarkon/sec
 	prompt_name = "a port security member"
@@ -178,21 +181,23 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/computer/cryopod/tarkon, 32)
 	icon_state = "corpseminer"
 	outfit = /datum/outfit/tarkon/loot
 
+#define ROLE_TARKALIEN "Xenomorph Hive T-35"
+
 /obj/structure/spawner/tarkon_xenos
 	name = "infested warren"
 	desc = "A deep tunnel that goes deeper than any light can reach. A distant roaring could be heard within..."
 	icon_state = "hole"
 	icon = 'icons/mob/simple/lavaland/nest.dmi'
 	max_integrity = 500
-	max_mobs = 7
-	spawn_time = 20 SECONDS
+	max_mobs = 4
+	spawn_time = 30 SECONDS
 	mob_types = list(
 		/mob/living/simple_animal/hostile/alien,
 		/mob/living/simple_animal/hostile/alien/drone,
 		/mob/living/simple_animal/hostile/alien/sentinel
 	)
 	spawn_text = "crawls out of"
-	faction = list(ROLE_ALIEN)
+	faction = list(ROLE_TARKALIEN)
 	var/boss_mob = /mob/living/simple_animal/hostile/alien/queen/large
 	var/loot_drop = /obj/effect/mob_spawn/corpse/human/tarkon
 
@@ -235,8 +240,8 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/computer/cryopod/tarkon, 32)
 	icon_state = "hole"
 	icon = 'icons/mob/simple/lavaland/nest.dmi'
 	max_integrity = 300
-	max_mobs = 4
-	spawn_time = 30 SECONDS
+	max_mobs = 2
+	spawn_time = 40 SECONDS
 	boss_mob = /mob/living/simple_animal/hostile/alien/queen
 	loot_drop = /obj/effect/spawner/random/astrum/sci_loot/tarkon
 
@@ -246,8 +251,8 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/computer/cryopod/tarkon, 32)
 	icon_state = "hole"
 	icon = 'icons/mob/simple/lavaland/nest.dmi'
 	max_integrity = 150
-	max_mobs = 2
-	spawn_time = 30 SECONDS
+	max_mobs = 1
+	spawn_time = 40 SECONDS
 	mob_types = list(
 		/mob/living/simple_animal/hostile/alien,
 		/mob/living/simple_animal/hostile/alien/drone
