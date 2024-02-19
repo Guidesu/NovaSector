@@ -1,21 +1,21 @@
 /datum/map_generator/cave_generator/lavaland
-	weighted_open_turf_types = list(/turf/open/misc/asteroid/basalt/lava_land_surface = 1, /turf/open/misc/asteroid/snow/icemoon = 1, /turf/open/misc/ice/icemoon = 1)
+	weighted_open_turf_types = list(/turf/open/misc/asteroid/basalt/lava_land_surface = 20, /turf/open/misc/asteroid/snow/icemoon = 20, /turf/open/misc/ice/icemoon = 1)
 	weighted_closed_turf_types = list(/turf/closed/mineral/random/volcanic = 1, /turf/closed/mineral/random/snow = 1)
 
 	weighted_mob_spawn_list = list(
-		/mob/living/basic/mining/bileworm = 1,
-		/mob/living/basic/mining/brimdemon = 1,
+		/mob/living/basic/mining/bileworm = 0,
+		/mob/living/basic/mining/brimdemon = 0,
 		/mob/living/basic/mining/lobstrosity/lava = 1,
-		/mob/living/basic/mining/goldgrub = 10,
-		/obj/structure/spawner/lavaland = 1,
-		/obj/structure/spawner/lavaland/goliath = 1,
-		/obj/structure/spawner/lavaland/legion = 1,
-		/mob/living/basic/mining/legion/snow = 1,
-		/mob/living/basic/mining/lobstrosity = 1,
-		/mob/living/basic/mining/wolf = 20,
-		/mob/living/simple_animal/hostile/asteroid/polarbear = 15,
-		/obj/structure/spawner/ice_moon = 1,
-		/obj/structure/spawner/ice_moon/polarbear = 1,
+		/mob/living/basic/mining/goldgrub = 1,
+		/obj/structure/spawner/lavaland = 0,
+		/obj/structure/spawner/lavaland/goliath = 0,
+		/obj/structure/spawner/lavaland/legion = 0,
+		/mob/living/basic/mining/legion/snow = 0,
+		/mob/living/basic/mining/lobstrosity = 0,
+		/mob/living/basic/mining/wolf = 5,
+		/mob/living/simple_animal/hostile/asteroid/polarbear = 2,
+		/obj/structure/spawner/ice_moon = 0,
+		/obj/structure/spawner/ice_moon/polarbear = 0,
 	)
 
 	weighted_flora_spawn_list = list(
@@ -29,8 +29,8 @@
 		/obj/structure/flora/ash/chilly = 2,
 		/obj/structure/flora/grass/both/style_random = 6,
 		/obj/structure/flora/rock/icy/style_random = 2,
-		/obj/structure/flora/rock/pile/icy/style_random = 2,
-		/obj/structure/flora/tree/pine/style_random = 2,
+		/obj/structure/flora/rock/pile/icy/style_random = 10,
+		/obj/structure/flora/tree/pine/style_random = 8,
 	)
 
 	///Note that this spawn list is also in the icemoon generator

@@ -990,7 +990,7 @@
   - spellcheck: fixed a typo in NT Frontier under medical partner
   - qol: the ordnance experiments will give you more information on how to do them
       from the UI.
-  - bugfix: HoPs all around the Spinward Sector scream in joy as their beloved ticket
+  - bugfix: HoPs all around the Outerfringe Sector scream in joy as their beloved ticket
       machine finally rises back from the dead.
   - qol: Add more examines to ticket machines and tickets, giving info about people's
       spot in queue and so on.
@@ -1129,7 +1129,7 @@
   - bugfix: Fixes reagent transfer not properly emptying the source of reagents when
       transferring to a target.
   - rscadd: Having struck a deal with Piccionaia Home Appliances, Free Union of Vulken has now
-      distributed coffeemakers to break rooms across the Spinward Sector. Get cartridges
+      distributed coffeemakers to break rooms across the Outerfringe Sector. Get cartridges
       at cargo, and enjoy the ambrosia of the corporate masses on your station today!
   - balance: orks no longer shout their attacks over the radio
   - rscadd: Free Union of Vulken has added a new vent and a new scrubber to MetaStation's Gravity

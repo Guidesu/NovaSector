@@ -156,7 +156,7 @@
 	title = JOB_SCIENCE_GUARD
 	description = "Figure out why the emails aren't working, keep an eye on the eggheads, protect them from their latest mistakes."
 	department_head = list(JOB_RESEARCH_DIRECTOR)
-	faction = FACTION_STATION
+	faction = FACTION_NONE
 	total_positions = 2
 	spawn_positions = 2
 	supervisors = SUPERVISOR_RD
@@ -184,7 +184,7 @@
 		/obj/item/clothing/mask/whistle = 5,
 		/obj/item/melee/baton/security/boomerang/loaded = 1
 	)
-	job_flags = JOB_ANNOUNCE_ARRIVAL | JOB_CREW_MANIFEST | JOB_EQUIP_RANK | JOB_CREW_MEMBER | JOB_NEW_PLAYER_JOINABLE | JOB_REOPEN_ON_ROUNDSTART_LOSS | JOB_ASSIGN_QUIRKS | JOB_CAN_BE_INTERN
+	job_flags = DISABLED_STATION_JOB_FLAGS
 
 /datum/outfit/job/science_guard
 	name = "Science Guard"
@@ -259,7 +259,7 @@
 	title = JOB_ORDERLY
 	description = "Defend the medical department, hold down idiots who refuse the vaccine, assist medical with prep and/or cleanup."
 	department_head = list(JOB_CHIEF_MEDICAL_OFFICER)
-	faction = FACTION_STATION
+	faction = FACTION_NONE
 	total_positions = 2
 	spawn_positions = 2
 	supervisors = SUPERVISOR_CMO
@@ -288,7 +288,7 @@
 		/obj/item/melee/baton/security/boomerang/loaded = 1
 	)
 
-	job_flags = JOB_ANNOUNCE_ARRIVAL | JOB_CREW_MANIFEST | JOB_EQUIP_RANK | JOB_CREW_MEMBER | JOB_NEW_PLAYER_JOINABLE | JOB_REOPEN_ON_ROUNDSTART_LOSS | JOB_ASSIGN_QUIRKS | JOB_CAN_BE_INTERN
+	job_flags = DISABLED_STATION_JOB_FLAGS
 
 /datum/outfit/job/orderly
 	name = "Orderly"
@@ -358,7 +358,7 @@
 	title = JOB_ENGINEERING_GUARD
 	description = "Monitor the supermatter, keep an eye on atmospherics, make sure everyone is wearing Proper Protective Equipment."
 	department_head = list(JOB_CHIEF_ENGINEER)
-	faction = FACTION_STATION
+	faction = FACTION_NONE
 	total_positions = 2
 	spawn_positions = 2
 	supervisors = SUPERVISOR_CE
@@ -386,7 +386,7 @@
 		/obj/item/clothing/mask/whistle = 5,
 		/obj/item/melee/baton/security/boomerang/loaded = 1
 	)
-	job_flags = JOB_ANNOUNCE_ARRIVAL | JOB_CREW_MANIFEST | JOB_EQUIP_RANK | JOB_CREW_MEMBER | JOB_NEW_PLAYER_JOINABLE | JOB_REOPEN_ON_ROUNDSTART_LOSS | JOB_ASSIGN_QUIRKS | JOB_CAN_BE_INTERN
+	job_flags = DISABLED_STATION_JOB_FLAGS
 
 /datum/outfit/job/engineering_guard
 	name = "Engineering Guard"
@@ -460,9 +460,9 @@
 */
 /datum/job/customs_agent
 	title = JOB_CUSTOMS_AGENT
-	description = "Inspect the packages coming to and from the station, protect the cargo department, beat the shit out of people trying to ship Cocaine to the Spinward Stellar Coalition."
+	description = "Inspect the packages coming to and from the station, protect the cargo department, beat the shit out of people trying to ship Cocaine to the Outerfringe Stellar Coalition."
 	department_head = list(JOB_QUARTERMASTER)
-	faction = FACTION_STATION
+	faction = FACTION_NONE
 	total_positions = 2
 	spawn_positions = 2
 	supervisors = SUPERVISOR_QM
@@ -490,7 +490,7 @@
 		/obj/item/clothing/mask/whistle = 5,
 		/obj/item/melee/baton/security/boomerang/loaded = 1
 	)
-	job_flags = JOB_ANNOUNCE_ARRIVAL | JOB_CREW_MANIFEST | JOB_EQUIP_RANK | JOB_CREW_MEMBER | JOB_NEW_PLAYER_JOINABLE | JOB_REOPEN_ON_ROUNDSTART_LOSS | JOB_ASSIGN_QUIRKS | JOB_CAN_BE_INTERN
+	job_flags = DISABLED_STATION_JOB_FLAGS
 
 /datum/outfit/job/customs_agent
 	name = "Customs Agent"
@@ -560,7 +560,7 @@
 	title = JOB_BOUNCER
 	description = "Make sure people don't jump the kitchen counter, stop Chapel vandalism, check bargoer's IDs, prevent the dreaded \"food fight\"."
 	department_head = list(JOB_HEAD_OF_PERSONNEL)
-	faction = FACTION_STATION
+	faction = FACTION_NONE
 	total_positions = 2
 	spawn_positions = 2
 	supervisors = SUPERVISOR_HOP
@@ -588,7 +588,7 @@
 		/obj/item/clothing/mask/whistle = 5,
 		/obj/item/melee/baton/security/boomerang/loaded = 1
 	)
-	job_flags = JOB_ANNOUNCE_ARRIVAL | JOB_CREW_MANIFEST | JOB_EQUIP_RANK | JOB_CREW_MEMBER | JOB_NEW_PLAYER_JOINABLE | JOB_REOPEN_ON_ROUNDSTART_LOSS | JOB_ASSIGN_QUIRKS | JOB_CAN_BE_INTERN
+	job_flags = DISABLED_STATION_JOB_FLAGS
 
 /datum/outfit/job/bouncer
 	name = "Bouncer"

@@ -4,7 +4,7 @@
 		collect empty crates, load and unload the supply shuttle, \
 		ship bounty cubes."
 	department_head = list(JOB_QUARTERMASTER)
-	faction = FACTION_STATION
+	faction = FACTION_NONE
 	total_positions = 5
 	spawn_positions = 3
 	supervisors = SUPERVISOR_QM
@@ -33,7 +33,7 @@
 		/obj/item/gun/ballistic/automatic/wt550 = 1,
 	)
 	rpg_title = "Merchantman"
-	job_flags = STATION_JOB_FLAGS
+	job_flags = DISABLED_STATION_JOB_FLAGS
 
 
 /datum/outfit/job/cargo_tech

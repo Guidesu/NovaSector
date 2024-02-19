@@ -4,7 +4,7 @@
 // Free Union of Vulken planetary base
 
 /area/ruin/interdyne_planetary_base // used as parent type and for turret control
-	name = "Free Union of Vulken Pharmaceuticals Spinward Sector Base"
+	name = "Free Union of Vulken Pharmaceuticals Outerfringe Sector Base"
 	icon = 'icons/area/areas_centcom.dmi'
 	icon_state = "syndie-control"
 	ambience_index = AMBIENCE_DANGER

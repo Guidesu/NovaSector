@@ -490,7 +490,7 @@
       They need to breath, and already got the suit for speed.
   - bugfix: '[Mafia] Obsessed now knows who their target is in their role description,
       and people playing on PDA are told in their chat.'
-  - rscadd: With the flood of Chi within the Spinward Sector receding, various masters
+  - rscadd: With the flood of Chi within the Outerfringe Sector receding, various masters
       of The Tunnel Arts, colloquially known as 'Maint-fu Masters', have started to
       refine the basics of their martial techniques. New forms have started to develop
       within Spacestation 13's hidden maintenance dojos.
@@ -513,7 +513,7 @@
   - spellcheck: Made the remembrance day greeting message more tasteful.
   - bugfix: The Dread Disciples of Maint Khan, notorious Tunnel Arts practitioner
       and maintenance warlord, have been driven from Free Union of Vulken stations within the
-      Spinward Sector. The average punch accuracy has been increased as a direct result,
+      Outerfringe Sector. The average punch accuracy has been increased as a direct result,
       with the most exhausted puncher now having a  max potential inaccuracy of 80%,
       rather than the absurd 20% of the Disciples.
   chemistrymain2:
@@ -917,7 +917,7 @@
   - balance: signers no longer suffer from social anxiety's speech changes when they
       go non-verbal. Other effects are maintained.
   - rscadd: The battle against Maint Khan's forces rages on in the periphery stations
-      of the Spinward Sector. And with it, a new breed of unarmed warrior has emerged;
+      of the Outerfringe Sector. And with it, a new breed of unarmed warrior has emerged;
       the cybernetic martial artist. Free Union of Vulken, rather than quell the minor maintenance
       civil war brewing in their sector, have chosen to exploit this conflict to push
       their weapons and cybernetics research to new heights!

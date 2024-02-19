@@ -1,3 +1,5 @@
+#define DISABLED_STATION_JOB_FLAGS (JOB_ANNOUNCE_ARRIVAL|JOB_CREW_MANIFEST|JOB_EQUIP_RANK|JOB_CREW_MEMBER|JOB_REOPEN_ON_ROUNDSTART_LOSS|JOB_ASSIGN_QUIRKS|JOB_CAN_BE_INTERN)
+
 #define JOB_AVAILABLE 0
 #define JOB_UNAVAILABLE_GENERIC 1
 #define JOB_UNAVAILABLE_BANNED 2
@@ -13,8 +15,8 @@
 #define GENERIC_JOB_UNAVAILABLE_ERROR "Error: Unknown job availability."
 
 #define DEFAULT_RELIGION "Christianity"
-#define DEFAULT_DEITY "Space Jesus"
-#define DEFAULT_BIBLE "Default Bible Name"
+#define DEFAULT_DEITY "Jesus"
+#define DEFAULT_BIBLE "Bible"
 #define DEFAULT_BIBLE_REPLACE(religion) "The Holy Book of [religion]"
 
 #define JOB_DISPLAY_ORDER_DEFAULT 0
@@ -42,7 +44,7 @@
 #define JOB_ASSISTANT "Assistant"
 #define JOB_PRISONER "Prisoner"
 //Command
-#define JOB_CAPTAIN "Captain"
+#define JOB_CAPTAIN "Colony Caretaker"
 #define JOB_HEAD_OF_PERSONNEL "Head of Personnel"
 #define JOB_HEAD_OF_SECURITY "Head of Security"
 #define JOB_RESEARCH_DIRECTOR "Research Director"

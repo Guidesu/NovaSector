@@ -86,8 +86,8 @@
 	icon_state = "billboard_roadsign_error"
 
 /obj/structure/billboard/smoothies
-	name = "\improper Spinward Smoothies billboard"
-	desc = "A billboard advertising Spinward Smoothies."
+	name = "\improper Outerfringe Smoothies billboard"
+	desc = "A billboard advertising Outerfringe Smoothies."
 	icon_state = "billboard_smoothies"
 
 /obj/structure/billboard/fortune_telling

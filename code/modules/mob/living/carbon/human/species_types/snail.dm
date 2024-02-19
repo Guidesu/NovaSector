@@ -5,6 +5,7 @@
 		TRAIT_MUTANT_COLORS,
 		// TRAIT_NO_UNDERWEAR, //NOVA EDIT REMOVAL - Roundstart Snails - Snails deserve to wear underwear
 		TRAIT_NO_SLIP_ALL,
+		TRAIT_NOSOFTCRIT,
 		TRAIT_WATER_BREATHING, //NOVA EDIT ADDITION - Roundstart Snails - Sea snails exist, and land snails can weather being underwater for almost a day.
 	)
 

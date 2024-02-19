@@ -585,10 +585,10 @@
 	name = "\improper Hell Factory Office"
 	area_flags = VALID_TERRITORY | BLOBS_ALLOWED | UNIQUE_AREA | NOTELEPORT
 
-//Ruin of Spinward Smoothies
+//Ruin of Outerfringe Smoothies
 
 /area/ruin/space/has_grav/spinwardsmoothies
-	name = "Spinward Smoothies"
+	name = "Outerfringe Smoothies"
 
 // The planet of the clowns
 /area/ruin/space/has_grav/powered/clownplanet

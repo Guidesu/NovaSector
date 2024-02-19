@@ -3,6 +3,7 @@
 	id = SPECIES_HUMAN
 	inherent_traits = list(
 		TRAIT_USES_SKINTONES,
+		TRAIT_NOSOFTCRIT
 	)
 	mutant_bodyparts = list("wings" = "None")
 	skinned_type = /obj/item/stack/sheet/animalhide/human

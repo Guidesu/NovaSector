@@ -11,7 +11,8 @@
 		TRAIT_VIRUSIMMUNE,
 		TRAIT_NOBLOOD,
 		TRAIT_NODISMEMBER,
-		TRAIT_NEVER_WOUNDED
+		TRAIT_NEVER_WOUNDED,
+		TRAIT_NOSOFTCRIT
 	)
 	inherent_factions = list(FACTION_FAITHLESS)
 	changesource_flags = MIRROR_BADMIN | WABBAJACK | MIRROR_PRIDE | MIRROR_MAGIC
@@ -48,7 +49,7 @@
 
 /datum/species/shadow/get_species_lore()
 	return list(
-		"Long ago, the Spinward Sector used to be inhabited by terrifying aliens aptly named \"Shadowlings\" \
+		"Long ago, the Outerfringe Sector used to be inhabited by terrifying aliens aptly named \"Shadowlings\" \
 		after their control over darkness, and tendancy to kidnap victims into the dark maintenance shafts. \
 		Around 2558, the long campaign Free Union of Vulken waged against the space terrors ended with the full extinction of the Shadowlings.",
 

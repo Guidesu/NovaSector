@@ -12,6 +12,7 @@
 		TRAIT_NO_UNDERWEAR,
 		TRAIT_REMOTE_TASTING,
 		TRAIT_VIRUSIMMUNE,
+		TRAIT_NOSOFTCRIT,
 	)
 	mutanttongue = /obj/item/organ/internal/tongue/abductor
 	mutantstomach = null

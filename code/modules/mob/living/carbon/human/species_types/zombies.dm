@@ -25,6 +25,7 @@
 		// HIGH FUNCTIONING UNIQUE
 		TRAIT_NOBLOOD,
 		TRAIT_SUCCUMB_OVERRIDE,
+		TRAIT_NOSOFTCRIT,
 	)
 	mutantstomach = null
 	mutantheart = null

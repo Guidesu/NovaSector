@@ -3973,7 +3973,7 @@
 	},
 /obj/machinery/computer/terminal/museum{
 	dir = 8;
-	content = list("This exhibit is of a preserved cortical borer. Cortical borers went extinct in the Spinward sector due to almost every of them starving as they could not find enough food in the brains of the crewmembers, as they are usually pretty small or damaged by plasma exposure.")
+	content = list("This exhibit is of a preserved cortical borer. Cortical borers went extinct in the Outerfringe sector due to almost every of them starving as they could not find enough food in the brains of the crewmembers, as they are usually pretty small or damaged by plasma exposure.")
 	},
 /turf/open/floor/iron/dark,
 /area/awaymission/museum)

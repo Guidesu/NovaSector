@@ -5,6 +5,9 @@
 		TRAIT_TACKLING_WINGED_ATTACKER,
 		TRAIT_ANTENNAE,
 		TRAIT_MUTANT_COLORS,
+		TRAIT_NOSOFTCRIT,
+		TRAIT_TENACIOUS,
+		TRAIT_UNBREAKABLE,
 	)
 
 /datum/species/moth/get_default_mutant_bodyparts()

@@ -183,7 +183,7 @@ export const Rules = (props) => {
           <Stack.Item bold>Special Rules:</Stack.Item>
           <Stack.Item>
             {
-              <a href="https://wiki.novasector13.com/index.php/Antagonist_Policy#Heretic!">
+              <a href="https://wiki.novasector13.com/index.php/Antagonist_Policy#zzzz!">
                 Special Rules and Metaprotections!
               </a>
             }

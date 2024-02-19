@@ -419,6 +419,7 @@ ROUNDSTART_RACES podweak
 ROUNDSTART_RACES aquatic
 ROUNDSTART_RACES insect
 ROUNDSTART_RACES synth
+ROUNDSTART_RACES akhemau
 #ROUNDSTART_RACES ghoul
 
 ##-------------------------------------------------------------------------------------------

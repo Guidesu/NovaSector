@@ -8,7 +8,23 @@
 		TRAIT_CAN_STRIP,
 		TRAIT_LITERATE,
 		TRAIT_MUTANT_COLORS,
+		TRAIT_TACKLING_TAILED_DEFENDER,
+		TRAIT_TACKLING_WINGED_ATTACKER,
+		TRAIT_NOSOFTCRIT,
+		TRAIT_TENACIOUS,
+		TRAIT_UNBREAKABLE,
+		TRAIT_FIST_MINING,
+		TRAIT_SHOCKIMMUNE,
+		TRAIT_RESISTHEATHANDS,
+		TRAIT_RESISTCOLD,
+		TRAIT_VIRUS_RESISTANCE,
+		TRAIT_HEAR_THROUGH_DARKNESS,
+		TRAIT_SNOWSTORM_IMMUNE,
+		TRAIT_ASHSTORM_IMMUNE,
+		TRAIT_CATLIKE_GRACE,
+		TRAIT_VENTCRAWLER_NUDE,
 	)
+
 	inherent_biotypes = MOB_ORGANIC|MOB_HUMANOID
 	mutantbrain = /obj/item/organ/internal/brain/xeno_hybrid
 	mutanttongue = /obj/item/organ/internal/tongue/xeno_hybrid
@@ -20,7 +36,7 @@
 		/obj/item/organ/internal/alien/hivenode,
 		)
 	exotic_blood = /datum/reagent/toxin/acid
-	heatmod = 2.5
+	heatmod = 1.5
 	mutant_bodyparts = list()
 	external_organs = list()
 	payday_modifier = 1.0
@@ -87,10 +103,10 @@
 
 //Plasma vessel
 /obj/item/organ/internal/alien/plasmavessel/roundstart
-	stored_plasma = 55
-	max_plasma = 55
-	plasma_rate = 2
-	heal_rate = 0
+	stored_plasma = 75
+	max_plasma = 75
+	plasma_rate = 1.5
+	heal_rate = 0.5
 	actions_types = list(
 		/datum/action/cooldown/alien/make_structure/plant_weeds/roundstart,
 		/datum/action/cooldown/alien/transfer,
@@ -138,3 +154,39 @@
 		chem.toxpwr = 0
 
 #undef BUILD_DURATION
+
+/datum/species/xeno/akhemau //My species - Guidesa
+	name = "Akhemau"
+	id = SPECIES_AKHEMAU
+	family_heirlooms = list(/obj/item/toy/plush/rouny, /obj/item/clothing/mask/facehugger/toy)
+	inherent_traits = list(
+		TRAIT_ADVANCEDTOOLUSER,
+		TRAIT_CAN_STRIP,
+		TRAIT_LITERATE,
+		TRAIT_MUTANT_COLORS,
+		TRAIT_TACKLING_TAILED_DEFENDER,
+		TRAIT_TACKLING_WINGED_ATTACKER,
+		TRAIT_NOSOFTCRIT,
+		TRAIT_TENACIOUS,
+		TRAIT_UNBREAKABLE,
+		TRAIT_FIST_MINING,
+		TRAIT_SHOCKIMMUNE,
+		TRAIT_RESISTHEATHANDS,
+		TRAIT_RESISTCOLD,
+		TRAIT_VIRUS_RESISTANCE,
+		TRAIT_HEAR_THROUGH_DARKNESS,
+		TRAIT_SNOWSTORM_IMMUNE,
+		TRAIT_ASHSTORM_IMMUNE,
+		TRAIT_CATLIKE_GRACE,
+		TRAIT_VENTCRAWLER_NUDE,
+	)
+	mutantbrain = /obj/item/organ/internal/brain/xeno_hybrid
+	mutanttongue = /obj/item/organ/internal/tongue/xeno_hybrid
+	mutantliver = /obj/item/organ/internal/liver/xeno_hybrid
+	mutantstomach = /obj/item/organ/internal/stomach/xeno_hybrid
+	mutant_organs = list(
+		/obj/item/organ/internal/alien/plasmavessel/roundstart,
+		/obj/item/organ/internal/alien/resinspinner/roundstart,
+		/obj/item/organ/internal/alien/hivenode,
+		/obj/item/organ/internal/borer_body,
+		)

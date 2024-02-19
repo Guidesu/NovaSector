@@ -3,7 +3,7 @@
 	description = "Run around the station looking for patients, respond to \
 		emergencies, give patients a roller bed ride to medbay."
 	department_head = list(JOB_CHIEF_MEDICAL_OFFICER)
-	faction = FACTION_STATION
+	faction = FACTION_NONE
 	total_positions = 2
 	spawn_positions = 2
 	supervisors = SUPERVISOR_CMO
@@ -36,7 +36,7 @@
 		/obj/item/storage/box/bandages = 5,
 	)
 	rpg_title = "Corpse Runner"
-	job_flags = STATION_JOB_FLAGS
+	job_flags = DISABLED_STATION_JOB_FLAGS
 
 
 /datum/outfit/job/paramedic

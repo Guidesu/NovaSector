@@ -1003,7 +1003,7 @@
   - bugfix: Cooks now properly get their Cook mail instead of just money.
   - bugfix: Mapping configs can now once again set job position slots (and fully remove
       jobs from maps that don't support them).
-  - rscadd: Added Spinward Smoothies Space Ruin
+  - rscadd: Added Outerfringe Smoothies Space Ruin
   - rscadd: Added six types of smoothies
   - rscdel: Removed some redundant cables in Kilo maints
   - bugfix: Removes some stray wires in Tram med maintenance

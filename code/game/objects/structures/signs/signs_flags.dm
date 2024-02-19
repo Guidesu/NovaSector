@@ -12,8 +12,8 @@
 MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/flag/nanotrasen, 32)
 
 /obj/structure/sign/flag/ssc
-	name = "flag of the Spinward Stellar Coalition"
-	desc = "The flag of the Independent Coalition of the Spinward Sector. The colours represent panslavism, and the three stars represent the three central systems of the SSC."
+	name = "flag of the Outerfringe Stellar Coalition"
+	desc = "The flag of the Independent Coalition of the Outerfringe Sector. The colours represent panslavism, and the three stars represent the three central systems of the SSC."
 	icon_state = "flag_ssc"
 
 MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/flag/ssc, 32)

@@ -14,6 +14,9 @@
 		TRAIT_LITERATE,
 		TRAIT_MUTANT_COLORS,
 		TRAIT_FIXED_MUTANT_COLORS,
+		TRAIT_NOSOFTCRIT,
+		TRAIT_TENACIOUS,
+		TRAIT_UNBREAKABLE,
 	)
 	payday_modifier = 1.0 //-- "Equality"
 	stunmod = 1.25 //multiplier for stun durations

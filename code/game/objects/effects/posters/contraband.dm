@@ -551,7 +551,7 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/thunderdrome, 
 
 /obj/structure/sign/poster/contraband/rush_propaganda
 	name = "A New Life"
-	desc = "An old poster from around the time of the First Spinward Rush. It depicts a view of wide, unspoiled lands, ready for Humanity's Manifest Destiny."
+	desc = "An old poster from around the time of the First Outerfringe Rush. It depicts a view of wide, unspoiled lands, ready for Humanity's Manifest Destiny."
 	icon_state = "rush_propaganda"
 
 /obj/structure/sign/poster/contraband/rush_propaganda/examine_more(mob/user)

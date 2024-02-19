@@ -73,7 +73,7 @@
 
 /datum/supply_pack/imports/naturalbait
 	name = "Freshness Jars full of Natural Bait"
-	desc = "Homemade in the Spinward Sector."
+	desc = "Homemade in the Outerfringe Sector."
 	cost = 2000 //rock on
 	contains = list(/obj/item/storage/pill_bottle/naturalbait)
 	crate_name = "fishing bait crate"

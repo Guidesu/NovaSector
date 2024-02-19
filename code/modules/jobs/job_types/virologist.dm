@@ -3,7 +3,7 @@
 	description = "Study the effects of various diseases and synthesize a \
 		vaccine for them. Engineer beneficial viruses."
 	department_head = list(JOB_CHIEF_MEDICAL_OFFICER)
-	faction = FACTION_STATION
+	faction = FACTION_NONE
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = SUPERVISOR_CMO
@@ -36,7 +36,7 @@
 		/obj/item/stack/sheet/mineral/uranium = 5,
 	)
 	rpg_title = "Plague Doctor"
-	job_flags = STATION_JOB_FLAGS
+	job_flags = DISABLED_STATION_JOB_FLAGS
 
 
 /datum/outfit/job/virologist

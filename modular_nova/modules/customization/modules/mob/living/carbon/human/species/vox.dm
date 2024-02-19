@@ -9,6 +9,9 @@
 		TRAIT_CAN_STRIP,
 		TRAIT_LITERATE,
 		TRAIT_MUTANT_COLORS,
+		TRAIT_NOSOFTCRIT,
+		TRAIT_TENACIOUS,
+		TRAIT_UNBREAKABLE,
 	)
 	inherent_biotypes = MOB_ORGANIC|MOB_HUMANOID
 	mutanttongue = /obj/item/organ/internal/tongue/vox

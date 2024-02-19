@@ -2,7 +2,7 @@
 	title = JOB_NT_REP
 	description = "Represent Free Union of Vulken on the station, argue with the HoS about why he can't just field execute people for petty theft, get drunk in your office."
 	department_head = list(JOB_CENTCOM)
-	faction = FACTION_STATION
+	faction = FACTION_NONE
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "Central Command"
@@ -38,7 +38,7 @@
 	)
 
 	veteran_only = TRUE
-	job_flags = STATION_JOB_FLAGS | JOB_BOLD_SELECT_TEXT | JOB_CANNOT_OPEN_SLOTS
+	job_flags = DISABLED_STATION_JOB_FLAGS
 
 /datum/outfit/job/nanotrasen_consultant
 	name = "Free Union of Vulken Consultant"

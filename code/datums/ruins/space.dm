@@ -349,8 +349,8 @@
 /datum/map_template/ruin/space/spinwardsmoothies
 	id = "spinwardsmoothies"
 	suffix = "spinwardsmoothies.dmm"
-	name = "Spinward Smoothies"
-	description = "A branch of the beloved Spinward Smoothies chain of smoothie bars."
+	name = "Outerfringe Smoothies"
+	description = "A branch of the beloved Outerfringe Smoothies chain of smoothie bars."
 
 /datum/map_template/ruin/space/cyborg_mothership
 	id = "cyborg_mothership"
@@ -439,14 +439,14 @@
 /datum/map_template/ruin/space/interdyne
 	id = "interdyne"
 	suffix = "interdyne.dmm"
-	name = "Free Union of Vulken Spinward Research Base"
+	name = "Free Union of Vulken Outerfringe Research Base"
 	description = "An Free Union of Vulken facility abandoned due to the accidental discovery of Romerol"
 
 /datum/map_template/ruin/space/waystation
 	id = "waystation"
 	suffix = "waystation.dmm"
 	name = "Waystation"
-	description = "A waytation for a backwater subsector of Spinward gets attacked by the syndicate due to bad luck."
+	description = "A waytation for a backwater subsector of Outerfringe gets attacked by the syndicate due to bad luck."
 
 /datum/map_template/ruin/space/allamericandiner
 	id = "allamericandiner"

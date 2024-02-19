@@ -2,7 +2,7 @@
 	title = JOB_CYBORG
 	description = "Assist the crew, follow your laws, obey your AI."
 	auto_deadmin_role_flags = DEADMIN_POSITION_SILICON
-	faction = FACTION_STATION
+	faction = FACTION_NONE
 	total_positions = 3	// NOVA EDIT: Original value (0)
 	spawn_positions = 3
 	supervisors = "your laws and the AI" //Nodrak
@@ -19,7 +19,7 @@
 		/datum/job_department/silicon,
 		)
 	random_spawns_possible = FALSE
-	job_flags = JOB_NEW_PLAYER_JOINABLE | JOB_EQUIP_RANK | JOB_CANNOT_OPEN_SLOTS
+	job_flags = DISABLED_STATION_JOB_FLAGS
 
 
 /datum/job/cyborg/after_spawn(mob/living/spawned, client/player_client)

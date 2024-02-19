@@ -6,6 +6,7 @@
 	inherent_traits = list(
 		TRAIT_MUTANT_COLORS,
 		TRAIT_PLANT_SAFE,
+		TRAIT_NOSOFTCRIT
 	)
 	external_organs = list(
 		// /obj/item/organ/external/pod_hair = "None", // NOVA EDIT REMOVAL - Customization (it messes up unit tests.)

@@ -1,5 +1,5 @@
 /obj/item/holochip
-	name = "credit holochip"
+	name = "vulkens holochip"
 	desc = "A hard-light chip encoded with an amount of credits. It is a modern replacement for physical money that can be directly converted to virtual currency and viceversa. Keep away from magnets."
 	icon = 'icons/obj/economy.dmi'
 	icon_state = "holochip"
@@ -17,14 +17,14 @@
 
 /obj/item/holochip/examine(mob/user)
 	. = ..()
-	. += "[span_notice("It's loaded with [credits] credit[( credits > 1 ) ? "s" : ""]")]\n"+\
+	. += "[span_notice("It's loaded with [credits] vulkens[( credits > 1 ) ? "s" : ""]")]\n"+\
 	span_notice("Alt-Click to split.")
 
 /obj/item/holochip/get_item_credit_value()
 	return credits
 
 /obj/item/holochip/update_name()
-	name = "\improper [credits] credit holochip"
+	name = "\improper [credits] vulkens holochip"
 	return ..()
 
 /obj/item/holochip/update_icon_state()

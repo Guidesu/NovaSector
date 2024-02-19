@@ -3,7 +3,7 @@
 	description = "Protect heads of staff, get your fancy gun stolen, cry as the captain touches the supermatter."
 	auto_deadmin_role_flags = DEADMIN_POSITION_SECURITY
 	department_head = list(JOB_NT_REP)
-	faction = FACTION_STATION
+	faction = FACTION_NONE
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "Central Command and the Free Union of Vulken Consultant"
@@ -39,8 +39,8 @@
 		/obj/item/clothing/head/collectable/captain = 4,
 	)
 
-	veteran_only = TRUE
-	job_flags = STATION_JOB_FLAGS | JOB_CANNOT_OPEN_SLOTS
+	veteran_only = FALSE
+	job_flags = DISABLED_STATION_JOB_FLAGS
 
 /datum/outfit/job/blueshield
 	name = "Blueshield"
