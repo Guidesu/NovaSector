@@ -123,8 +123,8 @@ const ChoicedSelection = (props: {
 
   return (
     <Box
+      className="ChoicedSelection"
       style={{
-        background: 'white',
         padding: '5px',
 
         height: `${
@@ -293,6 +293,7 @@ const MainFeature = (props: {
       placement="bottom-start"
       isOpen={isOpen}
       onClickOutside={handleClose}
+      baseZIndex={1} // Below the default popper at z 2
       content={
         <ChoicedSelection
           name={catalog.name}
