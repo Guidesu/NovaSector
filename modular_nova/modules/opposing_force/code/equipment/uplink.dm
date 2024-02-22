@@ -43,8 +43,8 @@
 /datum/opposing_force_equipment/uplink/heretic
 	item_type = /obj/item/antag_granter/heretic
 	name = "Heretical Book"
-	description = "A purple book with an eldritch eye on it, capable of making one into a \"Heretic\", one with the Forgotten Gods."
-	admin_note = "Heretic antag granter."
+	description = "A purple book with an eldritch eye on it, capable of making one into a \"Psyonaut\", one with the Forgotten Gods."
+	admin_note = "Psyonaut antag granter."
 
 /datum/opposing_force_equipment/uplink/clock_cult
 	item_type = /obj/item/antag_granter/clock_cultist

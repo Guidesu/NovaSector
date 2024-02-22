@@ -139,7 +139,7 @@
 
 /datum/award/achievement/misc/lock_ascension
 	name = "Secrets of the Locked Labyrinth"
-	desc = "You managed to open a gate into the mansus."
+	desc = "You managed to open a gate into the psynode."
 	database_id = MEDAL_LOCK_ASCENSION
 	icon_state = "lockascend"
 

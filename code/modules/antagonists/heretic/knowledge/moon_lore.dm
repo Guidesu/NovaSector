@@ -66,7 +66,7 @@
 		return
 	var/mob/living/carbon/carbon_target = target
 	to_chat(carbon_target, span_danger("You hear echoing laughter from above"))
-	carbon_target.cause_hallucination(/datum/hallucination/delusion/preset/moon, "delusion/preset/moon hallucination caused by mansus grasp")
+	carbon_target.cause_hallucination(/datum/hallucination/delusion/preset/moon, "delusion/preset/moon hallucination caused by psynode grasp")
 	carbon_target.mob_mood.set_sanity(carbon_target.mob_mood.sanity-30)
 
 /datum/heretic_knowledge/spell/moon_smile
@@ -212,7 +212,7 @@
 			continue
 		if(!is_station_level(crewmate_z))
 			continue
-		// Heretics, lunatics and monsters shouldn't become lunatics because they either have a master or have a mansus grasp
+		// Heretics, lunatics and monsters shouldn't become lunatics because they either have a master or have a psynode grasp
 		if(IS_HERETIC_OR_MONSTER(crewmate))
 			to_chat(crewmate, span_boldwarning("[user]'s rise is influencing those who are weak willed. Their minds shall rend." ))
 			continue

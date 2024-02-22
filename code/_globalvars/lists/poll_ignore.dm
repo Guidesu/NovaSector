@@ -54,7 +54,7 @@ GLOBAL_LIST_INIT(poll_ignore_desc, list(
 	POLL_IGNORE_FUGITIVE = "Fugitive Hunter",
 	POLL_IGNORE_GLITCH = "Glitch",
 	POLL_IGNORE_GOLEM = "Golems",
-	POLL_IGNORE_HERETIC_MONSTER = "Heretic Monster",
+	POLL_IGNORE_HERETIC_MONSTER = "Psyonaut Monster",
 	POLL_IGNORE_HOLOPARASITE = "Holoparasite",
 	POLL_IGNORE_IMAGINARYFRIEND = "Imaginary Friend",
 	POLL_IGNORE_LAVALAND_ELITE = "Lavaland elite",

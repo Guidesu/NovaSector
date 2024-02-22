@@ -300,7 +300,7 @@
   Deek-Za:
   - bugfix: Fixes glass_large door lighting.
   Melbert:
-  - qol: Heretic ghoul recipes are more descriptive when failing
+  - qol: Psyonaut ghoul recipes are more descriptive when failing
   - bugfix: Fixes a missing span on heretic ghoul deconversion
   - bugfix: Managing to escape the area of a blade heretic's mark will no longer constantly
       burden you as if you never left.

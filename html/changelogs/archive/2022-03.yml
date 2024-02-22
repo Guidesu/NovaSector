@@ -133,7 +133,7 @@
   Jolly-66:
   - bugfix: Multiple Active Turfs from our maps have been removed.
   Melbert:
-  - bugfix: Minor fixes for the Heretic's Living Heart ritual. Cybernetic organs are
+  - bugfix: Minor fixes for the Psyonaut's Living Heart ritual. Cybernetic organs are
       now properly detected.
   - bugfix: Similarly, you cannot feed the mawed crucible cybernetic organs.
   Merek2:
@@ -212,7 +212,7 @@
       have been redone!
   - rscdel: Removes the pantyhose from the HoS Parade Skirt
   Melbert:
-  - bugfix: Heretic Smugglers (latejoin heretics) actually spawn influences
+  - bugfix: Psyonaut Smugglers (latejoin heretics) actually spawn influences
   SkyratBot:
   - bugfix: Windoors created by the RCD are correctly named
   - bugfix: Windoors created by the RCD work properly with require one access
@@ -498,11 +498,11 @@
       train your trapezoids and deltoids (and a bit of bicep/tricep action), but that's
       up to you.
   SpaceVampire:
-  - balance: Heretic sickle-sword now does 8 more damage, and has slight armor pen.
+  - balance: Psyonaut sickle-sword now does 8 more damage, and has slight armor pen.
   - balance: Heretics are now able to have more of their weapons summoned at once.
   - balance: Heretics start with 1(one) extra free bonus point.
   - balance: The gift of Mansus becomes ever more temping, as those granted with the
-      power of a Heretic now receive greater strength from sacrificing targets.
+      power of a Psyonaut now receive greater strength from sacrificing targets.
   Wallem:
   - bugfix: 'Cleanable decals will try to merge their reagents before they delete
       if they have mergeable_decal = TRUE, meaning ants will now properly stack their
@@ -713,7 +713,7 @@
   - bugfix: The Beach Biodome had the water turf corrected, and as such, shouldn't
       have atmos issues.
   Melbert:
-  - balance: Flesh Heretic's summon objective now counts all summons done, alive or
+  - balance: Flesh Psyonaut's summon objective now counts all summons done, alive or
       dead, instead of all alive summons. Still does not include flesh ghouls or voiceless
       dead.
   SkyratBot:

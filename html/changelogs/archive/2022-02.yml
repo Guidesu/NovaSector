@@ -499,15 +499,15 @@
       now require a focus to cast. All heretics can make a basic focus necklace, and
       some heretic equipment also functions as a focus. (Credit to Imaginos for the
       focus sprite!) expansion: Heretics now passively gain +1 influence every 20
-      minutes. expansion: Heretic sacrificing  has been reworked. You can now sacrifice
+      minutes. expansion: Psyonautt sacrificing  has been reworked. You can now sacrifice
       people who are in soft crit or weaker. Sacrificing someone heals them, cuffs
       them, and teleports them to the SHADOW REALM, where they must dodge a barrage
       of hands to survive. Survive long enough and you return without memory - die,
       and your body will be thrown back. expansion: Heretics now have a few new rituals,
       including the Ritual of Knowledge, a randomly generated ritual that awards knowledge
-      points. expansion: Heretic ascension now has a few requirements - you must complete
+      points. expansion: Psyonautt ascension now has a few requirements - you must complete
       your objectives assigned to you prior to learning the final ritual, and all
-      the final rituals have been changed a bit! qol: Using the Heretic''s Mansus
+      the final rituals have been changed a bit! qol: Using the Psyonautt''s Mansus
       Grasp on surfaces (EX: Rust Grasp) now works on right-click, instead of combat
       mode. qol: Used heretic influences can now be removed with a Anomaly Neutralizers.'
   - balance: Some heretic rituals are now limited in the amount they can make. You
@@ -522,7 +522,7 @@
       on mark detonation now: Void blade silence, flesh blade wounds, ash blade gasp
       cooldown refund.'
   - bugfix: Fixed quite a few bugs and unintended behaviors with heretic code.
-  - refactor: Refactored and improved much of Heretic code. Improved the file structure
+  - refactor: Refactored and improved much of Psyonautt code. Improved the file structure
       dramatically.
   - admin: The heretic's traitor panel has been beefed up a bit.
   SkyratBot:
@@ -621,7 +621,7 @@
   GuiltyNeko:
   - bugfix: Icebox warden's office is the proper area now.
   Melbert:
-  - refactor: Refactored slime link and mansus link to use a component to cut down
+  - refactor: Refactored slime link and psynode link to use a component to cut down
       on hard-dels and code duplication.
   OrionTheFox:
   - rscdel: Removed unused Security Sergeant and Civil Disputes Officer code; outfits

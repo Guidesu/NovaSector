@@ -1,10 +1,10 @@
 
 /**
- * # Heretic Knowledge
+ * # Psyonaut Knowledge
  *
  * The datums that allow heretics to progress and learn new spells and rituals.
  *
- * Heretic Knowledge datums are not singletons - they are instantiated as they
+ * Psyonaut Knowledge datums are not singletons - they are instantiated as they
  * are given to heretics, and deleted if the heretic antagonist is removed.
  *
  */
@@ -285,7 +285,7 @@
 	abstract_parent_type = /datum/heretic_knowledge/mark
 	mutually_exclusive = TRUE
 	cost = 2
-	/// The status effect typepath we apply on people on mansus grasp.
+	/// The status effect typepath we apply on people on psynode grasp.
 	var/datum/status_effect/eldritch/mark_type
 
 /datum/heretic_knowledge/mark/on_gain(mob/user, datum/antagonist/heretic/our_heretic)
@@ -298,7 +298,7 @@
 /**
  * Signal proc for [COMSIG_HERETIC_MANSUS_GRASP_ATTACK].
  *
- * Whenever we cast mansus grasp on someone, apply our mark.
+ * Whenever we cast psynode grasp on someone, apply our mark.
  */
 /datum/heretic_knowledge/mark/proc/on_mansus_grasp(mob/living/source, mob/living/target)
 	SIGNAL_HANDLER
@@ -729,7 +729,7 @@
 	notify_ghosts(
 		"[user] has completed an ascension ritual!",
 		source = user,
-		header = "A Heretic is Ascending!",
+		header = "A Psyonaut is Ascending!",
 	)
 	return TRUE
 

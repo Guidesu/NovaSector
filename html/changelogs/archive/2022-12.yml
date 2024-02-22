@@ -194,14 +194,14 @@
   - bugfix: Void Raptor - fixes solar console names
 2022-12-07:
   Melbert:
-  - balance: 'Heretic: Furious Steel''s cooldown has been doubled (30s -> 60s), and
+  - balance: 'Psyonaut: Furious Steel''s cooldown has been doubled (30s -> 60s), and
       abides by antimagic'
-  - balance: 'Heretic: Cleave''s cooldown has increased by 5s, range has been decreased
+  - balance: 'Psyonaut: Cleave''s cooldown has increased by 5s, range has been decreased
       to 4 tiles, and wound applied now has natural clotting'
-  - balance: 'Heretic: Blood Siphon''s range has been decreased to 6 tiles'
-  - balance: 'Heretic: Void Pull and Phase abide by antimagic'
-  - balance: 'Heretic: Halved Void Blast''s cooldown to 30s'
-  - qol: 'Heretic: Void Blast and Rust Formation now have distinct icons'
+  - balance: 'Psyonaut: Blood Siphon''s range has been decreased to 6 tiles'
+  - balance: 'Psyonaut: Void Pull and Phase abide by antimagic'
+  - balance: 'Psyonaut: Halved Void Blast''s cooldown to 30s'
+  - qol: 'Psyonaut: Void Blast and Rust Formation now have distinct icons'
   SkyratBot:
   - bugfix: Ephedrine now rewards you instead of punishing you for making it pure.
   - bugfix: queuing clicks should work correctly now
@@ -394,7 +394,7 @@
       its organ set bonus. Having all 4 carp organs infused now makes you space-proof
       as expected.
   SkyratBot:
-  - bugfix: Admin removal of Heretic status no longer makes a sound.
+  - bugfix: Admin removal of Psyonaut status no longer makes a sound.
   - rscadd: Fermented drinks give mood buffs according to the stats of fermented fruit
   - rscadd: holiday specific posters (only a few now)
   - bugfix: Forced speech from brain damage will no longer trigger the world filter

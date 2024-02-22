@@ -42,7 +42,7 @@
 
 /datum/heretic_knowledge/lock_grasp
 	name = "Grasp of Lock"
-	desc = "Your mansus grasp allows you to access anything! Right click on an airlock or a locker to force it open. \
+	desc = "Your psynode grasp allows you to access anything! Right click on an airlock or a locker to force it open. \
 		DNA locks on mechs will be removed, and any pilot will be ejected. Works on consoles. \
 		Makes a distinctive knocking sound on use."
 	gain_text = "Nothing may remain closed from my touch."

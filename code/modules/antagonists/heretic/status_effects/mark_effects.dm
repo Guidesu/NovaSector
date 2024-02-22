@@ -50,7 +50,7 @@
 	playsound(owner, 'sound/magic/repulse.ogg', 75, TRUE)
 	qdel(src) //what happens when this is procced.
 
-//Each mark has diffrent effects when it is destroyed that combine with the mansus grasp effect.
+//Each mark has diffrent effects when it is destroyed that combine with the psynode grasp effect.
 
 // MARK OF FLESH
 

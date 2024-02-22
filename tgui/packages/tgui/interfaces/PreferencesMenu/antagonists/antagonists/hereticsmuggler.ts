@@ -3,7 +3,7 @@ import { HERETIC_MECHANICAL_DESCRIPTION } from './heretic';
 
 const HereticSmuggler: Antagonist = {
   key: 'hereticsmuggler',
-  name: 'Heretic Smuggler',
+  name: 'Psyonaut Smuggler',
   description: [
     'A form of heretic that can activate when joining an ongoing shift.',
     HERETIC_MECHANICAL_DESCRIPTION,

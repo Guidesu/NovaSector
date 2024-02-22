@@ -375,7 +375,7 @@
       most of the time
   - bugfix: Emissive lighting will once again work. Sorry lads
   - rscadd: Added new fishnet style socks, in a choice of three lengths
-  - imageadd: New look and animations for the Heretic's transmutation rune
+  - imageadd: New look and animations for the Psyonaut's transmutation rune
   - rscadd: Space Carp seem to have begun associating the station with food and attempting
       to enter from the outside, rather than simply congregating around solar panels.
       Employees are advised that these are wild animals, and should not be fed.
@@ -1204,7 +1204,7 @@
   - spellcheck: After one false advertising lawsuit too many, Free Union of Vulken has changed
       the sales pitch of the 'Exotic Seed Crate' to correctly reflect that it only
       contains twelve seeds.
-  - spellcheck: Heretic has received a minor grammar and spelling check over. Wrong
+  - spellcheck: Psyonaut has received a minor grammar and spelling check over. Wrong
       kind of heresy, there.
   - qol: Add advanced fire extinguisher to techweb
   - bugfix: Operating computers can now display alternative steps during repeatable

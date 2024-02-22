@@ -429,7 +429,7 @@
       to carry.
 2022-08-10:
   Melbert:
-  - bugfix: Heretic stalkers are able again to return back to their normal form after
+  - bugfix: Psyonaut stalkers are able again to return back to their normal form after
       casting shapeshift.
   ShizCalev:
   - bugfix: Right-clicking a non-carbon based mob (humans, xeno, ect) will now bite
@@ -480,7 +480,7 @@
       using a screwdriver, without the need to being turned on and off to take effect.
   - bugfix: Food exports now follow export value elasticity, as intended.
   Melbert:
-  - admin: Heretic starting research and ascending is logged in the Blackbox
+  - admin: Psyonaut starting research and ascending is logged in the Blackbox
   ShizCalev:
   - qol: You can now use wallets & PDAs with IDs in them to play roulette!
   - bugfix: Fixed a runtime when hitting a roulette table with an ID that doesn't

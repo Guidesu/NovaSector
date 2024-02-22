@@ -3,22 +3,20 @@ import { multiline } from 'common/string';
 import { Antagonist, Category } from '../base';
 
 export const HERETIC_MECHANICAL_DESCRIPTION = multiline`
-      Find hidden influences and sacrifice crew members to gain magical
-      powers and ascend as one of several paths.
+      Find hidden influences and focus to find new
+      powers and get stronger as one of several paths.
    `;
 
-const Heretic: Antagonist = {
+const Psyonaut: Antagonist = {
   key: 'heretic',
-  name: 'Heretic',
+  name: 'Psyonaut',
   description: [
     multiline`
-      Forgotten, devoured, gutted. Humanity has forgotten the eldritch forces
-      of decay, but the mansus veil has weakened. We will make them taste fear
-      again...
+      The psynodes, the focus rises. It is time to meditate and focus.
     `,
     HERETIC_MECHANICAL_DESCRIPTION,
   ],
   category: Category.Roundstart,
 };
 
-export default Heretic;
+export default Psyonaut;

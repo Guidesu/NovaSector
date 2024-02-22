@@ -593,9 +593,9 @@
       revived.
   - bugfix: Admins can now varedit plants to be alive / dead!
   SkyratBot:
-  - qol: Heretic runes no longer have every single transparent pixel set to 1 alpha,
+  - qol: Psyonaut runes no longer have every single transparent pixel set to 1 alpha,
       to make it easier to click on objects.
-  - qol: Clearing heretic runes with mansus grasp takes 0.4 seconds of standing still,
+  - qol: Clearing heretic runes with psynode grasp takes 0.4 seconds of standing still,
       to prevent you from accidentally clearing it in combat.
   - code_imp: Added code for effect remover element to use a windup if set.
   - qol: You can name barrels with a pen now, changing its icon

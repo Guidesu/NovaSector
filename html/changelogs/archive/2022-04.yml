@@ -327,7 +327,7 @@
   - bugfix: Fix moonicorns not falling through openspace properly.
   - balance: Free golems can no longer use shuttle consoles, other than to go home.
   - bugfix: removes the crate in window in lavaland base
-  - balance: Regular mansus grasp now inflicts cultslur on the target for 4 seconds.
+  - balance: Regular psynode grasp now inflicts cultslur on the target for 4 seconds.
   - balance: Increased void mark and void grasp silence duration from 8 seconds each
       to 10 seconds each.
   - bugfix: The screentip context no longer lies about what happens when you left

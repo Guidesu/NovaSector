@@ -83,7 +83,7 @@
   Melbert:
   - config: 'Policy.json config got updated. The following values need to be updated:'
   - config: '"Obsession" -> /datum/antagonist/obessed'
-  - config: '"Heretic" -> /datum/antagonist/heretic'
+  - config: '"Psyonaut" -> /datum/antagonist/heretic'
   - config: '"Headslug Changeling" -> /datum/antagonist/changeling/headslug'
   - config: '"Pyroclastic Anomaly Slime" -> /datum/antagonist/pyro_slime'
   - config: ALL antags in the policy.json file will now get notified of any existing
@@ -914,7 +914,7 @@
   - bugfix: Xenobiology on Tramstation can now use their consoles to see the upper
       floor.
   Melbert:
-  - bugfix: Heretic sacrificing now checks both the last mind to inhabit the body
+  - bugfix: Psyonaut sacrificing now checks both the last mind to inhabit the body
       as well as the current mind when checking for high value targets
   - bugfix: Lead batteries now start partially drained as intended.
   Paxilmaniac:
@@ -965,7 +965,7 @@
   - bugfix: NPC Regal rats now properly claw at enemies, moving on to new targets
       after completing kills.
   - soundadd: The chainsaw now has SFX for starting, stopping, and idling.
-  - bugfix: airlocks will no longer shock you when using the rust mansus grip to destroy
+  - bugfix: airlocks will no longer shock you when using the rust psynode grip to destroy
       them
   - bugfix: Removes duplicate decals and replaces them with new ones that are more
       efficient

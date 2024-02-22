@@ -827,7 +827,7 @@
   - admin: Nuke Ops check antagonists now show you full war status (declared / not
       declared)
   - bugfix: Fixes multiple nuke teams (or an admin) being able to declare war at once
-  - rscdel: Heretic side path points are gone
+  - rscdel: Psyonaut side path points are gone
   Nerev4r:
   - balance: Hemophages now have higher healing numbers, and liquid blood helps non-bone
       wounds like tea does.

@@ -771,7 +771,7 @@
   Melbert:
   - bugfix: Fixes cyborg slot cycling (and a runtime)
   Nebulacrity:
-  - imageadd: Updated the reality fractures (Heretic influences) to have nicer sprites.
+  - imageadd: Updated the reality fractures (Psyonaut influences) to have nicer sprites.
   ShizCalev:
   - bugfix: Fixed display cases going invisible when you put things inside of them.
   - bugfix: Fixed the pedestal for open display cases being glass colored.
@@ -1000,7 +1000,7 @@
   EdgeLordExe:
   - balance: Raw prophet's seeing range decreased by 1 so that people dont lag so
       much.
-  - balance: Raw prophets telepathy was replaced by mansus link
+  - balance: Raw prophets telepathy was replaced by psynode link
   - rscadd: Raw prophets now get a long range blind spell.
   Fikou:
   - bugfix: neurotoxin and some other bullets no longer get embedded in you

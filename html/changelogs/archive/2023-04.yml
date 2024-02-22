@@ -403,9 +403,9 @@
   - rscadd: Added "Botanical Haven", a small sanctuary for flora and spacefaring botanists.
   - bugfix: The fire alarm in the vacant commissary on Delta Station now longer defies
       gravity.
-  - rscadd: Adds new Cosmic Heretic.
-  - soundadd: Adds Cosmic Heretic sounds.
-  - imageadd: Adds Cosmic Heretic sprites.
+  - rscadd: Adds new Cosmic Psyonaut.
+  - soundadd: Adds Cosmic Psyonaut sounds.
+  - imageadd: Adds Cosmic Psyonaut sprites.
   - rscadd: central commands meteorological divsion has picked up a new asteroid drifting
       in NT space, what secrets could it hold?
   - bugfix: fixed duplicate pipe in Underground Outpost 45 Away Mission
@@ -1126,7 +1126,7 @@
   - code_imp: There are now helpers for forcing events in a variety of ways. More
       events! More events!!!!!!!
   SkyratBot:
-  - balance: Heretic blades butcher speed is 3 seconds now.
+  - balance: Psyonaut blades butcher speed is 3 seconds now.
   - rscadd: Added a crashed prisoner transport space ruin.
   - code_imp: Adds support for ammunition 'bands', basically intended to be used rather
       than wholly new sprites for new ammotypes. Additionally, they're (meant to be)

@@ -131,7 +131,7 @@
   - admin: Spell requirements are bitflags now, so you can modify them with the bit-field
       VV ui. Pretty neat.
   - code_imp: proc_holders have been removed from existence.
-  - refactor: Wizard, Heretic, Revenant, and Genetics spells are now all action datums.
+  - refactor: Wizard, Psyonaut, Revenant, and Genetics spells are now all action datums.
   - refactor: Xenomorph, Spider, and Cytology monster abilities are now all action
       datums.
   - refactor: Some malf AI and cult abilities are now fully action datums instead

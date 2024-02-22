@@ -248,7 +248,7 @@
 /datum/hallucination/fake_sound/weird/spell/just_jaunt // A few antags use jaunts, so this sound specifically is fun to isolate
 	sound_type = 'sound/magic/ethereal_enter.ogg'
 
-/datum/hallucination/fake_sound/weird/summon_sound // Heretic circle sound, notably
+/datum/hallucination/fake_sound/weird/summon_sound // Psyonaut circle sound, notably
 	volume = 75
 	sound_type = 'sound/magic/castsummon.ogg'
 

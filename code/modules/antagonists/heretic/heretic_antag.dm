@@ -13,9 +13,9 @@
 
 /// The heretic antagonist itself.
 /datum/antagonist/heretic
-	name = "\improper Heretic"
+	name = "\improper Psyonaut"
 	roundend_category = "Heretics"
-	antagpanel_category = "Heretic"
+	antagpanel_category = "Psyonaut"
 	ui_name = "AntagInfoHeretic"
 	antag_moodlet = /datum/mood_event/heretics
 	job_rank = ROLE_HERETIC
@@ -143,7 +143,7 @@
 		if("research")
 			var/datum/heretic_knowledge/researched_path = text2path(params["path"])
 			if(!ispath(researched_path, /datum/heretic_knowledge))
-				CRASH("Heretic attempted to learn non-heretic_knowledge path! (Got: [researched_path])")
+				CRASH("Psyonaut attempted to learn non-heretic_knowledge path! (Got: [researched_path])")
 
 			if(initial(researched_path.cost) > knowledge_points)
 				return TRUE
@@ -268,7 +268,7 @@
 /datum/antagonist/heretic/proc/on_spell_cast(mob/living/source, datum/action/cooldown/spell/spell)
 	SIGNAL_HANDLER
 
-	// Heretic spells are of the forbidden school, otherwise we don't care
+	// Psyonaut spells are of the forbidden school, otherwise we don't care
 	if(spell.school != SCHOOL_FORBIDDEN)
 		return
 
@@ -287,7 +287,7 @@
  * Signal proc for [COMSIG_MOB_ITEM_AFTERATTACK].
  *
  * If a heretic is holding a pen in their main hand,
- * and have mansus grasp active in their offhand,
+ * and have psynode grasp active in their offhand,
  * they're able to draw a transmutation rune.
  */
 /datum/antagonist/heretic/proc/on_item_afterattack(mob/living/source, atom/target, obj/item/weapon, proximity_flag, click_parameters)
@@ -701,7 +701,7 @@
 	return TRUE
 
 /**
- * Helper to determine if a Heretic
+ * Helper to determine if a Psyonaut
  * - Has a Living Heart
  * - Has a an organ in the correct slot that isn't a living heart
  * - Is missing the organ they need in the slot to make a living heart
@@ -720,7 +720,7 @@
 
 	return HERETIC_HAS_LIVING_HEART
 
-/// Heretic's minor sacrifice objective. "Minor sacrifices" includes anyone.
+/// Psyonaut's minor sacrifice objective. "Minor sacrifices" includes anyone.
 /datum/objective/minor_sacrifice
 	name = "minor sacrifice"
 
@@ -739,7 +739,7 @@
 		return FALSE
 	return completed || (heretic_datum.total_sacrifices >= target_amount)
 
-/// Heretic's major sacrifice objective. "Major sacrifices" are heads of staff.
+/// Psyonaut's major sacrifice objective. "Major sacrifices" are heads of staff.
 /datum/objective/major_sacrifice
 	name = "major sacrifice"
 	target_amount = 1
@@ -751,7 +751,7 @@
 		return FALSE
 	return completed || (heretic_datum.high_value_sacrifices >= target_amount)
 
-/// Heretic's research objective. "Research" is heretic knowledge nodes (You start with some).
+/// Psyonaut's research objective. "Research" is heretic knowledge nodes (You start with some).
 /datum/objective/heretic_research
 	name = "research"
 	/// The length of a main path. Calculated once in New().
@@ -799,7 +799,7 @@
 	return completed || (num_summoned >= target_amount)
 
 /datum/outfit/heretic
-	name = "Heretic (Preview only)"
+	name = "Psyonaut (Preview only)"
 
 	suit = /obj/item/clothing/suit/hooded/cultrobes/eldritch
 	head = /obj/item/clothing/head/hooded/cult_hoodie/eldritch

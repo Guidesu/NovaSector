@@ -177,13 +177,13 @@ export const Rules = (props) => {
           </Stack.Item>
         </Stack>
       );
-    case 'Heretic':
+    case 'Psyonaut':
       return (
         <Stack vertical>
           <Stack.Item bold>Special Rules:</Stack.Item>
           <Stack.Item>
             {
-              <a href="https://wiki.novasector13.com/index.php/Antagonist_Policy#zzzz!">
+              <a href="https://wiki.novasector13.com/index.php/Antagonist_Policy#Psyonaut!">
                 Special Rules and Metaprotections!
               </a>
             }

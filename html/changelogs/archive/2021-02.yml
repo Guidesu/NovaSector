@@ -344,9 +344,9 @@
   - bugfix: Monkeys are once again susceptible to viruses. Some human-derived species
       that previously were immune to viruses due to an oversight may now be susceptible
       to viruses too.
-  - bugfix: Heretic's void cloak no longer deletes itself when you take it off after
+  - bugfix: Psyonautttt's void cloak no longer deletes itself when you take it off after
       removing the hood using the action button.
-  - bugfix: Heretic's void cloak is once again visible on examining a player when
+  - bugfix: Psyonautttt's void cloak is once again visible on examining a player when
       they have unequipped the hood direct from the equipment menu.
   Tlaltecuhtli:
   - bugfix: you tool can be deconned

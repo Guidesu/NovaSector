@@ -628,7 +628,7 @@
   - bugfix: Maintenance sect's adapted eyes will no longer render you permanently
       blind despite having them repaired via the darkness.
   - spellcheck: Fix the grammar for the message shown when appraising great art.
-  - bugfix: Fixed mindshield implants not retroactively working against slime or mansus
+  - bugfix: Fixed mindshield implants not retroactively working against slime or psynodeeeee
       links.
   - bugfix: Fixed stargazers that were either mindshielded, dead or protected against
       psych magick by the time they became what they are not receiving the slime link

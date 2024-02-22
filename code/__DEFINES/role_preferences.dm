@@ -11,7 +11,7 @@
 #define ROLE_BROTHER "Blood Brother"
 #define ROLE_CHANGELING "Changeling"
 #define ROLE_CULTIST "Cultist"
-#define ROLE_HERETIC "Heretic"
+#define ROLE_HERETIC "Psyonaut"
 #define ROLE_MALF "Malf AI"
 #define ROLE_OPERATIVE "Operative"
 #define ROLE_TRAITOR "Traitor"
@@ -50,7 +50,7 @@
 // NOVA EDIT END
 
 // Latejoin roles
-#define ROLE_HERETIC_SMUGGLER "Heretic Smuggler"
+#define ROLE_HERETIC_SMUGGLER "Psyonaut Smuggler"
 #define ROLE_PROVOCATEUR "Provocateur"
 #define ROLE_STOWAWAY_CHANGELING "Stowaway Changeling"
 #define ROLE_SYNDICATE_INFILTRATOR "Syndicate Infiltrator"

@@ -75,14 +75,14 @@
   Melbert:
   - rscadd: Cargorilla.
   - code_imp: Removed a locate() in world from the evil PunPun trait
-  - balance: 'Heretic: The Amber Focus is now fireproof.'
-  - balance: 'Heretic: The Eldritch Medallion (thermal vision necklace) is now fireproof,
+  - balance: 'Psyonaut: The Amber Focus is now fireproof.'
+  - balance: 'Psyonaut: The Eldritch Medallion (thermal vision necklace) is now fireproof,
       acid proof, and works as a focus.'
-  - balance: 'Heretic: The Void Cloak can carry more things in its pocket, including
+  - balance: 'Psyonaut: The Void Cloak can carry more things in its pocket, including
       various ritual components (organs, bodyparts, flowers), small heretic items,
       and a singular sickly blade. It also functions as a focus while the hood is
       down.'
-  - balance: 'Heretic: Mawed Crucible potions are now small sized (down from normal).'
+  - balance: 'Psyonaut: Mawed Crucible potions are now small sized (down from normal).'
   Ryll/Shaps:
   - bugfix: Fixed pellet clouds not being able to wound
   SkyratBot:

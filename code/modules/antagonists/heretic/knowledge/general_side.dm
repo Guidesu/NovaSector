@@ -32,7 +32,7 @@
 
 	var/datum/heretic_knowledge/hunt_and_sacrifice/target_finder = heretic_datum.get_knowledge(/datum/heretic_knowledge/hunt_and_sacrifice)
 	if(!target_finder)
-		CRASH("Heretic datum didn't have a hunt_and_sacrifice knowledge learned, what?")
+		CRASH("Psyonaut datum didn't have a hunt_and_sacrifice knowledge learned, what?")
 
 	if(!target_finder.obtain_targets(user, heretic_datum = heretic_datum))
 		loc.balloon_alert(user, "ritual failed, no targets found!")

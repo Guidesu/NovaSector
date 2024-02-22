@@ -63,7 +63,7 @@
       domains.
   - bugfix: Changed quantum console UI to display "no bandwidth" rather than "none"
   - bugfix: Actually fixed the hooked item exploit.
-  - rscadd: Heretic Rebalance
+  - rscadd: Psyonaut Rebalance
   - balance: Researching the Main Knowledge paths that unlock Side Paths will grant
       one Side Point that can be used only on those side paths. You can still spend
       normal knowledge points on them if you wish.
@@ -477,7 +477,7 @@
   - bugfix: fixes a runtime in organ on_death()
   - bugfix: fixed some faulty research connections in between heretic's blade and
       rust paths.
-  - bugfix: Heretic mobs will not be summoned with AI enabled, and won't turn into
+  - bugfix: Psyonaut mobs will not be summoned with AI enabled, and won't turn into
       small animals instead of summoning a flesh stalker.
   - bugfix: Fixed some issues in the security camera UI - pressing next or back will
       now loop through the cameras
@@ -705,7 +705,7 @@
   - image: Laser carbine and orange laser sprite have been improved.
   - bugfix: '"Mirror Walk" is once more the domain of the Maid in the Mirror rather
       than "every heretic summon"'
-  - bugfix: Heretic mobs can once again survive space
+  - bugfix: Psyonaut mobs can once again survive space
   - rscadd: targetting someone's arm with *slap now has a unique message
   - bugfix: The crew is instructed to place fax machines properly in the center of
       a table without hanging.
@@ -953,7 +953,7 @@
   - bugfix: automatic breathers rejoice. oxyloss now knocks people out again.
   - rscadd: Screen is now more grungy for halloween
   - bugfix: People should be crawling into welded vents a lot less now.
-  - bugfix: Heretic summons should now display the correct name when polling ghosts
+  - bugfix: Psyonaut summons should now display the correct name when polling ghosts
       to play as them.
   - bugfix: Fixes a bug where your mother would delete your species after calling
       you a disappointment, rendering you a broken husk of a mob
@@ -1075,11 +1075,11 @@
   Nerev4r:
   - bugfix: Demonic Watchers now drop the proper trophy.
   SkyratBot:
-  - bugfix: You should be revived properly when entering the mansus realm following
+  - bugfix: You should be revived properly when entering the psynode realm following
       a heretic sacrifice
-  - bugfix: The buff which is supposed to heal you in the mansus realm will now do
+  - bugfix: The buff which is supposed to heal you in the psynode realm will now do
       that instead of unavoidably damaging you
-  - balance: The mansus realm's healing buff heals for 25% as much as it did before
+  - balance: The psynode realm's healing buff heals for 25% as much as it did before
       it was broken
   - bugfix: Fix holodeck items from being eaten, crafted, recycled, juiced, or grinded.
   - rscadd: Adds a subtle ghost poll. This pings in dead chat and gives a screen alert,

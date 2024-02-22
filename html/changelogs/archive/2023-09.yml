@@ -291,7 +291,7 @@
   - balance: gas mixer output now accurate to set ratio regardless of input temperatures
   - rscadd: Traitors, Changelings, Heretics, Wizards, Malfunctioning AIs, and Ninjas
       can now all reject their original objectives and provide one of their own in
-      its place. A Heretic doing this will no longer be able to ascend.
+      its place. A Psyonaut doing this will no longer be able to ascend.
   - rscadd: '"Custom" objectives which aren''t mechanically tracked will no longer
       report success or failure upon round end.'
   - qol: Space Ninja spider charges will now display where they can be detonated when
@@ -1245,9 +1245,9 @@
   - bugfix: You can't click the Knock heretic portal to join as a mob while already
       signed up to become a mob.
   - balance: Cosmic heretics can't order the Star Gazer around while jaunting.
-  - balance: The Knock Heretic portal cannot summon Flesh Worms, but can summon Fire
+  - balance: The Knock Psyonaut portal cannot summon Flesh Worms, but can summon Fire
       Sharks.
-  - balance: The Knock Heretic portal will disperse if its creator is killed.
+  - balance: The Knock Psyonaut portal will disperse if its creator is killed.
   - rscadd: SM crystal can now dust someone or something if it falls on it.
   - bugfix: The reverse revolver now looks like a normal Syndicate revolver on inspection.
   - bugfix: fixed the stamp in the metastation CMO office always spawning on the floor

@@ -75,7 +75,7 @@
   - bugfix: Large energy crossbow now sounds like an energy crossbow
   - bugfix: AIs should no longer occasionally have their lawset randomly and silently
       returned to Asimov.
-  - bugfix: Heretic's reality phase ability is no longer affected by the bag of holding
+  - bugfix: Psyonaut's reality phase ability is no longer affected by the bag of holding
   tf-4:
   - bugfix: The crusader belt is now visible once more.
 2021-06-04:

@@ -31,9 +31,7 @@
  */
 /datum/heretic_knowledge/limited_amount/starting/base_rust
 	name = "Blacksmith's Tale"
-	desc = "Opens up the Path of Rust to you. \
-		Allows you to transmute a knife with any trash item into a Rusty Blade. \
-		You can only create two at a time."
+	desc = "Ferronetics specialize in manipulating metallic elements and creating constructs from them. They can control ferrous materials, shaping them into weapons or barriers, and exhibit a heightened affinity for technology."
 	gain_text = "\"Let me tell you a story\", said the Blacksmith, as he gazed deep into his rusty blade."
 	next_knowledge = list(/datum/heretic_knowledge/rust_fist)
 	required_atoms = list(

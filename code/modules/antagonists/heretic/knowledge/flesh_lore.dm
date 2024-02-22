@@ -32,9 +32,7 @@
  */
 /datum/heretic_knowledge/limited_amount/starting/base_flesh
 	name = "Principle of Hunger"
-	desc = "Opens up the Path of Flesh to you. \
-		Allows you to transmute a knife and a pool of blood into a Bloody Blade. \
-		You can only create twenty at a time." //NOVA EDIT three to twenty
+	desc = "Somanetics possess the ability to manipulate living tissue and biological energies. They can accelerate healing, induce paralysis, or even shape-shift by attuning themselves to the fundamental aspects of life."
 	gain_text = "Hundreds of us starved, but not me... I found strength in my greed."
 	next_knowledge = list(/datum/heretic_knowledge/limited_amount/flesh_grasp)
 	required_atoms = list(

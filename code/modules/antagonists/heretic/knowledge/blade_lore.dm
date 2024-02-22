@@ -31,9 +31,7 @@
  */
 /datum/heretic_knowledge/limited_amount/starting/base_blade
 	name = "The Cutting Edge"
-	desc = "Opens up the Path of Blades to you. \
-		Allows you to transmute a knife with two bars of silver or titanium to create a Sundered Blade. \
-		You can create up to five at a time."
+	desc = "Gladiusnetics are experts in psionic weaponry and combat. They can materialize blades of pure psionic energy, enhancing their combat capabilities and engaging foes in close-quarters combat with unmatched precision."
 	gain_text = "Our great ancestors forged swords and practiced sparring on the eve of great battles."
 	next_knowledge = list(/datum/heretic_knowledge/blade_grasp)
 	required_atoms = list(
@@ -46,7 +44,7 @@
 
 /datum/heretic_knowledge/blade_grasp
 	name = "Grasp of the Blade"
-	desc = "Your Mansus Grasp will cause a short stun when used on someone lying down or facing away from you."
+	desc = "Your Psy Grasp will cause a short stun when used on someone lying down or facing away from you."
 	gain_text = "The story of the footsoldier has been told since antiquity. It is one of blood and valor, \
 		and is championed by sword, steel and silver."
 	next_knowledge = list(/datum/heretic_knowledge/blade_dance)
@@ -100,7 +98,7 @@
 
 /datum/heretic_knowledge/blade_dance
 	name = "Dance of the Brand"
-	desc = "Being attacked while wielding a Heretic Blade in either hand will deliver a riposte \
+	desc = "Being attacked while wielding a Psyonaut Blade in either hand will deliver a riposte \
 		towards your attacker. This effect can only trigger once every 20 seconds."
 	gain_text = "The footsoldier was known to be a fearsome duelist. \
 		Their general quickly appointed them as their personal Champion."
