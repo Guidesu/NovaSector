@@ -98,7 +98,7 @@ const IntroductionSection = (props) => {
                       button_title={'Reject Ascension'}
                       button_colour={'red'}
                       button_tooltip={
-                        'Turn your back on the Mansus to accomplish a task of your choosing. Selecting this option will prevent you from ascending!'
+                        'Turn your back on the Psyonics to accomplish a task of your choosing. Selecting this option will prevent you from ascending!'
                       }
                     />
                   }
@@ -128,7 +128,7 @@ const FlavorSection = () => {
         </Stack.Item>
         <Stack.Item>
           <b>
-            The <span style={hereticPurple}>Gates of Mansus</span>
+            The <span style={hereticPurple}>Gates of Psyonics</span>
             &nbsp;open up to your mind.
           </b>
         </Stack.Item>
@@ -162,7 +162,7 @@ const GuideSection = () => {
           - Draw a&nbsp;
           <span style={hereticGreen}>transmutation rune</span> by using a
           drawing tool (a pen or crayon) on the floor while having&nbsp;
-          <span style={hereticGreen}>Mansus Grasp</span>
+          <span style={hereticGreen}>Psyonics Grasp</span>
           &nbsp;active in your other hand. This rune allows you to complete
           rituals and sacrifices.
         </Stack.Item>
@@ -172,7 +172,7 @@ const GuideSection = () => {
           <span style={hereticGreen}>transmutation rune</span> in critical or
           worse condition to&nbsp;
           <span style={hereticRed}>sacrifice</span> them for&nbsp;
-          <span style={hereticBlue}>knowledge points</span>. The Mansus{' '}
+          <span style={hereticBlue}>knowledge points</span>. The Psyonics{' '}
           <b>ONLY</b> accepts targets pointed to by the&nbsp;
           <span style={hereticRed}>Living Heart</span>.
         </Stack.Item>

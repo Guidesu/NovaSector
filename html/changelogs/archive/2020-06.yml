@@ -408,7 +408,7 @@
 2020-06-22:
   EdgeLordExe:
   - bugfix: You can no longer raise the living as ghouls.
-  - bugfix: Mansus grasp and blood siphon no longer have infinite range.
+  - bugfix: Psyonics grasp and blood siphon no longer have infinite range.
   - bugfix: Armsy can now actually attack with any of his bodyparts. fix:Armsy can
       now acutally walk in space.
   - code_imp: replaced a few type paths with more descriptive ones.
@@ -564,7 +564,7 @@
   - server: TGS4 channel tags will now use ',' as a delimiter to indicate multiple
       tags.
   EdgeLordExe:
-  - tweak: Mansus grasp now wont proc on things it shouldnt proc on, tl;dr you wont
+  - tweak: Psyonics grasp now wont proc on things it shouldnt proc on, tl;dr you wont
       loose your charges by missclicking on a tile.
   - balance: Replaced touch of madness with a new fun late game spell
   - balance: Switches positions of blood siphon and cleave

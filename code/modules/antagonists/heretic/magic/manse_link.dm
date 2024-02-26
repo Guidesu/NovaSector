@@ -1,7 +1,7 @@
 /datum/action/cooldown/spell/pointed/manse_link
 	name = "Manse Link"
 	desc = "This spell allows you to pierce through reality and connect minds to one another \
-		via your Mansus Link. All minds connected to your Mansus Link will be able to communicate discreetly across great distances."
+		via your Psyonics Link. All minds connected to your Psyonics Link will be able to communicate discreetly across great distances."
 	background_icon_state = "bg_heretic"
 	overlay_icon_state = "bg_heretic_border"
 	button_icon = 'icons/mob/actions/actions_ecult.dmi'

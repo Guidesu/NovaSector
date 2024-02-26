@@ -501,7 +501,7 @@
   - balance: Psyonaut sickle-sword now does 8 more damage, and has slight armor pen.
   - balance: Heretics are now able to have more of their weapons summoned at once.
   - balance: Heretics start with 1(one) extra free bonus point.
-  - balance: The gift of Mansus becomes ever more temping, as those granted with the
+  - balance: The gift of Psyonics becomes ever more temping, as those granted with the
       power of a Psyonaut now receive greater strength from sacrificing targets.
   Wallem:
   - bugfix: 'Cleanable decals will try to merge their reagents before they delete

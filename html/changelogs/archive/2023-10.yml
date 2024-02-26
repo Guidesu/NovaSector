@@ -75,7 +75,7 @@
       hide OR a corpse, any kind.'
   - code_imp: Added support for using a list inside ritual requirements and a special
       'snowflake check' rituals can utilize.
-  - balance: The first non-path knowledge, the Mansus Hand Mark, has had its cost
+  - balance: The first non-path knowledge, the Psyonics Hand Mark, has had its cost
       reduced from 2->1 points.
   - bugfix: Aloe and other baked foods that don't have reagents can be baked again
       without turning to ash

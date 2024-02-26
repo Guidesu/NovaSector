@@ -628,3 +628,8 @@
 
 #undef FIRING_PIN_REMOVAL_DELAY
 #undef DUALWIELD_PENALTY_EXTRA_MULTIPLIER
+
+
+/obj/item/gun/Initialize(mapload)
+	. = ..()
+	AddComponent(/datum/component/two_handed)

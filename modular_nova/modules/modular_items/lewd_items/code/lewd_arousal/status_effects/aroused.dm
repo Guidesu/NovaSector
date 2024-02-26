@@ -37,14 +37,6 @@
 
 	if(affected_mob.pain > affected_mob.pain_limit)
 		temp_arousal -= TOO_MUCH_PAIN_MODIFIER
-	if(affected_mob.arousal >= AROUSAL_MEDIUM)
-		if(prob(AUTO_EMOTE_CHANCE))
-			affected_mob.try_lewd_autoemote(pick("moan", "blush"))
-		temp_pleasure += ITS_PRETTY_HOT_IN_HERE_MODIFIER
-		//moan
-	if(affected_mob.pleasure >= AROUSAL_HIGH && prob(AUTO_EMOTE_CHANCE))
-		affected_mob.try_lewd_autoemote(pick("moan", "twitch_s"))
-		//moan x2
 
 	affected_mob.adjust_arousal(temp_arousal)
 	affected_mob.adjust_pleasure(temp_pleasure)

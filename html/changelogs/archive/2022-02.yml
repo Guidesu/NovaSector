@@ -489,7 +489,7 @@
   - bugfix: Fixes hauntium from runtiming a lot and not haunting people
   - rscadd: 'Large scale heretic revamp! expansion: The Codex Cicatrix is no longer
       a roundstart heretic item. Research is handled through their antag info UI.
-      Rune drawing is done by using a writing tool with Mansus Grasp active in your
+      Rune drawing is done by using a writing tool with Psyonics Grasp active in your
       offhand. The actual Codex is an unlockable ritual item now. expansion: The Living
       Heart is no longer a roundstart heretic item - their actual heart now becomes
       their Living Heart, and it makes a sound when triggered. Losing your heart (being
@@ -507,7 +507,7 @@
       including the Ritual of Knowledge, a randomly generated ritual that awards knowledge
       points. expansion: Psyonautt ascension now has a few requirements - you must complete
       your objectives assigned to you prior to learning the final ritual, and all
-      the final rituals have been changed a bit! qol: Using the Psyonautt''s Mansus
+      the final rituals have been changed a bit! qol: Using the Psyonautt''s Psyonics
       Grasp on surfaces (EX: Rust Grasp) now works on right-click, instead of combat
       mode. qol: Used heretic influences can now be removed with a Anomaly Neutralizers.'
   - balance: Some heretic rituals are now limited in the amount they can make. You

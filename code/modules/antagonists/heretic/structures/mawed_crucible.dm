@@ -47,7 +47,7 @@
 	else
 		. += span_boldnotice("[src] is bubbling to the brim with viscous liquid, and is ready to use.")
 
-	. += span_notice("You can <b>[anchored ? "unanchor and move":"anchor in place"]</b> [src] with a <b>Codex Cicatrix</b> or <b>Mansus Grasp</b>.")
+	. += span_notice("You can <b>[anchored ? "unanchor and move":"anchor in place"]</b> [src] with a <b>Codex Cicatrix</b> or <b>Psyonics Grasp</b>.")
 	. += span_info("The following potions can be brewed:")
 	for(var/obj/item/eldritch_potion/potion as anything in subtypesof(/obj/item/eldritch_potion))
 		var/potion_string = span_info("\tThe " + initial(potion.name) + " - " + initial(potion.crucible_tip))
@@ -62,9 +62,6 @@
 	if(!iscarbon(user))
 		return ..()
 
-	if(!IS_HERETIC_OR_MONSTER(user))
-		bite_the_hand(user)
-		return TRUE
 
 	if(istype(weapon, /obj/item/codex_cicatrix) || istype(weapon, /obj/item/melee/touch_attack/mansus_fist))
 		playsound(src, 'sound/items/deconstruct.ogg', 30, TRUE, ignore_walls = FALSE)
@@ -104,10 +101,6 @@
 	if(!isliving(user))
 		return
 
-	if(!IS_HERETIC_OR_MONSTER(user))
-		if(iscarbon(user))
-			bite_the_hand(user)
-		return TRUE
 
 	if(in_use)
 		balloon_alert(user, "in use!")
@@ -166,23 +159,6 @@
 
 	current_mass = 0
 	update_appearance(UPDATE_ICON_STATE)
-
-/*
- * "Bites the hand that feeds it", except more literally.
- * Called when a non-heretic interacts with the crucible,
- * causing them to lose their active hand to it.
- */
-/obj/structure/destructible/eldritch_crucible/proc/bite_the_hand(mob/living/carbon/user)
-	if(HAS_TRAIT(user, TRAIT_NODISMEMBER))
-		return
-
-	var/obj/item/bodypart/arm = user.get_active_hand()
-	if(QDELETED(arm))
-		return
-
-	to_chat(user, span_userdanger("[src] grabs your [arm.name]!"))
-	arm.dismember()
-	consume_fuel(consumed = arm)
 
 /*
  * Consumes an organ or bodypart and increases the mass of the crucible.

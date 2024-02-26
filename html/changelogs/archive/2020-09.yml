@@ -927,7 +927,7 @@
   - bugfix: Observers can no longer order things on express supply consoles.
 2020-09-28:
   ATHATH:
-  - balance: The Grasp of Ash upgrade now causes Mansus Grasp to blind the people
+  - balance: The Grasp of Ash upgrade now causes Psyonics Grasp to blind the people
       you use it on instead of causing it to fling the people you use it on away from
       you.
   MrLostman:

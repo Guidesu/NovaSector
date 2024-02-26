@@ -52,7 +52,7 @@
 
 /datum/heretic_knowledge/void_grasp
 	name = "Grasp of Void"
-	desc = "Your Mansus Grasp will temporarily mute and chill the victim."
+	desc = "Your Psyonics Grasp will temporarily mute and chill the victim."
 	gain_text = "I saw the cold watcher who observes me. The chill mounts within me. \
 		They are quiet. This isn't the end of the mystery."
 	next_knowledge = list(/datum/heretic_knowledge/cold_snap)
@@ -97,7 +97,7 @@
 
 /datum/heretic_knowledge/mark/void_mark
 	name = "Mark of Void"
-	desc = "Your Mansus Grasp now applies the Mark of Void. The mark is triggered from an attack with your Void Blade. \
+	desc = "Your Psyonics Grasp now applies the Mark of Void. The mark is triggered from an attack with your Void Blade. \
 		When triggered, further silences the victim and swiftly lowers the temperature of their body and the air around them."
 	gain_text = "A gust of wind? A shimmer in the air? The presence is overwhelming, \
 		my senses began to betray me. My mind is my own enemy."

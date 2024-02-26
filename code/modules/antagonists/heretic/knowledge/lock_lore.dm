@@ -111,7 +111,7 @@
 
 /datum/heretic_knowledge/mark/lock_mark
 	name = "Mark of Lock"
-	desc = "Your Mansus Grasp now applies the Mark of Lock. \
+	desc = "Your Psyonics Grasp now applies the Mark of Lock. \
 		Attack a marked person to bar them from all passages for the duration of the mark. \
 		This will make it so that they have no access whatsoever, even public access doors will reject them."
 	gain_text = "The Gatekeeper was a corrupt Steward. She hindered her fellows for her own twisted amusement."

@@ -18,14 +18,14 @@
 /obj/item/paper/fluff/ruins/dangerous_research/beaches_journal_2
 	name = "Journal of Dreams-Of-Beaches - Day 33"
 	default_raw_text = "Something odd is going on. John has been blinded and muted for a time now but he's still moving around in that central chamber, drawing something. Elias, Smith, and Whitner seem to have some idea about what's going on and won't answer my questions.<BR>I'm going to sneak into the lab tonight to get a look at those drawings."
-	
+
 /obj/item/paper/fluff/ruins/dangerous_research/beaches_journal_3
 	name = "Journal of Dreams-Of-Beaches - Day 52"
 	default_raw_text = "Smith was in the chamber, gone in an instant.<BR> I don't know what happened to the doctor or Elias, I just heard flesh tearing and glass shattering.<BR> When my eyes opened, the room was painted in red and rust.<BR>Simes was there, but she just flashed away, all that was left was the gun.<BR>Armstrong grabbed me and we somehow made it out, boarded it up with the tables in the lobby.<BR>Took two of the suits, we'll send out a distress signal when we're out there."
 	/// Armstrong Memos
 /obj/item/paper/fluff/ruins/dangerous_research/armstrong_memo_1
 	name = "Jexa Armstrong's Notes - Day 18"
-	default_raw_text = "I wasn't excited to hear that Free Union of Vulken would be sticking me on this rock, but this John Doe absolutely has me interested.<BR>He's the only other person I've met with a link to the Mansus, and theirs is <B>astoundingly</B> strong.<BR>Here I thought I was a freak of nature for being able to draw a few working runes. The subject is capable of achieving a perfect link to the Mansus, even <B>with</B> Elias ordering all of those surgeries."
+	default_raw_text = "I wasn't excited to hear that Free Union of Vulken would be sticking me on this rock, but this John Doe absolutely has me interested.<BR>He's the only other person I've met with a link to the Psyonics, and theirs is <B>astoundingly</B> strong.<BR>Here I thought I was a freak of nature for being able to draw a few working runes. The subject is capable of achieving a perfect link to the Psyonics, even <B>with</B> Elias ordering all of those surgeries."
 
 /obj/item/paper/fluff/ruins/dangerous_research/armstrong_memo_2
 	name = "Jexa Armstrong's Notes - Day 47"

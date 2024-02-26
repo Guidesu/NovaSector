@@ -24,21 +24,18 @@
 	resilience = TRAUMA_RESILIENCE_LOBOTOMY
 	///how satisfied the person is, gained through climaxing
 	//max is 300, min is 0
-	var/satisfaction = 300
+	var/satisfaction = 1000
 	///how stressed the person is, gained through zero satisfaction
 	//max is 300, min is 0
 	var/stress = 0
 
 	COOLDOWN_DECLARE(desire_cooldown)
 	///The time between each desire message within company
-	var/desire_cooldown_number = 30 SECONDS
+	var/desire_cooldown_number = 300 SECONDS
 	///The list of manual emotes that will be done when unsatisfied
 	var/static/list/lust_emotes = list(
 		"pants as their body trembles lightly.",
-		"lightly touches themselves up and down, feeling every inch.",
-		"puts their finger in their mouth and slightly bites down.",
-		"places their hands on their hip as they slowly gyrate.",
-		"moans, their head tilted slightly."
+		"grunts, their head tilted slightly."
 	)
 
 /**
@@ -55,19 +52,19 @@
 	//we are using if statements so that it slowly becomes more and more to the person
 	human_owner.manual_emote(pick(lust_emotes))
 	if(stress >= 60)
-		human_owner.set_jitter_if_lower(40 SECONDS)
+		human_owner.set_jitter_if_lower(1 SECONDS)
 		lust_message = "You feel a static sensation all across your skin..."
 	if(stress >= 120)
-		human_owner.set_eye_blur_if_lower(20 SECONDS)
+		human_owner.set_eye_blur_if_lower(1 SECONDS)
 		lust_message = "You vision begins to blur, the heat beginning to rise..."
 	if(stress >= 180)
-		owner.adjust_hallucinations(60 SECONDS)
+		owner.adjust_hallucinations(1 SECONDS)
 		lust_message = "You begin to fantasize of what you could do to someone..."
 	if(stress >= 240)
 		human_owner.adjustStaminaLoss(30)
 		lust_message = "You body feels so very hot, almost unwilling to cooperate..."
 	if(stress >= 300)
-		human_owner.adjustOxyLoss(40)
+		human_owner.adjustOxyLoss(15)
 		lust_message = "You feel your neck tightening, straining..."
 	to_chat(human_owner, span_purple(lust_message))
 	return TRUE
@@ -96,9 +93,9 @@
 	else
 		stress = clamp(stress + 1, 0, 300)
 
-	human_owner.adjust_arousal(10)
-	if(human_owner.pleasure < 80)
-		human_owner.adjust_pleasure(5)
+	human_owner.adjust_arousal(3)
+	if(human_owner.pleasure < 30)
+		human_owner.adjust_pleasure(0.1)
 
 	//Anything beyond this obeys a cooldown system because we don't want to spam it
 	if(!COOLDOWN_FINISHED(src, desire_cooldown))
@@ -137,21 +134,6 @@
 			continue
 		return TRUE
 	return FALSE
-
-/datum/brain_trauma/very_special/bimbo/handle_speech(datum/source, list/speech_args)
-	if(!HAS_TRAIT(owner, TRAIT_BIMBO)) //You have the trauma but not the trait, go ahead and fail here
-		return ..()
-	var/message = speech_args[SPEECH_MESSAGE]
-	var/list/split_message = splittext(message, " ") //List each word in the message
-	for (var/i in 1 to length(split_message))
-		if(findtext(split_message[i], "*") || findtext(split_message[i], ";") || findtext(split_message[i], ":"))
-			continue
-		if(prob(10))
-			var/insert_muffle = pick("... Mmmph...", "... Hmmphh...", "... Gmmmh...", "... Fmmmmph...")
-			split_message[i] = split_message[i] + insert_muffle
-
-	message = jointext(split_message, " ")
-	speech_args[SPEECH_MESSAGE] = message
 
 /datum/brain_trauma/very_special/bimbo/on_gain()
 	owner.add_mood_event("bimbo", /datum/mood_event/bimbo)

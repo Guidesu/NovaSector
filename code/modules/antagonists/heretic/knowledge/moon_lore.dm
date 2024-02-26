@@ -45,7 +45,7 @@
 
 /datum/heretic_knowledge/moon_grasp
 	name = "Grasp of Lunacy"
-	desc = "Your Mansus Grasp will cause them to hallucinate everyone as lunar mass, \
+	desc = "Your Psyonics Grasp will cause them to hallucinate everyone as lunar mass, \
 		and hides your identity for a short dur	ation."
 	gain_text = "The troupe on the side of the moon showed me truth, and I took it."
 	next_knowledge = list(/datum/heretic_knowledge/spell/moon_smile)
@@ -85,7 +85,7 @@
 
 /datum/heretic_knowledge/mark/moon_mark
 	name = "Mark of Moon"
-	desc = "Your Mansus Grasp now applies the Mark of Moon. The mark is triggered from an attack with your Moon Blade. \
+	desc = "Your Psyonics Grasp now applies the Mark of Moon. The mark is triggered from an attack with your Moon Blade. \
 		When triggered, the victim is confused, and when the mark is applied they are pacified \
 		until attacked."
 	gain_text = "The troupe on the moon would dance all day long \

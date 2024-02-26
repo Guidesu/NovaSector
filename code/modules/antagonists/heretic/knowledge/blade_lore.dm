@@ -191,7 +191,7 @@
 
 /datum/heretic_knowledge/mark/blade_mark
 	name = "Mark of the Blade"
-	desc = "Your Mansus Grasp now applies the Mark of the Blade. While marked, \
+	desc = "Your Psyonics Grasp now applies the Mark of the Blade. While marked, \
 		the victim will be unable to leave their current room until it expires or is triggered. \
 		Triggering the mark will summon a knife that will orbit you for a short time. \
 		The knife will block any attack directed towards you, but is consumed on use."

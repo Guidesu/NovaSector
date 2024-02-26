@@ -42,7 +42,7 @@
 
 /datum/heretic_knowledge/cosmic_grasp
 	name = "Grasp of Cosmos"
-	desc = "Your Mansus Grasp will give people a star mark (cosmic ring) and create a cosmic field where you stand."
+	desc = "Your Psyonics Grasp will give people a star mark (cosmic ring) and create a cosmic field where you stand."
 	gain_text = "Some stars dimmed, others' magnitude increased. \
 		With newfound strength I could channel the nebula's power into myself."
 	next_knowledge = list(/datum/heretic_knowledge/spell/cosmic_runes)
@@ -81,7 +81,7 @@
 
 /datum/heretic_knowledge/mark/cosmic_mark
 	name = "Mark of Cosmos"
-	desc = "Your Mansus Grasp now applies the Mark of Cosmos. The mark is triggered from an attack with your Cosmic Blade. \
+	desc = "Your Psyonics Grasp now applies the Mark of Cosmos. The mark is triggered from an attack with your Cosmic Blade. \
 		When triggered, the victim is returned to the location where the mark was originally applied to them. \
 		They will then be paralyzed for 2 seconds."
 	gain_text = "The Beast now whispered to me occasionally, only small tidbits of their circumstances. \

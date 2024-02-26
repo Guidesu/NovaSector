@@ -7930,6 +7930,7 @@
 #include "modular_nova\modules\QOL\code\_under.dm"
 #include "modular_nova\modules\QOL\code\datums\components\crafting\recipes\recipes_misc.dm"
 #include "modular_nova\modules\QOL\code\game\objects\items\mop.dm"
+#include "modular_nova\modules\quirk\guidesas_quirks.dm"
 #include "modular_nova\modules\radiosound\code\headset.dm"
 #include "modular_nova\modules\reagent_forging\code\anvil.dm"
 #include "modular_nova\modules\reagent_forging\code\crafting_bench.dm"

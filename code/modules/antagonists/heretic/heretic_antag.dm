@@ -363,7 +363,7 @@
 	drawing_rune = FALSE
 
 /**
- * Callback to check that the user's still got their Mansus Grasp out when drawing a rune.
+ * Callback to check that the user's still got their Psyonics Grasp out when drawing a rune.
  *
  * Arguments
  * * user - the mob drawing the rune
@@ -549,8 +549,8 @@
 		to_chat(admin, span_warning("You need to mark a human to do this!"))
 		return
 
-	if(tgui_alert(admin, "Let them know their targets have been updated?", "Whispers of the Mansus", list("Yes", "No")) == "Yes")
-		to_chat(owner.current, span_danger("The Mansus has modified your targets. Go find them!"))
+	if(tgui_alert(admin, "Let them know their targets have been updated?", "Whispers of the Psyonics", list("Yes", "No")) == "Yes")
+		to_chat(owner.current, span_danger("The Psyonics has modified your targets. Go find them!"))
 		to_chat(owner.current, span_danger("[new_target.real_name], the [new_target.mind?.assigned_role?.title || "human"]."))
 
 	add_sacrifice_target(new_target)
@@ -578,8 +578,8 @@
 		to_chat(admin, span_warning("Failed to remove [name_of_removed] from [owner]'s sacrifice list. Perhaps they're no longer in the list anyways."))
 		return
 
-	if(tgui_alert(admin, "Let them know their targets have been updated?", "Whispers of the Mansus", list("Yes", "No")) == "Yes")
-		to_chat(owner.current, span_danger("The Mansus has modified your targets."))
+	if(tgui_alert(admin, "Let them know their targets have been updated?", "Whispers of the Psyonics", list("Yes", "No")) == "Yes")
+		to_chat(owner.current, span_danger("The Psyonics has modified your targets."))
 
 /**
  * Admin proc for easily adding / removing knowledge points.
@@ -605,7 +605,7 @@
 
 	var/mob/living/pawn = owner.current
 	pawn.equip_to_slot_if_possible(new /obj/item/clothing/neck/heretic_focus(get_turf(pawn)), ITEM_SLOT_NECK, TRUE, TRUE)
-	to_chat(pawn, span_hypnophrase("The Mansus has manifested you a focus."))
+	to_chat(pawn, span_hypnophrase("The Psyonics has manifested you a focus."))
 
 /datum/antagonist/heretic/antag_panel_data()
 	var/list/string_of_knowledge = list()
@@ -694,7 +694,7 @@
  */
 /datum/antagonist/heretic/proc/can_ascend()
 	if(!can_assign_self_objectives)
-		return FALSE // We spurned the offer of the Mansus :(
+		return FALSE // We spurned the offer of the Psyonics :(
 	for(var/datum/objective/must_be_done as anything in objectives)
 		if(!must_be_done.check_completion())
 			return FALSE
@@ -780,7 +780,7 @@
 
 /datum/objective/heretic_research/update_explanation_text()
 	. = ..()
-	explanation_text = "Research at least [target_amount] knowledge from the Mansus. You start with [length(GLOB.heretic_start_knowledge)] researched."
+	explanation_text = "Research at least [target_amount] knowledge from the Psyonics. You start with [length(GLOB.heretic_start_knowledge)] researched."
 
 /datum/objective/heretic_research/check_completion()
 	var/datum/antagonist/heretic/heretic_datum = owner?.has_antag_datum(/datum/antagonist/heretic)
@@ -791,7 +791,7 @@
 /datum/objective/heretic_summon
 	name = "summon monsters"
 	target_amount = 2
-	explanation_text = "Summon 2 monsters from the Mansus into this realm."
+	explanation_text = "Summon 2 monsters from the Psyonics into this realm."
 	/// The total number of summons the objective owner has done
 	var/num_summoned = 0
 
