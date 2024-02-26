@@ -698,7 +698,7 @@
 		a few years out of date, leading to an overall lower capacity for modules."
 	default_skin = "security"
 	armor_type = /datum/armor/mod_theme_security
-	complexity_max = DEFAULT_MAX_COMPLEXITY - 3
+	complexity_max = DEFAULT_MAX_COMPLEXITY - 2
 	slowdown_inactive = 1
 	slowdown_active = 0.5
 	allowed_suit_storage = list(
@@ -1618,11 +1618,11 @@
 	)
 
 /datum/armor/mod_theme_corporate
-	melee = 50
-	bullet = 40
-	laser = 50
+	melee = 65
+	bullet = 65
+	laser = 55
 	energy = 50
-	bomb = 50
+	bomb = 60
 	bio = 100
 	fire = 100
 	acid = 100
