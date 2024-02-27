@@ -7,7 +7,7 @@
 
 	cooldown_time = 120 SECONDS // Varies depending on command
 	invocation = "" // Handled by the VOICE OF GOD itself
-	invocation_type = INVOCATION_SHOUT
+	invocation_type = INVOCATION_WHISPER
 	spell_requirements = NONE
 	antimagic_flags = NONE
 

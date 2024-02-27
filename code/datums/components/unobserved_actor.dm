@@ -58,7 +58,7 @@
 		return
 	return COMPONENT_BLOCK_ABILITY_START
 
-/// Called when the mob tries to cast a spell
+/// Called when the mob tries to cast a psionic
 /datum/component/unobserved_actor/proc/on_tried_spell(mob/living/source)
 	SIGNAL_HANDLER
 	if (!check_if_seen(source))

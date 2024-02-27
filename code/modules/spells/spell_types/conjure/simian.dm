@@ -11,7 +11,7 @@
 	cooldown_reduction_per_rank = 15 SECONDS
 
 	invocation = "OOGA OOGA OOGA!!!!"
-	invocation_type = INVOCATION_SHOUT
+	invocation_type = INVOCATION_WHISPER
 
 	summon_radius = 2
 	summon_type = list(

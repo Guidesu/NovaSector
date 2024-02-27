@@ -43,9 +43,9 @@
 	var/base_overlay_icon_state
 	/// The active icon_state of the overlay we apply
 	var/active_overlay_icon_state
-	/// The base icon state of the spell's button icon, used for editing the icon "off"
+	/// The base icon state of the psionic's button icon, used for editing the icon "off"
 	var/base_icon_state
-	/// The active icon state of the spell's button icon, used for editing the icon "on"
+	/// The active icon state of the psionic's button icon, used for editing the icon "on"
 	var/active_icon_state
 
 /datum/action/cooldown/New(Target, original = TRUE)
@@ -340,7 +340,7 @@
 
 	// Pass on what panel we should be displayed in.
 	stat_panel_data[PANEL_DISPLAY_PANEL] = panel
-	// Also pass on the name of the spell, with some spacing
+	// Also pass on the name of the psionic, with some spacing
 	stat_panel_data[PANEL_DISPLAY_NAME] = " - [name]"
 
 	// No cooldown time at all, just show the ability

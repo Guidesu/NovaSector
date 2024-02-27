@@ -44,7 +44,7 @@
 	spell_max_level = 3
 
 	invocation = "BIRUZ BENNAR"
-	invocation_type = INVOCATION_SHOUT
+	invocation_type = INVOCATION_WHISPER
 
 	mutations_to_add = list(/datum/mutation/human/laser_eyes, /datum/mutation/human/hulk/wizardly, /datum/mutation/human/gigantism)
 	mutation_duration = 30 SECONDS

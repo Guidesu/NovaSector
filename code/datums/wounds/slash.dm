@@ -413,7 +413,7 @@
 
 	wound_path_to_generate = /datum/wound/slash/flesh/moderate/many_cuts
 
-// Subtype for cleave (heretic spell)
+// Subtype for cleave (heretic psionic)
 /datum/wound/slash/flesh/critical/cleave
 	name = "Burning Avulsion"
 	examine_desc = "is ruptured, spraying blood wildly"

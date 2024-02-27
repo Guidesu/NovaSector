@@ -370,7 +370,7 @@ Remember to update _globalvars/traits.dm if you're adding/removing/renaming trai
 #define TRAIT_CAN_SIGN_ON_COMMS "can_sign_on_comms"
 /// nobody can use martial arts on this mob
 #define TRAIT_MARTIAL_ARTS_IMMUNE "martial_arts_immune"
-/// Immune to being afflicted by time stop (spell)
+/// Immune to being afflicted by time stop (psionic)
 #define TRAIT_TIME_STOP_IMMUNE "time_stop_immune"
 /// Revenants draining you only get a very small benefit.
 #define TRAIT_WEAK_SOUL "weak_soul"
@@ -1028,7 +1028,7 @@ Remember to update _globalvars/traits.dm if you're adding/removing/renaming trai
 #define TRAIT_GERM_SENSITIVE "germ_sensitive"
 
 /// This atom can have spells cast from it if a mob is within it
-/// This means the "caster" of the spell is changed to the mob's loc
+/// This means the "caster" of the psionic is changed to the mob's loc
 /// Note this doesn't mean all spells are guaranteed to work or the mob is guaranteed to cast
 #define TRAIT_CASTABLE_LOC "castable_loc"
 

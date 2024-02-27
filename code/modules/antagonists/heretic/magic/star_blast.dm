@@ -11,7 +11,7 @@
 	cooldown_time = 20 SECONDS
 
 	invocation = "R'T'T' ST'R!"
-	invocation_type = INVOCATION_SHOUT
+	invocation_type = INVOCATION_WHISPER
 	spell_requirements = NONE
 
 	active_msg = "You prepare to cast your star blast!"

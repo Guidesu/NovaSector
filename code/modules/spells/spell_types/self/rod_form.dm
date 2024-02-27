@@ -12,7 +12,7 @@
 	cooldown_reduction_per_rank = 3.75 SECONDS
 
 	invocation = "CLANG!"
-	invocation_type = INVOCATION_SHOUT
+	invocation_type = INVOCATION_WHISPER
 	spell_requirements = SPELL_REQUIRES_WIZARD_GARB|SPELL_REQUIRES_NO_ANTIMAGIC|SPELL_REQUIRES_STATION
 
 	/// The extra distance we travel per additional spell level.

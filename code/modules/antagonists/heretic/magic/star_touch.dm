@@ -13,7 +13,7 @@
 	school = SCHOOL_FORBIDDEN
 	cooldown_time = 15 SECONDS
 	invocation = "ST'R 'N'RG'!"
-	invocation_type = INVOCATION_SHOUT
+	invocation_type = INVOCATION_WHISPER
 	spell_requirements = NONE
 	antimagic_flags = MAGIC_RESISTANCE
 

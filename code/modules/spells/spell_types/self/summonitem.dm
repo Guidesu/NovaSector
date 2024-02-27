@@ -1,13 +1,12 @@
 /datum/action/cooldown/spell/summonitem
 	name = "Instant Summons"
-	desc = "This spell can be used to recall a previously marked item to your hand from anywhere in the universe."
+	desc = "This power can be used to recall a previously marked item to your hand from the local sector."
 	button_icon_state = "summons"
 
 	school = SCHOOL_TRANSMUTATION
 	cooldown_time = 10 SECONDS
 
-	invocation = "GAR YOK"
-	invocation_type = INVOCATION_WHISPER
+	invocation_type = INVOCATION_NONE
 	spell_requirements = SPELL_REQUIRES_NO_ANTIMAGIC
 
 	spell_max_level = 1 //cannot be improved

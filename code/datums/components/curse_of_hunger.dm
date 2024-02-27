@@ -6,7 +6,7 @@
 /**
  * curse of hunger component; for very hungry items.
  *
- * Used as a rpgloot suffix and wizard spell!
+ * Used as a rpgloot suffix and wizard psionic!
  */
 /datum/component/curse_of_hunger
 	///whether to add dropdel to the item with curse of hunger, used for temporary curses like the wizard duffelbags

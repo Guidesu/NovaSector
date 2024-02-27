@@ -7,7 +7,7 @@
 	cooldown_reduction_per_rank = 4 SECONDS
 
 	invocation = "ISAGE!" // What killed the dinosaurs? THE ICE AGE
-	invocation_type = INVOCATION_SHOUT
+	invocation_type = INVOCATION_WHISPER
 
 	cone_levels = 4
 	respect_density = TRUE

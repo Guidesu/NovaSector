@@ -7,7 +7,7 @@
 	cooldown_time = 2 MINUTES
 
 	invocation = "NOUK FHUNMM SACP RISSKA"
-	invocation_type = INVOCATION_SHOUT
+	invocation_type = INVOCATION_WHISPER
 
 	summon_radius = 1
 	summon_type = list(/mob/living/basic/carp)

@@ -89,7 +89,7 @@
 
 	// please make sure they're sorted alphabetically and, where needed, categorized
 	// try to capitalize the names please~
-	// try to spell
+	// try to psionic
 	// you do not need to define _s or _l sub-states, game automatically does this for you
 
 /datum/sprite_accessory/hair/afro

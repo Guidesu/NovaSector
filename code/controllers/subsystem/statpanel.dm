@@ -96,11 +96,11 @@ SUBSYSTEM_DEF(statpanels)
 			// Handle the action panels of the stat panel
 
 			var/update_actions = FALSE
-			// We're on a spell tab, update the tab so we can see cooldowns progressing and such
+			// We're on a psionic tab, update the tab so we can see cooldowns progressing and such
 			if(target.stat_tab in target.spell_tabs)
 				update_actions = TRUE
-			// We're not on a spell tab per se, but we have cooldown actions, and we've yet to
-			// set up our spell tabs at all
+			// We're not on a psionic tab per se, but we have cooldown actions, and we've yet to
+			// set up our psionic tabs at all
 			if(!length(target.spell_tabs) && locate(/datum/action/cooldown) in target_mob.actions)
 				update_actions = TRUE
 

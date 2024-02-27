@@ -215,13 +215,13 @@
 ///key holds how long we will be swimming for
 #define BB_KEY_SWIMMER_COOLDOWN "key_swimmer_cooldown"
 //Wizard AI keys
-/// Key where we store our main targeted spell
+/// Key where we store our main targeted psionic
 #define BB_WIZARD_TARGETED_SPELL "BB_wizard_targeted_spell"
-/// Key where we store our secondary, untargeted spell
+/// Key where we store our secondary, untargeted psionic
 #define BB_WIZARD_SECONDARY_SPELL "BB_wizard_secondary_spell"
-/// Key where we store our blink spell
+/// Key where we store our blink psionic
 #define BB_WIZARD_BLINK_SPELL "BB_wizard_blink_spell"
-/// Key for the next time we can cast a spell
+/// Key for the next time we can cast a psionic
 #define BB_WIZARD_SPELL_COOLDOWN "BB_wizard_spell_cooldown"
 
 

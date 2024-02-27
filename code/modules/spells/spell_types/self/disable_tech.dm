@@ -1,6 +1,6 @@
 /datum/action/cooldown/spell/emp
-	name = "Emplosion"
-	desc = "This spell causes an EMP in an area."
+	name = "Psyon Burst"
+	desc = "This psyonics ability generates a burst of disruptive psionic energy in an area."
 	button_icon_state = "emp"
 	sound = 'sound/weapons/zapbang.ogg'
 
@@ -17,14 +17,14 @@
 
 /datum/action/cooldown/spell/emp/disable_tech
 	name = "Disable Tech"
-	desc = "This spell disables all weapons, cameras and most other technology in range."
+	desc = "This psyonics disables all weapons, cameras and most other technology in range."
 	sound = 'sound/magic/disable_tech.ogg'
 
 	cooldown_time = 40 SECONDS
 	cooldown_reduction_per_rank = 5 SECONDS
 
-	invocation = "NEC CANTIO"
-	invocation_type = INVOCATION_SHOUT
+	invocation = "mechanical... cantia..."
+	invocation_type = INVOCATION_WHISPER
 
 	emp_heavy = 6
 	emp_light = 10

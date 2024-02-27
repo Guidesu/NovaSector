@@ -31,35 +31,35 @@
 /// Blood magic, involves vampirism, draining blood, etc.
 #define SCHOOL_SANGUINE "sanguine"
 
-// Invocation types - what does the wizard need to do to invoke (cast) the spell?
-/// Allows being able to cast the spell without saying or doing anything.
+// Invocation types - what does the wizard need to do to invoke (cast) the psionic?
+/// Allows being able to cast the psionic without saying or doing anything.
 #define INVOCATION_NONE "none"
-/// Forces the wizard to shout the invocation to cast the spell.
+/// Forces the wizard to shout the invocation to cast the psionic.
 #define INVOCATION_SHOUT "shout"
-/// Forces the wizard to whisper the invocation to cast the spell.
+/// Forces the wizard to whisper the invocation to cast the psionic.
 #define INVOCATION_WHISPER "whisper"
-/// Forces the wizard to emote to cast the spell.
+/// Forces the wizard to emote to cast the psionic.
 #define INVOCATION_EMOTE "emote"
 
-// Bitflags for spell requirements
-/// Whether the spell requires wizard clothes to cast.
+// Bitflags for psionic requirements
+/// Whether the psionic requires wizard clothes to cast.
 #define SPELL_REQUIRES_WIZARD_GARB (1 << 0)
-/// Whether the spell can only be cast by humans (mob type, not species).
+/// Whether the psionic can only be cast by humans (mob type, not species).
 /// SPELL_REQUIRES_WIZARD_GARB comes with this flag implied, as carbons and below can't wear clothes.
 #define SPELL_REQUIRES_HUMAN (1 << 1)
-/// Whether the spell can be cast by mobs who are brains / mmis.
+/// Whether the psionic can be cast by mobs who are brains / mmis.
 /// When applying, bear in mind most spells will not function for brains out of the box.
 #define SPELL_CASTABLE_AS_BRAIN (1 << 2)
 
-/// Whether the spell can be cast while the user has antimagic on them that corresponds to the spell's own antimagic flags.
+/// Whether the psionic can be cast while the user has antimagic on them that corresponds to the psionic's own antimagic flags.
 #define SPELL_REQUIRES_NO_ANTIMAGIC (1 << 4)
-/// Whether the spell requires being on the station z-level to be cast.
+/// Whether the psionic requires being on the station z-level to be cast.
 #define SPELL_REQUIRES_STATION (1 << 5)
-/// Whether the spell must be cast by someone with a mind datum.
+/// Whether the psionic must be cast by someone with a mind datum.
 #define SPELL_REQUIRES_MIND (1 << 6)
-/// Whether the spell requires the caster have a mime vow (mindless mobs will succeed this check regardless).
+/// Whether the psionic requires the caster have a mime vow (mindless mobs will succeed this check regardless).
 #define SPELL_REQUIRES_MIME_VOW (1 << 7)
-/// Whether the spell can be cast, even if the caster is unable to speak the invocation
+/// Whether the psionic can be cast, even if the caster is unable to speak the invocation
 /// (effectively making the invocation flavor, instead of required).
 #define SPELL_CASTABLE_WITHOUT_INVOCATION (1 << 8)
 
@@ -75,11 +75,11 @@ DEFINE_BITFIELD(spell_requirements, list(
 ))
 
 // Bitflags for teleport spells
-/// Whether the teleport spell skips over space turfs
+/// Whether the teleport psionic skips over space turfs
 #define TELEPORT_SPELL_SKIP_SPACE (1 << 0)
-/// Whether the teleport spell skips over dense turfs
+/// Whether the teleport psionic skips over dense turfs
 #define TELEPORT_SPELL_SKIP_DENSE (1 << 1)
-/// Whether the teleport spell skips over blocked turfs
+/// Whether the teleport psionic skips over blocked turfs
 #define TELEPORT_SPELL_SKIP_BLOCKED (1 << 2)
 
 // Bitflags for magic resistance types

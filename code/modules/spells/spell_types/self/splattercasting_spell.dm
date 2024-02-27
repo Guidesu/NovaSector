@@ -10,7 +10,7 @@
 	cooldown_time = 1 SECONDS
 
 	invocation = "THE STARS ALIGN! THE COSMOS BLEEDS!"
-	invocation_type = INVOCATION_SHOUT
+	invocation_type = INVOCATION_WHISPER
 	spell_requirements = SPELL_REQUIRES_NO_ANTIMAGIC|SPELL_REQUIRES_STATION|SPELL_REQUIRES_MIND
 	antimagic_flags = MAGIC_RESISTANCE|MAGIC_RESISTANCE_HOLY
 	spell_max_level = 1

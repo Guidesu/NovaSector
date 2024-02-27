@@ -3,7 +3,7 @@
 	name = "Dragon Form"
 	desc = "Take on the shape a lesser ash drake."
 	invocation = "RAAAAAAAAWR!"
-	invocation_type = INVOCATION_SHOUT
+	invocation_type = INVOCATION_WHISPER
 	spell_requirements = NONE
 
 	possible_shapes = list(/mob/living/simple_animal/hostile/megafauna/dragon/lesser)

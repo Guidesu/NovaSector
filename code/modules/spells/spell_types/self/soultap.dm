@@ -16,7 +16,7 @@
 	school = SCHOOL_NECROMANCY
 	cooldown_time = 1 SECONDS
 	invocation = "AT ANY COST!"
-	invocation_type = INVOCATION_SHOUT
+	invocation_type = INVOCATION_WHISPER
 	spell_max_level = 1
 
 	/// The amount of health we take on tap

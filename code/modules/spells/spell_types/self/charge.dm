@@ -1,8 +1,6 @@
 /datum/action/cooldown/spell/charge
-	name = "Charge"
-	desc = "This spell can be used to recharge a variety of things in your hands, \
-		from magical artifacts to electrical components. A creative wizard can even use it \
-		to grant magical power to a fellow magic user."
+	name = "Attune"
+	desc = "This psyonics ability allows the user to harmonize with various objects, from technological gadgets to natural elements. A skilled Psyonaut can extend their psionic energy to empower or recharge items, even bestowing psionic enhancements to fellow Psyonauts."
 	button_icon_state = "charge"
 
 	sound = 'sound/magic/charge.ogg'
@@ -10,7 +8,7 @@
 	cooldown_time = 60 SECONDS
 	cooldown_reduction_per_rank = 5 SECONDS
 
-	invocation = "DIRI CEL"
+	invocation = "industria moventur per me..."
 	invocation_type = INVOCATION_WHISPER
 	spell_requirements = SPELL_REQUIRES_NO_ANTIMAGIC
 
@@ -30,8 +28,8 @@
 			pulled_has_spells = TRUE
 
 		if(pulled_has_spells)
-			to_chat(pulled_living, span_notice("You feel raw magic flowing through you. It feels good!"))
-			to_chat(cast_on, span_notice("[pulled_living] suddenly feels very warm!"))
+			to_chat(pulled_living, span_notice("You feel raw psionic energy flowing through you. It feels invigorating!"))
+			to_chat(cast_on, span_notice("[pulled_living] suddenly feels a surge of warmth!"))
 			return
 
 		to_chat(pulled_living, span_notice("You feel very strange for a moment, but then it passes."))
@@ -39,7 +37,7 @@
 	// Then charge their main hand item, then charge their offhand item
 	var/obj/item/to_charge = cast_on.get_active_held_item() || cast_on.get_inactive_held_item()
 	if(!to_charge)
-		to_chat(cast_on, span_notice("You feel magical power surging through your hands, but the feeling rapidly fades."))
+		to_chat(cast_on, span_notice("You sense psionic energy surging through your hands, but the sensation rapidly fades."))
 		return
 
 	var/charge_return = SEND_SIGNAL(to_charge, COMSIG_ITEM_MAGICALLY_CHARGED, src, cast_on)

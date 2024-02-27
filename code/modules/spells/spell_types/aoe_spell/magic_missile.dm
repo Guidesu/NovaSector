@@ -9,7 +9,7 @@
 	cooldown_reduction_per_rank = 3.5 SECONDS
 
 	invocation = "FORTI GY AMA"
-	invocation_type = INVOCATION_SHOUT
+	invocation_type = INVOCATION_WHISPER
 
 	aoe_radius = 7
 

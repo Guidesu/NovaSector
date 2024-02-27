@@ -7,7 +7,7 @@
 	cooldown_time = 2 MINUTES
 
 	invocation = "IA IA"
-	invocation_type = INVOCATION_SHOUT
+	invocation_type = INVOCATION_WHISPER
 	spell_requirements = NONE
 
 	summon_radius = 3

@@ -11,7 +11,7 @@
 	cooldown_reduction_per_rank = 10 SECONDS
 
 	invocation = "NOT THE BEES"
-	invocation_type = INVOCATION_SHOUT
+	invocation_type = INVOCATION_WHISPER
 
 	summon_radius = 3
 	summon_type = list(/mob/living/basic/bee/toxin)

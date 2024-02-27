@@ -77,7 +77,7 @@
 
 	school = SCHOOL_EVOCATION
 	invocation = "GITTAH WEIGH"
-	invocation_type = INVOCATION_SHOUT
+	invocation_type = INVOCATION_WHISPER
 	aoe_radius = 5
 
 	cooldown_time = 40 SECONDS

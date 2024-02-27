@@ -9,7 +9,7 @@
 	cooldown_reduction_per_rank = 1 SECONDS // 1 second reduction per rank
 
 	invocation = "ONI SOMA!"
-	invocation_type = INVOCATION_SHOUT
+	invocation_type = INVOCATION_WHISPER
 	spell_requirements = SPELL_REQUIRES_NO_ANTIMAGIC
 
 	active_msg = "You prepare to cast your fireball spell!"

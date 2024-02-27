@@ -12,7 +12,7 @@
 	cooldown_time = 30 SECONDS
 
 	invocation = "FR'ZE!"
-	invocation_type = INVOCATION_SHOUT
+	invocation_type = INVOCATION_WHISPER
 	spell_requirements = NONE
 
 	// In room temperature, the ice won't last very long

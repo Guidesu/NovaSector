@@ -9,7 +9,7 @@
 	cooldown_reduction_per_rank = 6.75 SECONDS
 
 	invocation = "UN'LTD P'WAH!"
-	invocation_type = INVOCATION_SHOUT
+	invocation_type = INVOCATION_WHISPER
 	school = SCHOOL_EVOCATION
 
 	channel_message = span_notice("You start gathering power...")

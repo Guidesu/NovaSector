@@ -1,15 +1,15 @@
 /datum/action/cooldown/spell/forcewall
-	name = "Forcewall"
-	desc = "Create a magical barrier that only you can pass through."
+	name = "Psyonic Barrier"
+	desc = "Manifest a psyonic barrier that permits only the caster to pass through."
 	button_icon_state = "shield"
 
 	sound = 'sound/magic/forcewall.ogg'
 	school = SCHOOL_TRANSMUTATION
-	cooldown_time = 10 SECONDS
+	cooldown_time = 40 SECONDS
 	cooldown_reduction_per_rank = 1.25 SECONDS
 
-	invocation = "TARCOL MINTI ZHERI"
-	invocation_type = INVOCATION_SHOUT
+	invocation = "... Ego postulo ut praesidium mihi afferatis."
+	invocation_type = INVOCATION_WHISPER
 	spell_requirements = SPELL_REQUIRES_NO_ANTIMAGIC
 
 	/// The typepath to the wall we create on cast.

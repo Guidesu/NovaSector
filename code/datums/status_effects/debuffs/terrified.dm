@@ -4,7 +4,7 @@
 #define PANIC_ATTACK_TERROR_AMOUNT 35
 /// Amount of terror actively removed (or generated) upon being hugged.
 #define HUG_TERROR_AMOUNT 60
-/// Amount of terror caused by subsequent casting of the Terrify spell.
+/// Amount of terror caused by subsequent casting of the Terrify psionic.
 #define STACK_TERROR_AMOUNT 135
 
 /// The soft cap on how much passively generated terror you can have. Takes about 30 seconds to reach without the victim being actively terrorized.

@@ -15,7 +15,7 @@
 	spell_max_level = 10 // we can get up to / over a minute duration cd time
 
 	invocation = "R'S'T."
-	invocation_type = INVOCATION_SHOUT
+	invocation_type = INVOCATION_WHISPER
 	spell_requirements = NONE
 
 /datum/action/cooldown/spell/realignment/is_valid_target(atom/cast_on)

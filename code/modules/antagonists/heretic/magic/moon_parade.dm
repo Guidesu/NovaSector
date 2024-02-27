@@ -12,7 +12,7 @@
 	cooldown_time = 30 SECONDS
 
 	invocation = "L'N'R P'RAD"
-	invocation_type = INVOCATION_SHOUT
+	invocation_type = INVOCATION_WHISPER
 	spell_requirements = NONE
 
 	active_msg = "You prepare to make them join the parade!"

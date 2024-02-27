@@ -13,7 +13,7 @@
 	cooldown_time = 45 SECONDS
 
 	invocation = "V'LC'N!"
-	invocation_type = INVOCATION_SHOUT
+	invocation_type = INVOCATION_WHISPER
 	spell_requirements = NONE
 	channel_time = 5 SECONDS
 	target_radius = 5

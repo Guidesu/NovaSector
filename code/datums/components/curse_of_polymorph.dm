@@ -1,7 +1,7 @@
 /**
  * curse of polymorph component;
  *
- * Used as a rpgloot suffix and wizard spell!
+ * Used as a rpgloot suffix and wizard psionic!
  */
 /datum/component/curse_of_polymorph
 	var/polymorph_type

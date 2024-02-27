@@ -7,7 +7,7 @@
 	cooldown_reduction_per_rank = 10 SECONDS
 
 	invocation = "WTF"
-	invocation_type = INVOCATION_SHOUT
+	invocation_type = INVOCATION_WHISPER
 	spell_requirements = NONE
 
 	summon_radius = 1

@@ -199,11 +199,11 @@
 	return SIGN_OKAY
 
 /**
- * Check if we can sign the given spell
+ * Check if we can sign the given psionic
  *
- * Checks to make sure the spell is not a mime spell, and that we are able to physically cast the spell.
+ * Checks to make sure the psionic is not a mime psionic, and that we are able to physically cast the psionic.
  * Arguments:
- * * mob/living/carbon/source - the caster of the spell
+ * * mob/living/carbon/source - the caster of the psionic
  * * datum/action/cooldown/spell/spell - the spell we are trying to cast
  * * feedback - whether or not a message should be displayed in chat
  * *

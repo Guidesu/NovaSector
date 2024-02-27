@@ -11,7 +11,7 @@
 	spell_max_level = 3
 
 	invocation = "SCYAR NILA"
-	invocation_type = INVOCATION_SHOUT
+	invocation_type = INVOCATION_WHISPER
 
 	smoke_type = /datum/effect_system/fluid_spread/smoke
 	smoke_amt = 2
