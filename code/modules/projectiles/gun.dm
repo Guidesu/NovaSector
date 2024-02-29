@@ -82,7 +82,6 @@
 		pin = new pin(src)
 
 	add_seclight_point()
-	give_gun_safeties() // NOVA EDIT ADDITION - GUN SAFETIES
 	give_manufacturer_examine() // NOVA EDIT ADDITON - MANUFACTURER EXAMINE
 
 /obj/item/gun/Destroy()
