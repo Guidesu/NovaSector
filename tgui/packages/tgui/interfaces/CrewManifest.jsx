@@ -14,8 +14,6 @@ const commandJobs = [
   'Free Union of Vulken Consultant', // NOVA EDIT
 ];
 
-// NOVA EDIT CHANGE BEGIN - ALTERNATIVE_JOB_TITLES
-// Any instance of crewMember.trim was originally crewMember.rank
 export const CrewManifest = (props) => {
   const {
     data: { manifest, positions },
@@ -105,4 +103,3 @@ export const CrewManifest = (props) => {
     </Window>
   );
 };
-// NOVA EDIT CHANGE END - ALTERNATIVE_JOB_TITLES

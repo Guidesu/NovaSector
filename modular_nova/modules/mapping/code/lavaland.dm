@@ -4,7 +4,7 @@
 /*------*/
 
 /datum/map_template/ruin/lavaland/ash_walker
-	name = "Ash Walker Nest"
+	name = "Lava-Ruin Ash Walker Nest"
 	id = "ash-walker"
 	description = "A race of unbreathing lizards live here, that run faster than a human can, worship a broken dead city, and are capable of reproducing by something involving tentacles? \
 	Probably best to stay clear."
@@ -23,3 +23,12 @@
 	never_spawn_with = list(/datum/map_template/ruin/icemoon/underground/nova/interdyne_base)
 	always_place = TRUE
 
+/datum/map_template/ruin/lavaland/arena
+	name = "Lava-Ruin Grand Arena"
+	id = "arena"
+	description = "An ancient gladiatorial arena containing a deadly warrior within."
+	prefix = "_maps/RandomRuins/LavaRuins/nova/"
+	suffix = "lavaland_surface_arena.dmm"
+	cost = 0
+	always_place = TRUE //WOULD BE UNFAIR IF SOMETHING THAT IS ALWAYS PLACED HAD A COST...
+	allow_duplicates = FALSE

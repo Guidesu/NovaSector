@@ -1,18 +1,18 @@
-#Listing maps here will blacklist them from generating in space.
-#Maps must be the full path to them
-#A list of maps valid to blacklist can be found in _maps\RandomRuins\SpaceRuins
-#SPECIFYING AN INVALID MAP WILL RESULT IN RUNTIMES ON GAME START
+Listing maps here will blacklist them from generating in space.
+Maps must be the full path to them
+A list of maps valid to blacklist can be found in _maps\RandomRuins\SpaceRuins
+SPECIFYING AN INVALID MAP WILL RESULT IN RUNTIMES ON GAME START
 
-#_maps/RandomRuins/SpaceRuins/abandonedteleporter.dmm
+_maps/RandomRuins/SpaceRuins/abandonedteleporter.dmm
 _maps/RandomRuins/SpaceRuins/abandonedzoo.dmm
 _maps/RandomRuins/SpaceRuins/allamericandiner.dmm
 _maps/RandomRuins/SpaceRuins/anomaly_research.dmm
-#_maps/RandomRuins/SpaceRuins/asteroid1.dmm
-#_maps/RandomRuins/SpaceRuins/asteroid2.dmm
-#_maps/RandomRuins/SpaceRuins/asteroid3.dmm
-#_maps/RandomRuins/SpaceRuins/asteroid4.dmm
-#_maps/RandomRuins/SpaceRuins/asteroid5.dmm
-#_maps/RandomRuins/SpaceRuins/asteroid6.dmm
+_maps/RandomRuins/SpaceRuins/asteroid1.dmm
+_maps/RandomRuins/SpaceRuins/asteroid2.dmm
+_maps/RandomRuins/SpaceRuins/asteroid3.dmm
+_maps/RandomRuins/SpaceRuins/asteroid4.dmm
+_maps/RandomRuins/SpaceRuins/asteroid5.dmm
+_maps/RandomRuins/SpaceRuins/asteroid6.dmm
 _maps/RandomRuins/SpaceRuins/atmosasteroidruin.dmm
 _maps/RandomRuins/SpaceRuins/atmosasteroidruin.dmm
 _maps/RandomRuins/SpaceRuins/bigderelict1.dmm
@@ -50,7 +50,7 @@ _maps/RandomRuins/SpaceRuins/hellfactory.dmm
 _maps/RandomRuins/SpaceRuins/hilbertshoteltestingsite.dmm
 _maps/RandomRuins/SpaceRuins/infested_frigate.dmm
 _maps/RandomRuins/SpaceRuins/intactemptyship.dmm
-#_maps/RandomRuins/SpaceRuins/interdyne.dmm
+_maps/RandomRuins/SpaceRuins/interdyne.dmm
 _maps/RandomRuins/SpaceRuins/listeningstation.dmm
 _maps/RandomRuins/SpaceRuins/meateor.dmm
 _maps/RandomRuins/SpaceRuins/mechtransport.dmm
@@ -88,5 +88,33 @@ _maps/RandomRuins/SpaceRuins/way_home.dmm
 _maps/RandomRuins/SpaceRuins/waystation.dmm
 _maps/RandomRuins/SpaceRuins/whiteshipdock.dmm
 _maps/RandomRuins/SpaceRuins/whiteshipruin_box.dmm
+
+Custom Ruins
+_maps/RandomRuins/SpaceRuins/nova/alientoollab.dmm
+_maps/RandomRuins/SpaceRuins/nova/blackmarket.dmm
+_maps/RandomRuins/SpaceRuins/nova/cargodiselost.dmm
+_maps/RandomRuins/SpaceRuins/nova/clothing_facility.dmm
+_maps/RandomRuins/SpaceRuins/nova/codealpha.dmm
+_maps/RandomRuins/SpaceRuins/nova/crash.dmm
+_maps/RandomRuins/SpaceRuins/nova/derelictferry.dmm
+_maps/RandomRuins/SpaceRuins/nova/des_two.dmm
 _maps/RandomRuins/SpaceRuins/nova/drones_derelict.dmm
-_maps/RandomRuins/SpaceRuins/shuttle8532.dmm
+_maps/RandomRuins/SpaceRuins/nova/ghostship.dmm
+_maps/RandomRuins/SpaceRuins/nova/luna.dmm
+_maps/RandomRuins/SpaceRuins/nova/piratefort.dmm
+_maps/RandomRuins/SpaceRuins/nova/port_tarkon.dmm
+_maps/RandomRuins/SpaceRuins/nova/posterpandamonium.dmm
+_maps/RandomRuins/SpaceRuins/nova/prisonshuttle.dmm
+_maps/RandomRuins/SpaceRuins/nova/salvagepost.dmm
+_maps/RandomRuins/SpaceRuins/nova/scrapeheap.dmm
+_maps/RandomRuins/SpaceRuins/nova/shuttle8532.dmm
+_maps/RandomRuins/SpaceRuins/nova/shuttlescrap.dmm
+_maps/RandomRuins/SpaceRuins/nova/smugglies.dmm
+_maps/RandomRuins/SpaceRuins/nova/spacehotel.dmm
+_maps/RandomRuins/SpaceRuins/nova/syndibase.dmm
+_maps/RandomRuins/SpaceRuins/nova/toystore.dmm
+_maps/RandomRuins/SpaceRuins/nova/vaulttango.dmm
+_maps/RandomRuins/SpaceRuins/nova/waypointstation.dmm
+_maps/RandomRuins/SpaceRuins/nova/whiteshipruin_box.dmm
+_maps/RandomRuins/SpaceRuins/nova/wreckedfriendship.dmm
+_maps/RandomRuins/SpaceRuins/nova/wreckedhomestead.dmm
