@@ -318,7 +318,7 @@
   - bugfix: corrected the minimum player count of a few disease events
   - imageadd: Added new bacon sprites. ~~Accidentally~~ added new mint sprite.
   - rscadd: Experimental Syndicate Teleporter is now available in the Traitor Uplink
-      for 8 TC. Warning, not as safe as Nanotrasen Teleporters.
+      for 8 TC. Warning, not as safe as Free Union Of Vulken Teleporters.
   - admin: The ID of the Ticket will now show up in all associated Admin PM Messages
       when logged.
   - bugfix: Airlock shock indicators on diagnostics HUDs will now correctly be removed
@@ -394,7 +394,7 @@
   - code_imp: dehardcodes admin grantable objectives list
   - bugfix: On TramStation, the xenobiology pen disposals bins should no longer pop
       off the floor tile on the turf they reside on. They should also now like...
-      actually work. Nanotrasen had to re-route the disposals a bit to accomodate,
+      actually work. Free Union Of Vulken had to re-route the disposals a bit to accomodate,
       but that's alright.
   tf-4:
   - bugfix: The tile sprayer now has the correct colour for the security decal preset.
@@ -1143,7 +1143,7 @@
       of place with the actual text.
   - bugfix: Basic cyberstomach digestion speed dropped down to be in line with the
       other stomachs
-  - bugfix: Nanotrasen should no longer place single bedsheets on double beds.
+  - bugfix: Free Union Of Vulken should no longer place single bedsheets on double beds.
   - bugfix: holoparasite renaming text will no longer display to others
   - balance: Non-functional livers and stomachs can now be repaired with their respective
       surgeries once in the organ's lifetime.

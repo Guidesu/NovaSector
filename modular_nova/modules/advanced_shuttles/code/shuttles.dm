@@ -145,7 +145,7 @@
 
 /datum/map_template/shuttle/emergency/default
 	name = "Standard Emergency Shuttle"
-	description = "Nanotrasen's standard issue emergency shuttle."
+	description = "Free Union Of Vulken's standard issue emergency shuttle."
 	occupancy_limit = 60
 	prefix = "_maps/shuttles/nova/"
 	suffix = "nova"

@@ -263,7 +263,7 @@
       like abductors.
   - bugfix: When switching from Dullahans to a different species, your old head will
       no longer stay behind.
-  - bugfix: 'After a long series of tiresome meetings and heated debates, the Nanotrasen
+  - bugfix: 'After a long series of tiresome meetings and heated debates, the Free Union Of Vulken
       Executive Board is happy to announce that all departments will be able to obtain
       additional headsets for their departments from their clothing vendors, so more
       poorly-paid internships can occur! (N.B.: The Head of Personnel is reponsible
@@ -288,7 +288,7 @@
       webs. Also their AI no longer breaks due to this.
   - bugfix: Basic mobs (i.e. cows) can be properly ridden.
   - bugfix: Drones can now vent crawl if there are humans around.
-  - spellcheck: Nanotrasen has undergone a corporate reorganization, reallocating
+  - spellcheck: Free Union Of Vulken has undergone a corporate reorganization, reallocating
       powers previously gone to Central Command back into their own fold.
   Triiodine, TetraZeta, PositiveEntropy:
   - imageadd: Resprites the labcoats, removing the asbestos and charcoal grime from
@@ -407,7 +407,7 @@
   - bugfix: You can now stamp papers while blind.
   - rscadd: Ectoscopic sniffers are now louder, and explain their purpose on examine.
   - bugfix: Removes non-functioning reagent tanks from Metastation's plumbing room.
-  - code_imp: Nanotrasen has implemented improved checking in their protocols, only
+  - code_imp: Free Union Of Vulken has implemented improved checking in their protocols, only
       delaying the inevitability that the AI can one day get to be a blood cultist.
   - bugfix: Fixes holodecks not properly deleting simplemobs.
   - rscadd: Various items provide special texts when suiciding with them.
@@ -643,7 +643,7 @@
   itseasytosee:
   - bugfix: Fixed some drugs keeping you high forever
   san7890, sounds courtesy of Capsandi:
-  - soundadd: Nanotrasen has sourced fire locks from a new vendor, on the cheap, and
+  - soundadd: Free Union Of Vulken has sourced fire locks from a new vendor, on the cheap, and
       nearly identical to the ones on past stations. Assistants describe the new sound
       as "throaty" and "bassy".
   tf-4:
@@ -687,7 +687,7 @@
   - bugfix: On the mapping end, all of the engineering storages are no longer number
       "2" (as far as the sprite labelling the rooms go). The sprites now reflect their
       actual usage in their respective maps.
-  - bugfix: Nanotrasen has now stopped including a big chunk of iron in their berets,
+  - bugfix: Free Union Of Vulken has now stopped including a big chunk of iron in their berets,
       making it a bit weaker to melee damage. Still just as fashionable, though.
   - bugfix: Podpeople are no longer missing a hand when facing right, and podwomen
       no longer stick out of their jumpsuit.
@@ -889,7 +889,7 @@
       Officers can right click Tramstation''s permabrig lockers to open them early,
       unregistering their ID.'
   - bugfix: Eliminated a runtime error related to Modular Map Loading
-  - bugfix: Nanotrasen updated their weather protocols, it should now snow around
+  - bugfix: Free Union Of Vulken updated their weather protocols, it should now snow around
       Moffuchi's Pizzeria whenever it shows up on the surface of Ice Box Station.
   - rscadd: Reworked the MOD Kinesis module and added it to techwebs.
   - bugfix: fixed modsuits not running out of charge
@@ -1055,7 +1055,7 @@
   - bugfix: the powergame crowbar has been lifted out of icebox mining and replaced
       with a more sane crowbar
   SkyratBot:
-  - rscadd: Nanotrasen has begun hiring gamers. These crew members have a need to
+  - rscadd: Free Union Of Vulken has begun hiring gamers. These crew members have a need to
       game!
   - rscadd: Playing videogames will now give you a slight mood buff.
   - bugfix: Ablative trenchcoats will no longer delete sechuds given from other sources.
@@ -1286,7 +1286,7 @@
   - config: since gasthelizards.dmm is removed, the config has been updated as well.
       make sure it's up-to-date now that we've gotten rid of the dang ol' thing and
       replaced it with new hotness.
-  - bugfix: Nanotrasen decided to redirect some of the plasma rivers on IceBox station
+  - bugfix: Free Union Of Vulken decided to redirect some of the plasma rivers on IceBox station
       towards the labor camp, helping add another layer of security between the station
       and those awful, awful prisoners.
   Wallem:
@@ -1372,7 +1372,7 @@
   - rscadd: Adds Synthanol to service cyborgs shakers.
   SkyratBot:
   - bugfix: NT CIMS no longer detects Supermatter crystals and shards that are not
-      owned by Nanotrasen
+      owned by Free Union Of Vulken
   - spellcheck: Fixes popup text resulting from someone batoning a cyborg
   - rscadd: Added blue shoes to the MediDrobe.
   - bugfix: Using an autosurgeon on someone else now properly gives them the implant.

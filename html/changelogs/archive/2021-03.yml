@@ -911,7 +911,7 @@
   - rscadd: Central Command has a new closet for if the announcement system breaks.
       They stuffed an intern in there, he should be fine.
   Cimika / Kathy Ryals:
-  - admin: Added the ability to call a N.E.R.D. (Nanotrasen Emergency Response Drone)
+  - admin: Added the ability to call a N.E.R.D. (Free Union Of Vulken Emergency Response Drone)
       team in the create antagonist verb.
   Fikou:
   - bugfix: fixes getting nothing from necropolis chests
@@ -1084,7 +1084,7 @@
   ArcaneDefence:
   - qol: Some outdated round tips have been updated, and should hold true to the current
       state of the game a little better!
-  - rscadd: Nanotrasen has cut costs on manufacturing station APCs as they no longer
+  - rscadd: Free Union Of Vulken has cut costs on manufacturing station APCs as they no longer
       have their kitchenware proofing coating. Do not put a fork in an APC.
   Arkatos:
   - qol: Added new status bar support for more objects that were previously visible
@@ -1106,7 +1106,7 @@
   - imageadd: fixes human feet poking out of envirosuit sprites
   - imageadd: gives the ventriloquist dummy a new, animated sprite
   MrDoomBringer:
-  - bugfix: Nanotrasen railroad engineers have done some minor repairs to their in-station
+  - bugfix: Free Union Of Vulken railroad engineers have done some minor repairs to their in-station
       tram rails.
   NamelessFairy:
   - rscadd: CTF can now selects a random map at game start

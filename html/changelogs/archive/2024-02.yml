@@ -273,7 +273,7 @@
   NovaBot13:
   - bugfix: The North Star's disposals are now functional!
   - qol: The North Star has had a staggering amount of quality of life changes.
-  - rscadd: Nanotrasen has now supplied North Star security outposts with a disposals
+  - rscadd: Free Union Of Vulken has now supplied North Star security outposts with a disposals
       line leading directly to the drunk tank.
   - rscadd: Curators now get a 22.5% cut on credits spent on painting patronages (divided
       by the number of curators). The service department also gets another, 12.5%
@@ -444,7 +444,7 @@
       screw it in place like before.
   - code_imp: merged procs for computer & machine frames. autodocs them where possible.
   - code_imp: moved code for machine frame into its own file.
-  - balance: Nanotrasen, in direct response to the increasing danger posed by wannabe
+  - balance: Free Union Of Vulken, in direct response to the increasing danger posed by wannabe
       martial artists and rioters in the fringes of the Spinward Sector, have upgraded
       the impact dampeners found in their riot armor. Staff have also started to rediscover
       the value of medieval armor; it isn't particularly easy to topple a knight in

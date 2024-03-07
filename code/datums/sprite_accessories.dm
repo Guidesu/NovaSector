@@ -1384,7 +1384,7 @@
 	gender = NEUTER
 
 /datum/sprite_accessory/undershirt/nano
-	name = "Shirt (Nanotrasen)"
+	name = "Shirt (Free Union Of Vulken)"
 	icon_state = "shirt_nano"
 	gender = NEUTER
 

@@ -32,7 +32,7 @@
 	availability_prob = 50
 
 /datum/market_item/clothing/full_spacesuit_set
-	name = "\improper Nanotrasen Branded Spacesuit Box"
+	name = "\improper Free Union Of Vulken Branded Spacesuit Box"
 	desc = "A few boxes of \"Old Style\" space suits fell off the back of a space truck."
 	item = /obj/item/storage/box
 
@@ -71,7 +71,7 @@
 
 /datum/market_item/clothing/anti_sec_pin
 	name = "Subversive Pin"
-	desc = "Exclusive and fashionable red pin from a limited run, proclaiming your allegiance to enemies of the Nanotrasen corporation. \
+	desc = "Exclusive and fashionable red pin from a limited run, proclaiming your allegiance to enemies of the Free Union Of Vulken corporation. \
 		Contains an RFID chip which interferes with common scanning equipment, to ensure that they know you are serious. Share them with your friends!"
 	item = /obj/item/clothing/accessory/anti_sec_pin
 

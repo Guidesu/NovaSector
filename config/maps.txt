@@ -62,12 +62,12 @@ endmap
 
 map voidraptor
 	maxplayers 100
-	votable
+	disabled
 endmap
 
 map blueshift
 	minplayers 70
-	votable
+	disabled
 endmap
 
 map lavaland

@@ -10,7 +10,7 @@
 
 /obj/item/clothing/suit/toggle/labcoat/nova/rd
 	name = "research directors labcoat"
-	desc = "A Nanotrasen standard labcoat for certified Research Directors. It has an extra plastic-latex lining on the outside for more protection from chemical and viral hazards."
+	desc = "A Free Union Of Vulken standard labcoat for certified Research Directors. It has an extra plastic-latex lining on the outside for more protection from chemical and viral hazards."
 	icon_state = "labcoat_rd"
 	body_parts_covered = CHEST|ARMS|LEGS
 	armor_type = /datum/armor/nova_rd
@@ -23,7 +23,7 @@
 
 /obj/item/clothing/suit/toggle/labcoat/nova/regular
 	name = "researcher's labcoat"
-	desc = "A Nanotrasen standard labcoat for researchers in the scientific field."
+	desc = "A Free Union Of Vulken standard labcoat for researchers in the scientific field."
 	icon_state = "labcoat_regular"
 
 /obj/item/clothing/suit/toggle/labcoat/nova/highvis

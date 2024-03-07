@@ -58,7 +58,7 @@
 
 /obj/item/storage/backpack/blueshield
 	name = "blueshield backpack"
-	desc = "A robust backpack issued to Nanotrasen's finest."
+	desc = "A robust backpack issued to Free Union Of Vulken's finest."
 	icon = 'modular_nova/master_files/icons/obj/clothing/backpacks.dmi'
 	worn_icon = 'modular_nova/master_files/icons/mob/clothing/back.dmi'
 	lefthand_file = 'modular_nova/master_files/icons/mob/inhands/clothing/backpack_lefthand.dmi'
@@ -68,7 +68,7 @@
 
 /obj/item/storage/backpack/satchel/blueshield
 	name = "blueshield satchel"
-	desc = "A robust satchel issued to Nanotrasen's finest."
+	desc = "A robust satchel issued to Free Union Of Vulken's finest."
 	icon = 'modular_nova/master_files/icons/obj/clothing/backpacks.dmi'
 	worn_icon = 'modular_nova/master_files/icons/mob/clothing/back.dmi'
 	lefthand_file = 'modular_nova/master_files/icons/mob/inhands/clothing/backpack_lefthand.dmi'
@@ -78,7 +78,7 @@
 
 /obj/item/storage/backpack/duffelbag/blueshield
 	name = "blueshield duffelbag"
-	desc = "A robust duffelbag issued to Nanotrasen's finest."
+	desc = "A robust duffelbag issued to Free Union Of Vulken's finest."
 	icon = 'modular_nova/master_files/icons/obj/clothing/backpacks.dmi'
 	worn_icon = 'modular_nova/master_files/icons/mob/clothing/back.dmi'
 	lefthand_file = 'modular_nova/master_files/icons/mob/inhands/clothing/backpack_lefthand.dmi'

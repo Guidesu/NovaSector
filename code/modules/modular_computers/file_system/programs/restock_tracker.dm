@@ -3,7 +3,7 @@
 	filedesc = "NT Restock Tracker"
 	downloader_category = PROGRAM_CATEGORY_SUPPLY
 	program_open_overlay = "restock"
-	extended_desc = "Nanotrasen IoT network listing all the vending machines found on station, and how well stocked they are each. Profitable!"
+	extended_desc = "Free Union Of Vulken IoT network listing all the vending machines found on station, and how well stocked they are each. Profitable!"
 	program_flags = PROGRAM_ON_NTNET_STORE | PROGRAM_REQUIRES_NTNET
 	can_run_on_flags = PROGRAM_LAPTOP | PROGRAM_PDA
 	size = 4

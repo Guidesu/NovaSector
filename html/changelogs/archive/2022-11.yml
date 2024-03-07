@@ -37,7 +37,7 @@
   Vishenka0704:
   - admin: adds a PDA Message verb in Events
   YakumoChen:
-  - spellcheck: The antique gun is no longer an Alistar gun, now more sensibly a Nanotrasen
+  - spellcheck: The antique gun is no longer an Alistar gun, now more sensibly a Free Union Of Vulken
       gun.
   - spellcheck: Added a gun company for pirates (it has the serials filed off), gave
       it to the retro laser found in space.
@@ -247,12 +247,12 @@
 2022-11-08:
   SkyratBot:
   - qol: When saving Experiment Log Recording Data to a data disk on either the Tachyon
-      Doppler or the Tank Compressor, Nanotrasen released a UI/UX update in order
+      Doppler or the Tank Compressor, Free Union Of Vulken released a UI/UX update in order
       to have the button that saves the data onto your disk... say "Save".
   nevimer:
   - code_imp: Your job slot is now free'd up when you DNR.
   san7890, ZephyrTFA:
-  - bugfix: Emojipedia has been restored to tablets! Look for it in your local Nanotrasen
+  - bugfix: Emojipedia has been restored to tablets! Look for it in your local Free Union Of Vulken
       Software Hub.
   - balance: Everyone is now able to send Emojis via PDA Messaging! It's no longer
       restricted to just mime and curators, so enjoy sending the classics such as
@@ -377,7 +377,7 @@
       in them. Should be able to actually... uh, use them now.
   Paxilmaniac:
   - balance: After a multitude of industrial accidents, and resulting lawsuits against
-      Nanotrasen, the ripley mark 2 has had its in-atmosphere speed limiter re-added.
+      Free Union Of Vulken, the ripley mark 2 has had its in-atmosphere speed limiter re-added.
   - balance: Recent job safety regulations have required that power limiters be placed
       on plasma cutter equipment, as a result plasma cutters, hand held and mech mounted,
       will cause significantly less harm when fired at anything that isn't rocks.
@@ -401,7 +401,7 @@
       plants.
   - bugfix: Bubbles no longer re-appear when you change z-levels after getting cleaned.
       Now they leave for good!
-  - bugfix: After a lot of troubles, Nanotrasen's scientists finally managed to make
+  - bugfix: After a lot of troubles, Free Union Of Vulken's scientists finally managed to make
       it possible to grow arms and legs out of the limb grower once more, giving sense
       back to the machine's name.
   Kapu420:

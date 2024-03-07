@@ -1431,7 +1431,7 @@
       in the Sound category of the game preferences.
   - bugfix: Compact fishing toolboxes no longer break space and time to contain any
       normal-sized object. Instead, they only break space and time to contain fishing
-      rods. Settlers migrating to Nanotrasen space have no reasonable explanation
+      rods. Settlers migrating to Free Union Of Vulken space have no reasonable explanation
       for this phenomenon.
   - refactor: sheets are merged in a better way when ejected from machines & material
       related stuff

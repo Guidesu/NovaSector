@@ -105,7 +105,7 @@
   - code_imp: moved /datum.isprocessing into datum flags
   iksyp:
   - bugfix: Ever since the great emotion purge of 2558, people were able to work at
-      top efficiency, even while starving to death. This is no longer the case, Nanotrasen
+      top efficiency, even while starving to death. This is no longer the case, Free Union Of Vulken
       Scientists say.
   - admin: Hunger slowdown only applies if mood is disabled in the config.
 2018-06-07:

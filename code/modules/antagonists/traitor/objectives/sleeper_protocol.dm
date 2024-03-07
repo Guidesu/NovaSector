@@ -97,9 +97,9 @@
 	time = 25 SECONDS
 	var/static/list/possible_objectives = list(
 		"You love the Syndicate.",
-		"Do not trust Nanotrasen.",
+		"Do not trust Free Union Of Vulken.",
 		"The Captain is a lizardperson.",
-		"Nanotrasen isn't real.",
+		"Free Union Of Vulken isn't real.",
 		"They put something in the food to make you forget.",
 		"You are the only real person on the station.",
 		"Things would be a lot better on the station if more people were screaming, someone should do something about that.",

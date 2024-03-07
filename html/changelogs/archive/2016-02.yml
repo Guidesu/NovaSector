@@ -75,9 +75,9 @@
       (40% for walls and 20% for reinforced walls)!
   - rscadd: Combat mechas can now destroy tables and racks with a punch!
   neersighted:
-  - rscadd: The Syndicate has stolen the latest tgui improvements from Nanotrasen!
+  - rscadd: The Syndicate has stolen the latest tgui improvements from Free Union Of Vulken!
       All uplinks now feature filtering/search.
-  - rscadd: Nanotrasen is proud to announce its next generation sleepers, featuring
+  - rscadd: Free Union Of Vulken is proud to announce its next generation sleepers, featuring
       tgui!
   - rscadd: Portable atmospheric components have been overhauled to use the latest
       interface technology.
@@ -121,7 +121,7 @@
   - rscadd: Syndicate Operatives can now buy bags full of plastic explosives for 9
       TC.
   Gun Hog:
-  - rscadd: '"Nanotrasen has drafted a design for an exosuit version of the medical
+  - rscadd: '"Free Union Of Vulken has drafted a design for an exosuit version of the medical
       nanite projector normally issued to its Emergency Response Personnel. With sufficient
       research, a prototype may be fabricated for field testing!"'
   incoming5643:
@@ -285,7 +285,7 @@
       very devastating results, namely in the form of powerful flesh-eating acid.
 2016-02-20:
   CPTANT:
-  - tweak: Due to new crystals Nanotrasen lasers weapons may now set you on FIRE.
+  - tweak: Due to new crystals Free Union Of Vulken lasers weapons may now set you on FIRE.
   Joan:
   - imageadd: Blobbernauts and blob spores now have a visual healing effect when being
       healed by the blob.

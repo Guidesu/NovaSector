@@ -38,7 +38,7 @@
 		dumped = TRUE
 
 /obj/structure/checkoutmachine
-	name = "\improper Nanotrasen Space-Coin Market"
+	name = "\improper Free Union Of Vulken Space-Coin Market"
 	desc = "This is good for spacecoin because"
 	icon = 'icons/obj/machines/money_machine.dmi'
 	icon_state = "bogdanoff"

@@ -100,9 +100,9 @@ export const FaxMainPanel = (props) => {
             icon="n"
             mr="7px"
             width="49%"
-            onClick={() => setPaperName('Nanotrasen Official Report')}
+            onClick={() => setPaperName('Free Union Of Vulken Official Report')}
           >
-            Nanotrasen
+            Free Union Of Vulken
           </Button>
           <Button
             icon="s"
@@ -128,9 +128,9 @@ export const FaxMainPanel = (props) => {
             icon="n"
             mr="7px"
             width="49%"
-            onClick={() => setFromWho('Nanotrasen')}
+            onClick={() => setFromWho('Free Union Of Vulken')}
           >
-            Nanotrasen
+            Free Union Of Vulken
           </Button>
           <Button icon="s" width="49%" onClick={() => setFromWho('Syndicate')}>
             Syndicate

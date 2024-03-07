@@ -16,7 +16,7 @@
   - bugfix: Fixed hair not blocking emissives, which ended up creating some rather
       silly visual glitches at times, in darker areas.
   OrionTheFox:
-  - rscdel: Nanotrasen has had to cancel their hazard-tape purchasing deal with PlastiWrap
+  - rscdel: Free Union Of Vulken has had to cancel their hazard-tape purchasing deal with PlastiWrap
       LTD, as it's been driven out of business by Hardlight/Holosign technology. The
       R&D department is already hard at work on a holographic replacement for hazard
       tape.
@@ -171,7 +171,7 @@
   - rscadd: Fire doors now have a sound when they open/close again.
   - soundadd: Alerts have been updated(retrospectively).
   GoldenAlpharex:
-  - rscdel: Nanotrasen managed to stabilize its assets, so much so that market crashes
+  - rscdel: Free Union Of Vulken managed to stabilize its assets, so much so that market crashes
       related to massive asset movements are no longer possible, even through crab-related
       phones.
   - bugfix: Synthetics being will finally be able to recolor their right leg properly.
@@ -748,7 +748,7 @@
       out the top of the map, since they magically now have ceilings.
   - rscadd: 'However, this dark magick to give Ice Moon Ruins ceilings come at a cost:
       avalanches over certain chasms are now much more likely, and can decimate certain
-      infrastructure. Nanotrasen has ensured that anything vital shouldn''t be impacted
+      infrastructure. Free Union Of Vulken has ensured that anything vital shouldn''t be impacted
       by this, but do expect to see certain "unmaintained" catwalk sections be swept
       up in an avalanche of sorts.'
   - bugfix: Cult's antag UI now works from the start, rather than having to close
@@ -1063,7 +1063,7 @@
   - spellcheck: There is now a space between the Staff's name and the thing that declares
       them to be Staff in deadsay.
   - admin: Added a new Puzzgrid smite
-  - bugfix: Nanotrasen realized that intern they left to do announcements accidentally
+  - bugfix: Free Union Of Vulken realized that intern they left to do announcements accidentally
       obscured the location of where any potential blood cultists may be summoning
       their eldritch deity, this should no longer happen whenever they tack this intern
       on.
@@ -1097,7 +1097,7 @@
   - rscadd: The Survivalist Bunker, occasionally found by space explorers, now has
       a pharmacy for chemistry.
   SkyratBot:
-  - bugfix: Nanotrasen's Reality Corrections Office has stumbled across an older station
+  - bugfix: Free Union Of Vulken's Reality Corrections Office has stumbled across an older station
       with a bunch of abandoned spacemen abroad. Rather than rescue them, they elected
       to fix the weird lighting issues their external portions had, and then flew
       off. Those spaceman are still out there.
@@ -1249,7 +1249,7 @@
   - bugfix: The DB query retrieving the feedback thread link for adminwho properly
       deletes the DB query across all code paths, stopping error spam in admin chat.
   - bugfix: The showers in the MetaStation Medbay are properly plumbed again
-  - bugfix: On DeltaStation, Nanotrasen has made access from Medbay Maintenance to
+  - bugfix: On DeltaStation, Free Union Of Vulken has made access from Medbay Maintenance to
       the Recreation Area unrestricted.
   Son-of-Space, MrDoomBringer:
   - bugfix: All airlocks across all maps have been properly titled in upper case
@@ -1309,7 +1309,7 @@
       app- AmpCheck. You can still use said app from your Engineering consoles.
   - bugfix: fixed service order console not working
   - bugfix: Moved meta hallway air alarm so it wont get blocked by firelocks
-  - rscadd: 'Nanotrasen has installed a new holodeck subroutine, cleverly termed:
+  - rscadd: 'Free Union Of Vulken has installed a new holodeck subroutine, cleverly termed:
       Microwave Paradise. Enjoy those microwaves.'
   - qol: Ice Cream Sandwich bounties now specify in the description that they have
       to be ice cream sandwiches, hopefully preventing possible confusion about which

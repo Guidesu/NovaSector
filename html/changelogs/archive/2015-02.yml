@@ -79,13 +79,13 @@
       random nearby mob.
   - tweak: EMP event range reduced.
   - bugfix: Self-duplicating relics limited to 10 copies.
-  - tweak: Nanotrasen has released a firmware patch for the Ore Redemption Machine,
+  - tweak: Free Union Of Vulken has released a firmware patch for the Ore Redemption Machine,
       which now allows the station AI, cyborgs, and maintenance drones to smelt raw
       resources without the need of a valid identification card installed.
-  - tweak: Nanotrasen scientists have completed their designs for a lightweight, compacted
+  - tweak: Free Union Of Vulken scientists have completed their designs for a lightweight, compacted
       anti-armor ion weapon, without loss of efficiency. In theory, such a weapon
       could easily fit within standard issue backpacks and satchels. With sufficient
-      research into weapons technology and materials, Nanotrasen believes a working
+      research into weapons technology and materials, Free Union Of Vulken believes a working
       prototype can be fabricated.
   Iamgoofball:
   - rscadd: Buffs the shit out of Styptic Powder and Silver Sulf, they're now viable
@@ -147,7 +147,7 @@
   - rscadd: Adds plaid skirts and new schoolgirl outfits to the autodrobe
   - tweak: Novaflowers apply a firestack for every 20 potency they have.
   - tweak: You can now juice whole watermelons instead of slices.
-  - rscadd: 'Advancements in the field of virology by Nanotrasen''s finest have uncovered
+  - rscadd: 'Advancements in the field of virology by Free Union Of Vulken''s finest have uncovered
       three new disease symptoms for further research:'
   - rscadd: Ocular Restoration heals any eye trauma experienced by the infected patient.
   - rscadd: Revitiligo increases the pigmentation levels of the infected patient's
@@ -205,7 +205,7 @@
   - rscadd: Turret's guns replaced by a heavy energy cannon.
   - tweak: Firing a heavy weapon sindlehandedly can make it recoil out of your hands.
   Gun Hog:
-  - tweak: Nanotrasen has released new design specifications for the prototype combination
+  - tweak: Free Union Of Vulken has released new design specifications for the prototype combination
       of standard night-vision equipment and Optical Meson Scanners. We believe that
       this will address the concerns many Shaft Miners have concerning visiblity in
       a potentially unsafe environment.

@@ -212,7 +212,7 @@
 	)
 
 /obj/effect/spawner/random/structure/billboard/nanotrasen //useful for station maps- NT isn't the sort to advertise for competitors
-	name = "\improper Nanotrasen billboard spawner"
+	name = "\improper Free Union Of Vulken billboard spawner"
 	loot = list(
 		/obj/structure/billboard/nanotrasen = 35,
 		/obj/structure/billboard/nanotrasen/defaced = 15,

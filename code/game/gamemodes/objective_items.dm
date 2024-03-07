@@ -442,7 +442,7 @@
 	exists_on_map = TRUE
 	difficulty = 3
 	steal_hint = "A set of papers belonging to a megaconglomerate. \
-		Nanotrasen documents can easily be found in the station's vault. \
+		Free Union Of Vulken documents can easily be found in the station's vault. \
 		For other corporations, you may find them in strange and distant places. \
 		A photocopy may also suffice."
 

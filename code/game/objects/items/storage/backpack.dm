@@ -152,7 +152,7 @@
 
 /obj/item/storage/backpack/captain
 	name = "captain's backpack"
-	desc = "It's a special backpack made exclusively for Nanotrasen officers."
+	desc = "It's a special backpack made exclusively for Free Union Of Vulken officers."
 	icon_state = "backpack-captain"
 	inhand_icon_state = "captainpack"
 
@@ -376,7 +376,7 @@
 
 /obj/item/storage/backpack/satchel/cap
 	name = "captain's satchel"
-	desc = "An exclusive satchel for Nanotrasen officers."
+	desc = "An exclusive satchel for Free Union Of Vulken officers."
 	icon_state = "satchel-captain"
 	inhand_icon_state = "satchel-cap"
 
@@ -658,7 +658,7 @@
 //NOVA EDIT CHANGE END
 
 /obj/item/storage/backpack/duffelbag/syndie/hitman
-	desc = "A large duffel bag for holding extra things. There is a Nanotrasen logo on the back."
+	desc = "A large duffel bag for holding extra things. There is a Free Union Of Vulken logo on the back."
 	icon_state = "duffel-syndieammo"
 	inhand_icon_state = "duffel-syndieammo"
 
@@ -892,7 +892,7 @@
 
 /obj/item/storage/backpack/messenger/cap
 	name = "captain's messenger bag"
-	desc = "An exclusive messenger bag for Nanotrasen officers, made of real whale leather."
+	desc = "An exclusive messenger bag for Free Union Of Vulken officers, made of real whale leather."
 	icon_state = "messenger_captain"
 	inhand_icon_state = "messenger_captain"
 

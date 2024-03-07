@@ -66,11 +66,11 @@ export const DepartmentOrders = (props) => {
               <Stack fill vertical>
                 <Stack.Item>
                   <NoticeBox info>
-                    As employees of Nanotrasen, the selection of orders here are
-                    completely free of charge, only incurring a cooldown on the
-                    service. Cheaper items will make you wait for less time
-                    before Nanotrasen allows another purchase, to encourage
-                    tasteful spending.
+                    As employees of Free Union Of Vulken, the selection of
+                    orders here are completely free of charge, only incurring a
+                    cooldown on the service. Cheaper items will make you wait
+                    for less time before Free Union Of Vulken allows another
+                    purchase, to encourage tasteful spending.
                   </NoticeBox>
                 </Stack.Item>
                 <Stack.Item grow>

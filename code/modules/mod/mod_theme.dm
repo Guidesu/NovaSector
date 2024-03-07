@@ -296,8 +296,8 @@
 
 /datum/mod_theme/mining
 	name = "mining"
-	desc = "A Nanotrasen mining suit for on-site operations, fit with accreting ash armor and a sphere form."
-	extended_desc = "A high-powered Nanotrasen-designed suit, based off the work of Nakamura Engineering. \
+	desc = "A Free Union Of Vulken mining suit for on-site operations, fit with accreting ash armor and a sphere form."
+	extended_desc = "A high-powered Free Union Of Vulken-designed suit, based off the work of Nakamura Engineering. \
 		While initial designs were built for the rigors of asteroid mining, given blast resistance through inbuilt ceramics, \
 		mining teams have since heavily tweaked the suit themselves with assistance from devices crafted by \
 		destructive analysis of unknown technologies discovered on the Indecipheres mining sites, patterned off \
@@ -311,7 +311,7 @@
 		Lastly, the suit is capable of compressing and shrinking the mass of the wearer, as well as \
 		rearranging its own constitution, to allow them to fit upright in a sphere form that can \
 		roll around at half their original size; leaving high-powered mining ordinance in its wake. \
-		However, all of this has proven to be straining on all Nanotrasen-approved cells, \
+		However, all of this has proven to be straining on all Free Union Of Vulken-approved cells, \
 		so much so that it comes default fueled by equally-enigmatic plasma fuel rather than a simple recharge. \
 		Additionally, the systems have been put to near their maximum load, allowing for far less customization than others."
 	default_skin = "mining"
@@ -809,9 +809,9 @@
 
 /datum/mod_theme/magnate
 	name = "magnate"
-	desc = "A fancy, very protective suit for Nanotrasen's captains. Shock, fire and acid-proof while also having a large capacity and high speed."
+	desc = "A fancy, very protective suit for Free Union Of Vulken's captains. Shock, fire and acid-proof while also having a large capacity and high speed."
 	extended_desc = "They say it costs four hundred thousand credits to run this MODsuit... for twelve seconds. \
-		The Magnate suit is designed for protection, comfort, and luxury for Nanotrasen Captains. \
+		The Magnate suit is designed for protection, comfort, and luxury for Free Union Of Vulken Captains. \
 		The onboard air filters have been preprogrammed with an additional five hundred different fragrances that can \
 		be pumped into the helmet, all of highly-endangered flowers. A bespoke Tralex mechanical clock has been placed \
 		in the wrist, and the Magnate package comes with carbon-fibre cufflinks to wear underneath. \
@@ -1098,7 +1098,7 @@
 		visual aesthetics and prop design than they do functional operative camouflage. But the true reason goes deeper. \
 		The visual appearance of the suit exemplifies brazen displays of power, not true stealth. However, the suit's inbuilt stealth mechanisms\
 		prevent anyone from fully recognizing the occupant, only the suit, creating perfect anonymity. This visual transformation is \
-		backed by inbuilt psi-emitters, heightening stressors common amongst Nanotrasen staff, and clouding identifiable information. \
+		backed by inbuilt psi-emitters, heightening stressors common amongst Free Union Of Vulken staff, and clouding identifiable information. \
 		Scrubbed statistical data presented a single correlation within documented psychological profiles. The fear of the Unknown."
 	default_skin = "infiltrator"
 	armor_type = /datum/armor/mod_theme_infiltrator
@@ -1158,11 +1158,11 @@
 	desc = "A corpse-snatching and rapid-retrieval modsuit, resulting from a lucrative tech exchange between Interdyne Pharmaceutics and Cybersun Industries."
 	extended_desc = "While Waffle Co. and Azik Interstellar provide the means, Donk Co., Tiger Cooperative, Animal Rights Consortium and \
 		Gorlex Marauders willing or easily bribable brawn, S.E.L.F. and MI13 information, the clear syndicate tech providers would be Interdyne and Cybersun, \
-		their combined knowledge in technologies rivaled by only the most enigmatic of aliens, and certainly not by any Nanotrasen scientist. \
+		their combined knowledge in technologies rivaled by only the most enigmatic of aliens, and certainly not by any Free Union Of Vulken scientist. \
 		This model is one of the rare fruits created by their joint operations, mashing scrapped designs with super soldier enhancements. \
 		Already light, when powered on, this MODsuit injects the wearer seemlessly with muscle-enhancing supplements, while adding piston strength \
 		to their legs. The combination of these mechanisms is very energy draining - but results in next to no speed reduction for the wearer.\
-		Over the years, many a rich person, including Nanotrasen officials with premium subscriptions, had their life or genes rescued thanks to the \
+		Over the years, many a rich person, including Free Union Of Vulken officials with premium subscriptions, had their life or genes rescued thanks to the \
 		unrivaled speed of this suit. Equally as many, however, mysteriously dissapeared in the flash of these white suits after they forgot \
 		to pay off said subscriptions in due time or publicly communicated unfavourable opinions on Interdyne's gene-modding tech and ethics. "
 	default_skin = "interdyne"
@@ -1424,8 +1424,8 @@
 
 /datum/mod_theme/responsory
 	name = "responsory"
-	desc = "A high-speed rescue suit by Nanotrasen, intended for its emergency response teams."
-	extended_desc = "A streamlined suit of Nanotrasen design, these sleek black suits are only worn by \
+	desc = "A high-speed rescue suit by Free Union Of Vulken, intended for its emergency response teams."
+	extended_desc = "A streamlined suit of Free Union Of Vulken design, these sleek black suits are only worn by \
 		elite emergency response personnel to help save the day. While the slim and nimble design of the suit \
 		cuts the ceramics and ablatives in it down, dropping the protection, \
 		it keeps the wearer safe from the harsh void of space while sacrificing no speed whatsoever. \
@@ -1509,7 +1509,7 @@
 /datum/mod_theme/responsory/traitor
 	name = "dark paladin"
 	desc = "A high-speed suit <s>stolen</s> by the Gorlex Maradeurs, purposed for less than honest intents."
-	extended_desc = "A streamlined suit of <s>Nanotrasen</s> Syndicate design, these sleek black suits are only worn by \
+	extended_desc = "A streamlined suit of <s>Free Union Of Vulken</s> Syndicate design, these sleek black suits are only worn by \
 		elite <s>emergency response personnel</s> traitors to help <s>save</s> ruin the day. While the slim and nimble design of the suit \
 		cuts the ceramics and ablatives in it down, dropping the protection, \
 		it keeps the wearer safe from the harsh void of space while sacrificing no speed whatsoever. \
@@ -1521,10 +1521,10 @@
 
 /datum/mod_theme/apocryphal
 	name = "apocryphal"
-	desc = "A high-tech, only technically legal, armored suit created by a collaboration effort between Nanotrasen and Apadyne Technologies."
+	desc = "A high-tech, only technically legal, armored suit created by a collaboration effort between Free Union Of Vulken and Apadyne Technologies."
 	extended_desc = "A bulky and only legal by technicality suit, this ominous black and red MODsuit is only worn by \
-		Nanotrasen Black Ops teams. If you can see this suit, you fucked up. A collaborative joint effort between \
-		Apadyne and Nanotrasen the construction and modules gives the user robust protection against \
+		Free Union Of Vulken Black Ops teams. If you can see this suit, you fucked up. A collaborative joint effort between \
+		Apadyne and Free Union Of Vulken the construction and modules gives the user robust protection against \
 		anything that can be thrown at it, along with acute combat awareness tools for it's wearer. \
 		Whether the wearer uses it or not is up to them. \
 		There seems to be a little inscription on the wrist that reads; \'squiddie', d'aww."
@@ -1583,11 +1583,11 @@
 
 /datum/mod_theme/corporate
 	name = "corporate"
-	desc = "A fancy, high-tech suit for Nanotrasen's high ranking officers."
+	desc = "A fancy, high-tech suit for Free Union Of Vulken's high ranking officers."
 	extended_desc = "An even more costly version of the Magnate model, the corporate suit is a thermally insulated, \
 		anti-corrosion coated suit for high-ranking CentCom Officers, deploying pristine protective armor and \
 		advanced actuators, feeling practically weightless when turned on. Scraping the paint of this suit is \
-		counted as a war-crime and reason for immediate execution in over fifty Nanotrasen space stations. \
+		counted as a war-crime and reason for immediate execution in over fifty Free Union Of Vulken space stations. \
 		The resemblance to a Gorlex Marauder helmet is purely coincidental. This is the newest V2 revision, which has \
 		reflective reinforced-plasmaglass shielding weaved with advanced kevlar fibers. Sources say that some of the armor \
 		is ripped straight from an Apocryphal MODsuit."

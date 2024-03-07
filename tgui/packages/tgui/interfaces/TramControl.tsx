@@ -74,7 +74,7 @@ export const TramControl = (props) => {
               justify="space-around"
               vertical
             >
-              <Stack.Item>Nanotrasen Transit System</Stack.Item>
+              <Stack.Item>Free Union Of Vulken Transit System</Stack.Item>
               <Stack.Item>
                 <Stack fill>
                   {destinations.map((dest) => (

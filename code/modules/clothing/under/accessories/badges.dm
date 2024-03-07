@@ -187,7 +187,7 @@ GLOBAL_LIST_INIT(pride_pin_reskins, list(
 
 /obj/item/clothing/accessory/pride
 	name = "pride pin"
-	desc = "A Nanotrasen Diversity & Inclusion Center-sponsored holographic pin to show off your pride, reminding the crew of their unwavering commitment to equity, diversity, and inclusion!"
+	desc = "A Free Union Of Vulken Diversity & Inclusion Center-sponsored holographic pin to show off your pride, reminding the crew of their unwavering commitment to equity, diversity, and inclusion!"
 	icon_state = "pride"
 	obj_flags = UNIQUE_RENAME | INFINITE_RESKIN
 
@@ -209,7 +209,7 @@ GLOBAL_LIST_INIT(pride_pin_reskins, list(
 /// Self-identify as a dangerous subversive
 /obj/item/clothing/accessory/anti_sec_pin
 	name = "subversive pin"
-	desc = "A badge which loudly and proudly proclaims your hostility to the Nanotrasen Security Team, and authority in general."
+	desc = "A badge which loudly and proudly proclaims your hostility to the Free Union Of Vulken Security Team, and authority in general."
 	icon_state = "anti_sec"
 
 /obj/item/clothing/accessory/anti_sec_pin/Initialize(mapload)

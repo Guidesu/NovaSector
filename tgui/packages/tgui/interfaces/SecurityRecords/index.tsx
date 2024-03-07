@@ -32,7 +32,7 @@ const RestrictedView = (props) => {
         </Stack.Item>
         <Stack.Item align="center" grow>
           <Box color="red" fontSize="18px" bold mt={5}>
-            Nanotrasen SecurityHUB
+            Free Union Of Vulken SecurityHUB
           </Box>
         </Stack.Item>
         <Stack.Item>

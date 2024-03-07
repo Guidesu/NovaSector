@@ -50,13 +50,13 @@
 	icon_state = "nakamura"
 
 /obj/structure/shipping_container/nanotrasen
-	name = "\improper Nanotrasen shipping container"
-	desc = "A standard-measure shipping container for bulk transport of goods. This one prominently features Nanotrasen's logo, and so presumably could be carrying anything."
+	name = "\improper Free Union Of Vulken shipping container"
+	desc = "A standard-measure shipping container for bulk transport of goods. This one prominently features Free Union Of Vulken's logo, and so presumably could be carrying anything."
 	icon_state = "nanotrasen"
 
 /obj/structure/shipping_container/nthi
-	name = "\improper Nanotrasen Heavy Industries shipping container"
-	desc = "A standard-measure shipping container for bulk transport of goods. This one is from NTHI: Nanotrasen's mining and refining subdivision."
+	name = "\improper Free Union Of Vulken Heavy Industries shipping container"
+	desc = "A standard-measure shipping container for bulk transport of goods. This one is from NTHI: Free Union Of Vulken's mining and refining subdivision."
 	icon_state = "nthi"
 
 /obj/structure/shipping_container/vitezstvi

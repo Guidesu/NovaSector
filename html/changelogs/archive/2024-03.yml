@@ -626,7 +626,7 @@
       it from the parrot as-expected now rather than having the parrot send it to
       the shadow realm.
   - image: modified gi sprites, making them more customisable.
-  - bugfix: Prisoners who are teleported to the Nanotrasen Work Camp should now always
+  - bugfix: Prisoners who are teleported to the Free Union Of Vulken Work Camp should now always
       be stripped of their gear to prevent escapes.
   - bugfix: fixed consecutive tgui text input inheriting user input from previous
       input form within the same proc

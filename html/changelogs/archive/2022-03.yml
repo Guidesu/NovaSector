@@ -1,6 +1,6 @@
 2022-03-01:
   Axietheaxolotl, PositiveEntropy:
-  - imageadd: Nanotrasen has now tackled overhauling the visual aesthetic of the Chief
+  - imageadd: Free Union Of Vulken has now tackled overhauling the visual aesthetic of the Chief
       Medical Officer, changing their jumpsuits and labcoat, and altering their original
       pastel blue color to turquoise!
   - imageadd: Nitriles now look much more rubbery than before!
@@ -61,17 +61,17 @@
   - imageadd: New fireaxe inhand, worn, and in cabinet sprites.
   - bugfix: lobstrosities charge now
   tf-4:
-  - tweak: '"Nanotrasen Representative" has been renamed to "Nanotrasen Consultant".'
+  - tweak: '"Free Union Of Vulken Representative" has been renamed to "Free Union Of Vulken Consultant".'
 2022-03-03:
   OrionTheFox:
-  - bugfix: Nanotrasen has properly updated their databases with their rebranding
+  - bugfix: Free Union Of Vulken has properly updated their databases with their rebranding
       of Representatives to Consultants (Icons r fixd)
   tastyfish:
   - bugfix: NT's technicians have gone around and calibrated the horizontal align
       on the air alarm screens.
 2022-03-04:
   GoldenAlpharex:
-  - imageadd: Nanotrasen's Fashion Department has released a brand-new fancy suit,
+  - imageadd: Free Union Of Vulken's Fashion Department has released a brand-new fancy suit,
       which can be easily recolored before sale in any ClothesMate, and offered as
       an option for the employees that want to go to work in STYLE.
   - bugfix: Fixed the greyscale gradient on the Tamamo Kitsune Tails and the inner
@@ -140,7 +140,7 @@
   - rscadd: Added old Firefighter to Atmospherics Technician, Fixed Barber, new off-duty
       title.
   PositiveEntropy:
-  - imageadd: Nanotrasen has now officially updated all generic jumpsuits and the
+  - imageadd: Free Union Of Vulken has now officially updated all generic jumpsuits and the
       prisoner one, marking the third rendition of jumpsuit styles being added into
       station!
   Reco201:
@@ -172,8 +172,8 @@
 2022-03-06:
   Ebin-Halcyon:
   - imageadd: A new shipment of sweaters with actual turtlenecks have been sent to
-      Nanotrasen and the Syndicate!
-  - imageadd: Nanotrasen have refitted their new generic jumpsuits to fit with digitigrade
+      Free Union Of Vulken and the Syndicate!
+  - imageadd: Free Union Of Vulken have refitted their new generic jumpsuits to fit with digitigrade
       legs!
   Gandalf2k15:
   - rscadd: Welding now displays a spark effect.
@@ -424,7 +424,7 @@
   - bugfix: being inside locker no longer protects you from a nuke
   - balance: being inside the fridge guarantees you to survive nuclear bomb
   - bugfix: Electric shocks now help against heart attacks.
-  - rscadd: Nanotrasen has decided to re-name the areas found on the mining station
+  - rscadd: Free Union Of Vulken has decided to re-name the areas found on the mining station
       bases of Lavaland and IceBox Station.
   Stalkeros:
   - rscadd: Adds PCV, a unique Black Mesa HECU-exclusive vest, available at your local
@@ -466,12 +466,12 @@
   OrionTheFox:
   - bugfix: Trekkie Federation Caps object will no longer appear as giant ERROR Icons
   SkyratBot:
-  - rscadd: Nanotrasen's new set of stations will all have different names for "the
+  - rscadd: Free Union Of Vulken's new set of stations will all have different names for "the
       rooms in which you did surgery in" (they're now called Operating Rooms" as well
       as a new name, a Theatre (for surgeries). Isn't it great to have some guy poking
       around your pizza-filled guts while a gaggle of people watch you through a window
       of glass?
-  - rscadd: Instead of having four different corners on each floor, Nanotrasen has
+  - rscadd: Instead of having four different corners on each floor, Free Union Of Vulken has
       decided to slap down full corners on each floor to keep that one floor looking
       that masterful shade of beige.
   - imageadd: Medkit sprites have now been updated to proper 3/4th perpsective.
@@ -484,7 +484,7 @@
   - bugfix: Removed duplicate APC from Kilostation security office.
   - bugfix: IceBox's Psychology office medical computer records console now faces
       the right way.
-  - rscadd: On DeltaStation, Nanotrasen realized that the "Pumping Room" they elaborately
+  - rscadd: On DeltaStation, Free Union Of Vulken realized that the "Pumping Room" they elaborately
       crafted for Atmospherics wasn't actually the part of that division that actually
       moves gas to the rest of the station. They once again elaborately crafted a
       new room (called the "Mixing Room") and shifted everything around. It probably
@@ -516,7 +516,7 @@
   - bugfix: Centcom will no longer include empty "Identified Shift Divergences" sections
       in their reports (which would previously occur every time there were only hidden
       station traits present).
-  - bugfix: On KiloStation, there is no longer a weird floor decal on a wall. Nanotrasen
+  - bugfix: On KiloStation, there is no longer a weird floor decal on a wall. Free Union Of Vulken
       has commissioned an institution-wide inquiry to find out which joker put it
       there.
   - bugfix: fixed an outdated quip about purchasing an ordnance paper.
@@ -632,7 +632,7 @@
   SkyratBot:
   - code_imp: tgui chat now supports embedding components into it via html attributes.
       Go make the game look better lads.
-  - rscadd: 'On DeltaStation, IceBoxStation, and TramStation: Nanotrasen has now blocked
+  - rscadd: 'On DeltaStation, IceBoxStation, and TramStation: Free Union Of Vulken has now blocked
       off the area informally known as the "Cargo Lobby", and formally defined it.'
   - rscadd: Random Poster Spawners now have directional variants. You don't have to
       memorize the pixel offset for those anymore (it was 32).
@@ -774,13 +774,13 @@
       the anesthetic no longer just fluff but also functional qol: replaced oxygen
       canisters with anesthetic ones (a mix of oxygen and n2o at 65-35 ratio) for
       allowing the patient to sleep'
-  - bugfix: Nanotrasen realized that Kilo's Arrivals had a horrendous glitch... the
+  - bugfix: Free Union Of Vulken realized that Kilo's Arrivals had a horrendous glitch... the
       lights and cameras weren't hooked up to anything. How saddening. It's been fixed
       now.
-  - bugfix: Also, Nanotrasen realized they spilled some dark juice (trademark) on
+  - bugfix: Also, Free Union Of Vulken realized they spilled some dark juice (trademark) on
       some other lattices in that area so they cleaned up after themselves as well.
       How responsible!
-  - bugfix: Nanotrasen realized that they should stop installing grilles right on
+  - bugfix: Free Union Of Vulken realized that they should stop installing grilles right on
       top of the Air Flow Meters on IceBoxStation.
   - rscadd: 'Becoming the patron of a painting now lets you select a different appearance
       for the frame it''s in. This appearance will persist between rounds (the ability
@@ -828,7 +828,7 @@
   - bugfix: Fixed Departmental Techfab machine board for service being named oddly
       compared to the other ones.
   - balance: xray lasers now have 100 armor penetration
-  - imageadd: Nanotrasen has upgraded "that machine that prints all of those decals
+  - imageadd: Free Union Of Vulken has upgraded "that machine that prints all of those decals
       on our station tiles" to now print two corners that face opposite each other
       at the same time. Very cool!
   - bugfix: Fixed the size of plaques on the painting UI. They were awfully thin.
@@ -867,7 +867,7 @@
   - bugfix: Fixed airlocks and windoors not being able to be attacked by melee weapons
       in combat mode.
   - bugfix: Fix tritium fire releasing more radiation than it should.
-  - rscadd: Nanotrasen has refurbished the Recreation Deck on DeltaStation. Feel free
+  - rscadd: Free Union Of Vulken has refurbished the Recreation Deck on DeltaStation. Feel free
       to "ooh" and "aah" at all of the new features that have been added.
   - bugfix: The chairs on the casino shuttle are now facing the proper directions
   - bugfix: 'The Zeta shuttle brig now uses the brig shuttle area qol: Shuttle doors

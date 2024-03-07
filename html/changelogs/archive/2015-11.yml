@@ -1,6 +1,6 @@
 2015-11-01:
   Gun Hog:
-  - rscadd: Nanotrasen listens! After numerous complaints and petitions from Security
+  - rscadd: Free Union Of Vulken listens! After numerous complaints and petitions from Security
       personnel regarding energy weapon upkeep, we have authorized the construction
       and maintenance of your station's weapon rechargers. As an added bonus, we have
       also provided a more modular design for the devices, allowing for greater recharge
@@ -133,7 +133,7 @@
       like sunglasses.
 2015-11-13:
   as334:
-  - rscadd: Nanotrasen has hired a brand new supply of ~~expendable labor~~ *LOYAL
+  - rscadd: Free Union Of Vulken has hired a brand new supply of ~~expendable labor~~ *LOYAL
       CREW MEMBERS* please welcome them with open arms.
   - rscadd: Plasmamen are now a playable race. They require plasma gas to survive
       and will ignite in oxygen environments.
@@ -212,7 +212,7 @@
       link to the wiki page for chemistry in the same vein as other wiki books.
 2015-11-18:
   oranges:
-  - tweak: Nanotrasen apologies for a recent bad batch of synthflesh that was shipped
+  - tweak: Free Union Of Vulken apologies for a recent bad batch of synthflesh that was shipped
       to the station, any rumours of death or serious injury are false and should
       be reported to your nearest political officer. At most, only light burns would
       result.
@@ -340,7 +340,7 @@
   - rscadd: Added four different suits of medieval plate armour.
   - rscadd: The Chaplain starts with a suit of Templar armour in his locker. God wills
       it!
-  - rscadd: Rumour has it that Nanotrasen is now training a new elite unit of soldiers
+  - rscadd: Rumour has it that Free Union Of Vulken is now training a new elite unit of soldiers
       to deal with paranormal threats. Corporate was unable to be reached for comment.
   MMMiracles:
   - rscadd: Adds a brand new away mission for the gateway called 'Caves'.
@@ -350,12 +350,12 @@
   - bugfix: Drones can now use the pick-up verb, and watertanks no longer get jammed
       in their internal storage.
   bgobandit:
-  - rscadd: Due to changes in Nanotrasen's mining supply chain, ore redemption machines
+  - rscadd: Due to changes in Free Union Of Vulken's mining supply chain, ore redemption machines
       now offer a variety of upgraded items! However, certain items are more expensive.
       Point values for minerals have been adjusted to reflect their scarcity.
-  - rscadd: Nanotrasen R&D has discovered how to improve upon the resonator and kinetic
+  - rscadd: Free Union Of Vulken R&D has discovered how to improve upon the resonator and kinetic
       accelerator.
-  - rscadd: After a colossal tectonic event on Nanotrasen's asteroid, ores are distributed
+  - rscadd: After a colossal tectonic event on Free Union Of Vulken's asteroid, ores are distributed
       more randomly.
   - rscadd: Bluespace crystals have been discovered to be ore. They will now fit into
       satchels and ore boxes.
@@ -370,7 +370,7 @@
   Firecage:
   - rscadd: Hand tools now have variable operating speeds.
   GunHog:
-  - tweak: Nanotrasen has improved the interface for the hand-held teleportation device.
+  - tweak: Free Union Of Vulken has improved the interface for the hand-held teleportation device.
       It will now provide the user with the name of the destination tracking beacon.
   JJRcop:
   - bugfix: Fixes changeling Hive Absorb DNA ability runtime.
@@ -435,9 +435,9 @@
       stuff too.
   - bugfix: Asteroid areas are no longer valid gang territory.
   neersighted:
-  - experiment: Nanotrasen would like to announce NanoUI 2.0, now being rolled out
+  - experiment: Free Union Of Vulken would like to announce NanoUI 2.0, now being rolled out
       across all our stations. Existing NanoUI devices have been updated, and more
-      will be added soon. Please report any bugs to Nanotrasen Support.
+      will be added soon. Please report any bugs to Free Union Of Vulken Support.
   - tweak: Many NanoUI interfaces have had +/- buttons replaced with input fields.
   - tweak: Some NanoUI interfaces have had more information added.
   - bugfix: Drones can now interact with NanoUI windows.
@@ -447,8 +447,8 @@
   - rscadd: Adds snowmen outfits
 2015-11-30:
   neersighted:
-  - bugfix: Nanotrasen would like to apologize for Chemistry being stuck on NanoUI
-      1.0... Please report any further bugs to Nanotrasen Support.
+  - bugfix: Free Union Of Vulken would like to apologize for Chemistry being stuck on NanoUI
+      1.0... Please report any further bugs to Free Union Of Vulken Support.
   - tweak: NanoUI becomes... difficult to operate with brain damage. Who would have
       guessed?
   - tweak: Telekinesis enables you to use NanoUI at a distance.

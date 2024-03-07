@@ -708,7 +708,7 @@
       alert code, to make it require a lot less copy-paste to handle new cases.
   - bugfix: Offering a kiss no longer requires the receiver to have free hands to
       accept said kiss!
-  - bugfix: Nanotrasen will now no longer mount the HoPline's Ticket Machines on windows
+  - bugfix: Free Union Of Vulken will now no longer mount the HoPline's Ticket Machines on windows
       for Meta, IceBox, and Tram.
   - bugfix: Moves virology fridge on nukie base in to a wall
   Zergspower:

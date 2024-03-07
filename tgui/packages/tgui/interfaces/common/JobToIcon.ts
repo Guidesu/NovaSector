@@ -65,7 +65,7 @@ const BASEICONS = {
   'Corrections Officer': 'hands-bound',
   'Customs Agent': 'shield-heart',
   'Engineering Guard': 'shield-heart',
-  'Nanotrasen Consultant': 'clipboard-check',
+  'Free Union Of Vulken Consultant': 'clipboard-check',
   Orderly: 'shield-heart',
   'Science Guard': 'shield-heart',
   'Security Medic': 'heart-pulse',
@@ -201,8 +201,8 @@ const ALTTITLES = {
   Physician: BASEICONS['Medical Doctor'],
   // Mime - comment-slash
   Pantomimist: BASEICONS['Mime'],
-  // Nanotrasen Consultant - clipboard-check
-  'Nanotrasen Diplomat': BASEICONS['Nanotrasen Consultant'],
+  // Free Union Of Vulken Consultant - clipboard-check
+  'Free Union Of Vulken Diplomat': BASEICONS['Free Union Of Vulken Consultant'],
   // Paramedic - truck-medical
   'Emergency Medical Technician': BASEICONS['Paramedic'],
   'Search and Rescue Technician': BASEICONS['Paramedic'],

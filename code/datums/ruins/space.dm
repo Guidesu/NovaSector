@@ -36,7 +36,7 @@
 	id = "asteroid4"
 	suffix = "asteroid4.dmm"
 	name = "Space-Ruin Asteroid 4"
-	description = "Nanotrasen Escape Pods have a 100%* success rate, and a 99%* customer satisfaction rate. \
+	description = "Free Union Of Vulken Escape Pods have a 100%* success rate, and a 99%* customer satisfaction rate. \
 	*Please note that these statistics are taken from pods that have successfully docked with a recovery vessel."
 
 /datum/map_template/ruin/space/asteroid5
@@ -111,7 +111,7 @@
 	id = "derelict6"
 	suffix = "derelict6.dmm"
 	name = "Space-Ruin Derelict 6"
-	description = "The hush-hush of Nanotrasen when it comes to stations seemingly vanishing off the radar is an interesting topic, theories of nuclear destruction float about while Nanotrasen \
+	description = "The hush-hush of Free Union Of Vulken when it comes to stations seemingly vanishing off the radar is an interesting topic, theories of nuclear destruction float about while Free Union Of Vulken \
 	flat-out denies said stations ever existing."
 
 /datum/map_template/ruin/space/derelict7
@@ -331,7 +331,7 @@
 	id = "old_infiltrator"
 	suffix = "old_infiltrator.dmm"
 	name = "Space-Ruin Abandoned Infiltrator"
-	description = "Only one in five Gorlex Marauder strike forces return from their regular raids into Nanotrasen space. \
+	description = "Only one in five Gorlex Marauder strike forces return from their regular raids into Free Union Of Vulken space. \
 		For the other four... well, their ship doesn't just disappear when their target evacuates."
 
 /datum/map_template/ruin/space/hellfactory

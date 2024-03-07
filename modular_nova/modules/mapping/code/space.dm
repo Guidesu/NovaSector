@@ -112,7 +112,7 @@
 	id = "vaulttango"
 	suffix = "vaulttango.dmm"
 	name = "Space-Ruin ARBORLINK Vault Tango"
-	description = "Nanotrasen isn't the only corporation experimenting in advanced bluespace technology."
+	description = "Free Union Of Vulken isn't the only corporation experimenting in advanced bluespace technology."
 
 /datum/map_template/ruin/space/nova/friendship
 	id = "friendship"

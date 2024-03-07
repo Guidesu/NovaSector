@@ -2,7 +2,7 @@
 
 /obj/machinery/newscaster
 	name = "newscaster"
-	desc = "A standard Nanotrasen-licensed newsfeed handler for use in commercial space stations. All the news you absolutely have no use for, in one place!"
+	desc = "A standard Free Union Of Vulken-licensed newsfeed handler for use in commercial space stations. All the news you absolutely have no use for, in one place!"
 	icon = 'icons/obj/machines/wallmounts.dmi'
 	icon_state = "newscaster_off"
 	base_icon_state = "newscaster"
@@ -222,7 +222,7 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/newscaster, 30)
 	data["channelAuthor"] = current_channel?.author
 
 	if(!current_channel)
-		data["channelAuthor"] = "Nanotrasen Inc"
+		data["channelAuthor"] = "Free Union Of Vulken Inc"
 		data["channelDesc"] = "Welcome to Newscaster Net. Interface & News networks Operational."
 		data["channelLocked"] = TRUE
 	else
