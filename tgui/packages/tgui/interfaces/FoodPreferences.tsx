@@ -14,22 +14,33 @@ import { Button } from '../components/Button';
 import { Window } from '../layouts';
 
 type Data = {
-  food_types: Record<string, Record<string, number>>;
+  food_types: Record<string, number>;
+  obscure_food_types: string;
   selection: Record<string, number>;
   enabled: boolean;
   invalid: string;
   race_disabled: boolean;
+  limits: Record<string, number>;
+  counts: Record<string, number>;
 };
 
 const FOOD_TOXIC = 1;
 const FOOD_DISLIKED = 2;
 const FOOD_NEUTRAL = 3;
 const FOOD_LIKED = 4;
-const DEFAULT_FOOD_VALUE = 4;
-const OBSCURE_FOOD = 5;
 
 export const FoodPreferences = (props) => {
   const { act, data } = useBackend<Data>();
+  const {
+    counts,
+    limits,
+    obscure_food_types,
+    invalid,
+    selection,
+    enabled,
+    race_disabled,
+    food_types,
+  } = data;
 
   return (
     <Window width={1300} height={600}>
@@ -48,17 +59,15 @@ export const FoodPreferences = (props) => {
                 <Tooltip
                   position="bottom"
                   content={
-                    'You HAVE to pick at lease ONE TOXIC food and THREE Disliked foods. You Can have a maximum of THREE LIKED foods.'
+                    'You HAVE to pick at lease ONE TOXIC food and TWO Disliked foods. You Can have a maximum of THREE LIKED foods.'
                   }
                 >
                   <Box inline>
                     <Button icon="circle-question" mr="0.5em" />
-                    {data.invalid ? (
+                    {invalid ? (
                       <Box as="span" color="#bd2020">
                         Prefrences are Invalid!{' '}
-                        {data.invalid.charAt(0).toUpperCase() +
-                          data.invalid.slice(1)}{' '}
-                        |&nbsp;
+                        {invalid.charAt(0).toUpperCase() + invalid.slice(1)}{' '}
                       </Box>
                     ) : (
                       <Box as="span" color="green">
@@ -79,10 +88,10 @@ export const FoodPreferences = (props) => {
 
                 <Button
                   style={{ position: 'absolute', right: '0.5em' }}
-                  icon={data.enabled ? 'check-square-o' : 'square-o'}
-                  color={data.enabled ? 'green' : 'red'}
+                  icon={enabled ? 'check-square-o' : 'square-o'}
+                  color={enabled ? 'green' : 'red'}
                   onClick={() => act('toggle')}
-                  disabled={data.race_disabled}
+                  disabled={race_disabled}
                   tooltip={
                     <>
                       Toggles if these food preferences will be applied to your
@@ -100,17 +109,17 @@ export const FoodPreferences = (props) => {
               </Box>
             }
           >
-            {(data.race_disabled && (
+            {(race_disabled && (
               <ErrorOverlay>
                 You&apos;re using a race which isn&apos;t affected by food
                 preferences!
               </ErrorOverlay>
             )) ||
-              (!data.enabled && (
+              (!enabled && (
                 <ErrorOverlay>Your food preferences are disabled!</ErrorOverlay>
               ))}
             <Box style={{ columns: '30em' }}>
-              {Object.entries(data.food_types).map((element) => {
+              {Object.entries(food_types).map((element) => {
                 const { 0: foodName, 1: foodPointValues } = element;
                 return (
                   <Box key={foodName}>
@@ -118,13 +127,14 @@ export const FoodPreferences = (props) => {
                       title={
                         <>
                           {foodName}
-                          {foodPointValues[OBSCURE_FOOD] && (
+                          {obscure_food_types.includes(foodName) && (
                             <Tooltip content="This food doesn't count towards your maximum likes, and is free!">
                               <Box
                                 as="span"
                                 fontSize={0.75}
                                 verticalAlign={'top'}
                               >
+                                &nbsp;
                                 <Icon name="star" style={{ color: 'orange' }} />
                               </Box>
                             </Tooltip>
@@ -136,10 +146,9 @@ export const FoodPreferences = (props) => {
                         foodName={foodName}
                         foodPreference={FOOD_TOXIC}
                         selected={
-                          data.selection[foodName] === FOOD_TOXIC ||
-                          (!data.selection[foodName] &&
-                            foodPointValues[DEFAULT_FOOD_VALUE.toString()] ===
-                              FOOD_TOXIC)
+                          selection[foodName] === FOOD_TOXIC ||
+                          (!selection[foodName] &&
+                            foodPointValues === FOOD_TOXIC)
                         }
                         content={<>Toxic</>}
                         color="olive"
@@ -148,11 +157,14 @@ export const FoodPreferences = (props) => {
                       <FoodButton
                         foodName={foodName}
                         foodPreference={FOOD_DISLIKED}
+                        disabled={
+                          !obscure_food_types.includes(foodName) &&
+                          counts.toxic < limits.min_toxic
+                        }
                         selected={
-                          data.selection[foodName] === FOOD_DISLIKED ||
-                          (!data.selection[foodName] &&
-                            foodPointValues[DEFAULT_FOOD_VALUE.toString()] ===
-                              FOOD_DISLIKED)
+                          selection[foodName] === FOOD_DISLIKED ||
+                          (!selection[foodName] &&
+                            foodPointValues === FOOD_DISLIKED)
                         }
                         content={<>Disliked</>}
                         color="red"
@@ -161,11 +173,16 @@ export const FoodPreferences = (props) => {
                       <FoodButton
                         foodName={foodName}
                         foodPreference={FOOD_NEUTRAL}
+                        disabled={
+                          (!obscure_food_types.includes(foodName) &&
+                            counts.toxic < limits.min_toxic) ||
+                          (!obscure_food_types.includes(foodName) &&
+                            counts.disliked < limits.min_disliked)
+                        }
                         selected={
-                          data.selection[foodName] === FOOD_NEUTRAL ||
-                          (!data.selection[foodName] &&
-                            foodPointValues[DEFAULT_FOOD_VALUE.toString()] ===
-                              FOOD_NEUTRAL)
+                          selection[foodName] === FOOD_NEUTRAL ||
+                          (!selection[foodName] &&
+                            foodPointValues === FOOD_NEUTRAL)
                         }
                         content={<>Neutral</>}
                         color="yellow"
@@ -174,15 +191,27 @@ export const FoodPreferences = (props) => {
                       <FoodButton
                         foodName={foodName}
                         foodPreference={FOOD_LIKED}
+                        disabled={
+                          (!obscure_food_types.includes(foodName) &&
+                            counts.liked >= limits.max_liked) ||
+                          (!obscure_food_types.includes(foodName) &&
+                            counts.disliked < limits.min_disliked) ||
+                          (!obscure_food_types.includes(foodName) &&
+                            counts.toxic < limits.min_toxic)
+                        }
                         selected={
-                          data.selection[foodName] === FOOD_LIKED ||
-                          (!data.selection[foodName] &&
-                            foodPointValues[DEFAULT_FOOD_VALUE.toString()] ===
-                              FOOD_LIKED)
+                          selection[foodName] === FOOD_LIKED ||
+                          (!selection[foodName] &&
+                            foodPointValues === FOOD_LIKED)
                         }
                         content={<>Liked</>}
                         color="green"
-                        tooltip="Your character will enjoy anything that's liked."
+                        tooltip={
+                          !obscure_food_types.includes(foodName) &&
+                          counts.liked >= 3
+                            ? 'You currently have too many liked foods, you cannot have more than three foods that are not obscure!'
+                            : "Your character will enjoy anything that's liked."
+                        }
                       />
                     </Section>
                   </Box>
@@ -202,7 +231,7 @@ const FoodButton = (props) => {
   return (
     <Button
       icon={selected ? 'check-square-o' : 'square-o'}
-      color={selected ? color : 'grey'}
+      color={selected ? color : 0x3e6189}
       onClick={() =>
         act('change_food', {
           food_name: foodName,
