@@ -2271,10 +2271,6 @@
 	name = "Moffra"
 	icon_state = "moffra"
 
-/datum/sprite_accessory/moth_wings/lightbearer
-	name = "Lightbearer"
-	icon_state = "lightbearer"
-
 /datum/sprite_accessory/moth_antennae //Finally splitting the sprite
 	icon = 'icons/mob/human/species/moth/moth_antennae.dmi'
 	color_src = null
@@ -2362,10 +2358,6 @@
 	name = "Moffra"
 	icon_state = "moffra"
 
-/datum/sprite_accessory/moth_antennae/lightbearer
-	name = "Lightbearer"
-	icon_state = "lightbearer"
-
 /datum/sprite_accessory/moth_markings // the markings that moths can have. finally something other than the boring tan
 	icon = 'icons/mob/human/species/moth/moth_markings.dmi'
 	color_src = null
@@ -2429,7 +2421,3 @@
 /datum/sprite_accessory/moth_markings/witchwing
 	name = "Witch Wing"
 	icon_state = "witchwing"
-
-/datum/sprite_accessory/moth_markings/lightbearer
-	name = "Lightbearer"
-	icon_state = "lightbearer"

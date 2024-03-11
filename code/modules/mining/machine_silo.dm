@@ -18,9 +18,22 @@
 /obj/machinery/ore_silo/Initialize(mapload)
 	. = ..()
 
+	var/static/list/materials_list = list(
+		/datum/material/iron,
+		/datum/material/glass,
+		/datum/material/silver,
+		/datum/material/gold,
+		/datum/material/diamond,
+		/datum/material/plasma,
+		/datum/material/uranium,
+		/datum/material/bananium,
+		/datum/material/titanium,
+		/datum/material/bluespace,
+		/datum/material/plastic,
+		)
 	materials = AddComponent( \
 		/datum/component/material_container, \
-		SSmaterials.materials_by_category[MAT_CATEGORY_SILO], \
+		materials_list, \
 		INFINITY, \
 		MATCONTAINER_EXAMINE, \
 		container_signals = list( \

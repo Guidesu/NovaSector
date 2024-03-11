@@ -13,9 +13,6 @@
 	req_access = list(ACCESS_CLOCKCULT)
 	damage_deflection = 10
 
-/obj/machinery/door/airlock/bronze/clock/Initialize(mapload)
-	. = ..()
-	AddElement(/datum/element/empprotection, EMP_PROTECT_ALL)
 
 /obj/machinery/door/airlock/bronze/clock/canAIControl(mob/user)
 	return (IS_CLOCK(user) && !isAllPowerCut())
@@ -42,6 +39,10 @@
 		user.electrocute_act(25, src, 1, SHOCK_NOGLOVES|SHOCK_SUPPRESS_MESSAGE)
 		to_chat(user, span_warning("You feel a sudden jolt as you touch [src]!"))
 		return FALSE
+
+
+/obj/machinery/door/airlock/bronze/clock/emp_act(severity)
+	return
 
 
 /obj/machinery/door/airlock/bronze/clock/glass

@@ -128,7 +128,7 @@
 	else
 		computer_id_slot = null
 
-/obj/item/modular_computer/pda/synth/RemoveID(mob/user, silent = FALSE)
+/obj/item/modular_computer/pda/synth/RemoveID(mob/user)
 	return
 
 /obj/item/modular_computer/pda/synth/get_ntnet_status()

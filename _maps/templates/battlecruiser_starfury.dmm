@@ -4784,7 +4784,7 @@
 	faction = list("neutral","silicon","turret","Syndicate");
 	name = "Syndicate Medibot";
 	skin = "bezerk";
-	req_one_access = list("syndicate")
+	maints_access_required = list("syndicate")
 	},
 /turf/open/floor/iron,
 /area/shuttle/sbc_starfury)

@@ -41,19 +41,20 @@
 	shuttlekeys = list("tradership")
 
 /obj/structure/closet/crate/tradership_cargo
-	/// Determines the list of items that get spawned. 1-5 are valid presets.
+	/// Determines which items will be spawned, overriding itemspawn_seed
 	var/used_preset
+	/// Determines which items will be spawned
+	var/itemspawn_seed
 
 /obj/structure/closet/crate/tradership_cargo/Initialize(mapload)
-	if(isnull(used_preset))
-		used_preset = rand(1,5)
+	itemspawn_seed = used_preset || rand(1,5)
 	return ..()
 
 //Generic inventory
 /obj/structure/closet/crate/tradership_cargo/PopulateContents()
 	..()
 
-	switch(used_preset)
+	switch(itemspawn_seed)
 		if(1)
 			for(var/i in 1 to 10)
 				new /obj/item/food/canned/beans(src)
@@ -100,7 +101,7 @@
 /obj/structure/closet/crate/tradership_cargo/populate_contents_immediate()
 	. = ..()
 
-	switch(used_preset)
+	switch(itemspawn_seed)
 		if(5)
 			new /obj/item/clothing/gloves/color/yellow(src)
 			new /obj/item/clothing/gloves/color/yellow(src)
@@ -150,17 +151,12 @@
 
 /obj/structure/closet/crate/secure/tradership_cargo_valuable
 	req_access = ACCESS_FACTION_CREW
-	/// Determines the list of items that get spawned. 1-5 are valid presets.
 	var/used_preset
-
-/obj/structure/closet/crate/secure/tradership_cargo_valuable/Initialize(mapload)
-	if(isnull(used_preset))
-		used_preset = rand(1,5)
-	return ..()
 
 /obj/structure/closet/crate/secure/tradership_cargo_valuable/PopulateContents()
 	. = ..()
-	switch(used_preset)
+	var/random = used_preset || rand(1,5)
+	switch(random)
 		if(1) //Random traitor items
 			new /obj/item/storage/box/syndie_kit/chameleon(src)
 			new /obj/item/storage/backpack/duffelbag/syndie/c4(src)
@@ -173,6 +169,9 @@
 			new /obj/item/pen/sleepy(src)
 			new /obj/item/storage/fancy/cigarettes/cigpack_syndicate(src)
 		if(2) //Energy weapons + energy knives
+			new /obj/item/gun/energy/e_gun(src)
+			new /obj/item/gun/energy/e_gun(src)
+			new /obj/item/gun/energy/e_gun(src)
 			new /obj/item/gun/energy/e_gun/mini(src)
 			new /obj/item/gun/energy/recharge/ebow(src)
 			new /obj/item/melee/energy/sword(src)
@@ -198,6 +197,7 @@
 			new /obj/item/mod/control/pre_equipped/mining(src)
 			new /obj/item/mod/control/pre_equipped/engineering(src)
 			new /obj/item/mod/control/pre_equipped/atmospheric(src)
+			new /obj/item/mod/control/pre_equipped/research(src)
 			new /obj/item/mod/control/pre_equipped/traitor(src)
 			new /obj/item/mod/control/pre_equipped/elite(src)
 		if(5) //Implants
@@ -208,25 +208,16 @@
 			new /obj/item/organ/internal/cyberimp/arm/toolset(src)
 			new /obj/item/organ/internal/cyberimp/arm/gun/taser(src)
 
-/obj/structure/closet/crate/secure/tradership_cargo_valuable/populate_contents_immediate()
-	. = ..()
-
-	// these are steal objectives so they have to go in here
-	switch(used_preset)
-		if(2)
-			new /obj/item/gun/energy/e_gun(src)
-			new /obj/item/gun/energy/e_gun(src)
-			new /obj/item/gun/energy/e_gun(src)
-		if(5)
-			new /obj/item/mod/control/pre_equipped/research(src)
-
 /obj/structure/closet/crate/secure/tradership_cargo_very_valuable
 	req_access = ACCESS_FACTION_COMMAND
 	icon_state = "weaponcrate"
+	var/used_preset
 
 /obj/structure/closet/crate/secure/tradership_cargo_very_valuable/PopulateContents()
-	..()
-	//45 TC, but no uplink. Better find a cantor
-	new /obj/item/stack/telecrystal/twenty(src)
-	new /obj/item/stack/telecrystal/twenty(src)
-	new /obj/item/stack/telecrystal/five(src)
+	. = ..()
+	var/random = used_preset || rand(1,1)
+	switch(random)
+		if(1) //45 TC, but no uplink. Better find a cantor
+			new /obj/item/stack/telecrystal/twenty(src)
+			new /obj/item/stack/telecrystal/twenty(src)
+			new /obj/item/stack/telecrystal/five(src)

@@ -56,9 +56,6 @@
 /mob/living/carbon/human/species/dwarf
 	race = /datum/species/dwarf
 
-/mob/living/carbon/human/species/ghoul
-	race = /datum/species/ghoul
-
 /mob/living/carbon/human/species/roundstartslime
 	race = /datum/species/jelly/roundstartslime
 
@@ -211,7 +208,7 @@
 		to_chat(usr, span_warning("You can't do this right now..."))
 		return
 
-	var/static/list/choices = list("drunkenness", "jittering")
+	var/static/list/choices = list("drunkenness", "stuttering", "jittering")
 	var/impairment = tgui_input_list(src, "Select an impairment to perform:", "Impairments", choices)
 	if(!impairment)
 		return
@@ -223,6 +220,8 @@
 			if(istype(living_user))
 				living_user.add_mood_event("drunk", /datum/mood_event/drunk)
 			set_slurring_if_lower(duration SECONDS)
+		if("stuttering")
+			set_stutter_if_lower(duration SECONDS)
 		if("jittering")
 			set_jitter_if_lower(duration SECONDS)
 

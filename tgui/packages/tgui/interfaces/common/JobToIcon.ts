@@ -34,7 +34,6 @@ const BASEICONS = {
   Geneticist: 'dna',
   'Head of Personnel': 'dog',
   'Head of Security': 'user-shield',
-  'Big Brother': 'eye',
   Janitor: 'soap',
   Lawyer: 'gavel',
   'Medical Doctor': 'staff-snake',
@@ -55,7 +54,6 @@ const BASEICONS = {
   'Shaft Miner': 'digging',
   'Station Engineer': 'gears',
   'Syndicate Operative': 'dragon',
-  'Veteran Security Advisor': 'ribbon',
   Virologist: 'virus',
   Warden: 'handcuffs',
   // NOVA EDIT START - Skyrat-exclusive jobs have icons too

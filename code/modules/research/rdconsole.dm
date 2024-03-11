@@ -112,7 +112,7 @@ Nothing else in the console has ID requirements.
 		if(stored_research.research_node_id(id))
 			say("Successfully researched [TN.display_name].")
 			var/logname = "Unknown"
-			if(HAS_AI_ACCESS(user))
+			if(isAI(user))
 				logname = "AI [user.name]"
 			if(iscyborg(user))
 				logname = "CYBORG [user.name]"

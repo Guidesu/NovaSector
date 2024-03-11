@@ -166,9 +166,7 @@
 	layer = FLY_LAYER
 	plane = ABOVE_GAME_PLANE
 	light_system = OVERLAY_LIGHT
-	light_range = 2.5
-	light_power = 1.2
-	light_color = "#ffff66"
+	light_range = 2
 	duration = 8
 	var/target
 
@@ -358,7 +356,8 @@
 
 /obj/machinery/anomalous_crystal/theme_warp/Initialize(mapload)
 	. = ..()
-	terrain_theme = SSmaterials.dimensional_themes[pick(subtypesof(/datum/dimension_theme))]
+	var/terrain_type = pick(subtypesof(/datum/dimension_theme))
+	terrain_theme = new terrain_type()
 	observer_desc = "This crystal changes the area around it to match the theme of \"[terrain_theme.name]\"."
 
 /obj/machinery/anomalous_crystal/theme_warp/ActivationReaction(mob/user, method)
@@ -373,7 +372,7 @@
 	return TRUE
 
 /obj/machinery/anomalous_crystal/theme_warp/Destroy()
-	terrain_theme = null
+	QDEL_NULL(terrain_theme)
 	converted_areas.Cut()
 	return ..()
 
@@ -498,7 +497,6 @@
 	if(isanimal_or_basicmob(loc))
 		holder_animal = loc
 		RegisterSignal(holder_animal, COMSIG_LIVING_DEATH, PROC_REF(on_holder_animal_death))
-	AddElement(/datum/element/empprotection, EMP_PROTECT_ALL)
 
 /obj/structure/closet/stasis/Entered(atom/movable/arrived, atom/old_loc, list/atom/old_locs)
 	. = ..()
@@ -526,6 +524,9 @@
 			holder_animal.gib(DROP_ALL_REMAINS)
 			return ..()
 	return ..()
+
+/obj/structure/closet/stasis/emp_act()
+	return
 
 /obj/structure/closet/stasis/ex_act()
 	return FALSE

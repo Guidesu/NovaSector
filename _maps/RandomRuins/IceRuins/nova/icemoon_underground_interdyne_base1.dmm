@@ -681,7 +681,11 @@
 /turf/open/floor/iron/dark/textured_large,
 /area/ruin/interdyne_planetary_base/cargo)
 "bW" = (
-/obj/structure/frame/machine/secured,
+/obj/structure/frame/machine{
+	icon_state = "box_1";
+	state = 2;
+	anchored = 1
+	},
 /obj/item/circuitboard/machine/ore_redemption,
 /obj/item/assembly/igniter,
 /turf/open/floor/iron/diagonal,
@@ -2489,7 +2493,11 @@
 /turf/open/floor/iron/white/textured_large,
 /area/ruin/interdyne_planetary_base/med)
 "gG" = (
-/obj/structure/frame/machine/secured,
+/obj/structure/frame/machine{
+	icon_state = "box_1";
+	state = 2;
+	anchored = 1
+	},
 /turf/open/floor/vault/alien{
 	name = "floor"
 	},
@@ -2661,7 +2669,11 @@
 /area/ruin/interdyne_planetary_base/science)
 "hd" = (
 /obj/item/circuitboard/machine/ore_silo,
-/obj/structure/frame/machine/secured,
+/obj/structure/frame/machine{
+	icon_state = "box_1";
+	state = 2;
+	anchored = 1
+	},
 /turf/open/floor/iron/dark/textured_large,
 /area/ruin/interdyne_planetary_base/main/vault)
 "he" = (
@@ -2843,7 +2855,11 @@
 /area/ruin/interdyne_planetary_base/main)
 "hE" = (
 /obj/machinery/light/small/directional/west,
-/obj/structure/frame/machine/secured,
+/obj/structure/frame/machine{
+	icon_state = "box_1";
+	state = 2;
+	anchored = 1
+	},
 /obj/item/circuitboard/machine/ammo_workbench,
 /obj/item/disk/ammo_workbench/advanced,
 /turf/open/floor/iron/dark/textured_large,
@@ -4061,7 +4077,11 @@
 /turf/open/floor/plating/reinforced,
 /area/ruin/interdyne_planetary_base/eng/disp)
 "kD" = (
-/obj/structure/frame/machine/secured,
+/obj/structure/frame/machine{
+	icon_state = "box_1";
+	state = 2;
+	anchored = 1
+	},
 /obj/item/circuitboard/machine/recycler,
 /obj/machinery/conveyor{
 	dir = 4;
@@ -4230,7 +4250,11 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/frame/machine/secured,
+/obj/structure/frame/machine{
+	icon_state = "box_1";
+	state = 2;
+	anchored = 1
+	},
 /obj/item/circuitboard/machine/stacking_machine,
 /turf/open/floor/plating/reinforced,
 /area/ruin/interdyne_planetary_base/eng/disp)
