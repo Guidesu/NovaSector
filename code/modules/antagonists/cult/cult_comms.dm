@@ -147,7 +147,7 @@
 		asked_cultists += team_member.current
 
 	var/list/yes_voters = SSpolling.poll_candidates(
-		question = "[nominee] seeks to lead your cult, do you support [nominee.p_them()]?",
+		question = "[span_notice(nominee.name)] seeks to lead your cult, do you support [nominee.p_them()]?",
 		poll_time = 30 SECONDS,
 		group = asked_cultists,
 		pic_source = nominee,
