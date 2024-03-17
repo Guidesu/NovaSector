@@ -706,16 +706,7 @@
 		return
 
 	balloon_alert(user, "offering...")
-	var/mob/chosen_one = SSpolling(
-		question = "[span_danger(user.name)] is offering [span_notice(dumb_mob.name)] an intelligence potion! Reason: [span_boldnotice(potion_reason)]",
-		check_jobban = ROLE_SENTIENCE,
-		poll_time = 20 SECONDS,
-		checked_target = dumb_mob,
-		ignore_category = POLL_IGNORE_SENTIENCE_POTION,
-		alert_pic = dumb_mob,
-		role_name_text = "intelligence potion",
-		chat_text_border_icon = src,
-	)
+
 
 /// Assign the chosen ghost to the mob
 /obj/item/slimepotion/slime/sentience/proc/on_poll_concluded(mob/user, mob/living/dumb_mob, mob/dead/observer/ghost)
