@@ -77,3 +77,5 @@
 	power_path = /datum/action/cooldown/spell/list_target/telepathy
 	instability = 10
 	energy_coeff = 1
+
+/datum/brain_trauma/very_special/bimbo

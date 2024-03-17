@@ -10,8 +10,8 @@
 	school = SCHOOL_EVOCATION
 	cooldown_time = 10 SECONDS
 
-	invocation = "shudders"
-	invocation_type = INVOCATION_EMOTE
+	invocation = "psykanum...!"
+	invocation_type = INVOCATION_WHISPER
 	// Mimes can cast it. Chaplains can cast it. Anyone can cast it, so long as they have a hand.
 	spell_requirements = SPELL_CASTABLE_WITHOUT_INVOCATION
 

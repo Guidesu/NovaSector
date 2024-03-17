@@ -11,7 +11,7 @@
 
 /datum/brain_trauma/very_special/bimbo
 	name = "Permanent hormonal disruption"
-	desc = "The patient has completely lost the ability to form speech and seems extremely aroused."
+	desc = "The patient has a serious case of nymphomania."
 	scan_desc = "permanent hormonal disruption"
 	gain_text = span_purple("Your thoughts get cloudy, but it turns you on like hell.")
 	lose_text = span_warning("A pleasant coolness spreads throughout your body, You are thinking clearly again.")
