@@ -31,9 +31,9 @@
 	GRANT_ACTION(/datum/action/cooldown/tentacle_slap)
 
 	add_cell_sample()
-	AddComponent(/datum/component/tameable, list(/obj/item/food/fries, /obj/item/food/cheesyfries, /obj/item/food/cornchips, /obj/item/food/carrotfries), tame_chance = 30, bonus_tame_chance = 0)
+	AddComponent(/datum/component/tameable, list(/obj/item/food/fries, /obj/item/food/cheesyfries, /obj/item/food/cornchips, /obj/item/food/carrotfries), tame_chance = 30, bonus_tame_chance = 0, after_tame = CALLBACK(src, PROC_REF(tamed)))
 
-/mob/living/simple_animal/hostile/vatbeast/tamed(mob/living/tamer, obj/item/food)
+/mob/living/simple_animal/hostile/vatbeast/proc/tamed(mob/living/tamer)
 	buckle_lying = 0
 	AddElement(/datum/element/ridable, /datum/component/riding/creature/vatbeast)
 	faction = list(FACTION_NEUTRAL)

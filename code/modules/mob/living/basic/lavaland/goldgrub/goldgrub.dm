@@ -106,9 +106,15 @@
 	return ..()
 
 /mob/living/basic/mining/goldgrub/proc/make_tameable()
-	AddComponent(/datum/component/tameable, food_types = list(/obj/item/stack/ore), tame_chance = 25, bonus_tame_chance = 5)
+	AddComponent(\
+		/datum/component/tameable,\
+		food_types = list(/obj/item/stack/ore),\
+		tame_chance = 25,\
+		bonus_tame_chance = 5,\
+		after_tame = CALLBACK(src, PROC_REF(tame_grub)),\
+	)
 
-/mob/living/basic/mining/goldgrub/tamed(mob/living/tamer, atom/food)
+/mob/living/basic/mining/goldgrub/proc/tame_grub()
 	new /obj/effect/temp_visual/heart(src.loc)
 	AddElement(/datum/element/ridable, /datum/component/riding/creature/goldgrub)
 	AddComponent(/datum/component/obeys_commands, pet_commands)

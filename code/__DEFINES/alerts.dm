@@ -47,6 +47,7 @@
 #define ALERT_HACKING_APC "hackingapc"
 
 /** MODsuit/Mech related */
+#define ALERT_MODSUIT_CHARGE "mod_charge"
 #define ALERT_MECH_DAMAGE "mech_damage"
 
 /** Food related */

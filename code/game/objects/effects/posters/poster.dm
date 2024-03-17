@@ -180,7 +180,7 @@
 			qdel(src)
 		else
 			to_chat(user, span_notice("You carefully remove the poster from the wall."))
-			roll_and_drop(Adjacent(user) ? get_turf(user) : loc, user)
+			roll_and_drop(Adjacent(user) ? get_turf(user) : loc)
 
 /obj/structure/sign/poster/attack_hand(mob/user, list/modifiers)
 	. = ..()
@@ -207,12 +207,11 @@
 		return FALSE
 	return !user.gloves || !(user.gloves.body_parts_covered & HANDS) || HAS_TRAIT(user, TRAIT_FINGERPRINT_PASSTHROUGH) || HAS_TRAIT(user.gloves, TRAIT_FINGERPRINT_PASSTHROUGH)
 
-/obj/structure/sign/poster/proc/roll_and_drop(atom/location, mob/user)
+/obj/structure/sign/poster/proc/roll_and_drop(atom/location)
 	pixel_x = 0
 	pixel_y = 0
 	var/obj/item/poster/rolled_poster = new poster_item_type(location, src) // /obj/structure/sign/poster/wanted/roll_and_drop() has some snowflake handling due to icon memes, if you make a major change to this, don't forget to update it too. <3
-	if(!user?.put_in_hands(rolled_poster))
-		forceMove(rolled_poster)
+	forceMove(rolled_poster)
 	return rolled_poster
 
 //separated to reduce code duplication. Moved here for ease of reference and to unclutter r_wall/attackby()
@@ -247,7 +246,7 @@
 
 	var/turf/user_drop_location = get_turf(user) //cache this so it just falls to the ground if they move. also no tk memes allowed.
 	if(!do_after(user, PLACE_SPEED, placed_poster, extra_checks = CALLBACK(placed_poster, TYPE_PROC_REF(/obj/structure/sign/poster, snowflake_closed_turf_check), src)))
-		placed_poster.roll_and_drop(user_drop_location, user)
+		placed_poster.roll_and_drop(user_drop_location)
 		return
 
 	placed_poster.on_placed_poster(user)

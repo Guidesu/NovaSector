@@ -53609,8 +53609,7 @@
 "nKc" = (
 /obj/structure/cable,
 /obj/machinery/conveyor/inverted{
-	dir = 10;
-	id = "mining"
+	dir = 10
 	},
 /turf/open/floor/iron/checker,
 /area/station/cargo/miningdock)
@@ -73993,8 +73992,7 @@
 /obj/structure/cable,
 /obj/machinery/bouldertech/refinery/smelter,
 /obj/machinery/conveyor/inverted{
-	dir = 10;
-	id = "mining"
+	dir = 10
 	},
 /turf/open/floor/iron/checker,
 /area/station/cargo/miningdock)
@@ -74668,8 +74666,7 @@
 "tkZ" = (
 /obj/structure/cable,
 /obj/machinery/conveyor/inverted{
-	dir = 6;
-	id = "mining"
+	dir = 6
 	},
 /turf/open/floor/iron/checker,
 /area/station/cargo/miningdock)
@@ -77449,8 +77446,6 @@
 "tVp" = (
 /obj/machinery/light_switch/directional/north,
 /obj/machinery/status_display/ai/directional/east,
-/obj/structure/table/reinforced/titaniumglass,
-/obj/item/piggy_bank/vault,
 /turf/open/floor/circuit,
 /area/station/ai_monitored/command/nuke_storage)
 "tVq" = (
@@ -80651,10 +80646,6 @@
 /obj/machinery/power/apc/auto_name/directional/north,
 /obj/structure/cable,
 /obj/machinery/status_display/ai/directional/west,
-/obj/structure/table/reinforced/titaniumglass,
-/obj/item/maneki_neko{
-	pixel_y = 4
-	},
 /turf/open/floor/circuit,
 /area/station/ai_monitored/command/nuke_storage)
 "uNp" = (

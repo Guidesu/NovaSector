@@ -10,8 +10,10 @@
 	var/bonus_tame_chance
 	///Current chance to tame on interaction
 	var/current_tame_chance
+	///For effects once soemthing is tamed
+	var/datum/callback/after_tame
 
-/datum/component/tameable/Initialize(food_types, tame_chance, bonus_tame_chance, unique = TRUE)
+/datum/component/tameable/Initialize(food_types, tame_chance, bonus_tame_chance, datum/callback/after_tame, unique = TRUE)
 	if(!isatom(parent)) //yes, you could make a tameable toolbox.
 		return COMPONENT_INCOMPATIBLE
 
@@ -22,11 +24,17 @@
 		src.current_tame_chance = tame_chance
 	if(bonus_tame_chance)
 		src.bonus_tame_chance = bonus_tame_chance
+	if(after_tame)
+		src.after_tame = after_tame
 	src.unique = unique
 
 	RegisterSignal(parent, COMSIG_ATOM_ATTACKBY, PROC_REF(try_tame))
 	RegisterSignal(parent, COMSIG_SIMPLEMOB_SENTIENCEPOTION, PROC_REF(on_tame)) //Instantly succeeds
 	RegisterSignal(parent, COMSIG_SIMPLEMOB_TRANSFERPOTION, PROC_REF(on_tame)) //Instantly succeeds
+
+/datum/component/tameable/Destroy(force)
+	after_tame = null
+	return ..()
 
 /datum/component/tameable/proc/try_tame(datum/source, obj/item/food, mob/living/attacker, params)
 	SIGNAL_HANDLER
@@ -62,9 +70,9 @@
 	return living_parent.faction.Find(REF(potential_friend))
 
 ///Ran once taming succeeds
-/datum/component/tameable/proc/on_tame(atom/source, mob/living/tamer, obj/item/food, inform_tamer = FALSE)
+/datum/component/tameable/proc/on_tame(atom/source, mob/living/tamer, atom/food, inform_tamer = FALSE)
 	SIGNAL_HANDLER
-	source.tamed(tamer, food)//Run custom behavior if needed
+	after_tame?.Invoke(tamer, food)//Run custom behavior if needed
 
 	if(isliving(parent) && isliving(tamer))
 		INVOKE_ASYNC(source, TYPE_PROC_REF(/mob/living, befriend), tamer)

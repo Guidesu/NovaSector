@@ -1,4 +1,4 @@
-/obj/machinery/vending/wardrobe/canLoadItem(obj/item/I, mob/user, send_message = TRUE)
+/obj/machinery/vending/wardrobe/canLoadItem(obj/item/I,mob/user)
 	return (I.type in products)
 
 /obj/machinery/vending/wardrobe/syndie_wardrobe
