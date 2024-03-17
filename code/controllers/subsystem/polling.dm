@@ -1,5 +1,5 @@
-SUBSYSTEM_DEF(polling)
-	name = "Polling"
+SUBSYSTEM_DEF(SSpolling)
+	name = "SSpolling"
 	flags = SS_BACKGROUND | SS_NO_INIT
 	wait = 1 SECONDS
 	runlevels = RUNLEVEL_GAME

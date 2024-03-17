@@ -706,8 +706,7 @@
 		return
 
 	balloon_alert(user, "offering...")
-	being_used = TRUE
-	var/mob/chosen_one = SSpolling.poll_ghosts_for_target(
+	var/mob/chosen_one = SSpolling(
 		question = "[span_danger(user.name)] is offering [span_notice(dumb_mob.name)] an intelligence potion! Reason: [span_boldnotice(potion_reason)]",
 		check_jobban = ROLE_SENTIENCE,
 		poll_time = 20 SECONDS,
