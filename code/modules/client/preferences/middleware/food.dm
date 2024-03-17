@@ -1,6 +1,6 @@
 // To make this system not a massive meta-pick for gamers, while still allowing plenty of room for unique combinations.
 #define MINIMUM_REQUIRED_TOXICS 1
-#define MINIMUM_REQUIRED_DISLIKES 3
+#define MINIMUM_REQUIRED_DISLIKES 2
 #define MAXIMUM_LIKES 3
 
 // Performance and RAM friendly menu. You can thank me later.
@@ -25,17 +25,20 @@ GLOBAL_DATUM_INIT(food_prefs_menu, /datum/food_prefs_menu, new)
 
 	var/obj/item/organ/internal/tongue/target_tongue = target.get_organ_slot(ORGAN_SLOT_TONGUE)
 
+	if(isnull(target_tongue) || !preferences.food_preferences["enabled"])
+		return
+
 	target_tongue.liked_foodtypes  = NONE
 	target_tongue.disliked_foodtypes  = NONE
 	target_tongue.toxic_foodtypes = NONE
 
-	for(var/food_entry in GLOB.food_ic_flag_to_point_values)
-		var/list/food_points_entry = GLOB.food_ic_flag_to_point_values[food_entry]
-		var/food_preference = preferences.food_preferences[food_entry] || food_points_entry[FOOD_PREFERENCE_DEFAULT]
+	for(var/food_entry in GLOB.food_defaults)
+		var/list/food_default = GLOB.food_defaults[food_entry]
+		var/food_preference = preferences.food_preferences[food_entry] || food_default
 
 		switch(food_preference)
 			if(FOOD_PREFERENCE_LIKED)
-				target_tongue.liked_foodtypes|= GLOB.food_ic_flag_to_bitflag[food_entry]
+				target_tongue.liked_foodtypes |= GLOB.food_ic_flag_to_bitflag[food_entry]
 			if(FOOD_PREFERENCE_DISLIKED)
 				target_tongue.disliked_foodtypes |= GLOB.food_ic_flag_to_bitflag[food_entry]
 			if(FOOD_PREFERENCE_TOXIC)
@@ -51,8 +54,12 @@ GLOBAL_DATUM_INIT(food_prefs_menu, /datum/food_prefs_menu, new)
 
 /datum/food_prefs_menu/ui_act(action, list/params, datum/tgui/ui, datum/ui_state/state)
 	. = ..()
+	if(.)
+		return
 
 	var/datum/preferences/preferences = ui?.user?.client?.prefs
+	if(!preferences)
+		return
 
 	switch(action)
 		if("reset")
@@ -65,7 +72,6 @@ GLOBAL_DATUM_INIT(food_prefs_menu, /datum/food_prefs_menu, new)
 			return TRUE
 
 		if("change_food")
-
 			var/food_name = params["food_name"]
 			var/food_preference = params["food_preference"]
 
@@ -76,17 +82,16 @@ GLOBAL_DATUM_INIT(food_prefs_menu, /datum/food_prefs_menu, new)
 			var/liked_food_length = 0
 
 			for(var/food_entry in preferences.food_preferences)
-				var/list/food_points_entry = GLOB.food_ic_flag_to_point_values[food_entry]
-				if(length(food_points_entry) >= FOOD_PREFERENCE_OBSCURE && food_points_entry[FOOD_PREFERENCE_OBSCURE])
+				if(food_entry in GLOB.obscure_food_types)
 					continue
 
 				if(preferences.food_preferences[food_entry] == FOOD_PREFERENCE_LIKED)
 					liked_food_length++
 					if(liked_food_length > MAXIMUM_LIKES)
 						preferences.food_preferences.Remove(food_entry)
-				if(liked_food_length > MAXIMUM_LIKES || (food_preference == FOOD_PREFERENCE_LIKED && liked_food_length == MAXIMUM_LIKES)) // Equals as well, if we're setting a liked food!
-					if(!GLOB.food_ic_flag_to_point_values[food_name][FOOD_PREFERENCE_OBSCURE] == TRUE)
-						return TRUE // Fuck you, look your mistakes in the eye.
+				if(liked_food_length > MAXIMUM_LIKES || (food_preference == FOOD_PREFERENCE_LIKED && liked_food_length == MAXIMUM_LIKES) && !(food_name in GLOB.obscure_food_types)) // Equals as well, if we're setting a liked food!
+					tgui_alert(ui, "You can't have more than [MAXIMUM_LIKES] liked foods!")
+					return TRUE
 
 			preferences.food_preferences[food_name] = food_preference
 			return TRUE
@@ -99,7 +104,8 @@ GLOBAL_DATUM_INIT(food_prefs_menu, /datum/food_prefs_menu, new)
 
 /datum/food_prefs_menu/ui_static_data(mob/user)
 	return list(
-		"food_types" = GLOB.food_ic_flag_to_point_values,
+		"food_types" = GLOB.food_defaults,
+		"obscure_food_types" = GLOB.obscure_food_types,
 	)
 
 /datum/food_prefs_menu/ui_data(mob/user)
@@ -107,42 +113,50 @@ GLOBAL_DATUM_INIT(food_prefs_menu, /datum/food_prefs_menu, new)
 
 	var/datum/species/species_type = preferences.read_preference(/datum/preference/choiced/species)
 	var/datum/species/species = new species_type
+	var/counts = list(
+		"liked" = 0,
+		"disliked" = 0,
+		"toxic" = 0,
+	)
+
+	for(var/food_entry in GLOB.food_defaults)
+		var/list/food_default = GLOB.food_defaults[food_entry]
+		var/food_preference = preferences.food_preferences[food_entry] || food_default
+
+		if(food_entry in GLOB.obscure_food_types)
+			continue
+
+		switch(food_preference)
+			if(FOOD_PREFERENCE_LIKED)
+				counts["liked"]++
+			if(FOOD_PREFERENCE_DISLIKED)
+				counts["disliked"]++
+			if(FOOD_PREFERENCE_TOXIC)
+				counts["toxic"]++
+
 
 	var/list/data = list(
 		"selection" = preferences.food_preferences,
 		"enabled" = preferences.food_preferences["enabled"],
-		"invalid" = is_food_invalid(preferences),
+		"invalid" = is_food_invalid(counts),
 		"race_disabled" = !species.allows_food_preferences(),
+		"limits" = list(
+			"max_liked" = MAXIMUM_LIKES,
+			"min_disliked" = MINIMUM_REQUIRED_DISLIKES,
+			"min_toxic" = MINIMUM_REQUIRED_TOXICS,
+		),
+		"counts" = counts,
 	)
 	qdel(species)
 	return data
 
 /// Checks the provided preferences datum to make sure the food pref values are valid. Does not check if the food preferences value is null.
-/datum/food_prefs_menu/proc/is_food_invalid(datum/preferences/preferences)
-	var/liked_food_length = 0
-	var/disliked_food_length = 0
-	var/toxic_food_length = 0
-
-	for(var/food_entry in GLOB.food_ic_flag_to_point_values)
-		var/list/food_points_entry = GLOB.food_ic_flag_to_point_values[food_entry]
-		var/food_preference = preferences.food_preferences[food_entry] || food_points_entry[FOOD_PREFERENCE_DEFAULT]
-
-		if(length(food_points_entry) >= FOOD_PREFERENCE_OBSCURE && food_points_entry[FOOD_PREFERENCE_OBSCURE])
-			continue
-
-		switch(food_preference)
-			if(FOOD_PREFERENCE_LIKED)
-				liked_food_length++
-			if(FOOD_PREFERENCE_DISLIKED)
-				disliked_food_length++
-			if(FOOD_PREFERENCE_TOXIC)
-				toxic_food_length++
-
-	if(liked_food_length > MAXIMUM_LIKES)
-		return "too many like choices"
-	if(disliked_food_length + toxic_food_length < MINIMUM_REQUIRED_DISLIKES)
-		return "too few dislike choices"
-	if(toxic_food_length < MINIMUM_REQUIRED_TOXICS)
+/datum/food_prefs_menu/proc/is_food_invalid(counts)
+	if(counts["liked"] > MAXIMUM_LIKES)
+		return "too many liked choices"
+	if(counts["disliked"] < MINIMUM_REQUIRED_DISLIKES)
+		return "too few disliked choices"
+	if(counts["toxic"] < MINIMUM_REQUIRED_TOXICS)
 		return "too few toxic choices"
 
 #undef MINIMUM_REQUIRED_TOXICS
