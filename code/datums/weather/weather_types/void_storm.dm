@@ -1,11 +1,11 @@
 /datum/weather/void_storm
 	name = "void storm"
-	desc = "A rare and highly anomalous event often accompanied by unknown entities shredding spacetime continouum. We'd advise you to start running."
+	desc = "A rare and highly anomalous event. We'd advise you to start running to safety."
 
 	telegraph_duration = 2 SECONDS
 	telegraph_overlay = "light_snow"
 
-	weather_message = span_hypnophrase("You feel the air around you getting colder... and void's sweet embrace...")
+	weather_message = span_hypnophrase("You feel the air around you getting colder... Maybe getting shelter is a good idea...")
 	weather_overlay = "snow_storm"
 	weather_color = COLOR_BLACK
 	weather_duration_lower = 60 SECONDS
@@ -16,13 +16,13 @@
 	end_duration = 10 SECONDS
 
 	area_type = /area
-	protect_indoors = FALSE
+	protect_indoors = TRUE
 	target_trait = ZTRAIT_VOIDSTORM
 
 	immunity_type = TRAIT_VOIDSTORM_IMMUNE
 
-	barometer_predictable = FALSE
-	perpetual = TRUE
+	barometer_predictable = TRUE
+	perpetual = FALSE
 
 	/// List of areas that were once impacted areas but are not anymore. Used for updating the weather overlay based whether the ascended heretic is in the area.
 	var/list/former_impacted_areas = list()

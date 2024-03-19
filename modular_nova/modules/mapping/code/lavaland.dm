@@ -21,7 +21,7 @@
 	suffix = "lavaland_surface_interdyne_base1.dmm"
 	allow_duplicates = FALSE
 	never_spawn_with = list(/datum/map_template/ruin/icemoon/underground/nova/interdyne_base)
-	always_place = TRUE
+	always_place = FALSE
 
 /datum/map_template/ruin/lavaland/arena
 	name = "Lava-Ruin Grand Arena"
@@ -30,5 +30,5 @@
 	prefix = "_maps/RandomRuins/LavaRuins/nova/"
 	suffix = "lavaland_surface_arena.dmm"
 	cost = 0
-	always_place = TRUE //WOULD BE UNFAIR IF SOMETHING THAT IS ALWAYS PLACED HAD A COST...
+	always_place = FALSE //WOULD BE UNFAIR IF SOMETHING THAT IS ALWAYS PLACED HAD A COST...
 	allow_duplicates = FALSE

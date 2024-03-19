@@ -30,7 +30,7 @@
 		/obj/structure/flora/grass/both/style_random = 6,
 		/obj/structure/flora/rock/icy/style_random = 2,
 		/obj/structure/flora/rock/pile/icy/style_random = 10,
-		/obj/structure/flora/tree/pine/style_random = 8,
+		/obj/structure/flora/tree/pine/style_random = 15,
 	)
 
 	///Note that this spawn list is also in the icemoon generator

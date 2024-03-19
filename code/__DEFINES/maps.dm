@@ -88,6 +88,7 @@ Always compile, always use that verb, and always make sure that it works for wha
 #define ZTRAIT_SNOWSTORM "Weather_Snowstorm"
 #define ZTRAIT_ASHSTORM "Weather_Ashstorm"
 #define ZTRAIT_VOIDSTORM "Weather_Voidstorm"
+#define ZTRAIT_RAIN "Rain_Storm"
 
 /// boolean - does this z prevent ghosts from observing it
 #define ZTRAIT_SECRET "Secret"
@@ -138,6 +139,8 @@ Always compile, always use that verb, and always make sure that it works for wha
 	ZTRAIT_ASHSTORM = TRUE, \
 	ZTRAIT_LAVA_RUINS = TRUE, \
 	ZTRAIT_BOMBCAP_MULTIPLIER = 2, \
+	ZTRAIT_RAIN = TRUE, \
+	ZTRAIT_ZTRAIT_VOIDSTORM = TRUE, \
 	ZTRAIT_BASETURF = /turf/open/lava/smooth/lava_land_surface)
 ///Z level traits for Away Missions
 #define ZTRAITS_AWAY list(ZTRAIT_AWAY = TRUE)

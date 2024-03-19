@@ -188,5 +188,4 @@
 		/obj/item/organ/internal/alien/plasmavessel/roundstart,
 		/obj/item/organ/internal/alien/resinspinner/roundstart,
 		/obj/item/organ/internal/alien/hivenode,
-		/obj/item/organ/internal/borer_body,
 		)
