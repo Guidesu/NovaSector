@@ -889,11 +889,6 @@ GLOBAL_VAR_INIT(cops_arrived, FALSE)
 		if(feedback && hacker)
 			balloon_alert(hacker, "can't hack!")
 		return FALSE
-	var/area/console_area = get_area(src)
-	if(!console_area || !(console_area.area_flags & VALID_TERRITORY))
-		if(feedback && hacker)
-			balloon_alert(hacker, "signal too weak!")
-		return FALSE
 	return TRUE
 
 /**

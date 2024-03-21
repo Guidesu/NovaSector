@@ -24,10 +24,6 @@
 			break
 	..()
 
-/datum/wires/vending/interact(mob/user)
-	var/obj/machinery/vending/vending_machine = holder
-
-
 /datum/wires/vending/interactable(mob/user)
 	if(!..())
 		return FALSE

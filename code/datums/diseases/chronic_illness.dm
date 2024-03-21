@@ -85,3 +85,23 @@
 					affected_mob.investigate_log("has been dusted / deleted by [name].", INVESTIGATE_DEATHS)
 					affected_mob.ghostize(can_reenter_corpse = FALSE)
 					qdel(affected_mob)
+
+/datum/disease/advance/symbiota
+    name = "Symbiota Iluminosa Infestation"
+    max_stages = 5
+    spread_text = "The Symbiota Infestation spreads through birth with infected individuals."
+    spread_flags = DISEASE_SPREAD_NON_CONTAGIOUS
+    disease_flags = CHRONIC
+    infectable_biotypes = MOB_ORGANIC | MOB_MINERAL | MOB_ROBOTIC
+    process_dead = TRUE
+    stage_prob = 0.25
+    cure_text = "Sansufentanyl Injection"
+    cures = list(/datum/reagent/medicine/sansufentanyl)
+    infectivity = 0
+    agent = "Symbiota Iluminosas Virosica"
+    viable_mobtypes = list(/mob/living/carbon/human)
+    desc = "The Symbiota Infestation is a mysterious virus caused by microscopic agents that integrate with the host's biology, forming a symbiotic relationship. Once infected, the virus augment the host's physiology, enhancing physical capabilities and providing regenerative properties."
+    severity = DISEASE_SEVERITY_UNCURABLE
+    bypasses_immunity = TRUE
+
+    symptoms = list(/datum/symptom/heal/starlight, /datum/symptom/heal/chem, /datum/symptom/heal/metabolism, /datum/symptom/heal/darkness, /datum/symptom/heal/coma, /datum/symptom/heal/water, /datum/symptom/heal/plasma, /datum/symptom/heal/radiation, /datum/symptom/mind_restoration, /datum/symptom/sensory_restoration, /datum/symptom/undead_adaptation, /datum/symptom/viraladaptation, /datum/symptom/viralevolution, /datum/symptom/youth)
