@@ -180,12 +180,3 @@
 		TRAIT_CATLIKE_GRACE,
 		TRAIT_VENTCRAWLER_NUDE,
 	)
-	mutantbrain = /obj/item/organ/internal/brain/xeno_hybrid
-	mutanttongue = /obj/item/organ/internal/tongue/xeno_hybrid
-	mutantliver = /obj/item/organ/internal/liver/xeno_hybrid
-	mutantstomach = /obj/item/organ/internal/stomach/xeno_hybrid
-	mutant_organs = list(
-		/obj/item/organ/internal/alien/plasmavessel/roundstart,
-		/obj/item/organ/internal/alien/resinspinner/roundstart,
-		/obj/item/organ/internal/alien/hivenode,
-		)
