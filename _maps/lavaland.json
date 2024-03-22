@@ -17,20 +17,32 @@
 			"Up": true,
 			"Mining": true,
 			"Linkage": null,
-			"Gravity": true
+			"Gravity": true,
+			"Weather_Snowstorm": true,
+			"Weather_Ashstorm": true,
+			"Weather_Voidstorm": true,
+			"Rain_Storm": true
 		},
 		{
 			"Down": true,
 			"Up": true,
 			"Mining": true,
 			"Linkage": null,
-			"Gravity": true
+			"Gravity": true,
+			"Weather_Snowstorm": true,
+			"Weather_Ashstorm": true,
+			"Weather_Voidstorm": true,
+			"Rain_Storm": true
 		},
 		{
 			"Down": true,
 			"Mining": true,
 			"Linkage": null,
-			"Gravity": true
+			"Gravity": true,
+			"Weather_Snowstorm": true,
+			"Weather_Ashstorm": true,
+			"Weather_Voidstorm": true,
+			"Rain_Storm": true
 		}
 	],
 	"minetype": "none",

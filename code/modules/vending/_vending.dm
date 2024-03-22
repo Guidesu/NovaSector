@@ -1173,10 +1173,9 @@ GLOBAL_LIST_EMPTY(vending_machines_to_restock)
 	return TRUE
 
 /obj/machinery/vending/interact(mob/user)
-	if (!HAS_AI_ACCESS(user))
-		if(seconds_electrified && !(machine_stat & NOPOWER))
-			if(shock(user, 100))
-				return
+	if(seconds_electrified && !(machine_stat & NOPOWER))
+		if(shock(user, 100))
+			return
 
 		if(tilted && !user.buckled && !isAdminGhostAI(user))
 			to_chat(user, span_notice("You begin righting [src]."))
