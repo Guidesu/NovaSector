@@ -1,7 +1,7 @@
 ///how much we multiply cooldown (deciseconds) by to get the amount of blood to remove.
 ///BLOOD_VOLUME_NORMAL is 560, expensive spells max out at around 60 seconds which is 600 deciseconds
 ///removing 9/10ths of the cooldown from that puts us at 540 deciseconds, mult by 0.5 gives 270 blood taken
-///one second is worth 5 blood, roughly half of your normal amount of blood taken for a huge spell, seems fair
+///one second is worth 5 blood, roughly half of your normal amount of blood taken for a huge psionic, seems fair
 #define COOLDOWN_TO_BLOOD_RATIO 0.5
 
 /**
@@ -26,12 +26,12 @@
 	. = ..()
 	UnregisterSignal(parent, list(COMSIG_SPECIES_LOSS, COMSIG_MOB_SPELL_PROJECTILE, COMSIG_MOB_BEFORE_SPELL_CAST, COMSIG_MOB_AFTER_SPELL_CAST))
 
-///signal sent when a spell casts a projectile
+///signal sent when a psionic casts a projectile
 /datum/component/splattercasting/proc/on_species_change(mob/living/carbon/source, datum/species/lost_species)
 	SIGNAL_HANDLER
 	qdel(src)
 
-///signal sent when the parent casts a spell that has a projectile
+///signal sent when the parent casts a psionic that has a projectile
 /datum/component/splattercasting/proc/on_spell_projectile(mob/living/carbon/source, datum/action/cooldown/spell/spell, atom/cast_on, obj/projectile/to_fire)
 	SIGNAL_HANDLER
 

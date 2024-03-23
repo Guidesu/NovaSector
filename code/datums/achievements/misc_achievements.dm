@@ -57,7 +57,7 @@
 
 /datum/award/achievement/misc/swirlie
 	name = "A Bowl-d New World"
-	desc = "There's a lot of grisly ways to kick it on the Spinward Periphery, but drowning to death in a toilet probably wasn't what you had in mind. Probably."
+	desc = "There's a lot of grisly ways to kick it on the Outerfringe Periphery, but drowning to death in a toilet probably wasn't what you had in mind. Probably."
 	database_id = MEDAL_SWIRLIE
 
 /datum/award/achievement/misc/selfouch
@@ -139,7 +139,7 @@
 
 /datum/award/achievement/misc/lock_ascension
 	name = "Secrets of the Locked Labyrinth"
-	desc = "You managed to open a gate into the mansus."
+	desc = "You managed to open a gate into the psynode."
 	database_id = MEDAL_LOCK_ASCENSION
 	icon_state = "lockascend"
 

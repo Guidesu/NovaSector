@@ -63,17 +63,7 @@
 	if(!isliving(cast_on))
 		return
 
-	var/mob/living/living_cast_on = cast_on
-	// When casting, throw the caster backwards a few tiles.
-	var/original_dir = living_cast_on.dir
-	living_cast_on.throw_at(
-		get_edge_target_turf(living_cast_on, REVERSE_DIR(living_cast_on.dir)),
-		range = self_throw_range,
-		speed = 2,
-		gentle = TRUE,
-	)
 	// Try to set us to our original direction after, so we don't end up backwards.
-	living_cast_on.setDir(original_dir)
 
 /datum/action/cooldown/spell/cone/staggered/fire_breath/calculate_cone_shape(current_level)
 	// This makes the cone shoot out into a 3 wide column of flames no matter the distance

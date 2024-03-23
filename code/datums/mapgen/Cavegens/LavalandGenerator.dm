@@ -1,19 +1,21 @@
 /datum/map_generator/cave_generator/lavaland
-	weighted_open_turf_types = list(/turf/open/misc/asteroid/basalt/lava_land_surface = 1)
-	weighted_closed_turf_types = list(/turf/closed/mineral/random/volcanic = 1)
+	weighted_open_turf_types = list(/turf/open/misc/asteroid/basalt/lava_land_surface = 20, /turf/open/misc/asteroid/snow/icemoon = 20, /turf/open/misc/ice/icemoon = 1)
+	weighted_closed_turf_types = list(/turf/closed/mineral/random/volcanic = 1, /turf/closed/mineral/random/snow = 1)
 
 	weighted_mob_spawn_list = list(
-		SPAWN_MEGAFAUNA = 2,
-		/obj/effect/spawner/random/lavaland_mob/goliath = 50,
-		/obj/effect/spawner/random/lavaland_mob/legion = 30,
-		/obj/effect/spawner/random/lavaland_mob/watcher = 40,
-		/mob/living/basic/mining/bileworm = 20,
-		/mob/living/basic/mining/brimdemon = 20,
-		/mob/living/basic/mining/lobstrosity/lava = 20,
-		/mob/living/basic/mining/goldgrub = 10,
-		/obj/structure/spawner/lavaland = 2,
-		/obj/structure/spawner/lavaland/goliath = 3,
-		/obj/structure/spawner/lavaland/legion = 3,
+		/mob/living/basic/mining/bileworm = 0,
+		/mob/living/basic/mining/brimdemon = 0,
+		/mob/living/basic/mining/lobstrosity/lava = 1,
+		/mob/living/basic/mining/goldgrub = 1,
+		/obj/structure/spawner/lavaland = 0,
+		/obj/structure/spawner/lavaland/goliath = 0,
+		/obj/structure/spawner/lavaland/legion = 0,
+		/mob/living/basic/mining/legion/snow = 0,
+		/mob/living/basic/mining/lobstrosity = 0,
+		/mob/living/basic/mining/wolf = 5,
+		/mob/living/simple_animal/hostile/asteroid/polarbear = 2,
+		/obj/structure/spawner/ice_moon = 0,
+		/obj/structure/spawner/ice_moon/polarbear = 0,
 	)
 
 	weighted_flora_spawn_list = list(
@@ -24,6 +26,11 @@
 		/obj/structure/flora/ash/seraka = 2,
 		/obj/structure/flora/ash/stem_shroom = 2,
 		/obj/structure/flora/ash/tall_shroom = 2,
+		/obj/structure/flora/ash/chilly = 2,
+		/obj/structure/flora/grass/both/style_random = 6,
+		/obj/structure/flora/rock/icy/style_random = 2,
+		/obj/structure/flora/rock/pile/icy/style_random = 10,
+		/obj/structure/flora/tree/pine/style_random = 15,
 	)
 
 	///Note that this spawn list is also in the icemoon generator
@@ -34,6 +41,7 @@
 		/obj/structure/geyser/random = 2,
 		/obj/structure/geyser/wittel = 10,
 		/obj/structure/ore_vent/boss = 1,
+		/obj/structure/ore_vent/boss/icebox = 1
 	)
 
 	initial_closed_chance = 45

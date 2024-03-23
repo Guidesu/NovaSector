@@ -27,7 +27,7 @@
 	cooldown_time = 1 MINUTES
 
 	invocation = "DOOOOOOOOOOOOOOOOOOOOM!!!"
-	invocation_type = INVOCATION_SHOUT
+	invocation_type = INVOCATION_WHISPER
 	spell_requirements = NONE
 	antimagic_flags = NONE
 

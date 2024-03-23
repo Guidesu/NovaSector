@@ -14,3 +14,19 @@
 	quirk_holder.ForceContractDisease(hms)
 	give_item_to_holder(/obj/item/storage/pill_bottle/sansufentanyl, list(LOCATION_BACKPACK = ITEM_SLOT_BACKPACK),flavour_text = "You've been provided with medication to help manage your condition. Take it regularly to avoid complications.")
 	give_item_to_holder(/obj/item/healthanalyzer/simple/disease, list(LOCATION_BACKPACK = ITEM_SLOT_BACKPACK))
+
+/datum/quirk/item_quirk/chronic_virosic_mutualistic_relationship
+	name = "Chronic Mutual Viral Relationship"
+	desc = "You have a chronic Viral Relationship that requires constant attention to keep under control."
+	icon = FA_ICON_DISEASE
+	value = 12
+	gain_text = span_danger("You feel a bit off today.")
+	lose_text = span_notice("You feel a bit better today.")
+	medical_record_text = "Patient has a chronic viral infestation that requires constant attention to keep under control."
+	hardcore_value = 12
+	mail_goodies = list(/obj/item/storage/pill_bottle/sansufentanyl)
+
+/datum/quirk/item_quirk/chronic_virosic_mutualistic_relationship/add_unique(client/client_source)
+	var/datum/disease/advance/symbiota/sym = new /datum/disease/advance/symbiota()
+	quirk_holder.ForceContractDisease(sym)
+	give_item_to_holder(/obj/item/healthanalyzer/simple/disease, list(LOCATION_BACKPACK = ITEM_SLOT_BACKPACK))

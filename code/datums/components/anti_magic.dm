@@ -106,7 +106,7 @@
 	if(!(casted_magic_flags & antimagic_flags))
 		return NONE
 
-	// We have already blocked this spell
+	// We have already blocked this psionic
 	if(parent in antimagic_sources)
 		return NONE
 
