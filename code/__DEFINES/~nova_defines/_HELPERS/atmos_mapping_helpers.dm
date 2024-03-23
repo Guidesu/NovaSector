@@ -1,4 +1,4 @@
-//Port Free Union of Vulken Incinerator
+//Port Tarkon Incinerator
 #define INCINERATOR_TARKON_IGNITER "tarkon_igniter"
 #define INCINERATOR_TARKON_DP_VENTPUMP "tarkon_airlock_pump"
 #define INCINERATOR_TARKON_AIRLOCK_SENSOR "tarkon_airlock_sensor"

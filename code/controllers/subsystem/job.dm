@@ -160,7 +160,10 @@ SUBSYSTEM_DEF(job)
 			continue
 		new_all_occupations += job
 		name_occupations[job.title] = job
+		for(var/alt_title in job.alternate_titles)
+			name_occupations[alt_title] = job
 		type_occupations[job_type] = job
+
 		if(job.job_flags & JOB_NEW_PLAYER_JOINABLE)
 			new_joinable_occupations += job
 			if(!LAZYLEN(job.departments_list))
@@ -196,6 +199,8 @@ SUBSYSTEM_DEF(job)
 	joinable_departments = new_joinable_departments
 	joinable_departments_by_type = new_joinable_departments_by_type
 	experience_jobs_map = new_experience_jobs_map
+
+	SEND_SIGNAL(src, COMSIG_OCCUPATIONS_SETUP)
 
 	return TRUE
 
@@ -390,7 +395,6 @@ SUBSYSTEM_DEF(job)
 	//Setup new player list and get the jobs list
 	JobDebug("Running DO, allow_all = [allow_all], pure = [pure]")
 	run_divide_occupation_pure = pure
-	SEND_SIGNAL(src, COMSIG_OCCUPATIONS_DIVIDED, pure, allow_all)
 
 	//Get the players who are ready
 	for(var/i in GLOB.new_player_list)
@@ -798,7 +802,7 @@ SUBSYSTEM_DEF(job)
 	)
 
 /obj/item/paper/paperslip/corporate/fluff/spare_id_safe_code
-	name = "Free Union of Vulken-Approved Spare ID Safe Code"
+	name = "Nanotrasen-Approved Spare ID Safe Code"
 	desc = "Proof that you have been approved for Captaincy, with all its glory and all its horror."
 
 /obj/item/paper/paperslip/corporate/fluff/spare_id_safe_code/Initialize(mapload)

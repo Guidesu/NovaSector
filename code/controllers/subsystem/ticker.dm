@@ -595,7 +595,7 @@ SUBSYSTEM_DEF(ticker)
 
 /datum/controller/subsystem/ticker/proc/send_news_report()
 	var/news_message
-	var/news_source = "Free Union of Vulken News Network"
+	var/news_source = "Nanotrasen News Network"
 	var/decoded_station_name = html_decode(CONFIG_GET(string/cross_comms_name)) //decode station_name to avoid minor_announce double encode // NOVA EDIT: CROSS COMMS CONFIG
 
 	switch(news_report)

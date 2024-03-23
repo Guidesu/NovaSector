@@ -22,7 +22,7 @@
 /// Standard size (ie: normal runechat) - Size options: 6pt 12pt 18pt.
 #define MAPTEXT_GRAND9K(text) {"<span style='font-family: \"Grand9K Pixel\"; font-size: 6pt; -dm-text-outline: 1px black'>[##text]</span>"}
 
-/// Small size. (ie: context subtooltips, psionic delays) - Size options: 12pt 24pt.
+/// Small size. (ie: context subtooltips, spell delays) - Size options: 12pt 24pt.
 #define MAPTEXT_TINY_UNICODE(text) {"<span style='font-family: \"TinyUnicode\"; font-size: 12pt; line-height: 0.75; -dm-text-outline: 1px black'>[##text]</span>"}
 
 /// Smallest size. (ie: whisper runechat) - Size options: 6pt 12pt 18pt.
@@ -57,6 +57,12 @@
 
 /// Removes everything enclose in < and > inclusive of the bracket, and limits the length of the message.
 #define STRIP_HTML_FULL(text, limit) (GLOB.html_tags.Replace(copytext(text, 1, limit), ""))
+
+/**
+ * stuff like `copytext(input, length(input))` will trim the last character of the input,
+ * because DM does it so it copies until the char BEFORE the `end` arg, so we need to bump `end` by 1 in these cases.
+ */
+#define PREVENT_CHARACTER_TRIM_LOSS(integer) (integer + 1)
 
 /// Folder directory for strings
 #define STRING_DIRECTORY "strings"
