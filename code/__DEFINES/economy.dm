@@ -28,7 +28,7 @@
 #define DEPARTMENT_DISCOUNT 0.2
 
 #define ACCOUNT_CIV "CIV"
-#define ACCOUNT_CIV_NAME "Civil Budget"
+#define ACCOUNT_CIV_NAME "Personal Budget"
 #define ACCOUNT_ENG "ENG"
 #define ACCOUNT_ENG_NAME "Engineering Budget"
 #define ACCOUNT_SCI "SCI"
@@ -38,7 +38,7 @@
 #define ACCOUNT_SRV "SRV"
 #define ACCOUNT_SRV_NAME "Service Budget"
 #define ACCOUNT_CAR "CAR"
-#define ACCOUNT_CAR_NAME "Cargo Budget"
+#define ACCOUNT_CAR_NAME "Personal Budget"
 #define ACCOUNT_SEC "SEC"
 #define ACCOUNT_SEC_NAME "Defense Budget"
 
@@ -76,7 +76,7 @@
 #define MARKET_TREND_DOWNWARD -1
 #define MARKET_TREND_STABLE 0
 
-#define MARKET_EVENT_PROBABILITY 8 //Probability of a market event firing, in percent. Fires once per material, every stock market tick.
+#define MARKET_EVENT_PROBABILITY 1 //Probability of a market event firing, in percent. Fires once per material, every 20 seconds.
 
 #define MARKET_PROFIT_MODIFIER 0.8 //We don't make every sale a 1-1 of the actual buy price value, like with real life taxes and to encourage more smart trades
 

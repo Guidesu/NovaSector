@@ -62,7 +62,7 @@
 	template_access = list(ACCESS_CAPTAIN, ACCESS_CHANGE_IDS)
 
 /datum/id_trim/job/nanotrasen_consultant
-	assignment = "Free Union of Vulken Consultant"
+	assignment = "Nanotrasen Consultant"
 	trim_state = "trim_centcom"
 	department_color = COLOR_GREEN
 	subdepartment_color = COLOR_GREEN

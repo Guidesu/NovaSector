@@ -24,7 +24,7 @@
 
 /obj/item/clothing/under/syndicate/tacticool //Overwrites the 'fake' one. Zero armor, sensors, and default blue. More Balanced to make station-available.
 	name = "tacticool turtleneck"
-	desc = "A snug turtleneck, in fabulous Free Union of Vulken-blue. Just looking at it makes you want to buy a NT-certifed coffee, go into the office, and -work-."
+	desc = "A snug turtleneck, in fabulous Nanotrasen-blue. Just looking at it makes you want to buy a NT-certifed coffee, go into the office, and -work-."
 	icon = 'modular_nova/master_files/icons/obj/clothing/under/syndicate.dmi' //Since its an overwrite it needs new icon linking. Woe.
 	worn_icon = 'modular_nova/master_files/icons/mob/clothing/under/syndicate.dmi'
 	icon_state = "tactifool_blue"
@@ -47,7 +47,7 @@
 
 /obj/item/clothing/under/syndicate/tacticool/skirt //Overwrites the 'fake' one. Zero armor, sensors, and default blue. More Balanced to make station-available.
 	name = "tacticool skirtleneck"
-	desc = "A snug skirtleneck, in fabulous Free Union of Vulken-blue. Just looking at it makes you want to buy a NT-certifed coffee, go into the office, and -work-."
+	desc = "A snug skirtleneck, in fabulous Nanotrasen-blue. Just looking at it makes you want to buy a NT-certifed coffee, go into the office, and -work-."
 	icon_state = "tactifool_blue_skirt"
 	armor_type = /datum/armor/clothing_under/none
 	body_parts_covered = CHEST|GROIN|ARMS
@@ -68,6 +68,34 @@
 	name = "syndicate baseball tee"
 	desc = "Aaand the Syndicate Snakes are up to bat, ready for one of their signature nuclear home-runs! Lets show these corpos a good time." //NT pitches their plasma/bluespace(something)
 	icon_state = "syndicate_baseball"
+
+/obj/item/clothing/under/syndicate/nova/overalls/unarmoured
+	name = "tacticool utility overalls turtleneck"
+	desc = "A pair of spiffy overalls with a turtleneck underneath, useful for both engineering and botanical work."
+	icon_state = "syndicate_overalls"
+	armor_type = /datum/armor/clothing_under/none
+	has_sensor = HAS_SENSORS
+	can_adjust = TRUE
+
+/obj/item/clothing/under/syndicate/nova/overalls/unarmoured/skirt
+	name = "tacticool utility overalls skirtleneck"
+	desc = "A pair of spiffy overalls with a turtleneck underneath, this one is a skirt instead, breezy."
+	icon_state = "syndicate_overallskirt"
+	female_sprite_flags = FEMALE_UNIFORM_TOP_ONLY
+	dying_key = DYE_REGISTRY_JUMPSKIRT
+	supports_variations_flags = CLOTHING_DIGITIGRADE_VARIATION_NO_NEW_ICON
+
+/obj/item/clothing/mask/gas/sechailer/half_mask
+	name = "tacticool neck gaiter"
+	desc = "A black techwear mask. Its low-profile design contrasts with the edge. Has a small respirator to be used with internals."
+	actions_types = list(/datum/action/item_action/adjust)
+	alternate_worn_layer = BODY_FRONT_UNDER_CLOTHES
+	icon_state = "half_mask"
+	icon = 'modular_nova/master_files/icons/obj/clothing/masks.dmi'
+	worn_icon = 'modular_nova/master_files/icons/mob/clothing/mask.dmi'
+	unique_death = 'modular_nova/master_files/sound/effects/hacked.ogg'
+	voice_filter = null
+	use_radio_beeps_tts = FALSE
 
 /*
 *	TACTICAL (Real)

@@ -131,6 +131,7 @@
 #define SPECIES_VOX_PRIMALIS "vox_primalis"
 #define SPECIES_VULP "vulpkanin"
 #define SPECIES_XENO "xeno"
+#define SPECIES_AKHEMAU "akhemau"
 #define SPECIES_GHOUL "ghoul"
 #define SPECIES_TESHARI "teshari"
 #define SPECIES_HEMOPHAGE "hemophage"

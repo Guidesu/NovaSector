@@ -133,13 +133,13 @@
 
 /obj/item/storage/backpack/messenger/head_of_personnel
 	name = "head of personnel's messenger bag"
-	desc = "A exclusive messenger bag issued to Free Union of Vulken's finest second, with great storage space for all that paperwork you have planned."
+	desc = "A exclusive messenger bag issued to Nanotrasen's finest second, with great storage space for all that paperwork you have planned."
 	icon_state = "messenger_hop"
 	inhand_icon_state = "messenger_hop"
 
 /obj/item/storage/backpack/messenger/blueshield
 	name = "blueshield's messenger bag'"
-	desc = "A robust messenger bag issued to Free Union of Vulken's finest guard dogs, with extra TACTICAL POCKETS. Whatever that even means."
+	desc = "A robust messenger bag issued to Nanotrasen's finest guard dogs, with extra TACTICAL POCKETS. Whatever that even means."
 	icon_state = "messenger_blueshield"
 	inhand_icon_state = "messenger_blueshield"
 

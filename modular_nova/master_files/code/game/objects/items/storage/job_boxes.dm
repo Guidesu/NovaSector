@@ -1,4 +1,4 @@
-// Free Union of Vulken survival box
+// Interdyne survival box
 /obj/item/storage/box/survival/interdyne
 	name = "operation-ready survival box"
 	desc = "A box with the essentials of your operation. This one is labelled to contain an extended-capacity tank."

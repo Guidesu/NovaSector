@@ -18,7 +18,7 @@
 	<center><font size=3>Conditions of Employment</center><font size=2>\
 	<br><hr><br>\
 	This Agreement is made and entered into as of the date of last signature below, by and between [employee_name] (hereafter referred to as the <i><u>employee</u></i>),\
-	and Free Union of Vulken (hereafter referred to as the <i><u>employer</u></i>).\
+	and Nanotrasen (hereafter referred to as the <i><u>employer</u></i>).\
 	<br>\
 	<br><font size=3>WITNESSETH:<font size=2>\
 	<br>\

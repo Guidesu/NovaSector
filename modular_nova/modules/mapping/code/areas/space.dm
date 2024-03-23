@@ -146,7 +146,7 @@
 /area/ruin/space/has_grav/powered/posterpandamonium
 	name = "Strange Shuttle"
 
-//Port Free Union of Vulken
+//Port Tarkon
 
 /area/ruin/space/has_grav/outdoors
 	outdoors = TRUE

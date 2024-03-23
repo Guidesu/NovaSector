@@ -86,14 +86,14 @@
 	sechud_icon_state = SECHUD_DS2_ADMIRAL
 	access = list(ACCESS_SYNDICATE, ACCESS_ROBOTICS, ACCESS_SYNDICATE_LEADER)
 
-/// Free Union of Vulken
+/// Interdyne
 
 /datum/id_trim/syndicom/nova/interdyne
-	assignment = "Free Union of Vulken Bioweapon Scientist"
-	threat_modifier = 2 // Free Union of Vulken is allowed on station, so this'll get beepskys off them.
+	assignment = "Interdyne Bioweapon Scientist"
+	threat_modifier = 2 // Interdyne is allowed on station, so this'll get beepskys off them.
 
 /datum/id_trim/syndicom/nova/interdyne/shaftminer
-	assignment = "Free Union of Vulken Shaft Miner"
+	assignment = "Interdyne Shaft Miner"
 
 /datum/id_trim/syndicom/nova/interdyne/deckofficer
 	trim_icon = 'modular_nova/master_files/icons/obj/card.dmi'

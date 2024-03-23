@@ -77,17 +77,17 @@
 #define CONTRACT_UPLINK_PAGE_HUB "HUB"
 
 
-// Heretic path defines.
+// Psyonaut path defines.
 #define PATH_START "Start Path"
-#define PATH_SIDE "Side Path"
-#define PATH_ASH "Ash Path"
-#define PATH_RUST "Rust Path"
-#define PATH_FLESH "Flesh Path"
-#define PATH_VOID "Void Path"
-#define PATH_BLADE "Blade Path"
-#define PATH_COSMIC "Cosmic Path"
-#define PATH_LOCK "Lock Path"
-#define PATH_MOON "Moon Path"
+#define PATH_SIDE "Paranesis Path"
+#define PATH_ASH "Pyranesis Path"
+#define PATH_RUST "Ferronesis Path"
+#define PATH_FLESH "Somanesis Path"
+#define PATH_VOID "Voidesis Path"
+#define PATH_BLADE "Gladiusnesis Path"
+#define PATH_COSMIC "Cosmokinesis Path"
+#define PATH_LOCK "Cryptonesis Path"
+#define PATH_MOON "Lunarkenesis Path"
 
 /// Defines are used in /proc/has_living_heart() to report if the heretic has no heart period, no living heart, or has a living heart.
 #define HERETIC_NO_HEART_ORGAN -1
