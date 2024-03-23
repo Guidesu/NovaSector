@@ -1,21 +1,20 @@
-/mob/living/carbon/slip(knockdown_amount, obj/O, lube, paralyze, force_drop)
-	if(movement_type & FLYING)
+/mob/living/carbon/slip(knockdown_amount, obj/slipped_on, lube_flags, paralyze, force_drop = FALSE)
+	if(movement_type & MOVETYPES_NOT_TOUCHING_GROUND)
 		return FALSE
-	if(!(lube&SLIDE_ICE))
-		log_combat(src, (O ? O : get_turf(src)), "slipped on the", null, ((lube & SLIDE) ? "(LUBE)" : null))
+	if(!(lube_flags & SLIDE_ICE))
+		log_combat(src, (slipped_on || get_turf(src)), "slipped on the", null, ((lube_flags & SLIDE) ? "(SLIDING)" : null))
 	..()
-	return loc.handle_slip(src, knockdown_amount, O, lube, paralyze, force_drop)
+	return loc.handle_slip(src, knockdown_amount, slipped_on, lube_flags, paralyze, force_drop)
 
 /mob/living/carbon/Move(NewLoc, direct)
 	. = ..()
-	if(!(usr == src))
-		return
-
 	if(. && !(movement_type & FLOATING)) //floating is easy
 		if(HAS_TRAIT(src, TRAIT_NOHUNGER))
 			set_nutrition(NUTRITION_LEVEL_FED - 1) //just less than feeling vigorous
 		else if(nutrition && stat != DEAD)
-			adjust_nutrition(-(m_intent == MOVE_INTENT_WALK ? HUNGER_LOSS_WALK : HUNGER_LOSS_RUN))
+			adjust_nutrition(-(HUNGER_FACTOR/10))
+			if(move_intent == MOVE_INTENT_RUN)
+				adjust_nutrition(-(HUNGER_FACTOR/10))
 
 
 /mob/living/carbon/set_usable_legs(new_value)
@@ -49,8 +48,7 @@
 	. = ..()
 	if(movement_type & (FLYING | FLOATING) && !(old_movement_type & (FLYING | FLOATING)))
 		remove_movespeed_modifier(/datum/movespeed_modifier/limbless)
-		REMOVE_TRAIT(src, TRAIT_FLOORED, LACKING_LOCOMOTION_APPENDAGES_TRAIT)
-		REMOVE_TRAIT(src, TRAIT_IMMOBILIZED, LACKING_LOCOMOTION_APPENDAGES_TRAIT)
+		remove_traits(list(TRAIT_FLOORED, TRAIT_IMMOBILIZED), LACKING_LOCOMOTION_APPENDAGES_TRAIT)
 
 /mob/living/carbon/on_movement_type_flag_disabled(datum/source, flag, old_movement_type)
 	. = ..()
