@@ -42,7 +42,7 @@
 	if(!ismob(target))
 		return COMPONENT_OBJ_CANCEL_CHARGE
 	var/mob/living/user = target
-	if(HAS_SILICON_ACCESS(user) || isdrone(user)) //They have evolved beyond the need for mere credits
+	if(issilicon(user) || isdrone(user) || isAdminGhostAI(user)) //They have evolved beyond the need for mere credits
 		return
 	var/obj/item/card/id/card
 	if(istype(user))
@@ -164,7 +164,7 @@
 				to_chat(user, span_warning("You do not possess the funds to purchase that."))
 		atom_parent.balloon_alert(user, "needs [total_cost] credit\s!")
 		return FALSE
-	target_acc.transfer_money(idcard.registered_account, total_cost, "Nanotrasen: Usage of Corporate Machinery")
+	target_acc.transfer_money(idcard.registered_account, total_cost, "Free Union of Vulken: Usage of Corporate Machinery")
 	log_econ("[total_cost] credits were spent on [parent] by [user] via [idcard.registered_account.account_holder]'s card.")
 	idcard.registered_account.bank_card_talk("[total_cost] credits deducted from your account.")
 	playsound(src, 'sound/effects/cashregister.ogg', 20, TRUE)

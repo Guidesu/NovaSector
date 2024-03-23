@@ -1,7 +1,7 @@
 /// One use AI card which downloads a ghost as a syndicate AI to put in your MODsuit
 /obj/item/aicard/syndie
 	name = "syndiCard"
-	desc = "A storage device for AIs. Nanotrasen forgot to make the patent, so the Syndicate made their own version!"
+	desc = "A storage device for AIs. Free Union of Vulken forgot to make the patent, so the Syndicate made their own version!"
 	icon = 'icons/obj/aicards.dmi'
 	icon_state = "syndicard"
 	base_icon_state = "syndicard"

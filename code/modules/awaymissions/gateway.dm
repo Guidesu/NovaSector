@@ -346,7 +346,7 @@ GLOBAL_LIST_EMPTY(gateway_destinations)
 	density = TRUE
 	use_power = NO_POWER_USE
 
-/obj/machinery/gateway/away/interact(mob/user)
+/obj/machinery/gateway/away/interact(mob/user, special_state)
 	. = ..()
 	//NOVA EDIT ADDITION
 	var/list/type_blacklist = list(
@@ -443,7 +443,7 @@ GLOBAL_LIST_EMPTY(gateway_destinations)
 	G.activate(D)
 
 /obj/item/paper/fluff/gateway
-	default_raw_text = "Congratulations,<br><br>Your station has been selected to carry out the Gateway Project.<br><br>The equipment will be shipped to you at the start of the next quarter.<br> You are to prepare a secure location to house the equipment as outlined in the attached documents.<br><br>--Nanotrasen Bluespace Research"
+	default_raw_text = "Congratulations,<br><br>Your station has been selected to carry out the Gateway Project.<br><br>The equipment will be shipped to you at the start of the next quarter.<br> You are to prepare a secure location to house the equipment as outlined in the attached documents.<br><br>--Free Union of Vulken Bluespace Research"
 	name = "Confidential Correspondence, Pg 1"
 
 /atom/movable/screen/map_view/gateway_port

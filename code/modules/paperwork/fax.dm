@@ -1,4 +1,4 @@
-GLOBAL_VAR_INIT(nt_fax_department, pick("NT HR Department", "NT Legal Department", "NT Complaint Department", "NT Customer Relations", "Nanotrasen Tech Support", "NT Internal Affairs Dept"))
+GLOBAL_VAR_INIT(nt_fax_department, pick("NT HR Department", "NT Legal Department", "NT Complaint Department", "NT Customer Relations", "Free Union of Vulken Tech Support", "NT Internal Affairs Dept"))
 
 /obj/machinery/fax
 	name = "Fax Machine"
@@ -55,15 +55,6 @@ GLOBAL_VAR_INIT(nt_fax_department, pick("NT HR Department", "NT Legal Department
 		nanotrasen = list(fax_name = "NT HR Department", fax_id = "central_command", color = "teal", emag_needed = FALSE),
 		syndicate = list(fax_name = "Sabotage Department", fax_id = "syndicate", color = "red", emag_needed = TRUE),
 	)
-
-/obj/machinery/fax/auto_name
-	name = "Auto-naming Fax Machine"
-
-/obj/machinery/fax/auto_name/Initialize(mapload)
-	var/area/current_area = get_area(src)
-	name = "[current_area.name]'s Fax Machine"
-	fax_name = "[current_area.name]"
-	return ..()
 
 /obj/machinery/fax/Initialize(mapload)
 	. = ..()

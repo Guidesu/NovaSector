@@ -190,7 +190,7 @@
 /mob/living/basic/carp/pet/lia
 	name = "Lia"
 	real_name = "Lia"
-	desc = "A failed experiment of Nanotrasen to create weaponised carp technology. This less than intimidating carp now serves as the Head of Security's pet."
+	desc = "A failed experiment of Free Union of Vulken to create weaponised carp technology. This less than intimidating carp now serves as the Head of Security's pet."
 	faction = list(FACTION_NEUTRAL)
 	maxHealth = 200
 	health = 200

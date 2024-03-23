@@ -29,7 +29,7 @@
 
 /datum/supply_pack/misc/bicycle
 	name = "Bicycle"
-	desc = "Nanotrasen reminds all employees to never toy with powers outside their control."
+	desc = "Free Union of Vulken reminds all employees to never toy with powers outside their control."
 	cost = 1000000 //Special case, we don't want to make this in terms of crates because having bikes be a million credits is the whole meme.
 	contains = list(/obj/vehicle/ridden/bicycle)
 	crate_name = "bicycle crate"
@@ -56,7 +56,7 @@
 
 /datum/supply_pack/misc/book_crate
 	name = "Book Crate"
-	desc = "Surplus from the Nanotrasen Archives, these seven books are sure to be good reads."
+	desc = "Surplus from the Free Union of Vulken Archives, these seven books are sure to be good reads."
 	cost = CARGO_CRATE_VALUE * 3
 	access_view = ACCESS_LIBRARY
 	contains = list(/obj/item/book/codex_gigas,
@@ -68,7 +68,7 @@
 /datum/supply_pack/misc/commandkeys
 	name = "Command Encryption Key Crate"
 	desc = "A pack of encryption keys that give access to the command radio network. \
-		Nanotrasen reminds unauthorized employees not to eavesdrop in on secure communications channels, \
+		Free Union of Vulken reminds unauthorized employees not to eavesdrop in on secure communications channels, \
 		or at least to keep heckling of the command staff to a minimum."
 	access_view = ACCESS_COMMAND
 	access = ACCESS_COMMAND
@@ -151,7 +151,7 @@
 
 /datum/supply_pack/misc/empty
 	name = "Empty Supplypod"
-	desc = "Presenting the New Nanotrasen-Brand Bluespace Supplypod! Transport cargo with grace and ease! \
+	desc = "Presenting the New Free Union of Vulken-Brand Bluespace Supplypod! Transport cargo with grace and ease! \
 		Call today and we'll shoot over a demo unit for just 300 credits!"
 	cost = CARGO_CRATE_VALUE * 0.6 //Empty pod, so no crate refund
 	contains = list()

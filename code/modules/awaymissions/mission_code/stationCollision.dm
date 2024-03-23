@@ -42,7 +42,7 @@
 /obj/item/gun/energy/laser/retro/sc_retro
 	name ="retro laser"
 	icon_state = "retro"
-	desc = "An older model of the basic lasergun, no longer used by Nanotrasen's security or military forces."
+	desc = "An older model of the basic lasergun, no longer used by Free Union of Vulken's security or military forces."
 	clumsy_check = FALSE //No sense in having a harmless gun blow up in the clowns face
 
 //Syndicate sub-machine guns.

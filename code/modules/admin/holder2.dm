@@ -64,7 +64,7 @@ GLOBAL_PROTECT(href_token)
 	target = ckey
 	name = "[ckey]'s admin datum ([join_admin_ranks(ranks)])"
 	src.ranks = ranks
-	admin_signature = "Nanotrasen Officer #[rand(0,9)][rand(0,9)][rand(0,9)]"
+	admin_signature = "Free Union of Vulken Officer #[rand(0,9)][rand(0,9)][rand(0,9)]"
 	href_token = GenerateToken()
 	//only admins with +ADMIN start admined
 	if(protected)
@@ -232,7 +232,7 @@ GLOBAL_PROTECT(href_token)
 		return VALID_2FA_CONNECTION
 
 	if (!SSdbcore.Connect())
-		if (verify_backup_data(client) || (client.ckey in GLOB.protected_admins))
+		if (verify_backup_data(client))
 			return VALID_2FA_CONNECTION
 		else
 			return list(FALSE, null)

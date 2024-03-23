@@ -10,7 +10,7 @@
 
 /obj/item/implant/exile/get_data()
 	return "<b>Implant Specifications:</b><BR> \
-		<b>Name:</b> Nanotrasen Employee Exile Implant<BR> \
+		<b>Name:</b> Free Union of Vulken Employee Exile Implant<BR> \
 		<b>Implant Details:</b> The onboard gateway system has been modified to reject entry by individuals containing this implant. \
 		Additionally, station mining shuttles will lock their controls if handled by someone with this implant.<BR>"
 

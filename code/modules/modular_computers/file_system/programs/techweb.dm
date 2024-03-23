@@ -1,6 +1,6 @@
 /datum/computer_file/program/science
 	filename = "experi_track"
-	filedesc = "Nanotrasen Science Hub"
+	filedesc = "Free Union of Vulken Science Hub"
 	downloader_category = PROGRAM_CATEGORY_SCIENCE
 	program_open_overlay = "research"
 	extended_desc = "Connect to the internal science server in order to assist in station research efforts."
@@ -201,7 +201,7 @@
 		if(stored_research.research_node_id(id))
 			computer.say("Successfully researched [tech_node.display_name].")
 			var/logname = "Unknown"
-			if(HAS_AI_ACCESS(user))
+			if(isAI(user))
 				logname = "AI [user.name]"
 			if(iscyborg(user))
 				logname = "CYBORG [user.name]"

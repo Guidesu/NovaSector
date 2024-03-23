@@ -39,7 +39,6 @@
 	. = ..()
 	if(voice_activated)
 		become_hearing_sensitive()
-	AddElement(/datum/element/empprotection, EMP_PROTECT_ALL)
 
 /obj/machinery/door/password/get_save_vars()
 	return ..() + NAMEOF(src, password)
@@ -85,6 +84,9 @@
 	if(guess == password)
 		return TRUE
 	return FALSE
+
+/obj/machinery/door/password/emp_act(severity)
+	return
 
 /obj/machinery/door/password/ex_act(severity, target)
 	return FALSE

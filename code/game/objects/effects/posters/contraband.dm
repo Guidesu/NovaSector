@@ -6,7 +6,7 @@
 
 /obj/structure/sign/poster/contraband
 	poster_item_name = "contraband poster"
-	poster_item_desc = "This poster comes with its own automatic adhesive mechanism, for easy pinning to any vertical surface. Its vulgar themes have marked it as contraband aboard Nanotrasen space facilities."
+	poster_item_desc = "This poster comes with its own automatic adhesive mechanism, for easy pinning to any vertical surface. Its vulgar themes have marked it as contraband aboard Free Union of Vulken space facilities."
 	poster_item_icon_state = "rolled_poster"
 
 /obj/structure/sign/poster/contraband/random
@@ -75,21 +75,21 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/grey_tide, 32)
 
 /obj/structure/sign/poster/contraband/missing_gloves
 	name = "Missing Gloves"
-	desc = "This poster references the uproar that followed Nanotrasen's financial cuts toward insulated-glove purchases."
+	desc = "This poster references the uproar that followed Free Union of Vulken's financial cuts toward insulated-glove purchases."
 	icon_state = "missing_gloves"
 
 MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/missing_gloves, 32)
 
 /obj/structure/sign/poster/contraband/hacking_guide
 	name = "Hacking Guide"
-	desc = "This poster details the internal workings of the common Nanotrasen airlock. Sadly, it appears out of date."
+	desc = "This poster details the internal workings of the common Free Union of Vulken airlock. Sadly, it appears out of date."
 	icon_state = "hacking_guide"
 
 MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/hacking_guide, 32)
 
 /obj/structure/sign/poster/contraband/rip_badger
 	name = "RIP Badger"
-	desc = "This seditious poster references Nanotrasen's genocide of a space station full of badgers."
+	desc = "This seditious poster references Free Union of Vulken's genocide of a space station full of badgers."
 	icon_state = "rip_badger"
 
 MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/rip_badger, 32)
@@ -124,7 +124,7 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/tools, 32)
 
 /obj/structure/sign/poster/contraband/power
 	name = "Power"
-	desc = "A poster that positions the seat of power outside Nanotrasen."
+	desc = "A poster that positions the seat of power outside Free Union of Vulken."
 	icon_state = "power"
 
 MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/power, 32)
@@ -173,7 +173,7 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/kss13, 32)
 
 /obj/structure/sign/poster/contraband/rebels_unite
 	name = "Rebels Unite"
-	desc = "A poster urging the viewer to rebel against Nanotrasen."
+	desc = "A poster urging the viewer to rebel against Free Union of Vulken."
 	icon_state = "rebels_unite"
 
 MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/rebels_unite, 32)
@@ -386,8 +386,8 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/donk_co, 32)
 MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/cybersun_six_hundred, 32)
 
 /obj/structure/sign/poster/contraband/interdyne_gene_clinics
-	name = "Interdyne Pharmaceutics: For the Health of Humankind"
-	desc = "An advertisement for Interdyne Pharmaceutics' GeneClean clinics. 'Become the master of your own body!'"
+	name = "Free Union of Vulken Pharmaceutics: For the Health of Humankind"
+	desc = "An advertisement for Free Union of Vulken Pharmaceutics' GeneClean clinics. 'Become the master of your own body!'"
 	icon_state = "interdyne_gene_clinics"
 
 MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/interdyne_gene_clinics, 32)
@@ -551,7 +551,7 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/thunderdrome, 
 
 /obj/structure/sign/poster/contraband/rush_propaganda
 	name = "A New Life"
-	desc = "An old poster from around the time of the First Spinward Rush. It depicts a view of wide, unspoiled lands, ready for Humanity's Manifest Destiny."
+	desc = "An old poster from around the time of the First Outerfringe Rush. It depicts a view of wide, unspoiled lands, ready for Humanity's Manifest Destiny."
 	icon_state = "rush_propaganda"
 
 /obj/structure/sign/poster/contraband/rush_propaganda/examine_more(mob/user)
@@ -625,35 +625,3 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/blood_geometer
 	icon_state = "singletank_bomb"
 
 MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/singletank_bomb, 32)
-
-///a special poster meant to fool people into thinking this is a bombable wall at a glance.
-/obj/structure/sign/poster/contraband/fake_bombable
-	name = "fake bombable poster"
-	desc = "We do a little trolling."
-	icon_state = "fake_bombable"
-	never_random = TRUE
-
-/obj/structure/sign/poster/contraband/fake_bombable/Initialize(mapload)
-	. = ..()
-	var/turf/our_wall = get_turf_pixel(src)
-	name = our_wall.name
-
-/obj/structure/sign/poster/contraband/fake_bombable/examine(mob/user)
-	var/turf/our_wall = get_turf_pixel(src)
-	. = our_wall.examine(user)
-	. += span_notice("It seems to be slightly cracked...")
-
-/obj/structure/sign/poster/contraband/fake_bombable/ex_act(severity, target)
-	addtimer(CALLBACK(src, PROC_REF(fall_off_wall)), 2.5 SECONDS)
-	return FALSE
-
-/obj/structure/sign/poster/contraband/fake_bombable/proc/fall_off_wall()
-	if(QDELETED(src) || !isturf(loc))
-		return
-	var/turf/our_wall = get_turf_pixel(src)
-	our_wall.balloon_alert_to_viewers("it was a ruse!")
-	roll_and_drop(loc)
-	playsound(loc, 'sound/items/handling/paper_drop.ogg', 50, TRUE)
-
-
-MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/fake_bombable, 32)

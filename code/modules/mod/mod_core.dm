@@ -288,7 +288,7 @@
 /obj/item/mod/core/plasma
 	name = "MOD plasma core"
 	icon_state = "mod-core-plasma"
-	desc = "Nanotrasen's attempt at capitalizing on their plasma research. These plasma cores are refueled \
+	desc = "Free Union of Vulken's attempt at capitalizing on their plasma research. These plasma cores are refueled \
 		through plasma fuel, allowing for easy continued use by their mining squads."
 	/// How much charge we can store.
 	var/maxcharge = 10000
@@ -373,8 +373,7 @@
 		The wires coming out of it could be hooked into a MODsuit."
 	light_system = OVERLAY_LIGHT
 	light_color = "#cc00cc"
-	light_range = 2.5
-	light_power = 1.5
+	light_range = 2
 	// Slightly better than the normal plasma core.
 	// Not super sure if this should just be the same, but will see.
 	maxcharge = 15000

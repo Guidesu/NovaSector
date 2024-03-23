@@ -166,8 +166,8 @@
 /obj/machinery/microwave/examine(mob/user)
 	. = ..()
 	if(vampire_charging_capable)
-		. += span_info("This model features Wave™: a Nanotrasen exclusive. Our latest and greatest, Wave™ allows your PDA to be charged wirelessly through microwave frequencies! You can Wave-charge your device by placing it inside and selecting the charge mode.")
-		. += span_info("Because nothing says 'future' like charging your PDA while overcooking your leftovers. Nanotrasen Wave™ - Multitasking, redefined.")
+		. += span_info("This model features Wave™: a Free Union of Vulken exclusive. Our latest and greatest, Wave™ allows your PDA to be charged wirelessly through microwave frequencies! You can Wave-charge your device by placing it inside and selecting the charge mode.")
+		. += span_info("Because nothing says 'future' like charging your PDA while overcooking your leftovers. Free Union of Vulken Wave™ - Multitasking, redefined.")
 
 	if(cell_powered)
 		. += span_notice("This model is wireless, powered by portable cells. [isnull(cell) ? "The cell slot is empty." : "[EXAMINE_HINT("Ctrl-click")] to remove the power cell."]")
@@ -394,7 +394,7 @@
 		var/swapped = FALSE
 		if(!isnull(cell))
 			cell.forceMove(drop_location())
-			if(!HAS_SILICON_ACCESS(user) && Adjacent(user))
+			if(!issilicon(user) && Adjacent(user))
 				user.put_in_hands(cell)
 			cell = null
 			swapped = TRUE
@@ -481,7 +481,7 @@
 		vampire_charging_enabled = !vampire_charging_enabled
 		balloon_alert(user, "set to [vampire_charging_enabled ? "charge" : "cook"]")
 		playsound(src, 'sound/machines/twobeep_high.ogg', 50, FALSE)
-		if(HAS_SILICON_ACCESS(user))
+		if(issilicon(user))
 			visible_message(span_notice("[user] sets \the [src] to [vampire_charging_enabled ? "charge" : "cook"]."), blind_message = span_notice("You hear \the [src] make an informative beep!"))
 
 /obj/machinery/microwave/CtrlClick(mob/user)
@@ -500,22 +500,22 @@
 		return
 	if(operating || panel_open || !user.can_perform_action(src, ALLOW_SILICON_REACH))
 		return
-	if(HAS_AI_ACCESS(user) && (machine_stat & NOPOWER))
+	if(isAI(user) && (machine_stat & NOPOWER))
 		return
 
 	if(!length(ingredients))
-		if(HAS_AI_ACCESS(user))
+		if(isAI(user))
 			examine(user)
 		else
 			balloon_alert(user, "it's empty!")
 		return
 
-	var/choice = show_radial_menu(user, src, HAS_AI_ACCESS(user) ? ai_radial_options : radial_options, require_near = !HAS_SILICON_ACCESS(user))
+	var/choice = show_radial_menu(user, src, isAI(user) ? ai_radial_options : radial_options, require_near = !issilicon(user))
 
 	// post choice verification
 	if(operating || panel_open || (!vampire_charging_capable && !anchored) || !user.can_perform_action(src, ALLOW_SILICON_REACH))
 		return
-	if(HAS_AI_ACCESS(user) && (machine_stat & NOPOWER))
+	if(isAI(user) && (machine_stat & NOPOWER))
 		return
 
 	switch(choice)

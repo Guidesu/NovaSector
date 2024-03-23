@@ -54,8 +54,6 @@
 	resistance_flags = FIRE_PROOF
 	light_system = OVERLAY_LIGHT_DIRECTIONAL
 	light_range = 4
-	light_power = 0.8
-	light_color = "#ffcc99"
 	light_on = FALSE
 	var/helmet_on = FALSE
 	var/smile = FALSE
@@ -366,7 +364,7 @@
 
 /obj/item/clothing/head/helmet/space/plasmaman/curator
 	name = "curator's plasma envirosuit helmet"
-	desc = "A slight modification on a traditional voidsuit helmet, this helmet was Nanotrasen's first solution to the *logistical problems* that come with employing plasmamen. Despite their limitations, these helmets still see use by historians and old-school plasmamen alike."
+	desc = "A slight modification on a traditional voidsuit helmet, this helmet was Free Union of Vulken's first solution to the *logistical problems* that come with employing plasmamen. Despite their limitations, these helmets still see use by historians and old-school plasmamen alike."
 	icon_state = "prototype_envirohelm"
 	inhand_icon_state = "void_helmet"
 	actions_types = list(/datum/action/item_action/toggle_welding_screen)

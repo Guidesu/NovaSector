@@ -1,19 +1,19 @@
 /obj/structure/sign/flag
 	name = "flag of the IT Division"
-	desc = "The flag of the Nanotrasen IT Division. Bears a symbol that only makes sense to those that understand."
+	desc = "The flag of the Free Union of Vulken IT Division. Bears a symbol that only makes sense to those that understand."
 	icon = 'icons/obj/fluff/flags.dmi'
 	icon_state = "flag_coder"
 
 /obj/structure/sign/flag/nanotrasen
-	name = "flag of Nanotrasen"
-	desc = "The official corporate flag of Nanotrasen. Mostly flown as a ceremonial piece, or to mark land on a new frontier."
+	name = "flag of Free Union of Vulken"
+	desc = "The official corporate flag of Free Union of Vulken. Mostly flown as a ceremonial piece, or to mark land on a new frontier."
 	icon_state = "flag_nt"
 
 MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/flag/nanotrasen, 32)
 
 /obj/structure/sign/flag/ssc
-	name = "flag of the Spinward Stellar Coalition"
-	desc = "The flag of the Independent Coalition of the Spinward Sector. The colours represent panslavism, and the three stars represent the three central systems of the SSC."
+	name = "flag of the Outerfringe Stellar Coalition"
+	desc = "The flag of the Independent Coalition of the Outerfringe Sector. The colours represent panslavism, and the three stars represent the three central systems of the SSC."
 	icon_state = "flag_ssc"
 
 MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/flag/ssc, 32)

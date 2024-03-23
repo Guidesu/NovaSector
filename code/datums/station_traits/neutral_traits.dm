@@ -29,7 +29,6 @@
 /datum/station_trait/unique_ai
 	name = "Unique AI"
 	trait_type = STATION_TRAIT_NEUTRAL
-	trait_flags = parent_type::trait_flags | STATION_TRAIT_REQUIRES_AI
 	weight = 5
 	show_in_report = TRUE
 	report_message = "For experimental purposes, this station AI might show divergence from default lawset. Do not meddle with this experiment, we've removed \
@@ -154,7 +153,7 @@
 	trait_type = STATION_TRAIT_NEUTRAL
 	weight = 2
 	show_in_report = TRUE
-	report_message = "We here at Nanotrasen would all like to wish Employee Name a very happy birthday"
+	report_message = "We here at Free Union of Vulken would all like to wish Employee Name a very happy birthday"
 	trait_to_give = STATION_TRAIT_BIRTHDAY
 	blacklist = list(/datum/station_trait/announcement_intern, /datum/station_trait/announcement_medbot) //Overiding the annoucer hides the birthday person in the annoucement message.
 	///Variable that stores a reference to the person selected to have their birthday celebrated.
@@ -205,8 +204,8 @@
 
 
 /datum/station_trait/birthday/proc/announce_birthday()
-	report_message = "We here at Nanotrasen would all like to wish [birthday_person ? birthday_person_name : "Employee Name"] a very happy birthday."
-	priority_announce("Happy birthday to [birthday_person ? birthday_person_name : "Employee Name"]! Nanotrasen wishes you a very happy [birthday_person ? thtotext(birthday_person.age + 1) : "255th"] birthday.")
+	report_message = "We here at Free Union of Vulken would all like to wish [birthday_person ? birthday_person_name : "Employee Name"] a very happy birthday."
+	priority_announce("Happy birthday to [birthday_person ? birthday_person_name : "Employee Name"]! Free Union of Vulken wishes you a very happy [birthday_person ? thtotext(birthday_person.age + 1) : "255th"] birthday.")
 	if(birthday_person)
 		playsound(birthday_person, 'sound/items/party_horn.ogg', 50)
 		birthday_person.add_mood_event("birthday", /datum/mood_event/birthday)
@@ -291,7 +290,7 @@
 /datum/station_trait/scarves/New()
 	. = ..()
 	report_message = pick(
-		"Nanotrasen is experimenting with seeing if neck warmth improves employee morale.",
+		"Free Union of Vulken is experimenting with seeing if neck warmth improves employee morale.",
 		"After Space Fashion Week, scarves are the hot new accessory.",
 		"Everyone was simultaneously a little bit cold when they packed to go to the station.",
 		"The station is definitely not under attack by neck grappling aliens masquerading as wool. Definitely not.",
@@ -401,30 +400,21 @@
 /datum/station_trait/triple_ai
 	name = "AI Triumvirate"
 	trait_type = STATION_TRAIT_NEUTRAL
-	trait_flags = parent_type::trait_flags | STATION_TRAIT_REQUIRES_AI
 	show_in_report = TRUE
 	weight = 0 // NOVA EDIT Original = 1
-	report_message = "Your station has been instated with three Nanotrasen Artificial Intelligence models."
+	report_message = "Your station has been instated with three Free Union of Vulken Artificial Intelligence models."
 
 /datum/station_trait/triple_ai/New()
 	. = ..()
-	RegisterSignal(SSjob, COMSIG_OCCUPATIONS_SETUP, PROC_REF(on_occupations_setup))
+	RegisterSignal(SSjob, COMSIG_OCCUPATIONS_DIVIDED, PROC_REF(on_occupations_divided))
 
 /datum/station_trait/triple_ai/revert()
-	UnregisterSignal(SSjob, COMSIG_OCCUPATIONS_SETUP)
+	UnregisterSignal(SSjob, COMSIG_OCCUPATIONS_DIVIDED)
 	return ..()
 
-/datum/station_trait/triple_ai/proc/on_occupations_setup(datum/controller/subsystem/job/source)
+/datum/station_trait/triple_ai/proc/on_occupations_divided(datum/source, pure, allow_all)
 	SIGNAL_HANDLER
 
-	//allows for latejoining AIs
-	for(var/obj/effect/landmark/start/ai/secondary/secondary_ai_spawn in GLOB.start_landmarks_list)
-		secondary_ai_spawn.latejoin_active = TRUE
-
-	var/datum/station_trait/job/human_ai/ai_trait = locate() in SSstation.station_traits
-	//human AI quirk will handle adding its own job positions, but for now don't allow more AI slots.
-	if(ai_trait)
-		return
 	for(var/datum/job/ai/ai_datum in SSjob.joinable_occupations)
 		ai_datum.spawn_positions = 3
 		ai_datum.total_positions = 3

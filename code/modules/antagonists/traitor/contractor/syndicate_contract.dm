@@ -131,6 +131,20 @@
 	//we'll start the effects in a few seconds since it takes a moment for the pod to leave.
 	addtimer(CALLBACK(src, PROC_REF(handle_victim_experience), person_sent), 3 SECONDS)
 
+	// This is slightly delayed because of the sleep calls above to handle the narrative.
+	// We don't want to tell the station instantly.
+	var/points_to_check
+	var/datum/bank_account/cargo_account = SSeconomy.get_dep_account(ACCOUNT_CAR)
+	if(cargo_account)
+		points_to_check = cargo_account.account_balance
+	if(points_to_check >= ransom)
+		cargo_account.adjust_money(-ransom)
+	else
+		cargo_account.adjust_money(-points_to_check)
+	priority_announce(
+		text = "One of your crew was captured by a rival organisation - we've needed to pay their ransom to bring them back. \
+		As is policy we've taken a portion of the station's funds to offset the overall cost.",
+		sender_override = "Free Union of Vulken Asset Protection")
 	var/datum/market_item/hostage/market_item = person_sent.process_capture(ransom * (rand(11, 13)/10))
 	RegisterSignal(market_item, COMSIG_MARKET_ITEM_SPAWNED, PROC_REF(on_victim_shipped))
 

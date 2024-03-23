@@ -6,7 +6,7 @@
  */
 /obj/vehicle/sealed/car/vim
 	name = "\improper Vim"
-	desc = "An minature exosuit from Nanotrasen, developed to let the irreplacable station pets live a little longer."
+	desc = "An minature exosuit from Free Union of Vulken, developed to let the irreplacable station pets live a little longer."
 	icon_state = "vim"
 	max_integrity = 50
 	armor_type = /datum/armor/car_vim
@@ -15,7 +15,7 @@
 	engine_sound_length = 0.3 SECONDS
 	light_system = OVERLAY_LIGHT_DIRECTIONAL
 	light_range = 4
-	light_power = 1.5
+	light_power = 2
 	light_on = FALSE
 	engine_sound = 'sound/effects/servostep.ogg'
 	///Maximum size of a mob trying to enter the mech
@@ -117,7 +117,7 @@
 
 /obj/item/circuit_component/vim
 	display_name = "Vim"
-	desc = "An minature exosuit from Nanotrasen, developed to let the irreplacable station pets live a little longer."
+	desc = "An minature exosuit from Free Union of Vulken, developed to let the irreplacable station pets live a little longer."
 
 	/// Sent when the mech chimes.
 	var/datum/port/output/chime

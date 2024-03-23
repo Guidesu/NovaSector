@@ -82,7 +82,6 @@
 		pin = new pin(src)
 
 	add_seclight_point()
-	give_gun_safeties() // NOVA EDIT ADDITION - GUN SAFETIES
 	give_manufacturer_examine() // NOVA EDIT ADDITON - MANUFACTURER EXAMINE
 
 /obj/item/gun/Destroy()
@@ -628,3 +627,8 @@
 
 #undef FIRING_PIN_REMOVAL_DELAY
 #undef DUALWIELD_PENALTY_EXTRA_MULTIPLIER
+
+
+/obj/item/gun/Initialize(mapload)
+	. = ..()
+	AddComponent(/datum/component/two_handed)

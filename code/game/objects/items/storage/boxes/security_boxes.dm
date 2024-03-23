@@ -174,16 +174,6 @@
 	for(var/i in 1 to 7)
 		new /obj/item/ammo_casing/shotgun/buckshot(src)
 
-/obj/item/storage/box/slugs
-	name = "box of shotgun shells (Lethal - Slugs)"
-	desc = "A box full of lethal shotgun slugs, designed for shotguns."
-	icon_state = "breacher_box"
-	illustration = null
-
-/obj/item/storage/box/slugs/PopulateContents()
-	for(var/i in 1 to 7)
-		new /obj/item/ammo_casing/shotgun(src)
-
 /obj/item/storage/box/beanbag
 	name = "box of shotgun shells (Less Lethal - Beanbag)"
 	desc = "A box full of beanbag shotgun shells, designed for shotguns."
@@ -256,7 +246,7 @@
 
 /obj/item/storage/box/sparklers
 	name = "box of sparklers"
-	desc = "A box of Nanotrasen brand sparklers, burns hot even in the cold of space-winter."
+	desc = "A box of Free Union of Vulken brand sparklers, burns hot even in the cold of space-winter."
 	illustration = "sparkler"
 
 /obj/item/storage/box/sparklers/PopulateContents()

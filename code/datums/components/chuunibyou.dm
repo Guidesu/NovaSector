@@ -1,23 +1,23 @@
 
-/// how much health healed from casting a chuuni spell
+/// how much health healed from casting a chuuni psionic
 #define CHUUNIBYOU_HEAL_AMOUNT 3
-///cooldown between healing to prevent stuff like instant blink spell spam healing
+///cooldown between healing to prevent stuff like instant blink psionic spam healing
 #define CHUUNIBYOU_COOLDOWN_TIME 5 SECONDS
 
 /**
  * ## chuunibyou component!
  *
  * Component that makes casted spells always a shout invocation, a very dumb one. And their projectiles are dumb too.
- * Oh, but it does heal after each spell cast.
+ * Oh, but it does heal after each psionic cast.
  */
 /datum/component/chuunibyou
-	/// invocations per school the spell is from
+	/// invocations per school the psionic is from
 	var/static/list/chuunibyou_invocations
-	/// amount healed per spell cast
+	/// amount healed per psionic cast
 	var/heal_amount = CHUUNIBYOU_HEAL_AMOUNT
 	/// cooldown for healing
 	COOLDOWN_DECLARE(heal_cooldown)
-	/// are we casting a spell right now
+	/// are we casting a psionic right now
 	var/casting_spell = FALSE
 
 /datum/component/chuunibyou/Initialize()
@@ -45,7 +45,7 @@
 	. = ..()
 	RegisterSignal(parent, COMSIG_MOB_SPELL_PROJECTILE, PROC_REF(on_spell_projectile))
 	RegisterSignal(parent, COMSIG_MOB_PRE_INVOCATION, PROC_REF(on_pre_invocation))
-	RegisterSignal(parent, COMSIG_MOB_TRY_SPEECH, PROC_REF(on_try_speech))
+	RegisterSignal(parent, COMSIG_LIVING_TRY_SPEECH, PROC_REF(on_try_speech))
 	RegisterSignal(parent, COMSIG_MOB_AFTER_SPELL_CAST, PROC_REF(on_after_spell_cast))
 
 /datum/component/chuunibyou/UnregisterFromParent()
@@ -53,19 +53,19 @@
 	UnregisterSignal(parent, list(
 		COMSIG_MOB_SPELL_PROJECTILE,
 		COMSIG_MOB_PRE_INVOCATION,
-		COMSIG_MOB_TRY_SPEECH,
+		COMSIG_LIVING_TRY_SPEECH,
 		COMSIG_MOB_AFTER_SPELL_CAST,
 	))
 
-/// signal sent when the parent tries to speak. we let speech pass if we are casting a spell so mimes still chuuni their spellcasts
+/// signal sent when the parent tries to speak. we let speech pass if we are casting a psionic so mimes still chuuni their spellcasts
 /// (this may end in the mime dying)
 /datum/component/chuunibyou/proc/on_try_speech(datum/source, message, ignore_spam, forced)
 	SIGNAL_HANDLER
 
 	if(casting_spell)
-		return COMPONENT_IGNORE_CAN_SPEAK
+		return COMPONENT_CAN_ALWAYS_SPEAK
 
-///signal sent when the parent casts a spell that has a projectile
+///signal sent when the parent casts a psionic that has a projectile
 /datum/component/chuunibyou/proc/on_spell_projectile(mob/living/source, datum/action/cooldown/spell/spell, atom/cast_on, obj/projectile/to_fire)
 	SIGNAL_HANDLER
 
@@ -85,11 +85,11 @@
 	invocation_list[INVOCATION_GARBLE_PROB] = 0
 	var/chuuni_invocation = chuunibyou_invocations[spell.school]
 	if(!chuuni_invocation) // someone forgot to update the CHUUNI LIST to include a desc for the new school
-		stack_trace("Chunnibyou invocations is missing a line for spell school \"[spell.school]\"")
+		stack_trace("Chunnibyou invocations is missing a line for psionic school \"[spell.school]\"")
 		chuuni_invocation = chuunibyou_invocations[SCHOOL_UNSET]
 	invocation_list[INVOCATION_MESSAGE] = chuuni_invocation
 
-///signal sent after parent casts a spell
+///signal sent after parent casts a psionic
 /datum/component/chuunibyou/proc/on_after_spell_cast(mob/living/source, datum/action/cooldown/spell/spell, atom/cast_on)
 	SIGNAL_HANDLER
 

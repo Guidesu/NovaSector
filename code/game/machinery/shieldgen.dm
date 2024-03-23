@@ -187,7 +187,7 @@
 	. = ..()
 	if(.)
 		return
-	if(locked && !HAS_SILICON_ACCESS(user))
+	if(locked && !issilicon(user))
 		to_chat(user, span_warning("The machine is locked, you are unable to use it!"))
 		return
 	if(panel_open)
@@ -479,7 +479,7 @@
 	if(!anchored)
 		balloon_alert(user, "not secured!")
 		return
-	if(locked && !HAS_SILICON_ACCESS(user))
+	if(locked && !issilicon(user))
 		balloon_alert(user, "locked!")
 		return
 	if(!powernet)

@@ -803,7 +803,7 @@
 	. = ..()
 	if(.)
 		return
-	if(!HAS_SILICON_ACCESS(user))
+	if(!(issilicon(user) || isAdminGhostAI(user)))
 		if(isElectrified() && shock(user, 100))
 			return
 
@@ -1001,7 +1001,7 @@
 	return TRUE
 
 /obj/machinery/door/airlock/attackby(obj/item/C, mob/user, params)
-	if(!HAS_SILICON_ACCESS(user))
+	if(!issilicon(user) && !isAdminGhostAI(user))
 		if(isElectrified() && (C.obj_flags & CONDUCTS_ELECTRICITY) && shock(user, 75))
 			return
 	add_fingerprint(user)
@@ -1689,7 +1689,7 @@
 			. = TRUE
 
 /obj/machinery/door/airlock/proc/user_allowed(mob/user)
-	return (HAS_SILICON_ACCESS(user) && canAIControl(user)) || isAdminGhostAI(user)
+	return (issilicon(user) && canAIControl(user)) || isAdminGhostAI(user)
 
 /obj/machinery/door/airlock/proc/shock_restore(mob/user)
 	if(!user_allowed(user))
@@ -2311,7 +2311,6 @@
 /obj/machinery/door/airlock/cult/Initialize(mapload)
 	. = ..()
 	new openingoverlaytype(loc)
-	AddElement(/datum/element/empprotection, EMP_PROTECT_ALL)
 
 /obj/machinery/door/airlock/cult/canAIControl(mob/user)
 	return (IS_CULTIST(user) && !isAllPowerCut())
@@ -2360,6 +2359,9 @@
 	update_appearance()
 
 /obj/machinery/door/airlock/cult/narsie_act()
+	return
+
+/obj/machinery/door/airlock/cult/emp_act(severity)
 	return
 
 /obj/machinery/door/airlock/cult/friendly

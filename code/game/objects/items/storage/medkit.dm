@@ -271,24 +271,6 @@
 		/obj/item/storage/pill_bottle/penacid = 1)
 	generate_items_inside(items_inside,src)
 
-/obj/item/storage/medkit/tactical_lite
-	name = "combat first aid kit"
-	icon_state = "medkit_tactical"
-	inhand_icon_state = "medkit-tactical"
-	damagetype_healed = HEAL_ALL_DAMAGE
-
-/obj/item/storage/medkit/tactical_lite/PopulateContents()
-	if(empty)
-		return
-	var/static/list/items_inside = list(
-		/obj/item/healthanalyzer/advanced = 1,
-		/obj/item/reagent_containers/hypospray/medipen/atropine = 1,
-		/obj/item/stack/medical/gauze = 1,
-		/obj/item/stack/medical/suture/medicated = 2,
-		/obj/item/stack/medical/mesh/advanced = 2,
-	)
-	generate_items_inside(items_inside, src)
-
 /obj/item/storage/medkit/tactical
 	name = "combat medical kit"
 	desc = "I hope you've got insurance."
@@ -536,7 +518,7 @@
 
 /obj/item/storage/pill_bottle/sansufentanyl
 	name = "bottle of experimental medication"
-	desc = "A bottle of pills developed by Interdyne Pharmaceuticals. They're used to treat Hereditary Manifold Sickness."
+	desc = "A bottle of pills developed by Free Union of Vulken Pharmaceuticals. They're used to treat Hereditary Manifold Sickness."
 
 /obj/item/storage/pill_bottle/sansufentanyl/PopulateContents()
 	for(var/i in 1 to 6)

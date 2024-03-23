@@ -14,15 +14,15 @@
 			this suit proves to be cheaper than your standard issue MODsuit, with none of the movement restrictions of the space suits employed by the company. \
 			However, this greater mobility comes at a cost, and the suit is ineffective at protecting the wearer from the vacuum of space. \
 			The suit does come pre-equipped with a special psi-emitter stealth module that makes it impossible to recognize the wearer \
-			as well as causing significant demoralization amongst Nanotrasen crew."
+			as well as causing significant demoralization amongst Free Union of Vulken crew."
 	item = /obj/item/mod/control/pre_equipped/infiltrator
 	cost = 6
 	purchasable_from = ~(UPLINK_NUKE_OPS | UPLINK_CLOWN_OPS)
 
 /datum/uplink_item/suits/space_suit
 	name = "Syndicate Space Suit"
-	desc = "This red and black Syndicate space suit is less encumbering than Nanotrasen variants, \
-			fits inside bags, and has a weapon slot. Nanotrasen crew members are trained to report red space suit \
+	desc = "This red and black Syndicate space suit is less encumbering than Free Union of Vulken variants, \
+			fits inside bags, and has a weapon slot. Free Union of Vulken crew members are trained to report red space suit \
 			sightings, however."
 	item = /obj/item/storage/box/syndie_kit/space
 	cost = 4

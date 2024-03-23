@@ -263,7 +263,7 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/computer/security/telescreen/entertai
 		"Thank you for tuning in to the slaughter!",
 		"What a show! And we guarantee next one will be bigger!",
 		"Celebrate the results with Thundermerch!",
-		"This show was brought to you by Nanotrasen.",
+		"This show was brought to you by Free Union of Vulken.",
 	)
 
 /obj/item/assembly/control/showtime/activate()

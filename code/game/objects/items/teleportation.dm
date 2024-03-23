@@ -321,7 +321,7 @@
 
 /obj/item/syndicate_teleporter
 	name = "experimental teleporter"
-	desc = "A reverse-engineered version of the Nanotrasen handheld teleporter. Lacks the advanced safety features of its counterpart. A three-headed serpent can be seen on the back."
+	desc = "A reverse-engineered version of the Free Union of Vulken handheld teleporter. Lacks the advanced safety features of its counterpart. A three-headed serpent can be seen on the back."
 	icon = 'icons/obj/devices/tracker.dmi'
 	icon_state = "syndi-tele"
 	throwforce = 5
@@ -371,7 +371,6 @@
 		playsound(src, 'sound/machines/twobeep.ogg', 10, TRUE, extrarange = SILENCED_SOUND_EXTRARANGE, falloff_distance = 0)
 
 /obj/item/syndicate_teleporter/emp_act(severity)
-	. = ..()
 	if(!prob(50/severity))
 		return
 	var/teleported_something = FALSE
