@@ -43,7 +43,7 @@
 	mob_type = /mob/living/basic/drone/syndrone
 	prompt_name = "a syndrone"
 	you_are_text = "You are a Syndicate Maintenance Drone."
-	flavour_text = "In a prior life, you maintained a Free Union of Vulken Research Station. Abducted from your home, you were given some upgrades... and now serve an enemy of your former masters."
+	flavour_text = "In a prior life, you maintained a Nanotrasen Research Station. Abducted from your home, you were given some upgrades... and now serve an enemy of your former masters."
 	important_text = ""
 	spawner_job_path = /datum/job/syndrone
 
@@ -67,7 +67,7 @@
 	mob_name = "badass syndrone"
 	mob_type = /mob/living/basic/drone/syndrone/badass
 	prompt_name = "a badass syndrone"
-	flavour_text = "In a prior life, you maintained a Free Union of Vulken Research Station. Abducted from your home, you were given some BETTER upgrades... and now serve an enemy of your former masters."
+	flavour_text = "In a prior life, you maintained a Nanotrasen Research Station. Abducted from your home, you were given some BETTER upgrades... and now serve an enemy of your former masters."
 
 /// A drone that spawns with a chameleon hat for fashion purposes.
 /mob/living/basic/drone/snowflake

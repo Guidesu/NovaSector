@@ -587,7 +587,7 @@
 /mob/living/basic/spider/giant/sgt_araneus
 	name = "Sergeant Araneus"
 	real_name = "Sergeant Araneus"
-	desc = "A fierce companion of the Head of Security, this spider has been carefully trained by Free Union of Vulken specialists. Its beady, staring eyes send shivers down your spine."
+	desc = "A fierce companion of the Head of Security, this spider has been carefully trained by Nanotrasen specialists. Its beady, staring eyes send shivers down your spine."
 	faction = list(FACTION_SPIDER)
 	gold_core_spawnable = NO_SPAWN
 	maxHealth = 250

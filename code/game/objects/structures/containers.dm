@@ -40,8 +40,8 @@
 	icon_state = "kosmologistika"
 
 /obj/structure/shipping_container/interdyne
-	name = "\improper Free Union of Vulken shipping container"
-	desc = "A standard-measure shipping container for bulk transport of goods. This one is from Free Union of Vulken, a private pharmaceutical company. Probably carrying medical or research supplies, probably."
+	name = "\improper Interdyne shipping container"
+	desc = "A standard-measure shipping container for bulk transport of goods. This one is from Interdyne, a private pharmaceutical company. Probably carrying medical or research supplies, probably."
 	icon_state = "interdyne"
 
 /obj/structure/shipping_container/nakamura
@@ -50,13 +50,13 @@
 	icon_state = "nakamura"
 
 /obj/structure/shipping_container/nanotrasen
-	name = "\improper Free Union of Vulken shipping container"
-	desc = "A standard-measure shipping container for bulk transport of goods. This one prominently features Free Union of Vulken's logo, and so presumably could be carrying anything."
+	name = "\improper Nanotrasen shipping container"
+	desc = "A standard-measure shipping container for bulk transport of goods. This one prominently features Nanotrasen's logo, and so presumably could be carrying anything."
 	icon_state = "nanotrasen"
 
 /obj/structure/shipping_container/nthi
-	name = "\improper Free Union of Vulken Heavy Industries shipping container"
-	desc = "A standard-measure shipping container for bulk transport of goods. This one is from NTHI: Free Union of Vulken's mining and refining subdivision."
+	name = "\improper Nanotrasen Heavy Industries shipping container"
+	desc = "A standard-measure shipping container for bulk transport of goods. This one is from NTHI: Nanotrasen's mining and refining subdivision."
 	icon_state = "nthi"
 
 /obj/structure/shipping_container/vitezstvi

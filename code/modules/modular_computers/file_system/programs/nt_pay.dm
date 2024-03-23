@@ -7,7 +7,7 @@
 
 /datum/computer_file/program/nt_pay
 	filename = "ntpay"
-	filedesc = "Free Union of Vulken Pay System"
+	filedesc = "Nanotrasen Pay System"
 	downloader_category = PROGRAM_CATEGORY_DEVICE
 	program_open_overlay = "generic"
 	extended_desc = "An application that locally (in your sector) helps to transfer money or track your expenses and profits."
@@ -95,12 +95,12 @@
 		current_user.bank_card_talk("You cannot afford it.")
 		return NT_PAY_STATUS_INVALID_MONEY
 
-	recipient.bank_card_talk("You received [money_to_send] vulkens(s). Reason: transfer from [current_user.account_holder]")
+	recipient.bank_card_talk("You received [money_to_send] credit(s). Reason: transfer from [current_user.account_holder]")
 	recipient.transfer_money(current_user, money_to_send)
 	for(var/obj/item/card/id/id_card as anything in recipient.bank_cards)
 		SEND_SIGNAL(id_card, COMSIG_ID_CARD_NTPAY_MONEY_RECEIVED, computer, money_to_send)
 
-	current_user.bank_card_talk("You send [money_to_send] vulkens(s) to [recipient.account_holder]. Now you have [current_user.account_balance] vulkens(s)")
+	current_user.bank_card_talk("You send [money_to_send] credit(s) to [recipient.account_holder]. Now you have [current_user.account_balance] credit(s)")
 
 	return NT_PAY_STATUS_SUCCESS
 

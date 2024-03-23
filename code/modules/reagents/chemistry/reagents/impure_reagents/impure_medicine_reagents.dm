@@ -125,8 +125,8 @@ Basically, we fill the time between now and 2s from now with hands based off the
 	timer_ids.Cut()
 
 /datum/reagent/inverse/helgrasp/heretic
-	name = "Grasp of the Psyonics"
-	description = "The Hand of the Psyonics is at your neck."
+	name = "Grasp of the Mansus"
+	description = "The Hand of the Mansus is at your neck."
 	metabolization_rate = 1 * REM
 	tox_damage = 0
 

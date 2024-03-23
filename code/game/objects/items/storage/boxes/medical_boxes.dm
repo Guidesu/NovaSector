@@ -114,7 +114,7 @@
 
 /obj/item/storage/box/evilmeds
 	name = "box of premium medicine"
-	desc = "Contains a large number of beakers filled with premium medical supplies. Straight from Free Union of Vulken Pharmaceutics!"
+	desc = "Contains a large number of beakers filled with premium medical supplies. Straight from Interdyne Pharmaceutics!"
 	icon_state = "syndiebox"
 	illustration = "beaker"
 

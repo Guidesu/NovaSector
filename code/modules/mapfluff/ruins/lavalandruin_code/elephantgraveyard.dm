@@ -203,7 +203,7 @@
 			new /obj/item/reagent_containers/cup/beaker(src)
 			new /obj/item/clothing/glasses/science(src)
 		if(7)
-			new /obj/item/clothing/glasses/sunglasses(src)
+			new /obj/item/clothing/glasses/sunglasses/big(src)
 			new /obj/item/clothing/mask/cigarette/rollie(src)
 		else
 			//empty grave
@@ -324,7 +324,7 @@
 /obj/item/paper/crumpled/muddy/fluff/elephant_graveyard
 	name = "posted warning"
 	desc = "It seems to be smudged with mud and... oil?"
-	default_raw_text = "<B>TO WHOM IT MAY CONCERN</B><BR><BR>This area is property of the Free Union of Vulken Mining Division.<BR><BR>Trespassing in this area is illegal, highly dangerous, and subject to several NDAs.<br><br>Please turn back now, under intergalactic law section 48-R."
+	default_raw_text = "<B>TO WHOM IT MAY CONCERN</B><BR><BR>This area is property of the Nanotrasen Mining Division.<BR><BR>Trespassing in this area is illegal, highly dangerous, and subject to several NDAs.<br><br>Please turn back now, under intergalactic law section 48-R."
 
 /obj/item/paper/crumpled/muddy/fluff/elephant_graveyard/rnd_notes
 	name = "Research Findings: Day 26"
@@ -339,7 +339,7 @@
 
 /obj/item/paper/fluff/ruins/elephant_graveyard/hypothesis
 	name = "research document"
-	desc = "Standard Free Union of Vulken typeface for important research documents."
+	desc = "Standard Nanotrasen typeface for important research documents."
 	default_raw_text = "<b>Day 9: Tenative Conclusions</b><BR><BR>While the area appears to be of significant cultural importance to the lizard race, outside of some sparce contact with native wildlife, we're yet to find any exact reasoning for the nature of this phenomenon. It seems that organic life is communally drawn to this planet as though it functions as a final resting place for intelligent life. As per company guidelines, this site shall be given the following classification: 'LZ-0271 - Elephant Graveyard' <BR><BR><u>Compiled list of Artifact findings (Currently Sent Offsite)</u><BR>Cultist Blade Fragments: x8<BR>Brass Multiplicative Ore Sample: x105<BR>Syndicate Revolutionary Leader Implant (Broken) x1<BR>Extinct Cortical Borer Tissue Sample x1<BR>Space Carp Fossil x3"
 
 /obj/item/paper/fluff/ruins/elephant_graveyard/final_message

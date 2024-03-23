@@ -434,6 +434,7 @@
 	defer_change = TRUE
 	turf_type = /turf/open/misc/asteroid/snow/icemoon
 	baseturfs = /turf/open/misc/asteroid/snow/icemoon
+	initial_gas_mix = ICEMOON_DEFAULT_ATMOS
 	weak_turf = TRUE
 	proximity_based = FALSE // Nova Edit: Originally TRUE
 	mineralChance = 8 // Nova Edit: Originally Not defined - lowers from 13

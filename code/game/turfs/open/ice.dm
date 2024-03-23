@@ -4,10 +4,12 @@
 	icon = 'icons/turf/floors/ice_turf.dmi'
 	icon_state = "ice_turf-0"
 	base_icon_state = "ice_turf-0"
+	initial_gas_mix = FROZEN_ATMOS
+	temperature = 180
+	planetary_atmos = TRUE
 	baseturfs = /turf/open/misc/ice
 	slowdown = 1
 	bullet_sizzle = TRUE
-	turf_flags = NO_RUINS
 	footstep = FOOTSTEP_FLOOR
 	barefootstep = FOOTSTEP_HARD_BAREFOOT
 	clawfootstep = FOOTSTEP_HARD_CLAW
@@ -32,6 +34,7 @@
 
 /turf/open/misc/ice/icemoon
 	baseturfs = /turf/open/openspace/icemoon
+	initial_gas_mix = ICEMOON_DEFAULT_ATMOS
 	slowdown = 0
 
 /turf/open/misc/ice/icemoon/no_planet_atmos

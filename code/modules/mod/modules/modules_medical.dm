@@ -69,7 +69,7 @@
 /obj/item/mod/module/quick_carry
 	name = "MOD quick carry module"
 	desc = "A suite of advanced servos, redirecting power from the suit's arms to help carry the wounded; \
-		or simply for fun. However, Free Union of Vulken has locked the module's ability to assist in hand-to-hand combat."
+		or simply for fun. However, Nanotrasen has locked the module's ability to assist in hand-to-hand combat."
 	icon_state = "carry"
 	complexity = 1
 	idle_power_cost = DEFAULT_CHARGE_DRAIN * 0.3
@@ -120,7 +120,7 @@
 ///Organ Thrower - Lets you shoot organs, immediately replacing them if the target has the organ manipulation surgery.
 /obj/item/mod/module/organ_thrower
 	name = "MOD organ thrower module"
-	desc = "A device recovered from a crashed Free Union of Vulken Pharmaceuticals vessel, \
+	desc = "A device recovered from a crashed Interdyne Pharmaceuticals vessel, \
 		this module has been unearthed for better or for worse. \
 		It's an arm-mounted device utilizing technology similar to modern-day part replacers, \
 		capable of storing and inserting organs into open patients. \
@@ -272,7 +272,7 @@
 		and a modded targeting computer determines the best position for the user to push. \
 		Twenty five pounds of force are applied to the patient's skin. Shocks travel from the suit's gloves \
 		and counter-shock the heart, and the wearer returns to Medical a hero. \
-		Free Union of Vulken Pharmaceutics marketed the domestic version of the Healing Hands as foolproof and unusable as a weapon. \
+		Interdyne Pharmaceutics marketed the domestic version of the Healing Hands as foolproof and unusable as a weapon. \
 		But when it came time to provide their operatives with usable medical equipment, they didn't hesitate to remove \
 		those in-built safeties. Operatives in the field can benefit from what they dub as 'Stun Gloves', able to apply shocks \
 		straight to a victims heart to disable them, or maybe even outright stop their heart with enough power."
@@ -294,7 +294,7 @@
 /obj/item/mod/module/thread_ripper
 	name = "MOD thread ripper module"
 	desc = "A custom-built module integrated with the suit's wrist. The thread ripper is built from \
-		recent technology dating back to the start of 2562, after an attempt by a well-known Free Union of Vulken researcher to \
+		recent technology dating back to the start of 2562, after an attempt by a well-known Nanotrasen researcher to \
 		expand on the rapid-tailoring technology found in Autodrobes. Rather than being capable of creating \
 		any fabric pattern under the suns, the thread ripper is capable of rapid disassembly of them. \
 		Anything from kevlar-weave, to leather, to durathread can be quickly pulled open to the wearer's specification \

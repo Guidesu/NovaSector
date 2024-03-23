@@ -114,7 +114,7 @@
 	shoes = /obj/item/clothing/shoes/magboots/advance
 
 /datum/outfit/heretic_hallucination
-	name = "Psyonaut Hallucination"
+	name = "Heretic Hallucination"
 
 	uniform = /obj/item/clothing/under/color/grey
 	suit = /obj/item/clothing/suit/hooded/cultrobes/eldritch

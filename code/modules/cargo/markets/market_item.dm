@@ -51,7 +51,9 @@
 		RegisterSignal(item, COMSIG_QDELETING, PROC_REF(on_item_del))
 		identifier = "[REF(src)]"
 
-/// Used for spawning the wanted item, override if you need to do something special with the item.
+/datum/market_item/Destroy()
+	item = null
+	return ..()
 
 /datum/market_item/proc/on_item_del(datum/source)
 	SIGNAL_HANDLER

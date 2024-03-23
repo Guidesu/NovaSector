@@ -121,6 +121,8 @@
 		"toy_armblade",
 		"toy_balloon",
 		"toygun",
+		"tram_floor_dark",
+		"tram_floor_light",
 		"trapdoor_electronics",
 		"turbine_part_compressor",
 		"turbine_part_rotor",
@@ -1065,6 +1067,18 @@
 	)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
 
+/datum/techweb_node/ai_basic/New()
+	. = ..()
+	if(HAS_TRAIT(SSstation, STATION_TRAIT_HUMAN_AI))
+		design_ids -= list(
+			"aicore",
+			"borg_ai_control",
+			"intellicard",
+			"mecha_tracking_ai_control",
+			"aifixer",
+			"aiupload",
+		)
+
 /datum/techweb_node/ai_adv
 	id = "ai_adv"
 	display_name = "Advanced Artificial Intelligence"
@@ -1625,6 +1639,7 @@
 	description = "Our researchers have found new ways to weaponize just about everything now."
 	prereq_ids = list("engineering")
 	design_ids = list(
+		"ballistic_shield",
 		"pin_testing",
 		"tele_shield",
 		"lasershell",
@@ -2407,7 +2422,7 @@
 /datum/techweb_node/tackle_advanced
 	id = "tackle_advanced"
 	display_name = "Advanced Grapple Technology"
-	description = "Free Union of Vulken would like to remind its researching staff that it is never acceptable to \"glomp\" your coworkers, and further \"scientific trials\" on the subject \
+	description = "Nanotrasen would like to remind its researching staff that it is never acceptable to \"glomp\" your coworkers, and further \"scientific trials\" on the subject \
 	will no longer be accepted in its academic journals."
 	design_ids = list(
 		"tackle_dolphin",

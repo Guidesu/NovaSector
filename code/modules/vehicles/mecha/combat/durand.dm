@@ -1,5 +1,5 @@
 /obj/vehicle/sealed/mecha/durand
-	desc = "An aging combat exosuit utilized by the Free Union of Vulken corporation. Originally developed to combat hostile alien lifeforms."
+	desc = "An aging combat exosuit utilized by the Nanotrasen corporation. Originally developed to combat hostile alien lifeforms."
 	name = "\improper Durand"
 	icon_state = "durand"
 	base_icon_state = "durand"
@@ -166,7 +166,7 @@ own integrity back to max. Shield is automatically dropped if we run out of powe
 	anchored = TRUE
 	light_system = OVERLAY_LIGHT
 	light_range = MINIMUM_USEFUL_LIGHT_RANGE
-	light_power = 5
+	light_power = 2
 	light_color = LIGHT_COLOR_ELECTRIC_CYAN
 	light_on = FALSE
 	resistance_flags = LAVA_PROOF | FIRE_PROOF | ACID_PROOF //The shield should not take damage from fire,  lava, or acid; that's the mech's job.

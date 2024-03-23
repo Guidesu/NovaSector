@@ -7,7 +7,7 @@
 	cooldown_time = 1 SECONDS
 
 	invocation = "By the decree of the dark lord, I invoke the curse of the chuuni. Let all my spells be tainted by the power of delusion. O, Reality! Bend to my will!"
-	invocation_type = INVOCATION_WHISPER
+	invocation_type = INVOCATION_SHOUT
 	spell_requirements = SPELL_REQUIRES_NO_ANTIMAGIC|SPELL_REQUIRES_STATION|SPELL_REQUIRES_MIND
 	antimagic_flags = MAGIC_RESISTANCE|MAGIC_RESISTANCE_HOLY
 	spell_max_level = 1

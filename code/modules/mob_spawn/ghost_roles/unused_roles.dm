@@ -8,7 +8,7 @@
 	icon = 'icons/obj/machines/sleeper.dmi'
 	icon_state = "sleeper_s"
 	outfit = /datum/outfit/lavalandprisoner
-	you_are_text = "You're a prisoner, sentenced to hard work in one of Free Union of Vulken's labor camps, but it seems as \
+	you_are_text = "You're a prisoner, sentenced to hard work in one of Nanotrasen's labor camps, but it seems as \
 	though fate has other plans for you."
 	flavour_text = "Good. It seems as though your ship crashed. You remember that you were convicted of "
 	spawner_job_path = /datum/job/escaped_prisoner
@@ -26,7 +26,7 @@
 
 /obj/effect/mob_spawn/ghost_role/human/prisoner_transport/special(mob/living/carbon/human/spawned_human)
 	. = ..()
-	spawned_human.fully_replace_character_name(null, "NTP #LL-0[rand(111,999)]") //Free Union of Vulken Prisoner #Lavaland-(numbers)
+	spawned_human.fully_replace_character_name(null, "NTP #LL-0[rand(111,999)]") //Nanotrasen Prisoner #Lavaland-(numbers)
 
 /datum/outfit/lavalandprisoner
 	name = "Lavaland Prisoner"
@@ -91,7 +91,7 @@
 	icon_state = "sleeper_s"
 	prompt_name = "a syndicate operative"
 	you_are_text = "You are a syndicate operative."
-	flavour_text = "You have awoken, without instruction. Death to Free Union of Vulken! If there are some clues around as to what you're supposed to be doing, you best follow those."
+	flavour_text = "You have awoken, without instruction. Death to Nanotrasen! If there are some clues around as to what you're supposed to be doing, you best follow those."
 	outfit = /datum/outfit/syndicate_empty
 	spawner_job_path = /datum/job/space_syndicate
 
@@ -175,7 +175,7 @@
 	icon_state = "sleeper"
 	faction = list(FACTION_NANOTRASEN_PRIVATE)
 	prompt_name = "a private security officer"
-	you_are_text = "You are a Free Union of Vulken Private Security Officer!"
+	you_are_text = "You are a Nanotrasen Private Security Officer!"
 	flavour_text = "If higher command has an assignment for you, it's best you follow that. Otherwise, death to The Syndicate."
 	outfit = /datum/outfit/nanotrasensoldier
 
@@ -184,8 +184,8 @@
 	icon = 'icons/obj/machines/sleeper.dmi'
 	icon_state = "sleeper"
 	prompt_name = "a nanotrasen commander"
-	you_are_text = "You are a Free Union of Vulken Commander!"
-	flavour_text = "Upper-crusty of Free Union of Vulken. You should be given the respect you're owed."
+	you_are_text = "You are a Nanotrasen Commander!"
+	flavour_text = "Upper-crusty of Nanotrasen. You should be given the respect you're owed."
 	outfit = /datum/outfit/nanotrasencommander
 
 //space doctor, a rat with cancer, and bessie from an old removed lavaland ruin.
@@ -241,7 +241,7 @@
 	faction = list(ROLE_SYNDICATE)
 	outfit = /datum/outfit/snowsyndie
 	you_are_text = "You are a syndicate operative recently awoken from cryostasis in an underground outpost."
-	flavour_text = "Monitor Free Union of Vulken communications and record information. All intruders should be disposed of \
+	flavour_text = "Monitor Nanotrasen communications and record information. All intruders should be disposed of \
 	swiftly to assure no gathered information is stolen or lost. Try not to wander too far from the outpost as the \
 	caves can be a deadly place even for a trained operative such as yourself."
 
@@ -265,7 +265,7 @@
 	icon_state = "sleeper_s"
 	prompt_name = "cybersun crew"
 	you_are_text = "You are a syndicate operative on old ship, stuck in hostile space."
-	flavour_text = "Your ship docks after a long time somewhere in hostile space, reporting a malfunction. You are stuck here, with Free Union of Vulken station nearby. Fix the ship, find a way to power it and follow your captain's orders."
+	flavour_text = "Your ship docks after a long time somewhere in hostile space, reporting a malfunction. You are stuck here, with Nanotrasen station nearby. Fix the ship, find a way to power it and follow your captain's orders."
 	important_text = "Obey orders given by your captain. DO NOT let the ship fall into enemy hands."
 	outfit = /datum/outfit/syndicatespace/syndicrew
 	spawner_job_path = /datum/job/syndicate_cybersun
@@ -282,7 +282,7 @@
 	name = "Syndicate Ship Captain"
 	prompt_name = "a cybersun captain"
 	you_are_text = "You are the captain of an old ship, stuck in hostile space."
-	flavour_text = "Your ship docks after a long time somewhere in hostile space, reporting a malfunction. You are stuck here, with Free Union of Vulken station nearby. Command your crew and turn your ship into the most protected fortress."
+	flavour_text = "Your ship docks after a long time somewhere in hostile space, reporting a malfunction. You are stuck here, with Nanotrasen station nearby. Command your crew and turn your ship into the most protected fortress."
 	important_text = "Protect the ship and secret documents in your backpack with your own life."
 	outfit = /datum/outfit/syndicatespace/syndicaptain
 	spawner_job_path = /datum/job/syndicate_cybersun_captain

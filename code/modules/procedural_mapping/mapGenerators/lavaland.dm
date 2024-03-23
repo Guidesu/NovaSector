@@ -11,16 +11,16 @@
 /datum/map_generator_module/splatter_layer/lavaland_monsters
 	spawnableTurfs = list()
 	spawnableAtoms = list(
-		/obj/effect/spawner/random/lavaland_mob/goliath = 1,
-		/obj/effect/spawner/random/lavaland_mob/legion = 1,
-		/obj/effect/spawner/random/lavaland_mob/watcher = 1,
+		/obj/effect/spawner/random/lavaland_mob/goliath = 10,
+		/obj/effect/spawner/random/lavaland_mob/legion = 10,
+		/obj/effect/spawner/random/lavaland_mob/watcher = 10,
 	)
 
 /datum/map_generator_module/splatter_layer/lavaland_tendrils
 	spawnableTurfs = list()
-	spawnableAtoms = list(/obj/structure/spawner/lavaland = 1,
-	/obj/structure/spawner/lavaland/legion = 1,
-	/obj/structure/spawner/lavaland/goliath = 1)
+	spawnableAtoms = list(/obj/structure/spawner/lavaland = 5,
+	/obj/structure/spawner/lavaland/legion = 5,
+	/obj/structure/spawner/lavaland/goliath = 5)
 
 /datum/map_generator/lavaland/ground_only
 	modules = list(/datum/map_generator_module/bottom_layer/lavaland_default)

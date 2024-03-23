@@ -1,5 +1,5 @@
 /mob/living/basic/mining_drone
-	name = "\improper Free Union of Vulken minebot"
+	name = "\improper Nanotrasen minebot"
 	desc = "The instructions printed on the side read: This is a small robot used to support miners, can be set to search and collect loose ore, or to help fend off wildlife. Insert any type of ore into it to make it start listening to your commands!"
 	gender = NEUTER
 	icon = 'icons/mob/silicon/aibots.dmi'
@@ -25,6 +25,9 @@
 	death_message = "blows apart!"
 	light_system = OVERLAY_LIGHT
 	light_range = 6
+	// I want this to be a bit more dim, for vibes
+	light_power = 0.6
+	light_color = "#ff9933"
 	light_on = FALSE
 	combat_mode = FALSE
 	ai_controller = /datum/ai_controller/basic_controller/minebot

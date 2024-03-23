@@ -39,7 +39,7 @@
 /datum/map_template/shuttle/whiteship/tram
 	suffix = "tram"
 	name = "NT Long-Distance Bluespace Freighter"
-	description = "A long shuttle that starts with Free Union of Vulken private security corpses. DOES NOT FIT IN THE BASE DOCKS! Does fit in Deep Space's dock though."
+	description = "A long shuttle that starts with Nanotrasen private security corpses. DOES NOT FIT IN THE BASE DOCKS! Does fit in Deep Space's dock though."
 
 /datum/map_template/shuttle/whiteship/delta
 	suffix = "delta"

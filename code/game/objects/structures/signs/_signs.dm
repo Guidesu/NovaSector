@@ -143,15 +143,15 @@
 	sign_change_name = "Blank Sign"
 
 /obj/structure/sign/nanotrasen
-	name = "\improper Free Union of Vulken logo sign"
-	sign_change_name = "Corporate Logo - Free Union of Vulken"
-	desc = "A sign with the Free Union of Vulken logo on it. Glory to Free Union of Vulken!"
+	name = "\improper Nanotrasen logo sign"
+	sign_change_name = "Corporate Logo - Nanotrasen"
+	desc = "A sign with the Nanotrasen logo on it. Glory to Nanotrasen!"
 	icon_state = "nanotrasen"
 	is_editable = TRUE
 
 /obj/structure/sign/logo
-	name = "\improper Free Union of Vulken logo sign"
-	desc = "The Free Union of Vulken corporate logo."
+	name = "\improper Nanotrasen logo sign"
+	desc = "The Nanotrasen corporate logo."
 	icon_state = "nanotrasen_sign1"
 	buildable_sign = FALSE
 

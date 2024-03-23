@@ -236,12 +236,6 @@
 			continue
 		target_belongings.Add(WEAKREF(belonging))
 
-	var/datum/bank_account/cargo_account = SSeconomy.get_dep_account(ACCOUNT_CAR)
-
-	if(cargo_account) //Just in case
-		cargo_account.adjust_money(-min(rand(1000, 3000), cargo_account.account_balance)) //Not so much, especially for competent cargo. Plus this can't be mass-triggered like it has been done with contractors
-
-	priority_announce("One of your crew was captured by a rival organisation - we've needed to pay their ransom to bring them back. As is policy we've taken a portion of the station's funds to offset the overall cost.", "Free Union of Vulken Asset Protection", has_important_message = TRUE)
 	var/datum/market_item/hostage/market_item = sent_mob.process_capture(rand(1000, 3000))
 	RegisterSignal(market_item, COMSIG_MARKET_ITEM_SPAWNED, PROC_REF(on_victim_shipped))
 

@@ -179,7 +179,6 @@ GLOBAL_LIST_EMPTY(dug_up_basalt)
 /turf/open/misc/asteroid/basalt/lava_land_surface
 	initial_gas_mix = LAVALAND_DEFAULT_ATMOS
 	planetary_atmos = TRUE
-	turf_flags = NO_RUINS
 	baseturfs = /turf/open/lava/smooth/lava_land_surface
 
 /// Used for the lavaland icemoon ruin.
@@ -210,8 +209,7 @@ GLOBAL_LIST_EMPTY(dug_up_basalt)
 	baseturfs = /turf/open/misc/asteroid/snow
 	icon_state = "snow"
 	base_icon_state = "snow"
-	turf_flags = NO_RUINS
-	initial_gas_mix = LAVALAND_DEFAULT_ATMOS
+	initial_gas_mix = FROZEN_ATMOS
 	slowdown = 2
 	flags_1 = NONE
 	planetary_atmos = TRUE
@@ -233,7 +231,7 @@ GLOBAL_LIST_EMPTY(dug_up_basalt)
 
 /turf/open/misc/asteroid/snow/icemoon
 	baseturfs = /turf/open/openspace/icemoon
-	initial_gas_mix = LAVALAND_DEFAULT_ATMOS
+	initial_gas_mix = ICEMOON_DEFAULT_ATMOS
 	slowdown = 0
 
 /// Exact subtype as parent, just used in ruins to prevent other ruins/chasms from spawning on top of it.
@@ -246,7 +244,7 @@ GLOBAL_LIST_EMPTY(dug_up_basalt)
 	turf_flags = IS_SOLID | NO_RUST | NO_CLEARING
 
 /turf/open/lava/plasma/ice_moon
-	initial_gas_mix = LAVALAND_DEFAULT_ATMOS
+	initial_gas_mix = ICEMOON_DEFAULT_ATMOS
 	baseturfs = /turf/open/lava/plasma/ice_moon
 	planetary_atmos = TRUE
 
@@ -254,7 +252,7 @@ GLOBAL_LIST_EMPTY(dug_up_basalt)
 	name = "icy snow"
 	desc = "Looks colder."
 	baseturfs = /turf/open/misc/asteroid/snow/ice
-	initial_gas_mix = LAVALAND_DEFAULT_ATMOS
+	initial_gas_mix = BURNING_COLD
 	floor_variance = 0
 	icon_state = "snow-ice"
 	base_icon_state = "snow-ice"
@@ -272,7 +270,7 @@ GLOBAL_LIST_EMPTY(dug_up_basalt)
 
 /turf/open/misc/asteroid/snow/ice/icemoon
 	baseturfs = /turf/open/misc/asteroid/snow/ice/icemoon
-	initial_gas_mix = LAVALAND_DEFAULT_ATMOS
+	initial_gas_mix = ICEMOON_DEFAULT_ATMOS
 	planetary_atmos = TRUE
 	slowdown = 0
 
@@ -295,7 +293,7 @@ GLOBAL_LIST_EMPTY(dug_up_basalt)
 	temperature = 180
 
 /turf/open/misc/asteroid/snow/atmosphere
-	initial_gas_mix = LAVALAND_DEFAULT_ATMOS
+	initial_gas_mix = FROZEN_ATMOS
 	planetary_atmos = FALSE
 
 /turf/open/misc/asteroid/snow/standard_air

@@ -26,13 +26,13 @@
 	icon_state = "billboard_space_cola"
 
 /obj/structure/billboard/nanotrasen
-	name = "\improper Free Union of Vulken billboard"
-	desc = "A billboard advertising Free Union of Vulken: A Better Tomorrow, Today."
+	name = "\improper Nanotrasen billboard"
+	desc = "A billboard advertising Nanotrasen: A Better Tomorrow, Today."
 	icon_state = "billboard_nanotrasen"
 
 /obj/structure/billboard/nanotrasen/defaced
-	name = "defaced Free Union of Vulken billboard"
-	desc = "A billboard advertising Free Union of Vulken. Someone's sprayed a message onto it: Fuck Corpo Pigs."
+	name = "defaced Nanotrasen billboard"
+	desc = "A billboard advertising Nanotrasen. Someone's sprayed a message onto it: Fuck Corpo Pigs."
 	icon_state = "billboard_fuck_corps"
 
 /obj/structure/billboard/azik
@@ -86,8 +86,8 @@
 	icon_state = "billboard_roadsign_error"
 
 /obj/structure/billboard/smoothies
-	name = "\improper Outerfringe Smoothies billboard"
-	desc = "A billboard advertising Outerfringe Smoothies."
+	name = "\improper Spinward Smoothies billboard"
+	desc = "A billboard advertising Spinward Smoothies."
 	icon_state = "billboard_smoothies"
 
 /obj/structure/billboard/fortune_telling

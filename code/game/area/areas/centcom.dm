@@ -64,7 +64,7 @@
 	icon_state = "centcom_cells"
 
 /area/centcom/central_command_areas/courtroom
-	name = "Free Union of Vulken Grand Courtroom"
+	name = "Nanotrasen Grand Courtroom"
 	icon_state = "centcom_court"
 
 /area/centcom/central_command_areas/holding

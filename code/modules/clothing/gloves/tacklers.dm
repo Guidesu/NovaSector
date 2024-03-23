@@ -85,7 +85,7 @@
 
 /obj/item/clothing/gloves/tackler/rocket
 	name = "rocket gloves"
-	desc = "The ultimate in high risk, high reward, perfect for when you need to stop a criminal from fifty feet away or die trying. Banned in most Outerfringe gridiron football and rugby leagues."
+	desc = "The ultimate in high risk, high reward, perfect for when you need to stop a criminal from fifty feet away or die trying. Banned in most Spinward gridiron football and rugby leagues."
 	icon_state = "tacklerocket"
 	inhand_icon_state = null
 

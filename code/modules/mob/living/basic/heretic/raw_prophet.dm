@@ -29,11 +29,11 @@
 	AddElement(/datum/element/death_drops, body_parts)
 	AddComponent(/datum/component/focused_attacker)
 	var/on_link_message = "You feel something new enter your sphere of mind... \
-		You hear whispers of people far away, screeches of horror and a huming of welcome to [src]'s Psyonics Link."
-	var/on_unlink_message = "Your mind shatters as [src]'s Psyonics Link leaves your mind."
+		You hear whispers of people far away, screeches of horror and a huming of welcome to [src]'s Mansus Link."
+	var/on_unlink_message = "Your mind shatters as [src]'s Mansus Link leaves your mind."
 	AddComponent( \
 		/datum/component/mind_linker/active_linking, \
-		network_name = "Psyonics Link", \
+		network_name = "Mansus Link", \
 		chat_color = "#568b00", \
 		post_unlink_callback = CALLBACK(src, PROC_REF(after_unlink)), \
 		speech_action_background_icon_state = "bg_heretic", \

@@ -129,12 +129,12 @@
 /datum/religion_sect/proc/sect_dead_bless(mob/living/target, mob/living/chap)
 	return FALSE
 
-/**** Free Union of Vulken Approved God ****/
+/**** Nanotrasen Approved God ****/
 
 /datum/religion_sect/puritanism
-	name = "Free Union of Vulken Approved God"
+	name = "Nanotrasen Approved God"
 	desc = "Your run-of-the-mill sect, there are no benefits or boons associated."
-	quote = "Free Union of Vulken Recommends!"
+	quote = "Nanotrasen Recommends!"
 	tgui_icon = "bible"
 
 /**** Mechanical God ****/

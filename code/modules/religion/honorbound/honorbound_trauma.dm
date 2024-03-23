@@ -188,7 +188,7 @@
 	cooldown_time = 0
 
 	invocation = "This is an error!"
-	invocation_type = INVOCATION_WHISPER
+	invocation_type = INVOCATION_SHOUT
 	spell_requirements = SPELL_REQUIRES_HUMAN
 
 	active_msg = "You prepare to declare a sinner..."

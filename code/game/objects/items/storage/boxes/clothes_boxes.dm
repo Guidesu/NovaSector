@@ -210,6 +210,7 @@
 	new /obj/item/clothing/mask/floortilebalaclava(src)
 	new /obj/item/clothing/gloves/combat/floortile(src)
 	new /obj/item/clothing/shoes/jackboots/floortile(src)
+	new /obj/item/storage/backpack/floortile(src)
 
 /obj/item/storage/box/collar_bomb
 	name = "collar bomb box"
