@@ -10,6 +10,11 @@
 /turf/open/floor/iron/dark/textured_large,
 /area/shuttle/interdyne_cargo)
 "f" = (
+/obj/structure/frame/machine{
+	anchored = 1;
+	state = 2;
+	icon_state = "box_1"
+	},
 /obj/item/circuitboard/machine/ore_redemption,
 /obj/item/assembly/igniter,
 /obj/effect/turf_decal/delivery,
@@ -18,7 +23,6 @@
 	req_access = list("syndicate");
 	id = "interdyneshuttle"
 	},
-/obj/structure/frame/machine/secured,
 /turf/open/floor/iron/dark/textured_large,
 /area/shuttle/interdyne_cargo)
 "g" = (
@@ -30,9 +34,13 @@
 /area/shuttle/interdyne_cargo)
 "i" = (
 /obj/machinery/light/small/red/directional/south,
+/obj/structure/frame/machine{
+	anchored = 1;
+	state = 2;
+	icon_state = "box_1"
+	},
 /obj/item/circuitboard/machine/ore_silo,
 /obj/effect/turf_decal/delivery,
-/obj/structure/frame/machine/secured,
 /turf/open/floor/iron/dark/textured_large,
 /area/shuttle/interdyne_cargo)
 "k" = (
@@ -47,6 +55,12 @@
 	},
 /obj/machinery/door/poddoor/preopen{
 	id = "interdyneshuttle"
+	},
+/turf/open/floor/plating,
+/area/shuttle/interdyne_cargo)
+"r" = (
+/obj/structure/fans/tiny/forcefield{
+	dir = 4
 	},
 /turf/open/floor/plating,
 /area/shuttle/interdyne_cargo)
@@ -119,7 +133,6 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
-/obj/effect/mapping_helpers/airlock/access/all/syndicate/general,
 /obj/effect/mapping_helpers/airlock/cutaiwire,
 /obj/structure/fans/tiny,
 /obj/machinery/door/airlock/external/glass{
@@ -129,7 +142,7 @@
 	dir = 4;
 	shuttle_id = "interdyne_cargo";
 	launch_status = 0;
-	name = "Interdyne Cargo Shuttle";
+	name = "Free Union of Vulken Cargo Shuttle";
 	port_direction = 2;
 	preferred_direction = 4
 	},
@@ -245,7 +258,7 @@ G
 g
 g
 v
-g
+r
 g
 G
 N

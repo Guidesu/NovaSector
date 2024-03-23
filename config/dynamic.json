@@ -31,7 +31,7 @@
 				"Detective",
 				"Head of Security",
 				"Captain",
-				"Nanotrasen Consultant",
+				"Free Union of Vulken Consultant",
 				"Head of Personnel",
 				"Chief Engineer",
 				"Chief Medical Officer",
@@ -155,7 +155,7 @@
 			"weight": 0
 		},
 
-		"Heretic Smuggler": {
+		"Psyonaut Smuggler": {
 			"weight": 0
 		},
 

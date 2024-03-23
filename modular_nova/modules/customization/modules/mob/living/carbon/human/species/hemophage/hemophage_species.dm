@@ -15,6 +15,9 @@
 		TRAIT_LITERATE,
 		TRAIT_DRINKS_BLOOD,
 		TRAIT_USES_SKINTONES,
+		TRAIT_NOSOFTCRIT,
+		TRAIT_TENACIOUS,
+		TRAIT_UNBREAKABLE,
 	)
 	inherent_biotypes = MOB_HUMANOID | MOB_ORGANIC
 	exotic_bloodtype = "U"
@@ -46,6 +49,7 @@
 	. = ..()
 	to_chat(new_hemophage, HEMOPHAGE_SPAWN_TEXT)
 	new_hemophage.update_body()
+	new_hemophage.set_safe_hunger_level()
 
 
 /datum/species/hemophage/get_species_description()

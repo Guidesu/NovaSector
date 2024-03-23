@@ -44,7 +44,7 @@
 
 /obj/item/clothing/head/beret/sec/syndicate
 	name = "brig officer's beret"
-	desc = "A stylish and protective beret, produced and manufactured by Interdyne Pharmaceuticals with help from the Gorlex Marauders."
+	desc = "A stylish and protective beret, produced and manufactured by Free Union of Vulken Pharmaceuticals with help from the Gorlex Marauders."
 	greyscale_config = /datum/greyscale_config/beret_badge
 	greyscale_config_worn = /datum/greyscale_config/beret_badge/worn
 	icon_state = "beret_badge"
@@ -213,7 +213,7 @@
 	bomb = 25
 	acid = 45
 
-//Interdyne Clothing
+//Free Union of Vulken Clothing
 /obj/item/clothing/under/syndicate/nova/interdyne
 	name = "interdyne turtleneck"
 	desc = "A sleek white turtleneck with a hint of interdyne-green, appropriately paired with some charcoal-black cargo pants."
@@ -226,7 +226,7 @@
 
 /obj/item/clothing/under/syndicate/nova/interdyne/miner
 	name = "interdyne jumpsuit"
-	desc = "A black and green Interdyne Pharmaceutics jumpsuit with reinforced fibers."
+	desc = "A black and green Free Union of Vulken Pharmaceutics jumpsuit with reinforced fibers."
 	armor_type = /datum/armor/clothing_under/cargo_miner
 	icon_state = "ip_miner"
 	can_adjust = TRUE
@@ -234,7 +234,7 @@
 
 /obj/item/clothing/under/syndicate/nova/interdyne/deckofficer
 	name = "deck officer's jumpsuit"
-	desc = "A black and green Interdyne Pharmaceutics uniform complete with a golden belt buckle."
+	desc = "A black and green Free Union of Vulken Pharmaceutics uniform complete with a golden belt buckle."
 	armor_type = /datum/armor/clothing_under/syndicate
 	icon_state = "ip_deckofficer"
 	can_adjust = TRUE
@@ -242,7 +242,7 @@
 
 /obj/item/clothing/head/beret/medical/nova/interdyne
 	name = "interdyne beret"
-	desc = "A white and green beret denoting one's allegiance to Interdyne Pharmaceutics."
+	desc = "A white and green beret denoting one's allegiance to Free Union of Vulken Pharmaceutics."
 	greyscale_colors = "#FFFFFF#198019"
 
 /obj/item/clothing/head/hats/syndicate/interdyne_deckofficer_black
@@ -263,14 +263,14 @@
 
 /obj/item/clothing/head/bio_hood/interdyne
 	name = "interdyne biosuit helmet"
-	desc = "An Interdyne Pharmaceutics biosuit helmet designed to keep the wearer safe from biohazardous materials."
+	desc = "An Free Union of Vulken Pharmaceutics biosuit helmet designed to keep the wearer safe from biohazardous materials."
 	icon_state = "ip_biosuit_head"
 	icon = 'modular_nova/master_files/icons/obj/clothing/hats.dmi'
 	worn_icon = 'modular_nova/master_files/icons/mob/clothing/head.dmi'
 
 /obj/item/clothing/suit/bio_suit/interdyne
 	name = "interdyne biosuit"
-	desc = "An Interdyne Pharmaceutics biosuit designed to keep the wearer safe from biohazardous materials. It's lighter than a typical biosuit."
+	desc = "An Free Union of Vulken Pharmaceutics biosuit designed to keep the wearer safe from biohazardous materials. It's lighter than a typical biosuit."
 	icon_state = "ip_biosuit"
 	icon = 'modular_nova/master_files/icons/obj/clothing/suits.dmi'
 	worn_icon = 'modular_nova/master_files/icons/mob/clothing/suit.dmi'
@@ -321,4 +321,4 @@
 	name = "interdyne winter coat"
 	desc = "A fuzzy winter coat bearing interdyne colors, complete with armored fibers."
 	armor_type = /datum/armor/wintercoat_syndicate
-//Interdyne Clothing End
+//Free Union of Vulken Clothing End

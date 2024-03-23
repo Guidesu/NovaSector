@@ -1,6 +1,6 @@
 /datum/uplink_item/device_tools/syndie_jaws_of_life_traitor
 	name = "Syndicate Jaws of Life"
-	desc = "Based on a Nanotrasen model, this powerful tool can be used as both a crowbar and a pair of wirecutters. \
+	desc = "Based on a Free Union of Vulken model, this powerful tool can be used as both a crowbar and a pair of wirecutters. \
 	In its crowbar configuration, it can be used to force open airlocks. Very useful for entering the station or its departments."
 	item = /obj/item/crowbar/power/syndicate
 	cost = 3

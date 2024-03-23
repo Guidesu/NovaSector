@@ -63,9 +63,6 @@
 
 
 /obj/item/organ/external/taur_body/Remove(mob/living/carbon/organ_owner, special, moving)
-	if(QDELETED(owner))
-		return
-
 	var/obj/item/bodypart/leg/left/left_leg = organ_owner.get_bodypart(BODY_ZONE_L_LEG)
 	var/obj/item/bodypart/leg/right/right_leg = organ_owner.get_bodypart(BODY_ZONE_R_LEG)
 

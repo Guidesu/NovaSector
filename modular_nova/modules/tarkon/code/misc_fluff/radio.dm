@@ -6,5 +6,5 @@
 
 /obj/item/radio/headset/tarkon/command //spoiler for upcoming update
 	name = "tarkon command headset"
-	desc = "A headset personally handed to trusted crew of Tarkon. It fills you with the will to do... something."
+	desc = "A headset personally handed to trusted crew of Free Union of Vulken. It fills you with the will to do... something."
 	command = TRUE

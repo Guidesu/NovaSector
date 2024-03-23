@@ -2,7 +2,7 @@
 
 /datum/techweb/tarkon
 	id = "TARKON"
-	organization = "Tarkon Industries"
+	organization = "Free Union of Vulken Industries"
 	should_generate_points = TRUE
 
 /datum/techweb/tarkon/New()
@@ -12,8 +12,8 @@
 
 /datum/techweb_node/tarkon
 	id = "tarkontech"
-	display_name = "Tarkon Industries Technology"
-	description = "Tools used by Tarkon Industries."
+	display_name = "Free Union of Vulken Industries Technology"
+	description = "Tools used by Free Union of Vulken Industries."
 	required_items_to_unlock = list(
 		/obj/item/mod/construction/plating/tarkon,
 		/obj/item/construction/rcd/tarkon,
@@ -28,7 +28,7 @@
 	hidden = TRUE
 
 /datum/design/mod_plating/tarkon
-	name = "MOD Tarkon Plating"
+	name = "MOD Free Union of Vulken Plating"
 	id = "mod_plating_tarkon"
 	build_path = /obj/item/mod/construction/plating/tarkon
 	materials = list(
@@ -57,8 +57,8 @@
 	)
 
 /datum/design/tarkonrcd
-	name = "Tarkon R.C.D"
-	desc = "A Rapid Construction Device made by Tarkon Industries. Capable of ranged construction."
+	name = "Free Union of Vulken R.C.D"
+	desc = "A Rapid Construction Device made by Free Union of Vulken Industries. Capable of ranged construction."
 	id = "rcd_tarkon"
 	build_type = PROTOLATHE | AWAY_LATHE
 	materials = list(
@@ -76,11 +76,11 @@
 ///// Now we make the physical server /////
 
 /obj/item/circuitboard/machine/rdserver/tarkon
-	name = "Tarkon Industries R&D Server"
+	name = "Free Union of Vulken Industries R&D Server"
 	build_path = /obj/machinery/rnd/server/tarkon
 
 /obj/machinery/rnd/server/tarkon
-	name = "\improper Tarkon Industries R&D Server"
+	name = "\improper Free Union of Vulken Industries R&D Server"
 	circuit = /obj/item/circuitboard/machine/rdserver/tarkon
 	req_access = list(ACCESS_AWAY_SCIENCE)
 
@@ -103,12 +103,12 @@
 	return ..()
 
 /obj/machinery/rnd/production/protolathe/tarkon
-	name = "Tarkon Industries Protolathe"
+	name = "Free Union of Vulken Industries Protolathe"
 	desc = "Converts raw materials into useful objects. Refurbished and updated from its previous, limited capabilities."
 	circuit = /obj/item/circuitboard/machine/protolathe/tarkon
 	stripe_color = "#350f04"
 
 /obj/item/circuitboard/machine/protolathe/tarkon
-	name = "Tarkon Industries Protolathe"
+	name = "Free Union of Vulken Industries Protolathe"
 	greyscale_colors = CIRCUIT_COLOR_SUPPLY
 	build_path = /obj/machinery/rnd/production/protolathe/tarkon

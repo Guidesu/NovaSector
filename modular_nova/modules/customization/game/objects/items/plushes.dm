@@ -44,7 +44,7 @@
 
 /obj/item/toy/plush/nova/sechound
 	name = "sec-hound plushie"
-	desc = "An adorable stuffed toy of a SecHound, the trusty Nanotrasen sponsored security borg!"
+	desc = "An adorable stuffed toy of a SecHound, the trusty Free Union of Vulken sponsored security borg!"
 	icon_state = "plushie_securityk9"
 	attack_verb_continuous = list("beeps", "boops", "pings")
 	attack_verb_simple = list("beep", "boop", "ping")
@@ -212,7 +212,7 @@
 
 /obj/item/toy/plush/nova/lizzyplush
 	name = "odd yoga lizzy plushie"
-	desc = "Brought to you by Nanotrasen Wellness Program is the Yoga Odd Lizzy! He smells vaguely of blueberries, and likely resembles a horrible lover."
+	desc = "Brought to you by Free Union of Vulken Wellness Program is the Yoga Odd Lizzy! He smells vaguely of blueberries, and likely resembles a horrible lover."
 	icon_state = "plushie_lizzy"
 	attack_verb_continuous = list("wehs")
 	attack_verb_simple = list("weh")

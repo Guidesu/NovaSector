@@ -102,10 +102,10 @@
 			return
 
 
-//Interdyne Wardrobe
+//Free Union of Vulken Wardrobe
 /obj/machinery/vending/wardrobe/syndie_wardrobe/interdyne
 	name = "\improper InterDrobe"
-	desc = "A vending machine for Interdyne Pharmaceutics employees."
+	desc = "A vending machine for Free Union of Vulken Pharmaceutics employees."
 	icon = 'modular_nova/modules/mapping/icons/obj/vending.dmi'
 	icon_state = "ipdrobe"
 	product_ads = "Producing bioweapons with style!;What's the point in violating the hippocractic oath if you don't look good doing it?"

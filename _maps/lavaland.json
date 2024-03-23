@@ -1,0 +1,54 @@
+{
+	"version": 1,
+	"map_name": "Vulken",
+	"map_path": "map_files/Mining",
+	"map_file": "Lavaland.dmm",
+	"space_ruin_levels": 0,
+	"space_empty_levels": 0,
+	"planetary": 1,
+	"shuttles": {
+		"cargo": "cargo_nova",
+		"ferry": "ferry_fancy",
+		"whiteship": "whiteship_box",
+		"emergency": "emergency_box"
+	},
+	"traits": [
+		{
+			"Up": true,
+			"Mining": true,
+			"Linkage": null,
+			"Gravity": true,
+			"Weather_Snowstorm": true,
+			"Weather_Ashstorm": true,
+			"Weather_Voidstorm": true,
+			"Rain_Storm": true
+		},
+		{
+			"Down": true,
+			"Up": true,
+			"Mining": true,
+			"Linkage": null,
+			"Gravity": true,
+			"Weather_Snowstorm": true,
+			"Weather_Ashstorm": true,
+			"Weather_Voidstorm": true,
+			"Rain_Storm": true
+		},
+		{
+			"Down": true,
+			"Mining": true,
+			"Linkage": null,
+			"Gravity": true,
+			"Weather_Snowstorm": true,
+			"Weather_Ashstorm": true,
+			"Weather_Voidstorm": true,
+			"Rain_Storm": true
+		}
+	],
+	"minetype": "none",
+	"job_changes": {
+		"Captain": {
+			"special_charter": "planet"
+		}
+	}
+}

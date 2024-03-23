@@ -1,13 +1,13 @@
-//Port Tarkon, 8 people trapped in a revamped charlie-station like ghost role. Survive the aliens and threats, Fix the port and/or finish construction
+//Port Free Union of Vulken, 8 people trapped in a revamped charlie-station like ghost role. Survive the aliens and threats, Fix the port and/or finish construction
 
 /obj/effect/mob_spawn/ghost_role/human/tarkon
-	name = "Port Tarkon Crew Member"
+	name = "Port Free Union of Vulken Crew Member"
 	prompt_name = "a port deck worker"
 	icon = 'icons/obj/machines/sleeper.dmi'
 	icon_state = "sleeper"
-	you_are_text = "You are a member of Tarkon Industries, recently assigned to a recently recovered asset known as Port Tarkon. Your supervisors are the Ensign and Site Director."
-	flavour_text = "On the recently reclaimed Port Tarkon, You are tasked to help finish construction and carry on any tasks given by the site director. It may be best to look at your departmental noteboard. (OOC note: This ghost role was not designed with Plasmamen or Vox in mind. While there are some accommodations so that they can survive, it should be noted that they were not the focal point whilst designing Port Tarkon. The closet in the middle of the room above contains the 'accommodations' for those species.)"
-	important_text = "You are not to abandon Port Tarkon. Check other sleepers for alternative jobs. Listen to the Site Director and Ensign."
+	you_are_text = "You are a member of Free Union of Vulken Industries, recently assigned to a recently recovered asset known as Port Free Union of Vulken. Your supervisors are the Ensign and Site Director."
+	flavour_text = "On the recently reclaimed Port Free Union of Vulken, You are tasked to help finish construction and carry on any tasks given by the site director. It may be best to look at your departmental noteboard. (OOC note: This ghost role was not designed with Plasmamen or Vox in mind. While there are some accommodations so that they can survive, it should be noted that they were not the focal point whilst designing Port Free Union of Vulken. The closet in the middle of the room above contains the 'accommodations' for those species.)"
+	important_text = "You are not to abandon Port Free Union of Vulken. Check other sleepers for alternative jobs. Listen to the Site Director and Ensign."
 	outfit = /datum/outfit/tarkon
 	spawner_job_path = /datum/job/tarkon
 	loadout_enabled = TRUE
@@ -47,7 +47,7 @@
 	outfit = /datum/outfit/tarkon/cargo
 
 /datum/outfit/tarkon/cargo
-	name = "Port Tarkon Cargo Outfit"
+	name = "Port Free Union of Vulken Cargo Outfit"
 	uniform = /obj/item/clothing/under/tarkon/cargo
 	glasses = /obj/item/clothing/glasses/sunglasses
 	id = /obj/item/card/id/advanced/tarkon/cargo
@@ -59,7 +59,7 @@
 	outfit = /datum/outfit/tarkon/sci
 
 /datum/outfit/tarkon/sci
-	name = "Port Tarkon Science Outfit"
+	name = "Port Free Union of Vulken Science Outfit"
 	uniform = /obj/item/clothing/under/tarkon/sci
 	glasses = /obj/item/clothing/glasses/hud/diagnostic
 	id = /obj/item/card/id/advanced/tarkon/sci
@@ -72,7 +72,7 @@
 	outfit = /datum/outfit/tarkon/med
 
 /datum/outfit/tarkon/med
-	name = "Port Tarkon Medical Outfit"
+	name = "Port Free Union of Vulken Medical Outfit"
 	uniform = /obj/item/clothing/under/tarkon/med
 	glasses = /obj/item/clothing/glasses/hud/health
 	id = /obj/item/card/id/advanced/tarkon/med
@@ -86,7 +86,7 @@
 	outfit = /datum/outfit/tarkon/engi
 
 /datum/outfit/tarkon/engi
-	name = "Port Tarkon Engineering Outfit"
+	name = "Port Free Union of Vulken Engineering Outfit"
 	uniform = /obj/item/clothing/under/tarkon/eng
 	glasses = /obj/item/clothing/glasses/meson/engine/tray
 	id = /obj/item/card/id/advanced/tarkon/engi
@@ -104,7 +104,7 @@
 	outfit = /datum/outfit/tarkon/sec
 
 /datum/outfit/tarkon/sec
-	name = "Port Tarkon Security Outfit"
+	name = "Port Free Union of Vulken Security Outfit"
 	uniform = /obj/item/clothing/under/tarkon/sec
 	glasses = /obj/item/clothing/glasses/hud/security/redsec
 	gloves = /obj/item/clothing/gloves/tackler/combat
@@ -115,18 +115,18 @@
 	r_pocket = /obj/item/grenade/barrier
 
 /obj/effect/mob_spawn/ghost_role/human/tarkon/ensign
-	name = "Port Tarkon Ensign"
+	name = "Port Free Union of Vulken Ensign"
 	prompt_name = "an abandoned ensign"
 	icon = 'icons/obj/machines/sleeper.dmi'
 	icon_state = "sleeper-o"
-	you_are_text = "You were tasked by Tarkon Industries to Port Tarkon as a low-level command member. Your superior is the site director."
-	flavour_text = "Second in command, you are usually tasked with outward missions with other Tarkon members while the site director stays at the port. (OOC note: This ghost role was not designed with Plasmamen or Vox in mind. While there are some accommodations so that they can survive, it should be noted that they were not the focal point whilst designing Port Tarkon. The closet in the middle of the room above contains the 'accommodations' for those species.)"
-	important_text = "This is Not a job ment for Non-Tarkon specific Characters. You are not to abandon Port Tarkon without reason. You are allowed to travel within available Z-levels and to the station, and are allowed to hold exploration parties."
+	you_are_text = "You were tasked by Free Union of Vulken Industries to Port Free Union of Vulken as a low-level command member. Your superior is the site director."
+	flavour_text = "Second in command, you are usually tasked with outward missions with other Free Union of Vulken members while the site director stays at the port. (OOC note: This ghost role was not designed with Plasmamen or Vox in mind. While there are some accommodations so that they can survive, it should be noted that they were not the focal point whilst designing Port Free Union of Vulken. The closet in the middle of the room above contains the 'accommodations' for those species.)"
+	important_text = "You are not to abandon Port Free Union of Vulken without reason. You are allowed to travel within available Z-levels and to the station, and are allowed to hold exploration parties."
 	outfit = /datum/outfit/tarkon/ensign
 	spawner_job_path = /datum/job/tarkon
 
 /datum/outfit/tarkon/ensign //jack of all trades, master of none, spent all his credits, every last one
-	name = "Port Tarkon Ensigns Outfit"
+	name = "Port Free Union of Vulken Ensigns Outfit"
 	uniform = /obj/item/clothing/under/tarkon/com
 	ears = /obj/item/radio/headset/tarkon/command
 	id = /obj/item/card/id/advanced/tarkon/ensign
@@ -134,13 +134,13 @@
 	neck = /obj/item/clothing/neck/security_cape/tarkon
 
 /obj/effect/mob_spawn/ghost_role/human/tarkon/director
-	name = "Port Tarkon Site Director"
+	name = "Port Free Union of Vulken Site Director"
 	prompt_name = "a port site director"
 	icon = 'icons/obj/machines/sleeper.dmi'
 	icon_state = "sleeper"
-	you_are_text = "You are a newly assigned Site Director for Port Tarkon. Your superiors are none except the will of yourself and Tarkon Industries."
-	flavour_text = "On the recently reclaimed Port Tarkon, You are tasked with overlooking your crew and keeping the port up and running. (OOC note: This ghost role was not designed with Plasmamen or Vox in mind. While there are some accommodations so that they can survive, it should be noted that they were not the focal point whilst designing Port Tarkon. The closet in the middle of the room above contains the 'accommodations' for those species.)"
-	important_text = "This is Not a job ment for Non-Tarkon specific Characters. You are not to abandon Port Tarkon. Check other sleepers for alternative jobs."
+	you_are_text = "You are a newly assigned Site Director for Port Free Union of Vulken. Your superiors are none except the will of yourself and Free Union of Vulken Industries."
+	flavour_text = "On the recently reclaimed Port Free Union of Vulken, You are tasked with overlooking your crew and keeping the port up and running. (OOC note: This ghost role was not designed with Plasmamen or Vox in mind. While there are some accommodations so that they can survive, it should be noted that they were not the focal point whilst designing Port Free Union of Vulken. The closet in the middle of the room above contains the 'accommodations' for those species.)"
+	important_text = "You are not to abandon Port Free Union of Vulken. Check other sleepers for alternative jobs."
 	outfit = /datum/outfit/tarkon/director
 	spawner_job_path = /datum/job/tarkon
 	loadout_enabled = TRUE
@@ -149,7 +149,7 @@
 	computer_area = /area/ruin/space/has_grav/port_tarkon
 
 /datum/outfit/tarkon/director //Look at me, I'm the director now.
-	name = "Port Tarkon Ensigns Outfit"
+	name = "Port Free Union of Vulken Ensigns Outfit"
 	uniform = /obj/item/clothing/under/tarkon/com
 	ears = /obj/item/radio/headset/tarkon/command
 	id = /obj/item/card/id/advanced/tarkon/director
@@ -167,7 +167,7 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/computer/cryopod/tarkon, 32)
 ////////////////////// Corpse/Mob Spawners Below
 
 /datum/outfit/tarkon/loot
-	name = "Dead Tarkon Ensigns Outfit"
+	name = "Dead Free Union of Vulken Ensigns Outfit"
 	uniform = /obj/item/clothing/under/tarkon/com
 	ears = /obj/item/radio/headset/tarkon/command
 	id = /obj/item/card/id/advanced/tarkon/ensign

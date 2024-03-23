@@ -18,17 +18,10 @@
 
 /datum/job/assistant
 	alt_titles = list(
-		"Assistant",
-		"Artist",
-		"Businessman",
-		"Businesswoman",
-		"Civilian",
-		"Entertainer",
 		"Freelancer",
 		"Tourist",
 		"Trader",
-		"Off-Duty Crew",
-		"Off-Duty Staff",
+		"Off-Duty Colonist",
 		"Colonist",
 	)
 
@@ -104,10 +97,10 @@
 
 /datum/job/captain
 	alt_titles = list(
-		"Captain",
-		"Commanding Officer",
-		"Site Manager",
-		"Station Commander",
+		"Colony Caretaker",
+		"Colony Homesteader",
+		"Site Maiden",
+		"Housewife",
 	)
 
 /datum/job/cargo_technician
@@ -291,9 +284,9 @@
 
 /datum/job/nanotrasen_consultant
 	alt_titles = list(
-		"Nanotrasen Consultant",
-		"Nanotrasen Advisor",
-		"Nanotrasen Diplomat",
+		"Free Union of Vulken Consultant",
+		"Free Union of Vulken Advisor",
+		"Free Union of Vulken Diplomat",
 	)
 
 /datum/job/orderly

@@ -1,6 +1,6 @@
 /obj/item/clothing/neck/security_cape/tarkon
 	name = "tarkon protection gauntlet"
-	desc = "A full-arm gauntlet used by Tarkon Industries to protect the main tool-arm of its employee's. Not that useful in a real fight, however."
+	desc = "A full-arm gauntlet used by Free Union of Vulken Industries to protect the main tool-arm of its employee's. Not that useful in a real fight, however."
 	worn_icon = 'modular_nova/modules/tarkon/icons/mob/clothing/neck.dmi'
 	icon = 'modular_nova/modules/tarkon/icons/obj/clothing/neck.dmi'
 	icon_state = "armplate_shemaugh"

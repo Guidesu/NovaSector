@@ -11,11 +11,10 @@
 /area/shuttle/supply)
 "ds" = (
 /obj/docking_port/mobile/supply,
-/obj/machinery/door/airlock/grunge{
-	name = "Supply Shuttle Airlock";
-	req_access = list("cargo")
-	},
 /obj/effect/turf_decal/delivery/white,
+/obj/structure/fans/tiny/forcefield{
+	dir = 4
+	},
 /turf/open/floor/iron/dark/smooth_large,
 /area/shuttle/supply)
 "go" = (
@@ -109,22 +108,18 @@
 /turf/open/floor/iron/dark/diagonal,
 /area/shuttle/supply)
 "uk" = (
-/obj/machinery/conveyor{
-	dir = 8;
-	id = "QMLoad"
-	},
-/obj/machinery/door/poddoor{
-	id = "QMLoaddoor";
-	name = "Supply Dock Loading Door"
+/obj/structure/fans/tiny,
+/obj/structure/fans/tiny/forcefield{
+	dir = 4
 	},
 /turf/open/floor/plating,
 /area/shuttle/supply)
 "wR" = (
-/obj/machinery/door/airlock/grunge{
-	name = "Supply Shuttle Airlock";
-	req_access = list("cargo")
-	},
 /obj/effect/turf_decal/delivery/white,
+/obj/structure/fans/tiny,
+/obj/structure/fans/tiny/forcefield{
+	dir = 4
+	},
 /turf/open/floor/iron/dark/smooth_large,
 /area/shuttle/supply)
 "zQ" = (
@@ -192,13 +187,8 @@
 /turf/open/floor/iron/dark/diagonal,
 /area/shuttle/supply)
 "Xz" = (
-/obj/machinery/conveyor{
-	dir = 4;
-	id = "QMLoad2"
-	},
-/obj/machinery/door/poddoor{
-	id = "QMLoaddoor2";
-	name = "Supply Dock Loading Door"
+/obj/structure/fans/tiny/forcefield{
+	dir = 4
 	},
 /turf/open/floor/plating,
 /area/shuttle/supply)

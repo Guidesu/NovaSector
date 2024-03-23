@@ -106,7 +106,7 @@
 	access_list += ACCESS_SERVICE
 	return access_list
 
-// Port Tarkon
+// Port Free Union of Vulken
 /obj/effect/mapping_helpers/airlock/access/all/tarkon
 	icon_state = "access_helper_syn"
 

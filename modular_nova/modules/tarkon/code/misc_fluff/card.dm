@@ -8,8 +8,8 @@
 	trim_state = "trim_unknown"
 
 /obj/item/card/id/advanced/tarkon
-	name = "Tarkon deck access pass"
-	desc = "A dust-collected visitors pass, A small tagline reading \"Port Tarkon, The first step to Civilian Partnership in Space Homesteading\"."
+	name = "Free Union of Vulken deck access pass"
+	desc = "A dust-collected visitors pass, A small tagline reading \"Port Free Union of Vulken, The first step to Civilian Partnership in Space Homesteading\"."
 	icon = 'modular_nova/modules/tarkon/icons/misc/card.dmi'
 	icon_state = "tarkon"
 	trim = /datum/id_trim/away/tarkon
@@ -74,14 +74,14 @@
 	access = list(ACCESS_ROBOTICS)
 
 /obj/item/card/id/away/tarkonrobo
-	name = "Tarkon Robotics Card"
-	desc = "An access card designed to access robot's access ports, provided by Tarkon Industries."
+	name = "Free Union of Vulken Robotics Card"
+	desc = "An access card designed to access robot's access ports, provided by Free Union of Vulken Industries."
 	icon = 'modular_nova/modules/tarkon/icons/misc/card.dmi'
 	icon_state = "robotics"
 	trim = /datum/id_trim/away/tarkon/robo
 
 /datum/id_trim/away/tarkon/ensign
-	assignment = "Tarkon Ensign"
+	assignment = "Free Union of Vulken Ensign"
 	access = list(ACCESS_MEDICAL, ACCESS_ROBOTICS, ACCESS_AWAY_GENERAL, ACCESS_TARKON, ACCESS_WEAPONS)
 	department_color = COLOR_COMMAND_BLUE
 	sechud_icon_state = SECHUD_BLUESHIELD
@@ -95,18 +95,18 @@
 
 
 /obj/item/card/id/advanced/tarkon/ensign
-	name = "Tarkon ensign's access card"
-	desc = "An access card designated for \"Tarkon ensign\". No one has to listen to you... But you're the closest thing there is to command around here."
+	name = "Free Union of Vulken ensign's access card"
+	desc = "An access card designated for \"Free Union of Vulken ensign\". No one has to listen to you... But you're the closest thing there is to command around here."
 	trim = /datum/id_trim/away/tarkon/ensign
 
 /datum/id_trim/away/tarkon/director
-	assignment = "Tarkon Port Director"
+	assignment = "Free Union of Vulken Port Director"
 	access = list(ACCESS_MEDICAL, ACCESS_ROBOTICS, ACCESS_AWAY_GENERAL, ACCESS_TARKON, ACCESS_WEAPONS)
 	department_color = COLOR_COMMAND_BLUE
 	sechud_icon_state = SECHUD_BLUESHIELD
 	trim_state = "trim_captain"
 
 /obj/item/card/id/advanced/tarkon/director
-	name = "Tarkon port director's access card"
-	desc = "An access card designated for \"Tarkon Port Director\". Its no longer hesitation, only consideration."
+	name = "Free Union of Vulken port director's access card"
+	desc = "An access card designated for \"Free Union of Vulken Port Director\". Its no longer hesitation, only consideration."
 	trim = /datum/id_trim/away/tarkon/director

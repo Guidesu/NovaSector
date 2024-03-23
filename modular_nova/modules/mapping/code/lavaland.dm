@@ -14,14 +14,14 @@
 	allow_duplicates = FALSE
 
 /datum/map_template/ruin/lavaland/nova/interdyne_base
-	name = "Lava-Ruin Interdyne Pharmaceutics Nova Sector Base 3c76928"
+	name = "Free Union of Vulken Pharmaceutics Nova Sector Base 3c76928"
 	id = "lava-base"
-	description = "A planetside Interdyne research facility developing biological weapons; it is closely guarded by an elite team of agents."
+	description = "A planetside Free Union of Vulken research facility developing biological weapons; it is closely guarded by an elite team of agents."
 	prefix = "_maps/RandomRuins/LavaRuins/nova/"
 	suffix = "lavaland_surface_interdyne_base1.dmm"
 	allow_duplicates = FALSE
 	never_spawn_with = list(/datum/map_template/ruin/icemoon/underground/nova/interdyne_base)
-	always_place = TRUE
+	always_place = FALSE
 
 /datum/map_template/ruin/lavaland/arena
 	name = "Lava-Ruin Grand Arena"
@@ -30,14 +30,5 @@
 	prefix = "_maps/RandomRuins/LavaRuins/nova/"
 	suffix = "lavaland_surface_arena.dmm"
 	cost = 0
-	always_place = TRUE //WOULD BE UNFAIR IF SOMETHING THAT IS ALWAYS PLACED HAD A COST...
+	always_place = FALSE //WOULD BE UNFAIR IF SOMETHING THAT IS ALWAYS PLACED HAD A COST...
 	allow_duplicates = FALSE
-
-/datum/map_template/ruin/lavaland/nova/colonist_homestead
-	name = "Lava-Ruin Colonist Homestead"
-	id = "colonist_homestead"
-	description = "Some Tiziran bushcraft club members adopted the name of a historical figure for 'immersion.' They didn't realize how hard that would make things..."
-	prefix = "_maps/RandomRuins/LavaRuins/nova/"
-	suffix = "lavaland_surface_prefab_homestead.dmm"
-	allow_duplicates = FALSE
-	cost = 5

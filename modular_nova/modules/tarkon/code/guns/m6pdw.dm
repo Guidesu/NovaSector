@@ -1,4 +1,4 @@
-// Tarkon M6 PDW //
+// Free Union of Vulken M6 PDW //
 
 /obj/item/gun/ballistic/automatic/m6pdw
 	name = "\improper M6 Personal Defense Weapon"

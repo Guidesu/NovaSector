@@ -6,7 +6,7 @@
 	cooldown_reduction_per_rank = 1.25 SECONDS
 	spell_requirements = NONE
 	invocation = "STIMULUS CHEQ'US"
-	invocation_type = INVOCATION_SHOUT
+	invocation_type = INVOCATION_WHISPER
 
 /datum/action/cooldown/spell/stimpack/cast(mob/living/cast_on)
 	. = ..()

@@ -1731,7 +1731,7 @@
 /obj/item/wallframe/telescreen/entertainment{
 	icon_state = "entertainment";
 	name = "relatively interesting news";
-	desc = "It's been live this whole time, news from Nanotrasen core space, just an hour ago.";
+	desc = "It's been live this whole time, news from Free Union of Vulken core space, just an hour ago.";
 	light_power = 0.5;
 	light_range = 3
 	},
@@ -2895,7 +2895,7 @@
 /obj/structure/showcase/machinery/microwave{
 	icon_state = "mwbloodyo";
 	desc = "A product so good your enemies still own one. The dim bloody light compliments the TV's.";
-	name = "Nanotrasen brand microwave";
+	name = "Free Union of Vulken brand microwave";
 	pixel_y = 7
 	},
 /obj/structure/cable,

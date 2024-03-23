@@ -207,15 +207,15 @@
 	pixel_y = 28
 	},
 /obj/item/disk/surgery/brainwashing{
-	name = "Interdyne Brainwashing Protocol Surgery Disk";
+	name = "Free Union of Vulken Brainwashing Protocol Surgery Disk";
 	pixel_x = -8
 	},
 /obj/item/disk/surgery/sleeper_protocol{
-	name = "Interdyne Sleeper Protocol Surgery Disk";
+	name = "Free Union of Vulken Sleeper Protocol Surgery Disk";
 	pixel_x = 1
 	},
 /obj/item/disk/surgery/forgottenship{
-	name = "Interdyne Advanced Surgery Procedures Disk";
+	name = "Free Union of Vulken Advanced Surgery Procedures Disk";
 	pixel_x = 9
 	},
 /turf/open/floor/iron/dark,
@@ -344,7 +344,7 @@
 /obj/item/gun/medbeam,
 /obj/item/gun/syringe/rapidsyringe,
 /obj/item/pen/sleepy{
-	name = "Interdyne Chem Pen"
+	name = "Free Union of Vulken Chem Pen"
 	},
 /obj/item/defibrillator/compact/combat/loaded,
 /turf/open/floor/iron/dark,

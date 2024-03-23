@@ -18,7 +18,7 @@
 	icon = 'icons/obj/machines/sleeper.dmi'
 	icon_state = "sleeper"
 	mob_species = /datum/species/human
-	you_are_text = "You are a black market dealer, with shop set up in Nanotrasen Space."
+	you_are_text = "You are a black market dealer, with shop set up in Free Union of Vulken Space."
 	flavour_text = "FTU, Independent.. whatever, whoever you are. It doesn't matter out here. \
 	You've set up shop in a slightly shady, yet functional little asteroid for your dealings. \
 	Explore space, find valuable artifacts and nice loot - and pawn it off to those stooges at NT. \
@@ -45,7 +45,7 @@
 	use_outfit_name = TRUE
 	prompt_name = "DS2 personnel"
 	you_are_text = "You are a syndicate operative, employed in a top secret research facility developing biological weapons."
-	flavour_text = "Unfortunately, your hated enemy, Nanotrasen, has begun mining in this sector. Continue operating as best you can, and try to keep a low profile."
+	flavour_text = "Unfortunately, your hated enemy, Free Union of Vulken, has begun mining in this sector. Continue operating as best you can, and try to keep a low profile."
 	quirks_enabled = TRUE
 	random_appearance = FALSE
 	computer_area = /area/ruin/space/has_grav/nova/des_two/service/dorms

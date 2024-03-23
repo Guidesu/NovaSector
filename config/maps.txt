@@ -18,33 +18,33 @@ endmap
 map birdshot
 	#default
 	maxplayers 66
-	votable
+	disabled
 endmap
 
 map deltastation
 	minplayers 50
-	votable
+	disabled
 endmap
 
 map icebox
 	minplayers 25
-	votable
+	disabled
 endmap
 
 map metastation
 	minplayers 25
 	#voteweight 0.5
-	votable
+	disabled
 endmap
 
 map northstar
 	minplayers 50
-	votable
+	disabled
 endmap
 
 map tramstation
 	minplayers 35
-	votable
+	disabled
 endmap
 
 # Debug-only maps.
@@ -67,5 +67,9 @@ endmap
 
 map blueshift
 	minplayers 70
+	votable
+endmap
+
+map lavaland
 	votable
 endmap

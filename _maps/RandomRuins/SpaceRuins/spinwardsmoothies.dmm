@@ -107,7 +107,7 @@
 "DW" = (
 /obj/structure/statue/gold/rd{
 	anchored = 1;
-	desc = "A statue of the founder of Spinward Smoothies. The number 007 is carved into its placard, for some reason.";
+	desc = "A statue of the founder of Outerfringe Smoothies. The number 007 is carved into its placard, for some reason.";
 	name = "Golden Memories";
 	pixel_y = 12
 	},

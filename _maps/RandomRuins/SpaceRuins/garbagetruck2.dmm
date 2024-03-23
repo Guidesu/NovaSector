@@ -215,7 +215,7 @@
 /area/ruin/space/has_grav/garbagetruck/medicalwaste)
 "uo" = (
 /obj/machinery/computer/terminal{
-	content = list("Property of Spinward-Upsilon Sanitation Department. Authorised employees only.");
+	content = list("Property of Outerfringe-Upsilon Sanitation Department. Authorised employees only.");
 	desc = "A garbage truck's dusty old control console.";
 	name = "dashboard";
 	upperinfo = "Controls locked."
@@ -287,7 +287,7 @@
 /area/ruin/space/has_grav/garbagetruck/medicalwaste)
 "zj" = (
 /obj/structure/table/rolling{
-	desc = "An Interdyne Pharmaceutics brand 'Crash Cart Classic' rolling table for surgical tools. It can and will move.";
+	desc = "An Free Union of Vulken Pharmaceutics brand 'Crash Cart Classic' rolling table for surgical tools. It can and will move.";
 	name = "rolling surgical tray"
 	},
 /turf/open/floor/plating,

@@ -5,6 +5,9 @@
 		TRAIT_CAN_STRIP,
 		TRAIT_PLANT_SAFE,
 		TRAIT_LITERATE,
+		TRAIT_NOSOFTCRIT,
+		TRAIT_TENACIOUS,
+		TRAIT_UNBREAKABLE,
 	)
 	mutant_bodyparts = list()
 	payday_modifier = 1.0

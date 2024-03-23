@@ -20,7 +20,7 @@
 "cS" = (
 /obj/machinery/door/airlock/titanium,
 /obj/docking_port/mobile{
-	name = "Tarkon Driver";
+	name = "Free Union of Vulken Driver";
 	port_direction = 2;
 	preferred_direction = 8;
 	shuttle_id = "tarkon_driver"

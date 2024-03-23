@@ -8,6 +8,9 @@
 		TRAIT_CAN_STRIP,
 		TRAIT_LITERATE,
 		TRAIT_USES_SKINTONES,
+		TRAIT_NOSOFTCRIT,
+		TRAIT_TENACIOUS,
+		TRAIT_UNBREAKABLE,
 	)
 	mutanttongue = /obj/item/organ/internal/tongue/dwarven
 	skinned_type = /obj/item/stack/sheet/animalhide/human
