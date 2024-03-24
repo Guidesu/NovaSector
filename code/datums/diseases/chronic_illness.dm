@@ -87,9 +87,6 @@
 					qdel(affected_mob)
 
 /datum/disease/advance/symbiota
-	copy_type = /datum/disease/advance
-
-/datum/disease/advance/symbiota/New()
     name = "Symbiota Iluminosa Infestation"
     max_stages = 5
     spread_text = "The Symbiota Infestation spreads through birth with infected individuals."
@@ -106,4 +103,6 @@
     desc = "The Symbiota Infestation is a mysterious virus caused by microscopic agents that integrate with the host's biology, forming a symbiotic relationship. Once infected, the virus augment the host's physiology, enhancing physical capabilities and providing regenerative properties."
     severity = DISEASE_SEVERITY_UNCURABLE
     bypasses_immunity = TRUE
+
+/datum/disease/advance/symbiota/New()
     symptoms = list(/datum/symptom/heal/starlight, /datum/symptom/heal/chem, /datum/symptom/heal/metabolism, /datum/symptom/heal/darkness, /datum/symptom/heal/coma, /datum/symptom/heal/water, /datum/symptom/heal/plasma, /datum/symptom/heal/radiation, /datum/symptom/mind_restoration, /datum/symptom/sensory_restoration, /datum/symptom/undead_adaptation, /datum/symptom/viraladaptation, /datum/symptom/viralevolution, /datum/symptom/youth)
