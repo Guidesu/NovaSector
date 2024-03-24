@@ -53,12 +53,10 @@
 /datum/loadout_item/suit/rax_peacekeeper_jacket
 	name = "Peacekeeper jacket"
 	item_path = /obj/item/clothing/suit/armor/vest/warden/rax
-	restricted_roles = list(JOB_BLUESHIELD, JOB_HEAD_OF_SECURITY, JOB_SECURITY_OFFICER, JOB_WARDEN, JOB_DETECTIVE, JOB_CORRECTIONS_OFFICER
 
 /datum/loadout_item/under/jumpsuit/rax_banded_uniform
 	name = "Banded Uniform"
 	item_path = /obj/item/clothing/under/rank/security/rax
-	restricted_roles = list(JOB_BLUESHIELD, JOB_HEAD_OF_SECURITY, JOB_SECURITY_OFFICER, JOB_WARDEN, JOB_DETECTIVE, JOB_CORRECTIONS_OFFICER
 
 /datum/loadout_item/head/goldengoggles
 	name = "Steampunk Goggles"
@@ -67,7 +65,6 @@
 /datum/loadout_item/under/jumpsuit/plasmaman_jax
 	name = "XuraCorp Biohazard Underfitting"
 	item_path = /obj/item/clothing/under/plasmaman/jax2
-	restricted_roles = list(JOB_RESEARCH_DIRECTOR, JOB_SCIENTIST, JOB_SCIENCE_GUARD, JOB_VIROLOGIST, JOB_GENETICIST
 
 /datum/loadout_item/mask/cmcp_mask
 	name = "CMCP Mask"
@@ -152,7 +149,6 @@
 /datum/loadout_item/suit/caligram_parka_vest_tan
 	name = "Caligram Armored Tan Parka"
 	item_path = /obj/item/clothing/suit/armor/vest/caligram_parka_vest
-	restricted_roles = list(JOB_BLUESHIELD, JOB_HEAD_OF_SECURITY, JOB_SECURITY_OFFICER, JOB_WARDEN, JOB_DETECTIVE, JOB_CORRECTIONS_OFFICER
 
 /datum/loadout_item/suit/brasspriest
 	name = "Brasspriest Coat"
@@ -197,12 +193,10 @@
 /datum/loadout_item/under/jumpsuit/captain_dress
 	name = "Captain's Dress"
 	item_path = /obj/item/clothing/under/rank/captain/dress
-	restricted_roles = list(JOB_CAPTAIN
 
 /datum/loadout_item/under/jumpsuit/netra_dress
 	name = "Black and Silver Armored Dress"
 	item_path = /obj/item/clothing/under/rank/blueshield/netra
-	restricted_roles = list(JOB_CAPTAIN, JOB_BLUESHIELD, JOB_HEAD_OF_SECURITY
 
 /datum/loadout_item/gloves/netra_gloves
 	name = "Black and Silver Gloves"
@@ -502,7 +496,6 @@
 /datum/loadout_item/under/jumpsuit/bubbly_clown
 	name = "Bubbly Clown Dress"
 	item_path = /obj/item/clothing/under/bubbly_clown/skirt
-	restricted_roles = list(JOB_CLOWN
 
 /datum/loadout_item/pocket_items/marsoc_coin
 	name = "MARSOC Challenge Coin"
