@@ -3,7 +3,7 @@
 	description = "Travel to strange lands. Mine ores. \
 		Meet strange creatures. Kill them for their gold."
 	department_head = list(JOB_QUARTERMASTER)
-	faction = FACTION_STATION
+	faction = FACTION_NONE
 	total_positions = 3
 	spawn_positions = 3
 	supervisors = SUPERVISOR_QM
@@ -26,7 +26,7 @@
 
 	family_heirlooms = list(/obj/item/pickaxe/mini, /obj/item/shovel)
 	rpg_title = "Adventurer"
-	job_flags = STATION_JOB_FLAGS
+	job_flags = DISABLED_STATION_JOB_FLAGS
 
 
 /datum/outfit/job/miner

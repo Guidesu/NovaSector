@@ -3,7 +3,7 @@
 	description = "Start the Supermatter, wire the solars, repair station hull \
 		and wiring damage."
 	department_head = list(JOB_CHIEF_ENGINEER)
-	faction = FACTION_STATION
+	faction = FACTION_NONE
 	total_positions = 5
 	spawn_positions = 5
 	supervisors = SUPERVISOR_CE
@@ -36,7 +36,7 @@
 		/obj/item/clothing/head/utility/hardhat/red/upgraded = 1
 	)
 	rpg_title = "Crystallomancer"
-	job_flags = STATION_JOB_FLAGS
+	job_flags = DISABLED_STATION_JOB_FLAGS
 
 
 /datum/outfit/job/engineer

@@ -1,20 +1,10 @@
 /datum/job/captain
 	title = JOB_CAPTAIN
-	description = "Be responsible for the station, manage your Heads of Staff, \
-		keep the crew alive, be prepared to do anything and everything or die \
-		horribly trying."
-	auto_deadmin_role_flags = DEADMIN_POSITION_HEAD|DEADMIN_POSITION_SECURITY
-	department_head = list("CentCom")
-	faction = FACTION_STATION
+	description = "You are the the owner of the colony. Self-explanatory."
+	faction = FACTION_NONE
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "Free Union Of Vulken officials and Space Law"
-	req_admin_notify = 1
-	minimal_player_age = 14
-	exp_requirements = 180
-	exp_required_type = EXP_TYPE_CREW
-	exp_required_type_department = EXP_TYPE_COMMAND
-	exp_granted_type = EXP_TYPE_CREW
+	supervisors = "Yourself"
 	config_tag = "CAPTAIN"
 
 	outfit = /datum/outfit/job/captain
@@ -50,14 +40,14 @@
 
 
 /datum/job/captain/get_captaincy_announcement(mob/living/captain)
-	return "Captain [captain.real_name] on deck!"
+	return "Colony Caretaker [captain.real_name] on deck!"
 
 /datum/job/captain/get_radio_information()
 	. = ..()
 	. += "\nYou have access to all radio channels, but they are not automatically tuned. Check your radio for more information."
 
 /datum/outfit/job/captain
-	name = "Captain"
+	name = "Colony Caretaker"
 	jobtype = /datum/job/captain
 
 	id = /obj/item/card/id/advanced/gold
@@ -117,7 +107,7 @@
 	celestial_charter.name_type = special_charter
 
 /datum/outfit/job/captain/mod
-	name = "Captain (MODsuit)"
+	name = "Colony Caretaker (MODsuit)"
 
 	suit_store = /obj/item/tank/internals/oxygen
 	back = /obj/item/mod/control/pre_equipped/magnate
@@ -125,3 +115,76 @@
 	head = null
 	mask = /obj/item/clothing/mask/gas/atmos/captain
 	internals_slot = ITEM_SLOT_SUITSTORE
+
+
+/datum/job/captain/after_spawn(mob/living/spawned, client/player_client)
+	. = ..()
+	if(!ishuman(spawned))
+		return
+	var/mob/living/carbon/human/human_spawned = spawned
+	var/obj/item/book/bible/booze/holy_bible = new
+	if(GLOB.religion)
+		if(human_spawned.mind)
+			human_spawned.mind.holy_role = HOLY_ROLE_PRIEST
+		holy_bible.deity_name = GLOB.deity
+		holy_bible.name = GLOB.bible_name
+		// These checks are important as there's no guarantee the "HOLY_ROLE_HIGHPRIEST" captain has selected a bible skin.
+		if(GLOB.bible_icon_state)
+			holy_bible.icon_state = GLOB.bible_icon_state
+		if(GLOB.bible_inhand_icon_state)
+			holy_bible.inhand_icon_state = GLOB.bible_inhand_icon_state
+		to_chat(human_spawned, span_boldnotice("There is already an established religion onboard the station. You are an acolyte of [GLOB.deity]. Defer to them."))
+		human_spawned.equip_to_slot_or_del(holy_bible, ITEM_SLOT_BACKPACK, indirect_action = TRUE)
+		var/nrt = GLOB.holy_weapon_type || /obj/item/nullrod
+		var/obj/item/nullrod/nullrod = new nrt(human_spawned)
+		human_spawned.put_in_hands(nullrod)
+		if(GLOB.religious_sect)
+			GLOB.religious_sect.on_conversion(human_spawned)
+		return
+	if(human_spawned.mind)
+		human_spawned.mind.holy_role = HOLY_ROLE_HIGHPRIEST
+
+	var/new_religion = player_client?.prefs?.read_preference(/datum/preference/name/religion) || DEFAULT_RELIGION
+	var/new_deity = player_client?.prefs?.read_preference(/datum/preference/name/deity) || DEFAULT_DEITY
+	var/new_bible = player_client?.prefs?.read_preference(/datum/preference/name/bible) || DEFAULT_BIBLE
+
+	holy_bible.deity_name = new_deity
+	switch(lowertext(new_religion))
+		if("homosexuality", "gay", "penis", "ass", "cock", "cocks")
+			new_bible = pick("Guys Gone Wild","Coming Out of The Closet","War of Cocks")
+			switch(new_bible)
+				if("War of Cocks")
+					holy_bible.deity_name = pick("Dick Powers", "King Cock")
+				else
+					holy_bible.deity_name = pick("Gay Space Jesus", "Gandalf", "Dumbledore")
+			human_spawned.adjustOrganLoss(ORGAN_SLOT_BRAIN, 100) // starts off brain damaged as fuck
+		if("lol", "wtf", "poo", "badmin", "shitmin", "deadmin", "meme", "memes")
+			new_bible = pick("Woody's Got Wood: The Aftermath", "Sweet Bro and Hella Jeff: Expanded Edition","F.A.T.A.L. Rulebook")
+			switch(new_bible)
+				if("Woody's Got Wood: The Aftermath")
+					holy_bible.deity_name = pick("Woody", "Andy", "Cherry Flavored Lube")
+				if("Sweet Bro and Hella Jeff: Expanded Edition")
+					holy_bible.deity_name = pick("Sweet Bro", "Hella Jeff", "Stairs", "AH")
+				if("F.A.T.A.L. Rulebook")
+					holy_bible.deity_name = "Twenty Ten-Sided Dice"
+			human_spawned.adjustOrganLoss(ORGAN_SLOT_BRAIN, 100) // also starts off brain damaged as fuck
+		if("servicianism", "partying")
+			holy_bible.desc = "Happy, Full, Clean. Live it and give it."
+		if("weeaboo","kawaii")
+			new_bible = pick("Fanfiction Compendium","Japanese for Dummies","The Manganomicon","Establishing Your O.T.P")
+			holy_bible.deity_name = "Anime"
+		else
+			if(new_bible == DEFAULT_BIBLE)
+				new_bible = DEFAULT_BIBLE_REPLACE(new_bible)
+
+	holy_bible.name = new_bible
+
+	GLOB.religion = new_religion
+	GLOB.bible_name = new_bible
+	GLOB.deity = holy_bible.deity_name
+
+	human_spawned.equip_to_slot_or_del(holy_bible, ITEM_SLOT_BACKPACK, indirect_action = TRUE)
+
+	SSblackbox.record_feedback("text", "religion_name", 1, "[new_religion]", 1)
+	SSblackbox.record_feedback("text", "religion_deity", 1, "[new_deity]", 1)
+	SSblackbox.record_feedback("text", "religion_bible", 1, "[new_bible]", 1)

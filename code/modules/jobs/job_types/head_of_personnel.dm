@@ -5,7 +5,7 @@
 	auto_deadmin_role_flags = DEADMIN_POSITION_HEAD
 	department_head = list(JOB_CAPTAIN)
 	head_announce = list(RADIO_CHANNEL_SERVICE)
-	faction = FACTION_STATION
+	faction = FACTION_NONE
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = SUPERVISOR_CAPTAIN
@@ -40,7 +40,7 @@
 
 	family_heirlooms = list(/obj/item/reagent_containers/cup/glass/trophy/silver_cup)
 	rpg_title = "Guild Questgiver"
-	job_flags = STATION_JOB_FLAGS | HEAD_OF_STAFF_JOB_FLAGS
+	job_flags = DISABLED_STATION_JOB_FLAGS
 	voice_of_god_power = 1.4 //Command staff has authority
 
 

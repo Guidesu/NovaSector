@@ -3,7 +3,7 @@
 	description = "Watch over the Bridge, command its consoles, and spend your days brewing coffee for higher-ups."
 	auto_deadmin_role_flags = DEADMIN_POSITION_HEAD //not really a head but close enough
 	department_head = list(JOB_CAPTAIN)
-	faction = FACTION_STATION
+	faction = FACTION_NONE
 	total_positions = 0
 	spawn_positions = 0
 	supervisors = "the Captain, and in non-Bridge related situations the other heads"
@@ -32,7 +32,7 @@
 	)
 	rpg_title = "Royal Guard"
 	allow_bureaucratic_error = FALSE
-	job_flags = STATION_JOB_FLAGS | STATION_TRAIT_JOB_FLAGS
+	job_flags = DISABLED_STATION_JOB_FLAGS
 	ignore_human_authority = TRUE
 
 /datum/job/bridge_assistant/after_spawn(mob/living/spawned, client/player_client)

@@ -5,7 +5,7 @@
 	auto_deadmin_role_flags = DEADMIN_POSITION_HEAD
 	department_head = list(JOB_CAPTAIN)
 	head_announce = list("Engineering")
-	faction = FACTION_STATION
+	faction = FACTION_NONE
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = SUPERVISOR_CAPTAIN
@@ -44,7 +44,7 @@
 		/obj/effect/spawner/random/engineering/tool_advanced = 3
 	)
 	rpg_title = "Head Crystallomancer"
-	job_flags = STATION_JOB_FLAGS | HEAD_OF_STAFF_JOB_FLAGS
+	job_flags = DISABLED_STATION_JOB_FLAGS
 
 	voice_of_god_power = 1.4 //Command staff has authority
 

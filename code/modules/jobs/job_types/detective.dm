@@ -4,7 +4,7 @@
 		look badass, smoke cigarettes."
 	auto_deadmin_role_flags = DEADMIN_POSITION_SECURITY
 	department_head = list(JOB_HEAD_OF_SECURITY)
-	faction = FACTION_STATION
+	faction = FACTION_NONE
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = SUPERVISOR_HOS
@@ -40,7 +40,7 @@
 
 	family_heirlooms = list(/obj/item/reagent_containers/cup/glass/bottle/whiskey)
 	rpg_title = "Thiefcatcher" //I guess they caught them all rip thief...
-	job_flags = STATION_JOB_FLAGS
+	job_flags = DISABLED_STATION_JOB_FLAGS
 
 	job_tone = "objection"
 

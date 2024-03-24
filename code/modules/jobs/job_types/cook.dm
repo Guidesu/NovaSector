@@ -2,7 +2,7 @@
 	title = JOB_COOK
 	description = "Serve food, cook meat, keep the crew fed."
 	department_head = list(JOB_HEAD_OF_PERSONNEL)
-	faction = FACTION_STATION
+	faction = FACTION_NONE
 	total_positions = 2
 	spawn_positions = 1
 	supervisors = SUPERVISOR_HOP
@@ -46,10 +46,7 @@
 	)
 
 	rpg_title = "Tavern Chef"
-	alternate_titles = list(
-		JOB_CHEF,
-	)
-	job_flags = STATION_JOB_FLAGS
+	job_flags = DISABLED_STATION_JOB_FLAGS
 
 /datum/job/cook/award_service(client/winner, award)
 	winner.give_award(award, winner.mob)
