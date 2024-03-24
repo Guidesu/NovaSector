@@ -94,7 +94,7 @@
     disease_flags = CHRONIC
     infectable_biotypes = MOB_ORGANIC | MOB_MINERAL | MOB_ROBOTIC
     process_dead = TRUE
-    stage_prob = 1
+    stage_prob = 0.65
     cure_text = "Sansufentanyl Injection"
     cures = list(/datum/reagent/medicine/sansufentanyl)
     infectivity = 0
@@ -106,3 +106,4 @@
 
 /datum/disease/advance/symbiota/New()
     symptoms = list(/datum/symptom/heal/starlight, /datum/symptom/heal/chem, /datum/symptom/heal/metabolism, /datum/symptom/heal/darkness, /datum/symptom/heal/coma, /datum/symptom/heal/water, /datum/symptom/heal/plasma, /datum/symptom/heal/radiation, /datum/symptom/mind_restoration, /datum/symptom/sensory_restoration, /datum/symptom/undead_adaptation, /datum/symptom/viraladaptation, /datum/symptom/viralevolution, /datum/symptom/youth)
+	..()
