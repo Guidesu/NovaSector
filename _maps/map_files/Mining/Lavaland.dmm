@@ -1,20 +1,4 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
-"aa" = (
-/obj/effect/turf_decal/stripes/line{
-	dir = 5
-	},
-/obj/structure/transport/linear{
-	radial_travel = 0
-	},
-/obj/structure/railing{
-	dir = 5
-	},
-/obj/machinery/elevator_control_panel/directional/north{
-	linked_elevator_id = "publicElevator";
-	preset_destination_names = list("2" = "Wastelands        Floor", "3" = "Colony        Floor", "4" = "General        Floor")
-	},
-/turf/open/floor/plating/elevatorshaft,
-/area/ruin/interdyne_planetary_base)
 "ab" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -1191,7 +1175,7 @@
 /area/ruin/interdyne_planetary_base/med)
 "fF" = (
 /turf/closed/wall/prefab_plastic,
-/area/lavaland/surface/outdoors/unexplored/danger)
+/area/lavaland/surface/outdoor/random)
 "fG" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -1240,7 +1224,7 @@
 /area/lavaland/surface/outdoors)
 "fQ" = (
 /turf/open/genturf,
-/area/lavaland/surface/outdoors/unexplored/danger)
+/area/lavaland/surface/outdoor/random)
 "fR" = (
 /obj/structure/wall_torch/spawns_lit/directional/north,
 /obj/structure/railing/wooden_fencing{
@@ -6627,7 +6611,6 @@
 /obj/item/clothing/under/custom/blutigen_undergarment,
 /obj/item/clothing/accessory/lewdapron,
 /obj/item/clothing/glasses/hud/ar,
-/obj/item/clothing/under/costume/dragon_maid,
 /obj/item/clothing/gloves/fingerless/blutigen_wraps,
 /obj/item/clothing/head/costume/garland,
 /obj/item/clothing/gloves/color/black/expeditionary_corps,
@@ -6636,6 +6619,22 @@
 /obj/item/clothing/gloves/evening,
 /obj/item/clothing/head/costume/garland/poppy,
 /obj/item/clothing/head/costume/garland/rainbowbunch,
+/obj/item/clothing/under/dress/dragon_maid,
+/obj/item/clothing/under/dress/eveninggown,
+/obj/item/clothing/under/dress/nova/countess,
+/obj/item/clothing/under/dress/nova/flower,
+/obj/item/clothing/under/dress/nova/pentagram,
+/obj/item/clothing/under/dress/nova/redformal,
+/obj/item/clothing/under/dress/skirt/nova/striped_skirt,
+/obj/item/clothing/under/dress/skirt/nova/red_skirt,
+/obj/item/clothing/under/misc/nova/gear_harness,
+/obj/item/clothing/under/custom/lannese/vambrace,
+/obj/item/clothing/neck/beads,
+/obj/item/clothing/neck/fishpendant,
+/obj/item/clothing/neck/flower_collar,
+/obj/item/book/granter/action/spell/summonitem,
+/obj/item/book/granter/action/spell/fireball,
+/obj/item/book/granter/martial/carp,
 /turf/open/floor/wood/parquet,
 /area/ruin/interdyne_planetary_base/cargo/deck)
 "GM" = (
@@ -7346,8 +7345,8 @@
 /area/ruin/interdyne_planetary_base/cargo/obs)
 "Kj" = (
 /obj/structure/table/reinforced,
-/obj/item/storage/toolbox/guncase/nova/opfor/carbine,
-/obj/item/storage/toolbox/guncase/nova/opfor/carbine,
+/obj/item/book/granter/martial/cqc,
+/obj/item/book/granter/martial/cqc,
 /turf/open/floor/iron/colony,
 /area/ruin/interdyne_planetary_base/main)
 "Kl" = (
@@ -8798,6 +8797,19 @@
 /turf/open/floor/wood/parquet,
 /area/ruin/interdyne_planetary_base/main/dorms)
 "Sw" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 5
+	},
+/obj/structure/transport/linear{
+	radial_travel = 0
+	},
+/obj/structure/railing{
+	dir = 5
+	},
+/obj/machinery/elevator_control_panel/directional/north{
+	linked_elevator_id = "publicElevator";
+	preset_destination_names = list("2" = "Wastelands        Floor", "4" = "Colony        Floor", "3" = "General        Floor")
+	},
 /turf/open/floor/plating/elevatorshaft,
 /area/ruin/interdyne_planetary_base)
 "SA" = (
@@ -9234,6 +9246,7 @@
 /obj/structure/displaycase,
 /obj/effect/turf_decal/siding/wood,
 /obj/effect/turf_decal/tile/dark_green/half/contrasted,
+/obj/item/claymore/bone,
 /turf/open/floor/iron/colony/bolts,
 /area/ruin/interdyne_planetary_base/cargo/deck)
 "UD" = (
@@ -9703,7 +9716,7 @@
 /turf/open/water/hot_spring{
 	initial_gas_mix = "LAVALAND_ATMOS"
 	},
-/area/lavaland/surface/outdoors/unexplored/danger)
+/area/lavaland/surface/outdoor/random)
 "Wz" = (
 /obj/effect/turf_decal/siding/dark{
 	dir = 8
@@ -17808,9 +17821,9 @@ fQ
 fQ
 fQ
 Cc
-Sw
-Sw
-Sw
+qp
+OI
+Rq
 Cc
 fQ
 fQ
@@ -18066,8 +18079,8 @@ fQ
 fQ
 Cc
 Sw
-Sw
-Sw
+Um
+AX
 Cc
 fQ
 fQ
@@ -83344,9 +83357,9 @@ fQ
 fQ
 fQ
 Cc
-qp
-OI
-Rq
+IV
+IV
+IV
 Cc
 fQ
 fQ
@@ -83601,9 +83614,9 @@ fQ
 Cc
 Cc
 Cc
-aa
-Um
-AX
+IV
+IV
+IV
 Cc
 fQ
 fQ

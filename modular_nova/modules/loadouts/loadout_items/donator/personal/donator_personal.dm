@@ -678,7 +678,7 @@
 
 /datum/loadout_item/under/formal/dragon_maid
 	name = "Dragon Maid Uniform"
-	item_path = /obj/item/clothing/under/costume/dragon_maid
+	item_path = /obj/item/clothing/under/dress/dragon_maid
 
 /datum/loadout_item/head/catear_headphone
 	name = "Cat-Ear Headphones"

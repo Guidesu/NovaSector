@@ -100,7 +100,7 @@
 	disease_flags = CHRONIC
 	infectable_biotypes = MOB_ORGANIC | MOB_MINERAL | MOB_ROBOTIC
 	process_dead = TRUE
-	stage_prob = 0.65
+	stage_prob = 1
 	infectivity = 0
 	spread_text = "The Symbiota Infestation spreads through birth with infected individuals."
 	cure_text = "Sansufentanyl Injection"

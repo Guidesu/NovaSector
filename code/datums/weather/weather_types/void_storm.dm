@@ -1,19 +1,19 @@
 /datum/weather/void_storm
 	name = "void storm"
 	desc = "A rare and highly anomalous event. We'd advise you to start running to safety."
-
-	telegraph_duration = 2 SECONDS
+	probability = 25
+	telegraph_duration = 2 MINUTES
 	telegraph_overlay = "light_snow"
-
+	next_hit_time = 25
 	weather_message = span_hypnophrase("You feel the air around you getting colder... Maybe getting shelter is a good idea...")
 	weather_overlay = "snow_storm"
 	weather_color = COLOR_BLACK
-	weather_duration_lower = 60 SECONDS
-	weather_duration_upper = 120 SECONDS
+	weather_duration_lower = 3 MINUTES
+	weather_duration_upper = 1 MINUTES
 
 	use_glow = FALSE
 
-	end_duration = 10 SECONDS
+	end_duration = 3 MINUTES
 
 	area_type = /area
 	protect_indoors = TRUE

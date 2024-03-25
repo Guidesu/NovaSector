@@ -2,6 +2,7 @@
 	name = "rain storm"
 	desc = "Harsh rain storms roam the topside of this planet, burying any area unfortunate enough to be in its path."
 	probability = 95
+	next_hit_time = 25
 
 	telegraph_message = "<span class='warning'>Drifting particles of rain begin to water the surrounding area..</span>"
 	telegraph_duration = 6 MINUTES

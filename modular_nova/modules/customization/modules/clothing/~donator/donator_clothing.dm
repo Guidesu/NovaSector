@@ -1905,7 +1905,7 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/korpstech, 32)
 
 	return ..()
 
-/obj/item/clothing/under/costume/dragon_maid
+/obj/item/clothing/under/dress/dragon_maid
 	name = "dragon maid uniform"
 	desc = "A uniform for a kitchen maid, stylized to have draconic detailing."
 	icon = 'modular_nova/master_files/icons/donator/obj/clothing/uniform.dmi'

@@ -128,6 +128,7 @@
 	icon_state = "mining"
 	has_gravity = STANDARD_GRAVITY
 	flags_1 = NONE
+	outdoors = TRUE
 	area_flags = VALID_TERRITORY | UNIQUE_AREA | FLORA_ALLOWED
 	sound_environment = SOUND_AREA_LAVALAND
 	ambient_buzz = 'sound/ambience/magma.ogg'
@@ -135,13 +136,14 @@
 /area/lavaland/surface
 	name = "Lavaland"
 	icon_state = "explored"
+	outdoors = TRUE
 	always_unpowered = TRUE
 	power_environ = FALSE
 	power_equip = FALSE
 	power_light = FALSE
 	requires_power = TRUE
 	ambience_index = AMBIENCE_MINING
-	area_flags = VALID_TERRITORY | UNIQUE_AREA
+	area_flags = VALID_TERRITORY | UNIQUE_AREA | FLORA_ALLOWED
 	min_ambience_cooldown = 70 SECONDS
 	max_ambience_cooldown = 220 SECONDS
 
@@ -162,18 +164,27 @@
 	name = "Lavaland Wastes"
 	outdoors = TRUE
 
+/area/lavaland/surface/outdoor/random
+	name = "Lavaland Wastelands"
+	outdoors = TRUE
+	area_flags = VALID_TERRITORY | UNIQUE_AREA | CAVES_ALLOWED | FLORA_ALLOWED | MOB_SPAWN_ALLOWED
+	map_generator = /datum/map_generator/cave_generator/lavaland
+
 /area/lavaland/surface/outdoors/unexplored //monsters and ruins spawn here
 	icon_state = "unexplored"
 	area_flags = VALID_TERRITORY | UNIQUE_AREA | CAVES_ALLOWED | FLORA_ALLOWED | MOB_SPAWN_ALLOWED
 	map_generator = /datum/map_generator/cave_generator/lavaland
+	outdoors = TRUE
 
 /area/lavaland/surface/outdoors/unexplored/danger //megafauna will also spawn here
 	icon_state = "danger"
-	area_flags = VALID_TERRITORY | UNIQUE_AREA | CAVES_ALLOWED | FLORA_ALLOWED | MOB_SPAWN_ALLOWED | MEGAFAUNA_SPAWN_ALLOWED
+	outdoors = TRUE
+	area_flags = VALID_TERRITORY | UNIQUE_AREA | CAVES_ALLOWED | FLORA_ALLOWED | MOB_SPAWN_ALLOWED
 
 /// Same thing as parent, but uses a different map generator for the icemoon ruin that needs it.
 /area/lavaland/surface/outdoors/unexplored/danger/no_ruins
 	map_generator = /datum/map_generator/cave_generator/lavaland/ruin_version
+	outdoors = TRUE
 
 /area/lavaland/surface/outdoors/explored
 	name = "Lavaland Labor Camp"
