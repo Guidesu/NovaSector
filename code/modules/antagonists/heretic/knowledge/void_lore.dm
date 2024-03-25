@@ -28,11 +28,11 @@
  */
 /datum/heretic_knowledge/limited_amount/starting/base_void
 	name = "Glimmer of Winter"
-	desc = "Opens up the Path of Void to you. \
+	desc = "Opens up the Path of Voidkinises to you. \
 		Allows you to transmute a knife in sub-zero temperatures into a Void Blade. \
 		You can only create five at a time." //NOVA EDIT two to five
 	gain_text = "I feel a shimmer in the air, the air around me gets colder. \
-		I start to realize the emptiness of existence. Something's watching me."
+		I start to realize the emptiness of existence."
 	next_knowledge = list(/datum/heretic_knowledge/void_grasp)
 	required_atoms = list(/obj/item/knife = 1)
 	result_atoms = list(/obj/item/melee/sickly_blade/void)
@@ -52,7 +52,7 @@
 
 /datum/heretic_knowledge/void_grasp
 	name = "Grasp of Void"
-	desc = "Your Mansus Grasp will temporarily mute and chill the victim."
+	desc = "Your Psyonics Grasp will temporarily mute and chill the victim."
 	gain_text = "I saw the cold watcher who observes me. The chill mounts within me. \
 		They are quiet. This isn't the end of the mystery."
 	next_knowledge = list(/datum/heretic_knowledge/cold_snap)
@@ -77,8 +77,7 @@
 
 /datum/heretic_knowledge/cold_snap
 	name = "Aristocrat's Way"
-	desc = "Grants you immunity to cold temperatures, and removes your need to breathe. \
-		You can still take damage due to a lack of pressure."
+	desc = "This knowlodge for now only makes you slightly more stable, on the psyonaut casting."
 	gain_text = "I found a thread of cold breath. It lead me to a strange shrine, all made of crystals. \
 		Translucent and white, a depiction of a nobleman stood before me."
 	next_knowledge = list(
@@ -89,15 +88,9 @@
 	cost = 1
 	route = PATH_VOID
 
-/datum/heretic_knowledge/cold_snap/on_gain(mob/user, datum/antagonist/heretic/our_heretic)
-	user.add_traits(list(TRAIT_NOBREATH, TRAIT_RESISTCOLD), type)
-
-/datum/heretic_knowledge/cold_snap/on_lose(mob/user, datum/antagonist/heretic/our_heretic)
-	user.remove_traits(list(TRAIT_RESISTCOLD, TRAIT_NOBREATH), type)
-
 /datum/heretic_knowledge/mark/void_mark
 	name = "Mark of Void"
-	desc = "Your Mansus Grasp now applies the Mark of Void. The mark is triggered from an attack with your Void Blade. \
+	desc = "Your Psyonics Grasp now applies the Mark of Void. The mark is triggered from an attack with your Void Blade. \
 		When triggered, further silences the victim and swiftly lowers the temperature of their body and the air around them."
 	gain_text = "A gust of wind? A shimmer in the air? The presence is overwhelming, \
 		my senses began to betray me. My mind is my own enemy."
@@ -128,7 +121,6 @@
 		nothing - leaving a harsh, cold breeze in their wake. They disappear, and I am left in the blizzard."
 	next_knowledge = list(
 		/datum/heretic_knowledge/blade_upgrade/void,
-		/datum/heretic_knowledge/reroll_targets,
 		/datum/heretic_knowledge/spell/blood_siphon,
 		/datum/heretic_knowledge/rune_carver,
 	)
@@ -161,14 +153,12 @@
 	gain_text = "All is fleeting, but what else stays? I'm close to ending what was started. \
 		The Aristocrat reveals themselves to me again. They tell me I am late. Their pull is immense, I cannot turn back."
 	next_knowledge = list(
-		/datum/heretic_knowledge/ultimate/void_final,
 		/datum/heretic_knowledge/spell/cleave,
-		/datum/heretic_knowledge/summon/maid_in_mirror,
 	)
 	spell_to_add = /datum/action/cooldown/spell/aoe/void_pull
 	cost = 1
 	route = PATH_VOID
-
+/*
 /datum/heretic_knowledge/ultimate/void_final
 	name = "Waltz at the End of Time"
 	desc = "The ascension ritual of the Path of Void. \
@@ -260,3 +250,4 @@
 	if(storm)
 		storm.end()
 		QDEL_NULL(storm)
+*/

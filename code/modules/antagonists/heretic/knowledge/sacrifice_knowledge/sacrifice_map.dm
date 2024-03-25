@@ -82,7 +82,7 @@ GLOBAL_LIST_EMPTY(heretic_sacrifice_landmarks)
 
 // Rooms for where heretic sacrifices send people.
 /area/centcom/heretic_sacrifice
-	name = "Mansus"
+	name = "Psyonics"
 	icon_state = "heretic"
 	has_gravity = STANDARD_GRAVITY
 	ambience_index = AMBIENCE_SPOOKY
@@ -96,22 +96,22 @@ GLOBAL_LIST_EMPTY(heretic_sacrifice_landmarks)
 	return ..()
 
 /area/centcom/heretic_sacrifice/ash //also, the default
-	name = "Mansus Ash Gate"
+	name = "Psyonics Ash Gate"
 
 /area/centcom/heretic_sacrifice/void
-	name = "Mansus Void Gate"
+	name = "Psyonics Void Gate"
 	sound_environment = SOUND_ENVIRONMENT_UNDERWATER
 
 /area/centcom/heretic_sacrifice/flesh
-	name = "Mansus Flesh Gate"
+	name = "Psyonics Flesh Gate"
 	sound_environment = SOUND_ENVIRONMENT_STONEROOM
 
 /area/centcom/heretic_sacrifice/rust
-	name = "Mansus Rust Gate"
+	name = "Psyonics Rust Gate"
 	ambience_index = AMBIENCE_REEBE
 	sound_environment = SOUND_ENVIRONMENT_SEWER_PIPE
 
 /area/centcom/heretic_sacrifice/lock
-	name = "Mansus Lock Gate"
+	name = "Psyonics Lock Gate"
 	ambience_index = AMBIENCE_DANGER
 	sound_environment = SOUND_ENVIRONMENT_PSYCHOTIC

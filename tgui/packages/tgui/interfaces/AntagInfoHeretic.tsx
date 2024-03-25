@@ -6,11 +6,7 @@ import { BlockQuote, Box, Button, Section, Stack, Tabs } from '../components';
 import { CssColor } from '../constants';
 import { Window } from '../layouts';
 import { Rules } from './AntagInfoRules'; // NOVA EDIT ADDITION
-import {
-  Objective,
-  ObjectivePrintout,
-  ReplaceObjectivesButton,
-} from './common/Objectives';
+import { Objective } from './common/Objectives';
 
 const hereticRed = {
   color: '#e03c3c',
@@ -67,7 +63,7 @@ const IntroductionSection = (props) => {
   return (
     <Stack justify="space-evenly" height="100%" width="100%">
       <Stack.Item grow>
-        <Section title="You are the Heretic!" fill fontSize="14px">
+        <Section title="You are the Psyonaut!" fill fontSize="14px">
           <Stack vertical>
             <FlavorSection />
             <Stack.Divider />
@@ -81,30 +77,6 @@ const IntroductionSection = (props) => {
             <Stack.Divider />
             <InformationSection />
             <Stack.Divider />
-
-            {!ascended && (
-              <Stack.Item>
-                <ObjectivePrintout
-                  fill
-                  titleMessage={
-                    can_change_objective
-                      ? 'Your OPFOR objectives are your primary ones, but in order to ascend, you have these tasks to fulfill' /* NOVA EDIT CHANGE - opfor objectives */
-                      : 'Your OPFOR objectives are your primary ones. Use your dark knowledge to fulfill your personal goal' /* NOVA EDIT CHANGE - opfor objectives  */
-                  }
-                  objectives={objectives}
-                  objectiveFollowup={
-                    <ReplaceObjectivesButton
-                      can_change_objective={can_change_objective}
-                      button_title={'Reject Ascension'}
-                      button_colour={'red'}
-                      button_tooltip={
-                        'Turn your back on the Mansus to accomplish a task of your choosing. Selecting this option will prevent you from ascending!'
-                      }
-                    />
-                  }
-                />
-              </Stack.Item>
-            )}
           </Stack>
         </Section>
       </Stack.Item>
@@ -142,49 +114,12 @@ const GuideSection = () => {
     <Stack.Item>
       <Stack vertical fontSize="12px">
         <Stack.Item>
-          - Find reality smashing&nbsp;
-          <span style={hereticPurple}>influences</span>
-          &nbsp;around the station invisible to the normal eye and&nbsp;
-          <b>right click</b> on them to harvest them for&nbsp;
-          <span style={hereticBlue}>knowledge points</span>. Tapping them makes
-          them visible to all after a short time.
-        </Stack.Item>
-        <Stack.Item>
-          - Use your&nbsp;
-          <span style={hereticRed}>Living Heart action</span>
-          &nbsp;to track down&nbsp;
-          <span style={hereticRed}>sacrifice targets</span>, but be careful:
-          Pulsing it will produce a heartbeat sound that nearby people may hear.
-          This action is tied to your <b>heart</b> - if you lose it, you must
-          complete a ritual to regain it.
-        </Stack.Item>
-        <Stack.Item>
           - Draw a&nbsp;
           <span style={hereticGreen}>transmutation rune</span> by using a
           drawing tool (a pen or crayon) on the floor while having&nbsp;
           <span style={hereticGreen}>Mansus Grasp</span>
           &nbsp;active in your other hand. This rune allows you to complete
-          rituals and sacrifices.
-        </Stack.Item>
-        <Stack.Item>
-          - Follow your <span style={hereticRed}>Living Heart</span> to find
-          your targets. Bring them back to a&nbsp;
-          <span style={hereticGreen}>transmutation rune</span> in critical or
-          worse condition to&nbsp;
-          <span style={hereticRed}>sacrifice</span> them for&nbsp;
-          <span style={hereticBlue}>knowledge points</span>. The Mansus{' '}
-          <b>ONLY</b> accepts targets pointed to by the&nbsp;
-          <span style={hereticRed}>Living Heart</span>.
-        </Stack.Item>
-        <Stack.Item>
-          - Make yourself a <span style={hereticYellow}>focus</span> to be able
-          to cast various advanced spells to assist you in acquiring harder and
-          harder sacrifices.
-        </Stack.Item>
-        <Stack.Item>
-          - Accomplish all of your objectives to be able to learn the{' '}
-          <span style={hereticYellow}>final ritual</span>. Complete the ritual
-          to become all powerful!
+          rituals.
         </Stack.Item>
       </Stack>
     </Stack.Item>

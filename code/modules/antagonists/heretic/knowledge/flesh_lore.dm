@@ -32,9 +32,7 @@
  */
 /datum/heretic_knowledge/limited_amount/starting/base_flesh
 	name = "Principle of Hunger"
-	desc = "Opens up the Path of Flesh to you. \
-		Allows you to transmute a knife and a pool of blood into a Bloody Blade. \
-		You can only create twenty at a time." //NOVA EDIT three to twenty
+	desc = "Somanetics possess the ability to manipulate living tissue and biological energies. They can accelerate healing, induce paralysis, or even shape-shift by attuning themselves to the fundamental aspects of life."
 	gain_text = "Hundreds of us starved, but not me... I found strength in my greed."
 	next_knowledge = list(/datum/heretic_knowledge/limited_amount/flesh_grasp)
 	required_atoms = list(
@@ -56,7 +54,7 @@
 
 /datum/heretic_knowledge/limited_amount/flesh_grasp
 	name = "Grasp of Flesh"
-	desc = "Your Mansus Grasp gains the ability to create a ghoul out of corpse with a soul. \
+	desc = "Your Psyonics Grasp gains the ability to create a ghoul out of corpse with a soul. \
 		Ghouls have only 25 health and look like husks to the heathens' eyes, but can use Bloody Blades effectively. \
 		You can only create one at a time by this method."
 	gain_text = "My new found desires drove me to greater and greater heights."
@@ -122,7 +120,6 @@
 /datum/heretic_knowledge/limited_amount/flesh_ghoul
 	name = "Imperfect Ritual"
 	desc = "Allows you to transmute a corpse and a poppy to create a Voiceless Dead. \
-		The corpse does not need to have a soul. \
 		Voiceless Dead are mute ghouls and only have 50 health, but can use Bloody Blades effectively. \
 		You can only create two at a time."
 	gain_text = "I found notes of a dark ritual, unfinished... yet still, I pushed forward."
@@ -205,7 +202,7 @@
 
 /datum/heretic_knowledge/mark/flesh_mark
 	name = "Mark of Flesh"
-	desc = "Your Mansus Grasp now applies the Mark of Flesh. The mark is triggered from an attack with your Bloody Blade. \
+	desc = "Your Psyonics Grasp now applies the Mark of Flesh. The mark is triggered from an attack with your Bloody Blade. \
 		When triggered, the victim begins to bleed significantly."
 	gain_text = "That's when I saw them, the marked ones. They were out of reach. They screamed, and screamed."
 	next_knowledge = list(/datum/heretic_knowledge/knowledge_ritual/flesh)
@@ -237,7 +234,6 @@
 		The screams... once constant, now silenced by their wretched appearance. Nothing was out of reach."
 	next_knowledge = list(
 		/datum/heretic_knowledge/blade_upgrade/flesh,
-		/datum/heretic_knowledge/reroll_targets,
 		/datum/heretic_knowledge/spell/blood_siphon,
 		/datum/heretic_knowledge/spell/opening_blast,
 	)
@@ -277,7 +273,6 @@
 	gain_text = "I was able to combine my greed and desires to summon an eldritch beast I had never seen before. \
 		An ever shapeshifting mass of flesh, it knew well my goals. The Marshal approved."
 	next_knowledge = list(
-		/datum/heretic_knowledge/ultimate/flesh_final,
 		/datum/heretic_knowledge/spell/apetra_vulnera,
 		/datum/heretic_knowledge/spell/cleave,
 	)
@@ -292,7 +287,7 @@
 	cost = 1
 	route = PATH_FLESH
 	poll_ignore_define = POLL_IGNORE_STALKER
-
+/*
 /datum/heretic_knowledge/ultimate/flesh_final
 	name = "Priest's Final Hymn"
 	desc = "The ascension ritual of the Path of Flesh. \
@@ -333,3 +328,4 @@
 
 #undef GHOUL_MAX_HEALTH
 #undef MUTE_MAX_HEALTH
+*/

@@ -31,9 +31,7 @@
  */
 /datum/heretic_knowledge/limited_amount/starting/base_rust
 	name = "Blacksmith's Tale"
-	desc = "Opens up the Path of Rust to you. \
-		Allows you to transmute a knife with any trash item into a Rusty Blade. \
-		You can only create two at a time."
+	desc = "Ferronetics specialize in manipulating metallic elements and creating constructs from them. They can control ferrous materials, shaping them into weapons or barriers, and exhibit a heightened affinity for technology."
 	gain_text = "\"Let me tell you a story\", said the Blacksmith, as he gazed deep into his rusty blade."
 	next_knowledge = list(/datum/heretic_knowledge/rust_fist)
 	required_atoms = list(
@@ -45,9 +43,9 @@
 
 /datum/heretic_knowledge/rust_fist
 	name = "Grasp of Rust"
-	desc = "Your Mansus Grasp will deal 500 damage to non-living matter and rust any surface it touches. \
+	desc = "Your Psyonics Grasp will deal 500 damage to non-living matter and rust any surface it touches. \
 		Already rusted surfaces are destroyed. Surfaces and structures can only be rusted by using Right-Click."
-	gain_text = "On the ceiling of the Mansus, rust grows as moss does on a stone."
+	gain_text = "On the ceiling of the Psyonics, rust grows as moss does on a stone."
 	next_knowledge = list(/datum/heretic_knowledge/rust_regen)
 	cost = 1
 	route = PATH_RUST
@@ -144,7 +142,7 @@
 
 /datum/heretic_knowledge/mark/rust_mark
 	name = "Mark of Rust"
-	desc = "Your Mansus Grasp now applies the Mark of Rust. The mark is triggered from an attack with your Rusty Blade. \
+	desc = "Your Psyonics Grasp now applies the Mark of Rust. The mark is triggered from an attack with your Rusty Blade. \
 		When triggered, the victim's organs and equipment will have a 75% chance to sustain damage and may be destroyed."
 	gain_text = "The Blacksmith looks away. To a place lost long ago. \"Rusted Hills help those in dire need... at a cost.\""
 	next_knowledge = list(/datum/heretic_knowledge/knowledge_ritual/rust)
@@ -173,7 +171,6 @@
 	gain_text = "All wise men know well not to visit the Rusted Hills... Yet the Blacksmith's tale was inspiring."
 	next_knowledge = list(
 		/datum/heretic_knowledge/blade_upgrade/rust,
-		/datum/heretic_knowledge/reroll_targets,
 		/datum/heretic_knowledge/curse/corrosion,
 		/datum/heretic_knowledge/crucible,
 		/datum/heretic_knowledge/rifle,
@@ -202,14 +199,13 @@
 	gain_text = "The corrosion was unstoppable. The rust was unpleasable. \
 		The Blacksmith was gone, and you hold their blade. Champions of hope, the Rustbringer is nigh!"
 	next_knowledge = list(
-		/datum/heretic_knowledge/ultimate/rust_final,
 		/datum/heretic_knowledge/summon/rusty,
 		/datum/heretic_knowledge/spell/rust_charge,
 	)
 	spell_to_add = /datum/action/cooldown/spell/cone/staggered/entropic_plume
 	cost = 1
 	route = PATH_RUST
-
+/*
 /datum/heretic_knowledge/ultimate/rust_final
 	name = "Rustbringer's Oath"
 	desc = "The ascension ritual of the Path of Rust. \
@@ -311,7 +307,7 @@
 	need_mob_update += source.adjustStaminaLoss(-20, updating_stamina = FALSE)
 	if(need_mob_update)
 		source.updatehealth()
-
+*/
 /**
  * #Rust spread datum
  *

@@ -1,6 +1,6 @@
 /datum/action/cooldown/spell/pointed/projectile/star_blast
 	name = "Star Blast"
-	desc = "This spell fires a disk with cosmic energies at a target, spreading the star mark."
+	desc = "This spell fires a disk with cosmic energies at a target."
 	background_icon_state = "bg_heretic"
 	overlay_icon_state = "bg_heretic_border"
 	button_icon = 'icons/mob/actions/actions_ecult.dmi'
@@ -11,7 +11,7 @@
 	cooldown_time = 20 SECONDS
 
 	invocation = "R'T'T' ST'R!"
-	invocation_type = INVOCATION_SHOUT
+	invocation_type = INVOCATION_WHISPER
 	spell_requirements = NONE
 
 	active_msg = "You prepare to cast your star blast!"

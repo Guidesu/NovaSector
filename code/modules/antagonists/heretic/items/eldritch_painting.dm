@@ -1,3 +1,4 @@
+/*
 // The basic eldritch painting
 /obj/item/wallframe/painting/eldritch
 	name = "The debug and a coder who slept"
@@ -92,7 +93,7 @@
 	if(!IS_HERETIC(examiner))
 		to_chat(examiner, span_hypnophrase("Respite, for now...."))
 		examiner.mob_mood.mood_events.Remove("eldritch_weeping")
-		examiner.add_mood_event("weeping_withdrawal", /datum/mood_event/eldritch_painting/weeping_withdrawal)
+		examiner.add_mood_event("weeping_withdrawl", /datum/mood_event/eldritch_painting/weeping_withdrawl)
 		return
 
 	to_chat(examiner, span_notice("Oh, what arts! Just gazing upon it clears your mind."))
@@ -243,3 +244,4 @@
 
 	to_chat(examiner, span_notice("You see the climber, and are inspired by it!"))
 	examiner.add_mood_event("rusted_examine", /datum/mood_event/eldritch_painting/rust_heretic_examine)
+*/

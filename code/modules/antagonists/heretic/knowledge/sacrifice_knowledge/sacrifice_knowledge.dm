@@ -1,4 +1,4 @@
-// The knowledge and process of heretic sacrificing.
+/* The knowledge and process of heretic sacrificing. //Disabled to my own RP server. Go away.
 
 /// How long we put the target so sleep for (during sacrifice).
 #define SACRIFICE_SLEEP_DURATION (12 SECONDS)
@@ -9,8 +9,8 @@
  * Allows the heretic to sacrifice living heart targets.
  */
 /datum/heretic_knowledge/hunt_and_sacrifice
-	name = "Heartbeat of the Mansus"
-	desc = "Allows you to sacrifice targets to the Mansus by bringing them to a rune in critical (or worse) condition. \
+	name = "Heartbeat of the Psyonics"
+	desc = "Allows you to sacrifice targets to the Psyonics by bringing them to a rune in critical (or worse) condition. \
 		If you have no targets, stand on a transmutation rune and invoke it to acquire some."
 	required_atoms = list(/mob/living/carbon/human = 1)
 	cost = 0
@@ -48,7 +48,7 @@
 /datum/heretic_knowledge/hunt_and_sacrifice/proc/generate_heretic_z_level()
 	if(!SSmapping.lazy_load_template(LAZY_TEMPLATE_KEY_HERETIC_SACRIFICE))
 		log_game("The heretic sacrifice template failed to load.")
-		message_admins("The heretic sacrifice lazy template failed to load. Heretic sacrifices won't be teleported to the shadow realm. \
+		message_admins("The heretic sacrifice lazy template failed to load. Psyonaut sacrifices won't be teleported to the shadow realm. \
 			If you want, you can spawn an /obj/effect/landmark/heretic somewhere to stop that from happening.")
 		CRASH("Failed to lazy load heretic sacrifice template!")
 
@@ -226,7 +226,7 @@
 
 	var/obj/effect/landmark/heretic/destination_landmark = GLOB.heretic_sacrifice_landmarks[our_heretic.heretic_path] || GLOB.heretic_sacrifice_landmarks[PATH_START]
 	if(!destination_landmark)
-		CRASH("[type] - begin_sacrifice could not find a destination landmark OR default landmark to send the sacrifice! (Heretic's path: [our_heretic.heretic_path])")
+		CRASH("[type] - begin_sacrifice could not find a destination landmark OR default landmark to send the sacrifice! (Psyonaut's path: [our_heretic.heretic_path])")
 
 	var/turf/destination = get_turf(destination_landmark)
 
@@ -333,7 +333,7 @@
 	sac_target.adjust_hallucinations(24 SECONDS)
 	sac_target.emote("scream")
 
-	to_chat(sac_target, span_reallybig(span_hypnophrase("The grasp of the Mansus reveal themselves to you!")))
+	to_chat(sac_target, span_reallybig(span_hypnophrase("The grasp of the Psyonics reveal themselves to you!")))
 	to_chat(sac_target, span_hypnophrase("You feel invigorated! Fight to survive!"))
 	// When it runs out, let them know they're almost home free
 	addtimer(CALLBACK(src, PROC_REF(after_helgrasp_ends), sac_target), helgrasp_time)
@@ -440,7 +440,7 @@
 /datum/heretic_knowledge/hunt_and_sacrifice/proc/on_target_escape(mob/living/carbon/human/sac_target, old_z, new_z)
 	SIGNAL_HANDLER
 
-	to_chat(sac_target, span_boldwarning("Your attempt to escape the Mansus is not taken kindly!"))
+	to_chat(sac_target, span_boldwarning("Your attempt to escape the Psyonics is not taken kindly!"))
 	// Ends up calling return_target() via death signal to clean up.
 	disembowel_target(sac_target)
 
@@ -452,7 +452,7 @@
 /datum/heretic_knowledge/hunt_and_sacrifice/proc/after_return_live_target(mob/living/carbon/human/sac_target)
 	to_chat(sac_target, span_hypnophrase("The fight is over, but at great cost. You have been returned to the station in one piece."))
 	if(IS_HERETIC(sac_target))
-		to_chat(sac_target, span_big(span_hypnophrase("You don't remember anything leading up to the experience, but you feel your connection with the Mansus weakened - Knowledge once known, forgotten...")))
+		to_chat(sac_target, span_big(span_hypnophrase("You don't remember anything leading up to the experience, but you feel your connection with the Psyonics weakened - Knowledge once known, forgotten...")))
 	else
 		to_chat(sac_target, span_big(span_hypnophrase("You don't remember anything leading up to the experience - All you can think about are those horrific hands...")))
 
@@ -483,7 +483,7 @@
  * it spawns a special red broken illusion on their spot, for style.
  */
 /datum/heretic_knowledge/hunt_and_sacrifice/proc/after_return_dead_target(mob/living/carbon/human/sac_target)
-	to_chat(sac_target, span_hypnophrase("You failed to resist the horrors of the Mansus! Your ruined body has been returned to the station."))
+	to_chat(sac_target, span_hypnophrase("You failed to resist the horrors of the Psyonics! Your ruined body has been returned to the station."))
 	to_chat(sac_target, span_big(span_hypnophrase("The experience leaves your mind torn and memories tattered. You will not remember anything leading up to the experience if revived.")))
 
 	var/obj/effect/visible_heretic_influence/illusion = new(get_turf(sac_target))
@@ -512,3 +512,4 @@
 
 #undef SACRIFICE_SLEEP_DURATION
 #undef SACRIFICE_REALM_DURATION
+*/

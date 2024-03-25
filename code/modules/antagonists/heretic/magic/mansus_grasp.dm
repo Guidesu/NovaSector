@@ -1,5 +1,5 @@
 /datum/action/cooldown/spell/touch/mansus_grasp
-	name = "Mansus Grasp"
+	name = "Psy Grasp"
 	desc = "A touch spell that lets you channel the power of the Old Gods through your grip."
 	background_icon_state = "bg_heretic"
 	overlay_icon_state = "bg_heretic_border"
@@ -10,8 +10,8 @@
 	school = SCHOOL_EVOCATION
 	cooldown_time = 10 SECONDS
 
-	invocation = "R'CH T'H TR'TH!"
-	invocation_type = INVOCATION_SHOUT
+	invocation = "psykanum...!"
+	invocation_type = INVOCATION_WHISPER
 	// Mimes can cast it. Chaplains can cast it. Anyone can cast it, so long as they have a hand.
 	spell_requirements = SPELL_CASTABLE_WITHOUT_INVOCATION
 
@@ -25,8 +25,8 @@
 
 /datum/action/cooldown/spell/touch/mansus_grasp/on_antimagic_triggered(obj/item/melee/touch_attack/hand, atom/victim, mob/living/carbon/caster)
 	victim.visible_message(
-		span_danger("The spell bounces off of [victim]!"),
-		span_danger("The spell bounces off of you!"),
+		span_danger("The psyonic energy bounces off of [victim]!"),
+		span_danger("The psyonic energy bounces off of you!"),
 	)
 
 /datum/action/cooldown/spell/touch/mansus_grasp/cast_on_hand_hit(obj/item/melee/touch_attack/hand, atom/victim, mob/living/carbon/caster)
@@ -56,10 +56,10 @@
 	return SECONDARY_ATTACK_CANCEL_ATTACK_CHAIN
 
 /obj/item/melee/touch_attack/mansus_fist
-	name = "Mansus Grasp"
+	name = "Psyonics Grasp"
 	desc = "A sinister looking aura that distorts the flow of reality around it. \
 		Causes knockdown, minor bruises, and major stamina damage. \
-		It gains additional beneficial effects as you expand your knowledge of the Mansus."
+		It gains additional beneficial effects as you expand your knowledge of the Psyonics."
 	icon_state = "mansus"
 	inhand_icon_state = "mansus"
 

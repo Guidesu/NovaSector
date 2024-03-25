@@ -1,4 +1,4 @@
-// Heretic starting knowledge.
+// Psyonaut starting knowledge.
 
 /// Global list of all heretic knowledge that have route = PATH_START. List of PATHS.
 GLOBAL_LIST_INIT(heretic_start_knowledge, initialize_starting_knowledge())
@@ -14,12 +14,12 @@ GLOBAL_LIST_INIT(heretic_start_knowledge, initialize_starting_knowledge())
 			. += knowledge
 
 /*
- * The base heretic knowledge. Grants the Mansus Grasp spell.
+ * The base heretic knowledge. Grants the Psyonics Grasp spell.
  */
 /datum/heretic_knowledge/spell/basic
 	name = "Break of Dawn"
-	desc = "Starts your journey into the Mansus. \
-		Grants you the Mansus Grasp, a powerful and upgradable \
+	desc = "Starts your journey into the Psyonics. \
+		Grants you the Psyonics Grasp, a powerful and upgradable \
 		disabling spell that can be cast regardless of having a focus."
 	spell_to_add = /datum/action/cooldown/spell/touch/mansus_grasp
 	cost = 0
@@ -29,6 +29,7 @@ GLOBAL_LIST_INIT(heretic_start_knowledge, initialize_starting_knowledge())
 	. = ..()
 	next_knowledge = subtypesof(/datum/heretic_knowledge/limited_amount/starting)
 
+/*
 /**
  * The Living Heart heretic knowledge.
  *
@@ -187,7 +188,7 @@ GLOBAL_LIST_INIT(heretic_start_knowledge, initialize_starting_knowledge())
 		return FALSE
 
 	return TRUE
-
+*/
 /**
  * Allows the heretic to craft a spell focus.
  * They require a focus to cast advanced spells.
@@ -226,7 +227,7 @@ GLOBAL_LIST_INIT(heretic_start_knowledge, initialize_starting_knowledge())
 		The Codex Cicatrix can be used when draining influences to gain additional knowledge, but comes at greater risk of being noticed. \
 		It can also be used to draw and remove transmutation runes easier, and as a spell focus in a pinch."
 	gain_text = "The occult leaves fragments of knowledge and power anywhere and everywhere. The Codex Cicatrix is one such example. \
-		Within the leather-bound faces and age old pages, a path into the Mansus is revealed."
+		Within the leather-bound faces and age old pages, a path into the Psyonics is revealed."
 	required_atoms = list(
 		/obj/item/book = 1,
 		/obj/item/pen = 1,

@@ -13,9 +13,9 @@
 
 /// The heretic antagonist itself.
 /datum/antagonist/heretic
-	name = "\improper Heretic"
+	name = "\improper Psyonaut"
 	roundend_category = "Heretics"
-	antagpanel_category = "Heretic"
+	antagpanel_category = "Psyonaut"
 	ui_name = "AntagInfoHeretic"
 	antag_moodlet = /datum/mood_event/heretics
 	job_rank = ROLE_HERETIC
@@ -143,7 +143,7 @@
 		if("research")
 			var/datum/heretic_knowledge/researched_path = text2path(params["path"])
 			if(!ispath(researched_path, /datum/heretic_knowledge))
-				CRASH("Heretic attempted to learn non-heretic_knowledge path! (Got: [researched_path])")
+				CRASH("Psyonaut attempted to learn non-heretic_knowledge path! (Got: [researched_path])")
 
 			if(initial(researched_path.cost) > knowledge_points)
 				return TRUE
@@ -199,8 +199,6 @@
 	return ..()
 
 /datum/antagonist/heretic/on_gain()
-	if(give_objectives)
-		forge_primary_objectives()
 
 	owner.current.playsound_local(get_turf(owner.current), 'sound/ambience/antag/ecult_op.ogg', 100, FALSE, pressure_affected = FALSE, use_reverb = FALSE)//subject to change
 
@@ -230,7 +228,6 @@
 	RegisterSignals(our_mob, list(COMSIG_MOB_BEFORE_SPELL_CAST, COMSIG_MOB_SPELL_ACTIVATED), PROC_REF(on_spell_cast))
 	RegisterSignal(our_mob, COMSIG_MOB_ITEM_AFTERATTACK, PROC_REF(on_item_afterattack))
 	RegisterSignal(our_mob, COMSIG_MOB_LOGIN, PROC_REF(fix_influence_network))
-	RegisterSignal(our_mob, COMSIG_LIVING_POST_FULLY_HEAL, PROC_REF(after_fully_healed))
 
 /datum/antagonist/heretic/remove_innate_effects(mob/living/mob_override)
 	var/mob/living/our_mob = mob_override || owner.current
@@ -268,7 +265,7 @@
 /datum/antagonist/heretic/proc/on_spell_cast(mob/living/source, datum/action/cooldown/spell/spell)
 	SIGNAL_HANDLER
 
-	// Heretic spells are of the forbidden school, otherwise we don't care
+	// Psyonaut spells are of the forbidden school, otherwise we don't care
 	if(spell.school != SCHOOL_FORBIDDEN)
 		return
 
@@ -287,7 +284,7 @@
  * Signal proc for [COMSIG_MOB_ITEM_AFTERATTACK].
  *
  * If a heretic is holding a pen in their main hand,
- * and have mansus grasp active in their offhand,
+ * and have psynode grasp active in their offhand,
  * they're able to draw a transmutation rune.
  */
 /datum/antagonist/heretic/proc/on_item_afterattack(mob/living/source, atom/target, obj/item/weapon, proximity_flag, click_parameters)
@@ -363,7 +360,7 @@
 	drawing_rune = FALSE
 
 /**
- * Callback to check that the user's still got their Mansus Grasp out when drawing a rune.
+ * Callback to check that the user's still got their Psyonics Grasp out when drawing a rune.
  *
  * Arguments
  * * user - the mob drawing the rune
@@ -386,37 +383,11 @@
 
 /// Signal proc for [COMSIG_LIVING_POST_FULLY_HEAL],
 /// Gives the heretic aliving heart on aheal or organ refresh
-/datum/antagonist/heretic/proc/after_fully_healed(mob/living/source, heal_flags)
-	SIGNAL_HANDLER
-
-	if(heal_flags & (HEAL_REFRESH_ORGANS|HEAL_ADMIN))
-		var/datum/heretic_knowledge/living_heart/heart_knowledge = get_knowledge(/datum/heretic_knowledge/living_heart)
-		heart_knowledge.on_research(source, src)
 
 /**
  * Create our objectives for our heretic.
  */
-/datum/antagonist/heretic/proc/forge_primary_objectives()
-	var/datum/objective/heretic_research/research_objective = new()
-	research_objective.owner = owner
-	objectives += research_objective
 
-	var/num_heads = 0
-	for(var/mob/player in GLOB.alive_player_list)
-		if(player.mind.assigned_role.job_flags & JOB_HEAD_OF_STAFF)
-			num_heads++
-
-	var/datum/objective/minor_sacrifice/sac_objective = new()
-	sac_objective.owner = owner
-	if(num_heads < 2) // They won't get major sacrifice, so bump up minor sacrifice a bit
-		sac_objective.target_amount += 2
-		sac_objective.update_explanation_text()
-	objectives += sac_objective
-
-	if(num_heads >= 2)
-		var/datum/objective/major_sacrifice/other_sac_objective = new()
-		other_sac_objective.owner = owner
-		objectives += other_sac_objective
 
 /**
  * Add [target] as a sacrifice target for the heretic.
@@ -511,75 +482,21 @@
 /datum/antagonist/heretic/get_admin_commands()
 	. = ..()
 
-	switch(has_living_heart())
-		if(HERETIC_NO_LIVING_HEART)
-			.["Give Living Heart"] = CALLBACK(src, PROC_REF(give_living_heart))
-		if(HERETIC_HAS_LIVING_HEART)
-			.["Add Heart Target (Marked Mob)"] = CALLBACK(src, PROC_REF(add_marked_as_target))
-			.["Remove Heart Target"] = CALLBACK(src, PROC_REF(remove_target))
-
 	.["Adjust Knowledge Points"] = CALLBACK(src, PROC_REF(admin_change_points))
 	.["Give Focus"] = CALLBACK(src, PROC_REF(admin_give_focus))
 
 /**
  * Admin proc for giving a heretic a Living Heart easily.
  */
-/datum/antagonist/heretic/proc/give_living_heart(mob/admin)
-	if(!admin.client?.holder)
-		to_chat(admin, span_warning("You shouldn't be using this!"))
-		return
 
-	var/datum/heretic_knowledge/living_heart/heart_knowledge = get_knowledge(/datum/heretic_knowledge/living_heart)
-	if(!heart_knowledge)
-		to_chat(admin, span_warning("The heretic doesn't have a living heart knowledge for some reason. What?"))
-		return
-
-	heart_knowledge.on_research(owner.current, src)
 
 /**
  * Admin proc for adding a marked mob to a heretic's sac list.
  */
-/datum/antagonist/heretic/proc/add_marked_as_target(mob/admin)
-	if(!admin.client?.holder)
-		to_chat(admin, span_warning("You shouldn't be using this!"))
-		return
-
-	var/mob/living/carbon/human/new_target = admin.client?.holder.marked_datum
-	if(!istype(new_target))
-		to_chat(admin, span_warning("You need to mark a human to do this!"))
-		return
-
-	if(tgui_alert(admin, "Let them know their targets have been updated?", "Whispers of the Mansus", list("Yes", "No")) == "Yes")
-		to_chat(owner.current, span_danger("The Mansus has modified your targets. Go find them!"))
-		to_chat(owner.current, span_danger("[new_target.real_name], the [new_target.mind?.assigned_role?.title || "human"]."))
-
-	add_sacrifice_target(new_target)
 
 /**
  * Admin proc for removing a mob from a heretic's sac list.
  */
-/datum/antagonist/heretic/proc/remove_target(mob/admin)
-	if(!admin.client?.holder)
-		to_chat(admin, span_warning("You shouldn't be using this!"))
-		return
-
-	var/list/removable = list()
-	for(var/mob/living/carbon/human/old_target as anything in sac_targets)
-		removable[old_target.name] = old_target
-
-	var/name_of_removed = tgui_input_list(admin, "Choose a human to remove", "Who to Spare", removable)
-	if(QDELETED(src) || !admin.client?.holder || isnull(name_of_removed))
-		return
-	var/mob/living/carbon/human/chosen_target = removable[name_of_removed]
-	if(QDELETED(chosen_target) || !ishuman(chosen_target))
-		return
-
-	if(!remove_sacrifice_target(chosen_target))
-		to_chat(admin, span_warning("Failed to remove [name_of_removed] from [owner]'s sacrifice list. Perhaps they're no longer in the list anyways."))
-		return
-
-	if(tgui_alert(admin, "Let them know their targets have been updated?", "Whispers of the Mansus", list("Yes", "No")) == "Yes")
-		to_chat(owner.current, span_danger("The Mansus has modified your targets."))
 
 /**
  * Admin proc for easily adding / removing knowledge points.
@@ -605,7 +522,7 @@
 
 	var/mob/living/pawn = owner.current
 	pawn.equip_to_slot_if_possible(new /obj/item/clothing/neck/heretic_focus(get_turf(pawn)), ITEM_SLOT_NECK, TRUE, TRUE)
-	to_chat(pawn, span_hypnophrase("The Mansus has manifested you a focus."))
+	to_chat(pawn, span_hypnophrase("The Psyonics has manifested you a focus."))
 
 /datum/antagonist/heretic/antag_panel_data()
 	var/list/string_of_knowledge = list()
@@ -694,14 +611,14 @@
  */
 /datum/antagonist/heretic/proc/can_ascend()
 	if(!can_assign_self_objectives)
-		return FALSE // We spurned the offer of the Mansus :(
+		return FALSE // We spurned the offer of the Psyonics :(
 	for(var/datum/objective/must_be_done as anything in objectives)
 		if(!must_be_done.check_completion())
 			return FALSE
 	return TRUE
 
 /**
- * Helper to determine if a Heretic
+ * Helper to determine if a Psyonaut
  * - Has a Living Heart
  * - Has a an organ in the correct slot that isn't a living heart
  * - Is missing the organ they need in the slot to make a living heart
@@ -720,7 +637,7 @@
 
 	return HERETIC_HAS_LIVING_HEART
 
-/// Heretic's minor sacrifice objective. "Minor sacrifices" includes anyone.
+/// Psyonaut's minor sacrifice objective. "Minor sacrifices" includes anyone.
 /datum/objective/minor_sacrifice
 	name = "minor sacrifice"
 
@@ -739,7 +656,7 @@
 		return FALSE
 	return completed || (heretic_datum.total_sacrifices >= target_amount)
 
-/// Heretic's major sacrifice objective. "Major sacrifices" are heads of staff.
+/// Psyonaut's major sacrifice objective. "Major sacrifices" are heads of staff.
 /datum/objective/major_sacrifice
 	name = "major sacrifice"
 	target_amount = 1
@@ -751,7 +668,7 @@
 		return FALSE
 	return completed || (heretic_datum.high_value_sacrifices >= target_amount)
 
-/// Heretic's research objective. "Research" is heretic knowledge nodes (You start with some).
+/// Psyonaut's research objective. "Research" is heretic knowledge nodes (You start with some).
 /datum/objective/heretic_research
 	name = "research"
 	/// The length of a main path. Calculated once in New().
@@ -780,7 +697,7 @@
 
 /datum/objective/heretic_research/update_explanation_text()
 	. = ..()
-	explanation_text = "Research at least [target_amount] knowledge from the Mansus. You start with [length(GLOB.heretic_start_knowledge)] researched."
+	explanation_text = "Research at least [target_amount] knowledge from the Psyonics. You start with [length(GLOB.heretic_start_knowledge)] researched."
 
 /datum/objective/heretic_research/check_completion()
 	var/datum/antagonist/heretic/heretic_datum = owner?.has_antag_datum(/datum/antagonist/heretic)
@@ -791,7 +708,7 @@
 /datum/objective/heretic_summon
 	name = "summon monsters"
 	target_amount = 2
-	explanation_text = "Summon 2 monsters from the Mansus into this realm."
+	explanation_text = "Summon 2 monsters from the Psyonics into this realm."
 	/// The total number of summons the objective owner has done
 	var/num_summoned = 0
 
@@ -799,7 +716,7 @@
 	return completed || (num_summoned >= target_amount)
 
 /datum/outfit/heretic
-	name = "Heretic (Preview only)"
+	name = "Psyonaut (Preview only)"
 
 	suit = /obj/item/clothing/suit/hooded/cultrobes/eldritch
 	head = /obj/item/clothing/head/hooded/cult_hoodie/eldritch

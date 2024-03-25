@@ -1,6 +1,6 @@
 /datum/action/cooldown/spell/pointed/projectile/moon_parade
 	name = "Lunar parade"
-	desc = "This unleashes the parade, making everyone in its way join it and suffer hallucinations."
+	desc = "This unleashes the parade towards a target."
 	background_icon_state = "bg_heretic"
 	overlay_icon_state = "bg_heretic_border"
 	button_icon = 'icons/mob/actions/actions_ecult.dmi'
@@ -12,7 +12,7 @@
 	cooldown_time = 30 SECONDS
 
 	invocation = "L'N'R P'RAD"
-	invocation_type = INVOCATION_SHOUT
+	invocation_type = INVOCATION_WHISPER
 	spell_requirements = NONE
 
 	active_msg = "You prepare to make them join the parade!"

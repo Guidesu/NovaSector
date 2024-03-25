@@ -31,9 +31,7 @@
  */
 /datum/heretic_knowledge/limited_amount/starting/base_blade
 	name = "The Cutting Edge"
-	desc = "Opens up the Path of Blades to you. \
-		Allows you to transmute a knife with two bars of silver or titanium to create a Sundered Blade. \
-		You can create up to five at a time."
+	desc = "Gladiusnetics are experts in psionic weaponry and combat. They can materialize blades of pure psionic energy, enhancing their combat capabilities and engaging foes in close-quarters combat with unmatched precision."
 	gain_text = "Our great ancestors forged swords and practiced sparring on the eve of great battles."
 	next_knowledge = list(/datum/heretic_knowledge/blade_grasp)
 	required_atoms = list(
@@ -46,7 +44,7 @@
 
 /datum/heretic_knowledge/blade_grasp
 	name = "Grasp of the Blade"
-	desc = "Your Mansus Grasp will cause a short stun when used on someone lying down or facing away from you."
+	desc = "Your Psy Grasp will cause a short stun when used on someone lying down or facing away from you."
 	gain_text = "The story of the footsoldier has been told since antiquity. It is one of blood and valor, \
 		and is championed by sword, steel and silver."
 	next_knowledge = list(/datum/heretic_knowledge/blade_dance)
@@ -100,7 +98,7 @@
 
 /datum/heretic_knowledge/blade_dance
 	name = "Dance of the Brand"
-	desc = "Being attacked while wielding a Heretic Blade in either hand will deliver a riposte \
+	desc = "Being attacked while wielding a Psyonaut Blade in either hand will deliver a riposte \
 		towards your attacker. This effect can only trigger once every 20 seconds."
 	gain_text = "The footsoldier was known to be a fearsome duelist. \
 		Their general quickly appointed them as their personal Champion."
@@ -193,7 +191,7 @@
 
 /datum/heretic_knowledge/mark/blade_mark
 	name = "Mark of the Blade"
-	desc = "Your Mansus Grasp now applies the Mark of the Blade. While marked, \
+	desc = "Your Psyonics Grasp now applies the Mark of the Blade. While marked, \
 		the victim will be unable to leave their current room until it expires or is triggered. \
 		Triggering the mark will summon a knife that will orbit you for a short time. \
 		The knife will block any attack directed towards you, but is consumed on use."
@@ -244,7 +242,7 @@
 		He was without rival, equal, or purpose."
 	next_knowledge = list(
 		/datum/heretic_knowledge/blade_upgrade/blade,
-		/datum/heretic_knowledge/reroll_targets,
+
 		/datum/heretic_knowledge/rune_carver,
 		/datum/heretic_knowledge/crucible,
 		/datum/heretic_knowledge/rifle,
@@ -373,14 +371,13 @@
 	gain_text = "Without thinking, I took the knife of a fallen soldier and threw with all my might. My aim was true! \
 		The Torn Champion smiled at their first taste of agony, and with a nod, their blades became my own."
 	next_knowledge = list(
-		/datum/heretic_knowledge/summon/maid_in_mirror,
-		/datum/heretic_knowledge/ultimate/blade_final,
 		/datum/heretic_knowledge/spell/rust_charge,
 	)
 	spell_to_add = /datum/action/cooldown/spell/pointed/projectile/furious_steel
 	cost = 1
 	route = PATH_BLADE
 
+/*
 /datum/heretic_knowledge/ultimate/blade_final
 	name = "Maelstrom of Silver"
 	desc = "The ascension ritual of the Path of Blades. \
@@ -454,3 +451,4 @@
 	if(target.stat != DEAD)
 		// And! Get some free healing for a portion of the bonus damage dealt.
 		source.heal_overall_damage(bonus_damage / 2, bonus_damage / 2)
+*/

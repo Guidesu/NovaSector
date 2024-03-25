@@ -12,7 +12,7 @@
 	cooldown_time = 30 SECONDS
 
 	invocation = "FR'ZE!"
-	invocation_type = INVOCATION_SHOUT
+	invocation_type = INVOCATION_WHISPER
 	spell_requirements = NONE
 
 	// In room temperature, the ice won't last very long
@@ -20,7 +20,7 @@
 	turf_freeze_type = TURF_WET_ICE
 	unfreeze_turf_duration = 1 MINUTES
 	// Applies an "infinite" version of basic void chill
-	// (This stacks with mansus grasp's void chill)
+	// (This stacks with psynode grasp's void chill)
 	frozen_status_effect_path = /datum/status_effect/void_chill/lasting
 	unfreeze_mob_duration = 30 SECONDS
 	// Does a smidge of damage
