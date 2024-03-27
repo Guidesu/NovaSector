@@ -174,6 +174,7 @@
 		"Chef",
 		"Culinary Artist",
 		"Sous-Chef",
+		"Junior Chef",
 	)
 
 /datum/job/coroner
