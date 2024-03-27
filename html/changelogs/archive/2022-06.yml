@@ -848,7 +848,7 @@
   - rscadd: Added several new goodie items to purchase through cargo, including translation
       keys, mutadone autoinjectors, and a full RLD.
   - code_imp: documented research_nodes and radios.
-  - soundadd: Energy and Magic gunfire sound pitch now varies based on how much ammo
+  - soundadd: Energy and Psyonautic gunfire sound pitch now varies based on how much ammo
       is left.
   - soundadd: Ballistic gunfire now has a low-ammo click sound.
   - qol: food now shows its type on examine

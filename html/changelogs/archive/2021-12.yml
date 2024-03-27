@@ -405,7 +405,7 @@
   - refactor: Several input prompts have been converted to TGUI. Nukie prompts, newscasters,
       stacks of materials, hand labelers, station charters. Check them out!
   - bugfix: Fixed the skin tones on the preferences menu not having colors.
-  - bugfix: Magic mirrors will now allow you to swap species again.
+  - bugfix: Psyonautic mirrors will now allow you to swap species again.
   - bugfix: cigarette pack has correct sprite now.
   - admin: PDA bomb logging shouldn't be as confusing now.
 2021-12-15:

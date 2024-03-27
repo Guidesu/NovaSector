@@ -37,7 +37,7 @@ export const NtosArcade = (props) => {
                       {data.PlayerHitpoints}HP
                     </ProgressBar>
                   </LabeledList.Item>
-                  <LabeledList.Item label="Player Magic">
+                  <LabeledList.Item label="Player Psyonautic">
                     <ProgressBar
                       value={data.PlayerMP}
                       minValue={0}

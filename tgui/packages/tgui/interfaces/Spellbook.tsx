@@ -342,7 +342,7 @@ const Loadouts = (props) => {
             author="Archchancellor Gray"
             blurb={multiline`
                 This is the classic wizard, crazy popular in
-                the 2550's. Comes with Fireball, Magic Missile,
+                the 2550's. Comes with Fireball, Psyonautic Missile,
                 Ei Nath, and Ethereal Jaunt. The key here is that
                 every part of this kit is very easy to pick up and use.
               `}

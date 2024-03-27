@@ -9,7 +9,7 @@
  * consider adding an adjective to the name.
  *
  * "Lesser Fireball" for a subtype of Fireball with a shorter cooldown.
- * "Deadly Magic Missile" for a subtype of Magic Missile that does damage, etc.
+ * "Deadly Psyonautic Missile" for a subtype of Psyonautic Missile that does damage, etc.
  */
 /datum/unit_test/spell_names
 

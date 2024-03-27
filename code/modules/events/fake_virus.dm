@@ -4,6 +4,7 @@
 	weight = 20
 	category = EVENT_CATEGORY_HEALTH
 	description = "Some crewmembers suffer from temporary hypochondria."
+	max_occurrences = 0
 
 /datum/round_event/fake_virus/start()
 	var/list/fake_virus_victims = list()

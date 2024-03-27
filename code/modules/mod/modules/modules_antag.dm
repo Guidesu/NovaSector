@@ -168,7 +168,7 @@
 	shield_icon = "mageshield"
 	recharge_path = /obj/item/wizard_armour_charge
 
-///Magic Nullifier - Protects you from magic.
+///Psyonautic Nullifier - Protects you from magic.
 /obj/item/mod/module/anti_magic
 	name = "MOD magic nullifier module"
 	desc = "A series of obsidian rods installed into critical points around the suit, \

@@ -5,11 +5,11 @@
 
 	sound = 'sound/magic/staff_healing.ogg'
 	school = SCHOOL_RESTORATION
-	cooldown_time = 10 SECONDS
+	cooldown_time = 30 SECONDS
 	cooldown_reduction_per_rank = 1.25 SECONDS
 	spell_requirements = SPELL_REQUIRES_NO_ANTIMAGIC|SPELL_REQUIRES_HUMAN
 
-	invocation = "Victus sano!"
+	invocation = "vita floreat, Iuppiter accipe meum."
 	invocation_type = INVOCATION_WHISPER
 
 	/// Amount of brute to heal to the spell caster on cast

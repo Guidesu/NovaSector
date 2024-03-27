@@ -15,7 +15,7 @@
 	summon_guns(survivor_probability = 10)
 
 /datum/round_event_control/wizard/summonmagic //The Somewhat Less Classic
-	name = "Summon Magic"
+	name = "Summon Psyonautic"
 	weight = 1
 	typepath = /datum/round_event/wizard/summonmagic
 	max_occurrences = 1

@@ -522,7 +522,7 @@
   - bugfix: Centcom Engineering has reviewed the power schematic for the engine room
       and added an Area Power Controller.
   coiax:
-  - balance: Magic eightballs are now tiny items, able to fit into a box and pocket.
+  - balance: Psyonautic eightballs are now tiny items, able to fit into a box and pocket.
 2017-05-18:
   Joan:
   - rscadd: Proselytizing alloy shards will now proselytize all the shards in the

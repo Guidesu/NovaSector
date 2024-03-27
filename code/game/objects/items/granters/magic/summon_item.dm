@@ -10,7 +10,7 @@
 		"Make sure to have a good grip on it when casting...",
 		"Slow down, book. I still haven't finished this page...",
 		"Sounds pretty great with some other magical artifacts...",
-		"Magicians must love this one.",
+		"Psyonauticians must love this one.",
 	)
 
 /obj/item/book/granter/action/spell/summonitem/recoil(mob/living/user)

@@ -1,16 +1,13 @@
 /datum/action/cooldown/spell/charge
-	name = "Charge"
-	desc = "This spell can be used to recharge a variety of things in your hands, \
-		from magical artifacts to electrical components. A creative wizard can even use it \
-		to grant magical power to a fellow magic user."
+	name = "Psy Charge"
+	desc = "This knowlodge can be used to recharge a variety of things in your hands, from psyonicals artifacts to electrical components."
 	button_icon_state = "charge"
-
 	sound = 'sound/magic/charge.ogg'
 	school = SCHOOL_TRANSMUTATION
 	cooldown_time = 60 SECONDS
 	cooldown_reduction_per_rank = 5 SECONDS
 
-	invocation = "DIRI CEL"
+	invocation = "Focus meam industriam, electricitatem caeli, per manus meas cerne."
 	invocation_type = INVOCATION_WHISPER
 	spell_requirements = SPELL_REQUIRES_NO_ANTIMAGIC
 

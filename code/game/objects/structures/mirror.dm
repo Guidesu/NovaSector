@@ -4,7 +4,7 @@
 #define CHANGE_HAIR "Change Hair"
 #define CHANGE_BEARD "Change Beard"
 
-// Magic Mirrors!
+// Psyform Mirrors!
 
 #define CHANGE_RACE "Change Race"
 #define CHANGE_SEX  "Change Sex"
@@ -339,7 +339,7 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/mirror/broken, 28)
 	beard_dresser.set_facial_hairstyle(new_style, update = TRUE)
 	return TRUE
 
-//Magic mirrors can change hair color as well
+//Psyform mirrors can change hair color as well
 /obj/structure/mirror/magic/change_hair(mob/living/carbon/human/user)
 	var/hairchoice = tgui_alert(user, "Hairstyle or hair color?", "Change Hair", list("Style", "Color"))
 	if(hairchoice == "Style") //So you just want to use a mirror then?

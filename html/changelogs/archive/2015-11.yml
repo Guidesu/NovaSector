@@ -284,7 +284,7 @@
   - rscadd: Lightning bolts can still jump back to the same body, so the maximum number
       of bolts you can be hit by in a single casting is three, and the maximum amount
       of damage you could take for that is 60 burn.
-  - experiment: 'Magic Missile Changes:'
+  - experiment: 'Psyonautic Missile Changes:'
   - rscdel: Cooldown raised to 20 seconds, up from 15
   - rscadd: Cooldown reduction from taking the spell multiple times raised from 1.5
       seconds to 3.5 seconds. Rank 5 magic missile now has a cooldown of 6 seconds,

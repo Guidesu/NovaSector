@@ -32,12 +32,12 @@
 	return ..()
 
 /datum/spellbook_entry/summon/magic
-	name = "Summon Magic"
+	name = "Summon Psyonautic"
 	desc = "Share the wonders of magic with the crew and show them \
 		why they aren't to be trusted with it at the same time."
 
 /datum/spellbook_entry/summon/magic/can_be_purchased()
-	// Summon Magic requires 98 threat.
+	// Summon Psyonautic requires 98 threat.
 	if(SSdynamic.threat_level < MINIMUM_THREAT_FOR_RITUALS)
 		return FALSE
 	// Also must be config enabled

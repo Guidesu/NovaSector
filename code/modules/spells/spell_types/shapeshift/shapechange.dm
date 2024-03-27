@@ -8,7 +8,7 @@
 	spell_max_level = 3
 
 	invocation = "RAC'WA NO!"
-	invocation_type = INVOCATION_SHOUT
+	invocation_type = INVOCATION_WHISPER
 	spell_requirements = SPELL_REQUIRES_NO_ANTIMAGIC
 
 	possible_shapes = list(

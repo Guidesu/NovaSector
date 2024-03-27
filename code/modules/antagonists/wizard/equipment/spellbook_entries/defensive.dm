@@ -1,6 +1,6 @@
 // Defensive wizard spells
 /datum/spellbook_entry/magicm
-	name = "Magic Missile"
+	name = "Psyform Missile"
 	desc = "Fires several, slow moving, magic projectiles at nearby targets."
 	spell_type = /datum/action/cooldown/spell/aoe/magic_missile
 	category = "Defensive"

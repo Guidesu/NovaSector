@@ -288,7 +288,7 @@ GLOBAL_DATUM(everyone_an_antag, /datum/everyone_is_an_antag_controller)
 		if("magic")
 			if(!is_funmin)
 				return
-			SSblackbox.record_feedback("nested tally", "admin_secrets_fun_used", 1, list("Summon Magic"))
+			SSblackbox.record_feedback("nested tally", "admin_secrets_fun_used", 1, list("Summon Psyform"))
 			var/survivor_probability = 0
 			switch(tgui_alert(usr,"Do you want this to create magician antagonists?",,list("No Antags","Some Antags","All Antags!")))
 				if("Some Antags")

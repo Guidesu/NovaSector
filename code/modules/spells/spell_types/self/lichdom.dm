@@ -11,7 +11,7 @@
 	cooldown_time = 1 SECONDS
 
 	invocation = "NECREM IMORTIUM!"
-	invocation_type = INVOCATION_SHOUT
+	invocation_type = INVOCATION_WHISPER
 	spell_requirements = SPELL_REQUIRES_NO_ANTIMAGIC|SPELL_REQUIRES_STATION|SPELL_REQUIRES_MIND
 	spell_max_level = 1
 

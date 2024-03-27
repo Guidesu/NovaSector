@@ -22,7 +22,7 @@
 	check_flags = AB_CHECK_CONSCIOUS|AB_CHECK_HANDS_BLOCKED|AB_CHECK_INCAPACITATED
 	sound = 'sound/items/welder.ogg'
 	invocation = "High Five!"
-	invocation_type = INVOCATION_SHOUT
+	invocation_type = INVOCATION_WHISPER
 
 	/// Typepath of what hand we create on initial cast.
 	var/obj/item/melee/touch_attack/hand_path = /obj/item/melee/touch_attack

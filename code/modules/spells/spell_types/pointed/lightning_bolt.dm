@@ -10,7 +10,7 @@
 	cooldown_reduction_per_rank = 2 SECONDS
 
 	invocation = "P'WAH, UNLIM'TED P'WAH!"
-	invocation_type = INVOCATION_SHOUT
+	invocation_type = INVOCATION_WHISPER
 	spell_requirements = SPELL_REQUIRES_NO_ANTIMAGIC
 
 	active_msg = "You energize your hands with arcane lightning!"

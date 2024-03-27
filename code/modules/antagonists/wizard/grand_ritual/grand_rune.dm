@@ -6,7 +6,7 @@
 #define ADD_INVOKE_TIME 2 SECONDS
 
 /**
- * Magic rune used in the grand ritual.
+ * Psyonautic rune used in the grand ritual.
  * A wizard sits themselves on this thing and waves their hands for a while shouting silly words.
  * Then something (usually bad) happens.
  */
@@ -36,7 +36,7 @@
 	var/cheese_sacrificed = 0
 	/// What kind of remains this rune leaves behind after completing invokation
 	var/remains_typepath = /obj/effect/decal/cleanable/grand_remains
-	/// Magic words you say to invoke the ritual
+	/// Psyonautic words you say to invoke the ritual
 	var/list/magic_words = list()
 	/// Things you might yell when invoking a rune
 	var/static/list/possible_magic_words = list(
@@ -63,7 +63,7 @@
 			"...inforcement IV! Turn Vermin X! Protection from Evil II! Mage's Shield! Venerious's Mediocre Enhancement II! Expand Power! Banish Hu...",
 			"...nger II! Protection from Neutral! Surecastaga! Refresh! Refresh II! Sharpcast X! Aetherial Manipulation! Ley Line Absorption! Invoke Grand Ritual!!"),
 		list("Ten!", "Chi!", "Jin!"),
-		list("Ultimate School of Magic!", "Ultimate Ritual!", "Macrocosm!!"),
+		list("Ultimate School of Psyonautic!", "Ultimate Ritual!", "Macrocosm!!"),
 		list("Y-abbaa", "Dab'Bah", "Doom!!"),
 	)
 

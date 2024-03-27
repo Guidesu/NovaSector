@@ -1,4 +1,4 @@
-// Magic Mirror Character Application
+// Psyonautic Mirror Character Application
 /obj/structure/mirror/magic/attack_hand(mob/living/carbon/human/user)
 	var/user_input = tgui_alert(user, "Would you like to apply your loaded character?","Confirm", list("Yes!", "No"))
 

@@ -20,20 +20,14 @@
 	announce_when = 2
 
 /datum/round_event/market_crash/announce(fake)
-	var/list/poss_reasons = list("the alignment of the moon and the sun",\
-		"some risky housing market outcomes",\
-		"the B.E.P.I.S. team's untimely downfall",\
-		"speculative SolFed grants backfiring",  /*NOVA EDIT CHANGE; original was "speculative Terragov grants backfiring"*/\
-		"greatly exaggerated reports of Free Union Of Vulken accountancy personnel being \"laid off\"",\
-		"a \"great investment\" into \"non-fungible tokens\" by a \"moron\"",\
-		"a number of raids from Tiger Cooperative agents",\
+	var/list/poss_reasons = list("the alignment of the moon and the sun interfering the communication",\
+		"some risky solar flare",\
 		"supply chain shortages",\
-		"the \"Free Union Of Vulken+\" social media network's untimely downfall",\
-		"the \"Free Union Of Vulken+\" social media network's unfortunate success",\
-		"uhh, bad luck, we guess"
+		"the \"Free Union Of Vulken+\" transport issues",\
+		"the \"Free Union Of Vulken+\" doing a general check-up on the system"
 	)
 	var/reason = pick(poss_reasons)
-	priority_announce("Due to [reason], prices for on-station vendors will be increased for a short period.", "Free Union Of Vulken Accounting Division")
+	priority_announce("Due to [reason], prices for on-colony vendors will be a little buggy for a short period.", "Free Union Of Vulken Accounting Division")
 
 /datum/round_event/market_crash/start()
 	. = ..()
@@ -46,7 +40,7 @@
 	REMOVE_TRAIT(SSeconomy, TRAIT_MARKET_CRASHING, MARKET_CRASH_EVENT_TRAIT)
 	SSeconomy.price_update()
 	SSeconomy.update_vending_prices()
-	priority_announce("Prices for on-station vendors have now stabilized.", "Free Union Of Vulken Accounting Division")
+	priority_announce("Prices for on-colony vendors have now stabilized.", "Free Union Of Vulken Accounting Division")
 
 /datum/round_event/market_crash/tick()
 	. = ..()

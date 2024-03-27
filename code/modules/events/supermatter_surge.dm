@@ -28,7 +28,7 @@
 	typepath = /datum/round_event/supermatter_surge
 	category = EVENT_CATEGORY_ENGINEERING
 	weight = 15
-	max_occurrences = 1
+	max_occurrences = 0
 	earliest_start = 20 MINUTES
 	description = "The supermatter will increase in power and heat by a random amount, and announce it."
 	min_wizard_trigger_potency = 4

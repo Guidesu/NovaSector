@@ -22,7 +22,7 @@ $include auxtools.txt
 SERVERNAME Solunakin
 
 ## Server tagline: This will appear right below the server's title.
-SERVERTAGLINE A personal server
+SERVERTAGLINE A personal server for me and my friends.
 
 ## Discord Link: This is the link to Nova Sector's discord server
 # DISCORD_LINK https://discord.gg/novasector
@@ -31,7 +31,7 @@ SERVERTAGLINE A personal server
 # SERVERSQLNAME tgstation
 
 ## Station name: The name of the station as it is referred to in-game. If commented out, the game will generate a random name instead.
-STATIONNAME Horizon Edge
+STATIONNAME Colonial Outpost FUOV-NPOV-N2 'The Dragon Skies' 
 
 ## Put on byond hub: Uncomment this to put your server on the byond hub.
 #HUB
@@ -569,7 +569,7 @@ SECONDS_COOLDOWN_FOR_PREFERENCES_EXPORT 10
 ## Uncomment to allow the station name to be in the hub entry.
 ## You should only enable this if you can guarantee a station name doesn't break BYOND's TOS.
 ## BYOND staff have gotten upset at us in the past for inappropriate station names.
-#STATION_NAME_IN_HUB_ENTRY
+STATION_NAME_IN_HUB_ENTRY
 
 ## The number of PR announcements allowed for the same pull request per round
 ## This makes sure that somebody can only spam a few reopens and closes before being ignored

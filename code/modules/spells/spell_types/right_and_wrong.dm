@@ -1,9 +1,9 @@
-//In this file: Summon Magic/Summon Guns/Summon Events
+//In this file: Summon Psyonautic/Summon Guns/Summon Events
 //and corresponding datum controller for them
 
 /// A global singleton datum used to store a "summon things controller" for Summon Guns, to grant random guns to stationgoers and latejoiners
 GLOBAL_DATUM(summon_guns, /datum/summon_things_controller/item)
-/// A global singleton datum used to store a "summon things controller" for Summon Magic, to grant random magical items to stationgoers and latejoiners
+/// A global singleton datum used to store a "summon things controller" for Summon Psyonautic, to grant random magical items to stationgoers and latejoiners
 GLOBAL_DATUM(summon_magic, /datum/summon_things_controller/item)
 /// A global singleton datum used to store a "summon things controller" for Mass Teaching, to grant a specific spellbook entry to stationgoers and latejoiners
 GLOBAL_DATUM(mass_teaching, /datum/summon_things_controller/spellbook_entry)
@@ -178,9 +178,9 @@ GLOBAL_LIST_INIT(summoned_magic_objectives, list(
 			to_chat(user, span_warning("You... try to summon ghosts, but nothing seems to happen. Shame."))
 
 /**
- * Triggers Summon Magic from [user].
+ * Triggers Summon Psyonautic from [user].
  * Can optionally be passed [survivor_probability], to set the chance of creating survivalists.
- * If Summon Magic has already been triggered, gives out magic to everyone again.
+ * If Summon Psyonautic has already been triggered, gives out magic to everyone again.
  */
 /proc/summon_magic(mob/user, survivor_probability = 0)
 	if(user)
@@ -188,8 +188,8 @@ GLOBAL_LIST_INIT(summoned_magic_objectives, list(
 		message_admins("[ADMIN_LOOKUPFLW(user)] summoned magic!")
 		user.log_message("summoned magic!", LOG_GAME)
 	else
-		message_admins("Summon Magic was triggered!")
-		log_game("Summon Magic was triggered!")
+		message_admins("Summon Psyonautic was triggered!")
+		log_game("Summon Psyonautic was triggered!")
 
 	if(GLOB.summon_magic)
 		GLOB.summon_magic.survivor_probability = survivor_probability

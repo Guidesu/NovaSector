@@ -18,7 +18,7 @@
 /**
  * Adds magic resistances to an object
  *
- * Magic resistance will prevent magic from affecting the user if it has the correct resistance
+ * Psyform resistance will prevent magic from affecting the user if it has the correct resistance
  * against the type of magic being used
  *
  * args:

@@ -52,6 +52,23 @@
 	human_holder.dna.add_mutation(/datum/mutation/human/cryokinesis, MUT_OTHER)
 	human_holder.dna.add_mutation(/datum/mutation/human/firebreath, MUT_OTHER)
 	human_holder.dna.add_mutation(/datum/mutation/human/thermal, MUT_OTHER)
+	human_holder.dna.add_mutation(/datum/mutation/human/biotechcompat, MUT_OTHER)
+
+	var/list/psionics_spells = list(
+	/datum/action/cooldown/spell/pointed/psychic_projection,
+	/datum/action/cooldown/spell/charged/psychic_booster,
+	/datum/action/cooldown/spell/forcewall/psychic_wall,
+	/datum/action/cooldown/spell/basic_heal,
+	/datum/action/cooldown/spell/charge,
+	/datum/action/cooldown/spell/sanguine_strike,
+	/datum/action/cooldown/spell/charged/beam/tesla,
+	/datum/action/cooldown/spell/pointed/projectile/fireball,
+	/datum/action/cooldown/spell/pointed/terrorize
+	)
+	for (var/action_type in psionics_spells )
+		var/datum/action/new_action = new action_type(quirk_holder)
+		new_action.Grant(quirk_holder)
+
 
 
 /datum/quirk/psyonaut/remove()
@@ -65,6 +82,7 @@
 	human_holder.dna.remove_mutation(/datum/mutation/human/cryokinesis, MUT_OTHER)
 	human_holder.dna.remove_mutation(/datum/mutation/human/firebreath, MUT_OTHER)
 	human_holder.dna.remove_mutation(/datum/mutation/human/thermal, MUT_OTHER)
+	human_holder.dna.remove_mutation(/datum/mutation/human/biotechcompat, MUT_OTHER)
 
 
 /datum/mutation/human/telepathy

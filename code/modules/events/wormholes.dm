@@ -3,9 +3,9 @@ GLOBAL_LIST_EMPTY(all_wormholes) // So we can pick wormholes to teleport to
 /datum/round_event_control/wormholes
 	name = "Wormholes"
 	typepath = /datum/round_event/wormholes
-	max_occurrences = 3
-	weight = 2
-	min_players = 2
+	max_occurrences = 0
+	weight = 0
+	min_players = 50
 	category = EVENT_CATEGORY_SPACE
 	description = "Space time anomalies appear on the station, randomly teleporting people who walk into them."
 	min_wizard_trigger_potency = 3

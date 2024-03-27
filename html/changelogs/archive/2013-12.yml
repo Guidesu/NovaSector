@@ -37,16 +37,16 @@
   - imageadd: New colourful ghost sprites for BYOND members. Sprites by anonus.
 2013-12-14:
   Incoming:
-  - rscadd: Magic Mania! Powerful new magical tools and skills for wizard and crew
+  - rscadd: Psyonautic Mania! Powerful new magical tools and skills for wizard and crew
       alike!
-  - rscadd: Beware the new Summon Magic spell, which will grant the crew access to
+  - rscadd: Beware the new Summon Psyonautic spell, which will grant the crew access to
       magical tools and spells and cause some to misuse it!
   - rscadd: 'One Time Spellbooks that can be spawned during summon magic that can
       teach a low level magic skill to <i>anyone</i>! Beware the effects of reading
       pre-owned books, the magical rights management is potent!
 
       '
-  - rscadd: Magical Wands that can be spawned during Summon Magic! They come in a
+  - rscadd: Magical Wands that can be spawned during Summon Psyonautic! They come in a
       variety of effects that mimic both classical wizard spells and all new ones.
       They come precharged but lack the means to refill them once their magical energy
       is depleted... Fire efficently!
@@ -57,7 +57,7 @@
       benefit from a magical charge...
   - rscadd: The Staff of Resurrection, which holds intense healing magics able to
       defeat death itself! Look out for this invaluable magical tool during castings
-      of Summon Magic.
+      of Summon Psyonautic.
   - rscadd: Be on the lookout for a new apprentice! This noble mage is a different
       beast from most wizards, trained in the arts of defending and healing. Too bad
       he still works for the wizard!

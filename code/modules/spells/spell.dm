@@ -106,7 +106,7 @@
 		RegisterSignals(owner, list(COMSIG_MOB_EQUIPPED_ITEM, COMSIG_MOB_UNEQUIPPED_ITEM), PROC_REF(update_status_on_signal))
 	if(invocation_type == INVOCATION_EMOTE)
 		RegisterSignals(owner, list(SIGNAL_ADDTRAIT(TRAIT_EMOTEMUTE), SIGNAL_REMOVETRAIT(TRAIT_EMOTEMUTE)), PROC_REF(update_status_on_signal))
-	if(invocation_type == INVOCATION_SHOUT || invocation_type == INVOCATION_WHISPER)
+	if(invocation_type == INVOCATION_WHISPER || invocation_type == INVOCATION_WHISPER)
 		RegisterSignals(owner, list(SIGNAL_ADDTRAIT(TRAIT_MUTE), SIGNAL_REMOVETRAIT(TRAIT_MUTE)), PROC_REF(update_status_on_signal))
 
 	RegisterSignals(owner, list(COMSIG_MOB_ENTER_JAUNT, COMSIG_MOB_AFTER_EXIT_JAUNT), PROC_REF(update_status_on_signal))
@@ -304,7 +304,7 @@
 	if(ishuman(owner) && !(spell_requirements & SPELL_CASTABLE_WITHOUT_INVOCATION))
 		var/mob/living/carbon/human/caster = owner
 		switch(invocation_type)
-			if(INVOCATION_WHISPER, INVOCATION_SHOUT)
+			if(INVOCATION_WHISPER, INVOCATION_WHISPER)
 				if(!caster.get_organ_slot(ORGAN_SLOT_TONGUE))
 					invocation(caster)
 					to_chat(caster, span_warning("Your lack of tongue is making it difficult to say the correct words to cast [src]..."))
@@ -387,7 +387,7 @@
 	var/used_invocation_garble_prob = invocation_list[INVOCATION_GARBLE_PROB]
 
 	switch(used_invocation_type)
-		if(INVOCATION_SHOUT)
+		if(INVOCATION_WHISPER)
 			if(prob(used_invocation_garble_prob))
 				invoker.say(replacetext(used_invocation_message," ","`"), forced = "spell ([src])")
 			else
@@ -427,7 +427,7 @@
 			to_chat(invoker, span_warning("You can't position your hands correctly to invoke [src]!"))
 		return FALSE
 
-	if((invocation_type == INVOCATION_WHISPER || invocation_type == INVOCATION_SHOUT) && !invoker.can_speak())
+	if((invocation_type == INVOCATION_WHISPER || invocation_type == INVOCATION_WHISPER) && !invoker.can_speak())
 		if(feedback)
 			to_chat(invoker, span_warning("You can't get the words out to invoke [src]!"))
 		return FALSE

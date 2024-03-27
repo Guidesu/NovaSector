@@ -1,4 +1,4 @@
-//Magical traumas, caused by spells and curses.
+//Psyonautical traumas, caused by spells and curses.
 //Blurs the line between the victim's imagination and reality
 //Unlike regular traumas this can affect the victim's body and surroundings
 

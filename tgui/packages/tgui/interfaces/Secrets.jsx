@@ -389,7 +389,7 @@ const FunTab = (props) => {
               icon="magic"
               lineHeight={lineHeightNormal}
               width={buttonWidthNormal}
-              content="Summon Magic"
+              content="Summon Psyonautic"
               onClick={() => act('magic')}
             />
           </Stack.Item>

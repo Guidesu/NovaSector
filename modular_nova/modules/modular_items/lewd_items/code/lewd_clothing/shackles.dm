@@ -10,7 +10,7 @@
 	worn_icon_taur_hoof = 'modular_nova/modules/modular_items/lewd_items/icons/mob/lewd_clothing/lewd_suit/lewd_suits-hoof.dmi'
 	icon_state = "shackles_metal"
 	base_icon_state = "shackles"
-	body_parts_covered = null//they don't cover anything, but these code parts need to be here, because if they are not here - they make clothing disappear. Magic.
+	body_parts_covered = null//they don't cover anything, but these code parts need to be here, because if they are not here - they make clothing disappear. Psyonautic.
 	flags_inv = null
 	equip_delay_self = NONE
 	strip_delay = 120

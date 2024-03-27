@@ -9,7 +9,7 @@
 	cooldown_reduction_per_rank = 1.25 SECONDS
 
 	invocation = "TARCOL MINTI ZHERI"
-	invocation_type = INVOCATION_SHOUT
+	invocation_type = INVOCATION_WHISPER
 	spell_requirements = SPELL_REQUIRES_NO_ANTIMAGIC
 
 	/// The typepath to the wall we create on cast.

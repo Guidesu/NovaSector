@@ -2,7 +2,7 @@
 	name = "Ion Storm"
 	typepath = /datum/round_event/ion_storm
 	weight = 15
-	min_players = 2
+	min_players = 0
 	category = EVENT_CATEGORY_AI
 	description = "Gives the AI a new, randomized law."
 	min_wizard_trigger_potency = 2

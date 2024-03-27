@@ -1,5 +1,5 @@
 /datum/action/innate/cult/blood_magic //Blood magic handles the creation of blood spells (formerly talismans)
-	name = "Prepare Blood Magic"
+	name = "Prepare Blood Psyform"
 	button_icon_state = "carve"
 	desc = "Prepare blood magic by carving runes into your flesh. This is easier with an <b>empowering rune</b>."
 	default_button_position = DEFAULT_BLOODSPELLS
@@ -91,7 +91,7 @@
 	channeling = FALSE
 
 /datum/action/innate/cult/blood_spell //The next generation of talismans, handles storage/creation of blood magic
-	name = "Blood Magic"
+	name = "Blood Psyform"
 	button_icon_state = "telerune"
 	desc = "Fear the Old Blood."
 	var/charges = 1

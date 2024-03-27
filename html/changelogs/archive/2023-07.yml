@@ -1427,7 +1427,7 @@
   - refactor: the bear is a basic now. please report any bugs
   - rscadd: the bear will climb trees and search honey
   - rscadd: You can now earn an achievement for completing the Grand Ritual.
-  - bugfix: Summon Magic and Summon Guns work again
+  - bugfix: Summon Psyonautic and Summon Guns work again
   - bugfix: Fixes revolvers losing ammo capacity when you reload them.
   - bugfix: Staff of laval no longer works on space
   - bugfix: some things not connecting to the ore silo round start

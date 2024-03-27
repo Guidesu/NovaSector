@@ -1,5 +1,5 @@
 /datum/action/cooldown/spell/charged/beam/tesla
-	name = "Tesla Blast"
+	name = "Electrokinetic Blast"
 	desc = "Charge up a tesla arc and release it at random nearby targets! \
 		You can move freely while it charges. The arc jumps between targets and can knock them down."
 	button_icon_state = "lightning"
@@ -8,8 +8,8 @@
 	cooldown_time = 30 SECONDS
 	cooldown_reduction_per_rank = 6.75 SECONDS
 
-	invocation = "UN'LTD P'WAH!"
-	invocation_type = INVOCATION_SHOUT
+	invocation = "Energy i utar, focus potestas est."
+	invocation_type = INVOCATION_WHISPER
 	school = SCHOOL_EVOCATION
 
 	channel_message = span_notice("You start gathering power...")

@@ -4,6 +4,6 @@
 	desc = "Take on the shape of a powerful gorilla."
 	button_icon_state = "return_to_monkey"
 	invocation = "B'NA NAH-SLEMA!"
-	invocation_type = INVOCATION_SHOUT
+	invocation_type = INVOCATION_WHISPER
 	spell_requirements = NONE
 	possible_shapes = list(/mob/living/basic/gorilla)

@@ -1,4 +1,4 @@
-// Magic schools
+// Psyform schools
 
 /// Unset / default / "not actually magic" school.
 #define SCHOOL_UNSET "unset"

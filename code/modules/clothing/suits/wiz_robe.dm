@@ -135,7 +135,7 @@
 
 /obj/item/clothing/suit/wizrobe/marisa
 	name = "witch robe"
-	desc = "Magic is all about the spell power, ZE!"
+	desc = "Psyonautic is all about the spell power, ZE!"
 	icon_state = "marisa"
 	inhand_icon_state = null
 
@@ -184,7 +184,7 @@
 
 /obj/item/clothing/suit/wizrobe/marisa/fake
 	name = "witch robe"
-	desc = "Magic is all about the spell power, ZE!"
+	desc = "Psyonautic is all about the spell power, ZE!"
 	icon_state = "marisa"
 	inhand_icon_state = null
 	armor_type = /datum/armor/none

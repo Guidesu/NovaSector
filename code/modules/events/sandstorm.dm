@@ -11,14 +11,14 @@
 	name = "Sandstorm: Directional"
 	typepath = /datum/round_event/sandstorm
 	max_occurrences = 3
-	min_players = 35
+	min_players = 1
 	earliest_start = 35 MINUTES
 	category = EVENT_CATEGORY_SPACE
-	description = "A wave of space dust continually grinds down a side of the station."
+	description = "A wave of  dust continually grinds from above towards the colony"
 	min_wizard_trigger_potency = 6
 	max_wizard_trigger_potency = 7
 	admin_setup = list(/datum/event_admin_setup/listed_options/sandstorm)
-	map_flags = EVENT_SPACE_ONLY
+	map_flags = EVENT_PLANETARY_ONLY
 
 /datum/round_event/sandstorm
 	start_when = 60
@@ -50,8 +50,8 @@
 			kill()
 			return
 
-	priority_announce("A large wave of space dust is approaching from the [start_side_text] side of the station. \
-		Impact is expected in the next two minutes. All employees are encouranged to assist in repairs and damage mitigation if possible.", "Collision Emergency Alert")
+	priority_announce("A large wave of dust is approaching from the [start_side_text] side of the colony. \
+		Impact is expected in the next two minutes. All colonist are encouranged to assist in repairs and damage mitigation if possible.", "Collision Emergency Alert")
 
 /datum/round_event/sandstorm/tick()
 	spawn_meteors(15, GLOB.meteors_sandstorm, start_side)

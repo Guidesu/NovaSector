@@ -1,5 +1,5 @@
 /datum/action/cooldown/spell/stimpack
-	name = "Magic Stimpack"
+	name = "Psyonautic Stimpack"
 	desc = "This spell magically injects stimulants straight into your blood. Won't work on species with no reagent reactions!"
 	school = "transmutation"
 	cooldown_time = 10 SECONDS

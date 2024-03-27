@@ -472,7 +472,7 @@
 	holiday_hat = /obj/item/clothing/head/wizard
 
 /datum/holiday/wizards_day/getStationPrefix()
-	return pick("Dungeon", "Elf", "Magic", "D20", "Edition")
+	return pick("Dungeon", "Elf", "Psyonautic", "D20", "Edition")
 
 /datum/holiday/friendship
 	name = "Friendship Day"

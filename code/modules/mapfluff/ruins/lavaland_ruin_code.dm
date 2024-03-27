@@ -2,7 +2,7 @@
 
 ///Wizard tower item
 /obj/item/disk/design_disk/knight_gear
-	name = "Magic Disk of Smithing"
+	name = "Psyonautic Disk of Smithing"
 
 /obj/item/disk/design_disk/knight_gear/Initialize(mapload)
 	. = ..()

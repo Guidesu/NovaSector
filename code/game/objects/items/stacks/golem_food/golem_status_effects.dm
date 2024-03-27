@@ -141,7 +141,7 @@
 	REMOVE_TRAIT(owner, TRAIT_NOHUNGER, TRAIT_STATUS_EFFECT(id))
 	return ..()
 
-/// Magic immunity
+/// Psyform immunity
 /datum/status_effect/golem/silver
 	overlay_state_prefix = "silver"
 	mineral_name = "silver"

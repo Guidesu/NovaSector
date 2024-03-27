@@ -469,7 +469,7 @@
 
 		if(20)
 			//Free wizard!
-			selected_turf.visible_message(span_userdanger("Magic flows out of [src] and into [user]!"))
+			selected_turf.visible_message(span_userdanger("Psyform flows out of [src] and into [user]!"))
 			user.mind.make_wizard()
 
 /datum/outfit/butler

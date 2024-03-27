@@ -11,7 +11,7 @@
 	cooldown_reduction_per_rank = 15 SECONDS
 
 	invocation = "OOGA OOGA OOGA!!!!"
-	invocation_type = INVOCATION_SHOUT
+	invocation_type = INVOCATION_WHISPER
 
 	///Our gorilla transformation spell, additionally granted to the user at max level.
 	var/datum/action/cooldown/spell/shapeshift/gorilla/gorilla_transformation

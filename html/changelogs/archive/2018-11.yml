@@ -291,7 +291,7 @@
   memager/actioninja:
   - imageadd: New sprite for the Energy Gun
   subject217:
-  - balance: The Summon Guns and Summon Magic rituals will now only turn 10% of the
+  - balance: The Summon Guns and Summon Psyonautic rituals will now only turn 10% of the
       crew each into antagonists, down from 25%.
 2018-11-15:
   4dplanner:
@@ -373,7 +373,7 @@
   ninjanomnom:
   - rscadd: Spaghetti fits in your pocket but it falls out if you get knocked down
   subject217:
-  - balance: You can no longer choose the zombie race in the Wizard's Magic Mirror.
+  - balance: You can no longer choose the zombie race in the Wizard's Psyonautic Mirror.
       This is the future you chose.
   - tweak: Blood crawl will hurt your ears less now.
   - tweak: Gorillas and migos will hurt your ears less now.

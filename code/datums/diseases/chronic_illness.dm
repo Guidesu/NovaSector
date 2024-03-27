@@ -90,7 +90,7 @@
 	copy_type = /datum/disease/advance
 
 /datum/disease/advance/symbiota/New()
-	symptoms = list(new/datum/symptom/heal/starlight, new/datum/symptom/heal/chem, new/datum/symptom/heal/metabolism, new/datum/symptom/heal/darkness)
+	symptoms = list(new/datum/symptom/heal/starlight, new/datum/symptom/heal/radiation, new/datum/symptom/heal/water, new/datum/symptom/heal/darkness)
 	copy_type = /datum/disease/advance
 	name = "Symbiota Iluminosa Infestation"
 	max_stages = 5

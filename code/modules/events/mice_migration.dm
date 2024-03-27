@@ -4,6 +4,7 @@
 	weight = 10
 	category = EVENT_CATEGORY_ENTITIES
 	description = "A horde of mice arrives, and perhaps even the Rat King themselves."
+	max_occurrences = 0
 
 /datum/round_event/mice_migration
 	var/minimum_mice = 5

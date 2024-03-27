@@ -8,7 +8,7 @@
 	cooldown_time = 6 SECONDS
 
 	invocation = "FI'RAN DADISKO"
-	invocation_type = INVOCATION_SHOUT
+	invocation_type = INVOCATION_WHISPER
 	spell_requirements = SPELL_REQUIRES_NO_ANTIMAGIC
 
 	aoe_radius = 6

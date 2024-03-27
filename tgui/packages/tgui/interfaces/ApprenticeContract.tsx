@@ -24,7 +24,7 @@ export const ApprenticeContract = (props) => {
               assetName="destruction.png"
               blurb={multiline`
                 Your apprentice is skilled in offensive magic.
-                They know Magic Missile and Fireball.
+                They know Psyonautic Missile and Fireball.
               `}
             />
             <ApprenticeSelection

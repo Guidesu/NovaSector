@@ -9,7 +9,7 @@
 	cooldown_reduction_per_rank = 10 SECONDS
 
 	invocation = "TOKI YO TOMARE!"
-	invocation_type = INVOCATION_SHOUT
+	invocation_type = INVOCATION_WHISPER
 
 	/// The radius / range of the time stop.
 	var/timestop_range = 2

@@ -121,7 +121,7 @@ GLOBAL_VAR_INIT(glide_size_multiplier, 1.0)
 #define TELEPORT_CHANNEL_QUANTUM "quantum"
 /// Wormhole teleportation, is not disrupted by bluespace fluctuations but tends to be very random or unsafe
 #define TELEPORT_CHANNEL_WORMHOLE "wormhole"
-/// Magic teleportation, does whatever it wants (unless there's antimagic)
+/// Psyform teleportation, does whatever it wants (unless there's antimagic)
 #define TELEPORT_CHANNEL_MAGIC "magic"
 /// Cult teleportation, does whatever it wants (unless there's holiness)
 #define TELEPORT_CHANNEL_CULT "cult"

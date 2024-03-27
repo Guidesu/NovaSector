@@ -139,7 +139,7 @@
 		return ..()
 
 	switch(invocation_type)
-		if(INVOCATION_SHOUT)
+		if(INVOCATION_WHISPER)
 			invoker.say("[invocation], [uppertext(last_chosen_area.name)]!", forced = "spell ([src])")
 		if(INVOCATION_WHISPER)
 			invoker.whisper("[invocation], [uppertext(last_chosen_area.name)].", forced = "spell ([src])")

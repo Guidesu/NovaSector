@@ -939,8 +939,8 @@
   Melbert:
   - bugfix: Spasms won't trigger in stasis, incapacitated, if your hands are blocked,
       or you are immobilized.
-  - bugfix: Magic Mirrors can change your race again (?)
-  - bugfix: Magic Mirrors properly prevent you from being soft locked
+  - bugfix: Psyonautic Mirrors can change your race again (?)
+  - bugfix: Psyonautic Mirrors properly prevent you from being soft locked
   - bugfix: Robo customers are as robust as before
   Rhials:
   - qol: Ghosts will now be prompted to orbit when someone loses control due to being

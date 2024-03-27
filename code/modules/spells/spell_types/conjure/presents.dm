@@ -7,7 +7,7 @@
 	cooldown_reduction_per_rank = 13.75 SECONDS
 
 	invocation = "HO HO HO"
-	invocation_type = INVOCATION_SHOUT
+	invocation_type = INVOCATION_WHISPER
 
 	summon_radius = 3
 	summon_type = list(/obj/item/gift)

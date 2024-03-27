@@ -1,7 +1,7 @@
 /datum/round_event_control/aurora_caelus
 	name = "Aurora Caelus"
 	typepath = /datum/round_event/aurora_caelus
-	max_occurrences = 1
+	max_occurrences = 5
 	weight = 1
 	earliest_start = 5 MINUTES
 	category = EVENT_CATEGORY_FRIENDLY
@@ -18,7 +18,7 @@
 	end_when = 80
 
 /datum/round_event/aurora_caelus/announce()
-	priority_announce("[station_name()]: A harmless cloud of ions is approaching your station, and will exhaust their energy battering the hull. Free Union Of Vulken has approved a short break for all employees to relax and observe this very rare event. During this time, starlight will be bright but gentle, shifting between quiet green and blue colors. Any staff who would like to view these lights for themselves may proceed to the area nearest to them with viewing ports to open space. We hope you enjoy the lights.",
+	priority_announce("[station_name()]: A harmless cloud of ions is approaching your colony, and will exhaust their energy battering the hull. Free Union Of Vulken has approved a short break for all the colonists, families and contractors to relax and observe this  event. During this time, starlight will be bright but gentle, shifting between quiet green and blue colors. Any person who would like to view these lights for themselves may proceed to the area nearest to them with viewing ports to open skies. We hope you enjoy the lights.",
 	sound = 'sound/misc/notice2.ogg',
 	sender_override = "Free Union Of Vulken Meteorology Division")
 	for(var/V in GLOB.player_list)

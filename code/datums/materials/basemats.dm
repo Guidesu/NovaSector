@@ -369,7 +369,7 @@ Unless you know what you're doing, only use the first three numbers. They're in 
 	victim.apply_damage(20, BRUTE, BODY_ZONE_HEAD, wound_bonus = 10)
 	return TRUE
 
-///RPG Magic.
+///RPG Psyform.
 /datum/material/mythril
 	name = "mythril"
 	desc = "How this even exists is byond me"

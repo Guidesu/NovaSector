@@ -18,7 +18,7 @@
 				if(isnull(initial(spell_type.invocation)))
 					TEST_FAIL("Spell: [spell_name] ([spell_type]) set emote invocation type but did not set an invocation message.")
 
-			if(INVOCATION_SHOUT, INVOCATION_WHISPER)
+			if(INVOCATION_WHISPER, INVOCATION_WHISPER)
 				if(isnull(initial(spell_type.invocation)))
 					TEST_FAIL("Spell: [spell_name] ([spell_type]) set a speaking invocation type but did not set an invocation message.")
 

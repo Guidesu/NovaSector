@@ -11,7 +11,7 @@
 	spell_max_level = 3
 
 	invocation = "Sigi'lu M'Fan 'Tasia!"
-	invocation_type = INVOCATION_SHOUT
+	invocation_type = INVOCATION_WHISPER
 	spell_requirements = SPELL_REQUIRES_NO_ANTIMAGIC
 
 	cast_range = 40

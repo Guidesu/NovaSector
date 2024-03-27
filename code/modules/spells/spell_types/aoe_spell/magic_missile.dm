@@ -1,5 +1,5 @@
 /datum/action/cooldown/spell/aoe/magic_missile
-	name = "Magic Missile"
+	name = "Psyonautic Missile"
 	desc = "This spell fires several, slow moving, magic projectiles at nearby targets."
 	button_icon_state = "magicm"
 	sound = 'sound/magic/magic_missile.ogg'
@@ -9,7 +9,7 @@
 	cooldown_reduction_per_rank = 3.5 SECONDS
 
 	invocation = "FORTI GY AMA"
-	invocation_type = INVOCATION_SHOUT
+	invocation_type = INVOCATION_WHISPER
 
 	aoe_radius = 7
 
@@ -36,7 +36,7 @@
 	to_fire.fire()
 
 /datum/action/cooldown/spell/aoe/magic_missile/lesser
-	name = "Lesser Magic Missile"
+	name = "Lesser Psyonautic Missile"
 	desc = "This spell fires several, slow moving, magic projectiles at nearby targets."
 	background_icon_state = "bg_demon"
 	overlay_icon_state = "bg_demon_border"

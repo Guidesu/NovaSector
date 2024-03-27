@@ -6,6 +6,7 @@
 	category = EVENT_CATEGORY_BUREAUCRATIC
 	description = "Fakes an event announcement."
 	admin_setup = list(/datum/event_admin_setup/listed_options/false_alarm)
+	max_occurrences = 0
 
 /datum/round_event_control/falsealarm/can_spawn_event(players_amt, allow_magic = FALSE)
 	. = ..()

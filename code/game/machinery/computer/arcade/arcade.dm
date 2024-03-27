@@ -272,7 +272,7 @@ GLOBAL_LIST_INIT(arcade_prize_pool, list(
 	dat += "<center><h4>[enemy_name]</h4></center>"
 
 	dat += "[temp]"
-	dat += "<br><center>Health: [player_hp] | Magic: [player_mp] | Enemy Health: [enemy_hp]</center>"
+	dat += "<br><center>Health: [player_hp] | Psyform: [player_mp] | Enemy Health: [enemy_hp]</center>"
 
 	if (gameover)
 		dat += "<center><b><a href='byond://?src=[REF(src)];newgame=1'>New Game</a>"

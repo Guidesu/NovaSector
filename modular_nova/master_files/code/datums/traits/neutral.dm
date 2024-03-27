@@ -276,7 +276,7 @@ GLOBAL_VAR_INIT(DNR_trait_overlay, generate_DNR_trait_overlay())
 	icon = FA_ICON_FINGERPRINT
 
 /datum/quirk/overweight
-	name = "Overweight"
+	name = "Chubby"
 	desc = "You weigh more than an average person at your size, you've gotten used to it by now."
 	gain_text = span_notice("Your body feels heavy.")
 	lose_text = span_notice("Your suddenly feel lighter!")
@@ -292,10 +292,10 @@ GLOBAL_VAR_INIT(DNR_trait_overlay, generate_DNR_trait_overlay())
 	quirk_holder.remove_movespeed_modifier(/datum/movespeed_modifier/overweight)
 
 /datum/movespeed_modifier/overweight
-	multiplicative_slowdown = 0.5 //Around that of a dufflebag, enough to be impactful but not debilitating.
+	multiplicative_slowdown = 0.2 //Around that of a dufflebag, enough to be impactful but not debilitating.
 
 /datum/mood_event/fat/New(mob/parent_mob, ...)
 	. = ..()
 	if(HAS_TRAIT_FROM(parent_mob, TRAIT_OFF_BALANCE_TACKLER, QUIRK_TRAIT))
 		mood_change = 0 // They are probably used to it, no reason to be viscerally upset about it.
-		description = "<b>I'm fat.</b>"
+		description = "<b>I'm slightly chubby... Its not exactly bad. Can be anything really</b>"

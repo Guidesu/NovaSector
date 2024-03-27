@@ -9,7 +9,7 @@
 	cooldown_reduction_per_rank = 3 SECONDS
 
 	invocation = "KN'A FTAGHU, PUCK 'BTHNK!"
-	invocation_type = INVOCATION_SHOUT
+	invocation_type = INVOCATION_WHISPER
 	spell_requirements = SPELL_REQUIRES_NO_ANTIMAGIC
 
 	active_msg = "You prepare to curse a target..."
