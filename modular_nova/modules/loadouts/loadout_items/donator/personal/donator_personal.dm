@@ -106,6 +106,14 @@
 	item_path = /obj/item/clothing/under/plasmaman/candlejax2
 	ckeywhitelist = list("candlejax")
 
+<<<<<<< HEAD
+=======
+/datum/loadout_item/mask/composite_filtration
+	name = "Composite Filtration Mask"
+	item_path = /obj/item/clothing/mask/gas/psycho_malice
+	ckeywhitelist = list("snakebittenn", "chillylobster", "candlejax", "theooz")
+
+>>>>>>> ea83cdc7982925695101e377ecfb1ad96f881b39
 /datum/loadout_item/suit/jacket/cherno
 	name = "Blue-Silvered Coat"
 	item_path = /obj/item/clothing/suit/jacket/cherno
