@@ -26,8 +26,8 @@
 	icon_state = "billboard_space_cola"
 
 /obj/structure/billboard/nanotrasen
-	name = "\improper Free Union Of Vulken billboard"
-	desc = "A billboard advertising Free Union Of Vulken: A Better Tomorrow, Today."
+	name = "\improper Colonial Outpost FUOV-NPOV-N2 'The Dragon Skies' billboard"
+	desc = "A billboard about the flag of the Colonial Outpost FUOV-NPOV-N2 'The Dragon Skies' "
 	icon_state = "billboard_nanotrasen"
 
 /obj/structure/billboard/nanotrasen/defaced
