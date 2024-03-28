@@ -11,8 +11,7 @@
 	school = SCHOOL_FORBIDDEN
 	cooldown_time = 20 SECONDS
 
-	invocation = "PI'RC' TH' M'ND."
-	invocation_type = INVOCATION_WHISPER
+	invocation_type = INVOCATION_NONE
 	spell_requirements = NONE
 	antimagic_flags = MAGIC_RESISTANCE|MAGIC_RESISTANCE_MIND
 

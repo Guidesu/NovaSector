@@ -11,8 +11,7 @@
 	school = SCHOOL_FORBIDDEN
 	cooldown_time = 15 SECONDS
 
-	invocation = "FL'MS O'ET'RN'ITY."
-	invocation_type = INVOCATION_WHISPER
+	invocation_type = INVOCATION_NONE
 	spell_requirements = NONE
 
 	cast_range = 6

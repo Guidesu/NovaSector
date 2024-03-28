@@ -4,11 +4,10 @@
 	button_icon_state = "charge"
 	sound = 'sound/magic/charge.ogg'
 	school = SCHOOL_TRANSMUTATION
-	cooldown_time = 60 SECONDS
+	cooldown_time = 120 SECONDS
 	cooldown_reduction_per_rank = 5 SECONDS
 
-	invocation = "Focus meam industriam, electricitatem caeli, per manus meas cerne."
-	invocation_type = INVOCATION_WHISPER
+	invocation_type = INVOCATION_NONE
 	spell_requirements = SPELL_REQUIRES_NO_ANTIMAGIC
 
 /datum/action/cooldown/spell/charge/is_valid_target(atom/cast_on)

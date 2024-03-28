@@ -11,8 +11,7 @@
 	school = SCHOOL_FORBIDDEN
 	cooldown_time = 45 SECONDS
 
-	invocation = "C'SM'S 'XP'ND"
-	invocation_type = INVOCATION_WHISPER
+	invocation_type = INVOCATION_NONE
 	spell_requirements = NONE
 
 	summon_amount = 9

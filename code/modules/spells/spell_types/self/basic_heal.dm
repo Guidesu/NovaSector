@@ -5,17 +5,16 @@
 
 	sound = 'sound/magic/staff_healing.ogg'
 	school = SCHOOL_RESTORATION
-	cooldown_time = 30 SECONDS
+	cooldown_time = 60 SECONDS
 	cooldown_reduction_per_rank = 1.25 SECONDS
 	spell_requirements = SPELL_REQUIRES_NO_ANTIMAGIC|SPELL_REQUIRES_HUMAN
 
-	invocation = "vita floreat, Iuppiter accipe meum."
-	invocation_type = INVOCATION_WHISPER
+	invocation_type = INVOCATION_NONE
 
 	/// Amount of brute to heal to the spell caster on cast
-	var/brute_to_heal = 10
+	var/brute_to_heal = 5
 	/// Amount of burn to heal to the spell caster on cast
-	var/burn_to_heal = 10
+	var/burn_to_heal = 5
 
 /datum/action/cooldown/spell/basic_heal/is_valid_target(atom/cast_on)
 	return isliving(cast_on)

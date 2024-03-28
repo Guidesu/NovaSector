@@ -8,10 +8,10 @@
 	sound = 'sound/items/welder.ogg'
 
 	school = SCHOOL_FORBIDDEN
-	cooldown_time = 30 SECONDS
+	cooldown_time = 200 SECONDS
 
-	invocation = "A'GRSV SPR'D"
-	invocation_type = INVOCATION_WHISPER
+
+	invocation_type = INVOCATION_NONE
 	spell_requirements = NONE
 
 	aoe_radius = 3

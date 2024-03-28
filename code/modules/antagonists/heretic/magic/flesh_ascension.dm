@@ -9,8 +9,7 @@
 
 	school = SCHOOL_FORBIDDEN
 
-	invocation = "REALITY UNCOIL!"
-	invocation_type = INVOCATION_WHISPER
+	invocation_type = INVOCATION_NONE
 	spell_requirements = NONE
 
 	convert_damage = FALSE // Functionally meaningless on Armsy, we track how many segments it had instead

@@ -11,8 +11,7 @@
 	school = SCHOOL_FORBIDDEN
 	cooldown_time = 1 MINUTES
 
-	invocation = "R''S 'E"
-	invocation_type = INVOCATION_WHISPER
+	invocation_type = INVOCATION_NONE
 	spell_requirements = NONE
 
 	aoe_radius = 5

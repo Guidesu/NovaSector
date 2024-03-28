@@ -8,8 +8,7 @@
 	cooldown_time = 30 SECONDS
 	cooldown_reduction_per_rank = 6.75 SECONDS
 
-	invocation = "Energy i utar, focus potestas est."
-	invocation_type = INVOCATION_WHISPER
+	invocation_type = INVOCATION_NONE
 	school = SCHOOL_EVOCATION
 
 	channel_message = span_notice("You start gathering power...")
@@ -31,8 +30,8 @@
 
 	if(to_beam.can_block_magic(antimagic_flags))
 		to_beam.visible_message(
-			span_warning("[to_beam] absorbs the spell, remaining unharmed!"),
-			span_userdanger("You absorb the spell, remaining unharmed!"),
+			span_warning("[to_beam] absorbs the psy energy, remaining unharmed!"),
+			span_userdanger("You absorb the psy energy, remaining unharmed!"),
 		)
 
 	else

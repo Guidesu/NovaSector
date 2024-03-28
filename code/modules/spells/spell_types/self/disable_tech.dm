@@ -23,8 +23,7 @@
 	cooldown_time = 40 SECONDS
 	cooldown_reduction_per_rank = 5 SECONDS
 
-	invocation = "NEC CANTIO"
-	invocation_type = INVOCATION_WHISPER
+	invocation_type = INVOCATION_NONE
 
 	emp_heavy = 6
 	emp_light = 10

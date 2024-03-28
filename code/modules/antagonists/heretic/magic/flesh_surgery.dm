@@ -11,8 +11,7 @@
 
 	school = SCHOOL_FORBIDDEN
 	cooldown_time = 20 SECONDS
-	invocation = "CL'M M'N!" // "CLAIM MINE", but also almost "KALI MA"
-	invocation_type = INVOCATION_WHISPER
+	invocation_type = INVOCATION_NONE
 	spell_requirements = NONE
 
 	hand_path = /obj/item/melee/touch_attack/flesh_surgery

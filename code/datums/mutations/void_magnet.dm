@@ -26,8 +26,7 @@
 	school = SCHOOL_EVOCATION
 	cooldown_time = 1 MINUTES
 
-	invocation = "DOOOOOOOOOOOOOOOOOOOOM!!!"
-	invocation_type = INVOCATION_WHISPER
+	invocation_type = INVOCATION_NONE
 	spell_requirements = NONE
 	antimagic_flags = NONE
 

@@ -15,8 +15,7 @@
 	cooldown_time = 60 SECONDS
 	cooldown_reduction_per_rank = 10 SECONDS
 
-	invocation = "Focus in sanguine, focus in corpore."
-	invocation_type = INVOCATION_WHISPER
+	invocation_type = INVOCATION_NONE
 	spell_requirements = SPELL_REQUIRES_NO_ANTIMAGIC
 
 	///Original force of the item enchanted.

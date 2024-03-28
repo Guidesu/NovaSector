@@ -489,8 +489,7 @@
 	school = SCHOOL_CONJURATION
 	cooldown_time = 10 SECONDS
 
-	invocation = "JE VES"
-	invocation_type = INVOCATION_WHISPER
+	invocation_type = INVOCATION_NONE
 	spell_requirements = NONE
 	spell_max_level = 0 //cannot be improved
 

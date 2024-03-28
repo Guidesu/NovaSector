@@ -10,8 +10,7 @@
 	school = SCHOOL_FORBIDDEN
 	cooldown_time = 70 SECONDS
 
-	invocation = "FL'MS"
-	invocation_type = INVOCATION_WHISPER
+	invocation_type = INVOCATION_NONE
 	spell_requirements = NONE
 
 	/// The radius of the fire ring
@@ -72,7 +71,7 @@
 	cooldown_time = 30 SECONDS
 
 	invocation = "C'SC'DE"
-	invocation_type = INVOCATION_WHISPER
+	invocation_type = INVOCATION_NONE
 	spell_requirements = NONE
 
 	/// The radius the flames will go around the caster.
@@ -111,7 +110,7 @@
 	cooldown_time = 300
 
 	invocation = "F'RE"
-	invocation_type = INVOCATION_WHISPER
+	invocation_type = INVOCATION_NONE
 	spell_requirements = NONE
 
 	/// The length of the flame line spit out.

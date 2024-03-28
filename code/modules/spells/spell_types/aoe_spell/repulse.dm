@@ -70,17 +70,16 @@
 		)
 
 /datum/action/cooldown/spell/aoe/repulse/wizard
-	name = "Repulse"
-	desc = "This spell throws everything around the user away."
+	name = "Psy Repulse"
+	desc = "This focus throws everything around the user away."
 	button_icon_state = "repulse"
 	sound = 'sound/magic/repulse.ogg'
 
 	school = SCHOOL_EVOCATION
-	invocation = "GITTAH WEIGH"
-	invocation_type = INVOCATION_WHISPER
-	aoe_radius = 5
+	invocation_type = INVOCATION_NONE
+	aoe_radius = 1
 
-	cooldown_time = 40 SECONDS
+	cooldown_time = 120 SECONDS
 	cooldown_reduction_per_rank = 6.25 SECONDS
 
 /datum/action/cooldown/spell/aoe/repulse/xeno

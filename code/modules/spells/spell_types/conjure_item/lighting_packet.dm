@@ -16,7 +16,7 @@
 	cast_on.throw_mode_on(THROW_MODE_TOGGLE)
 
 /obj/item/spellpacket/lightningbolt
-	name = "\improper Lightning bolt Spell Packet"
+	name = "\improper Lightning bolt Spell Packet"	
 	desc = "Some birdseed wrapped in cloth that crackles with electricity."
 	icon = 'icons/obj/toys/toy.dmi'
 	icon_state = "snappop"

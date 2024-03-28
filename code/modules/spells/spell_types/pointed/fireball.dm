@@ -1,18 +1,17 @@
 /datum/action/cooldown/spell/pointed/projectile/fireball
-	name = "Fireball"
-	desc = "This spell fires an explosive fireball at a target."
+	name = "Pyrokinesis"
+	desc = "This focus fires an explosive pyroall at a target."
 	button_icon_state = "fireball0"
 
 	sound = 'sound/magic/fireball.ogg'
 	school = SCHOOL_EVOCATION
-	cooldown_time = 6 SECONDS
+	cooldown_time = 50 SECONDS
 	cooldown_reduction_per_rank = 1 SECONDS // 1 second reduction per rank
 
-	invocation = "Ignis."
-	invocation_type = INVOCATION_WHISPER
+	invocation_type = INVOCATION_NONE
 	spell_requirements = SPELL_REQUIRES_NO_ANTIMAGIC
 
-	active_msg = "You prepare to cast your fireball spell!"
+	active_msg = "You prepare to cast your pyrokinetic flame!"
 	deactive_msg = "You extinguish your fireball... for now."
 	cast_range = 8
 	projectile_type = /obj/projectile/magic/fireball

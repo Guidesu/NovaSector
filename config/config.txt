@@ -25,7 +25,7 @@ SERVERNAME Solunakin
 SERVERTAGLINE A personal server for me and my friends.
 
 ## Discord Link: This is the link to Nova Sector's discord server
-# DISCORD_LINK https://discord.gg/novasector
+# DISCORD_LINK https://discord.gg/xK8pHYJmTr
 
 ## Server SQL name: This is the name used to identify the server to the SQL DB, distinct from SERVERNAME as it must be at most 32 characters.
 # SERVERSQLNAME tgstation

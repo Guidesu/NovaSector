@@ -1,6 +1,6 @@
 /datum/action/cooldown/spell/touch/mansus_grasp
 	name = "Psy Grasp"
-	desc = "A touch spell that lets you channel the power of the Old Gods through your grip."
+	desc = "A touch spell that lets you channel the power of the psynode on your hands."
 	background_icon_state = "bg_heretic"
 	overlay_icon_state = "bg_heretic_border"
 	button_icon = 'icons/mob/actions/actions_ecult.dmi'

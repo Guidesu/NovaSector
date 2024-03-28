@@ -2,8 +2,7 @@
 	name = "Summon Minions"
 	button_icon = 'icons/mob/actions/actions_minor_antag.dmi'
 	button_icon_state = "art_summon"
-	invocation = "Rise, my creations! Jump off your pages and into this realm!"
-	invocation_type = INVOCATION_WHISPER
+	invocation_type = INVOCATION_NONE
 	spell_requirements = NONE
 	cooldown_time = 15 SECONDS
 	summon_type = list(
@@ -42,8 +41,7 @@
 	name = "Craft Mimicry"
 	button_icon = 'icons/mob/actions/actions_minor_antag.dmi'
 	button_icon_state = "mimic_summon"
-	invocation = "My craft defines me, you could even say it IS me!"
-	invocation_type = INVOCATION_WHISPER
+	invocation_type = INVOCATION_NONE
 	spell_requirements = NONE
 	cooldown_time = 25 SECONDS
 	///when the clones will die
