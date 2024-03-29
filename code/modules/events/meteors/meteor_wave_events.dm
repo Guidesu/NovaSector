@@ -34,20 +34,6 @@
 			wave_type = GLOB.meteors_normal
 		if("threatening")
 			wave_type = GLOB.meteors_threatening
-		if("catastrophic")
-			if(check_holidays(HALLOWEEN))
-				wave_type = GLOB.meteorsSPOOKY
-			else
-				wave_type = GLOB.meteors_catastrophic
-		if("meaty")
-			wave_type = GLOB.meateors
-		if("space dust")
-			wave_type = GLOB.meteors_dust
-		if("halloween")
-			wave_type = GLOB.meteorsSPOOKY
-		else
-			WARNING("Wave name of [wave_name] not recognised.")
-			kill()
 
 /datum/round_event/meteor_wave/announce(fake)
 	priority_announce("Meteors have been detected on collision course with the station.", "Meteor Alert", ANNOUNCER_METEORS)

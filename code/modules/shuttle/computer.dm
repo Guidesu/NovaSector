@@ -89,8 +89,6 @@
 
 /obj/machinery/computer/shuttle/Topic(href, href_list)
 	var/mob/user = usr
-	if(!isliving(user) || !user(src, BE_CLOSE, FALSE))
-		return
 	if(!user.can_read(src, reading_check_flags = READING_CHECK_LITERACY)) //Illiterate mobs which aren't otherwise blocked from using computers will send the shuttle to a random valid destination
 		to_chat(user, span_warning("You start mashing buttons at random!"))
 		if(do_after(user, 10 SECONDS, target = src))
@@ -109,18 +107,9 @@
 			if(M.my_overmap_object)
 				M.my_overmap_object.GrantOvermapView(usr, get_turf(src))
 				return
-			var/list/destination = pick(dest_list)
+			var/list/destination
 			switch (send_shuttle(destination["id"], user))
 				if (SHUTTLE_CONSOLE_SUCCESS)
-		if("overmap_ship_controls")
-			if(M.my_overmap_object)
-				M.my_overmap_object.DisplayUI(usr, get_turf(src))
-				return
-		if("overmap_launch")
-			if(!uses_overmap)
-				return
-			if(!launch_check(usr))
-				return
 			if(M.launch_status == ENDGAME_LAUNCHED)
 				to_chat(usr, "<span class='warning'>You've already escaped. Never going back to that place again!</span>")
 				return

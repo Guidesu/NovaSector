@@ -93,9 +93,6 @@
 		. = "Dock busy."
 
 /obj/machinery/computer/shuttle_purchase/Topic(href, href_list)
-	var/mob/user = usr
-	if(!isliving(user) || !user.canUseTopic(src, BE_CLOSE, FALSE, NO_TK))
-		return
 	switch(href_list["task"])
 		if("back")
 			selected_shuttle = null

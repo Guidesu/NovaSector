@@ -8,7 +8,7 @@
 	atmosphere_type = /datum/atmosphere/snow
 	weather_controller_type = /datum/weather_controller/snow_planet
 
-	rock_color = list(COLOR_DARK_BLUE_GRAY, COLOR_GUNMETAL, COLOR_GRAY, COLOR_DARK_GRAY)
+	rock_color = list(COLOR_GRAY)
 	plant_color = list("#d0fef5","#93e1d8","#93e1d8", "#b2abbf", "#3590f3", "#4b4e6d")
 	grass_color = list("#d0fef5")
 

@@ -8,14 +8,14 @@
 	atmosphere_type = /datum/atmosphere/chlorine
 	weather_controller_type = /datum/weather_controller/chlorine
 
-	rock_color = list(COLOR_GRAY, COLOR_PALE_GREEN_GRAY, COLOR_PALE_BTL_GREEN)
+	rock_color = list(COLOR_GRAY, COLOR_PALE_GREEN_GRAY)
 
 /datum/weather_controller/chlorine
 	possible_weathers = list(/datum/weather/acid_rain = 100)
 
 /datum/overmap_object/shuttle/planet/chlorine
 	name = "Chlorine Planet"
-	planet_color = COLOR_PALE_BTL_GREEN
+	planet_color = COLOR_PALE_GREEN_GRAY
 
 /area/planet/chlorine
 	name = "Chlorine Planet Surface"

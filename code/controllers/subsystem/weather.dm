@@ -8,6 +8,8 @@ SUBSYSTEM_DEF(weather)
 	var/list/processing = list()
 	var/list/eligible_zlevels = list()
 	var/list/next_hit_by_zlevel = list() //Used by barometers to know when the next storm is coming
+	var/z_levels
+	var/weather_datum_type
 
 /datum/controller/subsystem/weather/fire()
 	// process active weather controllers
@@ -34,26 +36,6 @@ SUBSYSTEM_DEF(weather)
 		// any weather with a probability set may occur at random
 		if (probability)
 			for(var/z in SSmapping.levels_by_trait(target_trait))
-	return SS_INIT_SUCCESS
-
-/datum/controller/subsystem/weather/proc/update_z_level(datum/space_level/level)
-	var/z = level.z_value
-	for(var/datum/weather/weather as anything in subtypesof(/datum/weather))
-		var/probability = initial(weather.probability)
-		var/target_trait = initial(weather.target_trait)
-		if(probability && level.traits[target_trait])
-			LAZYINITLIST(eligible_zlevels["[z]"])
-			eligible_zlevels["[z]"][weather] = probability
-
-/datum/controller/subsystem/weather/proc/run_weather(datum/weather/weather_datum_type, z_levels)
-	if (istext(weather_datum_type))
-		for (var/V in subtypesof(/datum/weather))
-			var/datum/weather/W = V
-			if (initial(W.name) == weather_datum_type)
-				weather_datum_type = V
-				break
-	if (!ispath(weather_datum_type, /datum/weather))
-		CRASH("run_weather called with invalid weather_datum_type: [weather_datum_type || "null"]")
 
 	if (isnull(z_levels))
 		z_levels = SSmapping.levels_by_trait(initial(weather_datum_type.target_trait))

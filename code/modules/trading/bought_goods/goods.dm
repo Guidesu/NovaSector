@@ -20,11 +20,6 @@
 	trading_types = list(/obj/item/unknown_artifact = TRADER_THIS_TYPE)
 	stock = 5
 
-/datum/bought_goods/anomalous_crystal
-	name = "anomalous crystals"
-	cost = 700
-	trading_types = list(/obj/item/anomalous_sliver/crystal = TRADER_THIS_TYPE)
-	stock = 4
 
 /////////Medical Supplier/////////
 
@@ -105,13 +100,3 @@
 	trading_types = list(/obj/item/toy/figure = TRADER_SUBTYPES)
 
 /////////Xenolife Collector/////////
-
-/datum/bought_goods/space_carp
-	name = "space carps"
-	cost = 200
-	trading_types = list(/mob/living/simple_animal/hostile/carp = TRADER_TYPES)
-
-/datum/bought_goods/goliath
-	name = "goliaths"
-	cost = 250
-	trading_types = list(/mob/living/simple_animal/hostile/asteroid/goliath = TRADER_TYPES)

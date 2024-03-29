@@ -426,7 +426,6 @@ Used by the AI doomsday and the self-destruct nuke.
 
 	// preload the relevant space_level datums
 	var/start_z = world.maxz + 1
-	var/i = 0
 	var/list/space_levels = list()
 	var/datum/atmosphere/atmos
 	if(atmosphere_type)

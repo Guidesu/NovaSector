@@ -54,7 +54,7 @@
 		Impact is expected in the next two minutes. All colonist are encouranged to assist in repairs and damage mitigation if possible.", "Collision Emergency Alert")
 
 /datum/round_event/sandstorm/tick()
-	spawn_meteors(15, GLOB.meteors_sandstorm, start_side)
+	spawn_meteors(15, GLOB, start_side)
 
 /**
  * The original sandstorm event. An admin-only disasterfest that sands down all sides of the station
@@ -81,7 +81,7 @@
 	fakeable = FALSE
 
 /datum/round_event/sandstorm_classic/tick()
-	spawn_meteors(10, GLOB.meteors_dust)
+	spawn_meteors(10, GLOB)
 
 /datum/event_admin_setup/listed_options/sandstorm
 	input_text = "Choose a side to powersand?"

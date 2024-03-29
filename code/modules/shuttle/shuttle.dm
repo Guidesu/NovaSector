@@ -564,18 +564,13 @@
 			dheight = width - port_x_offset
 #undef WORLDMAXX_CUTOFF
 #undef WORLDMAXY_CUTOFF
-	var/overmap_parallax_dir
-	var/list/all_extensions = list()
-	var/list/engine_extensions = list()
-
-	var/overmap_shuttle_type = /datum/overmap_object/shuttle
 
 	/// The direction override that overmap objects representing this shuttle apply to it. Needs to be tracked seperately to the old method because shuttles should work fine without overmap objects. Null means not overriden, direction means it is (with 0 being stop)
 
 
 /obj/docking_port/mobile/proc/DrawDockingThrust()
 	var/drawn_power = 0
-	for(var/i in engine_extensions)
+	for(var/i)
 		var/datum/shuttle_extension/engine/ext = i
 		if(!ext.turned_on)
 			continue
@@ -587,12 +582,12 @@
 		return FALSE
 
 /obj/docking_port/mobile/proc/TurnEnginesOn()
-	for(var/i in engine_extensions)
+	for(var/i)
 		var/datum/shuttle_extension/engine/ext = i
 		ext.turned_on = TRUE
 
 /obj/docking_port/mobile/proc/TurnEnginesOff()
-	for(var/i in engine_extensions)
+	for(var/i)
 		var/datum/shuttle_extension/engine/ext = i
 		ext.turned_on = FALSE
 
@@ -640,11 +635,9 @@
 /obj/docking_port/mobile/Destroy(force)
 	if(force)
 		unregister()
-		for(var/i in all_extensions)
+		for(var/i)
 			var/datum/shuttle_extension/extension = i
 			extension.RemoveFromShuttle()
-		engine_extensions = null
-		all_extensions = null
 		destination = null
 		previous = null
 		QDEL_NULL(assigned_transit) //don't need it where we're goin'!
@@ -805,15 +798,13 @@
 		if(!current_overmap_object)
 			WARNING("NO CURRENT OVERMAP OBJECT WHEN ATTEMPT TO GO TO OVERMAP.")
 			//Fallback to not ruin gameplay
-			spawn_x_coord = 1
-			spawn_y_coord = 1
 			system_to_spawn_in = SSovermap.main_system
 		else
 			spawn_x_coord = current_overmap_object.x
 			spawn_y_coord = current_overmap_object.y
 			system_to_spawn_in = current_overmap_object.current_system
 
-		var/datum/overmap_object/shuttle/spawned_shuttle = new overmap_shuttle_type(system_to_spawn_in, spawn_x_coord, spawn_y_coord)
+		var/datum/overmap_object/shuttle/spawned_shuttle = (system_to_spawn_in, spawn_x_coord, spawn_y_coord)
 		spawned_shuttle.RegisterToShuttle(src)
 		if(my_overmap_object.shuttle_controller)
 			my_overmap_object.shuttle_controller.busy = FALSE

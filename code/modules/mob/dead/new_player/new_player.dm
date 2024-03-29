@@ -315,7 +315,7 @@
 	var/column_counter = 0
 
 	for(var/datum/job_department/department as anything in SSjob.joinable_departments)
-		var/department_color = department.latejoin_color
+		var/department_color = department
 		dat += "<fieldset style='width: 185px; border: 2px solid [department_color]; display: inline'>"
 		dat += "<legend align='center' style='color: [department_color]'>[department.department_name]</legend>"
 		var/list/dept_data = list()

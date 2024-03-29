@@ -8,7 +8,7 @@
 	atmosphere_type = /datum/atmosphere/lush
 	weather_controller_type = /datum/weather_controller/lush
 
-	rock_color = list(COLOR_ASTEROID_ROCK, COLOR_GRAY, COLOR_BROWN)
+	rock_color = list(COLOR_GRAY, COLOR_BROWN)
 	plant_color = list("#215a00","#195a47","#5a7467","#9eab88","#6e7248")
 	plant_color_as_grass = TRUE
 

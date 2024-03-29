@@ -69,13 +69,8 @@
 	volume = 30
 
 /datum/looping_sound/weather/rain
-	mid_sounds = list(
-		'sound/ambience/acidrain_mid.ogg' = 1
-		)
 	mid_length = 15 SECONDS // The lengths for the files vary, but the longest is ten seconds, so this will make it sound like intermittent wind.
-	start_sound = 'sound/ambience/acidrain_start.ogg'
 	start_length = 13 SECONDS
-	end_sound = 'sound/ambience/acidrain_end.ogg'
 	volume = 50
 
 /datum/looping_sound/weather/rain/indoors

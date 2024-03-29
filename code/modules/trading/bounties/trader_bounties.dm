@@ -27,14 +27,6 @@
 	bounty_text = "We are experimenting with making our bullets explode and require some chemicals that can give us the right type of bang."
 	bounty_complete_text = "With this, we're sure to make a bang."
 
-/datum/trader_bounty/anomalous_energy_sources
-	bounty_name = "Anomalous Energy Sources"
-	amount = 3
-	path = /obj/item/anomalous_sliver/crystal
-	reward_cash = 3000
-	bounty_text = "We are looking into acquiring new and more effective energy sources for our weapons and found interest in those new crystals the rumors been spreading around."
-	bounty_complete_text = "This will surely be useful for our research."
-
 /datum/trader_bounty/unlimited_power
 	bounty_name = "Unlimited Power?"
 	amount = 1
@@ -42,14 +34,6 @@
 	reward_cash = 3000
 	bounty_text = "Our electricity bill is getting way too steep, we need to switch to renewable energy, and by that I mean a supercharged slime core."
 	bounty_complete_text = "You won't catch us with our lights off now."
-
-/datum/trader_bounty/heavy_lifting
-	bounty_name = "Heavy Lifting"
-	amount = 1
-	path = /obj/vehicle/sealed/mecha/working/ripley
-	reward_cash = 5000
-	bounty_text = "Filled with brim of ores and bars, we're expanding our warehouses and require an immediate help of a very strong machine. If you could supply us with a Ripley, we'd pay you handsomely."
-	bounty_complete_text = "Expect twice the stock next time you visit us!"
 
 /datum/trader_bounty/gas/hard_to_breathe
 	bounty_name = "Hard to Breathe"

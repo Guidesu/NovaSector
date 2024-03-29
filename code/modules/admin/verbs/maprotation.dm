@@ -79,11 +79,7 @@
 				fdel("data/custom_map_json/[config_file]")
 			if(!fcopy(config_file, "data/custom_map_json/[config_file]"))
 				return
-			if (virtual_map.LoadConfig("data/custom_map_json/[config_file]", TRUE) != TRUE)
-				to_chat(src, span_warning("Failed to load config: [config_file]. Check that the fields are filled out correctly. \"map_path\": \"custom\" and \"map_file\": \"your_map_name.dmm\""))
-				return
 			json_value = list(
-				"version" = MAP_CURRENT_VERSION,
 				"map_name" = virtual_map.map_name,
 				"map_path" = virtual_map.map_path,
 				"map_file" = virtual_map.map_file,
@@ -110,7 +106,6 @@
 					virtual_map.shuttles[s] = shuttle
 
 			json_value = list(
-				"version" = MAP_CURRENT_VERSION,
 				"map_name" = virtual_map.map_name,
 				"map_path" = CUSTOM_MAP_PATH,
 				"map_file" = "[map_file]",

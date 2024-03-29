@@ -21,9 +21,6 @@ GLOBAL_LIST_INIT(excavation_finds_weight, InitExcavFinds())
 	type_to_spawn = /obj/item/fossil
 	weight = 15
 
-/datum/excavation_find/anomalous_crystal
-	type_to_spawn = /obj/item/anomalous_sliver/crystal
-	weight = 10
 
 //Doesnt do anything, just flavor, but can be sold
 /datum/excavation_find/excavation_junk
