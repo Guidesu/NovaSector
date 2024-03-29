@@ -8,7 +8,7 @@
 	atmosphere_type = /datum/atmosphere/volcanic
 	weather_controller_type = /datum/weather_controller/lavaland
 
-	rock_color = list(COLOR_DARK_GRAY)
+	rock_color = list(COLOR_BEIGE)
 	plant_color = list("#a23c05","#662929","#ba6222","#7a5b3a")
 	plant_color_as_grass = TRUE
 
@@ -69,7 +69,6 @@
 		/mob/living/simple_animal/hostile/megafauna/dragon = 4,
 		/mob/living/simple_animal/hostile/planet/charbaby = 100,
 		/mob/living/simple_animal/hostile/planet/shantak/lava = 100,
-		/mob/living/simple_animal/hostile/asteroid/goliath/beast = 100,
 		/mob/living/simple_animal/thinbug = 50,
 	)
 

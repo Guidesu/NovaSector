@@ -33,10 +33,10 @@
 	UpdateVisualOffsets()
 	if(passed_parent)
 		parent = passed_parent
-		RegisterSignal(parent, COMSIG_PARENT_QDELETING, PROC_REF(LoseParent))
+		RegisterSignal(parent, PROC_REF(LoseParent))
 	//Target currently needs to be passed
 	target = passed_target
-	RegisterSignal(target, COMSIG_PARENT_QDELETING, PROC_REF(LoseTarget))
+	RegisterSignal(target, PROC_REF(LoseTarget))
 
 	absolute_dest_x = (target.x * 32) + target.partial_x
 	absolute_dest_y = (target.y * 32) + target.partial_y
@@ -100,11 +100,11 @@
 		qdel(src)
 
 /datum/overmap_object/projectile/proc/LoseParent()
-	UnregisterSignal(parent, COMSIG_PARENT_QDELETING)
+	UnregisterSignal(parent)
 	parent = null
 
 /datum/overmap_object/projectile/proc/LoseTarget()
-	UnregisterSignal(target, COMSIG_PARENT_QDELETING)
+	UnregisterSignal(target)
 	target = null
 
 /datum/overmap_object/projectile/Destroy()

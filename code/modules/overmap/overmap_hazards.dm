@@ -182,7 +182,7 @@
 			if(shuttle.transit_instance)
 				var/turf/pickedturf = shuttle.transit_instance.GetActionSideTurf(middle = TRUE)
 				if(prob(50))
-					for(var/a in GLOB.apcs_list) //Yes very inefficient
+					for(var/a in GLOB) //Yes very inefficient
 						var/obj/machinery/power/apc/A = a
 						if(get_dist(pickedturf, A) <= ELECTRICAL_STORM_LIGHTS_OUT_RANGE_SHUTTLE)
 							A.overload_lighting()
@@ -194,7 +194,7 @@
 				var/turf/epicentre_turf = GetRandomTurfInZLevelWithMargin(ELECTRICAL_STORM_SEARCH_MARGIN, picked_level)
 				if(prob(50))
 					//Light discharge
-					for(var/a in GLOB.apcs_list) //Yes very inefficient
+					for(var/a in GLOB) //Yes very inefficient
 						var/obj/machinery/power/apc/A = a
 						if(get_dist(epicentre_turf, A) <= ELECTRICAL_STORM_LIGHTS_OUT_RANGE)
 							A.overload_lighting()
@@ -241,20 +241,6 @@
 		var/shuttle_velocity = VECTOR_LENGTH(shuttle.velocity_x, shuttle.velocity_y)
 		if(!has_shields && shuttle.transit_instance)
 			probability += shuttle_velocity * 5
-		if(prob(probability))
-			var/carp_type = prob(95) ? /mob/living/simple_animal/hostile/carp : /mob/living/simple_animal/hostile/carp/megacarp
-			if(shuttle.transit_instance)
-				var/set_dir
-				if(shuttle_velocity > 0.5)
-					set_dir = shuttle.current_parallax_dir
-				new carp_type(shuttle.transit_instance.GetActionSideTurf(set_dir))
-			else if(length(shuttle.related_levels))
-				var/datum/space_level/spawn_level = pick(shuttle.related_levels)
-				var/carp_spawn_list = GetLandmarksInZLevel(/obj/effect/landmark/carpspawn, spawn_level)
-				if(!length(carp_spawn_list))
-					continue
-				var/obj/effect/landmark/picked_spot = pick(carp_spawn_list)
-				new carp_type(picked_spot.loc)
 			//TODO: SHUTTLE HANDLING
 
 /datum/overmap_object/hazard/carp_school/get_random_icon_state()

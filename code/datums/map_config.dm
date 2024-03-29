@@ -158,90 +158,6 @@
 		log_world("map_config doesn't have a map_type to point to its config datum!")
 		return
 
-	if(json["version"] != MAP_CURRENT_VERSION)
-		log_world("map_config has invalid version [json["version"]]!")
-		return
-
-	CHECK_EXISTS("map_name")
-	map_name = json["map_name"]
-	CHECK_EXISTS("map_path")
-	map_path = json["map_path"]
-
-	map_file = json["map_file"]
-	// "map_file": "MetaStation.dmm"
-	if (istext(map_file))
-		if (!fexists("_maps/[map_path]/[map_file]"))
-			log_world("Map file ([map_path]/[map_file]) does not exist!")
-			return
-	// "map_file": ["Lower.dmm", "Upper.dmm"]
-	else if (islist(map_file))
-		for (var/file in map_file)
-			if (!fexists("_maps/[map_path]/[file]"))
-				log_world("Map file ([map_path]/[file]) does not exist!")
-				return
-	else
-		log_world("map_file missing from json!")
-		return
-
-	if (islist(json["shuttles"]))
-		var/list/L = json["shuttles"]
-		for(var/key in L)
-			var/value = L[key]
-			shuttles[key] = value
-	else if ("shuttles" in json)
-		log_world("map_config shuttles is not a list!")
-		return
-
-// NOVA ADD BEGIN - EMERGENCY SHUTTLE OVERRIDE
-	shuttles["emergency"] = "emergency_nova"
-// NOVA ADD END
-
-	traits = json["traits"]
-	// "traits": [{"Linkage": "Cross"}, {"Space Ruins": true}]
-	if (islist(traits))
-		// "Station" is set by default, but it's assumed if you're setting
-		// traits you want to customize which level is cross-linked
-		for (var/level in traits)
-			if (!(ZTRAIT_STATION in level))
-				level[ZTRAIT_STATION] = TRUE
-	// "traits": null or absent -> default
-	else if (!isnull(traits))
-		log_world("map_config traits is not a list!")
-		return
-
-	var/temp = json["space_ruin_levels"]
-	if (isnum(temp))
-		space_ruin_levels = temp
-	else if (!isnull(temp))
-		log_world("map_config space_ruin_levels is not a number!")
-		return
-
-	temp = json["space_empty_levels"]
-	if (isnum(temp))
-		space_empty_levels = temp
-	else if (!isnull(temp))
-		log_world("map_config space_empty_levels is not a number!")
-		return
-
-	if ("minetype" in json)
-		minetype = json["minetype"]
-
-	if ("planetary" in json)
-		planetary = json["planetary"]
-
-	if ("blacklist_file" in json)
-		blacklist_file = json["blacklist_file"]
-
-	if ("load_all_away_missions" in json)
-		load_all_away_missions = json["load_all_away_missions"]
-
-	allow_custom_shuttles = json["allow_custom_shuttles"] != FALSE
-
-	if ("job_changes" in json)
-		if(!islist(json["job_changes"]))
-			log_world("map_config \"job_changes\" field is missing or invalid!")
-			return
-		job_changes = json["job_changes"]
 
 	if("library_areas" in json)
 		if(!islist(json["library_areas"]))
@@ -252,7 +168,7 @@
 			if(!ispath(path, /area))
 				stack_trace("Invalid path in mapping config for additional library areas: \[[path_as_text]\]")
 				continue
-			library_areas += path
+
 
 #ifdef UNIT_TESTS
 	// Check for unit tests to skip, no reason to check these if we're not running tests
@@ -264,9 +180,6 @@
 		LAZYADD(skipped_tests, path_real)
 #endif
 
-	defaulted = FALSE
-	return TRUE
-	CHECK_EXISTS("map_type")
 	var/type_to_load = text2path(json["map_type"])
 	var/datum/map_config/config = new type_to_load()
 	config.defaulted = FALSE

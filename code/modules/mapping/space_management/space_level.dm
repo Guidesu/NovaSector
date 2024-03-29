@@ -16,7 +16,7 @@
 	/// Linked day and night controller, expect this to apply to all related_levels
 	var/datum/day_night_controller/day_night_controller
 	/// An override of rock colors on this level
-	var/rock_color = COLOR_ASTEROID_ROCK
+	var/rock_color
 	/// An override of plant colors on this level
 	var/plant_color = COLOR_DARK_MODERATE_LIME_GREEN
 	/// An override of grass colors on this level

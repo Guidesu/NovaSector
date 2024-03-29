@@ -74,7 +74,6 @@
 		/mob/living/simple_animal/hostile/planet/antlion = 100,
 		/mob/living/simple_animal/tindalos = 60,
 		/mob/living/simple_animal/thinbug = 60,
-		/mob/living/simple_animal/hostile/lizard = 20,
 		/mob/living/simple_animal/hostile/planet/antlion/mega = 10,
 	)
 

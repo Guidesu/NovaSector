@@ -50,7 +50,6 @@
 		/datum/sold_goods/electronics/firelock,
 		/datum/sold_goods/electronics/firealarm,
 		/datum/sold_goods/cable_coil,
-		/datum/sold_goods/computer_battery,
 		/datum/sold_goods/laptop,
 		/datum/sold_goods/cell,
 		/datum/sold_goods/high_cell
@@ -127,10 +126,6 @@
 		/datum/sold_goods/aicard,
 		/datum/sold_goods/paicard,
 		/datum/sold_goods/posibrain,
-		/datum/sold_goods/bot/medbot,
-		/datum/sold_goods/bot/firebot,
-		/datum/sold_goods/bot/floorbot,
-		/datum/sold_goods/bot/cleanbot
 		)
 	possible_bounties = list(
 		/datum/trader_bounty/stack/golden_circuits = 100,
@@ -158,14 +153,6 @@
 				"insult_good"       = "No need to be upset, I believe we can do business.",
 				"insult_bad"        = "I have traded dogs with more bark than that.")
 	//Not much for now, need more cool alien mobs. MORE IMPORTANTLY we need fauna nets to catch them!
-	sold_goods = list(
-		/datum/sold_goods/space_carp,
-		/datum/sold_goods/goliath
-		)
-	bought_goods = list(
-		/datum/bought_goods/space_carp,
-		/datum/bought_goods/goliath
-		)
 	possible_supplies_bounties = list(
 		/datum/trader_bounty/food_supplies = 100,
 		/datum/trader_bounty/medical_supplies = 100
@@ -269,20 +256,6 @@
 		)
 	possible_bounties = list(
 		/datum/trader_bounty/gas/hard_to_breathe = 100,
-		/datum/trader_bounty/heavy_lifting = 100
-		)
-
-/datum/trader/petshop
-	name = "Pet Shop Employee"
-	possible_origins = list("Fuzzy Wuzzy's", "Alley Cats", "Happy Paws", "All 4 Pets", "Fins & Gills", "Pick Me!", "Stylish Whiskers")
-	bought_goods = list(/datum/bought_goods/pets)
-	sold_goods = list(
-		/datum/sold_goods/corgi,
-		/datum/sold_goods/fox,
-		/datum/sold_goods/cat,
-		/datum/sold_goods/penguin,
-		/datum/sold_goods/sloth,
-		/datum/sold_goods/lizard
 		)
 
 /datum/trader/archeology
@@ -292,14 +265,12 @@
 		/datum/bought_goods/fossil,
 		/datum/bought_goods/excavation_junk,
 		/datum/bought_goods/excavation_artifact,
-		/datum/bought_goods/anomalous_crystal
 		)
 	sold_goods = list(
 		/datum/sold_goods/excavation_pick_set,
 		/datum/sold_goods/excavation_measuring_tape,
 		/datum/sold_goods/excavation_depth_scanner,
 		/datum/sold_goods/excavation_locator,
-		/datum/sold_goods/anomalous_crystal
 		)
 	possible_deliveries = list(
 		/datum/delivery_run/artifact_delivery = 100

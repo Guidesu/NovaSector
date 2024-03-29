@@ -20,7 +20,6 @@
 				COMSIG_WEATHER_WINDDOWN(type),
 				COMSIG_WEATHER_END(type)
 			)
-		weather_trait = trait
 		playlist = weather_playlist
 
 	RegisterSignal(target, COMSIG_MOVABLE_Z_CHANGED, PROC_REF(handle_z_level_change), override = TRUE)
@@ -32,7 +31,7 @@
 
 /datum/element/weather_listener/proc/handle_z_level_change(datum/source, turf/old_loc, turf/new_loc)
 	SIGNAL_HANDLER
-	var/list/fitting_z_levels = SSmapping.levels_by_trait(weather_trait)
+	var/list/fitting_z_levels = SSmapping
 	if(!(new_loc?.z in fitting_z_levels))
 		return
 	var/datum/component/our_comp = source.AddComponent(\
@@ -45,4 +44,4 @@
 
 /datum/element/weather_listener/proc/handle_logout(datum/source)
 	SIGNAL_HANDLER
-	source.RemoveElement(/datum/element/weather_listener, weather_type, weather_trait, playlist)
+	source.RemoveElement(/datum/element/weather_listener, weather_type, playlist)

@@ -40,8 +40,6 @@
 			wave_type = GLOB.meteors_normal
 		if("threatening")
 			wave_type = GLOB.meteors_threatening
-		if("spooky")
-			wave_type = GLOB.meteorsSPOOKY
 		else
 			stack_trace("Wave name of [wave_name] not recognised or disallowed by config.")
 			kill()

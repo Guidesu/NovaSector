@@ -8,8 +8,8 @@
 //Getter for hazards to easily find random and appropriate turfs to spawn/do stuff on
 /datum/transit_instance/proc/GetActionSideTurf(dir, middle = FALSE)
 	var/turf/found_turf
-	var/list/bottom_left_coords = reservation.bottom_left_coords
-	var/list/top_right_coords = reservation.top_right_coords
+	var/list/bottom_left_coords = reservation
+	var/list/top_right_coords = reservation
 	var/z = bottom_left_coords[3]
 	//The margin is 2 because diagonal movement will cause things to evaporate due to entering a transit border turf
 	var/low_x = bottom_left_coords[1] + 2
@@ -42,7 +42,6 @@
 /datum/transit_instance/Destroy()
 	StrandAll()
 	SSshuttle.transit_instances -= src
-	reservation = null
 	dock = null
 	overmap_shuttle = null
 	return ..()
@@ -55,7 +54,7 @@
 	if(!moved.loc || !isturf(moved.loc))
 		return
 	var/turf/my_turf = moved.loc
-	if(!reservation.IsAdjacentToEdgeOrOutOfBounds(my_turf))
+	if(my_turf)
 		return
 	//We've moved to be adjacent to edge or out of bounds
 	//Check for things that should just disappear as they bump into the edges of the map
@@ -91,7 +90,7 @@
 			continue
 		var/turf/step_turf = get_step(my_turf, dir)
 		//Medium velocity, and someone gets bumped against an edge turf
-		if(velocity_stage >= TRANSIT_VELOCITY_MEDIUM && reservation.IsAtEdge(step_turf))
+		if(velocity_stage >= TRANSIT_VELOCITY_MEDIUM)
 			StrandAct(movable)
 			continue
 		//Huge velocity, check if we get squashed against something that blocks us

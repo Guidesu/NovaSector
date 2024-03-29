@@ -125,8 +125,6 @@
 	our_engine = passed_engine
 
 /datum/shuttle_extension/engine/burst/DrawThrust(impulse_percent)
-	if(our_engine)
-		our_engine.DrawThrust()
 	return ..()
 
 /datum/shuttle_extension/engine/propulsion

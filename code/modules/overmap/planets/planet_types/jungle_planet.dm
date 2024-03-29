@@ -8,13 +8,13 @@
 	atmosphere_type = /datum/atmosphere/jungle
 	weather_controller_type = /datum/weather_controller/lush
 
-	rock_color = list(COLOR_BEIGE_GRAYISH, COLOR_BEIGE, COLOR_ASTEROID_ROCK)
-	plant_color = list(COLOR_PALE_BTL_GREEN)
+	rock_color = list(COLOR_BEIGE_GRAYISH, COLOR_BEIGE)
+	plant_color = list(COLOR_BEIGE)
 	plant_color_as_grass = TRUE
 
 /datum/overmap_object/shuttle/planet/jungle
 	name = "Jungle Planet"
-	planet_color = COLOR_PALE_BTL_GREEN
+	planet_color = COLOR_BEIGE
 
 /area/planet/jungle
 	name = "Jungle Planet Surface"
@@ -43,14 +43,12 @@
 	BIOME_HIGHMEDIUM_HEAT = list(
 		BIOME_LOW_HUMIDITY = /datum/biome/plains,
 		BIOME_LOWMEDIUM_HUMIDITY = /datum/biome/plains,
-		BIOME_HIGHMEDIUM_HUMIDITY = /datum/biome/jungle/deep,
 		BIOME_HIGH_HUMIDITY = /datum/biome/jungle,
 		),
 	BIOME_HIGH_HEAT = list(
 		BIOME_LOW_HUMIDITY = /datum/biome/wasteland,
 		BIOME_LOWMEDIUM_HUMIDITY = /datum/biome/plains,
 		BIOME_HIGHMEDIUM_HUMIDITY = /datum/biome/jungle,
-		BIOME_HIGH_HUMIDITY = /datum/biome/jungle/deep,
 		),
 	)
 	high_height_biome = /datum/biome/mountain
@@ -96,22 +94,7 @@
 	)
 	flora_density = 40
 	fauna_density = 0.5
-	fauna_weight_types = list(
-		/mob/living/simple_animal/hostile/jungle/leaper = 100,
-		/mob/living/simple_animal/hostile/jungle/mega_arachnid = 100,
-		/mob/living/simple_animal/hostile/jungle/mook = 100,
-		/mob/living/simple_animal/hostile/jungle/seedling = 100,
-	)
 
-/datum/biome/jungle/deep
-	flora_density = 65
-	fauna_density = 0.5
-	fauna_weight_types = list(
-		/mob/living/simple_animal/hostile/jungle/leaper = 100,
-		/mob/living/simple_animal/hostile/jungle/mega_arachnid = 100,
-		/mob/living/simple_animal/hostile/jungle/mook = 100,
-		/mob/living/simple_animal/hostile/jungle/seedling = 100,
-	)
 
 /datum/biome/wasteland
 	turf_type = /turf/open/misc/dirt/jungle/wasteland

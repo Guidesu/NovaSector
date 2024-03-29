@@ -19,9 +19,6 @@
 	popup.open()
 
 /obj/machinery/computer/overmap_console/Topic(href, href_list)
-	var/mob/user = usr
-	if(!isliving(user) || !user(src, BE_CLOSE, FALSE))
-		return
 	var/datum/space_level/SL = SSmapping.z_list[z]
 	if(!SL.related_overmap_object || !SL.is_overmap_controllable)
 		return

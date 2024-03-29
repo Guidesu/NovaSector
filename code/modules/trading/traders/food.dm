@@ -62,7 +62,6 @@
 				"insult_bad"         = "I do not need to take this from you.")
 	sold_goods = list(
 		/datum/sold_goods/meatkebab,
-		/datum/sold_goods/monkeysoup,
 		/datum/sold_goods/ricepudding,
 		/datum/sold_goods/cupramen
 		)
@@ -124,8 +123,6 @@
 	)
 	sold_goods = list(
 		/datum/sold_goods/cow,
-		/datum/sold_goods/goat,
-		/datum/sold_goods/chicken,
 		/datum/sold_goods/wheat,
 		/datum/sold_goods/corn,
 		/datum/sold_goods/pumpkin,

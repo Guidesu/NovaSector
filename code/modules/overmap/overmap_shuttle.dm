@@ -285,7 +285,7 @@
 					if(!my_shuttle.check_dock(iterated_dock, silent = TRUE))
 						continue
 					docks[iterated_dock.name] = iterated_dock
-	
+
 				dat += "<B>Designated docks:</B>"
 				for(var/key in docks)
 					dat += "<BR> - [key] - <a href='?src=[REF(src)];task=dock;dock_control=normal_dock;dock_id=[docks[key].shuttle_id]'>Dock</a>"
@@ -345,9 +345,7 @@
 /datum/overmap_object/shuttle/Topic(href, href_list)
 	if(!control_turf)
 		return
-	var/mob/user = usr
-	if(!isliving(user) || !user.canUseTopic(control_turf, BE_CLOSE, FALSE, NO_TK))
-		return
+
 	if(href_list["pad_topic"])
 		if(!(shuttle_capability & SHUTTLE_CAN_USE_ENGINES))
 			return
@@ -552,7 +550,7 @@
 /datum/overmap_object/shuttle/proc/RegisterToShuttle(obj/docking_port/mobile/register_shuttle)
 	my_shuttle = register_shuttle
 	my_shuttle.my_overmap_object = src
-	for(var/i in my_shuttle.all_extensions)
+	for(var/i in my_shuttle)
 		var/datum/shuttle_extension/extension = i
 		extension.AddToOvermapObject(src)
 
@@ -569,7 +567,7 @@
 	control_turf = null
 	QDEL_NULL(shuttle_controller)
 	if(my_shuttle)
-		for(var/i in my_shuttle.all_extensions)
+		for(var/i in my_shuttle)
 			var/datum/shuttle_extension/extension = i
 			extension.RemoveFromOvermapObject()
 		my_shuttle.my_overmap_object = null
@@ -605,8 +603,8 @@
 	var/changed = FALSE
 	if(my_shuttle)
 		current_parallax_dir = established_direction ? (my_shuttle.preferred_direction ? my_shuttle.preferred_direction : established_direction) : FALSE
-		if(current_parallax_dir != my_shuttle.overmap_parallax_dir)
-			my_shuttle.overmap_parallax_dir = current_parallax_dir
+		if(current_parallax_dir != my_shuttle)
+			my_shuttle = current_parallax_dir
 			changed = TRUE
 			var/area/hyperspace_area = transit_instance.dock.assigned_area
 			hyperspace_area.parallax_movedir = current_parallax_dir

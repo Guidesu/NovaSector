@@ -53,7 +53,6 @@
 		/datum/sold_goods/aegun
 		)
 	possible_bounties = list(
-		/datum/trader_bounty/anomalous_energy_sources = 100,
 		/datum/trader_bounty/unlimited_power = 100
 		)
 

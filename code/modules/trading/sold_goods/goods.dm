@@ -14,10 +14,6 @@
 /datum/sold_goods/excavation_locator
 	path = /obj/item/excavation_locator
 
-/datum/sold_goods/anomalous_crystal
-	cost = 1000
-	path = /obj/item/anomalous_sliver/crystal
-
 /////////Atmospheric Shop Employee/////////
 
 /datum/sold_goods/belt/plasma
@@ -157,9 +153,6 @@
 /datum/sold_goods/cable_coil
 	path = /obj/item/stack/cable_coil
 
-/datum/sold_goods/computer_battery
-	path = /obj/item/computer_hardware/battery
-
 /datum/sold_goods/laptop
 	cost = 500
 	path = /obj/item/modular_computer/laptop/preset/civilian
@@ -259,35 +252,6 @@
 
 /////////Pet Shop Employee/////////
 
-/datum/sold_goods/corgi
-	stock = 1
-	cost = 300
-	path = /mob/living/simple_animal/pet/dog/corgi
-
-/datum/sold_goods/fox
-	stock = 1
-	cost = 400
-	path = /mob/living/simple_animal/pet/fox
-
-/datum/sold_goods/cat
-	stock = 1
-	cost = 200
-	path = /mob/living/simple_animal/pet/cat
-
-/datum/sold_goods/penguin
-	stock = 1
-	cost = 400
-	path = /mob/living/simple_animal/pet/penguin/emperor
-
-/datum/sold_goods/sloth
-	stock = 1
-	cost = 300
-	path = /mob/living/simple_animal/sloth
-
-/datum/sold_goods/lizard
-	stock = 1
-	cost = 200
-	path = /mob/living/simple_animal/hostile/lizard
 
 /////////Robot Seller/////////
 
@@ -295,23 +259,6 @@
 	cost = 400
 	stock = 1
 	path = /obj/item/mmi/posibrain
-
-/datum/sold_goods/bot
-	stock = 1
-	cost = 400
-
-/datum/sold_goods/bot/medbot
-	path = /mob/living/simple_animal/bot/medbot
-	cost = 500
-
-/datum/sold_goods/bot/firebot
-	path = /mob/living/simple_animal/bot/firebot
-
-/datum/sold_goods/bot/floorbot
-	path = /mob/living/simple_animal/bot/floorbot
-
-/datum/sold_goods/bot/cleanbot
-	path = /mob/living/simple_animal/bot/cleanbot
 
 /////////Rock'n'Drill Mining Inc/////////
 
@@ -482,11 +429,3 @@
 	stock = 3
 
 /////////Xenolife Collector/////////
-
-/datum/sold_goods/space_carp
-	cost = 400
-	path = /mob/living/simple_animal/hostile/carp
-
-/datum/sold_goods/goliath
-	cost = 500
-	path = /mob/living/simple_animal/hostile/asteroid/goliath

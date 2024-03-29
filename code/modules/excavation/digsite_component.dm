@@ -68,12 +68,6 @@
 		qdel(rocky_overlay)
 	return ..()
 
-/datum/component/digsite/RegisterWithParent()
-	RegisterSignal(parent, COMSIG_PARENT_ATTACKBY, PROC_REF(AttackItem))
-
-/datum/component/digsite/UnregisterFromParent()
-	UnregisterSignal(parent, COMSIG_PARENT_ATTACKBY)
-
 /datum/component/digsite/proc/AttackItem(datum/source, obj/item/I, mob/living/user)
 	var/atom/A = parent
 	if(istype(I, /obj/item/excavation_pick))
