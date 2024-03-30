@@ -97,7 +97,7 @@ export const MineBot = (props) => {
                 <Stack.Item ml="25%">
                   <Dropdown
                     width="65%"
-                    selected={selectedColor?.color_name}
+                    displayText={selectedColor?.color_name}
                     options={possible_colors.map((possible_color) => {
                       return possible_color.color_name;
                     })}

@@ -23,7 +23,6 @@
 	gain_text = "The psynode holds many a curio, some are not meant for the mortal eye."
 	next_knowledge = list(
 		/datum/heretic_knowledge/spell/burglar_finesse,
-		/datum/heretic_knowledge/moon_amulet,
 	)
 	required_atoms = list(
 		/obj/item/organ/internal/lungs = 1,

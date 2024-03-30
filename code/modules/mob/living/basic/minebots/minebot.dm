@@ -1,5 +1,5 @@
 /mob/living/basic/mining_drone
-	name = "\improper Free Union Of Vulken minebot"
+	name = "\improper Nanotrasen minebot"
 	desc = "The instructions printed on the side read: This is a small robot used to support miners, can be set to search and collect loose ore, or to help fend off wildlife. Insert any type of ore into it to make it start listening to your commands!"
 	gender = NEUTER
 	icon = 'icons/mob/silicon/aibots.dmi'
@@ -203,12 +203,12 @@
 		combat_overlay.color = selected_color
 	update_appearance()
 
-/mob/living/basic/mining_drone/click_alt(mob/living/user)
+/mob/living/basic/mining_drone/AltClick(mob/living/user)
+	. = ..()
 	if(user.combat_mode)
-		return CLICK_ACTION_BLOCKING
+		return
 	set_combat_mode(!combat_mode)
 	balloon_alert(user, "now [combat_mode ? "attacking wildlife" : "collecting loose ore"]")
-	return CLICK_ACTION_SUCCESS
 
 /mob/living/basic/mining_drone/RangedAttack(atom/target)
 	if(!combat_mode)
