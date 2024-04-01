@@ -94,6 +94,13 @@ SUBSYSTEM_DEF(mapping)
 	/// list of lazy templates that have been loaded
 	var/list/loaded_lazy_templates
 
+	var/rock_color = COLOR_ASTEROID_ROCK
+	/// An override of plant colors on this level
+	var/plant_color = COLOR_DARK_MODERATE_LIME_GREEN
+	/// An override of grass colors on this level
+	var/grass_color = COLOR_DARK_MODERATE_LIME_GREEN
+	/// An override of water colors on this level
+	var/water_color = COLOR_WHITE
 
 	/// The overmap object of the main loaded station, for easy access
 	var/datum/overmap_object/station_overmap_object
@@ -150,8 +157,6 @@ SUBSYSTEM_DEF(mapping)
 	if(CONFIG_GET(flag/roundstart_away))
 		createRandomZlevel(prob(CONFIG_GET(number/config_gateway_chance)))
 
-	else if (SSmapping.config.load_all_away_missions) // we're likely in a local testing environment, so punch it.
-		load_all_away_missions()
 
 	loading_ruins = TRUE
 	setup_ruins()
@@ -691,8 +696,7 @@ GLOBAL_LIST_EMPTY(the_station_areas)
 	var/list/banned = generateMapList("spaceruinblacklist.txt")
 	if(config.minetype == "lavaland")
 		banned += generateMapList("lavaruinblacklist.txt")
-	else if(config.blacklist_file)
-		banned += generateMapList(config.blacklist_file)
+
 
 	for(var/item in sort_list(subtypesof(/datum/map_template/ruin), GLOBAL_PROC_REF(cmp_ruincost_priority)))
 		var/datum/map_template/ruin/ruin_type = item
@@ -1056,8 +1060,6 @@ GLOBAL_LIST_EMPTY(the_station_areas)
 	GLOB.default_lighting_underlays_by_z[z_level] = mutable_appearance(LIGHTING_ICON, "transparent", z_level * 0.01, null, LIGHTING_PLANE, 255, RESET_COLOR | RESET_ALPHA | RESET_TRANSFORM, offset_const = GET_Z_PLANE_OFFSET(z_level))
 
 /// Returns true if the map we're playing on is on a planet
-/datum/controller/subsystem/mapping/proc/is_planetary()
-	return config.planetary
 
 /// For debug purposes, will add every single away mission present in a given directory.
 /// You can optionally pass in a string directory to load from instead of the default.

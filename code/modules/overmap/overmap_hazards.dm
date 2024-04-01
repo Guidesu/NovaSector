@@ -1,5 +1,8 @@
 #define SHUTTLE_VELOCITY_METEORS_DIRECTIONAL_THRESHOLD 0.5
 #define ASTEROID_AND_DUST_PADDING 60
+GLOBAL_LIST_EMPTY(apcs_list) //list of all Area Power Controller machines, separate from machines for powernet speeeeeeed.
+GLOBAL_LIST_INIT(meteorsC, list(/obj/effect/meteor/dust=1))
+
 
 /datum/overmap_object/hazard
 	name = "badly coded hazard"

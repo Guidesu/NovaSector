@@ -20,7 +20,6 @@
 				COMSIG_WEATHER_WINDDOWN(type),
 				COMSIG_WEATHER_END(type)
 			)
-		weather_type = trait
 		playlist = weather_playlist
 
 	RegisterSignal(target, COMSIG_MOVABLE_Z_CHANGED, PROC_REF(handle_z_level_change), override = TRUE)

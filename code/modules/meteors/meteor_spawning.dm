@@ -5,9 +5,6 @@
 		spawn_meteor(meteor_types, direction)
 
 /proc/spawn_meteor(list/meteor_types, direction, atom/target)
-	if (SSmapping.is_planetary())
-		stack_trace("Tried to spawn meteors in a map which isn't in space.")
-		return // We're not going to find any space turfs here
 	var/turf/picked_start
 	var/turf/picked_goal
 	var/max_i = 10//number of tries to spawn meteor.
@@ -82,16 +79,6 @@
 	player_mind.active = TRUE
 
 	var/turf/picked_start
-
-	if (SSmapping.is_planetary())
-		var/list/possible_start = list()
-		for(var/obj/effect/landmark/carpspawn/spawn_point in GLOB.landmarks_list)
-			possible_start += get_turf(spawn_point)
-		picked_start = pick(possible_start)
-	else
-		var/start_z = pick(SSmapping.levels_by_trait(ZTRAIT_STATION))
-		var/start_side = pick(GLOB.cardinals)
-		picked_start = spaceDebrisStartLoc(start_side, start_z)
 
 	if (!picked_start)
 		stack_trace("No valid spawn location for changeling meteor")

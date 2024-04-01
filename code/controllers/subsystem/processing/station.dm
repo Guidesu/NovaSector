@@ -48,11 +48,9 @@ PROCESSING_SUBSYSTEM_DEF(station)
 
 	var/goal_weights = 0
 	var/chosen_goals = list()
-	var/is_planetary = SSmapping.is_planetary()
 	while(possible.len && goal_weights < goal_budget)
 		var/datum/station_goal/picked = pick_n_take(possible)
-		if(picked::requires_space && is_planetary)
-			continue
+
 
 		goal_weights += initial(picked.weight)
 		chosen_goals += picked
@@ -105,12 +103,6 @@ PROCESSING_SUBSYSTEM_DEF(station)
 
 		if(initial(trait_typepath.abstract_type) == trait_typepath)
 			continue //Dont add abstract ones to it
-
-		if(!(initial(trait_typepath.trait_flags) & STATION_TRAIT_PLANETARY) && SSmapping.is_planetary()) // we're on a planet but we can't do planet ;_;
-			continue
-
-		if(!(initial(trait_typepath.trait_flags) & STATION_TRAIT_SPACE_BOUND) && !SSmapping.is_planetary()) //we're in space but we can't do space ;_;
-			continue
 
 		if(!(initial(trait_typepath.trait_flags) & STATION_TRAIT_REQUIRES_AI) && !CONFIG_GET(flag/allow_ai)) //can't have AI traits without AI
 			continue

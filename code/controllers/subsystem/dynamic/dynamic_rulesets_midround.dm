@@ -798,11 +798,6 @@
 	minimum_players = 20
 	repeatable = TRUE
 
-/datum/dynamic_ruleset/midround/pirates/acceptable(population=0, threat_level=0)
-	if (SSmapping.is_planetary() || GLOB.light_pirate_gangs.len == 0)
-		return FALSE
-	return ..()
-
 /datum/dynamic_ruleset/midround/pirates/execute()
 	send_pirate_threat(GLOB.light_pirate_gangs)
 	return ..()
@@ -820,10 +815,6 @@
 	minimum_players = 25
 	repeatable = TRUE
 
-/datum/dynamic_ruleset/midround/dangerous_pirates/acceptable(population=0, threat_level=0)
-	if (SSmapping.is_planetary() || GLOB.heavy_pirate_gangs.len == 0)
-		return FALSE
-	return ..()
 
 /datum/dynamic_ruleset/midround/dangerous_pirates/execute()
 	send_pirate_threat(GLOB.heavy_pirate_gangs)

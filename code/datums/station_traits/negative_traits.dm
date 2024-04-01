@@ -538,7 +538,7 @@
 		return FALSE
 
 	nebula.add_shielder(shielder, shielding_proc)
-
+/*
 ///The station will be inside a radioactive nebula! Space is radioactive and the station needs to start setting up nebula shielding
 /datum/station_trait/nebula/hostile/radiation
 	name = "Radioactive Nebula"
@@ -603,7 +603,8 @@
 	//Disables radstorms, they don't really make sense since we already have the nebula causing storms
 	var/datum/round_event_control/modified_event = locate(/datum/round_event_control/radiation_storm) in SSevents.control
 	modified_event.weight = 0
-
+*/
+/*
 ///They entered space? START BOMBING WITH RADS HAHAHAHA. old_area can be null for new objects
 /datum/station_trait/nebula/hostile/radiation/proc/on_entered(area/space, atom/movable/enterer, area/old_area)
 	SIGNAL_HANDLER
@@ -624,7 +625,6 @@
 
 /datum/station_trait/nebula/hostile/radiation/apply_nebula_effect(effect_strength = 0)
 	//big bombad now
-	if(effect_strength > 0 && !SSmapping.is_planetary()) //admins can force this
 		if(!SSweather.get_weather_by_type(/datum/weather/rad_storm/nebula))
 			COOLDOWN_START(src, send_care_package_at, send_care_package_time)
 			SSweather.run_weather(/datum/weather/rad_storm/nebula)
@@ -707,8 +707,9 @@
 	. = ..()
 
 	SSweather.run_weather(storm_type)
-
+*/
 /// Calls down an eternal storm on planetary stations
+/*
 /datum/station_trait/storm/foreverstorm
 	name = "Forever Storm"
 	trait_type = STATION_TRAIT_NEGATIVE
@@ -720,3 +721,4 @@
 	storm_type = /datum/weather/snow_storm/forever_storm
 
 #undef GLOW_NEBULA
+*/

@@ -349,14 +349,11 @@
 /obj/docking_port/mobile/emergency/request(obj/docking_port/stationary/S, area/signal_origin, reason, red_alert, set_coefficient=null, silent=FALSE) // NOVA EDIT CHANGE - AUTOTRANSFER - adds silent arg
 	if(!isnum(set_coefficient))
 		set_coefficient = SSsecurity_level.current_security_level.shuttle_call_time_mod
-	alert_coeff = set_coefficient
-	var/call_time = SSshuttle.emergency_call_time * alert_coeff * engine_coeff
 	switch(mode)
 		// The shuttle can not normally be called while "recalling", so
 		// if this proc is called, it's via admin fiat
 		if(SHUTTLE_RECALL, SHUTTLE_IDLE, SHUTTLE_CALL)
 			mode = SHUTTLE_CALL
-			setTimer(call_time)
 		else
 			return
 
@@ -495,8 +492,6 @@
 					color_override = "orange",
 				)
 				ShuttleDBStuff()
-				addtimer(CALLBACK(src, PROC_REF(announce_shuttle_events)), 20 SECONDS)
-
 
 		if(SHUTTLE_DOCKED)
 			if(time_left <= ENGINES_START_TIME)
@@ -559,8 +554,6 @@
 					CRASH("Emergency shuttle did not move to transit z-level!")
 
 				//Tell the events we're starting, so they can time their spawns or do some other stuff
-				for(var/datum/shuttle_event/event as anything in event_list)
-					event.start_up_event(SSshuttle.emergency_escape_time * engine_coeff)
 
 		if(SHUTTLE_STRANDED, SHUTTLE_DISABLED)
 			SSshuttle.checkHostileEnvironment()
@@ -587,7 +580,6 @@
 							if(istype(M, /obj/docking_port/mobile/pod))
 								M.parallax_slowdown()
 
-			process_events()
 
 			if(time_left <= 0)
 				//move each escape pod to its corresponding escape dock
@@ -630,7 +622,6 @@
 	var/list/names = list()
 	for(var/datum/shuttle_event/event as anything in subtypesof(/datum/shuttle_event))
 		if(prob(initial(event.event_probability)))
-			event_list.Add(new event(src))
 			names += initial(event.name)
 	if(LAZYLEN(names))
 		log_game("[capitalize(name)] has selected the following shuttle events: [english_list(names)].")
@@ -726,7 +717,6 @@
 	name = "escape pod"
 	shuttle_id = "pod"
 	hidden = TRUE
-	override_can_dock_checks = TRUE
 	/// The area the pod tries to land at
 	var/target_area = /area/lavaland/surface/outdoors
 	/// Minimal distance from the map edge, setting this too low can result in shuttle landing on the edge and getting "sliced"

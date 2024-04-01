@@ -165,7 +165,6 @@ GLOBAL_LIST_EMPTY(gravity_generators)
 		enable()
 		center_part.add_overlay("activated")
 
-	add_to_nebula_shielding(src, /datum/station_trait/nebula/hostile/radiation, PROC_REF(get_radioactive_nebula_shielding))
 
 /obj/machinery/gravity_generator/main/Destroy() // If we somehow get deleted, remove all of our other parts.
 	investigate_log("was destroyed!", INVESTIGATE_GRAVITY)

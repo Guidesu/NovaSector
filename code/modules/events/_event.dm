@@ -57,7 +57,7 @@
 	wizardevent = TRUE
 
 /// Returns true if event can run in current map
-/datum/round_event_control/proc/valid_for_map()
+/*/datum/round_event_control/proc/valid_for_map()
 	if (!map_flags)
 		return TRUE
 	if (SSmapping.is_planetary())
@@ -67,7 +67,7 @@
 		if (map_flags & EVENT_PLANETARY_ONLY)
 			return FALSE
 	return TRUE
-
+*/
 // Checks if the event can be spawned. Used by event controller and "false alarm" event.
 // Admin-created events override this.
 /datum/round_event_control/proc/can_spawn_event(players_amt, allow_magic = FALSE)

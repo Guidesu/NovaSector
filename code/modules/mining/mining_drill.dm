@@ -1,5 +1,6 @@
 #define DRILL_MINING_SPEED 40
 #define DRILL_ACTIVE_POWER_USAGE 300
+#define COMSIG_PARENT_QDELETING "parent_qdeleting"
 
 /obj/machinery/power/mining_drill
 	name = "mining drill"
@@ -325,7 +326,7 @@
 		new_mining_speed += 5 * L.rating
 		new_power_usage += 10 * L.rating
 	mining_speed = new_mining_speed
-	for(var/obj/item/stock_parts/manipulator/M in component_parts)
+	for(var/obj/item/stock_parts/servo/M in component_parts)
 		new_power_usage -= 10 * M.rating
 	active_power_usage = new_power_usage
 
@@ -347,7 +348,7 @@
 	build_path = /obj/machinery/power/mining_drill
 	req_components = list(
 		/obj/item/stock_parts/micro_laser = 3,
-		/obj/item/stock_parts/manipulator = 3)
+		/obj/item/stock_parts/servo = 3)
 	needs_anchored = FALSE
 
 #undef DRILL_MINING_SPEED

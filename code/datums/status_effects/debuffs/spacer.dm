@@ -10,9 +10,6 @@
 /datum/status_effect/spacer/on_apply()
 	return iscarbon(owner)
 
-/datum/status_effect/spacer/on_creation(mob/living/new_owner, ...)
-	. = ..()
-	nerfed_effects_because_planetary = SSmapping.is_planetary()
 
 // The good side (being in space)
 /datum/status_effect/spacer/gravity_wellness

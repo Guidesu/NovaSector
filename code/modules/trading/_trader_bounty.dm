@@ -81,11 +81,6 @@
 		return FALSE
 	return TRUE
 
-/datum/trader_bounty/reagent/GetAmount(atom/movable/movable_to_valid)
-	var/datum/reagents/holder = movable_to_valid.reagents
-	var/datum/reagent/reagent = holder.get_reagent(reagent_type)
-	return reagent.volume
-
 /datum/trader_bounty/gas
 	check_type = FALSE
 	var/gas_type

@@ -65,10 +65,3 @@
 		/datum/round_event_control/meteor_wave,
 		/datum/round_event_control/portal_storm_syndicate,
 	)
-	var/list/picked_events = list()
-	for(var/type in unfavorable_random_events)
-		var/datum/round_event_control/event = new type()
-		if(!event.valid_for_map())
-			continue
-		picked_events += type
-	return picked_events

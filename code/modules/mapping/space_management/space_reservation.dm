@@ -31,6 +31,8 @@
 
 	///Distance away from the cordon where we can put a "sort-cordon" and run some extra code (see make_repel). 0 makes nothing happen
 	var/pre_cordon_distance = 0
+	var/bottom_left_coords[3]
+	var/top_right_coords[3]
 
 /datum/turf_reservation/transit
 	turf_type = /turf/open/space/transit

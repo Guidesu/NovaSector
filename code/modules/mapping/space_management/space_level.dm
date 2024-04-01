@@ -10,7 +10,6 @@
 	var/is_overmap_controllable = FALSE
 	var/parallax_direction_override
 	///Extensions for z levels as overmap objects
-	var/list/all_extensions = list()
 	/// Weather controller for this level
 	var/datum/weather_controller/weather_controller
 	/// Linked day and night controller, expect this to apply to all related_levels

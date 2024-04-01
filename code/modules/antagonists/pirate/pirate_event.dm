@@ -14,11 +14,6 @@
 	admin_setup = list(/datum/event_admin_setup/listed_options/pirates)
 	map_flags = EVENT_SPACE_ONLY
 
-/datum/round_event_control/pirates/preRunEvent()
-	if (SSmapping.is_planetary())
-		return EVENT_CANT_RUN
-	return ..()
-
 /datum/round_event/pirates
 	///admin chosen pirate team
 	var/list/datum/pirate_gang/gang_list

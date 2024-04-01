@@ -94,7 +94,6 @@
 
 	circuit = /obj/item/circuitboard/machine/radioactive_nebula_shielding
 
-	nebula_type = /datum/station_trait/nebula/hostile/radiation
 	shielding_strength = 4
 
 	integrity_failure = 0.4
@@ -126,8 +125,6 @@
 	icon = 'icons/obj/machines/engine/other.dmi'
 	icon_state = "portgen1_1"
 	pixel_x = 0
-
-	nebula_type = /datum/station_trait/nebula/hostile/radiation
 
 /obj/machinery/nebula_shielding/emergency/radiation/self_destruct()
 	var/turf/open/turf = get_turf(src)

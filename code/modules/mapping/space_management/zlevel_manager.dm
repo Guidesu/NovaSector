@@ -4,8 +4,6 @@
 		return
 
 	z_list = list()
-	z_level_to_plane_offset = list()
-	z_level_to_lowest_plane_offset = list()
 	var/list/default_map_traits = DEFAULT_MAP_TRAITS
 
 	if (default_map_traits.len != world.maxz)
@@ -16,13 +14,9 @@
 	for (var/I in 1 to default_map_traits.len)
 		var/list/features = default_map_traits[I]
 		var/datum/space_level/S = new(I, features[DL_NAME], features[DL_TRAITS])
-		manage_z_level(S, filled_with_space = FALSE)
-	generate_z_level_linkages() // Default Zs don't use add_new_zlevel() so they don't automatically generate z-linkages.
+		z_list += S
 
-/datum/controller/subsystem/mapping/proc/add_new_zlevel(name, traits = list(), z_type = /datum/space_level, /datum/overmap_object/overmap_obj = null)
-	UNTIL(!adding_new_zlevel)
-	adding_new_zlevel = TRUE
-	SEND_GLOBAL_SIGNAL(COMSIG_GLOB_NEW_Z, args)
+/datum/controller/subsystem/mapping/proc/add_new_zlevel(name, traits = list(), z_type = /datum/space_level, datum/overmap_object/overmap_obj = null)
 	var/new_z = z_list.len + 1
 	if (world.maxz < new_z)
 		world.incrementMaxZ()

@@ -1,3 +1,15 @@
+//used by canUseTopic()
+/// If silicons need to be next to the atom to use this
+#define BE_CLOSE TRUE
+/// If other mobs (monkeys, aliens, etc) can use this
+#define NO_DEXTERITY TRUE // I had to change 20+ files because some non-dnd-playing fuckchumbis can't spell "dexterity"
+// If telekinesis you can use it from a distance
+#define NO_TK TRUE
+/// If mobs can use this while resting
+#define FLOOR_OKAY TRUE
+/mob/proc/canUseTopic(atom/movable/M, be_close=FALSE, no_dexterity=FALSE, no_tk=FALSE, need_hands = FALSE, floor_okay=FALSE)
+	return
+
 /obj/item/metal_density_scanner
 	name = "metal density scanner"
 	desc = "A handheld device used for detecting and measuring density of nearby metals."
@@ -71,11 +83,11 @@
 	var/obj/item/paper/P = new /obj/item/paper(my_turf)
 	P.name = "metal density readout"
 	P.default_raw_text = "<CENTER><B>METAL DENSITY READOUT</B></CENTER><BR>"
-	P.default_raw_text += "<B>GPS coordinates: x:[my_turf.x], y:[my_turf.y], z:[my_turf.z]</B><BR>"
+	P.add_raw_text("<B>GPS coordinates: x:[my_turf.x], y:[my_turf.y], z:[my_turf.z]</B><BR>")
 	if(ON)
-		P.default_raw_text += ON.GetScannerReadout(my_turf)
+		P.add_raw_text(ON.GetScannerReadout(my_turf))
 	else
-		P.default_raw_text += "No ores detected at the coordinates"
+		P.add_raw_text("No ores detected at the coordinates")
 	P.update_icon()
 	//We're inside a storage? Put the printout in the storage
 	if(item_flags & IN_STORAGE)

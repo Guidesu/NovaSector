@@ -1,3 +1,4 @@
+/*
 #define LAST_STATE_PLANET "on_planet"
 #define LAST_STATE_SPACE "in_space"
 
@@ -52,7 +53,6 @@
 	human_quirker.physiology.cold_mod *= 0.8
 
 /datum/quirk/spacer_born/post_add()
-	var/on_a_planet = SSmapping.is_planetary()
 	var/planet_job = istype(quirk_holder.mind?.assigned_role, /datum/job/shaft_miner)
 	if(!on_a_planet && !planet_job)
 		return
@@ -142,7 +142,6 @@
 		return
 
 	// Slightly reduced effects if we're on a planetary map to make it a bit more bearable
-	var/nerfed_effects_because_planetary = SSmapping.is_planetary()
 	var/moodlet_picked = nerfed_effects_because_planetary ? /datum/mood_event/spacer/on_planet/nerfed : /datum/mood_event/spacer/on_planet/too_long
 	var/movespeed_mod_picked = nerfed_effects_because_planetary ? /datum/movespeed_modifier/spacer/on_planet/nerfed : /datum/movespeed_modifier/spacer/on_planet/too_long
 
@@ -200,3 +199,4 @@
 
 #undef LAST_STATE_PLANET
 #undef LAST_STATE_SPACE
+*/

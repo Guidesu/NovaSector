@@ -1,3 +1,5 @@
+#define LIGHTING_PLANE_ALPHA_INVISIBLE 0
+
 /datum/shuttle_freeform_docker
 	var/mob/camera/ai_eye/remote/shuttle_freeform/eyeobj
 	var/datum/overmap_shuttle_controller/my_controller
@@ -306,6 +308,4 @@
 
 /mob/camera/ai_eye/remote/shuttle_freeform/update_remote_sight(mob/living/user)
 	user.sight = BLIND|SEE_TURFS
-	user.lighting_alpha = LIGHTING_PLANE_ALPHA_INVISIBLE
-	user.sync_lighting_plane_alpha()
 	return TRUE

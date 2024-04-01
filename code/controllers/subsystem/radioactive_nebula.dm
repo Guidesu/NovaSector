@@ -1,4 +1,5 @@
-/// Trait for tracking if something already has the fake irradiation effect, so we don't waste time on effect operations if otherwise unnecessary
+/*
+/// /// Trait for tracking if something already has the fake irradiation effect, so we don't waste time on effect operations if otherwise unnecessary
 #define TRAIT_RADIOACTIVE_NEBULA_FAKE_IRRADIATED "radioactive_nebula_fake_irradiated"
 
 /// Controls making objects irradiated when Radioactive Nebula is in effect.
@@ -63,3 +64,4 @@ SUBSYSTEM_DEF(radioactive_nebula)
 	leaver.remove_filter(GLOW_NEBULA)
 
 #undef TRAIT_RADIOACTIVE_NEBULA_FAKE_IRRADIATED
+*/

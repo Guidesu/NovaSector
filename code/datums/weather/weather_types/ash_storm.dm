@@ -44,23 +44,11 @@
 		L = L.loc //Check parent items immunities (recurses up to the turf)
 	return FALSE //RIP you
 
-/datum/weather/ash_storm/start()
-	GLOB.ash_storm_sounds -= weak_sounds
-	GLOB.ash_storm_sounds += strong_sounds
-	return ..()
-
-/datum/weather/ash_storm/wind_down()
-	GLOB.ash_storm_sounds -= strong_sounds
-	GLOB.ash_storm_sounds += weak_sounds
-	return ..()
-
 /datum/weather/ash_storm/can_weather_act(mob/living/mob_to_check)
 	. = ..()
 	if(!. || !ishuman(mob_to_check))
 		return
-	var/mob/living/carbon/human/human_to_check = L
-	if(human_to_check.get_thermal_protection() >= FIRE_IMMUNITY_MAX_TEMP_PROTECT)
-		return FALSE
+
 
 /datum/weather/ash_storm/weather_act(mob/living/victim)
 	victim.adjustFireLoss(4, required_bodytype = BODYTYPE_ORGANIC)

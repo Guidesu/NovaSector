@@ -14,8 +14,6 @@
 	. = ..()
 	if(!.)
 		return FALSE
-	if(SSmapping.is_planetary())
-		return FALSE //meteors can't spawn on planets
 	return TRUE
 
 /datum/traitor_objective/ultimate/dark_matteor/generate_objective(datum/mind/generating_for, list/possible_duplicates)

@@ -81,7 +81,7 @@
 
 /obj/machinery/computer/shuttle/Topic(href, href_list)
 	var/mob/user = usr
-	if(!isliving(user) || !user.canUseTopic(src, FALSE))
+	if(!isliving(user) || !can_perform_action(src, FALSE))
 		return
 	var/obj/docking_port/mobile/M = SSshuttle.getShuttle(shuttleId)
 	switch(href_list["task"])
