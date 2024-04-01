@@ -69,7 +69,6 @@
 		/mob/living/simple_animal/hostile/megafauna/dragon = 4,
 		/mob/living/simple_animal/hostile/planet/charbaby = 100,
 		/mob/living/simple_animal/hostile/planet/shantak/lava = 100,
-		/mob/living/simple_animal/hostile/asteroid/goliath/beast = 100,
 		/mob/living/simple_animal/thinbug = 50,
 	)
 

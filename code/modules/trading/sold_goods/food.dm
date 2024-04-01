@@ -5,9 +5,6 @@
 /datum/sold_goods/meatkebab
 	path = /obj/item/food/kebab/monkey
 
-/datum/sold_goods/monkeysoup
-	path = /obj/item/food/soup/monkeysdelight
-
 /datum/sold_goods/ricepudding
 	path = /obj/item/food/salad/ricepudding
 
@@ -19,14 +16,6 @@
 /datum/sold_goods/cow
 	cost = 350
 	path = /mob/living/basic/cow
-
-/datum/sold_goods/goat
-	cost = 220
-	path = /mob/living/simple_animal/hostile/retaliate/goat
-
-/datum/sold_goods/chicken
-	cost = 100
-	path = /mob/living/simple_animal/chick
 
 /datum/sold_goods/wheat
 	cost = 20

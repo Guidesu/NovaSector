@@ -100,7 +100,7 @@
 
 /datum/action/innate/quit_control
 	name = "Quit Control"
-	icon_icon = 'icons/mob/actions/actions_silicon.dmi'
+	button_icon = 'icons/mob/actions/actions_silicon.dmi'
 	button_icon_state = "slime_down"
 
 /datum/action/innate/quit_control/Trigger(trigger_flags)
@@ -109,7 +109,7 @@
 
 /datum/action/innate/stop_shuttle
 	name = "Stop Shuttle"
-	icon_icon = 'icons/mob/actions/actions_silicon.dmi'
+	button_icon = 'icons/mob/actions/actions_silicon.dmi'
 	button_icon_state = "slime_down"
 
 /datum/action/innate/stop_shuttle/Trigger(trigger_flags)
@@ -118,7 +118,7 @@
 
 /datum/action/innate/open_shuttle_control
 	name = "Shuttle Controls"
-	icon_icon = 'icons/mob/actions/actions_silicon.dmi'
+	button_icon = 'icons/mob/actions/actions_silicon.dmi'
 	button_icon_state = "slime_down"
 
 /datum/action/innate/open_shuttle_control/Trigger(trigger_flags)

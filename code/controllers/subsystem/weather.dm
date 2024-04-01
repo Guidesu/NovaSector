@@ -5,6 +5,10 @@ SUBSYSTEM_DEF(weather)
 	wait = 10
 	runlevels = RUNLEVEL_GAME
 	var/list/weather_controllers = list()
+	var/list/processing = list()
+	var/list/eligible_zlevels = list()
+	var/list/next_hit_by_zlevel = list() //Used by barometers to know when the next storm is coming
+
 
 /datum/controller/subsystem/weather/fire()
 	// process active weather controllers

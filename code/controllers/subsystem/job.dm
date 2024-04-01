@@ -110,7 +110,7 @@ SUBSYSTEM_DEF(job)
 
 /datum/controller/subsystem/job/proc/set_overflow_role(new_overflow_role)
 	if(!new_overflow_role)
-		new_overflow_role = SSmapping.config.overflow_job
+		new_overflow_role = SSmapping.config
 	var/datum/job/new_overflow = GetJobType(new_overflow_role)
 	var/cap = CONFIG_GET(number/overflow_cap)
 
@@ -132,7 +132,7 @@ SUBSYSTEM_DEF(job)
 
 /datum/controller/subsystem/job/proc/SetupOccupations(faction)
 	if(!faction)
-		faction = SSmapping.config.job_faction
+		faction = SSmapping.config
 
 	type_occupations = list()
 	name_occupations = list()

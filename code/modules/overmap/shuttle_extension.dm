@@ -1,9 +1,14 @@
+/datum/space_level
+	var/list/all_extensions = list()
+
+
 /datum/shuttle_extension
 	var/name = "Extension"
 	var/applied = FALSE
 	var/datum/overmap_object/shuttle/overmap_object
 	var/obj/docking_port/mobile/shuttle
 	var/datum/space_level/z_level
+	var/list/all_extensions = list()
 
 /datum/shuttle_extension/proc/ApplyToPosition(turf/position)
 	if(IsApplied())

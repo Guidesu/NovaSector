@@ -2,6 +2,11 @@
 ///This is solely to be used after compile-time.
 #define TURF_TEMPERATURE(temperature) "TEMP=[temperature]"
 
+//ATMOS MIX IDS
+#define LAVALAND_DEFAULT_ATMOS "LAVALAND_ATMOS"
+#define ICEMOON_DEFAULT_ATMOS "ICEMOON_ATMOS"
+
+
 //OPEN TURF ATMOS
 /// the default air mix that open turfs spawn
 #define OPENTURF_DEFAULT_ATMOS GAS_O2 + "=22;" + GAS_N2 + "=82;TEMP=293.15"

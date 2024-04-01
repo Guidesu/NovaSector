@@ -257,23 +257,16 @@
 		/obj/item/clothing/under/suit/beige,
 		/obj/item/clothing/under/pants/jeans = 1,
 		/obj/item/clothing/under/pants/camo = 1,
-		/obj/item/clothing/under/rank/civilian/bartender = 1,
-		/obj/item/clothing/under/rank/civilian/bartender/skirt = 1
 	)
 
 /obj/effect/spawner/random/clothing/headgear
 	name = "headgear spawner"
 	loot = list(
-		/obj/item/clothing/head/welding = 1,
-		/obj/item/clothing/head/ushanka = 1,
 		/obj/item/clothing/head/soft/grey = 1,
 		/obj/item/clothing/head/soft/black = 1,
-		/obj/item/clothing/head/chefhat = 1,
 		/obj/item/clothing/head/beret = 1,
-		/obj/item/clothing/head/beret/black = 1,
 		/obj/item/clothing/head/fedora/curator = 1,
 		/obj/item/clothing/head/helmet/old = 1,
-		/obj/item/clothing/head/bandana = 1
 	)
 
 /obj/effect/spawner/random/clothing/shoes

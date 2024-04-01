@@ -44,7 +44,6 @@
 		/obj/item/clothing/glasses/night = 1,
 		/obj/item/clothing/gloves/tackler/combat/insulated = 1,
 		/obj/item/clothing/suit/armor/riot = 1,
-		/obj/item/clothing/head/helmet/riot = 1
 	)
 
 /obj/effect/spawner/random/weapon/grenade

@@ -1,3 +1,6 @@
+#define COMSIG_PARENT_QDELETING "parent_qdeleting"
+
+
 /obj/effect/overlay/lock_effect
 	icon = 'icons/overmap/targeted.dmi'
 	icon_state = "locking"

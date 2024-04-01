@@ -10,6 +10,7 @@
 	var/partial_x = 0
 	var/partial_y = 0
 	/// The sunsystem it is stationed in
+	var/datum/overmap_object/related_overmap_object
 	var/datum/overmap_sun_system/current_system
 	/// Whether it should make a visual dummy or not
 	//var/make_visual = TRUE //Currently to save memory we piggyback on turf.contents for a 2d array. Just make your visual object invisible if you dont want this
@@ -66,7 +67,7 @@
 /datum/overmap_object/proc/GetAllAliveClientMobs()
 	var/list/compiled_list = list()
 	for(var/i in related_levels)
-		var/datum/space_level/level = i 
+		var/datum/space_level/level = i
 		compiled_list += SSmobs.clients_by_zlevel[level.z_value]
 	return compiled_list
 
@@ -74,7 +75,7 @@
 /datum/overmap_object/proc/GetAllClientMobs()
 	var/list/compiled_list = GetAllAliveClientMobs()
 	for(var/i in related_levels)
-		var/datum/space_level/level = i 
+		var/datum/space_level/level = i
 		compiled_list += SSmobs.dead_players_by_zlevel[level.z_value]
 	return compiled_list
 

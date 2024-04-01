@@ -28,7 +28,7 @@
 	var/dwidth = 0
 	///position relative to covered area, parallel to dir. You shouldn't modify this for mobile dockingports, set automatically.
 	var/dheight = 0
-
+	var/list/all_extensions = list()
 	var/area_type
 	///are we invisible to shuttle navigation computers?
 	var/hidden = FALSE
@@ -478,6 +478,7 @@
 	var/preferred_direction = NORTH
 	/// relative direction of the docking port from the front of the shuttle. NORTH is towards front, EAST would be starboard side, WEST port, etc.
 	var/port_direction = NORTH
+	var/list/engine_extensions = list()
 
 	var/obj/docking_port/stationary/destination
 	var/obj/docking_port/stationary/previous
@@ -493,7 +494,6 @@
 		"THROW" = 0,
 	)
 
-	///if this shuttle can move docking ports other than the one it is docked at
 	var/can_move_docking_ports = FALSE
 	var/list/hidden_turfs = list()
 	///List of shuttle events that can run or are running

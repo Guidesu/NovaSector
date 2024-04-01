@@ -41,3 +41,8 @@
 	light_system = MOVABLE_LIGHT
 	light_power = 1.5
 	light_range = 3
+
+///Light made by masking the lighting darkness plane.
+#define MOVABLE_LIGHT 2
+///Light made by masking the lighting darkness plane, and is directional.
+#define MOVABLE_LIGHT_DIRECTIONAL 3

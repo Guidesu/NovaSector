@@ -429,7 +429,6 @@ Used by the AI doomsday and the self-destruct nuke.
 	var/i = 0
 	var/list/space_levels = list()
 	for (var/level in traits)
-		add_new_zlevel("[name][i ? " [i + 1]" : ""]", level, contain_turfs = FALSE)
 		space_levels += add_new_zlevel("[name][i ? " [i + 1]" : ""]", level, null, overmap_obj = ov_obj)
 		++i
 	var/datum/atmosphere/atmos

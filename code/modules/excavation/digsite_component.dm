@@ -1,3 +1,5 @@
+#define COMSIG_PARENT_ATTACKBY "atom_attackby"
+
 #define ARTIFACTS_LOW_RAND 1
 #define ARTIFACTS_HIGH_RAND 4
 

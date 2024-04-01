@@ -66,8 +66,5 @@
 /datum/weather/snow_storm/forever_storm
 	telegraph_duration = 0
 	perpetual = TRUE
-
-	probability = 0
-
 	cooling_lower = 5
 	cooling_upper = 18

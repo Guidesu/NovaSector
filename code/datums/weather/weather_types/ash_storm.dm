@@ -41,10 +41,6 @@
 			var/thermal_protection = H.get_thermal_protection()
 			if(thermal_protection >= FIRE_IMMUNITY_MAX_TEMP_PROTECT)
 				return TRUE
-		if(isliving(L))// if we're a non immune mob inside an immune mob we have to reconsider if that mob is immune to protect ourselves
-			var/mob/living/the_mob = L
-			if(TRAIT_ASHSTORM_IMMUNE in the_mob.weather_immunities)
-				return TRUE
 		L = L.loc //Check parent items immunities (recurses up to the turf)
 	return FALSE //RIP you
 
@@ -70,7 +66,6 @@
 	victim.adjustFireLoss(4, required_bodytype = BODYTYPE_ORGANIC)
 
 /datum/weather/ash_storm/end()
-	GLOB.ash_storm_sounds -= weak_sounds
 	for(var/turf/open/misc/asteroid/basalt/basalt as anything in GLOB.dug_up_basalt)
 		if(!(basalt.loc in impacted_areas) || !(basalt.z in impacted_z_levels))
 			continue

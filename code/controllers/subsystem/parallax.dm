@@ -18,7 +18,6 @@ SUBSYSTEM_DEF(parallax)
 		/atom/movable/screen/parallax_layer/random/asteroids = 35,
 		PARALLAX_NONE = 30,
 	)
-	var/random_layer
 	var/random_parallax_color
 
 

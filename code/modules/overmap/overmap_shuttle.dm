@@ -285,7 +285,7 @@
 					if(!my_shuttle.check_dock(iterated_dock, silent = TRUE))
 						continue
 					docks[iterated_dock.name] = iterated_dock
-	
+
 				dat += "<B>Designated docks:</B>"
 				for(var/key in docks)
 					dat += "<BR> - [key] - <a href='?src=[REF(src)];task=dock;dock_control=normal_dock;dock_id=[docks[key].shuttle_id]'>Dock</a>"
@@ -346,7 +346,7 @@
 	if(!control_turf)
 		return
 	var/mob/user = usr
-	if(!isliving(user) || !user.canUseTopic(control_turf, BE_CLOSE, FALSE, NO_TK))
+	if(!isliving(user) || !user.canUseTopic(control_turf, FALSE))
 		return
 	if(href_list["pad_topic"])
 		if(!(shuttle_capability & SHUTTLE_CAN_USE_ENGINES))

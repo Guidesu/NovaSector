@@ -46,7 +46,7 @@
 /datum/trader_bounty/heavy_lifting
 	bounty_name = "Heavy Lifting"
 	amount = 1
-	path = /obj/vehicle/sealed/mecha/working/ripley
+	path = /obj/vehicle/sealed/mecha/ripley
 	reward_cash = 5000
 	bounty_text = "Filled with brim of ores and bars, we're expanding our warehouses and require an immediate help of a very strong machine. If you could supply us with a Ripley, we'd pay you handsomely."
 	bounty_complete_text = "Expect twice the stock next time you visit us!"

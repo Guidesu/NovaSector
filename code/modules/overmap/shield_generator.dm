@@ -40,4 +40,4 @@
 	greyscale_colors = CIRCUIT_COLOR_ENGINEERING
 	build_path = /obj/machinery/shield_generator
 	req_components = list(/obj/item/stock_parts/capacitor = 10,
-							/obj/item/stock_parts/manipulator  = 5)
+							/obj/item/stock_parts/servo  = 5)

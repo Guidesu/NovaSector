@@ -242,7 +242,7 @@
 		if(!has_shields && shuttle.transit_instance)
 			probability += shuttle_velocity * 5
 		if(prob(probability))
-			var/carp_type = prob(95) ? /mob/living/simple_animal/hostile/carp : /mob/living/simple_animal/hostile/carp/megacarp
+			var/carp_type = prob(95) ? /mob/living/basic/carp : /mob/living/basic/carp/mega
 			if(shuttle.transit_instance)
 				var/set_dir
 				if(shuttle_velocity > 0.5)

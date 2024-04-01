@@ -89,7 +89,7 @@
 		port.current_engine_power -= initial(engine_power)
 	connected_ship_ref = null
 
-/obj/structure/shuttle/engine/Initialize()
+/obj/machinery/power/shuttle_engine/Initialize()
 	. = ..()
 	if(engine_state == ENGINE_WELDED)
 		AddComponent(/datum/component/engine_effect)
@@ -97,10 +97,10 @@
 			extension = new extension_type()
 			ApplyExtension()
 
-/obj/structure/shuttle/engine/proc/DrawThrust()
+/obj/machinery/power/shuttle_engine/proc/DrawThrust()
 	SEND_SIGNAL(src, COMSIG_ENGINE_DRAWN_POWER)
 
-/obj/structure/shuttle/engine/proc/ApplyExtension()
+/obj/machinery/power/shuttle_engine/proc/ApplyExtension()
 	if(!extension)
 		return
 	if(SSshuttle.is_in_shuttle_bounds(src))
@@ -112,7 +112,7 @@
 		if(level && level.related_overmap_object && level.is_overmap_controllable)
 			extension.AddToZLevel(level)
 
-/obj/structure/shuttle/engine/proc/RemoveExtension()
+/obj/machinery/power/shuttle_engine/proc/RemoveExtension()
 	if(!extension)
 		return
 	extension.RemoveExtension()
@@ -191,14 +191,14 @@
 	extension_type = null
 
 /obj/machinery/power/shuttle_engine/propulsion
-/obj/structure/shuttle/engine/platform
+/obj/machinery/power/shuttle_engine/platform
 	name = "engine platform"
 	icon_state = "platform"
 	desc = "A platform for engine components."
 	engine_power = 0
 	extension_type = null
 
-/obj/structure/shuttle/engine/propulsion
+/obj/machinery/power/shuttle_engine/propulsion
 	name = "propulsion engine"
 	icon_state = "propulsion"
 	desc = "A standard reliable bluespace engine used by many forms of shuttles."
@@ -230,13 +230,13 @@
 	icon_state = "burst_r"
 
 /obj/machinery/power/shuttle_engine/large
-/obj/structure/shuttle/engine/router
+/obj/machinery/power/shuttle_engine/router
 	name = "engine router"
 	icon_state = "router"
 	desc = "Redirects around energized particles in engine structures."
 	extension_type = null
 
-/obj/structure/shuttle/engine/large
+/obj/machinery/power/shuttle_engine/large
 	name = "engine"
 	icon = 'icons/obj/fluff/2x2.dmi'
 	icon_state = "large_engine"

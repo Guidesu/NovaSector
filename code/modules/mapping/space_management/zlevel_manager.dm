@@ -29,7 +29,6 @@
 		CHECK_TICK
 	// TODO: sleep here if the Z level needs to be cleared
 	var/datum/space_level/S = new z_type(new_z, name, traits)
-	manage_z_level(S, filled_with_space = TRUE, contain_turfs = contain_turfs)
 	if(overmap_obj)
 		overmap_obj.related_levels += S
 		S.related_overmap_object = overmap_obj

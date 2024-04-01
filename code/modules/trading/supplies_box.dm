@@ -231,7 +231,6 @@
 		/obj/item/stack/medical/ointment= 5,
 		/obj/item/reagent_containers/hypospray/medipen = 5,
 		/obj/item/stack/medical/gauze/twelve = 5,
-		/obj/item/stack/medical/bone_gel/four = 5,
 		/obj/item/stack/medical/suture = 5,
 		/obj/item/stack/medical/mesh = 5,
 		/obj/item/storage/pill_bottle/mining = 1,

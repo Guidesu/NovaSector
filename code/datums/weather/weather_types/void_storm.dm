@@ -1,7 +1,6 @@
 /datum/weather/void_storm
 	name = "void storm"
 	desc = "A rare and highly anomalous event. We'd advise you to start running to safety."
-	probability = 25
 	telegraph_duration = 2 MINUTES
 	telegraph_overlay = "light_snow"
 	next_hit_time = 25
@@ -17,7 +16,6 @@
 
 	area_type = /area
 	protect_indoors = TRUE
-	target_trait = ZTRAIT_VOIDSTORM
 
 	immunity_type = TRAIT_VOIDSTORM_IMMUNE
 
