@@ -229,22 +229,14 @@ GLOBAL_LIST_INIT(typecache_powerfailure_safe_areas, typecacheof(list(
 	var/list/areas = list()
 	if(subtypes)
 		var/list/cache = typecacheof(areatype)
-		for(var/area/area_to_check as anything in GLOB.areas)
+		for(var/area/area_to_check as anything in GLOB.sortedAreas)
 			if(cache[area_to_check.type])
 				areas += area_to_check
 	else
-		for(var/area/area_to_check as anything in GLOB.areas)
+		for(var/area/area_to_check as anything in GLOB.sortedAreas)
 			if(area_to_check.type == areatype)
 				areas += area_to_check
 	return areas
-
-/// Iterates over all turfs in the target area and returns the first non-dense one
-/proc/get_first_open_turf_in_area(area/target)
-	if(!target)
-		return
-	for(var/turf/turf in target)
-		if(!turf.density)
-			return turf
 
 //Takes: Area type as text string or as typepath OR an instance of the area.
 //Returns: A list of all turfs in areas of that type of that type in the world.
@@ -256,30 +248,24 @@ GLOBAL_LIST_INIT(typecache_powerfailure_safe_areas, typecacheof(list(
 		areatype = areatemp.type
 	else if(!ispath(areatype))
 		return null
-	// Pull out the areas
-	var/list/areas_to_pull = list()
+
+	var/list/turfs = list()
 	if(subtypes)
 		var/list/cache = typecacheof(areatype)
-		for(var/area/area_to_check as anything in GLOB.areas)
+		for(var/area/area_to_check as anything in GLOB.sortedAreas)
 			if(!cache[area_to_check.type])
 				continue
-			areas_to_pull += area_to_check
+			for(var/turf/turf_in_area in area_to_check)
+				if(target_z == 0 || target_z == turf_in_area.z)
+					turfs += turf_in_area
 	else
-		for(var/area/area_to_check as anything in GLOB.areas)
+		for(var/area/area_to_check as anything in GLOB.sortedAreas)
 			if(area_to_check.type != areatype)
 				continue
-			areas_to_pull += area_to_check
-
-	// Now their turfs
-	var/list/turfs = list()
-	for(var/area/pull_from as anything in areas_to_pull)
-		if (target_z == 0)
-			for (var/list/zlevel_turfs as anything in pull_from.get_zlevel_turf_lists())
-				turfs += zlevel_turfs
-		else
-			turfs += pull_from.get_turfs_by_zlevel(target_z)
+			for(var/turf/turf_in_area in area_to_check)
+				if(target_z == 0 || target_z == turf_in_area.z)
+					turfs += turf_in_area
 	return turfs
-
 
 ///Takes: list of area types
 ///Returns: all mobs that are in an area type

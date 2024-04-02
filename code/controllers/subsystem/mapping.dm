@@ -120,37 +120,17 @@ SUBSYSTEM_DEF(mapping)
 		var/old_config = config
 		config = global.config.defaultmap
 		if(!config || config.defaulted)
-			to_chat(world, span_boldannounce("Unable to load next or default map config, defaulting to MetaStation."))
+			to_chat(world, span_boldannounce("Unable to load next or default map config, defaulting to Meta Station."))
 			config = old_config
-	plane_offset_to_true = list()
-	true_to_offset_planes = list()
-	plane_to_offset = list()
-	// VERY special cases for FLOAT_PLANE, so it will be treated as expected by plane management logic
-	// Sorry :(
-	plane_offset_to_true["[FLOAT_PLANE]"] = FLOAT_PLANE
-	true_to_offset_planes["[FLOAT_PLANE]"] = list(FLOAT_PLANE)
-	plane_to_offset["[FLOAT_PLANE]"] = 0
-	plane_offset_blacklist = list()
-	// You aren't allowed to offset a floatplane that'll just fuck it all up
-	plane_offset_blacklist["[FLOAT_PLANE]"] = TRUE
-	render_offset_blacklist = list()
-	critical_planes = list()
-	create_plane_offsets(0, 0)
 	initialize_biomes()
 	preloadTemplates()
 	loadWorld()
 	determine_fake_sale()
-	require_area_resort()
+	repopulate_sorted_areas()
 	process_teleport_locs() //Sets up the wizard teleport locations
 
 #ifndef LOWMEMORYMODE
-	// Create space ruin levels
-	while (space_levels_so_far < config.space_ruin_levels)
-		add_new_zlevel("Ruin Area [space_levels_so_far+1]", ZTRAITS_SPACE)
-		++space_levels_so_far
-	// Create empty space levels
-	while (space_levels_so_far < config.space_empty_levels + config.space_ruin_levels)
-		empty_space = add_new_zlevel("Empty Area [space_levels_so_far]", list(ZTRAIT_LINKAGE = UNAFFECTED))
+	empty_space = add_new_zlevel("Empty Area [space_levels_so_far]", list(ZTRAIT_LINKAGE = UNAFFECTED))
 		++space_levels_so_far
 
 	// Pick a random away mission.
@@ -163,54 +143,16 @@ SUBSYSTEM_DEF(mapping)
 	loading_ruins = FALSE
 
 #endif
-	// Run map generation after ruin generation to prevent issues
-	run_map_terrain_generation()
-	// Generate our rivers, we do this here so the map doesn't load on top of them
-	setup_rivers()
-	// now that the terrain is generated, including rivers, we can safely populate it with objects and mobs
-	run_map_terrain_population()
-	// Add the first transit level
-	var/datum/space_level/base_transit = add_reservation_zlevel()
-	require_area_resort()
+	transit = add_new_zlevel("Transit/Reserved", list(ZTRAIT_RESERVED = TRUE))
+	repopulate_sorted_areas()
 	// Set up Z-level transitions.
 	setup_map_transitions()
 	generate_station_area_list()
-	initialize_reserved_level(base_transit.z_value)
+	initialize_reserved_level(transit.z_value)
+	generate_z_level_linkages()
 	calculate_default_z_level_gravities()
 
 	return SS_INIT_SUCCESS
-
-/datum/controller/subsystem/mapping/fire(resumed)
-	// Cache for sonic speed
-	var/list/unused_turfs = src.unused_turfs
-	var/list/world_contents = GLOB.areas_by_type[world.area].contents
-	var/list/world_turf_contents_by_z = GLOB.areas_by_type[world.area].turfs_by_zlevel
-	var/list/lists_to_reserve = src.lists_to_reserve
-	var/index = 0
-	while(index < length(lists_to_reserve))
-		var/list/packet = lists_to_reserve[index + 1]
-		var/packetlen = length(packet)
-		while(packetlen)
-			if(MC_TICK_CHECK)
-				if(index)
-					lists_to_reserve.Cut(1, index)
-				return
-			var/turf/T = packet[packetlen]
-			T.empty(RESERVED_TURF_TYPE, RESERVED_TURF_TYPE, null, TRUE)
-			LAZYINITLIST(unused_turfs["[T.z]"])
-			unused_turfs["[T.z]"] |= T
-			var/area/old_area = T.loc
-			LISTASSERTLEN(old_area.turfs_to_uncontain_by_zlevel, T.z, list())
-			old_area.turfs_to_uncontain_by_zlevel[T.z] += T
-			T.turf_flags = UNUSED_RESERVATION_TURF
-			world_contents += T
-			LISTASSERTLEN(world_turf_contents_by_z, T.z, list())
-			world_turf_contents_by_z[T.z] += T
-			packet.len--
-			packetlen = length(packet)
-
-		index++
-	lists_to_reserve.Cut(1, index)
 
 /datum/controller/subsystem/mapping/proc/calculate_default_z_level_gravities()
 	for(var/z_level in 1 to length(z_list))
@@ -227,13 +169,20 @@ SUBSYSTEM_DEF(mapping)
 	if(multiz_levels.len < z_level)
 		multiz_levels.len = z_level
 
-	var/z_above = level_trait(z_level, ZTRAIT_UP)
-	var/z_below = level_trait(z_level, ZTRAIT_DOWN)
-	if(!(z_above == TRUE || z_above == FALSE || z_above == null) || !(z_below == TRUE || z_below == FALSE || z_below == null))
-		stack_trace("Warning, numeric mapping offsets are deprecated. Instead, mark z level connections by setting UP/DOWN to true if the connection is allowed")
-	multiz_levels[z_level] = new /list(LARGEST_Z_LEVEL_INDEX)
-	multiz_levels[z_level][Z_LEVEL_UP] = !!z_above
-	multiz_levels[z_level][Z_LEVEL_DOWN] = !!z_below
+	var/linked_down = level_trait(z_level, ZTRAIT_DOWN)
+	var/linked_up = level_trait(z_level, ZTRAIT_UP)
+	multiz_levels[z_level] = list()
+	if(linked_down)
+		multiz_levels[z_level]["[DOWN]"] = TRUE
+		. = TRUE
+	if(linked_up)
+		multiz_levels[z_level]["[UP]"] = TRUE
+		. = TRUE
+
+	#if !defined(MULTIZAS) && !defined(UNIT_TESTS)
+	if(.)
+		stack_trace("Multi-Z map enabled with MULTIZAS enabled.")
+	#endif
 
 /datum/controller/subsystem/mapping/proc/calculate_z_level_gravity(z_level_number)
 	if(!isnum(z_level_number) || z_level_number < 1)
@@ -245,7 +194,7 @@ SUBSYSTEM_DEF(mapping)
 		max_gravity = max(grav_gen.setting, max_gravity)
 
 	max_gravity = max_gravity || level_trait(z_level_number, ZTRAIT_GRAVITY) || 0//just to make sure no nulls
-	gravity_by_z_level[z_level_number] = max_gravity
+	gravity_by_z_level["[z_level_number]"] = max_gravity
 	return max_gravity
 
 
@@ -256,43 +205,25 @@ SUBSYSTEM_DEF(mapping)
  */
 /datum/controller/subsystem/mapping/proc/setup_ruins()
 	// Generate mining ruins
-	var/list/lava_ruins = levels_by_trait(ZTRAIT_LAVA_RUINS)
-	if (lava_ruins.len)
-		seedRuins(lava_ruins, CONFIG_GET(number/lavaland_budget), list(/area/lavaland/surface/outdoors/unexplored), themed_ruins[ZTRAIT_LAVA_RUINS], clear_below = TRUE, mineral_budget = 15, mineral_budget_update = OREGEN_PRESET_LAVALAND)
 	loading_ruins = TRUE
 
 	var/list/ice_ruins = levels_by_trait(ZTRAIT_ICE_RUINS)
 	if (ice_ruins.len)
 		// needs to be whitelisted for underground too so place_below ruins work
-		seedRuins(ice_ruins, CONFIG_GET(number/icemoon_budget), list(/area/icemoon/surface/outdoors/unexplored, /area/icemoon/underground/unexplored), themed_ruins[ZTRAIT_ICE_RUINS], clear_below = TRUE, mineral_budget = 4, mineral_budget_update = OREGEN_PRESET_TRIPLE_Z)
+		seedRuins(ice_ruins, CONFIG_GET(number/icemoon_budget), list(/area/icemoon/surface/outdoors/unexplored, /area/icemoon/underground/unexplored), themed_ruins[ZTRAIT_ICE_RUINS], clear_below = TRUE)
+		for (var/ice_z in ice_ruins)
+			spawn_rivers(ice_z, 4, /turf/open/openspace/icemoon, /area/icemoon/surface/outdoors/unexplored/rivers)
 
 	var/list/ice_ruins_underground = levels_by_trait(ZTRAIT_ICE_RUINS_UNDERGROUND)
 	if (ice_ruins_underground.len)
-		seedRuins(ice_ruins_underground, CONFIG_GET(number/icemoon_budget), list(/area/icemoon/underground/unexplored), themed_ruins[ZTRAIT_ICE_RUINS_UNDERGROUND], clear_below = TRUE, mineral_budget = 21)
+		seedRuins(ice_ruins_underground, CONFIG_GET(number/icemoon_budget), list(/area/icemoon/underground/unexplored), themed_ruins[ZTRAIT_ICE_RUINS_UNDERGROUND], clear_below = TRUE)
+		for (var/ice_z in ice_ruins_underground)
+			spawn_rivers(ice_z, 4, level_trait(ice_z, ZTRAIT_BASETURF), /area/icemoon/underground/unexplored/rivers)
 
 	// Generate deep space ruins
 	var/list/space_ruins = levels_by_trait(ZTRAIT_SPACE_RUINS)
 	if (space_ruins.len)
-		// Create a proportional budget by multiplying the amount of space ruin levels in the current map over the default amount
-		var/proportional_budget = round(CONFIG_GET(number/space_budget) * (space_ruins.len / DEFAULT_SPACE_RUIN_LEVELS))
-		seedRuins(space_ruins, proportional_budget, list(/area/space), themed_ruins[ZTRAIT_SPACE_RUINS], mineral_budget = 0)
-
-/// Sets up rivers, and things that behave like rivers. So lava/plasma rivers, and chasms
-/// It is important that this happens AFTER generating mineral walls and such, since we rely on them for river logic
-/datum/controller/subsystem/mapping/proc/setup_rivers()
-	// Generate mining ruins
-	var/list/lava_ruins = levels_by_trait(ZTRAIT_LAVA_RUINS)
-	for (var/lava_z in lava_ruins)
-		spawn_rivers(lava_z, 4, /turf/open/lava/smooth/lava_land_surface, /area/lavaland/surface/outdoors/unexplored)
-
-	var/list/ice_ruins = levels_by_trait(ZTRAIT_ICE_RUINS)
-	for (var/ice_z in ice_ruins)
-		var/river_type = HAS_TRAIT(SSstation, STATION_TRAIT_FORESTED) ? /turf/open/lava/plasma/ice_moon : /turf/open/openspace/icemoon
-		spawn_rivers(ice_z, 4, river_type, /area/icemoon/surface/outdoors/unexplored/rivers)
-
-	var/list/ice_ruins_underground = levels_by_trait(ZTRAIT_ICE_RUINS_UNDERGROUND)
-	for (var/ice_z in ice_ruins_underground)
-		spawn_rivers(ice_z, 4, level_trait(ice_z, ZTRAIT_BASETURF), /area/icemoon/underground/unexplored/rivers)
+		seedRuins(space_ruins, CONFIG_GET(number/space_budget), list(/area/space), themed_ruins[ZTRAIT_SPACE_RUINS])
 
 /datum/controller/subsystem/mapping/proc/wipe_reservations(wipe_safety_delay = 100)
 	if(clearing_reserved_turfs || !initialized) //in either case this is just not needed.
@@ -370,6 +301,7 @@ Used by the AI doomsday and the self-destruct nuke.
 	turf_reservations = SSmapping.turf_reservations
 	used_turfs = SSmapping.used_turfs
 	holodeck_templates = SSmapping.holodeck_templates
+	transit = SSmapping.transit
 	areas_in_z = SSmapping.areas_in_z
 
 	config = SSmapping.config
@@ -379,7 +311,6 @@ Used by the AI doomsday and the self-destruct nuke.
 
 	z_list = SSmapping.z_list
 	multiz_levels = SSmapping.multiz_levels
-	loaded_lazy_templates = SSmapping.loaded_lazy_templates
 
 
 #define INIT_ANNOUNCE(X) to_chat(world, "<span class='boldannounce'>[X]</span>"); log_world(X)
