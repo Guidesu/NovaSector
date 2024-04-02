@@ -95,3 +95,16 @@
 							/datum/weather/snowfall = 20,
 							/datum/weather/snowfall/heavy = 20,
 							/datum/weather/hailstorm = 20)
+
+/datum/weather_controller/vulken
+		possible_weathers = list(/datum/weather/snow_storm = 50,
+							/datum/weather/snowfall = 20,
+							/datum/weather/snowfall/heavy = 20,
+							/datum/weather/hailstorm = 20,
+							/datum/weather/void_storm = 5,
+							/datum/weather/ash_storm = 40,
+							/datum/weather/ash_storm/emberfall = 10,
+							/datum/weather/sandstorm = 25,
+							/datum/weather/shroud_storm = 15,
+							/datum/weather/rain_storm = 70,
+							/datum/weather/rain = 65,)

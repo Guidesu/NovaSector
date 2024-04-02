@@ -1,6 +1,3 @@
-#define COMSIG_PARENT_QDELETING "parent_qdeleting"
-
-
 /datum/overmap_object/projectile
 	name = "projectile"
 	visual_type = /obj/effect/abstract/overmap/projectile

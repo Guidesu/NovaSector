@@ -25,14 +25,6 @@ SUBSYSTEM_DEF(weather)
 		var/randTime = rand(3000, 6000)
 		next_hit_by_zlevel["[z]"] = addtimer(CALLBACK(src, PROC_REF(make_eligible), z, possible_weather), randTime + initial(our_event.weather_duration_upper), TIMER_UNIQUE|TIMER_STOPPABLE) //Around 5-10 minutes between weathers
 
-/datum/controller/subsystem/weather/Initialize()
-	for(var/V in subtypesof(/datum/weather))
-		var/datum/weather/W = V
-	return SS_INIT_SUCCESS
-
-/datum/controller/subsystem/weather/proc/update_z_level(datum/space_level/level)
-	var/z = level.z_value
-	for(var/datum/weather/weather as anything in subtypesof(/datum/weather))
 
 
 /datum/controller/subsystem/weather/proc/run_weather(datum/weather/weather_datum_type, z_levels)

@@ -413,6 +413,31 @@ GLOBAL_LIST_EMPTY(bulkheads)         //list of all bulkheads
 		"whiteship_tram",
 	)
 
+
+/datum/controller/subsystem/mapping/proc/RequestBlockReservation(width, height, z, type = /datum/turf_reservation, turf_type_override)
+	UNTIL((!z || reservation_ready["[z]"]) && !clearing_reserved_turfs)
+	var/datum/turf_reservation/reserve = new type
+	if(turf_type_override)
+		reserve.turf_type = turf_type_override
+	if(!z)
+		for(var/i in levels_by_trait(ZTRAIT_RESERVED))
+			if(reserve.Reserve(width, height, i))
+				return reserve
+		//If we didn't return at this point, theres a good chance we ran out of room on the exisiting reserved z levels, so lets try a new one
+		num_of_res_levels += 1
+		var/datum/space_level/newReserved = add_new_zlevel("Transit/Reserved [num_of_res_levels]", list(ZTRAIT_RESERVED = TRUE))
+		initialize_reserved_level(newReserved.z_value)
+		if(reserve.Reserve(width, height, newReserved.z_value))
+			return reserve
+	else
+		if(!level_trait(z, ZTRAIT_RESERVED))
+			qdel(reserve)
+			return
+		else
+			if(reserve.Reserve(width, height, z))
+				return reserve
+	QDEL_NULL(reserve)
+
 /// Helper proc that tests to ensure all whiteship templates can spawn at their docking port, and logs their sizes
 /// This should be a unit test, but too much of our other code breaks during shuttle movement, so not yet, not yet.
 /proc/test_whiteship_sizes()
@@ -818,7 +843,8 @@ GLOBAL_LIST_EMPTY(bulkheads)         //list of all bulkheads
 /**
  * Ghosts and marks as escaped (for greentext purposes) all mobs, then deletes the shuttle.
  * Used by the Shuttle Manipulator
- */	var/notransform = null
+ */
+
 /obj/docking_port/mobile/proc/intoTheSunset()
 	// Loop over mobs
 	for(var/turf/turfs as anything in return_turfs())
@@ -827,8 +853,6 @@ GLOBAL_LIST_EMPTY(bulkheads)         //list of all bulkheads
 			if(sunset_mobs.mind && !istype(turfs, /turf/open/floor/mineral/plastitanium))
 				sunset_mobs.mind.force_escaped = TRUE
 			// Ghostize them and put them in nullspace stasis (for stat & possession checks)
-			sunset_mobs.notransform = TRUE
-			sunset_mobs.ghostize(FALSE)
 			sunset_mobs.moveToNullspace()
 
 	// Now that mobs are stowed, delete the shuttle

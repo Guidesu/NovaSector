@@ -178,8 +178,7 @@
 	//initialize things that are normally initialized after map load
 	initTemplateBounds(bounds)
 
-	if(has_ceiling)
-		var/affected_turfs = get_affected_turfs(T, FALSE)
+
 
 
 	log_game("[name] loaded at [T.x],[T.y],[T.z]")

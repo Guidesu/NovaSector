@@ -6,6 +6,7 @@
  */
 /datum/element
 	/// Option flags for element behaviour
+	var/id_arg_index = INFINITY
 	var/element_flags = NONE
 	/**
 	  * The index of the first attach argument to consider for duplicate elements

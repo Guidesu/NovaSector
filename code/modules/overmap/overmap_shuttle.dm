@@ -690,3 +690,8 @@
 /datum/overmap_object/shuttle/ess_crow
 	name = "ESS Crow"
 	speed_divisor_from_mass = 4
+
+
+/datum/overmap_object/shuttle/planet/vulken
+	name = "Vulken"
+	planet_color = COLOR_BLUE

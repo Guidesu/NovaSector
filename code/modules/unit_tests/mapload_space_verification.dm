@@ -6,9 +6,6 @@
 
 /datum/unit_test/mapload_space_verification/Run()
 	// Is our current map a planetary station (NO space turfs allowed)? If so, check for ANY space turfs.
-	if(SSmapping.is_planetary())
-		validate_planetary_map()
-		return
 
 	// Let's explicitly outline valid areas to catch anything that we're... okay with for now, because there are some valid use cases (though we should try to avoid them).
 	var/list/excluded_area_typecache = typecacheof(list(

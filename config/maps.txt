@@ -70,6 +70,11 @@ map blueshift
 	disabled
 endmap
 
+map alv_bearcat
+	votable
+endmap
+
 map lavaland
+	#default
 	votable
 endmap

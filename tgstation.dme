@@ -4520,6 +4520,7 @@
 #include "code\modules\mafia\roles\town\town_killing.dm"
 #include "code\modules\mafia\roles\town\town_protective.dm"
 #include "code\modules\mafia\roles\town\town_support.dm"
+#include "code\modules\map_content\vulken.dm"
 #include "code\modules\mapfluff\centcom\nuke_ops.dm"
 #include "code\modules\mapfluff\ruins\generic.dm"
 #include "code\modules\mapfluff\ruins\lavaland_ruin_code.dm"
