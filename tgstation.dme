@@ -12,6 +12,7 @@
 // END_PREFERENCES
 
 // BEGIN_INCLUDE
+#include "__odlint.dm"
 #include "_maps\_basemap.dm"
 #include "code\__byond_version_compat.dm"
 #include "code\_compile_options.dm"
@@ -6464,6 +6465,7 @@
 #include "modular_nova\master_files\code\modules\clothing\outfits\standard.dm"
 #include "modular_nova\master_files\code\modules\clothing\shoes\bananashoes.dm"
 #include "modular_nova\master_files\code\modules\clothing\shoes\boots.dm"
+#include "modular_nova\master_files\code\modules\clothing\shoes\costume.dm"
 #include "modular_nova\master_files\code\modules\clothing\shoes\sneakers.dm"
 #include "modular_nova\master_files\code\modules\clothing\shoes\wheelys.dm"
 #include "modular_nova\master_files\code\modules\clothing\suits\_suits.dm"
@@ -6488,6 +6490,7 @@
 #include "modular_nova\master_files\code\modules\clothing\under\jobs\rnd.dm"
 #include "modular_nova\master_files\code\modules\clothing\under\jobs\security.dm"
 #include "modular_nova\master_files\code\modules\clothing\under\jobs\civilian\civilian.dm"
+#include "modular_nova\master_files\code\modules\clothing\under\jobs\civilian\clown_mime.dm"
 #include "modular_nova\master_files\code\modules\clothing\under\jobs\civilian\suits.dm"
 #include "modular_nova\master_files\code\modules\entombed_quirk\code\entombed.dm"
 #include "modular_nova\master_files\code\modules\entombed_quirk\code\entombed_mod.dm"
