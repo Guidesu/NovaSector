@@ -304,7 +304,7 @@
 #define ETHEREAL_CHARGE_DANGEROUS (3 MEGA JOULES)
 
 
-#define CRYSTALIZE_COOLDOWN_LENGTH (120 SECONDS)
+#define CRYSTALIZE_COOLDOWN_LENGTH (5 MINUTES) //NOVA EDIT CHANGE - Ethereal Rework 2024 - Original: 120 SECONDS
 #define CRYSTALIZE_PRE_WAIT_TIME (40 SECONDS)
 #define CRYSTALIZE_DISARM_WAIT_TIME (120 SECONDS)
 #define CRYSTALIZE_HEAL_TIME (60 SECONDS)
@@ -351,7 +351,6 @@
 #define AI_ON 1
 #define AI_IDLE 2
 #define AI_OFF 3
-#define AI_Z_OFF 4
 
 //The range at which a mob should wake up if you spawn into the z level near it
 #define MAX_SIMPLEMOB_WAKEUP_RANGE 5
