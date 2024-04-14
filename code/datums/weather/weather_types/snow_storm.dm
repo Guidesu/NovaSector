@@ -2,7 +2,7 @@
 	name = "snow storm"
 	desc = "Harsh snowstorms roam the topside of this arctic planet, burying any area unfortunate enough to be in its path."
 	probability = 65
-	next_hit_time = 25
+	next_hit_time = 25 MINUTES
 	telegraph_message = "<span class='warning'>Drifting particles of snow begin to dust the surrounding area..</span>"
 	telegraph_duration = 3 MINUTES
 	telegraph_overlay = "light_snow"

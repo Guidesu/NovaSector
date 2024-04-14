@@ -63,3 +63,7 @@
 /datum/map_generator/cave_generator/lavaland/ruin_version
 	weighted_open_turf_types = list(/turf/open/misc/asteroid/basalt/lava_land_surface/no_ruins = 1)
 	weighted_closed_turf_types = list(/turf/closed/mineral/volcanic/lava_land_surface/do_not_chasm = 1)
+
+/datum/map_generator/cave_generator/lavaland/icelands
+	weighted_open_turf_types = list( /turf/open/misc/asteroid/snow/icemoon/normal = 20, /turf/open/misc/ice/icemoon/normal = 1)
+	weighted_closed_turf_types = list(/turf/closed/mineral/random/volcanic = 1, /turf/closed/mineral/random/snow = 1)

@@ -88,6 +88,11 @@ Always compile, always use that verb, and always make sure that it works for wha
 #define ZTRAIT_SNOWSTORM "Weather_Snowstorm"
 #define ZTRAIT_ASHSTORM "Weather_Ashstorm"
 #define ZTRAIT_VOIDSTORM "Weather_Voidstorm"
+#define ZTRAIT_ACID_RAIN "Acid_Rain_Storm"
+#define ZTRAIT_SANDSTORM "Sand_Storm"
+#define ZTRAIT_SHROUDSTORM "Eletrical_Storm"
+#define ZTRAIT_HAIL_STORM "Hail_Storm"
+#define ZTRAIT_NIGHT_CYCLE "Night"
 #define ZTRAIT_RAIN "Rain_Storm"
 
 /// boolean - does this z prevent ghosts from observing it

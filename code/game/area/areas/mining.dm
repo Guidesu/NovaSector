@@ -132,6 +132,9 @@
 	area_flags = VALID_TERRITORY | UNIQUE_AREA | FLORA_ALLOWED
 	sound_environment = SOUND_AREA_LAVALAND
 	ambient_buzz = 'sound/ambience/magma.ogg'
+	static_lighting = FALSE
+	base_lighting_alpha = 255
+	base_lighting_color = "#c8f8f2"
 
 /area/lavaland/surface
 	name = "Lavaland"
@@ -146,6 +149,9 @@
 	area_flags = VALID_TERRITORY | UNIQUE_AREA | FLORA_ALLOWED
 	min_ambience_cooldown = 70 SECONDS
 	max_ambience_cooldown = 220 SECONDS
+	static_lighting = FALSE
+	base_lighting_alpha = 255
+	base_lighting_color = "#c8f8f2"
 
 /area/lavaland/underground
 	name = "Lavaland Caves"
@@ -163,19 +169,36 @@
 /area/lavaland/surface/outdoors
 	name = "Lavaland Wastes"
 	outdoors = TRUE
+	static_lighting = FALSE
+	base_lighting_alpha = 255
+	base_lighting_color = "#c8f8f2"
 
 /area/lavaland/surface/outdoor/random
 	name = "Lavaland Wastelands"
 	outdoors = TRUE
 	area_flags = VALID_TERRITORY | UNIQUE_AREA | CAVES_ALLOWED | FLORA_ALLOWED | MOB_SPAWN_ALLOWED
 	map_generator = /datum/map_generator/cave_generator/lavaland
+	static_lighting = FALSE
+	base_lighting_alpha = 255
+	base_lighting_color = "#c8f8f2"
+
+/area/lavaland/surface/outdoor/random/icelands
+	name = "Icelands Wastelands"
+	outdoors = TRUE
+	area_flags = VALID_TERRITORY | UNIQUE_AREA | CAVES_ALLOWED | FLORA_ALLOWED | MOB_SPAWN_ALLOWED
+	map_generator = /datum/map_generator/cave_generator/lavaland/icelands
+	static_lighting = FALSE
+	base_lighting_alpha = 255
+	base_lighting_color = "#c8f8f2"
 
 /area/lavaland/surface/outdoors/unexplored //monsters and ruins spawn here
 	icon_state = "unexplored"
 	area_flags = VALID_TERRITORY | UNIQUE_AREA | CAVES_ALLOWED | FLORA_ALLOWED | MOB_SPAWN_ALLOWED
 	map_generator = /datum/map_generator/cave_generator/lavaland
 	outdoors = TRUE
-
+	static_lighting = FALSE
+	base_lighting_alpha = 255
+	base_lighting_color = "#c8f8f2"
 /area/lavaland/surface/outdoors/unexplored/danger //megafauna will also spawn here
 	icon_state = "danger"
 	outdoors = TRUE
@@ -203,6 +226,9 @@
 	ambience_index = AMBIENCE_ICEMOON
 	sound_environment = SOUND_AREA_ICEMOON
 	ambient_buzz = 'sound/ambience/magma.ogg'
+	static_lighting = FALSE
+	base_lighting_alpha = 255
+	base_lighting_color = "#c8f8f2"
 
 /area/icemoon/surface
 	name = "Icemoon"
@@ -215,6 +241,9 @@
 	area_flags = UNIQUE_AREA | FLORA_ALLOWED
 	min_ambience_cooldown = 70 SECONDS
 	max_ambience_cooldown = 220 SECONDS
+	static_lighting = FALSE
+	base_lighting_alpha = 150
+	base_lighting_color = "#c9c9a0"
 
 /area/icemoon/surface/outdoors // parent that defines if something is on the exterior of the station.
 	name = "Icemoon Wastes"

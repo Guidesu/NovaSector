@@ -2,13 +2,13 @@
 /datum/weather/ash_storm
 	name = "ash storm"
 	desc = "An intense atmospheric storm lifts ash off of the planet's surface and billows it down across the area, dealing intense fire damage to the unprotected."
-	next_hit_time = 25
+	next_hit_time = 25 MINUTES
 	telegraph_message = "<span class='boldwarning'>An eerie moan rises on the wind. Sheets of burning ash blacken the horizon. Seek shelter.</span>"
-	telegraph_duration = 2 MINUTES
+	telegraph_duration = 1 MINUTES
 	telegraph_overlay = "light_ash"
 
 	weather_message = "<span class='userdanger'><i>Smoldering clouds of scorching ash billow down around you! Get inside!</i></span>"
-	weather_duration_lower = 1 MINUTES
+	weather_duration_lower = 2 MINUTES
 	weather_duration_upper = 3 MINUTES
 	weather_overlay = "ash_storm"
 

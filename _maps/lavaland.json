@@ -21,18 +21,44 @@
 			"Weather_Snowstorm": true,
 			"Weather_Ashstorm": true,
 			"Weather_Voidstorm": true,
-			"Rain_Storm": true
+			"Rain_Storm": true,
+			"Hail_Storm": true,
+			"Eletrical_Storm": true,
+			"Sand_Storm": true,
+			"Acid_Rain_Storm": true,
+			"Night": true
 		},
 		{
-			"Down": true,
 			"Up": true,
+			"Down": true,
 			"Mining": true,
 			"Linkage": null,
 			"Gravity": true,
 			"Weather_Snowstorm": true,
 			"Weather_Ashstorm": true,
 			"Weather_Voidstorm": true,
-			"Rain_Storm": true
+			"Rain_Storm": true,
+			"Hail_Storm": true,
+			"Eletrical_Storm": true,
+			"Sand_Storm": true,
+			"Acid_Rain_Storm": true,
+			"Night": true
+		},
+		{
+			"Up": true,
+			"Down": true,
+			"Mining": true,
+			"Linkage": null,
+			"Gravity": true,
+			"Weather_Snowstorm": true,
+			"Weather_Ashstorm": true,
+			"Weather_Voidstorm": true,
+			"Rain_Storm": true,
+			"Hail_Storm": true,
+			"Eletrical_Storm": true,
+			"Sand_Storm": true,
+			"Acid_Rain_Storm": true,
+			"Night": true
 		},
 		{
 			"Down": true,
@@ -42,7 +68,12 @@
 			"Weather_Snowstorm": true,
 			"Weather_Ashstorm": true,
 			"Weather_Voidstorm": true,
-			"Rain_Storm": true
+			"Rain_Storm": true,
+			"Hail_Storm": true,
+			"Eletrical_Storm": true,
+			"Sand_Storm": true,
+			"Acid_Rain_Storm": true,
+			"Night": true
 		}
 	],
 	"minetype": "none",

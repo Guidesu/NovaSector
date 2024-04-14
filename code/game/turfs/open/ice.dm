@@ -37,6 +37,10 @@
 	initial_gas_mix = ICEMOON_DEFAULT_ATMOS
 	slowdown = 0
 
+/turf/open/misc/ice/icemoon/normal
+	initial_gas_mix = COLD_ATMOS
+	slowdown = 0
+
 /turf/open/misc/ice/icemoon/no_planet_atmos
 	planetary_atmos = FALSE
 

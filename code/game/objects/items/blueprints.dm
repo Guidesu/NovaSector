@@ -18,55 +18,12 @@
  */
 /obj/item/blueprints
 	name = "station blueprints"
-	desc = "Blueprints of something to be made. Good to create new areas."
+	desc = "Blueprints of the station. There is a \"Classified\" stamp and several coffee stains on it."
 	icon = 'icons/obj/scrolls.dmi'
 	icon_state = "blueprints"
 	inhand_icon_state = "blueprints"
 	attack_verb_continuous = list("attacks", "baps", "hits")
 	attack_verb_simple = list("attack", "bap", "hit")
-	var/fluffnotice = "Nobody's gonna read this stuff!"
-	var/in_use = FALSE
-	///When using it to create a new area, this will be its type.
-	var/new_area_type = /area
-
-/obj/item/areaeditor/attack_self(mob/user)
-	add_fingerprint(user)
-	. = "<BODY><HTML><head><title>[src]</title></head> \
-				<h2>[station_name()] [src.name]</h2> \
-				<small>[fluffnotice]</small><hr>"
-	switch(get_area_type())
-		if(AREA_SPACE)
-			. += "<p>According to the [src.name], you are now in an unclaimed territory.</p>"
-		if(AREA_SPECIAL)
-			. += "<p>This place is not noted on the [src.name].</p>"
-	. += "<p><a href='?src=[REF(src)];create_area=1'>Create or modify an existing area</a></p>"
-
-
-/obj/item/areaeditor/Topic(href, href_list)
-	if(..())
-		return TRUE
-	if(!usr.can_perform_action(src) || usr != loc)
-		usr << browse(null, "window=blueprints")
-		return TRUE
-	if(href_list["create_area"])
-		if(in_use)
-			return
-		var/area/A = get_area(usr)
-		if(A.area_flags & NOTELEPORT)
-			to_chat(usr, span_warning("You cannot edit restricted areas."))
-			return
-		in_use = TRUE
-		create_area(usr, new_area_type)
-		in_use = FALSE
-	updateUsrDialog()
-
-//Station blueprints!!!
-/obj/item/areaeditor/blueprints
-	name = "station blueprints"
-	desc = "Blueprints of the station. There is a \"Classified\" stamp and several coffee stains on it."
-	icon = 'icons/obj/scrolls.dmi'
-	icon_state = "blueprints"
-	fluffnotice = "Property of Free Union Of Vulken. For heads of staff only. Store in high-secure storage."
 	resistance_flags = INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | ACID_PROOF
 	interaction_flags_atom = parent_type::interaction_flags_atom | INTERACT_ATOM_ALLOW_USER_LOCATION | INTERACT_ATOM_IGNORE_MOBILITY
 
@@ -263,9 +220,7 @@
 /obj/item/blueprints/cyborg
 	name = "station schematics"
 	desc = "A digital copy of the station blueprints stored in your memory."
-	icon = 'icons/obj/scrolls.dmi'
-	icon_state = "blueprints"
-	fluffnotice = "Intellectual Property of Free Union Of Vulken. For use in engineering cyborgs only. Wipe from memory upon departure from the station."
+	fluffnotice = "Intellectual Property of Nanotrasen. For use in engineering cyborgs only. Wipe from memory upon departure from the station."
 
 ///Golem blueprints - Used to make golem areas that won't give the hazardous area debuffs.
 /obj/item/blueprints/golem

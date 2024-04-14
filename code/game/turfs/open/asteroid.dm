@@ -231,7 +231,11 @@ GLOBAL_LIST_EMPTY(dug_up_basalt)
 
 /turf/open/misc/asteroid/snow/icemoon
 	baseturfs = /turf/open/openspace/icemoon
-	initial_gas_mix = ICEMOON_DEFAULT_ATMOS
+	initial_gas_mix = LAVALAND_DEFAULT_ATMOS
+	slowdown = 0
+
+/turf/open/misc/asteroid/snow/icemoon/normal
+	initial_gas_mix = COLD_ATMOS
 	slowdown = 0
 
 /// Exact subtype as parent, just used in ruins to prevent other ruins/chasms from spawning on top of it.
