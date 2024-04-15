@@ -73,3 +73,8 @@ endmap
 map lavaland
 	votable
 endmap
+
+map ouroboros
+	maxplayers 80
+	votable
+endmap
