@@ -1,12 +1,10 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "aa" = (
-/obj/structure/table/reinforced,
-/obj/item/stack/sheet/glass/fifty,
-/obj/item/stack/sheet/iron/fifty,
-/obj/item/stack/sheet/plasteel/fifty,
-/obj/item/stack/sheet/plastic/fifty,
-/turf/open/floor/iron/colony,
-/area/ruin/interdyne_planetary_base)
+/obj/structure/flora/biolumi/lamp{
+	desc = "Bioluminescent plas"
+	},
+/turf/open/floor/grass,
+/area/mine/living_quarters)
 "ab" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -22,7 +20,7 @@
 	dir = 4
 	},
 /obj/machinery/light/cold/directional/west,
-/obj/machinery/vending/imported/mothic,
+/obj/structure/closet/secure_closet/freezer/kitchen/all_access,
 /turf/open/floor/iron/dark/textured,
 /area/ruin/interdyne_planetary_base/cargo)
 "ag" = (
@@ -52,7 +50,10 @@
 	dir = 4
 	},
 /turf/open/floor/iron/colony,
-/area/ruin/interdyne_planetary_base)
+/area/station{
+	name = "Hangar";
+	has_gravity = 1
+	})
 "aj" = (
 /turf/closed/mineral/random/volcanic,
 /area/lavaland/surface/outdoors/explored{
@@ -171,6 +172,10 @@
 	},
 /turf/open/floor/iron/colony/bolts,
 /area/ruin/interdyne_planetary_base/med)
+"aH" = (
+/obj/structure/closet/crate,
+/turf/open/floor/iron/colony,
+/area/mine/living_quarters)
 "aI" = (
 /obj/structure/table/reinforced/rglass,
 /obj/item/emergency_bed{
@@ -191,7 +196,7 @@
 /obj/item/exodrone,
 /obj/structure/railing,
 /turf/open/floor/iron/colony,
-/area/ruin/interdyne_planetary_base)
+/area/station/cargo/storage)
 "aM" = (
 /turf/closed/wall/prefab_plastic,
 /area/ruin/interdyne_planetary_base/eng)
@@ -214,6 +219,14 @@
 	},
 /turf/open/floor/iron/dark/smooth_corner,
 /area/ruin/interdyne_planetary_base/med/pharm)
+"aX" = (
+/obj/machinery/airalarm/directional/east,
+/obj/structure/railroad,
+/turf/open/floor/iron/colony,
+/area/station/hallway{
+	name = "Colony Hallway";
+	has_gravity = 1
+	})
 "aY" = (
 /obj/effect/turf_decal/siding/wood/corner,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -244,9 +257,9 @@
 	outdoors = 0
 	})
 "bc" = (
-/obj/structure/closet/crate,
 /obj/effect/turf_decal/bot_white,
 /obj/effect/turf_decal/siding/dark_green,
+/obj/structure/table,
 /turf/open/floor/iron/textured_large,
 /area/ruin/interdyne_planetary_base/cargo)
 "be" = (
@@ -297,11 +310,23 @@
 /obj/machinery/light_switch/directional/south,
 /turf/open/floor/iron/colony,
 /area/ruin/interdyne_planetary_base/main)
+"bx" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/effect/turf_decal/trimline/dark_red/filled/warning,
+/obj/structure/window/reinforced/survival_pod/spawner/directional/north,
+/turf/open/floor/engine,
+/area/mine/living_quarters)
 "bz" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/structure/cable,
 /turf/open/floor/iron/colony,
-/area/ruin/interdyne_planetary_base)
+/area/station/hallway{
+	name = "Colony Hallway";
+	has_gravity = 1
+	})
 "bB" = (
 /obj/effect/turf_decal/tile/dark_green/half{
 	dir = 4
@@ -319,7 +344,10 @@
 "bE" = (
 /obj/structure/window/fulltile/colony_fabricator,
 /turf/closed/wall/prefab_plastic,
-/area/ruin/interdyne_planetary_base)
+/area/station/hallway{
+	name = "Colony Hallway";
+	has_gravity = 1
+	})
 "bF" = (
 /obj/machinery/light/directional/south,
 /obj/structure/fake_stairs/directional/east,
@@ -376,6 +404,11 @@
 /obj/structure/sign/flag/nanotrasen/directional/north,
 /turf/open/floor/iron/dark/smooth_corner,
 /area/ruin/interdyne_planetary_base/main)
+"bM" = (
+/obj/structure/cable,
+/obj/machinery/light/floor,
+/turf/open/floor/iron/colony,
+/area/mine/living_quarters)
 "bN" = (
 /obj/machinery/light/small/directional/south,
 /turf/open/floor/iron/colony,
@@ -426,7 +459,7 @@
 /area/ruin/interdyne_planetary_base/main)
 "cb" = (
 /obj/machinery/firealarm/directional/north,
-/obj/machinery/washing_machine,
+/obj/machinery/pdapainter,
 /turf/open/floor/iron/colony,
 /area/ruin/interdyne_planetary_base/main)
 "cc" = (
@@ -480,6 +513,7 @@
 /area/ruin/interdyne_planetary_base/main)
 "cl" = (
 /mob/living/basic/seedling,
+/obj/machinery/hydroponics/soil,
 /turf/open/misc/asteroid/basalt,
 /area/ruin/interdyne_planetary_base/serv/hydr)
 "cm" = (
@@ -505,8 +539,12 @@
 /obj/machinery/light/directional/west,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/structure/cable,
 /turf/open/floor/iron/colony,
-/area/ruin/interdyne_planetary_base)
+/area/station/hallway{
+	name = "Colony Hallway";
+	has_gravity = 1
+	})
 "ct" = (
 /obj/structure/railing/wooden_fencing{
 	dir = 1
@@ -515,7 +553,10 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/light/cold/directional/south,
 /turf/open/floor/wood,
-/area/ruin/interdyne_planetary_base)
+/area/station/hallway{
+	name = "Colony Hallway";
+	has_gravity = 1
+	})
 "cu" = (
 /obj/structure/cable,
 /obj/structure/disposalpipe/segment,
@@ -621,9 +662,7 @@
 /obj/effect/turf_decal/tile/dark_green{
 	dir = 4
 	},
-/obj/machinery/vending/imported/yangyu{
-	onstation = 0
-	},
+/obj/structure/closet/secure_closet/freezer/meat/all_access,
 /turf/open/floor/iron/dark/textured,
 /area/ruin/interdyne_planetary_base/cargo)
 "cM" = (
@@ -720,11 +759,22 @@
 /area/ruin/interdyne_planetary_base/cargo/deck{
 	name = "Bedroom"
 	})
-"dm" = (
-/obj/structure/railroad,
-/obj/machinery/airalarm/directional/east,
-/turf/open/floor/iron/colony,
+"dl" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 9
+	},
+/obj/structure/marker_beacon/burgundy,
+/obj/effect/turf_decal/trimline/dark_red/filled/corner,
+/obj/structure/window/reinforced/survival_pod/spawner/directional/west,
+/obj/structure/window/reinforced/survival_pod/spawner/directional/north,
+/turf/open/floor/plating/reinforced,
 /area/ruin/interdyne_planetary_base)
+"dm" = (
+/turf/open/floor/iron/colony,
+/area/station/hallway{
+	name = "Colony Hallway";
+	has_gravity = 1
+	})
 "dp" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -741,7 +791,7 @@
 /obj/item/fuel_pellet/exotic,
 /obj/item/fuel_pellet/exotic,
 /turf/open/floor/iron/colony,
-/area/ruin/interdyne_planetary_base)
+/area/station/cargo/storage)
 "ds" = (
 /obj/structure/chair/stool/bar,
 /obj/effect/turf_decal/siding/thinplating,
@@ -873,6 +923,9 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/disposalpipe/segment,
+/obj/structure/railing{
+	dir = 8
+	},
 /turf/open/floor/iron/kitchen{
 	dir = 4
 	},
@@ -895,6 +948,7 @@
 /obj/effect/turf_decal/tile/blue/half{
 	dir = 4
 	},
+/obj/structure/cable,
 /turf/open/floor/iron/dark/small,
 /area/ruin/interdyne_planetary_base/med)
 "ed" = (
@@ -935,11 +989,18 @@
 	},
 /turf/open/floor/iron/colony/bolts,
 /area/ruin/interdyne_planetary_base/med)
+"en" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/effect/turf_decal/trimline/dark_red/filled/warning,
+/obj/structure/window/reinforced/survival_pod/spawner/directional/north,
+/turf/open/floor/engine,
+/area/ruin/interdyne_planetary_base)
 "ep" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/cable,
-/obj/machinery/door/firedoor/solid,
 /obj/structure/disposalpipe/segment,
 /obj/machinery/door/airlock/colony_prefab,
 /turf/open/floor/iron/colony,
@@ -1024,7 +1085,7 @@
 /obj/machinery/exodrone_launcher,
 /obj/item/exodrone,
 /turf/open/floor/iron/colony,
-/area/ruin/interdyne_planetary_base)
+/area/station/cargo/storage)
 "eJ" = (
 /obj/structure/wall_torch/spawns_lit/directional/north,
 /obj/effect/turf_decal/weather/dirt{
@@ -1043,7 +1104,10 @@
 /obj/effect/turf_decal/trimline/brown/filled/line,
 /obj/effect/turf_decal/box,
 /turf/open/floor/iron/colony,
-/area/ruin/interdyne_planetary_base)
+/area/station/hallway{
+	name = "Colony Hallway";
+	has_gravity = 1
+	})
 "eL" = (
 /obj/effect/turf_decal/tile/dark_green,
 /turf/open/floor/iron/dark/textured,
@@ -1052,13 +1116,16 @@
 /obj/effect/turf_decal/trimline/blue/filled/line,
 /obj/machinery/light/cold/directional/south,
 /turf/open/floor/iron/colony,
-/area/ruin/interdyne_planetary_base)
+/area/station/hallway{
+	name = "Colony Hallway";
+	has_gravity = 1
+	})
 "eO" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
 /turf/closed/wall/prefab_plastic,
-/area/ruin/interdyne_planetary_base)
+/area/station/cargo/storage)
 "eQ" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/pink,
 /obj/structure/window/reinforced/survival_pod/spawner/directional/west,
@@ -1146,11 +1213,10 @@
 "fd" = (
 /obj/structure/sign/warning/no_smoking/circle/directional/south,
 /obj/machinery/door/firedoor,
-/obj/effect/mapping_helpers/airlock/cutaiwire,
-/obj/machinery/door/airlock/colony_prefab,
 /turf/open/floor/iron/colony/white,
 /area/ruin/interdyne_planetary_base/main)
 "fe" = (
+/obj/structure/table,
 /turf/open/floor/iron/colony,
 /area/ruin/interdyne_planetary_base/med/viro)
 "fh" = (
@@ -1210,7 +1276,7 @@
 /obj/structure/cable,
 /obj/machinery/power/floodlight,
 /turf/open/floor/bamboo,
-/area/lavaland/surface/outdoors/explored)
+/area/lavaland/surface/outdoors)
 "fy" = (
 /obj/machinery/button/door/directional/west{
 	id = "interdynesurgery";
@@ -1224,8 +1290,13 @@
 "fz" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/turf/open/floor/iron,
+/turf/open/floor/grass,
 /area/ruin/interdyne_planetary_base)
+"fB" = (
+/obj/effect/turf_decal/tile/dark_green,
+/obj/structure/cable,
+/turf/open/floor/iron/colony,
+/area/ruin/interdyne_planetary_base/main)
 "fD" = (
 /obj/machinery/door/airlock/colony_prefab,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -1237,7 +1308,10 @@
 	dir = 4
 	},
 /turf/open/floor/grass,
-/area/ruin/interdyne_planetary_base)
+/area/station{
+	name = "Hangar";
+	has_gravity = 1
+	})
 "fG" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -1289,10 +1363,10 @@
 /obj/structure/cable,
 /obj/machinery/power/colony_ore_thumper,
 /turf/open/misc/asteroid/basalt,
-/area/lavaland/surface/outdoors/explored)
+/area/lavaland/surface/outdoors)
 "fQ" = (
 /turf/open/genturf,
-/area/lavaland/surface/outdoor/random)
+/area/lavaland/surface/outdoors/unexplored)
 "fR" = (
 /obj/structure/wall_torch/spawns_lit/directional/north,
 /obj/structure/railing/wooden_fencing{
@@ -1357,10 +1431,40 @@
 	outdoors = 0
 	})
 "gj" = (
-/obj/structure/table/reinforced,
 /obj/machinery/recharger,
+/obj/machinery/light/directional/north,
+/obj/machinery/mining_weather_monitor/directional/north,
+/obj/structure/table/reinforced/rglass,
 /turf/open/floor/iron/colony,
 /area/ruin/interdyne_planetary_base/main)
+"gk" = (
+/obj/structure/closet/crate{
+	name = "gear crate"
+	},
+/obj/item/clothing/glasses/hud/health/night,
+/obj/item/clothing/glasses/hud/health/night,
+/obj/item/clothing/glasses/hud/health/night,
+/obj/item/storage/belt/military,
+/obj/item/storage/belt/military,
+/obj/item/storage/belt/military,
+/obj/item/ammo_box/c9mm,
+/obj/item/ammo_box/c9mm,
+/obj/item/ammo_box/magazine/m9mm,
+/obj/item/ammo_box/magazine/m9mm,
+/obj/item/ammo_box/magazine/m9mm,
+/obj/item/ammo_box/magazine/m9mm,
+/obj/item/clothing/glasses/meson/night,
+/obj/item/clothing/glasses/meson/night,
+/obj/item/clothing/glasses/meson/night,
+/obj/effect/turf_decal/bot_white,
+/obj/item/card/id/advanced/chameleon/black,
+/obj/item/card/id/advanced/chameleon/black,
+/obj/item/card/id/advanced/chameleon/black,
+/obj/structure/railing{
+	dir = 8
+	},
+/turf/open/floor/iron/colony,
+/area/mine/living_quarters)
 "gn" = (
 /obj/structure/rack,
 /obj/item/storage/medkit/frontier/stocked,
@@ -1422,7 +1526,7 @@
 	dir = 4
 	},
 /turf/open/floor/iron/colony,
-/area/ruin/interdyne_planetary_base)
+/area/station/cargo/storage)
 "gD" = (
 /obj/structure/window/reinforced/survival_pod/spawner/directional/south,
 /obj/machinery/door/window/survival_pod/left/directional/east{
@@ -1463,6 +1567,16 @@
 	},
 /turf/open/floor/iron/colony,
 /area/ruin/interdyne_planetary_base)
+"gI" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/obj/effect/turf_decal/trimline/dark_red/filled/warning{
+	dir = 8
+	},
+/obj/structure/cable,
+/turf/open/floor/engine,
+/area/ruin/interdyne_planetary_base)
 "gK" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 1
@@ -1485,6 +1599,7 @@
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/structure/cable,
 /turf/open/floor/iron/colony/bolts,
 /area/ruin/interdyne_planetary_base/med)
 "gN" = (
@@ -1507,6 +1622,11 @@
 /obj/effect/turf_decal/tile/purple/half,
 /turf/open/floor/iron/colony,
 /area/ruin/interdyne_planetary_base/main)
+"gR" = (
+/obj/effect/turf_decal/siding/dark,
+/obj/structure/table/reinforced,
+/turf/open/floor/iron/colony/bolts,
+/area/ruin/interdyne_planetary_base/cargo)
 "gS" = (
 /obj/structure/window/reinforced/survival_pod/spawner/directional/west,
 /obj/structure/window/reinforced/survival_pod/spawner/directional/north,
@@ -1516,6 +1636,19 @@
 /obj/machinery/door/airlock/colony_prefab,
 /turf/open/floor/iron/colony/white,
 /area/ruin/interdyne_planetary_base/cargo)
+"gV" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/structure/cable,
+/turf/open/floor/iron/colony,
+/area/station{
+	name = "Hangar";
+	has_gravity = 1
+	})
+"gW" = (
+/obj/machinery/fishing_portal_generator,
+/turf/open/genturf,
+/area/lavaland/surface/outdoors/unexplored)
 "gX" = (
 /obj/structure/table/reinforced,
 /turf/open/floor/wood/tile,
@@ -1602,7 +1735,10 @@
 	dir = 1
 	},
 /turf/open/floor/iron/colony,
-/area/ruin/interdyne_planetary_base)
+/area/station{
+	name = "Hangar";
+	has_gravity = 1
+	})
 "hk" = (
 /obj/effect/turf_decal/siding/dark{
 	dir = 9
@@ -1621,7 +1757,10 @@
 	dir = 8
 	},
 /turf/open/floor/grass,
-/area/ruin/interdyne_planetary_base)
+/area/station{
+	name = "Hangar";
+	has_gravity = 1
+	})
 "hq" = (
 /obj/effect/turf_decal/stripes/line,
 /obj/effect/turf_decal/stripes/line{
@@ -1647,6 +1786,12 @@
 /obj/item/stack/cable_coil,
 /turf/open/floor/iron/colony,
 /area/ruin/interdyne_planetary_base/main)
+"hv" = (
+/obj/machinery/vending/deforest_medvend{
+	onstation = 0
+	},
+/turf/open/floor/iron/colony,
+/area/mine/living_quarters)
 "hw" = (
 /obj/effect/turf_decal/siding/thinplating,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -1742,6 +1887,9 @@
 /obj/effect/turf_decal/stripes/line,
 /turf/open/floor/wood/parquet,
 /area/ruin/interdyne_planetary_base/main/dorms)
+"hS" = (
+/turf/open/floor/iron/colony,
+/area/station/cargo/storage)
 "hT" = (
 /obj/effect/turf_decal/tile/dark_green{
 	dir = 4
@@ -1767,7 +1915,7 @@
 /obj/effect/turf_decal/bot,
 /obj/effect/turf_decal/bot/left,
 /turf/open/floor/iron/colony,
-/area/ruin/interdyne_planetary_base)
+/area/station/cargo/storage)
 "hW" = (
 /obj/effect/turf_decal/tile/dark_green/half{
 	dir = 1
@@ -1791,8 +1939,10 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
+/obj/structure/cable,
+/obj/machinery/power/apc/auto_name/directional/north,
 /turf/open/floor/iron/colony/bolts,
-/area/ruin/interdyne_planetary_base)
+/area/mine/medical)
 "ic" = (
 /obj/machinery/door/window/survival_pod/left/directional/east{
 	req_access = list("syndicate")
@@ -1826,7 +1976,6 @@
 /area/ruin/interdyne_planetary_base/cargo/ware)
 "ii" = (
 /obj/effect/turf_decal/tile/dark_green,
-/obj/machinery/suit_storage_unit/mining,
 /obj/machinery/camera/autoname/directional/west{
 	network = list("intd13")
 	},
@@ -1868,7 +2017,10 @@
 /obj/structure/railroad,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
 /turf/open/floor/iron/colony,
-/area/ruin/interdyne_planetary_base)
+/area/station/hallway{
+	name = "Colony Hallway";
+	has_gravity = 1
+	})
 "iu" = (
 /obj/machinery/button/door/directional/west{
 	id = "IDyneWC";
@@ -1918,6 +2070,12 @@
 /obj/structure/cable,
 /turf/open/floor/iron/colony,
 /area/ruin/interdyne_planetary_base/serv/hydr)
+"iC" = (
+/turf/open/floor/grass,
+/area/station{
+	name = "Hangar";
+	has_gravity = 1
+	})
 "iD" = (
 /obj/effect/turf_decal/siding/dark,
 /turf/open/floor/iron/colony/bolts,
@@ -1952,7 +2110,7 @@
 /obj/structure/fluff/minepost{
 	layer = 5
 	},
-/turf/open/floor/iron/colony,
+/turf/open/floor/grass,
 /area/ruin/interdyne_planetary_base)
 "iR" = (
 /obj/structure/bed/double,
@@ -2035,6 +2193,19 @@
 /obj/structure/closet/crate/trashcart/laundry,
 /turf/open/floor/iron/colony,
 /area/ruin/interdyne_planetary_base/main/dorms)
+"jn" = (
+/obj/machinery/vending/imported/mothic,
+/turf/open/floor/iron/colony,
+/area/mine/living_quarters)
+"jo" = (
+/obj/structure/cable,
+/obj/structure/railing{
+	dir = 8
+	},
+/turf/open/floor/iron/kitchen{
+	dir = 4
+	},
+/area/ruin/interdyne_planetary_base/serv/kitchen)
 "jp" = (
 /obj/machinery/cryo_cell,
 /turf/open/floor/iron/colony,
@@ -2143,9 +2314,7 @@
 /obj/machinery/light/directional/north,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/vehicle/sealed/mecha/ripley/cargo{
-	name = "\improper APLU \"Big Bass\""
-	},
+/obj/vehicle/sealed/mecha/ripley/cargo,
 /turf/open/floor/iron/recharge_floor,
 /area/ruin/interdyne_planetary_base/main)
 "jN" = (
@@ -2163,10 +2332,17 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron/colony,
-/area/ruin/interdyne_planetary_base)
+/area/station/hallway{
+	name = "Colony Hallway";
+	has_gravity = 1
+	})
 "jP" = (
+/obj/machinery/power/apc/auto_name/directional/north,
+/obj/structure/cable,
 /turf/open/floor/catwalk_floor/iron_dark,
-/area/ruin/interdyne_planetary_base/main/vault)
+/area/station/cargo/miningdock/oresilo{
+	has_gravity = 1
+	})
 "jR" = (
 /obj/structure/table/reinforced,
 /obj/item/storage/medkit/brute{
@@ -2194,7 +2370,15 @@
 	dir = 4
 	},
 /turf/open/floor/grass,
-/area/ruin/interdyne_planetary_base)
+/area/station{
+	name = "Hangar";
+	has_gravity = 1
+	})
+"jY" = (
+/obj/effect/turf_decal/box/red/corners,
+/obj/structure/marker_beacon/lime,
+/turf/open/floor/plating,
+/area/ruin/interdyne_planetary_base/cargo/ware)
 "ka" = (
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/iron/colony,
@@ -2271,12 +2455,13 @@
 	dir = 4
 	},
 /turf/open/floor/iron/colony,
-/area/ruin/interdyne_planetary_base)
+/area/station/cargo/storage)
 "kr" = (
-/obj/machinery/door/firedoor/solid,
-/obj/machinery/door/airlock/colony_prefab,
 /turf/open/floor/iron/colony,
-/area/ruin/interdyne_planetary_base/main)
+/area/station{
+	name = "Hangar";
+	has_gravity = 1
+	})
 "ks" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
 /obj/machinery/firealarm/directional/west,
@@ -2429,13 +2614,17 @@
 /obj/machinery/light/small/directional/east,
 /turf/open/floor/iron,
 /area/ruin/interdyne_planetary_base)
+"kW" = (
+/obj/structure/marker_beacon/lime,
+/turf/open/floor/catwalk_floor/iron_dark,
+/area/ruin/interdyne_planetary_base/cargo/ware)
 "kY" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
 /turf/open/floor/iron/colony,
 /area/ruin/interdyne_planetary_base/main)
 "la" = (
 /mob/living/basic/mining_drone,
-/turf/open/floor/iron/colony,
+/turf/open/floor/grass,
 /area/ruin/interdyne_planetary_base)
 "lb" = (
 /obj/structure/window/reinforced/survival_pod/spawner/directional/west,
@@ -2452,18 +2641,11 @@
 /obj/effect/turf_decal/siding/dark_green{
 	dir = 6
 	},
-/obj/structure/closet/crate/internals,
-/obj/item/clothing/mask/gas,
-/obj/item/clothing/mask/gas,
-/obj/item/tank/internals/oxygen/yellow,
-/obj/item/tank/internals/oxygen/yellow,
-/obj/item/tank/internals/oxygen/yellow,
-/obj/item/clothing/mask/gas,
-/obj/item/tank/internals/emergency_oxygen/double,
-/obj/item/tank/internals/emergency_oxygen/double,
-/obj/item/tank/internals/emergency_oxygen/double,
 /obj/machinery/camera/autoname/directional/south{
 	network = list("intd13")
+	},
+/obj/structure/chair/plastic{
+	dir = 8
 	},
 /turf/open/floor/iron/textured_large,
 /area/ruin/interdyne_planetary_base/cargo)
@@ -2481,6 +2663,7 @@
 /obj/structure/chair/office/light{
 	dir = 1
 	},
+/obj/structure/cable,
 /turf/open/floor/iron/dark/small,
 /area/ruin/interdyne_planetary_base/med)
 "lh" = (
@@ -2498,6 +2681,10 @@
 /obj/machinery/light/cold/directional/north,
 /turf/open/floor/iron/colony/white/bolts,
 /area/ruin/interdyne_planetary_base/science/xeno)
+"ll" = (
+/obj/structure/marker_beacon/lime,
+/turf/open/floor/plating,
+/area/ruin/interdyne_planetary_base/cargo/ware)
 "lm" = (
 /obj/effect/turf_decal/tile/purple/half,
 /turf/open/floor/iron/colony,
@@ -2512,6 +2699,7 @@
 	req_access = list("syndicate");
 	name = "Cargo Blast Door Control"
 	},
+/obj/structure/marker_beacon/lime,
 /turf/open/floor/catwalk_floor/iron_dark,
 /area/ruin/interdyne_planetary_base/cargo/ware)
 "lr" = (
@@ -2524,6 +2712,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/airalarm/directional/east,
+/obj/machinery/pipedispenser,
 /turf/open/floor/iron/colony,
 /area/ruin/interdyne_planetary_base/main)
 "ly" = (
@@ -2533,7 +2722,7 @@
 	dir = 1
 	},
 /turf/open/floor/iron/colony,
-/area/ruin/interdyne_planetary_base)
+/area/station/cargo/storage)
 "lz" = (
 /obj/structure/water_source/puddle,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -2698,6 +2887,16 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/wood/parquet,
 /area/ruin/interdyne_planetary_base/main/dorms)
+"mg" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 9
+	},
+/obj/structure/marker_beacon/burgundy,
+/obj/effect/turf_decal/trimline/dark_red/filled/corner,
+/obj/structure/window/reinforced/survival_pod/spawner/directional/west,
+/obj/structure/window/reinforced/survival_pod/spawner/directional/north,
+/turf/open/floor/plating/reinforced,
+/area/mine/living_quarters)
 "mj" = (
 /obj/structure/rack/wooden,
 /obj/item/stack/sheet/iron/fifty,
@@ -2712,14 +2911,23 @@
 	},
 /obj/item/gun/energy/cell_loaded/medigun/standard,
 /turf/open/floor/catwalk_floor/iron_dark,
-/area/ruin/interdyne_planetary_base/main/vault)
+/area/station/cargo/miningdock/oresilo{
+	has_gravity = 1
+	})
 "mn" = (
 /obj/effect/turf_decal/vg_decals/department/med,
 /obj/effect/turf_decal/trimline/blue/filled/line,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron/colony,
-/area/ruin/interdyne_planetary_base)
+/area/station/hallway{
+	name = "Colony Hallway";
+	has_gravity = 1
+	})
+"mo" = (
+/obj/machinery/skill_station/plasmaglass,
+/turf/open/floor/iron/colony,
+/area/mine/living_quarters)
 "mp" = (
 /obj/machinery/suit_storage_unit/medical,
 /obj/effect/turf_decal/tile/dark_blue/opposingcorners,
@@ -2734,7 +2942,10 @@
 	},
 /obj/effect/turf_decal/caution/stand_clear,
 /turf/open/floor/iron/colony,
-/area/ruin/interdyne_planetary_base)
+/area/station{
+	name = "Hangar";
+	has_gravity = 1
+	})
 "mA" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 1
@@ -2752,6 +2963,7 @@
 	name = "South Entrance Camera";
 	c_tag = "South Interdyne Entrance"
 	},
+/obj/structure/table/reinforced/plasmarglass,
 /turf/open/floor/iron/colony/bolts,
 /area/ruin/interdyne_planetary_base/cargo)
 "mE" = (
@@ -2759,9 +2971,19 @@
 /obj/machinery/vending/wardrobe/coroner_wardrobe,
 /turf/open/floor/iron/colony,
 /area/ruin/interdyne_planetary_base/med/morgue)
+"mF" = (
+/obj/machinery/light/cold/directional/south,
+/turf/open/floor/iron/colony,
+/area/station/hallway{
+	name = "Colony Hallway";
+	has_gravity = 1
+	})
 "mG" = (
 /obj/structure/chair/plastic{
 	dir = 4
+	},
+/obj/structure/railing{
+	dir = 8
 	},
 /turf/open/floor/iron/checker,
 /area/ruin/interdyne_planetary_base/serv/bar)
@@ -2785,6 +3007,14 @@
 /obj/structure/window/reinforced/survival_pod/spawner/directional/west,
 /obj/machinery/plumbing/synthesizer/colony_hydroponics,
 /turf/open/floor/iron/colony,
+/area/ruin/interdyne_planetary_base)
+"mP" = (
+/obj/effect/turf_decal/stripes/line,
+/obj/effect/turf_decal/trimline/dark_red/filled/warning{
+	dir = 1
+	},
+/obj/structure/cable,
+/turf/open/floor/engine,
 /area/ruin/interdyne_planetary_base)
 "mR" = (
 /obj/structure/window/reinforced/survival_pod/spawner/directional/east,
@@ -2814,6 +3044,7 @@
 /obj/effect/turf_decal/tile/dark_green/half{
 	dir = 4
 	},
+/obj/structure/table,
 /turf/open/floor/iron/colony,
 /area/ruin/interdyne_planetary_base/med/viro)
 "mV" = (
@@ -2889,18 +3120,15 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/light/cold/directional/south,
+/obj/structure/cable,
 /turf/open/floor/iron/colony,
 /area/ruin/interdyne_planetary_base/med)
 "nl" = (
-/obj/structure/cable,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/door/firedoor/solid,
-/obj/effect/turf_decal/tile/brown/half,
-/obj/structure/disposalpipe/segment{
-	dir = 4
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 1
 	},
-/obj/machinery/door/airlock/colony_prefab,
+/obj/structure/table/reinforced/rglass,
+/obj/machinery/photocopier,
 /turf/open/floor/iron/colony,
 /area/ruin/interdyne_planetary_base/main)
 "nn" = (
@@ -2950,14 +3178,17 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/cable,
 /turf/open/floor/iron/colony,
-/area/ruin/interdyne_planetary_base)
+/area/station/cargo/storage)
 "nv" = (
 /obj/structure/railroad,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 2
 	},
 /turf/open/floor/iron/colony,
-/area/ruin/interdyne_planetary_base)
+/area/station/hallway{
+	name = "Colony Hallway";
+	has_gravity = 1
+	})
 "nw" = (
 /obj/structure/table,
 /obj/machinery/light/small/directional/north,
@@ -2975,8 +3206,11 @@
 /area/ruin/interdyne_planetary_base/eng)
 "nB" = (
 /obj/structure/rack/shelf,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/catwalk_floor/iron_dark,
-/area/ruin/interdyne_planetary_base/main/vault)
+/area/station/cargo/miningdock/oresilo{
+	has_gravity = 1
+	})
 "nC" = (
 /obj/structure/sign/warning/electric_shock,
 /turf/closed/wall/prefab_plastic,
@@ -3000,6 +3234,22 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/wood,
 /area/ruin/interdyne_planetary_base/main/dorms)
+"nK" = (
+/obj/structure/closet/crate,
+/obj/item/gps{
+	gpstag = "INTRDYN0";
+	pixel_x = 6
+	},
+/obj/item/gps{
+	gpstag = "INTRDYN0";
+	pixel_y = 3
+	},
+/obj/item/gps{
+	gpstag = "INTRDYN0";
+	pixel_x = -6
+	},
+/turf/open/floor/iron/colony,
+/area/mine/living_quarters)
 "nL" = (
 /obj/machinery/time_clock/directional,
 /turf/closed/wall/prefab_plastic,
@@ -3017,9 +3267,10 @@
 /turf/closed/wall/prefab_plastic,
 /area/ruin/interdyne_planetary_base/med/viro)
 "nO" = (
-/obj/machinery/computer/exoscanner_control,
+/obj/machinery/computer/piratepad_control/civilian,
+/obj/machinery/digital_clock/directional/north,
 /turf/open/floor/iron/colony,
-/area/ruin/interdyne_planetary_base)
+/area/station/cargo/storage)
 "nQ" = (
 /obj/effect/turf_decal/siding/thinplating/end{
 	dir = 4
@@ -3031,7 +3282,7 @@
 /obj/item/storage/box/cups,
 /obj/machinery/light/directional/north,
 /turf/open/floor/iron/colony/bolts,
-/area/ruin/interdyne_planetary_base)
+/area/mine/medical)
 "nU" = (
 /obj/effect/turf_decal/tile/dark_green/half/contrasted{
 	dir = 4
@@ -3043,6 +3294,8 @@
 /obj/machinery/light/cold/directional/north,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/structure/table/reinforced,
+/obj/machinery/grill,
 /turf/open/floor/iron/colony/bolts,
 /area/ruin/interdyne_planetary_base/cargo)
 "nW" = (
@@ -3063,11 +3316,13 @@
 	},
 /obj/structure/window/reinforced/survival_pod/spawner/directional/south,
 /turf/open/floor/iron/dark/small,
-/area/ruin/interdyne_planetary_base)
+/area/mine/medical)
 "nY" = (
-/obj/machinery/skill_station/plasmaglass,
-/turf/open/floor/iron/colony,
-/area/ruin/interdyne_planetary_base/main)
+/turf/open/lava/plasma,
+/area/lavaland/surface/outdoors/explored{
+	name = "Outdoors with Blocked Roofs";
+	outdoors = 0
+	})
 "ob" = (
 /obj/structure/sign/warning/xeno_mining,
 /turf/closed/wall/prefab_plastic,
@@ -3077,13 +3332,14 @@
 /turf/open/floor/iron/freezer,
 /area/ruin/interdyne_planetary_base/serv/rstrm)
 "od" = (
-/obj/structure/rack/shelf,
 /obj/effect/turf_decal/bot_white,
-/obj/item/construction/rcd/loaded,
 /obj/effect/turf_decal/siding/dark_green{
 	dir = 1
 	},
 /obj/machinery/light/cold/directional/north,
+/obj/structure/chair/plastic{
+	dir = 8
+	},
 /turf/open/floor/iron/textured_large,
 /area/ruin/interdyne_planetary_base/cargo)
 "of" = (
@@ -3129,7 +3385,10 @@
 "on" = (
 /obj/docking_port/mobile/arrivals,
 /turf/open/floor/iron/colony,
-/area/ruin/interdyne_planetary_base)
+/area/station{
+	name = "Hangar";
+	has_gravity = 1
+	})
 "op" = (
 /obj/structure/table/reinforced,
 /obj/structure/rack,
@@ -3156,15 +3415,14 @@
 	dir = 4
 	},
 /turf/open/floor/iron/colony,
-/area/ruin/interdyne_planetary_base)
+/area/station/cargo/storage)
 "ox" = (
-/obj/machinery/light/directional/north,
-/obj/structure/railroad,
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
-	dir = 2
-	},
-/turf/open/floor/iron/colony,
-/area/ruin/interdyne_planetary_base)
+/obj/structure/cable,
+/turf/open/floor/grass,
+/area/station{
+	name = "Hangar";
+	has_gravity = 1
+	})
 "oy" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -3217,6 +3475,7 @@
 /obj/machinery/door/airlock/maintenance,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/structure/cable,
 /turf/open/floor/iron,
 /area/ruin/interdyne_planetary_base)
 "oK" = (
@@ -3252,7 +3511,6 @@
 	},
 /area/ruin/interdyne_planetary_base/cargo)
 "oR" = (
-/obj/machinery/mineral/ore_redemption/offstation,
 /obj/effect/turf_decal/tile/dark_green/half/contrasted{
 	dir = 8
 	},
@@ -3318,7 +3576,7 @@
 /area/ruin/interdyne_planetary_base/serv/kitchen)
 "pe" = (
 /obj/effect/turf_decal/tile/dark_green/half/contrasted,
-/obj/structure/rack/shelf,
+/obj/structure/table,
 /turf/open/floor/iron/dark/side{
 	dir = 8
 	},
@@ -3344,7 +3602,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/cable,
 /turf/open/floor/iron/colony,
-/area/ruin/interdyne_planetary_base)
+/area/station/cargo/storage)
 "pl" = (
 /obj/structure/bed/pod,
 /turf/open/floor/iron/colony,
@@ -3374,6 +3632,15 @@
 /obj/structure/curtain/cloth/fancy,
 /turf/open/floor/plating,
 /area/ruin/interdyne_planetary_base/main/dorms)
+"pB" = (
+/obj/machinery/light/directional/north,
+/obj/structure/railroad,
+/obj/machinery/digital_clock/directional/north,
+/turf/open/floor/iron/colony,
+/area/station/hallway{
+	name = "Colony Hallway";
+	has_gravity = 1
+	})
 "pC" = (
 /obj/effect/turf_decal/tile/dark_green/half{
 	dir = 8
@@ -3482,7 +3749,10 @@
 "pU" = (
 /obj/machinery/light/floor,
 /turf/closed/wall/prefab_plastic,
-/area/ruin/interdyne_planetary_base)
+/area/station{
+	name = "Hangar";
+	has_gravity = 1
+	})
 "pW" = (
 /obj/structure/rack,
 /obj/structure/window/reinforced/spawner/directional/east{
@@ -3495,6 +3765,10 @@
 /obj/item/radio/headset/headset_frontier_colonist,
 /turf/open/floor/iron/colony,
 /area/ruin/interdyne_planetary_base/main)
+"pX" = (
+/obj/structure/cable,
+/turf/open/floor/iron/dark,
+/area/ruin/interdyne_planetary_base)
 "pY" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -3519,6 +3793,22 @@
 	name = "Outdoors with Blocked Roofs";
 	outdoors = 0
 	})
+"qc" = (
+/obj/machinery/rnd/production/colony_lathe,
+/turf/open/floor/iron/colony,
+/area/station/hallway{
+	name = "Colony Hallway";
+	has_gravity = 1
+	})
+"qd" = (
+/obj/structure/table/reinforced,
+/obj/structure/railing{
+	dir = 8
+	},
+/turf/open/floor/iron/kitchen{
+	dir = 4
+	},
+/area/ruin/interdyne_planetary_base/serv/kitchen)
 "qh" = (
 /obj/structure/closet/crate/freezer,
 /obj/item/reagent_containers/condiment/flour,
@@ -3566,7 +3856,7 @@
 "qo" = (
 /obj/machinery/computer/exodrone_control_console,
 /turf/open/floor/iron/colony,
-/area/ruin/interdyne_planetary_base)
+/area/station/cargo/storage)
 "qp" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 9
@@ -3609,6 +3899,9 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/disposalpipe/segment,
+/obj/structure/railing{
+	dir = 8
+	},
 /turf/open/floor/iron/kitchen{
 	dir = 4
 	},
@@ -3629,6 +3922,10 @@
 /area/ruin/interdyne_planetary_base/cargo/deck{
 	name = "Bedroom"
 	})
+"qB" = (
+/obj/structure/table,
+/turf/open/floor/iron/colony,
+/area/mine/living_quarters)
 "qE" = (
 /obj/machinery/light/small/directional/west,
 /turf/open/floor/iron/colony,
@@ -3706,10 +4003,8 @@
 /area/ruin/interdyne_planetary_base)
 "qS" = (
 /obj/machinery/airalarm/directional/north,
-/obj/machinery/vending/autodrobe{
-	onstation = 0;
-	extended_inventory = 1
-	},
+/obj/structure/table/reinforced/plasmarglass,
+/obj/machinery/plate_press,
 /turf/open/floor/iron/colony,
 /area/ruin/interdyne_planetary_base/main)
 "qV" = (
@@ -3731,6 +4026,10 @@
 "ra" = (
 /turf/open/floor/iron/colony/bolts,
 /area/ruin/interdyne_planetary_base/med)
+"rc" = (
+/obj/machinery/hydroponics/soil,
+/turf/open/misc/asteroid/basalt,
+/area/ruin/interdyne_planetary_base/serv/hydr)
 "rd" = (
 /obj/machinery/airalarm/directional/east,
 /obj/effect/turf_decal/siding/dark_green{
@@ -3744,6 +4043,12 @@
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
 /area/ruin/interdyne_planetary_base)
+"rg" = (
+/obj/machinery/light/floor{
+	use_power = 0
+	},
+/turf/open/floor/iron/colony,
+/area/station/cargo/storage)
 "rh" = (
 /obj/effect/turf_decal/tile/dark_green,
 /turf/closed/wall/prefab_plastic,
@@ -3787,7 +4092,10 @@
 /obj/machinery/light/floor,
 /obj/structure/hedge,
 /turf/open/floor/iron/colony,
-/area/ruin/interdyne_planetary_base)
+/area/station{
+	name = "Hangar";
+	has_gravity = 1
+	})
 "rs" = (
 /obj/structure/railing/wooden_fencing{
 	dir = 4
@@ -3832,7 +4140,7 @@
 /obj/structure/cable,
 /obj/machinery/power/rtg/advanced,
 /turf/open/floor/bamboo,
-/area/lavaland/surface/outdoors/explored)
+/area/lavaland/surface/outdoors)
 "rC" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 1
@@ -3843,15 +4151,19 @@
 /turf/open/floor/iron/colony,
 /area/ruin/interdyne_planetary_base/science/xeno)
 "rD" = (
-/obj/effect/turf_decal/delivery,
-/obj/structure/ore_box,
-/turf/open/floor/iron/colony/white/bolts,
-/area/ruin/interdyne_planetary_base/cargo)
+/turf/closed/wall/prefab_plastic,
+/area/station{
+	name = "Hangar";
+	has_gravity = 1
+	})
 "rG" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/disposalpipe/segment,
+/obj/structure/railing{
+	dir = 8
+	},
 /turf/open/floor/iron/stairs,
 /area/ruin/interdyne_planetary_base/serv/kitchen)
 "rH" = (
@@ -3890,8 +4202,12 @@
 /obj/effect/turf_decal/delivery,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/structure/cable,
 /turf/open/floor/iron/colony,
-/area/ruin/interdyne_planetary_base)
+/area/station{
+	name = "Hangar";
+	has_gravity = 1
+	})
 "rS" = (
 /obj/structure/table/reinforced,
 /obj/machinery/light/small/directional/north,
@@ -3962,6 +4278,11 @@
 /obj/machinery/light/floor,
 /turf/open/floor/iron/colony/bolts,
 /area/ruin/interdyne_planetary_base/cargo)
+"si" = (
+/obj/structure/ore_box,
+/obj/machinery/light/cold/directional/north,
+/turf/open/floor/iron/colony,
+/area/ruin/interdyne_planetary_base)
 "sj" = (
 /turf/open/floor/iron/colony,
 /area/ruin/interdyne_planetary_base/science/xeno)
@@ -3983,12 +4304,18 @@
 	dir = 4
 	},
 /area/ruin/interdyne_planetary_base/serv/kitchen)
+"so" = (
+/obj/structure/railing{
+	dir = 8
+	},
+/turf/open/floor/iron/colony,
+/area/mine/living_quarters)
 "sp" = (
 /obj/structure/railing{
 	dir = 4
 	},
 /turf/closed/wall/prefab_plastic,
-/area/ruin/interdyne_planetary_base)
+/area/station/cargo/storage)
 "sr" = (
 /obj/effect/turf_decal/trimline/dark_green/warning,
 /obj/effect/turf_decal/siding/dark_green/corner{
@@ -4002,7 +4329,10 @@
 /obj/structure/railroad,
 /obj/machinery/light/directional/north,
 /turf/open/floor/iron/colony,
-/area/ruin/interdyne_planetary_base)
+/area/station/hallway{
+	name = "Colony Hallway";
+	has_gravity = 1
+	})
 "st" = (
 /obj/structure/table/reinforced,
 /obj/machinery/airalarm/directional/west,
@@ -4020,7 +4350,7 @@
 /obj/machinery/medical_kiosk,
 /obj/machinery/light/directional/north,
 /turf/open/floor/iron/colony/bolts,
-/area/ruin/interdyne_planetary_base)
+/area/mine/medical)
 "sv" = (
 /obj/effect/turf_decal/siding/dark_green{
 	dir = 1
@@ -4028,6 +4358,11 @@
 /obj/structure/table/reinforced,
 /turf/open/floor/wood/tile,
 /area/ruin/interdyne_planetary_base/serv/bar)
+"sy" = (
+/obj/structure/rack/shelf,
+/obj/item/construction/rcd/loaded,
+/turf/open/floor/iron/colony,
+/area/mine/living_quarters)
 "sz" = (
 /obj/structure/table,
 /obj/item/mining_scanner,
@@ -4100,7 +4435,7 @@
 "sQ" = (
 /obj/machinery/computer/cargo,
 /turf/open/floor/iron/colony,
-/area/ruin/interdyne_planetary_base)
+/area/station/cargo/storage)
 "sR" = (
 /obj/structure/lattice/catwalk,
 /obj/structure/cable,
@@ -4110,7 +4445,7 @@
 /obj/structure/cable,
 /obj/machinery/power/colony_wind_turbine,
 /turf/open/misc/asteroid/basalt,
-/area/lavaland/surface/outdoors/explored)
+/area/lavaland/surface/outdoors)
 "sV" = (
 /obj/structure/window/reinforced/survival_pod/spawner/directional/south,
 /obj/structure/table/reinforced/rglass,
@@ -4152,6 +4487,7 @@
 /area/ruin/interdyne_planetary_base/med)
 "tj" = (
 /obj/machinery/door/airlock/colony_prefab,
+/obj/structure/cable,
 /turf/open/floor/iron/colony,
 /area/mine/living_quarters)
 "tl" = (
@@ -4185,14 +4521,16 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/tile/dark_green/full,
+/obj/structure/cable,
 /turf/open/floor/iron/colony/white/bolts,
-/area/ruin/interdyne_planetary_base)
+/area/mine/medical)
 "tw" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/cable,
 /obj/machinery/light_switch/directional/west,
 /obj/structure/disposalpipe/segment,
+/obj/machinery/newscaster/directional/east,
 /turf/open/floor/iron/colony,
 /area/ruin/interdyne_planetary_base/main)
 "ty" = (
@@ -4202,7 +4540,7 @@
 	dir = 4
 	},
 /turf/closed/wall/prefab_plastic,
-/area/ruin/interdyne_planetary_base)
+/area/station/cargo/storage)
 "tz" = (
 /obj/effect/turf_decal/bot_white,
 /turf/closed/wall/prefab_plastic,
@@ -4252,7 +4590,18 @@
 "tH" = (
 /obj/structure/table/reinforced,
 /turf/open/floor/grass,
-/area/ruin/interdyne_planetary_base)
+/area/station{
+	name = "Hangar";
+	has_gravity = 1
+	})
+"tI" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/iron/colony,
+/area/station{
+	name = "Hangar";
+	has_gravity = 1
+	})
 "tJ" = (
 /obj/structure/bookcase/random,
 /obj/structure/sign/poster/contraband/nri_engineer/directional/east,
@@ -4262,7 +4611,7 @@
 /obj/structure/wall_torch/spawns_lit/directional/south{
 	layer = 5
 	},
-/turf/open/floor/iron/colony,
+/turf/open/floor/grass,
 /area/ruin/interdyne_planetary_base)
 "tP" = (
 /obj/structure/cable,
@@ -4295,8 +4644,15 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/cable,
+/obj/machinery/light/floor{
+	use_power = 0
+	},
 /turf/open/floor/iron/colony,
-/area/ruin/interdyne_planetary_base)
+/area/station/cargo/storage)
+"tT" = (
+/obj/machinery/space_heater/wall_mounted/directional/north,
+/turf/open/floor/iron/colony,
+/area/mine/living_quarters)
 "tV" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
@@ -4315,17 +4671,22 @@
 /turf/open/floor/iron,
 /area/ruin/interdyne_planetary_base)
 "ua" = (
-/obj/structure/disposalpipe/trunk{
-	dir = 1
-	},
+/obj/structure/hedge,
+/obj/structure/cable,
 /turf/open/floor/iron/colony,
-/area/ruin/interdyne_planetary_base/main)
+/area/station{
+	name = "Hangar";
+	has_gravity = 1
+	})
 "ub" = (
 /obj/machinery/light/directional/north,
 /obj/machinery/light_switch/directional/north,
 /obj/structure/railroad,
 /turf/open/floor/iron/colony,
-/area/ruin/interdyne_planetary_base)
+/area/station/hallway{
+	name = "Colony Hallway";
+	has_gravity = 1
+	})
 "ud" = (
 /obj/structure/railing{
 	dir = 8
@@ -4335,7 +4696,7 @@
 	},
 /obj/structure/hedge,
 /turf/open/floor/iron/colony,
-/area/ruin/interdyne_planetary_base)
+/area/station/cargo/storage)
 "ue" = (
 /obj/structure/cable,
 /obj/machinery/power/solar/deployable,
@@ -4372,6 +4733,11 @@
 /obj/structure/cable,
 /turf/open/floor/iron/dark/small,
 /area/ruin/interdyne_planetary_base/med/viro)
+"ur" = (
+/obj/machinery/light/cold/directional/north,
+/obj/machinery/suit_storage_unit/mining,
+/turf/open/floor/iron/colony,
+/area/ruin/interdyne_planetary_base)
 "ut" = (
 /obj/structure/table/reinforced,
 /obj/structure/rack,
@@ -4444,13 +4810,20 @@
 /obj/effect/turf_decal/loading_area,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/structure/cable,
 /turf/open/floor/iron/colony,
-/area/ruin/interdyne_planetary_base)
+/area/station{
+	name = "Hangar";
+	has_gravity = 1
+	})
 "uB" = (
 /obj/structure/hedge,
 /obj/structure/sign/flag/nanotrasen/directional/north,
 /turf/open/floor/grass,
-/area/ruin/interdyne_planetary_base)
+/area/station{
+	name = "Hangar";
+	has_gravity = 1
+	})
 "uD" = (
 /obj/machinery/light_switch/directional/south,
 /obj/machinery/light/directional/north,
@@ -4514,7 +4887,10 @@
 /obj/effect/turf_decal/delivery/red,
 /obj/machinery/door/airlock/colony_prefab,
 /turf/open/floor/iron/colony,
-/area/ruin/interdyne_planetary_base)
+/area/station/hallway{
+	name = "Colony Hallway";
+	has_gravity = 1
+	})
 "uT" = (
 /obj/structure/table/reinforced,
 /obj/item/clothing/head/frontier_colonist_helmet,
@@ -4586,8 +4962,16 @@
 	dir = 4
 	},
 /obj/structure/fans/tiny,
+/obj/structure/cable,
 /turf/open/floor/iron/dark,
 /area/ruin/interdyne_planetary_base)
+"uY" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 1
+	},
+/obj/machinery/requests_console/auto_name/directional/east,
+/turf/open/floor/iron/colony,
+/area/ruin/interdyne_planetary_base/main)
 "uZ" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -4631,6 +5015,12 @@
 /obj/structure/cable,
 /turf/open/floor/iron/colony,
 /area/ruin/interdyne_planetary_base/main)
+"vm" = (
+/obj/machinery/vending/engineering{
+	onstation = 0
+	},
+/turf/open/floor/iron/colony,
+/area/mine/living_quarters)
 "vn" = (
 /obj/item/pipe_dispenser{
 	pixel_y = 8
@@ -4664,7 +5054,6 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/disposalpipe/segment,
-/obj/machinery/door/airlock/colony_prefab,
 /obj/machinery/door/firedoor,
 /obj/effect/turf_decal/siding/dark/corner{
 	dir = 4
@@ -4672,9 +5061,26 @@
 /obj/effect/turf_decal/siding/thinplating{
 	dir = 1
 	},
-/obj/effect/mapping_helpers/airlock/cutaiwire,
 /turf/open/floor/iron,
 /area/ruin/interdyne_planetary_base/serv/bar)
+"vs" = (
+/obj/item/stack/sheet/plastic/fifty,
+/obj/structure/table/reinforced,
+/obj/item/stack/sheet/plasteel/fifty,
+/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/glass/fifty,
+/turf/open/floor/iron/colony,
+/area/station/hallway{
+	name = "Colony Hallway";
+	has_gravity = 1
+	})
+"vt" = (
+/obj/effect/turf_decal/box/red/corners{
+	dir = 8
+	},
+/obj/structure/marker_beacon/lime,
+/turf/open/floor/plating,
+/area/ruin/interdyne_planetary_base/cargo/ware)
 "vu" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 8
@@ -4685,7 +5091,10 @@
 /obj/machinery/light_switch/directional/north,
 /obj/structure/railroad,
 /turf/open/floor/iron/colony,
-/area/ruin/interdyne_planetary_base)
+/area/station/hallway{
+	name = "Colony Hallway";
+	has_gravity = 1
+	})
 "vB" = (
 /obj/machinery/camera/directional/east{
 	c_tag = "Public Mining Ladder"
@@ -4695,6 +5104,13 @@
 	},
 /turf/open/floor/iron/dark,
 /area/ruin/interdyne_planetary_base)
+"vC" = (
+/obj/machinery/vending/imported/yangyu{
+	onstation = 0
+	},
+/obj/machinery/light_switch/directional/north,
+/turf/open/floor/iron/colony,
+/area/mine/living_quarters)
 "vD" = (
 /obj/effect/turf_decal/siding/white,
 /obj/effect/turf_decal/siding/white{
@@ -4726,6 +5142,17 @@
 /obj/item/clothing/suit/armor/sf_hardened/emt,
 /turf/open/floor/iron/colony,
 /area/ruin/interdyne_planetary_base/main)
+"vH" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 6
+	},
+/obj/structure/marker_beacon/burgundy,
+/obj/effect/turf_decal/trimline/dark_red/filled/corner{
+	dir = 1
+	},
+/obj/structure/window/reinforced/survival_pod/spawner/directional/south,
+/turf/open/floor/plating/reinforced,
+/area/ruin/interdyne_planetary_base)
 "vI" = (
 /obj/structure/table/reinforced,
 /obj/item/storage/box/masks{
@@ -4763,6 +5190,12 @@
 /obj/effect/turf_decal/tile/dark_green/half,
 /turf/open/floor/iron/colony,
 /area/ruin/interdyne_planetary_base/science/xeno)
+"vP" = (
+/obj/machinery/vending/games{
+	onstation = 0
+	},
+/turf/open/floor/iron/colony,
+/area/mine/living_quarters)
 "vQ" = (
 /obj/machinery/light/directional/south,
 /obj/structure/rack,
@@ -4815,7 +5248,7 @@
 	},
 /obj/effect/turf_decal/bot,
 /turf/open/floor/iron/colony,
-/area/ruin/interdyne_planetary_base)
+/area/station/cargo/storage)
 "vZ" = (
 /obj/structure/rack,
 /obj/structure/window/reinforced/spawner/directional/south,
@@ -4910,8 +5343,12 @@
 /area/ruin/interdyne_planetary_base/main)
 "wt" = (
 /obj/machinery/firealarm/directional/north,
-/obj/structure/table,
-/obj/structure/bedsheetbin,
+/obj/machinery/medical_kiosk{
+	pixel_x = -14
+	},
+/obj/machinery/quantum_server{
+	pixel_x = -44
+	},
 /turf/open/floor/iron/colony,
 /area/ruin/interdyne_planetary_base/main)
 "wu" = (
@@ -4979,6 +5416,14 @@
 /obj/effect/turf_decal/siding/wideplating_new/dark/corner,
 /turf/closed/wall/prefab_plastic,
 /area/ruin/interdyne_planetary_base/cargo)
+"wO" = (
+/obj/effect/turf_decal/stripes/line,
+/obj/effect/turf_decal/trimline/dark_red/filled/warning{
+	dir = 1
+	},
+/obj/structure/window/reinforced/survival_pod/spawner/directional/south,
+/turf/open/floor/engine,
+/area/ruin/interdyne_planetary_base)
 "wT" = (
 /obj/effect/turf_decal/siding/thinplating{
 	dir = 10
@@ -4993,7 +5438,7 @@
 	dir = 8
 	},
 /turf/open/floor/iron/white/small,
-/area/ruin/interdyne_planetary_base)
+/area/mine/medical)
 "wW" = (
 /obj/structure/wall_torch/spawns_lit/directional/east,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
@@ -5001,6 +5446,10 @@
 	},
 /turf/open/floor/grass,
 /area/ruin/interdyne_planetary_base)
+"wX" = (
+/obj/machinery/washing_machine,
+/turf/open/floor/iron/colony,
+/area/mine/living_quarters)
 "xa" = (
 /obj/machinery/firealarm/directional/west,
 /obj/machinery/light/warm/directional/west,
@@ -5037,7 +5486,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/cable,
 /turf/open/floor/iron/colony,
-/area/ruin/interdyne_planetary_base)
+/area/station/cargo/storage)
 "xm" = (
 /obj/structure/sign/flag/nanotrasen/directional/north,
 /obj/structure/fake_stairs/directional/east,
@@ -5051,6 +5500,15 @@
 /obj/structure/table,
 /turf/open/floor/iron/colony,
 /area/ruin/interdyne_planetary_base/med/viro)
+"xt" = (
+/obj/structure/flora/biolumi/lamp{
+	desc = "Bioluminescent plas"
+	},
+/obj/structure/railing{
+	dir = 8
+	},
+/turf/open/floor/grass,
+/area/mine/living_quarters)
 "xu" = (
 /obj/effect/turf_decal/tile/purple/half{
 	dir = 1
@@ -5075,7 +5533,9 @@
 	gpstag = "Colonial Outpost FUOV-NPOV-N2 'The Dragon Skies'"
 	},
 /turf/open/floor/catwalk_floor/iron_dark,
-/area/ruin/interdyne_planetary_base/main/vault)
+/area/station/cargo/miningdock/oresilo{
+	has_gravity = 1
+	})
 "xA" = (
 /obj/machinery/light/small/directional/west,
 /turf/open/floor/wood/parquet,
@@ -5131,7 +5591,16 @@
 	dir = 8
 	},
 /turf/open/floor/grass,
-/area/ruin/interdyne_planetary_base)
+/area/station{
+	name = "Hangar";
+	has_gravity = 1
+	})
+"xJ" = (
+/obj/structure/railing{
+	dir = 8
+	},
+/turf/open/floor/iron/checker,
+/area/ruin/interdyne_planetary_base/serv/bar)
 "xM" = (
 /obj/structure/table,
 /obj/item/storage/medkit/fire{
@@ -5156,6 +5625,18 @@
 	dir = 8
 	},
 /turf/open/floor/stone,
+/area/ruin/interdyne_planetary_base)
+"xP" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 10
+	},
+/obj/structure/marker_beacon/burgundy,
+/obj/effect/turf_decal/trimline/dark_red/filled/corner{
+	dir = 4
+	},
+/obj/structure/window/reinforced/survival_pod/spawner/directional/west,
+/obj/structure/window/reinforced/survival_pod/spawner/directional/south,
+/turf/open/floor/plating/reinforced,
 /area/ruin/interdyne_planetary_base)
 "xQ" = (
 /turf/open/floor/iron/colony/bolts,
@@ -5202,6 +5683,12 @@
 	},
 /turf/open/floor/iron/colony,
 /area/ruin/interdyne_planetary_base/main)
+"xY" = (
+/obj/structure/closet/crate{
+	name = "materials crate"
+	},
+/turf/open/floor/iron/colony,
+/area/mine/living_quarters)
 "yb" = (
 /obj/machinery/atmospherics/miner/nitrogen,
 /turf/open/floor/engine/n2,
@@ -5257,7 +5744,10 @@
 	},
 /obj/structure/hedge,
 /turf/open/floor/iron/colony,
-/area/ruin/interdyne_planetary_base)
+/area/station{
+	name = "Hangar";
+	has_gravity = 1
+	})
 "yn" = (
 /obj/machinery/computer/shuttle/arrivals,
 /turf/open/floor/iron/colony,
@@ -5329,8 +5819,9 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/cable,
+/obj/machinery/computer/cargo/express,
 /turf/open/floor/iron/colony,
-/area/ruin/interdyne_planetary_base)
+/area/station/cargo/storage)
 "yB" = (
 /obj/machinery/computer/libraryconsole/bookmanagement{
 	dir = 4
@@ -5360,8 +5851,11 @@
 	name = "Interdyne Vault"
 	},
 /obj/machinery/door/firedoor,
+/obj/structure/cable,
 /turf/open/floor/iron/colony/white/bolts,
-/area/ruin/interdyne_planetary_base/main/vault)
+/area/station/cargo/miningdock/oresilo{
+	has_gravity = 1
+	})
 "yF" = (
 /obj/effect/turf_decal/tile/yellow/anticorner{
 	dir = 8
@@ -5421,6 +5915,17 @@
 	},
 /turf/open/floor/iron/colony,
 /area/ruin/interdyne_planetary_base/med)
+"yP" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/obj/effect/turf_decal/trimline/dark_red/filled/warning{
+	dir = 4
+	},
+/obj/structure/window/reinforced/survival_pod/spawner/directional/west,
+/obj/structure/cable,
+/turf/open/floor/engine,
+/area/mine/living_quarters)
 "yQ" = (
 /obj/machinery/primitive_stove,
 /obj/effect/turf_decal/weather/dirt{
@@ -5536,12 +6041,12 @@
 /turf/open/floor/iron/colony/bolts,
 /area/ruin/interdyne_planetary_base)
 "zn" = (
-/obj/machinery/vending/clothing{
-	onstation = 0;
-	extended_inventory = 1
-	},
+/obj/effect/turf_decal/delivery,
 /turf/open/floor/iron/colony,
-/area/ruin/interdyne_planetary_base/main)
+/area/station{
+	name = "Hangar";
+	has_gravity = 1
+	})
 "zo" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 4
@@ -5558,6 +6063,31 @@
 /obj/machinery/light/small/directional/north,
 /turf/open/floor/iron/dark,
 /area/ruin/interdyne_planetary_base)
+"zq" = (
+/obj/structure/closet/crate/internals,
+/obj/item/tank/internals/emergency_oxygen/double,
+/obj/item/tank/internals/emergency_oxygen/double,
+/obj/item/tank/internals/emergency_oxygen/double,
+/obj/item/tank/internals/emergency_oxygen/double,
+/obj/item/tank/internals/emergency_oxygen/double,
+/obj/item/tank/internals/emergency_oxygen/double,
+/obj/item/clothing/mask/gas,
+/obj/item/clothing/mask/gas,
+/obj/item/clothing/mask/gas,
+/obj/item/clothing/mask/gas,
+/obj/item/clothing/mask/gas,
+/obj/item/tank/internals/oxygen/yellow,
+/obj/item/tank/internals/oxygen/yellow,
+/obj/item/tank/internals/oxygen/yellow,
+/obj/item/tank/internals/oxygen/yellow,
+/obj/item/tank/internals/oxygen/yellow,
+/obj/item/tank/internals/oxygen/yellow,
+/obj/item/tank/internals/oxygen/yellow,
+/obj/item/tank/internals/oxygen/yellow,
+/obj/item/tank/internals/oxygen/yellow,
+/obj/item/tank/internals/oxygen/yellow,
+/turf/open/floor/iron/colony,
+/area/mine/living_quarters)
 "zt" = (
 /obj/structure/railing{
 	dir = 4
@@ -5572,7 +6102,10 @@
 	},
 /obj/effect/turf_decal/caution/stand_clear,
 /turf/open/floor/iron/colony,
-/area/ruin/interdyne_planetary_base)
+/area/station{
+	name = "Hangar";
+	has_gravity = 1
+	})
 "zy" = (
 /obj/effect/turf_decal/tile/dark_green/half/contrasted{
 	dir = 1
@@ -5668,6 +6201,12 @@
 /obj/machinery/light/floor,
 /turf/open/floor/iron,
 /area/ruin/interdyne_planetary_base)
+"zN" = (
+/obj/structure/flora/biolumi/lamp{
+	desc = "Bioluminescent plas"
+	},
+/turf/open/floor/grass,
+/area/ruin/interdyne_planetary_base)
 "zV" = (
 /obj/effect/landmark/observer_start,
 /obj/machinery/duct,
@@ -5687,8 +6226,7 @@
 /obj/effect/turf_decal/tile/dark_green/half{
 	dir = 8
 	},
-/obj/structure/marker_beacon/lime,
-/turf/open/floor/iron/colony,
+/turf/closed/wall/prefab_plastic,
 /area/ruin/interdyne_planetary_base/cargo/ware)
 "Ac" = (
 /obj/structure/wall_torch/spawns_lit/directional/east,
@@ -5830,6 +6368,14 @@
 /obj/effect/turf_decal/tile/neutral/diagonal_centre,
 /turf/open/floor/iron/dark/diagonal,
 /area/ruin/interdyne_planetary_base/eng)
+"AF" = (
+/turf/open/water/hot_spring{
+	initial_gas_mix = "LAVALAND_ATMOS"
+	},
+/area/station/hallway{
+	name = "Colony Hallway";
+	has_gravity = 1
+	})
 "AG" = (
 /turf/open/genturf,
 /area/lavaland/surface/outdoor/random/icelands)
@@ -5846,6 +6392,13 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron/colony,
 /area/ruin/interdyne_planetary_base/med/morgue)
+"AK" = (
+/obj/machinery/vending/clothing{
+	onstation = 0;
+	extended_inventory = 1
+	},
+/turf/open/floor/iron/colony,
+/area/mine/living_quarters)
 "AL" = (
 /obj/structure/cable,
 /obj/structure/disposalpipe/segment,
@@ -5854,10 +6407,27 @@
 "AM" = (
 /turf/closed/wall/prefab_plastic,
 /area/ruin/interdyne_planetary_base/serv/rstrm)
+"AN" = (
+/obj/structure/cable,
+/turf/open/floor/catwalk_floor/iron_dark,
+/area/station/cargo/miningdock/oresilo{
+	has_gravity = 1
+	})
 "AO" = (
 /obj/structure/window/fulltile/colony_fabricator,
 /turf/open/floor/plating,
-/area/ruin/interdyne_planetary_base)
+/area/station/cargo/storage)
+"AP" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 6
+	},
+/obj/structure/marker_beacon/burgundy,
+/obj/effect/turf_decal/trimline/dark_red/filled/corner{
+	dir = 1
+	},
+/obj/structure/window/reinforced/survival_pod/spawner/directional/south,
+/turf/open/floor/plating/reinforced,
+/area/mine/living_quarters)
 "AQ" = (
 /obj/structure/closet/crate/freezer/sansufentanyl,
 /obj/effect/turf_decal/tile/dark_blue/opposingcorners,
@@ -5936,15 +6506,36 @@
 	c_tag = "Interdyne Vault Camera"
 	},
 /turf/open/floor/catwalk_floor/iron_dark,
-/area/ruin/interdyne_planetary_base/main/vault)
+/area/station/cargo/miningdock/oresilo{
+	has_gravity = 1
+	})
+"Bj" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 5
+	},
+/obj/structure/marker_beacon/burgundy,
+/obj/effect/turf_decal/trimline/dark_red/filled/corner{
+	dir = 8
+	},
+/obj/structure/window/reinforced/survival_pod/spawner/directional/north,
+/turf/open/floor/plating/reinforced,
+/area/mine/living_quarters)
 "Bl" = (
 /obj/effect/turf_decal/trimline/brown/filled/line,
 /obj/effect/turf_decal/vg_decals/department/cargo,
 /turf/open/floor/iron/colony,
-/area/ruin/interdyne_planetary_base)
+/area/station/hallway{
+	name = "Colony Hallway";
+	has_gravity = 1
+	})
+"Bn" = (
+/obj/structure/table/reinforced/plasmarglass,
+/turf/open/floor/iron/colony,
+/area/ruin/interdyne_planetary_base/main)
 "Bp" = (
+/obj/structure/cable,
 /turf/open/floor/iron/dark/small,
-/area/ruin/interdyne_planetary_base)
+/area/mine/medical)
 "Bq" = (
 /obj/machinery/door/airlock/external{
 	glass = 1;
@@ -5957,7 +6548,7 @@
 /obj/structure/sign/warning/gas_mask/directional/south{
 	desc = "A sign that warns of dangerous gasses in the air, instructing you to wear internals."
 	},
-/obj/structure/sign/warning/cold_temp/directional/north,
+/obj/structure/cable,
 /turf/open/floor/iron/dark,
 /area/ruin/interdyne_planetary_base)
 "Bs" = (
@@ -6008,7 +6599,7 @@
 	},
 /obj/effect/turf_decal/bot,
 /turf/open/floor/iron/colony,
-/area/ruin/interdyne_planetary_base)
+/area/station/cargo/storage)
 "BB" = (
 /obj/effect/turf_decal/box/red/corners{
 	dir = 1
@@ -6023,6 +6614,7 @@
 /area/ruin/interdyne_planetary_base/cargo/ware)
 "BD" = (
 /obj/machinery/light/directional/north,
+/obj/machinery/hydroponics/soil,
 /turf/open/misc/asteroid/basalt,
 /area/ruin/interdyne_planetary_base/serv/hydr)
 "BG" = (
@@ -6033,9 +6625,8 @@
 	outdoors = 0
 	})
 "BH" = (
-/obj/machinery/vending/engineering{
-	onstation = 0
-	},
+/obj/machinery/microwave/engineering/cell_included,
+/obj/structure/table/reinforced/rglass,
 /turf/open/floor/iron/colony,
 /area/ruin/interdyne_planetary_base/main)
 "BI" = (
@@ -6052,11 +6643,13 @@
 /turf/open/floor/iron/herringbone,
 /area/ruin/interdyne_planetary_base/cargo)
 "BL" = (
-/obj/machinery/vending/barbervend{
-	onstation = 0
-	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron/colony,
-/area/ruin/interdyne_planetary_base/main)
+/area/station/hallway{
+	name = "Colony Hallway";
+	has_gravity = 1
+	})
 "BM" = (
 /obj/machinery/computer/cargo{
 	dir = 4
@@ -6066,6 +6659,18 @@
 /area/ruin/interdyne_planetary_base/cargo/deck{
 	name = "Bedroom"
 	})
+"BN" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 10
+	},
+/obj/structure/marker_beacon/burgundy,
+/obj/effect/turf_decal/trimline/dark_red/filled/corner{
+	dir = 4
+	},
+/obj/structure/window/reinforced/survival_pod/spawner/directional/west,
+/obj/structure/window/reinforced/survival_pod/spawner/directional/south,
+/turf/open/floor/plating/reinforced,
+/area/mine/living_quarters)
 "BO" = (
 /obj/effect/turf_decal/tile/dark_blue/opposingcorners,
 /obj/machinery/power/apc/auto_name/directional/east,
@@ -6103,7 +6708,10 @@
 	},
 /obj/effect/mapping_helpers/airlock/locked,
 /turf/open/floor/iron/colony,
-/area/ruin/interdyne_planetary_base)
+/area/station/hallway{
+	name = "Colony Hallway";
+	has_gravity = 1
+	})
 "Ca" = (
 /obj/effect/turf_decal/caution/white{
 	pixel_y = 17
@@ -6114,8 +6722,12 @@
 /obj/effect/turf_decal/vg_decals/atmos/carbon_dioxide,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/structure/cable,
 /turf/open/floor/iron/colony,
-/area/ruin/interdyne_planetary_base)
+/area/station/hallway{
+	name = "Colony Hallway";
+	has_gravity = 1
+	})
 "Cc" = (
 /turf/closed/wall/prefab_plastic,
 /area/ruin/interdyne_planetary_base)
@@ -6145,10 +6757,14 @@
 /turf/open/floor/iron/dark/small,
 /area/ruin/interdyne_planetary_base/med)
 "Cm" = (
-/obj/structure/ore_box,
-/obj/effect/turf_decal/delivery,
-/turf/open/floor/iron/colony/white/bolts,
-/area/ruin/interdyne_planetary_base/cargo)
+/turf/closed/wall/prefab_plastic,
+/area/station/hallway{
+	name = "Colony Hallway";
+	has_gravity = 1
+	})
+"Cp" = (
+/turf/closed/wall/prefab_plastic,
+/area/station/cargo/storage)
 "Cr" = (
 /obj/machinery/atmospherics/components/unary/thermomachine/freezer/on,
 /obj/machinery/light/cold/directional/south,
@@ -6164,8 +6780,12 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/cable,
+/obj/machinery/power/apc/auto_name/directional/north,
+/obj/machinery/light/floor{
+	use_power = 0
+	},
 /turf/open/floor/iron/colony,
-/area/ruin/interdyne_planetary_base)
+/area/station/cargo/storage)
 "Cu" = (
 /obj/machinery/libraryscanner,
 /turf/open/floor/wood/parquet,
@@ -6351,7 +6971,7 @@
 	layer = 7
 	},
 /obj/structure/hedge,
-/turf/open/floor/iron/colony,
+/turf/open/floor/grass,
 /area/ruin/interdyne_planetary_base)
 "CY" = (
 /mob/living/basic/cow,
@@ -6387,6 +7007,7 @@
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/structure/cable,
 /turf/open/floor/iron/colony/bolts,
 /area/ruin/interdyne_planetary_base/med)
 "Dc" = (
@@ -6428,6 +7049,10 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/pink,
 /turf/open/floor/engine,
 /area/ruin/interdyne_planetary_base/science/xeno)
+"Dl" = (
+/obj/machinery/light/floor,
+/turf/open/floor/iron/colony,
+/area/mine/living_quarters)
 "Dm" = (
 /turf/open/floor/iron/white/small,
 /area/ruin/interdyne_planetary_base/med/viro)
@@ -6441,7 +7066,7 @@
 /obj/item/stack/medical/mesh,
 /obj/structure/window/reinforced/survival_pod/spawner/directional/south,
 /turf/open/floor/iron/dark/small,
-/area/ruin/interdyne_planetary_base)
+/area/mine/medical)
 "Dq" = (
 /turf/closed/wall/mineral/stone,
 /area/ruin/interdyne_planetary_base)
@@ -6457,6 +7082,11 @@
 	},
 /turf/open/floor/iron/colony/bolts,
 /area/ruin/interdyne_planetary_base/med)
+"Dt" = (
+/obj/structure/cable,
+/obj/machinery/spaceship_navigation_beacon,
+/turf/open/floor/engine,
+/area/mine/living_quarters)
 "Du" = (
 /obj/effect/turf_decal/trimline/brown/filled/line,
 /obj/effect/turf_decal/bot_white,
@@ -6465,20 +7095,24 @@
 	dir = 1
 	},
 /turf/open/floor/iron/colony,
-/area/ruin/interdyne_planetary_base)
+/area/station/hallway{
+	name = "Colony Hallway";
+	has_gravity = 1
+	})
 "Dx" = (
 /obj/structure/flora/biolumi/lamp{
 	desc = "Bioluminescent plas"
 	},
 /turf/open/floor/grass,
-/area/ruin/interdyne_planetary_base)
+/area/station{
+	name = "Hangar";
+	has_gravity = 1
+	})
 "Dy" = (
-/obj/machinery/door/airlock/colony_prefab,
 /obj/machinery/door/firedoor,
 /obj/effect/turf_decal/siding/thinplating{
 	dir = 1
 	},
-/obj/effect/mapping_helpers/airlock/cutaiwire,
 /turf/open/floor/iron/checker,
 /area/ruin/interdyne_planetary_base/serv/bar)
 "DA" = (
@@ -6493,6 +7127,7 @@
 /obj/effect/turf_decal/siding/wideplating_new/dark/corner{
 	dir = 4
 	},
+/obj/structure/table/reinforced,
 /turf/open/floor/iron/colony/bolts,
 /area/ruin/interdyne_planetary_base/cargo)
 "DD" = (
@@ -6576,8 +7211,6 @@
 /area/ruin/interdyne_planetary_base/main/dorms)
 "Eb" = (
 /obj/effect/turf_decal/tile/dark_green,
-/obj/structure/table,
-/obj/machinery/recharger,
 /turf/open/floor/iron/dark/textured,
 /area/ruin/interdyne_planetary_base/cargo)
 "Ec" = (
@@ -6585,11 +7218,9 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
 	},
-/obj/machinery/door/airlock/colony_prefab,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/cable,
-/obj/effect/mapping_helpers/airlock/cutaiwire,
 /turf/open/floor/wood/parquet,
 /area/ruin/interdyne_planetary_base/main/dorms)
 "Eg" = (
@@ -6599,6 +7230,15 @@
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/iron/colony,
+/area/ruin/interdyne_planetary_base/main)
+"Ei" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 1
+	},
+/obj/structure/table/reinforced/rglass,
+/obj/item/stack/license_plates/empty/fifty,
+/obj/item/stack/license_plates/empty/fifty,
 /turf/open/floor/iron/colony,
 /area/ruin/interdyne_planetary_base/main)
 "Ej" = (
@@ -6616,7 +7256,7 @@
 	dir = 1
 	},
 /turf/open/floor/iron/dark/small,
-/area/ruin/interdyne_planetary_base)
+/area/mine/medical)
 "Ep" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
@@ -6640,6 +7280,23 @@
 	},
 /turf/open/floor/iron,
 /area/ruin/interdyne_planetary_base)
+"Et" = (
+/obj/effect/turf_decal/bot_white,
+/obj/effect/turf_decal/siding/dark_green{
+	dir = 1
+	},
+/obj/structure/closet/secure_closet/freezer/fridge/all_access,
+/obj/item/reagent_containers/cup/glass/waterbottle/large,
+/obj/item/reagent_containers/cup/glass/waterbottle/large,
+/obj/item/reagent_containers/cup/glass/waterbottle/large,
+/obj/item/reagent_containers/cup/glass/waterbottle/large,
+/obj/item/reagent_containers/cup/glass/waterbottle/large,
+/obj/item/reagent_containers/cup/glass/waterbottle/large,
+/obj/structure/railing{
+	dir = 8
+	},
+/turf/open/floor/iron/textured_large,
+/area/ruin/interdyne_planetary_base/cargo)
 "Eu" = (
 /obj/effect/turf_decal/siding/dark{
 	dir = 8
@@ -6692,6 +7349,7 @@
 	req_access = null;
 	transport_linked_id = "publicElevator"
 	},
+/obj/structure/cable,
 /turf/open/floor/iron/dark,
 /area/ruin/interdyne_planetary_base)
 "EC" = (
@@ -6712,9 +7370,6 @@
 /area/ruin/interdyne_planetary_base)
 "EF" = (
 /obj/effect/turf_decal/bot_white,
-/obj/structure/closet/crate{
-	name = "materials crate"
-	},
 /obj/effect/turf_decal/siding/dark_green{
 	dir = 5
 	},
@@ -6724,6 +7379,7 @@
 /obj/machinery/camera/autoname/directional/north{
 	network = list("intd13")
 	},
+/obj/structure/closet/secure_closet/freezer/fridge/all_access,
 /turf/open/floor/iron/textured_large,
 /area/ruin/interdyne_planetary_base/cargo)
 "EH" = (
@@ -6760,7 +7416,10 @@
 	width = 5
 	},
 /turf/open/floor/iron/colony,
-/area/ruin/interdyne_planetary_base)
+/area/station{
+	name = "Hangar";
+	has_gravity = 1
+	})
 "EN" = (
 /obj/effect/turf_decal/trimline/neutral/filled/line{
 	dir = 9
@@ -6795,12 +7454,20 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/cable,
+/obj/machinery/light/floor{
+	use_power = 0
+	},
 /turf/open/floor/iron/colony,
-/area/ruin/interdyne_planetary_base)
+/area/station/cargo/storage)
 "EX" = (
-/obj/structure/railroad,
-/turf/open/floor/iron/colony,
-/area/ruin/interdyne_planetary_base)
+/obj/structure/flora/biolumi/lamp{
+	desc = "Bioluminescent plas"
+	},
+/turf/open/floor/grass,
+/area/station/hallway{
+	name = "Colony Hallway";
+	has_gravity = 1
+	})
 "EY" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -6909,18 +7576,24 @@
 /obj/structure/chair/comfy/beige,
 /turf/open/floor/iron/colony,
 /area/ruin/interdyne_planetary_base/main)
+"Ft" = (
+/obj/structure/window/reinforced/survival_pod/spawner/directional/west,
+/turf/open/floor/iron/colony,
+/area/mine/living_quarters)
 "Fu" = (
 /obj/effect/turf_decal/tile/dark_green/half{
 	dir = 8
 	},
+/obj/structure/cable,
 /turf/open/floor/iron/dark/small,
-/area/ruin/interdyne_planetary_base)
+/area/mine/medical)
 "Fv" = (
-/obj/machinery/light/directional/north,
-/obj/machinery/rnd/production/colony_lathe,
-/obj/machinery/light_switch/directional/north,
+/obj/structure/railroad,
 /turf/open/floor/iron/colony,
-/area/ruin/interdyne_planetary_base)
+/area/station/hallway{
+	name = "Colony Hallway";
+	has_gravity = 1
+	})
 "FD" = (
 /obj/machinery/hydroponics/constructable,
 /obj/machinery/camera/autoname/directional/east{
@@ -6932,6 +7605,16 @@
 /obj/effect/turf_decal/siding/thinplating,
 /turf/open/floor/grass,
 /area/ruin/interdyne_planetary_base/serv/hydr)
+"FE" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/obj/effect/turf_decal/trimline/dark_red/filled/warning{
+	dir = 8
+	},
+/obj/structure/cable,
+/turf/open/floor/engine,
+/area/mine/living_quarters)
 "FF" = (
 /obj/machinery/holopad/secure,
 /turf/open/floor/iron/colony,
@@ -7060,7 +7743,9 @@
 /area/ruin/interdyne_planetary_base/cargo/obs)
 "Gg" = (
 /turf/closed/wall/prefab_plastic,
-/area/ruin/interdyne_planetary_base/main/vault)
+/area/station/cargo/miningdock/oresilo{
+	has_gravity = 1
+	})
 "Gh" = (
 /obj/structure/railing{
 	dir = 4
@@ -7071,8 +7756,9 @@
 /obj/machinery/light/floor{
 	use_power = 0
 	},
+/obj/machinery/destructive_scanner,
 /turf/open/floor/iron/colony,
-/area/ruin/interdyne_planetary_base)
+/area/station/cargo/storage)
 "Gi" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron/colony,
@@ -7080,7 +7766,10 @@
 "Gl" = (
 /obj/docking_port/mobile/arrivals_nova,
 /turf/open/floor/iron/colony,
-/area/ruin/interdyne_planetary_base)
+/area/station{
+	name = "Hangar";
+	has_gravity = 1
+	})
 "Gm" = (
 /obj/effect/turf_decal/trimline/dark_green/warning,
 /obj/effect/turf_decal/siding/dark_green/corner,
@@ -7088,6 +7777,13 @@
 	dir = 1
 	},
 /area/ruin/interdyne_planetary_base/cargo)
+"Go" = (
+/obj/effect/turf_decal/tile/dark_green/half{
+	dir = 8
+	},
+/obj/structure/table,
+/turf/open/floor/iron/colony,
+/area/ruin/interdyne_planetary_base/main)
 "Gq" = (
 /obj/effect/turf_decal/siding/thinplating,
 /obj/structure/chair/stool/bar,
@@ -7124,11 +7820,20 @@
 	pixel_x = -5
 	},
 /turf/open/floor/catwalk_floor/iron_dark,
-/area/ruin/interdyne_planetary_base/main/vault)
+/area/station/cargo/miningdock/oresilo{
+	has_gravity = 1
+	})
 "GA" = (
 /obj/machinery/light/small/directional/east,
 /turf/open/floor/iron/colony/white,
 /area/ruin/interdyne_planetary_base/main/dorms)
+"GB" = (
+/obj/machinery/duct,
+/obj/structure/chair/plastic{
+	dir = 1
+	},
+/turf/open/floor/iron/colony/bolts,
+/area/ruin/interdyne_planetary_base/cargo)
 "GD" = (
 /obj/machinery/light/small/directional/north,
 /turf/open/floor/iron/colony/white,
@@ -7263,6 +7968,11 @@
 /obj/machinery/computer/med_data,
 /turf/open/floor/iron/colony,
 /area/ruin/interdyne_planetary_base/cargo/obs)
+"GZ" = (
+/obj/structure/table,
+/obj/structure/bedsheetbin,
+/turf/open/floor/iron/colony,
+/area/mine/living_quarters)
 "Hb" = (
 /obj/structure/window/reinforced/survival_pod/spawner/directional/west,
 /obj/machinery/chem_dispenser/mutagensaltpeter,
@@ -7322,7 +8032,10 @@
 /obj/machinery/light/directional/north,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
 /turf/open/floor/iron/colony,
-/area/ruin/interdyne_planetary_base)
+/area/station/hallway{
+	name = "Colony Hallway";
+	has_gravity = 1
+	})
 "Hr" = (
 /obj/machinery/firealarm/directional/east,
 /obj/machinery/light/directional/north,
@@ -7399,7 +8112,7 @@
 "HO" = (
 /obj/effect/spawner/structure/window/reinforced/shuttle,
 /turf/open/floor/plating,
-/area/ruin/interdyne_planetary_base)
+/area/mine/medical)
 "HP" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -7483,12 +8196,15 @@
 /turf/open/floor/iron/colony/bolts,
 /area/ruin/interdyne_planetary_base/med)
 "HY" = (
-/obj/structure/closet/secure_closet/freezer/fridge/all_access,
-/obj/item/reagent_containers/cup/glass/waterbottle/large,
-/obj/item/reagent_containers/cup/glass/waterbottle/large,
-/obj/item/reagent_containers/cup/glass/waterbottle/large,
-/turf/open/floor/iron/checker,
-/area/ruin/interdyne_planetary_base/serv/bar)
+/obj/effect/turf_decal/delivery,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/structure/cable,
+/turf/open/floor/iron/colony,
+/area/station{
+	name = "Hangar";
+	has_gravity = 1
+	})
 "Ib" = (
 /obj/structure/table/wood,
 /obj/machinery/smartfridge/drying_rack,
@@ -7497,6 +8213,17 @@
 	},
 /turf/open/floor/stone,
 /area/ruin/interdyne_planetary_base)
+"Ic" = (
+/obj/machinery/light_switch/directional/north,
+/obj/structure/railroad,
+/obj/vehicle/ridden/rail_cart{
+	name = "eletric rail cart"
+	},
+/turf/open/floor/iron/colony,
+/area/station/hallway{
+	name = "Colony Hallway";
+	has_gravity = 1
+	})
 "Ii" = (
 /obj/structure/table/reinforced,
 /obj/effect/turf_decal/tile/dark_green/half{
@@ -7548,6 +8275,10 @@
 	},
 /turf/open/floor/iron/colony/white/bolts,
 /area/ruin/interdyne_planetary_base/cargo)
+"Iu" = (
+/obj/structure/cable,
+/turf/open/openspace,
+/area/ruin/interdyne_planetary_base)
 "Iv" = (
 /obj/structure/wall_torch/spawns_lit/directional/west,
 /obj/structure/railing/wooden_fencing{
@@ -7603,6 +8334,16 @@
 /obj/structure/cable,
 /turf/open/floor/iron/dark,
 /area/ruin/interdyne_planetary_base)
+"IF" = (
+/obj/machinery/pipedispenser/disposal/transit_tube,
+/turf/open/floor/iron/colony,
+/area/ruin/interdyne_planetary_base/main)
+"IG" = (
+/obj/machinery/vending/engivend{
+	onstation = 0
+	},
+/turf/open/floor/iron/colony,
+/area/mine/living_quarters)
 "II" = (
 /obj/machinery/rnd/server,
 /obj/machinery/light/directional/south,
@@ -7696,6 +8437,33 @@
 /obj/machinery/recharger,
 /turf/open/floor/iron/colony/white/bolts,
 /area/ruin/interdyne_planetary_base/med)
+"IY" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/obj/machinery/light/floor{
+	use_power = 0
+	},
+/turf/open/floor/plating,
+/area/lavaland/surface/outdoors/explored{
+	name = "Outdoors with Blocked Roofs";
+	outdoors = 0
+	})
+"IZ" = (
+/obj/structure/table,
+/obj/machinery/coffeemaker{
+	pixel_y = 4
+	},
+/obj/item/coffee_cartridge/fancy{
+	pixel_y = 14;
+	pixel_x = 4
+	},
+/obj/item/coffee_cartridge/fancy{
+	pixel_y = 14;
+	pixel_x = -4
+	},
+/turf/open/floor/iron/colony,
+/area/mine/living_quarters)
 "Jb" = (
 /obj/structure/window/reinforced/survival_pod/spawner/directional/south,
 /obj/machinery/computer/scan_consolenew{
@@ -7713,6 +8481,15 @@
 /obj/item/storage/belt/sabre/cargo,
 /turf/open/floor/iron/colony,
 /area/ruin/interdyne_planetary_base/main)
+"Jf" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/structure/cable,
+/turf/open/floor/iron/colony,
+/area/station/hallway{
+	name = "Colony Hallway";
+	has_gravity = 1
+	})
 "Jg" = (
 /turf/closed/wall/prefab_plastic,
 /area/lavaland/surface/outdoors/explored{
@@ -7762,7 +8539,7 @@
 	},
 /obj/machinery/mining_weather_monitor/directional/east,
 /turf/open/floor/iron/colony,
-/area/ruin/interdyne_planetary_base)
+/area/station/cargo/storage)
 "Jp" = (
 /obj/machinery/atmospherics/components/binary/pump/on{
 	name = "Air to Distro"
@@ -7857,7 +8634,10 @@
 	},
 /obj/machinery/airalarm/directional/east,
 /turf/open/floor/grass,
-/area/ruin/interdyne_planetary_base)
+/area/station/hallway{
+	name = "Colony Hallway";
+	has_gravity = 1
+	})
 "JR" = (
 /obj/structure/loom,
 /obj/structure/wall_torch/spawns_lit/directional/north,
@@ -7893,7 +8673,10 @@
 "JY" = (
 /obj/structure/window/fulltile/colony_fabricator,
 /turf/open/floor/iron/colony,
-/area/ruin/interdyne_planetary_base)
+/area/station/hallway{
+	name = "Colony Hallway";
+	has_gravity = 1
+	})
 "JZ" = (
 /obj/effect/turf_decal/siding/thinplating{
 	dir = 9
@@ -7908,18 +8691,11 @@
 /obj/effect/turf_decal/bot_white,
 /obj/machinery/light/cold/directional/south,
 /obj/effect/turf_decal/siding/dark_green,
-/obj/structure/rack/shelf,
-/obj/item/gps{
-	gpstag = "INTRDYN0";
-	pixel_x = -6
+/obj/structure/chair/plastic{
+	dir = 4
 	},
-/obj/item/gps{
-	gpstag = "INTRDYN0";
-	pixel_y = 3
-	},
-/obj/item/gps{
-	gpstag = "INTRDYN0";
-	pixel_x = 6
+/obj/structure/railing{
+	dir = 8
 	},
 /turf/open/floor/iron/textured_large,
 /area/ruin/interdyne_planetary_base/cargo)
@@ -8008,8 +8784,9 @@
 	dir = 8
 	},
 /obj/machinery/airalarm/directional/east,
+/obj/structure/cable,
 /turf/open/floor/iron/white/small,
-/area/ruin/interdyne_planetary_base)
+/area/mine/medical)
 "Ko" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
@@ -8049,10 +8826,8 @@
 /turf/open/floor/engine/o2,
 /area/ruin/interdyne_planetary_base/eng)
 "Kz" = (
-/obj/machinery/vending/deforest_medvend{
-	onstation = 0
-	},
 /obj/machinery/vending/wallmed/directional/east,
+/obj/structure/chair/plastic,
 /turf/open/floor/iron/colony/bolts,
 /area/ruin/interdyne_planetary_base/cargo)
 "KC" = (
@@ -8122,7 +8897,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/light/cold/directional/south,
-/turf/open/floor/iron/colony,
+/turf/open/floor/grass,
 /area/ruin/interdyne_planetary_base)
 "KV" = (
 /obj/item/bedsheet/brown/double,
@@ -8205,7 +8980,10 @@
 "Lp" = (
 /obj/effect/turf_decal/trimline/blue/filled/line,
 /turf/open/floor/iron/colony,
-/area/ruin/interdyne_planetary_base)
+/area/station/hallway{
+	name = "Colony Hallway";
+	has_gravity = 1
+	})
 "Lq" = (
 /obj/machinery/light/small/directional/east,
 /obj/effect/turf_decal/siding/wood{
@@ -8230,6 +9008,13 @@
 /obj/machinery/mech_bay_recharge_port,
 /turf/open/floor/iron/colony,
 /area/ruin/interdyne_planetary_base/main)
+"Lw" = (
+/obj/structure/rack/shelf,
+/obj/structure/railing{
+	dir = 8
+	},
+/turf/open/floor/iron/colony,
+/area/mine/living_quarters)
 "Lz" = (
 /obj/machinery/limbgrower,
 /turf/open/floor/iron/colony/bolts,
@@ -8246,6 +9031,7 @@
 	req_access = list("syndicate")
 	},
 /obj/structure/window/reinforced/survival_pod/spawner/directional/south,
+/obj/structure/cable,
 /turf/open/floor/iron/dark/small,
 /area/ruin/interdyne_planetary_base/med)
 "LE" = (
@@ -8279,6 +9065,10 @@
 /obj/structure/cable,
 /turf/open/floor/iron/diagonal,
 /area/ruin/interdyne_planetary_base/eng)
+"LN" = (
+/obj/structure/cable,
+/turf/open/floor/iron/dark/small,
+/area/ruin/interdyne_planetary_base/med)
 "LO" = (
 /obj/effect/turf_decal/shuttle{
 	dir = 4
@@ -8288,7 +9078,10 @@
 	dir = 8
 	},
 /turf/open/floor/iron/colony,
-/area/ruin/interdyne_planetary_base)
+/area/station{
+	name = "Hangar";
+	has_gravity = 1
+	})
 "LQ" = (
 /obj/structure/fans/tiny/forcefield,
 /obj/structure/cable,
@@ -8297,7 +9090,22 @@
 "LZ" = (
 /obj/structure/rack/gunrack,
 /turf/open/floor/catwalk_floor/iron_dark,
-/area/ruin/interdyne_planetary_base/main/vault)
+/area/station/cargo/miningdock/oresilo{
+	has_gravity = 1
+	})
+"Ma" = (
+/obj/structure/cable,
+/obj/machinery/power/micro_reactor,
+/turf/open/floor/engine,
+/area/ruin/interdyne_planetary_base)
+"Mc" = (
+/obj/structure/window/reinforced/survival_pod/spawner/directional/west,
+/obj/machinery/space_heater/wall_mounted/directional/north,
+/obj/structure/flora/biolumi/lamp{
+	desc = "Bioluminescent plas"
+	},
+/turf/open/floor/grass,
+/area/mine/living_quarters)
 "Mg" = (
 /obj/structure/railing/wooden_fencing{
 	dir = 8
@@ -8327,6 +9135,7 @@
 /area/ruin/interdyne_planetary_base)
 "Mi" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
+/obj/machinery/light/directional/north,
 /turf/open/floor/iron/colony,
 /area/ruin/interdyne_planetary_base/main)
 "Mj" = (
@@ -8339,12 +9148,13 @@
 /obj/structure/window/reinforced/survival_pod/spawner/directional/south,
 /obj/structure/reagent_dispensers/water_cooler,
 /turf/open/floor/iron/white/small,
-/area/ruin/interdyne_planetary_base)
+/area/mine/medical)
 "Mm" = (
 /turf/closed/wall/prefab_plastic,
 /area/ruin/interdyne_planetary_base/serv/kitchen)
 "Mn" = (
-/obj/machinery/suit_storage_unit/mining,
+/obj/structure/table,
+/obj/machinery/recharger,
 /turf/open/floor/iron/colony,
 /area/ruin/interdyne_planetary_base/cargo)
 "Mo" = (
@@ -8390,9 +9200,8 @@
 /turf/open/floor/iron/textured_large,
 /area/ruin/interdyne_planetary_base/main)
 "Mt" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/turf/open/floor/iron/dark,
+/obj/structure/hedge,
+/turf/open/floor/grass,
 /area/ruin/interdyne_planetary_base)
 "Mu" = (
 /obj/effect/turf_decal/bot_white,
@@ -8420,6 +9229,12 @@
 /obj/item/disk/design_disk/knight_gear,
 /turf/open/floor/iron/colony,
 /area/ruin/interdyne_planetary_base)
+"Mw" = (
+/obj/structure/table,
+/turf/open/floor/iron/dark/side{
+	dir = 8
+	},
+/area/ruin/interdyne_planetary_base/cargo/ware)
 "Mx" = (
 /obj/machinery/light_switch/directional/south,
 /turf/open/floor/iron,
@@ -8429,7 +9244,7 @@
 /obj/effect/turf_decal/siding/dark_green{
 	dir = 1
 	},
-/obj/structure/rack/shelf,
+/obj/structure/table,
 /turf/open/floor/iron/textured_large,
 /area/ruin/interdyne_planetary_base/cargo)
 "MD" = (
@@ -8476,9 +9291,7 @@
 /area/ruin/interdyne_planetary_base)
 "MN" = (
 /obj/machinery/light/directional/north,
-/obj/machinery/vending/games{
-	onstation = 0
-	},
+/obj/machinery/quantum_server,
 /turf/open/floor/iron/colony,
 /area/ruin/interdyne_planetary_base/main)
 "MO" = (
@@ -8575,7 +9388,10 @@
 	layer = 5
 	},
 /turf/open/floor/iron/colony,
-/area/ruin/interdyne_planetary_base)
+/area/station{
+	name = "Hangar";
+	has_gravity = 1
+	})
 "Ne" = (
 /obj/machinery/recharge_station,
 /turf/open/floor/wood/tile,
@@ -8650,6 +9466,26 @@
 	},
 /turf/open/floor/iron/colony/white,
 /area/ruin/interdyne_planetary_base/cargo/ware)
+"Ns" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/structure/cable,
+/obj/machinery/light_switch/directional/south,
+/turf/open/floor/iron/colony,
+/area/station/hallway{
+	name = "Colony Hallway";
+	has_gravity = 1
+	})
+"Nv" = (
+/obj/effect/turf_decal/siding/dark_green{
+	dir = 1
+	},
+/obj/structure/table/reinforced,
+/obj/structure/railing{
+	dir = 8
+	},
+/turf/open/floor/wood/tile,
+/area/ruin/interdyne_planetary_base/serv/bar)
 "Nw" = (
 /obj/machinery/vending/security/noaccess{
 	onstation = 0
@@ -8676,7 +9512,9 @@
 "NE" = (
 /obj/structure/table/reinforced,
 /turf/open/floor/catwalk_floor/iron_dark,
-/area/ruin/interdyne_planetary_base/main/vault)
+/area/station/cargo/miningdock/oresilo{
+	has_gravity = 1
+	})
 "NG" = (
 /obj/effect/turf_decal/trimline/dark_green/mid_joiner{
 	dir = 1
@@ -8697,7 +9535,10 @@
 "NH" = (
 /obj/effect/turf_decal/shuttle,
 /turf/open/floor/iron/colony,
-/area/ruin/interdyne_planetary_base)
+/area/station{
+	name = "Hangar";
+	has_gravity = 1
+	})
 "NK" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -8732,17 +9573,30 @@
 	},
 /turf/open/floor/engine,
 /area/ruin/interdyne_planetary_base/science/xeno)
+"NT" = (
+/obj/structure/window/fulltile/colony_fabricator,
+/turf/open/floor/iron/colony,
+/area/station/cargo/storage)
 "NU" = (
 /obj/effect/turf_decal/delivery,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron/colony,
-/area/ruin/interdyne_planetary_base)
+/area/station{
+	name = "Hangar";
+	has_gravity = 1
+	})
+"NX" = (
+/turf/closed/wall/prefab_plastic,
+/area/mine/medical)
 "Oa" = (
 /obj/machinery/light/directional/north,
 /obj/structure/railroad,
 /turf/open/floor/iron/colony,
-/area/ruin/interdyne_planetary_base)
+/area/station/hallway{
+	name = "Colony Hallway";
+	has_gravity = 1
+	})
 "Ob" = (
 /obj/structure/railing{
 	dir = 8
@@ -8754,6 +9608,14 @@
 /obj/machinery/light/directional/east,
 /turf/open/floor/iron/colony,
 /area/ruin/interdyne_planetary_base/main)
+"Od" = (
+/obj/structure/railroad,
+/obj/structure/cable,
+/turf/open/floor/iron/colony,
+/area/station/hallway{
+	name = "Colony Hallway";
+	has_gravity = 1
+	})
 "Oe" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
@@ -8769,14 +9631,23 @@
 	name = "Cargo Door Bolt Control";
 	normaldoorcontrol = 1
 	},
+/obj/machinery/piratepad/civilian,
 /turf/open/floor/iron/colony,
-/area/ruin/interdyne_planetary_base)
+/area/station/cargo/storage)
 "Of" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 4
 	},
 /turf/closed/wall/mineral/stone,
 /area/ruin/interdyne_planetary_base)
+"Og" = (
+/obj/effect/turf_decal/stripes/line,
+/obj/effect/turf_decal/trimline/dark_red/filled/warning{
+	dir = 1
+	},
+/obj/structure/window/reinforced/survival_pod/spawner/directional/south,
+/turf/open/floor/engine,
+/area/mine/living_quarters)
 "Oh" = (
 /obj/machinery/chem_heater/withbuffer,
 /obj/effect/turf_decal/tile/dark_blue/opposingcorners,
@@ -8820,8 +9691,9 @@
 /obj/effect/turf_decal/tile/dark_green/half{
 	dir = 4
 	},
+/obj/structure/cable,
 /turf/open/floor/iron/dark/small,
-/area/ruin/interdyne_planetary_base)
+/area/mine/medical)
 "Os" = (
 /turf/open/floor/iron/checker,
 /area/ruin/interdyne_planetary_base/serv/bar)
@@ -8829,7 +9701,10 @@
 /obj/effect/turf_decal/delivery,
 /obj/structure/closet/crate/cargo,
 /turf/open/floor/iron/colony,
-/area/ruin/interdyne_planetary_base)
+/area/station/hallway{
+	name = "Colony Hallway";
+	has_gravity = 1
+	})
 "Ov" = (
 /obj/structure/flora/bush/fullgrass,
 /turf/open/floor/grass/fairy,
@@ -8894,6 +9769,7 @@
 /obj/machinery/door/airlock/colony_prefab,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/structure/cable,
 /turf/open/floor/iron/colony,
 /area/ruin/interdyne_planetary_base/med)
 "OL" = (
@@ -8923,6 +9799,11 @@
 /obj/structure/bookcase/random,
 /turf/open/floor/wood/parquet,
 /area/ruin/interdyne_planetary_base/main/dorms)
+"OT" = (
+/obj/structure/table,
+/obj/machinery/recharger,
+/turf/open/floor/iron/colony,
+/area/mine/living_quarters)
 "OU" = (
 /obj/structure/window/reinforced/survival_pod/spawner/directional/south,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/pink,
@@ -8994,7 +9875,18 @@
 "Po" = (
 /obj/effect/turf_decal/bot_white,
 /turf/open/floor/iron/colony,
-/area/ruin/interdyne_planetary_base)
+/area/station/hallway{
+	name = "Colony Hallway";
+	has_gravity = 1
+	})
+"Pp" = (
+/obj/structure/hedge,
+/obj/machinery/digital_clock/directional/north,
+/turf/open/floor/iron/colony,
+/area/station{
+	name = "Hangar";
+	has_gravity = 1
+	})
 "Ps" = (
 /obj/machinery/light/cold/directional/south,
 /obj/structure/cable,
@@ -9032,7 +9924,7 @@
 	layer = 7
 	},
 /mob/living/basic/mining_drone,
-/turf/open/floor/iron/colony,
+/turf/open/floor/grass,
 /area/ruin/interdyne_planetary_base)
 "PD" = (
 /obj/structure/table/reinforced,
@@ -9110,6 +10002,13 @@
 /obj/structure/cable,
 /turf/open/floor/catwalk_floor/iron_dark,
 /area/ruin/interdyne_planetary_base/eng)
+"PV" = (
+/obj/machinery/vending/autodrobe{
+	onstation = 0;
+	extended_inventory = 1
+	},
+/turf/open/floor/iron/colony,
+/area/mine/living_quarters)
 "PZ" = (
 /turf/closed/wall/prefab_plastic,
 /area/ruin/interdyne_planetary_base/med/morgue)
@@ -9201,6 +10100,19 @@
 /obj/effect/turf_decal/tile/dark_blue/opposingcorners,
 /turf/open/floor/iron/dark/smooth_half,
 /area/ruin/interdyne_planetary_base/med)
+"Qx" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/structure/railroad,
+/obj/structure/cable,
+/obj/vehicle/ridden/rail_cart{
+	name = "eletric rail cart"
+	},
+/turf/open/floor/iron/colony,
+/area/station/hallway{
+	name = "Colony Hallway";
+	has_gravity = 1
+	})
 "Qy" = (
 /obj/machinery/light/cold/directional/west,
 /obj/machinery/computer/communications{
@@ -9220,7 +10132,10 @@
 "QB" = (
 /obj/machinery/vending/wardrobe/cargo_wardrobe,
 /turf/open/floor/iron/colony,
-/area/ruin/interdyne_planetary_base)
+/area/station/hallway{
+	name = "Colony Hallway";
+	has_gravity = 1
+	})
 "QC" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -9235,7 +10150,7 @@
 /obj/structure/bed,
 /obj/item/bedsheet/medical,
 /turf/open/floor/iron/dark/small,
-/area/ruin/interdyne_planetary_base)
+/area/mine/medical)
 "QG" = (
 /obj/structure/closet/crate/freezer/blood,
 /obj/effect/turf_decal/tile/dark_blue/opposingcorners,
@@ -9249,7 +10164,7 @@
 "QI" = (
 /obj/structure/cable,
 /turf/open/misc/asteroid/basalt,
-/area/lavaland/surface/outdoors/explored)
+/area/lavaland/surface/outdoors)
 "QJ" = (
 /obj/effect/turf_decal/stripes/line,
 /obj/machinery/modular_computer/preset/curator{
@@ -9270,12 +10185,18 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/wood,
-/area/ruin/interdyne_planetary_base)
+/area/station/hallway{
+	name = "Colony Hallway";
+	has_gravity = 1
+	})
 "QN" = (
 /obj/effect/turf_decal/trimline/brown/filled/line,
 /obj/effect/turf_decal/bot_white,
 /turf/open/floor/iron/colony,
-/area/ruin/interdyne_planetary_base)
+/area/station/hallway{
+	name = "Colony Hallway";
+	has_gravity = 1
+	})
 "QP" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/cable,
@@ -9283,10 +10204,16 @@
 /obj/machinery/light/floor,
 /turf/open/floor/iron/dark,
 /area/ruin/interdyne_planetary_base)
+"QQ" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
+/turf/open/floor/iron/colony,
+/area/station/hallway{
+	name = "Colony Hallway";
+	has_gravity = 1
+	})
 "QR" = (
 /obj/effect/turf_decal/tile/dark_green,
 /obj/machinery/firealarm/directional/west,
-/obj/machinery/suit_storage_unit/mining,
 /obj/machinery/light/cold/directional/west,
 /turf/open/floor/iron/colony,
 /area/ruin/interdyne_planetary_base/cargo)
@@ -9331,7 +10258,10 @@
 	loot = list(/obj/structure/billboard/nanotrasen = 35)
 	},
 /turf/open/floor/grass,
-/area/ruin/interdyne_planetary_base)
+/area/station{
+	name = "Hangar";
+	has_gravity = 1
+	})
 "Rc" = (
 /obj/structure/sign/painting{
 	pixel_y = -32
@@ -9400,12 +10330,10 @@
 	dir = 8
 	},
 /obj/effect/turf_decal/siding/thinplating/corner,
-/obj/machinery/door/airlock/colony_prefab,
-/obj/machinery/door/firedoor,
 /obj/effect/turf_decal/siding/thinplating{
 	dir = 8
 	},
-/obj/effect/mapping_helpers/airlock/cutaiwire,
+/obj/structure/window/fulltile/colony_fabricator,
 /obj/machinery/duct,
 /turf/open/floor/iron/checker,
 /area/ruin/interdyne_planetary_base/serv/bar)
@@ -9509,7 +10437,13 @@
 /obj/structure/hedge,
 /obj/machinery/light_switch/directional/north,
 /turf/open/floor/iron/colony,
-/area/ruin/interdyne_planetary_base)
+/area/station{
+	name = "Hangar";
+	has_gravity = 1
+	})
+"RW" = (
+/turf/open/floor/grass,
+/area/mine/living_quarters)
 "RX" = (
 /obj/machinery/camera/directional/west{
 	c_tag = "Public Mining Storage";
@@ -9519,9 +10453,7 @@
 /area/ruin/interdyne_planetary_base)
 "RY" = (
 /obj/structure/extinguisher_cabinet/directional/east,
-/obj/machinery/vending/deforest_medvend{
-	onstation = 0
-	},
+/obj/structure/table,
 /turf/open/floor/iron/colony/bolts,
 /area/ruin/interdyne_planetary_base/cargo)
 "Sb" = (
@@ -9583,7 +10515,10 @@
 	normaldoorcontrol = 1
 	},
 /turf/open/floor/iron/colony,
-/area/ruin/interdyne_planetary_base)
+/area/station/hallway{
+	name = "Colony Hallway";
+	has_gravity = 1
+	})
 "Sr" = (
 /obj/effect/turf_decal/tile/dark_green/half{
 	dir = 8
@@ -9631,6 +10566,15 @@
 	},
 /turf/open/floor/engine/bz,
 /area/ruin/interdyne_planetary_base/science/xeno)
+"SK" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/structure/cable,
+/turf/open/floor/iron/colony,
+/area/station/cargo/storage)
 "SL" = (
 /obj/structure/table,
 /obj/machinery/light/small/directional/west,
@@ -9669,21 +10613,32 @@
 	pixel_x = -5
 	},
 /turf/open/floor/grass,
-/area/ruin/interdyne_planetary_base)
+/area/station{
+	name = "Hangar";
+	has_gravity = 1
+	})
 "SQ" = (
 /obj/machinery/rnd/production/colony_lathe,
 /turf/open/floor/iron/colony,
 /area/ruin/interdyne_planetary_base)
 "SS" = (
 /obj/effect/turf_decal/nova_decals/misc/handicapped,
+/obj/structure/cable,
 /turf/open/floor/grass,
-/area/ruin/interdyne_planetary_base)
+/area/station{
+	name = "Hangar";
+	has_gravity = 1
+	})
 "ST" = (
-/obj/structure/hedge,
-/obj/structure/fluff/minepost{
-	layer = 5
+/obj/effect/turf_decal/stripes/line{
+	dir = 5
 	},
-/turf/open/misc/asteroid/basalt/lava_land_surface,
+/obj/structure/marker_beacon/burgundy,
+/obj/effect/turf_decal/trimline/dark_red/filled/corner{
+	dir = 8
+	},
+/obj/structure/window/reinforced/survival_pod/spawner/directional/north,
+/turf/open/floor/plating/reinforced,
 /area/ruin/interdyne_planetary_base)
 "SX" = (
 /turf/closed/wall/prefab_plastic,
@@ -9701,6 +10656,12 @@
 /obj/structure/hedge,
 /turf/open/floor/grass,
 /area/ruin/interdyne_planetary_base)
+"Ta" = (
+/obj/structure/railing{
+	dir = 8
+	},
+/turf/open/floor/grass,
+/area/mine/living_quarters)
 "Tb" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -9759,16 +10720,39 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron/colony,
 /area/ruin/interdyne_planetary_base/main/dorms)
+"Tj" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/obj/machinery/light/floor{
+	use_power = 0
+	},
+/obj/machinery/digital_clock/directional/north,
+/turf/open/floor/plating,
+/area/lavaland/surface/outdoors/explored{
+	name = "Outdoors with Blocked Roofs";
+	outdoors = 0
+	})
 "Tk" = (
 /obj/machinery/door/airlock/colony_prefab,
 /turf/open/floor/grass,
 /area/ruin/interdyne_planetary_base)
 "Tl" = (
-/obj/structure/ore_box,
 /obj/effect/turf_decal/delivery,
 /obj/machinery/light/cold/directional/south,
+/obj/machinery/recharge_station,
 /turf/open/floor/iron/colony/white/bolts,
 /area/ruin/interdyne_planetary_base/cargo)
+"Tm" = (
+/obj/machinery/light/floor,
+/obj/structure/cable,
+/obj/machinery/power/apc/auto_name/directional/north,
+/obj/structure/table/reinforced,
+/turf/open/floor/iron/colony,
+/area/station{
+	name = "Hangar";
+	has_gravity = 1
+	})
 "Tp" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 1
@@ -9893,18 +10877,14 @@
 /turf/open/floor/iron/colony,
 /area/ruin/interdyne_planetary_base/main)
 "TR" = (
-/obj/machinery/vending/engivend{
-	onstation = 0
-	},
+/obj/structure/cable,
 /turf/open/floor/iron/colony,
-/area/ruin/interdyne_planetary_base/main)
+/area/mine/living_quarters)
 "TS" = (
 /obj/machinery/camera/autoname/directional/west{
 	network = list("intd13")
 	},
-/obj/machinery/vending/imported/tiziran{
-	onstation = 0
-	},
+/obj/structure/closet/secure_closet/freezer/fridge/all_access,
 /turf/open/floor/iron/colony,
 /area/ruin/interdyne_planetary_base/cargo)
 "TT" = (
@@ -9930,8 +10910,14 @@
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/structure/table/reinforced,
+/obj/machinery/griddle/frontier_tabletop,
 /turf/open/floor/iron/colony/bolts,
 /area/ruin/interdyne_planetary_base/cargo)
+"TZ" = (
+/obj/structure/ore_box,
+/turf/open/floor/iron/colony,
+/area/ruin/interdyne_planetary_base)
 "Ua" = (
 /obj/structure/cable,
 /obj/structure/disposalpipe/segment{
@@ -9945,7 +10931,10 @@
 	},
 /obj/effect/turf_decal/caution/stand_clear,
 /turf/open/floor/iron/colony,
-/area/ruin/interdyne_planetary_base)
+/area/station{
+	name = "Hangar";
+	has_gravity = 1
+	})
 "Ud" = (
 /obj/effect/turf_decal/tile/purple/anticorner{
 	dir = 8
@@ -9962,7 +10951,7 @@
 /obj/effect/turf_decal/siding/dark_green{
 	dir = 10
 	},
-/obj/structure/closet/crate,
+/obj/structure/table/reinforced,
 /turf/open/floor/iron/textured_large,
 /area/ruin/interdyne_planetary_base/cargo)
 "Uf" = (
@@ -10017,6 +11006,10 @@
 	},
 /turf/open/floor/iron/colony/bolts,
 /area/ruin/interdyne_planetary_base/med)
+"Up" = (
+/obj/machinery/suit_storage_unit/mining,
+/turf/open/floor/iron/colony,
+/area/ruin/interdyne_planetary_base)
 "Ur" = (
 /obj/item/towel,
 /obj/item/towel,
@@ -10029,6 +11022,7 @@
 /obj/structure/railing{
 	dir = 4
 	},
+/obj/structure/table/reinforced/plasmarglass,
 /turf/open/floor/iron/colony/bolts,
 /area/ruin/interdyne_planetary_base/cargo)
 "Uu" = (
@@ -10056,6 +11050,12 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron/colony,
 /area/ruin/interdyne_planetary_base/med)
+"Ux" = (
+/obj/structure/table/reinforced/rglass,
+/obj/item/stack/license_plates/empty/fifty,
+/obj/item/stack/license_plates/empty/fifty,
+/turf/open/floor/iron/colony,
+/area/ruin/interdyne_planetary_base/main)
 "Uy" = (
 /obj/structure/lattice/catwalk,
 /obj/structure/cable,
@@ -10080,6 +11080,10 @@
 /area/ruin/interdyne_planetary_base/cargo/deck{
 	name = "Bedroom"
 	})
+"UC" = (
+/obj/machinery/status_display/supply,
+/turf/closed/wall/prefab_plastic,
+/area/station/cargo/storage)
 "UD" = (
 /obj/structure/table/reinforced,
 /obj/item/clothing/mask/gas/atmos/frontier_colonist,
@@ -10141,6 +11145,11 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/wood/parquet,
 /area/ruin/interdyne_planetary_base/main/dorms)
+"UQ" = (
+/turf/open/floor/catwalk_floor/iron_dark,
+/area/station/cargo/miningdock/oresilo{
+	has_gravity = 1
+	})
 "US" = (
 /obj/machinery/smartfridge/organ,
 /obj/machinery/door/firedoor,
@@ -10162,6 +11171,7 @@
 /area/ruin/interdyne_planetary_base/cargo)
 "UU" = (
 /obj/machinery/light_switch/directional/north,
+/obj/machinery/suit_storage_unit/mining,
 /turf/open/floor/iron/colony,
 /area/ruin/interdyne_planetary_base)
 "UW" = (
@@ -10170,39 +11180,28 @@
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/structure/cable,
 /turf/open/floor/iron/colony,
 /area/ruin/interdyne_planetary_base/med)
 "UY" = (
-/obj/structure/closet/crate{
-	name = "gear crate"
-	},
-/obj/item/clothing/glasses/hud/health/night,
-/obj/item/clothing/glasses/hud/health/night,
-/obj/item/clothing/glasses/hud/health/night,
-/obj/item/storage/belt/military,
-/obj/item/storage/belt/military,
-/obj/item/storage/belt/military,
-/obj/item/ammo_box/c9mm,
-/obj/item/ammo_box/c9mm,
-/obj/item/ammo_box/magazine/m9mm,
-/obj/item/ammo_box/magazine/m9mm,
-/obj/item/ammo_box/magazine/m9mm,
-/obj/item/ammo_box/magazine/m9mm,
-/obj/item/clothing/glasses/meson/night,
-/obj/item/clothing/glasses/meson/night,
-/obj/item/clothing/glasses/meson/night,
-/obj/effect/turf_decal/bot_white,
-/obj/item/card/id/advanced/chameleon/black,
-/obj/item/card/id/advanced/chameleon/black,
-/obj/item/card/id/advanced/chameleon/black,
-/obj/effect/turf_decal/siding/dark_green{
-	dir = 9
+/obj/structure/chair/plastic{
+	dir = 4
 	},
 /obj/structure/railing{
 	dir = 8
 	},
 /turf/open/floor/iron/textured_large,
 /area/ruin/interdyne_planetary_base/cargo)
+"UZ" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/obj/effect/turf_decal/trimline/dark_red/filled/warning{
+	dir = 4
+	},
+/obj/structure/cable,
+/turf/open/floor/engine,
+/area/ruin/interdyne_planetary_base)
 "Vc" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
 /turf/open/floor/wood,
@@ -10223,6 +11222,14 @@
 	},
 /turf/open/floor/wood/parquet,
 /area/ruin/interdyne_planetary_base/main/dorms)
+"Vi" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/effect/turf_decal/trimline/dark_red/filled/warning,
+/obj/structure/cable,
+/turf/open/floor/engine,
+/area/ruin/interdyne_planetary_base)
 "Vj" = (
 /obj/effect/turf_decal/tile/dark_green/diagonal_centre,
 /turf/open/floor/iron/dark/diagonal,
@@ -10285,7 +11292,10 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron/colony,
-/area/ruin/interdyne_planetary_base)
+/area/station{
+	name = "Hangar";
+	has_gravity = 1
+	})
 "VB" = (
 /obj/effect/turf_decal/trimline/neutral/filled/line{
 	dir = 10
@@ -10302,7 +11312,10 @@
 "VH" = (
 /obj/effect/turf_decal/delivery,
 /turf/open/floor/iron/colony,
-/area/ruin/interdyne_planetary_base)
+/area/station/hallway{
+	name = "Colony Hallway";
+	has_gravity = 1
+	})
 "VI" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 8
@@ -10325,7 +11338,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/cable,
 /turf/open/floor/iron/colony,
-/area/ruin/interdyne_planetary_base)
+/area/station/cargo/storage)
 "VN" = (
 /obj/machinery/computer/pandemic,
 /obj/effect/turf_decal/tile/dark_green/half{
@@ -10410,7 +11423,7 @@
 	dir = 4
 	},
 /turf/open/floor/iron/colony,
-/area/ruin/interdyne_planetary_base)
+/area/station/cargo/storage)
 "Wc" = (
 /obj/effect/turf_decal/siding/thinplating/corner{
 	dir = 8
@@ -10511,7 +11524,10 @@
 	},
 /obj/structure/railing,
 /turf/open/floor/iron/colony,
-/area/ruin/interdyne_planetary_base)
+/area/station/hallway{
+	name = "Colony Hallway";
+	has_gravity = 1
+	})
 "Wm" = (
 /obj/machinery/light/small/directional/east,
 /turf/open/floor/iron/dark,
@@ -10547,6 +11563,7 @@
 /area/ruin/interdyne_planetary_base)
 "Ws" = (
 /obj/machinery/light/small/directional/south,
+/obj/machinery/light_switch/directional/south,
 /turf/open/floor/iron/colony/bolts,
 /area/ruin/interdyne_planetary_base/cargo/ware)
 "Wt" = (
@@ -10571,6 +11588,7 @@
 	dir = 8
 	},
 /obj/machinery/light/cold/directional/west,
+/obj/structure/table,
 /turf/open/floor/iron/colony,
 /area/ruin/interdyne_planetary_base/main)
 "Ww" = (
@@ -10578,11 +11596,18 @@
 /obj/effect/turf_decal/stripes/full,
 /turf/open/floor/plating/lavaland_atmos,
 /area/ruin/interdyne_planetary_base)
+"Wx" = (
+/obj/structure/hedge,
+/turf/open/floor/iron/colony,
+/area/station{
+	name = "Hangar";
+	has_gravity = 1
+	})
 "Wy" = (
 /turf/open/water/hot_spring{
 	initial_gas_mix = "LAVALAND_ATMOS"
 	},
-/area/lavaland/surface/outdoor/random)
+/area/lavaland/surface/outdoors/unexplored)
 "Wz" = (
 /obj/effect/turf_decal/siding/dark{
 	dir = 8
@@ -10610,6 +11635,14 @@
 	},
 /turf/open/floor/wood,
 /area/ruin/interdyne_planetary_base)
+"WJ" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/iron/colony,
+/area/station/hallway{
+	name = "Colony Hallway";
+	has_gravity = 1
+	})
 "WL" = (
 /obj/machinery/vending/hydroseeds{
 	onstation = 0
@@ -10626,6 +11659,12 @@
 	},
 /turf/open/floor/iron/colony/bolts,
 /area/ruin/interdyne_planetary_base/med)
+"WP" = (
+/obj/machinery/vending/barbervend{
+	onstation = 0
+	},
+/turf/open/floor/iron/colony,
+/area/mine/living_quarters)
 "WQ" = (
 /obj/machinery/smartfridge/chemistry/virology/preloaded,
 /turf/open/floor/iron/dark/small,
@@ -10687,6 +11726,12 @@
 	},
 /turf/open/floor/grass,
 /area/ruin/interdyne_planetary_base)
+"WZ" = (
+/obj/structure/rack/shelf,
+/turf/open/floor/catwalk_floor/iron_dark,
+/area/station/cargo/miningdock/oresilo{
+	has_gravity = 1
+	})
 "Xa" = (
 /obj/effect/turf_decal/siding/dark{
 	dir = 8
@@ -10722,6 +11767,15 @@
 	},
 /turf/open/floor/iron/checker,
 /area/ruin/interdyne_planetary_base/serv/bar)
+"Xf" = (
+/obj/machinery/light/directional/west,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/iron/colony,
+/area/station/hallway{
+	name = "Colony Hallway";
+	has_gravity = 1
+	})
 "Xi" = (
 /obj/machinery/door/airlock/colony_prefab,
 /obj/structure/cable,
@@ -10734,7 +11788,10 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron/colony,
-/area/ruin/interdyne_planetary_base)
+/area/station/hallway{
+	name = "Colony Hallway";
+	has_gravity = 1
+	})
 "Xl" = (
 /obj/structure/chair/office/light{
 	dir = 4
@@ -10744,14 +11801,12 @@
 "Xn" = (
 /obj/structure/sign/warning/no_smoking/circle/directional/north,
 /obj/machinery/door/firedoor,
-/obj/effect/mapping_helpers/airlock/cutaiwire,
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/obj/machinery/door/airlock/colony_prefab,
 /turf/open/floor/iron/colony/white,
 /area/ruin/interdyne_planetary_base/main)
 "Xp" = (
@@ -10771,6 +11826,12 @@
 	},
 /turf/open/floor/iron/herringbone,
 /area/ruin/interdyne_planetary_base/eng)
+"Xr" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/structure/cable,
+/turf/open/floor/iron/colony,
+/area/station/cargo/storage)
 "Xs" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -10808,7 +11869,7 @@
 	use_power = 0
 	},
 /turf/open/floor/iron/colony,
-/area/ruin/interdyne_planetary_base)
+/area/station/cargo/storage)
 "XD" = (
 /obj/machinery/door/airlock/external{
 	glass = 1;
@@ -10822,6 +11883,12 @@
 /obj/structure/fans/tiny,
 /turf/open/floor/iron/dark,
 /area/ruin/interdyne_planetary_base)
+"XE" = (
+/turf/open/floor/grass,
+/area/station/hallway{
+	name = "Colony Hallway";
+	has_gravity = 1
+	})
 "XH" = (
 /obj/structure/wall_torch/spawns_lit/directional/south{
 	layer = 5
@@ -10838,13 +11905,12 @@
 	},
 /obj/machinery/iv_drip,
 /turf/open/floor/iron/colony/bolts,
-/area/ruin/interdyne_planetary_base)
+/area/mine/medical)
 "XL" = (
 /obj/machinery/light/cold/directional/west,
 /turf/open/floor/iron/colony,
 /area/ruin/interdyne_planetary_base)
 "XM" = (
-/obj/structure/closet/crate,
 /turf/open/floor/iron/textured_large,
 /area/ruin/interdyne_planetary_base/cargo)
 "XN" = (
@@ -10861,12 +11927,16 @@
 /turf/open/floor/iron/colony/white/bolts,
 /area/station/solars/aux)
 "XT" = (
-/obj/machinery/elevator_control_panel/directional/north{
-	linked_elevator_id = "publicElevator";
-	preset_destination_names = list("2" = "Wastelands        Floor", "4" = "Colony        Floor", "3" = "Exploration        Deck", "1" = "Iceland        Wastelands")
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
 	},
-/turf/open/genturf,
-/area/lavaland/surface/outdoor/random)
+/obj/effect/turf_decal/trimline/dark_red/filled/warning{
+	dir = 4
+	},
+/obj/structure/window/reinforced/survival_pod/spawner/directional/west,
+/obj/structure/cable,
+/turf/open/floor/engine,
+/area/ruin/interdyne_planetary_base)
 "XY" = (
 /obj/structure/window/reinforced/survival_pod/spawner/directional/east,
 /obj/structure/window/reinforced/survival_pod/spawner/directional/north,
@@ -10939,13 +12009,29 @@
 	},
 /turf/open/floor/iron/colony,
 /area/ruin/interdyne_planetary_base/main)
+"Yn" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/structure/cable,
+/turf/open/floor/iron/colony,
+/area/ruin/interdyne_planetary_base/med)
+"Yp" = (
+/obj/effect/turf_decal/siding/dark_green{
+	dir = 8
+	},
+/obj/structure/table/reinforced/plasmarglass,
+/turf/open/floor/iron/colony,
+/area/ruin/interdyne_planetary_base/main)
 "Yq" = (
 /obj/structure/fans/tiny,
 /obj/effect/turf_decal/delivery,
 /obj/effect/turf_decal/delivery/red,
 /obj/machinery/door/airlock/colony_prefab,
 /turf/open/floor/iron/colony,
-/area/ruin/interdyne_planetary_base)
+/area/station/hallway{
+	name = "Colony Hallway";
+	has_gravity = 1
+	})
 "Ys" = (
 /obj/structure/sign/poster/contraband/random/directional/west,
 /turf/open/openspace,
@@ -10958,6 +12044,12 @@
 	name = "Outdoors with Blocked Roofs";
 	outdoors = 0
 	})
+"Yw" = (
+/obj/machinery/light/directional/north,
+/obj/machinery/newscaster/directional/east,
+/obj/machinery/pipedispenser/disposal,
+/turf/open/floor/iron/colony,
+/area/ruin/interdyne_planetary_base/main)
 "Yy" = (
 /obj/structure/cable,
 /obj/structure/fans/tiny/forcefield,
@@ -11048,6 +12140,19 @@
 /obj/machinery/light/directional/east,
 /turf/open/floor/iron/colony,
 /area/ruin/interdyne_planetary_base/main)
+"YQ" = (
+/obj/structure/rack/shelf,
+/obj/machinery/light_switch/directional/north,
+/turf/open/floor/catwalk_floor/iron_dark,
+/area/station/cargo/miningdock/oresilo{
+	has_gravity = 1
+	})
+"YS" = (
+/obj/machinery/vending/imported/tiziran{
+	onstation = 0
+	},
+/turf/open/floor/iron/colony,
+/area/mine/living_quarters)
 "YW" = (
 /obj/machinery/light/small/directional/east,
 /obj/effect/turf_decal/box,
@@ -11079,7 +12184,7 @@
 "Zc" = (
 /obj/structure/cable,
 /turf/open/floor/bamboo,
-/area/lavaland/surface/outdoors/explored)
+/area/lavaland/surface/outdoors)
 "Zf" = (
 /obj/effect/turf_decal/tile/dark_green/half{
 	dir = 4
@@ -11132,7 +12237,10 @@
 /obj/structure/hedge,
 /obj/machinery/airalarm/directional/north,
 /turf/open/floor/iron/colony,
-/area/ruin/interdyne_planetary_base)
+/area/station{
+	name = "Hangar";
+	has_gravity = 1
+	})
 "Zp" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -11156,8 +12264,12 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/light/cold/directional/south,
+/obj/structure/cable,
 /turf/open/floor/iron/colony,
-/area/ruin/interdyne_planetary_base)
+/area/station/hallway{
+	name = "Colony Hallway";
+	has_gravity = 1
+	})
 "Zu" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -11213,18 +12325,6 @@
 /obj/effect/turf_decal/tile/dark_green{
 	dir = 4
 	},
-/obj/structure/table,
-/obj/item/coffee_cartridge/fancy{
-	pixel_y = 14;
-	pixel_x = -4
-	},
-/obj/item/coffee_cartridge/fancy{
-	pixel_y = 14;
-	pixel_x = 4
-	},
-/obj/machinery/coffeemaker{
-	pixel_y = 4
-	},
 /turf/open/floor/iron/dark/textured,
 /area/ruin/interdyne_planetary_base/cargo)
 "ZG" = (
@@ -11232,13 +12332,18 @@
 /turf/open/floor/grass,
 /area/ruin/interdyne_planetary_base)
 "ZI" = (
-/obj/structure/railroad,
-/obj/vehicle/ridden/rail_cart,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 2
 	},
 /turf/open/floor/iron/colony,
-/area/ruin/interdyne_planetary_base)
+/area/station/hallway{
+	name = "Colony Hallway";
+	has_gravity = 1
+	})
+"ZJ" = (
+/obj/machinery/door/firedoor,
+/turf/open/floor/iron/checker,
+/area/ruin/interdyne_planetary_base/serv/bar)
 "ZO" = (
 /obj/effect/turf_decal/siding/dark/corner{
 	dir = 8
@@ -147195,14 +148300,14 @@ fQ
 fQ
 fQ
 fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
+Cc
+Cc
+Cc
+Cc
+Cc
+Cc
+Cc
+Cc
 fQ
 fQ
 fQ
@@ -147452,14 +148557,14 @@ fQ
 fQ
 fQ
 fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
+Cc
+dl
+XT
+xP
+dl
+XT
+xP
+Cc
 fQ
 fQ
 fQ
@@ -147709,14 +148814,14 @@ fQ
 fQ
 fQ
 fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
+Cc
+en
+Ma
+mP
+Vi
+Ma
+wO
+Cc
 fQ
 fQ
 fQ
@@ -147966,14 +149071,14 @@ fQ
 fQ
 fQ
 fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
+Cc
+ST
+gI
+vH
+ST
+gI
+vH
+Cc
 fQ
 fQ
 fQ
@@ -148223,14 +149328,14 @@ fQ
 fQ
 fQ
 fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
+Cc
+dl
+UZ
+xP
+dl
+UZ
+xP
+Cc
 fQ
 fQ
 fQ
@@ -148480,14 +149585,14 @@ fQ
 fQ
 fQ
 fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
+Cc
+en
+Ma
+mP
+Vi
+Ma
+wO
+Cc
 fQ
 fQ
 fQ
@@ -148737,14 +149842,14 @@ fQ
 fQ
 fQ
 fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
+Cc
+ST
+gI
+vH
+ST
+gI
+vH
+Cc
 fQ
 fQ
 fQ
@@ -148994,14 +150099,14 @@ fQ
 fQ
 fQ
 fQ
-fQ
-fQ
-fQ
-fQ
+Cc
+Cc
+Cc
+Cc
 zk
 uX
 zk
-fQ
+Cc
 fQ
 fQ
 fQ
@@ -149256,7 +150361,7 @@ fQ
 fQ
 fQ
 Cc
-hA
+pX
 Cc
 fQ
 fQ
@@ -149770,7 +150875,7 @@ fQ
 fQ
 Cc
 IV
-IV
+Iu
 IV
 Cc
 fQ
@@ -150027,7 +151132,7 @@ Cc
 Cc
 Cc
 IV
-IV
+Iu
 IV
 Cc
 fQ
@@ -150539,9 +151644,9 @@ fQ
 fQ
 Cc
 Av
-fz
+uL
 oI
-Mt
+IE
 XD
 CC
 Vw
@@ -210945,9 +212050,9 @@ fQ
 fQ
 fQ
 fQ
-fQ
-fQ
-fQ
+Cc
+Cc
+Cc
 oW
 oW
 oW
@@ -210955,15 +212060,15 @@ oW
 TA
 jN
 wu
+mg
+yP
+BN
+Dl
+Vm
+Dl
 Vm
 Vm
-Vm
-Vm
-Vm
-Vm
-Vm
-Vm
-Vm
+AK
 wu
 go
 eL
@@ -211202,9 +212307,9 @@ fQ
 fQ
 fQ
 fQ
-fQ
-fQ
-fQ
+Cc
+si
+Cx
 oW
 oW
 oW
@@ -211212,15 +212317,15 @@ Wq
 qH
 Sl
 wu
+bx
+Dt
+Og
+wu
+wu
+PV
 Vm
 Vm
-Vm
-Vm
-Vm
-Vm
-Vm
-Vm
-Vm
+IG
 wu
 bL
 TC
@@ -211459,9 +212564,9 @@ fQ
 fQ
 fQ
 fQ
-fQ
-fQ
-fQ
+Cc
+TZ
+Cx
 oW
 oW
 oW
@@ -211469,15 +212574,15 @@ oW
 qH
 Am
 wu
+Bj
+FE
+AP
+GZ
+wu
+wX
 Vm
 Vm
-Vm
-Vm
-Vm
-Vm
-Vm
-Vm
-Vm
+vm
 wu
 jw
 Qz
@@ -211692,8 +212797,6 @@ fQ
 fQ
 fQ
 fQ
-XT
-fQ
 fQ
 fQ
 fQ
@@ -211719,22 +212822,24 @@ fQ
 fQ
 fQ
 Cc
-Cc
-Cc
+TZ
+Cx
+Cx
+Cx
 Cc
 oW
 qH
 Ne
 wu
+Mc
+TR
+Ft
 Vm
 Vm
 Vm
 Vm
 Vm
-Vm
-Vm
-Vm
-Vm
+xt
 wu
 rK
 sd
@@ -211973,25 +213078,25 @@ fQ
 fQ
 fQ
 fQ
-fQ
-fQ
 Cc
-Cc
-Cc
+pi
+Cx
+Cx
+Cx
 Cc
 oW
 hU
 sa
 wu
+RW
+TR
+Vm
+mo
+wu
+vP
 Vm
 Vm
-Vm
-Vm
-Vm
-Vm
-Vm
-Vm
-Vm
+RW
 wu
 LL
 sd
@@ -212230,8 +213335,8 @@ fQ
 fQ
 fQ
 fQ
-fQ
-fQ
+Cc
+Cc
 Cc
 jq
 Cx
@@ -212240,15 +213345,15 @@ oW
 oW
 oW
 wu
+RW
+TR
+Vm
+qB
+wu
+WP
 Vm
 Vm
-Vm
-Vm
-Vm
-Vm
-Vm
-Vm
-Vm
+RW
 wu
 CH
 sd
@@ -212497,15 +213602,15 @@ WT
 WT
 gH
 wu
+aa
+TR
 Vm
 Vm
 Vm
 Vm
 Vm
 Vm
-Vm
-Vm
-Vm
+aa
 wu
 rh
 QY
@@ -212525,8 +213630,8 @@ TO
 cb
 sX
 zI
-sX
-ka
+TO
+TO
 lr
 yc
 Tb
@@ -212754,16 +213859,16 @@ qR
 jR
 sg
 lR
+so
+TR
 Vm
 Vm
 Vm
 Vm
 Vm
 Vm
-Vm
-Vm
-Vm
-Vm
+so
+zq
 rh
 sd
 bZ
@@ -212779,14 +213884,14 @@ mE
 PZ
 ma
 TO
+TO
 Lt
-vk
 xf
-ua
-ka
-kr
-ka
-nl
+TO
+sX
+sX
+sX
+Tb
 TO
 ue
 TO
@@ -213012,15 +214117,15 @@ KH
 zg
 wu
 Vm
+TR
+xt
+Ta
+xt
 Vm
 Vm
 Vm
 Vm
-Vm
-Vm
-Vm
-Vm
-Vm
+aH
 rh
 rW
 jb
@@ -213039,8 +214144,8 @@ TO
 BH
 sX
 Vz
-sX
-ka
+TO
+TO
 sX
 sX
 eR
@@ -213261,23 +214366,23 @@ fQ
 fQ
 fQ
 Cc
-pi
+ur
 Cx
 Qu
 Sb
 KH
 be
 wu
+tT
+TR
+aa
+RW
+aa
 Vm
 Vm
 Vm
 Vm
-Vm
-Vm
-Vm
-Vm
-Vm
-Vm
+aH
 rh
 sd
 bZ
@@ -213293,11 +214398,11 @@ ns
 hP
 PZ
 TO
-TR
+TO
 Mi
 Vz
-mA
-Pd
+Ei
+TO
 sX
 kY
 Xs
@@ -213518,7 +214623,7 @@ fQ
 fQ
 fQ
 Cc
-Cx
+Up
 Cx
 Qu
 Sb
@@ -213526,15 +214631,15 @@ KH
 es
 wu
 Vm
+TR
+so
+so
+so
 Vm
 Vm
 Vm
 Vm
-Vm
-Vm
-Vm
-Vm
-Vm
+nK
 rh
 sd
 bZ
@@ -213550,10 +214655,10 @@ cR
 Xl
 PZ
 TO
-zn
-sX
+TO
+fp
 Vz
-sX
+Ux
 TO
 Hr
 sX
@@ -213782,15 +214887,15 @@ bO
 bO
 TE
 wu
+IZ
+TR
 Vm
 Vm
-Vm
-Vm
-Vm
-Vm
-Vm
-Vm
-Vm
+gk
+Lw
+Lw
+Lw
+Lw
 AL
 zh
 hL
@@ -213810,7 +214915,7 @@ TO
 qS
 sX
 Vz
-sX
+Ux
 TO
 TO
 TO
@@ -214039,15 +215144,15 @@ KZ
 rZ
 Cx
 wu
+YS
+TR
 Vm
 Vm
 Vm
-Vm
-Vm
-Vm
-Vm
-Vm
-Vm
+xY
+xY
+xY
+xY
 wu
 IO
 sd
@@ -214064,8 +215169,8 @@ PZ
 PZ
 PZ
 TO
-BL
-sX
+TO
+fp
 Vz
 yc
 dp
@@ -214296,17 +215401,17 @@ WT
 Cx
 Cx
 wu
+jn
+TR
 Vm
 Vm
 Vm
 Vm
-Vm
-Vm
-Vm
-Vm
-Vm
+TR
+TR
+TR
 tj
-rK
+fB
 sd
 bZ
 hG
@@ -214316,9 +215421,9 @@ Sr
 wo
 ON
 oy
-Sr
+Go
 Wv
-Sr
+Go
 TO
 TO
 MN
@@ -214518,8 +215623,8 @@ fQ
 fQ
 fQ
 fQ
-fQ
-fQ
+nY
+nY
 fQ
 fQ
 fQ
@@ -214553,17 +215658,17 @@ Cc
 zm
 zm
 wu
+vC
+TR
+TR
+TR
+bM
+TR
+TR
 Vm
-Vm
-Vm
-Vm
-Vm
-Vm
-Vm
-Vm
-Vm
+Dl
 wu
-rK
+fB
 sd
 hT
 Eg
@@ -214581,7 +215686,7 @@ TO
 wt
 kY
 Vz
-kI
+nl
 TO
 TO
 TO
@@ -214775,10 +215880,10 @@ fQ
 fQ
 fQ
 fQ
-fQ
-fQ
-fQ
-fQ
+nY
+nY
+nY
+nY
 fQ
 fQ
 fQ
@@ -214810,15 +215915,15 @@ Cc
 xQ
 xQ
 wu
+hv
 Vm
 Vm
-Vm
-Vm
-Vm
-Vm
-Vm
-Vm
-Vm
+sy
+qB
+qB
+OT
+qB
+OT
 wu
 bH
 lF
@@ -214841,7 +215946,7 @@ Vz
 sX
 sX
 Oy
-nY
+sX
 TO
 ab
 sX
@@ -215025,17 +216130,17 @@ fQ
 fQ
 fQ
 fQ
+nY
 fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
 fQ
 fQ
 fQ
@@ -215067,18 +216172,18 @@ Cc
 xQ
 xQ
 wu
+hv
+Dl
 Vm
-Vm
-Vm
-Vm
-Vm
+sy
+qB
 wu
 wu
 wu
 wu
 wu
 Xn
-hG
+TO
 fd
 TO
 TO
@@ -215088,17 +216193,17 @@ TO
 VO
 TT
 TT
-TT
-TT
-sX
+Yp
+Yp
+Bn
 TO
-sX
-sX
+Yw
+IF
 lw
 NQ
 HR
 HR
-kI
+uY
 DA
 yc
 sX
@@ -215284,14 +216389,14 @@ fQ
 fQ
 fQ
 fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
 fQ
 fQ
 fQ
@@ -215539,16 +216644,16 @@ fQ
 fQ
 fQ
 fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
 fQ
 fQ
 fQ
@@ -215796,16 +216901,16 @@ fQ
 fQ
 fQ
 fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
 fQ
 fQ
 fQ
@@ -215854,7 +216959,7 @@ zV
 ki
 Kz
 RY
-ki
+GB
 AM
 AM
 AM
@@ -216048,17 +217153,17 @@ fQ
 fQ
 fQ
 fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
 fQ
 fQ
 fQ
@@ -216305,16 +217410,16 @@ fQ
 fQ
 fQ
 fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
 fQ
 fQ
 fQ
@@ -216354,20 +217459,20 @@ dK
 Cc
 Cc
 xz
-jP
+UQ
 NE
 Gg
 KM
 GV
-rD
+DL
 pb
 MA
 OC
 ft
 qY
 XM
-tl
-HY
+ZJ
+Os
 hi
 AM
 iu
@@ -216562,18 +217667,18 @@ fQ
 fQ
 fQ
 fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
 fQ
 fQ
 fQ
@@ -216611,8 +217716,8 @@ pp
 Vv
 Cc
 Gu
-jP
-jP
+UQ
+AN
 yE
 rQ
 WV
@@ -216820,19 +217925,19 @@ fQ
 fQ
 fQ
 fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
 fQ
 fQ
 fQ
@@ -216868,14 +217973,14 @@ aM
 ek
 Cc
 ml
-jP
-jP
+UQ
+AN
 Gg
 Wn
 WV
-Cm
+DL
 nL
-MA
+Et
 OC
 ft
 qY
@@ -217077,19 +218182,19 @@ fQ
 fQ
 fQ
 fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
 fQ
 fQ
 fQ
@@ -217125,8 +218230,8 @@ aM
 nE
 aM
 Gg
-nB
-jP
+YQ
+AN
 Gg
 UT
 WV
@@ -217328,25 +218433,25 @@ fQ
 fQ
 fQ
 fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
 fQ
 fQ
 fQ
@@ -217362,12 +218467,12 @@ fQ
 Cc
 iM
 PC
-Cx
+zN
 tO
 iM
 la
-Cx
-Cx
+lU
+zN
 tO
 iM
 NK
@@ -217382,8 +218487,8 @@ Bu
 pQ
 JW
 Gg
-nB
-jP
+WZ
+AN
 Gg
 vE
 JA
@@ -217395,10 +218500,10 @@ Tp
 ft
 ft
 Dy
-Os
+xJ
 EY
 Gq
-sv
+Nv
 oV
 gX
 Ua
@@ -217585,25 +218690,25 @@ fQ
 fQ
 fQ
 fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
 fQ
 fQ
 fQ
@@ -217617,17 +218722,17 @@ fQ
 fQ
 fQ
 Cc
-ZU
-Cx
-Cx
-Cx
-Cx
-Cx
-Cx
-Cx
-Cx
-Cx
-NK
+Mt
+lU
+lU
+lU
+lU
+lU
+lU
+lU
+lU
+lU
+fz
 Cc
 Cc
 pG
@@ -217640,7 +218745,7 @@ vn
 HJ
 Gg
 nB
-jP
+AN
 Gg
 BI
 MW
@@ -217841,26 +218946,26 @@ fQ
 fQ
 fQ
 fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
 fQ
 fQ
 fQ
@@ -217874,17 +218979,17 @@ fQ
 fQ
 fQ
 Cc
-ZU
-Cx
-Cx
-Cx
-Cx
-Cx
-Cx
-Cx
-Cx
-Cx
-NK
+Mt
+lU
+lU
+lU
+lU
+lU
+lU
+lU
+lU
+lU
+fz
 Cc
 Cc
 Uy
@@ -217897,7 +219002,7 @@ Ik
 JW
 Gg
 jP
-jP
+AN
 Gg
 yD
 IC
@@ -217905,7 +219010,7 @@ au
 Gr
 TX
 ft
-iD
+gR
 FX
 PQ
 tl
@@ -218098,25 +219203,25 @@ fQ
 fQ
 fQ
 fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
 fQ
 fQ
 fQ
@@ -218131,16 +219236,16 @@ Cc
 Cc
 Cc
 Cc
-ZU
-Cx
-Cx
-Cx
-Cx
-Cx
-Cx
-Cx
-Cx
-Cx
+Mt
+lU
+lU
+lU
+lU
+lU
+lU
+lU
+lU
+lU
 KT
 Cc
 Cc
@@ -218355,25 +219460,25 @@ fQ
 fQ
 fQ
 fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
 fQ
 fQ
 fQ
@@ -218388,17 +219493,17 @@ Cx
 Cx
 Cx
 Fi
-Cx
-Cx
-Cx
-Cx
-Cx
-Cx
-Cx
-Cx
-Cx
-Cx
-NK
+lU
+lU
+lU
+lU
+lU
+lU
+lU
+lU
+lU
+lU
+fz
 Cc
 Cc
 Uy
@@ -218428,7 +219533,7 @@ sl
 JZ
 sm
 bT
-kg
+qd
 hw
 px
 xd
@@ -218612,25 +219717,25 @@ fQ
 fQ
 fQ
 fQ
+nY
+nY
 fQ
 fQ
 fQ
+nY
+nY
 fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
 fQ
 fQ
 fQ
@@ -218645,16 +219750,16 @@ Cx
 Cc
 Cx
 Cc
-ZU
-Cx
-Cx
-Cx
-Cx
-Cx
-Cx
+Mt
+lU
+lU
+lU
+lU
+lU
+zN
 ZU
 XH
-ST
+iM
 NK
 Cc
 Cc
@@ -218676,7 +219781,7 @@ SX
 SX
 jk
 Np
-in
+Mw
 jK
 Ey
 SX
@@ -218877,17 +219982,17 @@ fQ
 fQ
 fQ
 fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
 fQ
 fQ
 fQ
@@ -218902,18 +220007,18 @@ Cc
 Cc
 Cc
 Cc
-ZU
-Cx
-Cx
+Mt
+lU
+lU
 la
-Cx
-Cx
-ZU
+lU
+lU
+Mt
 Cc
 pp
-Cc
+Cm
 QL
-Cc
+Cm
 Cc
 Uy
 oM
@@ -218942,7 +220047,7 @@ Mm
 rS
 xE
 Zr
-Zr
+jo
 Zg
 Ec
 Pw
@@ -219134,17 +220239,17 @@ fQ
 fQ
 fQ
 fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
 fQ
 fQ
 fQ
@@ -219159,18 +220264,18 @@ fQ
 fQ
 fQ
 Cc
-ZU
-Cx
-Cx
-Cx
-Cx
+Mt
+lU
+lU
+lU
+lU
 ZU
 Cc
 pp
 pp
-Cc
+Cm
 ct
-Cc
+Cm
 Cc
 Uy
 oM
@@ -219189,11 +220294,11 @@ aM
 BC
 BB
 ig
-LK
+ll
 ba
 qP
 qP
-RQ
+vt
 gy
 Mm
 zA
@@ -219388,20 +220493,20 @@ fQ
 fQ
 fQ
 fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
 fQ
 fQ
 fQ
@@ -219416,18 +220521,18 @@ fQ
 fQ
 fQ
 Cc
-ZU
+Mt
 la
-Cx
+zN
 tO
 iM
 Cc
 pp
 pp
 pp
-Cc
+Cm
 QL
-Cc
+Cm
 Cc
 Uy
 eS
@@ -219645,20 +220750,20 @@ fQ
 fQ
 fQ
 fQ
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
 fQ
 fQ
 fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
+nY
+nY
+nY
 fQ
 fQ
 fQ
@@ -219675,16 +220780,16 @@ fQ
 Cc
 iM
 CX
-ZU
+Mt
 Cc
 Cc
 pp
 pp
 pp
 pp
-Cc
+Cm
 QL
-Cc
+Cm
 Cc
 Uy
 oM
@@ -219706,7 +220811,7 @@ dJ
 Mp
 Mp
 Mp
-Mp
+kW
 LK
 LK
 kc
@@ -219902,19 +221007,19 @@ fQ
 fQ
 fQ
 fQ
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
 fQ
 fQ
 fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
+nY
+nY
 fQ
 fQ
 fQ
@@ -219939,9 +221044,9 @@ pp
 pp
 pp
 pp
-Cc
+Cm
 Xj
-Cc
+Cm
 Cc
 Uy
 Lf
@@ -219963,7 +221068,7 @@ dJ
 Mp
 el
 Mp
-Mp
+kW
 LK
 ol
 kc
@@ -220158,18 +221263,18 @@ fQ
 fQ
 fQ
 fQ
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
 fQ
 fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
+nY
 fQ
 fQ
 fQ
@@ -220192,13 +221297,13 @@ fQ
 pp
 pp
 pp
-Jg
-Cc
-Cc
-Cc
-Cc
-NK
-Cc
+Cm
+Cm
+Cm
+Cm
+Cm
+BL
+Cm
 Cc
 Uy
 om
@@ -220415,15 +221520,15 @@ fQ
 fQ
 fQ
 fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
 fQ
 fQ
 fQ
@@ -220448,14 +221553,14 @@ fQ
 pp
 pp
 pp
-Jg
-Cc
+Cm
+Cm
 bE
 bE
-Cx
-Cx
-NK
-Cc
+EX
+EX
+BL
+Cm
 Cc
 Uy
 pG
@@ -220474,11 +221579,11 @@ aM
 yK
 Fh
 dJ
+kW
 Mp
-Mp
-Mp
+kW
 lq
-cm
+jY
 BC
 kc
 kc
@@ -220672,9 +221777,9 @@ fQ
 fQ
 fQ
 fQ
-fQ
-fQ
-fQ
+nY
+nY
+nY
 fQ
 fQ
 fQ
@@ -220705,14 +221810,14 @@ pp
 pp
 pp
 pp
-Cc
+Cm
 pp
 bE
 QB
-Cx
-Cx
-NK
-Cc
+dm
+dm
+BL
+Cm
 Cc
 Uy
 Uy
@@ -220737,7 +221842,7 @@ QX
 QX
 QX
 QX
-Cc
+Cp
 gZ
 kS
 mN
@@ -220745,8 +221850,8 @@ aZ
 kc
 kc
 kc
-qm
-qm
+rc
+rc
 kc
 kc
 kc
@@ -220962,14 +222067,14 @@ pp
 pp
 pp
 fQ
-Cc
+Cm
 pp
-Cc
+Cm
 Oa
-Cx
-Cx
-NK
-Cc
+dm
+dm
+BL
+Cm
 Cc
 Cc
 pG
@@ -220983,7 +222088,7 @@ bS
 Lg
 Lg
 sp
-Cc
+Cp
 ty
 yz
 xj
@@ -221219,14 +222324,14 @@ pp
 pp
 fQ
 fQ
-Cc
+Cm
 pp
 bE
 nv
-NK
-NK
-NK
-Cc
+BL
+BL
+BL
+Cm
 Cc
 Cc
 Cc
@@ -221239,32 +222344,32 @@ Ww
 Cc
 Cc
 Cc
-Cc
+Cp
 Xz
-Cx
-tS
-Cx
-Cx
+hS
+Xr
+hS
+rg
 aK
-bS
-Cc
-Cc
-Cc
-Cc
-Cc
+UC
+Cp
+Cp
+Cp
+Cp
+Cp
 Te
 Zj
 kc
 kc
 kc
 BD
-qm
+rc
 cl
-qm
-qm
-qm
-qm
-qm
+rc
+rc
+rc
+rc
+rc
 TO
 Gs
 sX
@@ -221476,14 +222581,14 @@ fQ
 fQ
 fQ
 fQ
-Cc
+Cm
 pp
-Cc
-EX
-NK
+Cm
+Fv
+BL
 Ot
-Cc
-Cc
+Cm
+Cm
 Cc
 Cc
 Cc
@@ -221496,19 +222601,19 @@ pG
 Cc
 pp
 pp
-Cc
+Cp
 ly
 sQ
 tS
-Cx
-Cx
+hS
+hS
 aK
-Cc
+Cp
 pp
 pp
 pp
 pp
-Cc
+Cp
 Te
 uP
 kc
@@ -221733,13 +222838,13 @@ fQ
 fQ
 fQ
 fQ
-Cc
+Cm
 pp
-Cc
+Cm
 ir
-NK
+BL
 Ot
-Cc
+Cm
 pp
 Cc
 Cc
@@ -221752,20 +222857,20 @@ pG
 pG
 Cc
 pp
-Cc
-Cc
-Cc
+Cp
+Cp
+Cp
 qo
-tS
-Cx
-Cx
+Xr
+hS
+rg
 eI
-Cc
-Cc
-Cc
-Cc
-Cc
-Cc
+Cp
+Cp
+Cp
+Cp
+Cp
+Cp
 lG
 Cx
 xR
@@ -221990,13 +223095,13 @@ fQ
 fQ
 fQ
 fQ
-Cc
+Cm
 pp
 bE
-EX
-NK
+Fv
+BL
 Ot
-Cc
+Cm
 pp
 Cc
 Cc
@@ -222007,22 +223112,22 @@ Cc
 Cc
 Cc
 Cc
-Cc
-Cc
-Cc
-Cc
-Cc
+Cp
+Cp
+Cp
+Cp
+Cp
 nO
 tS
-Cx
-Cx
+hS
+hS
 dq
 ud
 ud
 ud
 ud
-Cc
-Cc
+Cp
+Cp
 OX
 Qu
 kc
@@ -222035,22 +223140,22 @@ fK
 qm
 fK
 kc
-pp
-pp
-pp
-pp
-pp
-pp
-pp
-pp
-pp
-pp
-pp
-pp
-pp
-pp
-pp
-pp
+TO
+TO
+TO
+TO
+TO
+TO
+TO
+TO
+TO
+TO
+TO
+TO
+TO
+TO
+TO
+TO
 "}
 (56,1,4) = {"
 fQ
@@ -222249,11 +223354,11 @@ fQ
 fQ
 pp
 pp
-Cc
+Cm
 ub
-NK
+BL
 eK
-Cc
+Cm
 pp
 Cc
 Cc
@@ -222264,11 +223369,11 @@ Cc
 Cc
 Cc
 Cc
-Cc
-Cc
-Cc
-Cc
-Cc
+Cp
+Cp
+Cp
+Cp
+Cp
 Oe
 pk
 hV
@@ -222278,8 +223383,8 @@ hV
 By
 By
 vX
-Cc
-Cc
+Cp
+Cp
 lG
 Mr
 kc
@@ -222504,13 +223609,13 @@ fQ
 fQ
 fQ
 fQ
-Cc
+Cm
 pp
 bE
-EX
-NK
+Fv
+BL
 Wl
-Cc
+Cm
 pp
 Cc
 Cc
@@ -222521,7 +223626,7 @@ Cc
 Cc
 Cc
 Cc
-Cc
+Cp
 Cs
 nu
 nu
@@ -222529,14 +223634,14 @@ nu
 nu
 nu
 eO
+Tj
 WU
 WU
 WU
 WU
-WU
-WU
+IY
 id
-Cc
+Cp
 lG
 lG
 lG
@@ -222761,13 +223866,13 @@ fQ
 fQ
 fQ
 fQ
-Cc
+Cm
 pp
-Cc
+Cm
 nv
-NK
+BL
 Du
-Cc
+Cm
 pp
 Cc
 Cc
@@ -222775,17 +223880,17 @@ aj
 aj
 aj
 aj
-Cc
-Cc
-Cc
-Cc
+Cp
+Cp
+Cp
+Cp
 VL
-Cc
-Cc
-Cc
-Cc
-Cc
-Cc
+Cp
+Cp
+Cp
+Cp
+Cp
+Cp
 aD
 jd
 jd
@@ -222793,10 +223898,10 @@ jd
 jd
 jd
 Tt
-Cc
-Cc
-Cc
-Cc
+Cp
+Cp
+Cp
+Cp
 yn
 EC
 Cx
@@ -223018,25 +224123,25 @@ fQ
 fQ
 fQ
 fQ
-Cc
+Cm
 pp
 bE
-EX
-NK
+Fv
+BL
 Du
-Cc
-Cc
-Cc
-Cc
-Cc
-Cc
-Cc
-Cc
-Cc
-Cc
-Cc
-Cc
-EW
+Cm
+Cp
+Cp
+Cp
+Cp
+Cp
+Cp
+Cp
+Cp
+Cp
+Cp
+Cp
+SK
 AO
 jd
 jd
@@ -223053,10 +224158,10 @@ jd
 WU
 WU
 hq
-Cc
-Cc
-Cc
-Cc
+Cp
+Cp
+Cp
+Cp
 OX
 Cx
 EC
@@ -223275,26 +224380,26 @@ Kv
 fQ
 fQ
 fQ
-Cc
+Cm
 pp
-Cc
-Oa
-NK
+Cm
+pB
+BL
 Bl
 BY
-Cx
-Cx
-Cx
-Cx
-Cx
-Cx
-Cx
-Cx
+hS
+rg
+hS
+hS
+hS
+rg
+hS
+hS
 VZ
-tS
-tS
+Xr
+Xr
 EW
-JY
+NT
 jd
 jd
 jd
@@ -223312,8 +224417,8 @@ jd
 jd
 jd
 ju
-Jg
-Cc
+Cp
+Cp
 ED
 bG
 Cc
@@ -223532,15 +224637,15 @@ Kv
 Kv
 fQ
 fQ
-Cc
+Cm
 pp
 bE
-EX
-NK
+Fv
+BL
 QN
-Cc
-Cc
-Cc
+Cm
+Cp
+Cp
 Ht
 Ht
 Ht
@@ -223568,8 +224673,8 @@ jd
 jd
 jd
 Tt
-Jg
-Cc
+Cp
+Cp
 Cx
 lG
 lG
@@ -223789,15 +224894,15 @@ Kv
 fQ
 fQ
 fQ
-Cc
+Cm
 pp
-Cc
+Cm
 Sn
-NK
+BL
 QN
-Cc
+Cm
 pp
-Cc
+Cp
 Ht
 xM
 dt
@@ -223825,7 +224930,7 @@ jd
 jd
 jd
 Tt
-Cc
+Cp
 KN
 OV
 OV
@@ -224046,15 +225151,15 @@ fQ
 fQ
 fQ
 fQ
-Cc
+Cm
 pp
 bE
-EX
-NK
+Fv
+BL
 QN
 JY
 pp
-Cc
+Cp
 Ht
 Fo
 cI
@@ -224082,7 +225187,7 @@ jd
 jd
 jd
 Tt
-Cc
+Cp
 Cx
 OV
 OV
@@ -224303,15 +225408,15 @@ fQ
 fQ
 fQ
 fQ
-Cc
+Cm
 pp
-Cc
-EX
-NK
+Cm
+Fv
+BL
 QN
 JY
 pp
-Cc
+Cp
 Ht
 bJ
 Fo
@@ -224339,7 +225444,7 @@ jd
 jd
 jd
 Tt
-Cc
+Cp
 Cx
 OV
 OV
@@ -224560,15 +225665,15 @@ fQ
 fQ
 fQ
 fQ
-Cc
+Cm
 pp
 bE
-EX
-NK
+Fv
+BL
 Po
 JY
 pp
-Cc
+Cp
 Ht
 qZ
 Tg
@@ -224596,7 +225701,7 @@ jd
 jd
 jd
 Uu
-Cc
+Cp
 Cx
 OV
 OV
@@ -224817,12 +225922,12 @@ fQ
 fQ
 fQ
 fQ
-Cc
+Cm
 pp
-Cc
+Cm
+Fv
+BL
 EX
-NK
-Cx
 Ht
 Ht
 Ht
@@ -224853,7 +225958,7 @@ nM
 nM
 nM
 Wt
-Cc
+Cp
 KN
 OV
 OV
@@ -225074,12 +226179,12 @@ fQ
 fQ
 fQ
 fQ
-Cc
+Cm
 pp
-Cc
-EX
-NK
-Cx
+Cm
+Fv
+BL
+XE
 Ht
 FG
 Ht
@@ -225094,23 +226199,23 @@ Aq
 Aq
 Nj
 Ht
-Cc
-Cc
-Cc
-Cc
-Cc
-Cc
-Cc
-Cc
-Cc
-Cc
-Cc
-Cc
-Cc
-Cc
-Cc
-Cc
-Cc
+Cp
+Cp
+Cp
+Cp
+Cp
+Cp
+Cp
+Cp
+Cp
+Cp
+Cp
+Cp
+Cp
+Cp
+Cp
+Cp
+Cp
 Cc
 Cx
 Cx
@@ -225331,12 +226436,12 @@ fQ
 fQ
 fQ
 fQ
-Cc
+Cm
 pp
-Cc
-EX
-NK
-Cx
+Cm
+Fv
+BL
+XE
 rj
 ad
 ad
@@ -225590,10 +226695,10 @@ fQ
 fQ
 pp
 pp
-Cc
+Cm
 ir
-NK
-Cx
+BL
+EX
 rj
 Rd
 Uw
@@ -225847,10 +226952,10 @@ fQ
 fQ
 pp
 pp
-Cc
-EX
-NK
-Cx
+Cm
+Fv
+BL
+dm
 Ht
 jp
 Uw
@@ -226104,10 +227209,10 @@ fQ
 fQ
 pp
 pp
-Cc
-EX
-NK
-TE
+Cm
+Fv
+BL
+mF
 Ht
 Ht
 Ht
@@ -226359,12 +227464,12 @@ fQ
 fQ
 fQ
 fQ
-Cc
+Cm
 pp
-Cc
-EX
-NK
-Cx
+Cm
+Fv
+BL
+dm
 Ht
 NA
 PM
@@ -226616,12 +227721,12 @@ fQ
 fQ
 fQ
 fQ
-Cc
+Cm
 pp
-Cc
+Cm
 nv
-NK
-Cx
+BL
+EX
 rj
 Lz
 dD
@@ -226873,12 +227978,12 @@ fQ
 fQ
 fQ
 fQ
-Cc
+Cm
 pp
 bE
-EX
-NK
-Cx
+Fv
+BL
+XE
 rj
 pc
 jv
@@ -227130,12 +228235,12 @@ fQ
 fQ
 fQ
 fQ
-Cc
+Cm
 pp
-Cc
+Cm
 Oa
-NK
-Cx
+BL
+EX
 rj
 CS
 aF
@@ -227387,12 +228492,12 @@ fQ
 fQ
 fQ
 fQ
-Cc
+Cm
 pp
-Cc
-EX
-NK
-Cx
+Cm
+Fv
+BL
+dm
 rj
 fo
 ra
@@ -227644,11 +228749,11 @@ fQ
 fQ
 fQ
 fQ
-Cc
+Cm
 pp
-Cc
+Cm
 vA
-NK
+BL
 Lp
 rj
 ot
@@ -227901,11 +229006,11 @@ fQ
 fQ
 fQ
 fQ
-Cc
+Cm
 pp
-Cc
-EX
-NK
+Cm
+Fv
+BL
 eM
 Ht
 rj
@@ -228160,9 +229265,9 @@ fQ
 fQ
 pp
 pp
-Cc
+Cm
 ir
-NK
+BL
 mn
 fD
 rt
@@ -228417,9 +229522,9 @@ fQ
 fQ
 pp
 pp
-Cc
-EX
-NK
+Cm
+Fv
+BL
 Lp
 Ht
 Zl
@@ -228674,9 +229779,9 @@ fQ
 fQ
 pp
 pp
-Cc
-EX
-NK
+Cm
+Fv
+BL
 Lp
 rj
 oO
@@ -228931,10 +230036,10 @@ fQ
 fQ
 pp
 pp
-Cc
-EX
-NK
-Cx
+Cm
+Fv
+BL
+dm
 rj
 Zl
 rt
@@ -228943,7 +230048,7 @@ Xt
 IB
 BO
 uK
-FL
+Yn
 Ht
 aj
 Dq
@@ -229188,10 +230293,10 @@ fQ
 fQ
 pp
 pp
-Cc
-EX
-NK
-TE
+Cm
+Fv
+BL
+mF
 Ht
 JD
 rt
@@ -229443,12 +230548,12 @@ fQ
 fQ
 fQ
 fQ
-Cc
+Cm
 pp
-Cc
+Cm
 Oa
-NK
-Cx
+BL
+dm
 Ht
 Ht
 rt
@@ -229457,7 +230562,7 @@ vD
 Uo
 JK
 Uo
-FL
+Yn
 Ht
 aj
 Dq
@@ -229700,12 +230805,12 @@ fQ
 fQ
 fQ
 fQ
-Cc
+Cm
 pp
 bE
 nv
-NK
-Cx
+BL
+dm
 Ht
 Ht
 rH
@@ -229714,7 +230819,7 @@ Wk
 PT
 PT
 PT
-FL
+Yn
 Ht
 aj
 Dq
@@ -229957,12 +231062,12 @@ fQ
 fQ
 fQ
 fQ
-Cc
+Cm
 pp
-Cc
+Cm
 Oa
-NK
-Cx
+BL
+dm
 Ht
 Ht
 Ht
@@ -229971,7 +231076,7 @@ Wk
 VP
 VP
 VP
-FL
+Yn
 Ht
 aj
 Dq
@@ -230216,10 +231321,10 @@ fQ
 fQ
 pp
 pp
-Cc
+Cm
+Fv
+BL
 EX
-NK
-Cx
 JY
 pp
 Ht
@@ -230473,10 +231578,10 @@ fQ
 fQ
 pp
 pp
-Cc
-EX
-NK
-Cx
+Cm
+Fv
+BL
+XE
 JY
 pp
 Ht
@@ -230730,17 +231835,17 @@ fQ
 fQ
 pp
 pp
-Cc
+Cm
 ir
-NK
-Cx
+BL
+EX
 JY
 pp
 Ht
 aI
 Wk
 tE
-Fo
+LN
 bR
 Ht
 aj
@@ -230985,13 +232090,13 @@ fQ
 fQ
 fQ
 fQ
-Cc
-Cc
-Cc
+Cm
+Cm
+Cm
 nv
-NK
-Cx
-Cc
+BL
+dm
+Cm
 pp
 Ht
 tC
@@ -231242,14 +232347,14 @@ fQ
 fQ
 fQ
 fQ
-Cc
+Cm
 pp
-Cc
+Cm
 Oa
-NK
-Cx
-Cc
-Cc
+BL
+dm
+Cm
+Cm
 Ht
 Ht
 Ht
@@ -231257,15 +232362,15 @@ Ht
 LB
 Ht
 Ht
-Cc
-Cc
-Cc
-Cc
-Cc
-Cc
-Cc
-Cc
-Cc
+Cm
+Cm
+Cm
+Cm
+Cm
+Cm
+Cm
+Cm
+Cm
 fQ
 fQ
 fQ
@@ -231502,27 +232607,27 @@ fQ
 pp
 pp
 bE
-EX
-NK
-NK
+Fv
+BL
+BL
+Xf
+BL
+BL
+Xf
+BL
+BL
+Jf
 cq
-NK
-NK
-cq
-NK
-NK
-NK
-cq
-NK
-NK
-NK
-NK
-cq
-NK
-Cc
+Jf
+Jf
+BL
+BL
+Xf
+BL
+Cm
 pp
 pp
-Cc
+Cm
 fQ
 fQ
 fQ
@@ -231756,30 +232861,30 @@ fQ
 fQ
 fQ
 fQ
-Cc
-pp
+Cm
+AF
 bE
-EX
-EX
-EX
-EX
-EX
-EX
-EX
+Fv
 dm
-EX
-EX
-EX
-EX
-EX
-EX
-EX
-EX
-bz
+dm
+dm
+dm
+dm
+dm
+dm
+dm
+Fv
+Fv
+Fv
+Od
+Fv
+Fv
+Fv
+WJ
 bE
 pp
 pp
-Cc
+Cm
 fQ
 fQ
 fQ
@@ -232013,27 +233118,27 @@ fQ
 fQ
 fQ
 fQ
-Cc
-Cc
-Cc
-Cc
-Cc
-Cc
-Cc
-Cc
-Cc
-Cc
-Cc
-Cc
-Cc
-Cc
+Cm
+Cm
+Cm
+Fv
+EX
+XE
+EX
+dm
+dm
+EX
+XE
+EX
+Fv
+NX
 HO
 tu
 HO
-Cc
+NX
 Ho
-bz
-Cc
+WJ
+Cm
 pp
 pp
 pp
@@ -232272,28 +233377,28 @@ fQ
 fQ
 fQ
 fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-Cc
+Cm
+Fv
+Fv
+Fv
+Fv
+Fv
+Fv
+Fv
+aX
+Fv
+Fv
+NX
 nQ
 Fu
 En
 Dn
-EX
-bz
-Cc
+Fv
+WJ
+Cm
 pp
 pp
-Cc
+Cm
 fQ
 fQ
 fQ
@@ -232529,28 +233634,28 @@ fQ
 fQ
 fQ
 fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-Cc
+Cm
+Cm
+Cm
+Cm
+Cm
+Cm
+Cm
+Cm
+Cm
+Cm
+Cm
+NX
 hZ
 Bp
 Bp
 Bp
-EX
+Od
 Zt
-Cc
+Cm
 pp
 pp
-Cc
+Cm
 fQ
 fQ
 fQ
@@ -232797,17 +233902,17 @@ fQ
 fQ
 fQ
 fQ
-Cc
+NX
 XK
 Or
 QF
 nW
 Oa
 bz
-Cc
-Cc
-Cc
-Cc
+Cm
+Cm
+Cm
+Cm
 fQ
 fQ
 fQ
@@ -233054,14 +234159,14 @@ fQ
 fQ
 fQ
 fQ
-Cc
+NX
 su
 Kn
 wV
 Mj
 nv
 bz
-Cc
+Cm
 pp
 pp
 pp
@@ -233311,14 +234416,14 @@ fQ
 fQ
 fQ
 fQ
-Cc
-Cc
-Cc
-Cc
-Cc
+NX
+NX
+NX
+NX
+NX
 ss
 bz
-Cc
+Cm
 pp
 pp
 pp
@@ -233570,15 +234675,15 @@ fQ
 fQ
 fQ
 fQ
-pp
-pp
-Cc
-EX
+Cm
+Fv
+Fv
+Fv
 bz
-Cc
-Cc
-Cc
-Cc
+Cm
+Cm
+Cm
+Cm
 fQ
 fQ
 fQ
@@ -233827,15 +234932,15 @@ fQ
 fQ
 fQ
 fQ
-pp
-pp
-Cc
-EX
+Cm
+Fv
+dm
+XE
 bz
-Cc
+Cm
 pp
 pp
-Cc
+Cm
 fQ
 fQ
 fQ
@@ -234084,15 +235189,15 @@ fQ
 fQ
 fQ
 fQ
-Cc
-Cc
-Cc
-Oa
+Cm
+ss
+dm
+EX
 bz
-Cc
+Cm
 pp
 pp
-Cc
+Cm
 fQ
 fQ
 fQ
@@ -234341,12 +235446,12 @@ fQ
 fQ
 fQ
 fQ
-Cc
-pp
-Cc
+Cm
 vA
+dm
+XE
 bz
-Cc
+Cm
 pp
 pp
 pp
@@ -234598,12 +235703,12 @@ fQ
 fQ
 fQ
 fQ
-pp
-pp
-Cc
-EX
+Cm
+Fv
+dm
+XE
 bz
-Cc
+Cm
 pp
 pp
 pp
@@ -234855,12 +235960,12 @@ fQ
 fQ
 fQ
 fQ
-Cc
-pp
-Cc
+Cm
+Fv
+dm
 EX
 bz
-Cc
+Cm
 pp
 pp
 pp
@@ -235112,15 +236217,15 @@ fQ
 fQ
 fQ
 fQ
-Cc
-pp
-Cc
-EX
+Cm
+Fv
+dm
+XE
 bz
-Cc
+Cm
 pp
 pp
-Cc
+Cm
 fQ
 fQ
 fQ
@@ -235369,15 +236474,15 @@ fQ
 fQ
 fQ
 fQ
-Cc
-pp
-Cc
-ir
+Cm
+Fv
+dm
+QQ
 Zt
-Cc
+Cm
 pp
 pp
-Cc
+Cm
 fQ
 fQ
 fQ
@@ -235626,15 +236731,15 @@ fQ
 fQ
 fQ
 fQ
-Cc
-pp
-Cc
-EX
+Cm
+Fv
+dm
+dm
 bz
-Cc
-Cc
-Cc
-Cc
+Cm
+Cm
+Cm
+Cm
 fQ
 fQ
 fQ
@@ -235883,10 +236988,10 @@ fQ
 fQ
 fQ
 fQ
-Cc
-Cc
-Cc
-ox
+Cm
+ss
+dm
+ZI
 bz
 bE
 pp
@@ -235928,7 +237033,7 @@ fQ
 fQ
 fQ
 fQ
-fQ
+gW
 "}
 (110,1,4) = {"
 fQ
@@ -236140,15 +237245,15 @@ fQ
 fQ
 fQ
 fQ
-pp
-pp
-Cc
-EX
+Cm
+Fv
+dm
+XE
 bz
 bE
 pp
 pp
-Cc
+Cm
 fQ
 fQ
 fQ
@@ -236397,15 +237502,15 @@ fQ
 fQ
 fQ
 fQ
-pp
-pp
-Cc
-EX
+Cm
+Fv
+dm
+XE
 bz
 bE
 pp
 pp
-Cc
+Cm
 fQ
 fQ
 fQ
@@ -236654,15 +237759,15 @@ fQ
 fQ
 fQ
 fQ
-pp
-pp
-Cc
+Cm
+Fv
+dm
 EX
 bz
 bE
 pp
 pp
-Cc
+Cm
 fQ
 fQ
 fQ
@@ -236911,15 +238016,15 @@ fQ
 fQ
 fQ
 fQ
-pp
-pp
-Cc
-EX
+Cm
+Fv
+dm
+XE
 bz
-Cc
-Cc
-Cc
-Cc
+Cm
+Cm
+Cm
+Cm
 fQ
 fQ
 fQ
@@ -237168,15 +238273,15 @@ fQ
 fQ
 fQ
 fQ
-Cc
-Cc
-Cc
-Oa
+Cm
+ss
+dm
+EX
 bz
-Cc
+Cm
 pp
 pp
-Cc
+Cm
 fQ
 fQ
 pp
@@ -237425,15 +238530,15 @@ fQ
 fQ
 fQ
 fQ
-pp
-pp
-Cc
-EX
+Cm
+Fv
+dm
+XE
 bz
-Cc
+Cm
 pp
 pp
-Cc
+Cm
 fQ
 fQ
 pp
@@ -237682,15 +238787,15 @@ fQ
 fQ
 fQ
 fQ
-Cc
-pp
-Cc
-EX
+Cm
+Fv
+dm
+XE
 bz
-Cc
+Cm
 pp
 pp
-Cc
+Cm
 fQ
 pp
 pp
@@ -237939,12 +239044,12 @@ fQ
 fQ
 fQ
 fQ
-Cc
-pp
-Cc
-ir
+Cm
+Fv
+dm
+QQ
 bz
-Cc
+Cm
 pp
 pp
 pp
@@ -238196,13 +239301,13 @@ fQ
 fQ
 fQ
 fQ
-Cc
-pp
-Cc
-EX
-bz
-Cc
-Cc
+Cm
+Fv
+Fv
+Fv
+Qx
+Cm
+Cm
 pp
 pp
 pp
@@ -238453,12 +239558,12 @@ fQ
 fQ
 fQ
 fQ
-Cc
-pp
-Cc
-nv
+Cm
+Fv
+dm
+ZI
 bz
-Cc
+Cm
 pp
 pp
 pp
@@ -238710,12 +239815,12 @@ fQ
 fQ
 fQ
 fQ
-Cc
-pp
-Cc
-EX
+Cm
+Fv
+dm
+XE
 bz
-Cc
+Cm
 pp
 pp
 pp
@@ -238967,12 +240072,12 @@ fQ
 fQ
 fQ
 fQ
-Cc
-pp
-Cc
+Cm
+Fv
+dm
 EX
 bz
-Cc
+Cm
 pp
 pp
 pp
@@ -239224,12 +240329,12 @@ fQ
 fQ
 fQ
 fQ
-pp
-pp
-Cc
+Cm
+Fv
+dm
 EX
-bz
-Cc
+Ns
+Cm
 pp
 pp
 pp
@@ -239481,15 +240586,15 @@ fQ
 fQ
 fQ
 fQ
-Cc
-Cc
-Cc
-Oa
+Cm
+ss
+dm
+XE
 bz
-Cc
-Cc
-Cc
-Cc
+Cm
+Cm
+Cm
+Cm
 fQ
 fQ
 fQ
@@ -239738,15 +240843,15 @@ fQ
 fQ
 fQ
 fQ
-pp
-pp
-Cc
-ir
+Cm
+Fv
+dm
+QQ
 bz
-Cc
+Cm
 pp
 pp
-Cc
+Cm
 fQ
 fQ
 fQ
@@ -239995,31 +241100,31 @@ fQ
 fQ
 fQ
 fQ
-Cc
-Cc
-Cc
-Oa
+Cm
+Fv
+dm
+XE
 bz
-Cc
+Cm
 pp
 pp
 pp
 pp
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
+rD
+rD
+rD
+rD
+rD
+rD
+rD
+rD
+rD
+rD
+rD
+rD
+rD
+rD
+rD
 fQ
 fQ
 fQ
@@ -240252,31 +241357,31 @@ fQ
 fQ
 fQ
 fQ
-pp
-pp
-Cc
-EX
+Cm
+ss
+dm
+XE
 bz
-Cc
+Cm
 pp
-Cc
-Cc
+rD
+rD
 pU
-Cc
-Cc
+rD
+rD
 pU
-Cc
-Cc
-Cc
-Cc
-Cc
-Cc
-Cc
-Cc
-Cc
-Cc
-Cc
-fQ
+rD
+rD
+rD
+rD
+rD
+rD
+rD
+rD
+rD
+rD
+rD
+rD
 fQ
 fQ
 fQ
@@ -240509,31 +241614,31 @@ fQ
 fQ
 fQ
 fQ
-Cc
-pp
-Cc
+Cm
+Fv
+dm
 ZI
 bz
-Cc
+Cm
 pp
-Cc
+rD
 Nc
-ZU
-ZU
-ZU
-ZU
+Wx
+Wx
+Wx
+Wx
 rr
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
+Wx
+Wx
+Wx
+Wx
+Wx
+Wx
+Wx
+Wx
 Nc
-Cc
-fQ
+rD
+rD
 fQ
 fQ
 fQ
@@ -240766,31 +241871,31 @@ fQ
 fQ
 fQ
 fQ
-pp
-pp
-Cc
-aa
+Cm
+Fv
+dm
+dm
 bz
-Cc
+Cm
 pp
-Cc
+rD
 Zo
 Dx
-lU
-lU
+iC
+iC
 fF
-lU
-lU
-lU
-lU
-lU
+iC
+iC
+iC
+iC
+iC
 fF
-lU
-lU
+iC
+iC
 Dx
-ZU
-Cc
-fQ
+Wx
+rD
+rD
 fQ
 fQ
 fQ
@@ -241023,16 +242128,16 @@ fQ
 fQ
 fQ
 fQ
-Cc
-Cc
-Cc
+Cm
+Oa
 Fv
-bz
-Cc
-Cc
-Cc
+Fv
+Qx
+Cm
+rD
+rD
 RV
-lU
+iC
 NU
 NU
 NU
@@ -241044,10 +242149,10 @@ NU
 NU
 NU
 NU
-lU
-ZU
-Cc
-fQ
+iC
+Wx
+rD
+rD
 fQ
 fQ
 fQ
@@ -241280,18 +242385,18 @@ fQ
 fQ
 fQ
 fQ
-pp
-pp
-Cc
-Dx
+Cm
+Ic
+dm
+EX
 bz
-Dx
+EX
 VH
-Cc
+rD
 uB
 Dx
-VH
-bz
+zn
+tI
 LO
 zx
 zx
@@ -241299,12 +242404,12 @@ zx
 zx
 zx
 LO
-Cx
+kr
 NU
-lU
-ZU
-Cc
-fQ
+iC
+Wx
+rD
+rD
 fQ
 fQ
 fQ
@@ -241537,31 +242642,31 @@ fQ
 fQ
 fQ
 fQ
-Cc
-pp
-Cc
-Cx
+Cm
+vs
+dm
+dm
 Ca
 bz
 bz
 rR
 uA
-bz
-NU
+gV
+HY
 VA
-VH
-VH
-VH
-VH
-VH
-VH
-VH
+zn
+zn
+zn
+zn
+zn
+zn
+zn
 hj
 NU
-lU
-ZU
-Cc
-fQ
+iC
+Wx
+rD
+rD
 fQ
 fQ
 fQ
@@ -241794,31 +242899,31 @@ fQ
 fQ
 fQ
 fQ
-pp
-pp
-Cc
+Cm
+qc
+dm
 JO
 jO
-Dx
+EX
 VH
-Cc
+rD
 uB
 Dx
-NU
+HY
 NH
-VH
-Cx
-Cx
-Cx
-Cx
-Cx
-VH
+zn
+kr
+kr
+kr
+kr
+kr
+zn
 hj
 NU
 Dx
-ZU
-Cc
-fQ
+Wx
+rD
+rD
 fQ
 fQ
 fQ
@@ -242051,31 +243156,31 @@ fQ
 fQ
 fQ
 fQ
-Cc
-Cc
-Cc
-Cc
+Cm
+Cm
+Cm
+Cm
 Yq
-Cc
-Cc
-Cc
-ZU
+Cm
+rD
+rD
+Pp
 SN
-NU
+HY
 NH
-VH
-Cx
-Cx
-Cx
-Cx
-Cx
-VH
+zn
+kr
+kr
+kr
+kr
+kr
+zn
 hj
 NU
-lU
-ZU
-Cc
-fQ
+iC
+Wx
+rD
+rD
 fQ
 fQ
 fQ
@@ -242311,28 +243416,28 @@ fQ
 pp
 pp
 pp
-Cc
-Cx
-Cc
+Cm
+dm
+Cm
 Wy
-Cc
-rr
+rD
+Tm
 SS
-NU
+HY
 NH
-VH
-Cx
-Cx
-Cx
-Cx
-Cx
-VH
+zn
+kr
+kr
+kr
+kr
+kr
+zn
 hj
 NU
-lU
+iC
 rr
-Cc
-fQ
+rD
+rD
 fQ
 fQ
 fQ
@@ -242568,28 +243673,28 @@ fQ
 pp
 pp
 pp
-Cc
-Cx
-Cc
+Cm
+dm
+Cm
 Wy
-Cc
-ZU
+rD
+Wx
 tH
-NU
+HY
 NH
-VH
-Cx
-Cx
-Cx
-Cx
-Cx
-VH
+zn
+kr
+kr
+kr
+kr
+kr
+zn
 hj
 NU
-lU
-ZU
-Cc
-fQ
+iC
+Wx
+rD
+rD
 fQ
 fQ
 fQ
@@ -242825,28 +243930,28 @@ fQ
 pp
 pp
 pp
-Cc
+Cm
 VH
-Cc
+Cm
 Wy
-Cc
-ZU
+rD
+Wx
 xI
-NU
+HY
 NH
-VH
-Cx
-Cx
-Cx
-Cx
-Cx
-VH
+zn
+kr
+kr
+kr
+kr
+kr
+zn
 hj
 NU
-lU
-ZU
-Cc
-fQ
+iC
+Wx
+rD
+rD
 fQ
 fQ
 fQ
@@ -243082,28 +244187,28 @@ fQ
 pp
 pp
 pp
-Cc
+Cm
 uS
-Cc
+Cm
 Wy
-Cc
-ZU
+rD
+Wx
 tH
-NU
+HY
 NH
-VH
-Cx
-Cx
-Cx
-Cx
-Cx
-VH
+zn
+kr
+kr
+kr
+kr
+kr
+zn
 hj
 NU
-lU
-ZU
-Cc
-fQ
+iC
+Wx
+rD
+rD
 fQ
 fQ
 fQ
@@ -243343,24 +244448,24 @@ jd
 jd
 jd
 jd
-Cc
-ZU
+rD
+Wx
 jV
-NU
+HY
 NH
-VH
-Cx
-Cx
-Cx
-Cx
-Cx
-VH
+zn
+kr
+kr
+kr
+kr
+kr
+zn
 hj
 NU
-lU
-ZU
-Cc
-fQ
+iC
+Wx
+rD
+rD
 fQ
 fQ
 fQ
@@ -243600,24 +244705,24 @@ jd
 jd
 jd
 jd
-Cc
-ZU
+rD
+Wx
 tH
-NU
+HY
 NH
-VH
-Cx
-Cx
-Cx
-Cx
-Cx
-VH
+zn
+kr
+kr
+kr
+kr
+kr
+zn
 hj
 NU
-lU
-ZU
-Cc
-fQ
+iC
+Wx
+rD
+rD
 fQ
 fQ
 fQ
@@ -243857,24 +244962,24 @@ jd
 jd
 jd
 jd
-Cc
+rD
 Zo
 xI
-NU
+HY
 NH
-VH
-Cx
-Cx
-Cx
-Cx
-Cx
-VH
+zn
+kr
+kr
+kr
+kr
+kr
+zn
 hj
 NU
-lU
-ZU
-Cc
-fQ
+iC
+Wx
+rD
+rD
 fQ
 fQ
 fQ
@@ -244114,24 +245219,24 @@ jd
 jd
 jd
 jd
-Cc
-ZU
+rD
+Wx
 Dx
-NU
+HY
 NH
-VH
-Cx
-Cx
+zn
+kr
+kr
 on
-Cx
-Cx
-VH
+kr
+kr
+zn
 hj
 NU
 Dx
-ZU
-Cc
-fQ
+Wx
+rD
+rD
 fQ
 fQ
 fQ
@@ -244371,24 +245476,24 @@ jd
 jd
 jd
 jd
-Cc
-ZU
+rD
+Wx
 Ra
-NU
+HY
 NH
-VH
-VH
-VH
-VH
-VH
-VH
-VH
+zn
+zn
+zn
+zn
+zn
+zn
+zn
 hj
 NU
-lU
-ZU
-Cc
-fQ
+iC
+Wx
+rD
+rD
 fQ
 fQ
 fQ
@@ -244628,24 +245733,24 @@ jd
 jd
 jd
 jd
-Cc
-ZU
-lU
+rD
+Wx
+iC
+HY
+kr
+my
+my
+my
+my
+my
+my
+my
+kr
 NU
-Cx
-my
-my
-my
-my
-my
-my
-my
-Cx
-NU
-lU
-ZU
-Cc
-fQ
+iC
+Wx
+rD
+rD
 fQ
 fQ
 fQ
@@ -244885,24 +245990,24 @@ jd
 jd
 jd
 jd
-Cc
-ZU
-lU
-NU
+rD
+Wx
+iC
+HY
 NH
-VH
-VH
-VH
-VH
-VH
-VH
-VH
+zn
+zn
+zn
+zn
+zn
+zn
+zn
 hj
 NU
-lU
-ZU
-Cc
-fQ
+iC
+Wx
+rD
+rD
 fQ
 fQ
 fQ
@@ -245142,24 +246247,24 @@ jd
 jd
 jd
 jd
-Cc
+rD
 rr
-lU
-NU
+iC
+HY
 NH
-VH
-Cx
-Cx
-Cx
-Cx
-Cx
-VH
+zn
+kr
+kr
+kr
+kr
+kr
+zn
 hj
 NU
-lU
-ZU
-Cc
-fQ
+iC
+Wx
+rD
+rD
 fQ
 fQ
 fQ
@@ -245399,24 +246504,24 @@ jd
 jd
 jd
 jd
-Cc
-ZU
-lU
-NU
+rD
+Wx
+iC
+HY
 NH
-VH
-Cx
-Cx
-Cx
-Cx
-Cx
-VH
+zn
+kr
+kr
+kr
+kr
+kr
+zn
 hj
 NU
-lU
+iC
 rr
-Cc
-fQ
+rD
+rD
 fQ
 fQ
 fQ
@@ -245656,24 +246761,24 @@ jd
 jd
 jd
 jd
-Cc
-ZU
-lU
-NU
+rD
+Wx
+iC
+HY
 NH
-VH
-Cx
-Cx
-Cx
-Cx
-Cx
-VH
+zn
+kr
+kr
+kr
+kr
+kr
+zn
 hj
 NU
-lU
-ZU
-Cc
-fQ
+iC
+Wx
+rD
+rD
 fQ
 fQ
 fQ
@@ -245913,24 +247018,24 @@ jd
 jd
 jd
 jd
-Cc
-ZU
+rD
+Wx
 Dx
-NU
+HY
 NH
-VH
-Cx
-Cx
-Cx
-Cx
-Cx
-VH
+zn
+kr
+kr
+kr
+kr
+kr
+zn
 hj
 NU
 Dx
-ZU
-Cc
-fQ
+Wx
+rD
+rD
 fQ
 fQ
 fQ
@@ -246170,24 +247275,24 @@ jd
 jd
 jd
 jd
-Cc
-ZU
-lU
-NU
+rD
+Wx
+iC
+HY
 NH
-VH
-Cx
-Cx
-Cx
-Cx
-Cx
-VH
+zn
+kr
+kr
+kr
+kr
+kr
+zn
 hj
 NU
-lU
-ZU
-Cc
-fQ
+iC
+Wx
+rD
+rD
 fQ
 fQ
 fQ
@@ -246427,24 +247532,24 @@ jd
 jd
 jd
 jd
-Cc
-ZU
-lU
-NU
+rD
+Wx
+iC
+HY
 NH
-VH
-Cx
-Cx
-Cx
-Cx
-Cx
-VH
+zn
+kr
+kr
+kr
+kr
+kr
+zn
 hj
 NU
-lU
-ZU
-Cc
-fQ
+iC
+Wx
+rD
+rD
 fQ
 fQ
 fQ
@@ -246684,24 +247789,24 @@ jd
 jd
 jd
 jd
-Cc
-ZU
-lU
-NU
+rD
+Wx
+iC
+HY
 NH
-VH
-Cx
-Cx
-Cx
-Cx
-Cx
-VH
+zn
+kr
+kr
+kr
+kr
+kr
+zn
 hj
 NU
-lU
-ZU
-Cc
-fQ
+iC
+Wx
+rD
+rD
 fQ
 fQ
 fQ
@@ -246941,24 +248046,24 @@ jd
 jd
 jd
 jd
-Cc
-ZU
-lU
-NU
+rD
+Wx
+iC
+HY
 NH
-VH
-Cx
-Cx
-Cx
-Cx
-Cx
-VH
+zn
+kr
+kr
+kr
+kr
+kr
+zn
 hj
 NU
-lU
-ZU
-Cc
-fQ
+iC
+Wx
+rD
+rD
 fQ
 fQ
 fQ
@@ -247197,25 +248302,25 @@ fQ
 fQ
 fQ
 fQ
-fQ
-Cc
-ZU
-lU
-NU
+rD
+rD
+Wx
+iC
+HY
 NH
-VH
-Cx
-Cx
-Cx
-Cx
-Cx
-VH
+zn
+kr
+kr
+kr
+kr
+kr
+zn
 hj
 NU
-lU
-ZU
-Cc
-fQ
+iC
+Wx
+rD
+rD
 fQ
 fQ
 fQ
@@ -247454,25 +248559,25 @@ fQ
 fQ
 fQ
 fQ
-fQ
-Cc
+rD
+rD
 rr
 Dx
-NU
+HY
 NH
-VH
-Cx
-Cx
-Cx
-Cx
-Cx
-VH
+zn
+kr
+kr
+kr
+kr
+kr
+zn
 hj
 NU
 Dx
 rr
-Cc
-fQ
+rD
+rD
 fQ
 fQ
 fQ
@@ -247711,25 +248816,25 @@ jd
 jd
 jd
 fQ
-fQ
-Cc
-ZU
-lU
-NU
+rD
+rD
+Wx
+iC
+HY
 NH
-VH
-Cx
-Cx
+zn
+kr
+kr
 EJ
-Cx
-Cx
-VH
+kr
+kr
+zn
 hj
 NU
-lU
-ZU
-Cc
-fQ
+iC
+Wx
+rD
+rD
 fQ
 fQ
 fQ
@@ -247968,25 +249073,25 @@ jd
 jd
 jd
 fQ
-fQ
-Cc
-ZU
-lU
-NU
+rD
+rD
+Wx
+iC
+HY
 NH
-VH
-Cx
-Cx
+zn
+kr
+kr
 Gl
-Cx
-Cx
-VH
+kr
+kr
+zn
 hj
 NU
-lU
-ZU
-Cc
-fQ
+iC
+Wx
+rD
+rD
 fQ
 fQ
 fQ
@@ -248225,25 +249330,25 @@ jd
 jd
 jd
 fQ
-fQ
-Cc
-ZU
-lU
-NU
+rD
+rD
+Wx
+iC
+HY
 NH
-VH
-VH
-VH
-VH
-VH
-VH
-VH
+zn
+zn
+zn
+zn
+zn
+zn
+zn
 hj
 NU
-lU
-ZU
-Cc
-fQ
+iC
+Wx
+rD
+rD
 fQ
 fQ
 fQ
@@ -248482,12 +249587,12 @@ jd
 jd
 jd
 fQ
-fQ
-Cc
-ZU
-lU
-NU
-Cx
+rD
+rD
+Wx
+iC
+HY
+kr
 ai
 Ub
 Ub
@@ -248495,12 +249600,12 @@ Ub
 Ub
 Ub
 ai
-Cx
+kr
 NU
-lU
-ZU
-Cc
-fQ
+iC
+Wx
+rD
+rD
 fQ
 fQ
 fQ
@@ -248739,10 +249844,11 @@ jd
 jd
 jd
 fQ
-fQ
-Cc
-ZU
-lU
+rD
+rD
+Wx
+iC
+HY
 NU
 NU
 NU
@@ -248753,11 +249859,10 @@ NU
 NU
 NU
 NU
-NU
-lU
-ZU
-Cc
-fQ
+iC
+Wx
+rD
+rD
 fQ
 fQ
 fQ
@@ -248996,25 +250101,25 @@ jd
 jd
 jd
 fQ
-fQ
-Cc
-ZU
+rD
+rD
+Wx
 Dx
-lU
-lU
+ox
+iC
 hp
-lU
-lU
-lU
-lU
-lU
+iC
+iC
+iC
+iC
+iC
 hp
-lU
-lU
+iC
+iC
 Dx
-ZU
-Cc
-fQ
+Wx
+rD
+rD
 fQ
 fQ
 fQ
@@ -249253,25 +250358,25 @@ jd
 jd
 jd
 fQ
-fQ
-Cc
+rD
+rD
 Nc
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
+Wx
+ua
+Wx
+Wx
+Wx
+Wx
+Wx
+Wx
+Wx
+Wx
+Wx
+Wx
+Wx
 ym
-Cc
-fQ
+rD
+rD
 fQ
 fQ
 fQ
@@ -249510,25 +250615,25 @@ jd
 jd
 jd
 fQ
-fQ
-Cc
-Cc
-Cc
-Cc
-Cc
-Cc
-Cc
-Cc
-Cc
-Cc
-Cc
-Cc
-Cc
-Cc
-Cc
-Cc
-Cc
-fQ
+rD
+rD
+rD
+rD
+rD
+rD
+rD
+rD
+rD
+rD
+rD
+rD
+rD
+rD
+rD
+rD
+rD
+rD
+rD
 fQ
 fQ
 fQ
@@ -249767,25 +250872,25 @@ jd
 jd
 jd
 fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
+rD
+rD
+rD
+rD
+rD
+rD
+rD
+rD
+rD
+rD
+rD
+rD
+rD
+rD
+rD
+rD
+rD
+rD
+rD
 fQ
 fQ
 fQ
