@@ -10,11 +10,6 @@
 /turf/open/floor/iron/dark/textured_large,
 /area/shuttle/interdyne_cargo)
 "f" = (
-/obj/structure/frame/machine{
-	anchored = 1;
-	state = 2;
-	icon_state = "box_1"
-	},
 /obj/item/circuitboard/machine/ore_redemption,
 /obj/item/assembly/igniter,
 /obj/effect/turf_decal/delivery,
@@ -23,6 +18,7 @@
 	req_access = list("syndicate");
 	id = "interdyneshuttle"
 	},
+/obj/structure/frame/machine/secured,
 /turf/open/floor/iron/dark/textured_large,
 /area/shuttle/interdyne_cargo)
 "g" = (
@@ -34,13 +30,9 @@
 /area/shuttle/interdyne_cargo)
 "i" = (
 /obj/machinery/light/small/red/directional/south,
-/obj/structure/frame/machine{
-	anchored = 1;
-	state = 2;
-	icon_state = "box_1"
-	},
 /obj/item/circuitboard/machine/ore_silo,
 /obj/effect/turf_decal/delivery,
+/obj/structure/frame/machine/secured,
 /turf/open/floor/iron/dark/textured_large,
 /area/shuttle/interdyne_cargo)
 "k" = (
@@ -55,12 +47,6 @@
 	},
 /obj/machinery/door/poddoor/preopen{
 	id = "interdyneshuttle"
-	},
-/turf/open/floor/plating,
-/area/shuttle/interdyne_cargo)
-"r" = (
-/obj/structure/fans/tiny/forcefield{
-	dir = 4
 	},
 /turf/open/floor/plating,
 /area/shuttle/interdyne_cargo)
@@ -133,6 +119,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
+/obj/effect/mapping_helpers/airlock/access/all/syndicate/general,
 /obj/effect/mapping_helpers/airlock/cutaiwire,
 /obj/structure/fans/tiny,
 /obj/machinery/door/airlock/external/glass{
@@ -141,8 +128,7 @@
 /obj/docking_port/mobile{
 	dir = 4;
 	shuttle_id = "interdyne_cargo";
-	launch_status = 0;
-	name = "Free Union of Vulken Cargo Shuttle";
+	name = "Interdyne Cargo Shuttle";
 	port_direction = 2;
 	preferred_direction = 4
 	},
@@ -168,6 +154,10 @@
 /area/shuttle/interdyne_cargo)
 "Q" = (
 /turf/closed/wall/mineral/titanium/spaceship/nodiagonal,
+/area/shuttle/interdyne_cargo)
+"S" = (
+/obj/machinery/suit_storage_unit/interdyne/nerfed,
+/turf/open/floor/catwalk_floor/iron_dark,
 /area/shuttle/interdyne_cargo)
 "V" = (
 /obj/effect/spawner/structure/window/survival_pod,
@@ -247,8 +237,8 @@ Z
 Y
 Y
 Y
-z
-z
+S
+S
 a
 v
 "}
@@ -258,7 +248,7 @@ G
 g
 g
 v
-r
+g
 g
 G
 N
