@@ -724,3 +724,12 @@
 	name = "Mr. Fluff"
 	item_path = /obj/item/clothing/head/mob_holder/pet/donator/centralsmith
 
+
+
+/datum/loadout_item/under/jumpsuit/techpants
+    name = "Techwear Pants"
+
+
+/datum/loadout_item/inhand/drop_pouch
+    name = "Drop Pouch"
+    item_path = /obj/item/storage/backpack/satchel/drop_pouch
