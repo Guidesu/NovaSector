@@ -13,6 +13,7 @@
 		/obj/structure/spawner/ice_moon = 1,
 		/obj/structure/spawner/ice_moon/polarbear = 1,
 		/mob/living/basic/carp/mega = 1,
+		/obj/effect/spawner/random/lavaland_mob/raptor = 3,
 		/mob/living/basic/carp = 1,
 		/mob/living/basic/mining/watcher = 1,
 		/mob/living/basic/mining/watcher/magmawing = 1,

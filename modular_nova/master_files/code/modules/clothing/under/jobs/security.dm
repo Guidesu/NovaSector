@@ -19,7 +19,7 @@
 	name = "security utility uniform"
 	desc = "A utility uniform worn by Lopland-certified Security officers."
 	icon_state = "util_sec"
-	supports_variations_flags = CLOTHING_DIGITIGRADE_VARIATION | CLOTHING_MONKEY_VARIATION
+	supports_variations_flags = CLOTHING_DIGITIGRADE_VARIATION
 	can_adjust = FALSE
 
 /obj/item/clothing/under/rank/security/nova/utility/redsec
@@ -118,10 +118,22 @@
 /obj/item/clothing/under/rank/security/peacekeeper/miniskirt
 	name = "security miniskirt"
 	desc = "This miniskirt was originally featured in a gag calendar, but entered official use once they realized its potential for arid climates."
-	icon_state = "miniskirt"
+	icon_state = "miniskirt_blue"
+	icon = 'modular_nova/master_files/icons/obj/clothing/under/security.dmi'
+	worn_icon = 'modular_nova/master_files/icons/mob/clothing/under/security.dmi'
 	female_sprite_flags = FEMALE_UNIFORM_TOP_ONLY
 	gets_cropped_on_taurs = FALSE
-	can_adjust = TRUE
+	uses_advanced_reskins = TRUE
+	unique_reskin = list(
+		"Blue Variant" = list(
+			RESKIN_ICON_STATE = "miniskirt_blue",
+			RESKIN_WORN_ICON_STATE = "miniskirt_blue"
+	    ),
+		"Black Variant" = list(
+			RESKIN_ICON_STATE = "miniskirt_black",
+			RESKIN_WORN_ICON_STATE = "miniskirt_black"
+	    ),
+	)
 
 /*
 *	HEAD OF SECURITY
@@ -136,10 +148,3 @@
 	desc = "A tar black naval suit and a rank badge denoting the Officer of The Internal Security Division. Be careful your underlings don't bump their head on a door."
 	name = "head of security's naval jumpsuit"
 	icon_state = "imphos"
-
-/*
-*	PRISONER
-*/
-
-/obj/item/clothing/under/rank/prisoner
-	greyscale_config_worn_monkey = /datum/greyscale_config/jumpsuit/prison/worn/monkey

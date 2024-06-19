@@ -272,6 +272,11 @@
 	name = "Cayenne's bed"
 	anchored = TRUE
 
+/obj/structure/bed/dogbed/misha
+	desc = "There is fur all over it, and some blood..."
+	name = "Misha's bed"
+	anchored = TRUE
+
 /obj/structure/bed/dogbed/lia
 	desc = "Seems kind of... fishy."
 	name = "Lia's bed"
@@ -315,7 +320,7 @@
 	. = ..()
 	AddElement(/datum/element/swabable, CELL_LINE_TABLE_MOLD, CELL_VIRUS_TABLE_GENERIC, rand(2,4), 25)
 
-// Double Beds, for luxurious sleeping, i.e. the captain and maybe heads- if people use this for ERP, send them to skyrat
+// Double Beds, for luxurious sleeping, i.e. the captain and maybe heads- if people use this for ERP, send them to nova
 /obj/structure/bed/double
 	name = "double bed"
 	desc = "A luxurious double bed, for those too important for small dreams."
