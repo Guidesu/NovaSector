@@ -41,15 +41,15 @@
 	build_path = /obj/machinery/computer/shuttle/caravan/blackmarket_burst
 /*----- End of Black Market Shuttle Code -----*/
 
-/*Free Union of Vulken Cargo Shuttle*/
+/*Interdyne Cargo Shuttle*/
 /datum/map_template/shuttle/ruin/interdyne_cargo
 	prefix = "_maps/shuttles/nova/"
 	suffix = "interdyne_cargo"
-	name = "Free Union of Vulken Cargo Shuttle"
+	name = "Interdyne Cargo Shuttle"
 
 /obj/machinery/computer/shuttle/interdyne_cargo
-	name = "Free Union of Vulken Cargo Shuttle Console"
-	desc = "Used to control the Free Union of Vulken cargo shuttle."
+	name = "Interdyne Cargo Shuttle Console"
+	desc = "Used to control the Interdyne cargo shuttle."
 	circuit = /obj/item/circuitboard/computer/interdyne_cargo
 	shuttleId = "interdyne_cargo"
 	icon_screen = "syndishuttle"
@@ -57,9 +57,9 @@
 	possible_destinations = "interdyne_cargo_home;interdyne_cargo_away;interdyne_cargo_custom;whiteship_home"
 
 /obj/item/circuitboard/computer/interdyne_cargo
-	name = "Free Union of Vulken Shuttle Control (Computer Board)"
+	name = "Interdyne Shuttle Control (Computer Board)"
 	build_path = /obj/machinery/computer/shuttle/interdyne_cargo
-/*Free Union of Vulken Cargo Shuttle End*/
+/*Interdyne Cargo Shuttle End*/
 
 /datum/map_template/shuttle/prison_transport
 	prefix = "_maps/shuttles/nova/"
@@ -187,22 +187,22 @@
 		/obj/item/megaphone/command
 	)
 
-/*----- Free Union of Vulken Shuttle Datum + related code -----*/
+/*----- Tarkon Shuttle Datum + related code -----*/
 /datum/map_template/shuttle/ruin/tarkon_driver
 	prefix = "_maps/shuttles/nova/"
 	suffix = "tarkon_driver"
-	name = "Free Union of Vulken Drill Driver"
+	name = "Tarkon Drill Driver"
 
 /obj/machinery/computer/shuttle/tarkon_driver
-	name = "Free Union of Vulken Driver Control"
-	desc = "Used to control the Free Union of Vulken Driver."
+	name = "Tarkon Driver Control"
+	desc = "Used to control the Tarkon Driver."
 	circuit = /obj/item/circuitboard/computer/tarkon_driver
 	shuttleId = "tarkon_driver"
 	possible_destinations = "tarkon_driver_custom;port_tarkon;whiteship_home"
 
 /obj/machinery/computer/camera_advanced/shuttle_docker/tarkon_driver
-	name = "Free Union of Vulken Driver Navigation Computer"
-	desc = "The Navigation console for the Free Union of Vulken Driver. A broken \"Engage Drill\" button seems to dimly blink in a yellow colour"
+	name = "Tarkon Driver Navigation Computer"
+	desc = "The Navigation console for the Tarkon Driver. A broken \"Engage Drill\" button seems to dimly blink in a yellow colour"
 	shuttleId = "tarkon_driver"
 	lock_override = NONE
 	shuttlePortId = "tarkon_driver_custom"
@@ -210,7 +210,30 @@
 	view_range = 0
 
 /obj/item/circuitboard/computer/tarkon_driver
-	name = "Free Union of Vulken Driver Control Console (Computer Board)"
+	name = "Tarkon Driver Control Console (Computer Board)"
 	build_path = /obj/machinery/computer/shuttle/tarkon_driver
 
-/*----- End of Free Union of Vulken Shuttle Code -----*/
+/*----- End of Tarkon Shuttle Code -----*/
+
+/*----- SerenityStation Shuttle Code -----*/
+/datum/map_template/shuttle/planetary
+	port_id = "planetary"
+	who_can_purchase = null
+
+/datum/map_template/shuttle/planetary/planetary_ferry
+	prefix = "_maps/shuttles/nova/"
+	suffix = "planetary_ferry"
+	name = "Planetary Ferry"
+
+/obj/machinery/computer/shuttle/planetary_ferry
+	name = "Planetary Ferry Console"
+	desc = "Used to control the ferry off-planet."
+	circuit = /obj/item/circuitboard/computer/planetary_ferry
+	shuttleId = "planetary_ferry"
+	possible_destinations = "planetary_dock;orbital_dock"
+
+/obj/item/circuitboard/computer/planetary_ferry
+	name = "Planetary Ferry Console (Computer Board)"
+	build_path = /obj/machinery/computer/shuttle/planetary_ferry
+
+/*----- End of SerenityStation Shuttle Code -----*/
