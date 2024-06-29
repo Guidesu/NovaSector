@@ -12,10 +12,10 @@
 		"whiteship": "whiteship_box",
 		"emergency": "emergency_box"
 	},
+
 	"traits": [
 		{
 			"Up": true,
-			"Mining": true,
 			"Linkage": null,
 			"Gravity": true,
 			"Weather_Snowstorm": true,
@@ -25,13 +25,11 @@
 			"Hail_Storm": true,
 			"Eletrical_Storm": true,
 			"Sand_Storm": true,
-			"Acid_Rain_Storm": true,
-			"Night": true
+			"Acid_Rain_Storm": true
 		},
 		{
 			"Up": true,
 			"Down": true,
-			"Mining": true,
 			"Linkage": null,
 			"Gravity": true,
 			"Weather_Snowstorm": true,
@@ -41,13 +39,25 @@
 			"Hail_Storm": true,
 			"Eletrical_Storm": true,
 			"Sand_Storm": true,
-			"Acid_Rain_Storm": true,
-			"Night": true
+			"Acid_Rain_Storm": true
 		},
 		{
 			"Up": true,
 			"Down": true,
-			"Mining": true,
+			"Linkage": null,
+			"Gravity": true,
+			"Weather_Snowstorm": true,
+			"Weather_Ashstorm": true,
+			"Weather_Voidstorm": true,
+			"Rain_Storm": true,
+			"Hail_Storm": true,
+			"Eletrical_Storm": true,
+			"Sand_Storm": true,
+			"Acid_Rain_Storm": true
+		},
+		{
+			"Up": true,
+			"Down": true,
 			"Linkage": null,
 			"Gravity": true,
 			"Weather_Snowstorm": true,
@@ -60,23 +70,15 @@
 			"Acid_Rain_Storm": true,
 			"Night": true
 		},
+
 		{
 			"Down": true,
-			"Mining": true,
 			"Linkage": null,
-			"Gravity": true,
-			"Weather_Snowstorm": true,
-			"Weather_Ashstorm": true,
-			"Weather_Voidstorm": true,
-			"Rain_Storm": true,
-			"Hail_Storm": true,
-			"Eletrical_Storm": true,
-			"Sand_Storm": true,
-			"Acid_Rain_Storm": true,
-			"Night": true
+			"Gravity": false
 		}
 	],
-	"minetype": "none",
+
+	"minetype": "lavaland",
 	"job_changes": {
 		"Captain": {
 			"special_charter": "planet"

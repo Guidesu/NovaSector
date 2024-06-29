@@ -1,5 +1,5 @@
 /datum/map_generator/cave_generator/lavaland
-	weighted_open_turf_types = list(/turf/open/misc/asteroid/basalt/lava_land_surface = 20, /turf/open/misc/asteroid/snow/icemoon = 20, /turf/open/misc/grass/lavaland = 5, /turf/open/misc/ice/icemoon = 1)
+	weighted_open_turf_types = list(/turf/open/floor/grass/fairy = 10, /turf/open/misc/dirt/station = 2,)
 	weighted_closed_turf_types = list(/turf/closed/mineral/random/volcanic = 1, /turf/closed/mineral/random/snow = 1)
 
 	weighted_mob_spawn_list = list(
