@@ -3,9 +3,8 @@
 	"map_name": "Vulken",
 	"map_path": "map_files/Mining",
 	"map_file": "Lavaland.dmm",
-	"space_ruin_levels": 0,
-	"space_empty_levels": 0,
 	"planetary": 1,
+	"allow_space_when_planetary": 1,
 	"shuttles": {
 		"cargo": "cargo_nova",
 		"ferry": "ferry_fancy",
@@ -17,10 +16,13 @@
 		{
 			"Up": true,
 			"Linkage": null,
+			"Gravity": true
+		},
+		{
+			"Up": true,
+			"Down": true,
+			"Linkage": null,
 			"Gravity": true,
-			"Weather_Snowstorm": true,
-			"Weather_Ashstorm": true,
-			"Weather_Voidstorm": true,
 			"Rain_Storm": true,
 			"Hail_Storm": true,
 			"Eletrical_Storm": true,
@@ -32,49 +34,26 @@
 			"Down": true,
 			"Linkage": null,
 			"Gravity": true,
-			"Weather_Snowstorm": true,
-			"Weather_Ashstorm": true,
-			"Weather_Voidstorm": true,
-			"Rain_Storm": true,
-			"Hail_Storm": true,
-			"Eletrical_Storm": true,
-			"Sand_Storm": true,
-			"Acid_Rain_Storm": true
+			"Weather_Snowstorm": true
 		},
 		{
 			"Up": true,
 			"Down": true,
 			"Linkage": null,
 			"Gravity": true,
-			"Weather_Snowstorm": true,
-			"Weather_Ashstorm": true,
 			"Weather_Voidstorm": true,
 			"Rain_Storm": true,
 			"Hail_Storm": true,
 			"Eletrical_Storm": true,
-			"Sand_Storm": true,
-			"Acid_Rain_Storm": true
-		},
-		{
-			"Up": true,
-			"Down": true,
-			"Linkage": null,
-			"Gravity": true,
-			"Weather_Snowstorm": true,
-			"Weather_Ashstorm": true,
-			"Weather_Voidstorm": true,
-			"Rain_Storm": true,
-			"Hail_Storm": true,
-			"Eletrical_Storm": true,
-			"Sand_Storm": true,
 			"Acid_Rain_Storm": true,
 			"Night": true
 		},
 
 		{
 			"Down": true,
-			"Linkage": null,
-			"Gravity": false
+			"Linkage": "Cross",
+			"Gravity": false,
+			"No Parallax": false
 		}
 	],
 
