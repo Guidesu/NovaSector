@@ -9,10 +9,10 @@
 	)
 
 /datum/techweb_node/mutanttech
-	id = "mutanttech"
-	display_name = "Advanced Free Union of Vulken Viral Bioweapons Technology"
-	description = "Research devices from the Free Union of Vulken viral bioweapons division! Got a virus problem? This'll save your day."
-	prereq_ids = list("adv_engi", "adv_biotech")
+	id = TECHWEB_NODE_MUTANT_TECH
+	display_name = "Advanced Nanotrasen Viral Bioweapons Technology"
+	description = "Research devices from the Nanotrasen viral bioweapons division! Got a virus problem? This'll save your day."
+	prereq_ids = list(TECHWEB_NODE_SURGERY_TOOLS, TECHWEB_NODE_CYTOLOGY)
 	design_ids = list("rna_vial", "rna_extractor", "rna_recombinator")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = TECHWEB_TIER_3_POINTS)
 
@@ -51,7 +51,7 @@
 
 /datum/design/board/rna_recombinator
 	name = "Machine Design (RNA Recombinator)"
-	desc = "The MRNA Recombinator is one of Free Union of Vulkens most advanced technologies and allows the exact recombination of virus RNA."
+	desc = "The MRNA Recombinator is one of Nanotrasens most advanced technologies and allows the exact recombination of virus RNA."
 	id = "rna_recombinator"
 	build_path = /obj/item/circuitboard/machine/rna_recombinator
 	category = list(
