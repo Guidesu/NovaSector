@@ -6,7 +6,6 @@
  * * GLOB.dead_mob_list
  * * GLOB.alive_mob_list
  * * GLOB.all_clockwork_mobs
- * * GLOB.mob_directory
  *
  * Unsets the focus var
  *
@@ -67,7 +66,6 @@
  *
  * Adds to global lists
  * * GLOB.mob_list
- * * GLOB.mob_directory (by tag)
  * * GLOB.dead_mob_list - if mob is dead
  * * GLOB.alive_mob_list - if the mob is alive
  *
@@ -943,10 +941,6 @@
 	set hidden = TRUE
 	set category = null
 	return
-
-///Is the mob muzzled (default false)
-/mob/proc/is_muzzled()
-	return FALSE
 
 /// Adds this list to the output to the stat browser
 /mob/proc/get_status_tab_items()
