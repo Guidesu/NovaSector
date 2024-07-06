@@ -8484,6 +8484,9 @@
 #include "modular_nova\modules\xenos_nova_redo\code\xeno_types\warrior.dm"
 #include "modular_zubbers\zubbers_defines.dm"
 #include "modular_zubbers\code\datums\mood_events\dominant_mood.dm"
+#include "modular_zubbers\code\game\machinery\computer\orders\order_items\mining\order_mining.dm"
+#include "modular_zubbers\code\modules\customization\sprite_accessories\64_wings.dm"
 #include "modular_zubbers\code\modules\quirks\code\negative_quirks\well_trained.dm"
 #include "modular_zubbers\code\modules\quirks\code\positive_quirks\dominant_aura.dm"
+#include "modular_zubbers\modules\more_crushers\code\miningweapons.dm"
 // END_INCLUDE
