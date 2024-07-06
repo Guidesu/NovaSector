@@ -42,7 +42,7 @@
 		return
 	return list(CURSED_BLADE = list(
 			PREVIEW_IMAGE = image(icon = 'icons/obj/weapons/khopesh.dmi', icon_state = "cursed_blade"),
-			OUTPUT_ITEMS = list(/obj/item/melee/sickly_blade/cursed),
+			OUTPUT_ITEMS = list(/obj/item/melee/sickly_blade),
 			),
 	)
 

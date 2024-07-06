@@ -253,11 +253,6 @@
 	item_path = /obj/item/clothing/suit/hooded/cloak/zuliecloak
 
 
-/datum/loadout_item/pocket_items/brightcosmos
-	name = "Bright Cosmos cigar"
-	item_path = /obj/item/clothing/mask/holocigarette/cigar
-
-
 /datum/loadout_item/under/jumpsuit/lannese
 	name = "Lannese Dress"
 	item_path = /obj/item/clothing/under/custom/lannese
@@ -617,12 +612,6 @@
 /datum/loadout_item/suit/razurathcoat
 	name = "Golden Free Union Of Vulken Officer Coat"
 	item_path = /obj/item/clothing/suit/razurathcoat
-
-
-/datum/loadout_item/pocket_items/masvedishcigar
-	name = "Holocigar"
-	item_path = /obj/item/clothing/mask/holocigarette/masvedishcigar
-	// Asked it to be public, and as such has no whitelist.
 
 /datum/loadout_item/suit/lt3_armor
 	name = "Silver Jacket Mk II"

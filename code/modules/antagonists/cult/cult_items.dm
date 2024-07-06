@@ -153,8 +153,8 @@ Striking a noncultist, however, will tear their flesh."}
 		),
 		// Blade
 		PATH_BLADE = list(
-			WIELDER_SPELLS = list(/datum/action/cooldown/spell/pointed/projectile/furious_steel/haunted),
-			SWORD_SPELLS = list(/datum/action/cooldown/spell/pointed/projectile/furious_steel/solo),
+			WIELDER_SPELLS = list(/datum/action/cooldown/spell/cone/staggered/entropic_plume),
+			SWORD_SPELLS = list(/datum/action/cooldown/spell/aoe/rust_conversion, /datum/action/cooldown/spell/pointed/rust_construction),
 			SWORD_PREFIX = "keen",
 		),
 		// Rust
