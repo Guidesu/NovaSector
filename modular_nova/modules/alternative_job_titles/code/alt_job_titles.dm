@@ -23,6 +23,7 @@
 		"Trader",
 		"Off-Duty Colonist",
 		"Colonist",
+		"Contractor",
 	)
 
 /datum/job/atmospheric_technician
