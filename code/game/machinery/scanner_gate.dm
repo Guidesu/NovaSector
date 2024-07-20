@@ -280,8 +280,7 @@
 				if(content.is_contraband())
 					beep = TRUE
 					break
-			if(!n_spect.scans_correctly)
-				beep = !beep //We do a little trolling
+
 
 	if(reverse)
 		beep = !beep
