@@ -23,25 +23,6 @@
 	attack_verb_simple = list("headbutt", "boop", "bap", "bump")
 	squeak_override = list('modular_nova/modules/customization/game/objects/items/sound/deerplush.ogg' = 1)
 
-/obj/item/toy/plush/nova/fermis
-	name = "medcat plushie"
-	desc = "An affectionate stuffed toy that resembles a certain medcat, comes complete with battery operated wagging tail!! You get the impression she's cheering you on to find happiness and be kind to people."
-	icon_state = "plushie_fermis"
-	attack_verb_continuous = list("cuddles", "petpatts", "wigglepurrs")
-	attack_verb_simple = list("cuddle", "petpatt", "wigglepurr")
-	squeak_override = list('modular_nova/modules/customization/game/objects/items/sound/merowr.ogg' = 1)
-	gender = FEMALE
-
-/obj/item/toy/plush/nova/fermis/chen
-	name = "securicat plushie"
-	desc = "The official stuffed companion to the medcat plushie!! It resembles a certain securicat. You get the impression she's encouraging you to be brave and protect those you care for."
-	icon_state = "plushie_chen"
-	attack_verb_continuous = list("snuggles", "meowhuggies", "wigglepurrs")
-	attack_verb_simple = list("snuggle", "meowhuggie", "wigglepurr")
-	special_desc_requirement = EXAMINE_CHECK_JOB
-	special_desc_jobs = list(JOB_ASSISTANT, JOB_HEAD_OF_SECURITY)
-	special_desc = "There's a pocket under the coat hiding a tiny picture of the medcat plushie and a tinier ribbon diamond ring. D'awww."
-
 /obj/item/toy/plush/nova/sechound
 	name = "sec-hound plushie"
 	desc = "An adorable stuffed toy of a SecHound, the trusty Free Union of Vulken sponsored security borg!"
@@ -97,73 +78,6 @@
 	attack_verb_continuous = list("geckers", "boops", "nuzzles")
 	attack_verb_simple = list("gecker", "boop", "nuzzle")
 	squeak_override = list('modular_nova/modules/customization/game/objects/items/sound/deerplush.ogg' = 1)
-
-/obj/item/toy/plush/nova/duffmoth
-	name = "suspicious moth plushie"
-	desc = "A plushie depicting a certain moth. He probably got turned into a marketable plushie."
-	icon_state = "plushie_duffy"
-	attack_verb_continuous = list("flutters", "flaps", "squeaks")
-	attack_verb_simple = list("flutter", "flap", "squeak")
-	squeak_override = list('modular_nova/modules/emotes/sound/emotes/mothsqueak.ogg'= 1)
-	gender = MALE
-
-/obj/item/toy/plush/nova/leaplush
-	name = "suspicious deer plushie"
-	desc = "A cute and all too familiar deer."
-	icon_state = "plushie_lea"
-	attack_verb_continuous = list("headbutts", "plaps")
-	attack_verb_simple = list("headbutt", "plap")
-	squeak_override = list('modular_nova/modules/customization/game/objects/items/sound/leaplush.ogg' = 1)
-	gender = FEMALE
-
-/obj/item/toy/plush/nova/sarmieplush
-	name = "cosplayer plushie"
-	desc = "A stuffed toy who look like a familiar cosplayer, <b>he looks sad.</b>"
-	icon_state = "plushie_sarmie"
-	attack_verb_continuous = list("baps")
-	attack_verb_simple = list("bap")
-	squeak_override = list('modular_nova/modules/emotes/sound/voice/weh.ogg' = 1)
-	gender = MALE
-
-/obj/item/toy/plush/nova/sharknet
-	name = "gluttonous shark plushie"
-	desc = "A heavy plushie of a rather large and hungry shark"
-	icon_state = "plushie_sharknet"
-	attack_verb_continuous = list("cuddles", "squishes", "wehs")
-	attack_verb_simple = list("cuddle", "squish", "weh")
-	w_class = WEIGHT_CLASS_NORMAL
-	squeak_override = list('modular_nova/modules/emotes/sound/voice/slime_squish.ogg' = 1)
-	young = TRUE //No.
-
-/obj/item/toy/plush/sharknet/Initialize(mapload)
-	. = ..()
-	create_storage(max_slots = 2, max_specific_storage = WEIGHT_CLASS_SMALL, canhold = list(/obj/item/toy/plush/nova/pintaplush))
-
-/obj/item/toy/plush/nova/pintaplush
-	name = "smaller deer plushie"
-	desc = "A pint-sized cervine with a vacant look."
-	icon_state = "plushie_pinta"
-	attack_verb_continuous = list("bonks", "snugs")
-	attack_verb_simple = list("bonk", "snug")
-	squeak_override = list('modular_nova/modules/emotes/sound/voice/slime_squish.ogg' = 1)
-	young = TRUE //No.
-
-/obj/item/toy/plush/nova/szaplush
-	name = "suspicious spider"
-	desc = "A plushie of a shy looking drider, colored in floortile gray."
-	icon_state = "plushie_sza"
-	attack_verb_continuous = list("scuttles", "chitters", "bites")
-	attack_verb_simple = list("scuttle", "chitter", "bite")
-	squeak_override = list('modular_nova/modules/customization/game/objects/items/sound/spiderplush.ogg' = 1)
-	young = TRUE //No.
-
-/obj/item/toy/plush/nova/riffplush
-	name = "valid plushie"
-	desc = "A stuffed toy in the likeness of a peculiar demonic one. Likely turned into a plushie to sell such. They look quite alright about it."
-	icon_state = "plushie_riffy"
-	attack_verb_continuous = list("slaps", "challenges")
-	attack_verb_simple = list("slap", "challenge")
-	squeak_override = list('sound/weapons/slap.ogg' = 1)
 
 /obj/item/toy/plush/nova/ian
 	name = "plush corgi"

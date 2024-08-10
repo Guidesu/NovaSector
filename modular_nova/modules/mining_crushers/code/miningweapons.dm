@@ -1,4 +1,6 @@
 /obj/item/kinetic_crusher
+	/// This var is used to imitate being weilded if it's one handed
+	var/acts_as_if_wielded
 
 /obj/item/kinetic_crusher/machete
 	icon = 'modular_nova/modules/mining_crushers/icons/items_and_weapons.dmi'
@@ -153,7 +155,7 @@
 	worn_icon_state = "PKHammer0"
 	slot_flags = NONE
 	name = "proto-kinetic claws"
-	desc = "Truly the most compact version of the crusher ever made, its small enough to fit in your backpack and still function as a crusher. \
+	desc = "Truly the most compact version of the crusher ever made, it's small enough to fit in your backpack and still function as a crusher. \
 	Best used when attacking from behind, rewarding those capable of landing what we call a 'critical hit' \
 	(DISCLAIMER) The shell is made to fit over gloves, so don't try to wear it like a glove."
 	force = 5
