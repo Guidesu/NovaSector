@@ -2,15 +2,6 @@
 	name = "Drawing Tablet"
 	item_path = /obj/item/canvas/drawingtablet
 
-
-/datum/loadout_item/suit/furcoat
-	name = "Leather coat with fur"
-	item_path = /obj/item/clothing/suit/furcoat
-
-/datum/loadout_item/under/jumpsuit/black_turtleneck
-	name = "Black turtleneck"
-	item_path = /obj/item/clothing/under/syndicate/tacticool/black
-
 /datum/loadout_item/under/jumpsuit/paddedunder
 	name = "Feathered Serenity Suit"
 	item_path = /obj/item/clothing/under/padded
@@ -187,7 +178,6 @@
 		JOB_WARDEN,
 		JOB_DETECTIVE,
 		JOB_CORRECTIONS_OFFICER,
-		JOB_VETERAN_ADVISOR,
 		JOB_QUARTERMASTER,
 		JOB_CAPTAIN,
 		JOB_BRIDGE_ASSISTANT,
@@ -428,11 +418,6 @@
 	name = "Foam Force SWAT Mask"
 	item_path = /obj/item/clothing/mask/gas/larpswat
 
-/datum/loadout_item/toys/zappplush
-	name = "Lil' Zapp Plushie"
-	item_path = /obj/item/toy/plush/nova/donator/zapp
-	donator_only = TRUE
-
 /datum/loadout_item/pocket_items/tacticalbrush
 	name = "Tactical Brush"
 	item_path = /obj/item/hairbrush/tactical
@@ -560,21 +545,6 @@
 /datum/loadout_item/glasses/goldaviator
 	name = "Purple and Gold Aviators"
 	item_path = /obj/item/clothing/glasses/gold_aviators
-
-
-
-/datum/loadout_item/under/jumpsuit/caged_dress
-	name = "Caged Purple Dress"
-	item_path = /obj/item/clothing/under/caged_dress
-
-/datum/loadout_item/suit/shortcoat
-	name = "Short Purple Coat"
-	item_path = /obj/item/clothing/suit/short_coat
-
-
-/datum/loadout_item/neck/flowercollar
-	name = "Flower Collar"
-	item_path = /obj/item/clothing/neck/flower_collar
 
 
 /datum/loadout_item/under/jumpsuit/goldenkimono

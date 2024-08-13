@@ -35,7 +35,7 @@
 	charge_time = 10
 	detonation_damage = 35
 	backstab_bonus = 20
-	acts_as_if_wielded = TRUE
+
 
 /obj/item/kinetic_crusher/machete/Initialize(mapload)
 	. = ..()

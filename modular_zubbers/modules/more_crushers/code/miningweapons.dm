@@ -1,6 +1,5 @@
 /obj/item/kinetic_crusher
 	/// This var is used to imitate being wielded if its one handed
-	var/acts_as_if_wielded
 
 /obj/item/kinetic_crusher/machete
 	icon = 'modular_zubbers/modules/more_crushers/icons/items_and_weapons.dmi'
@@ -35,7 +34,6 @@
 	charge_time = 10
 	detonation_damage = 35
 	backstab_bonus = 20
-	acts_as_if_wielded = TRUE
 
 /obj/item/kinetic_crusher/machete/Initialize(mapload)
 	. = ..()
@@ -122,7 +120,6 @@
 	charge_time = 20
 	detonation_damage = 70
 	backstab_bonus = 0
-	acts_as_if_wielded = FALSE
 
 /obj/item/kinetic_crusher/hammer/Initialize(mapload)
 	. = ..()
@@ -173,7 +170,6 @@
 	charge_time = 2
 	detonation_damage = 40
 	backstab_bonus = 120
-	acts_as_if_wielded = TRUE
 
 /obj/item/kinetic_crusher/claw/Initialize(mapload)
 	. = ..()

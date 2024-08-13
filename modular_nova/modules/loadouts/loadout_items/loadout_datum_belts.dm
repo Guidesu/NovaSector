@@ -2,7 +2,6 @@
 	category_name = "Belt"
 	category_ui_icon = FA_ICON_SCREWDRIVER_WRENCH
 	type_to_generate = /datum/loadout_item/belts
-	tab_order = /datum/loadout_category/accessories::tab_order + 1
 
 
 /*

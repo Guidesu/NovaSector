@@ -94,38 +94,6 @@
 	else
 		. += "\The [cell] is firmly in place. [span_info("Ctrl-click with an empty hand to remove it.")]"
 
-/obj/item/inspector/interact_with_atom(atom/interacting_with, mob/living/user, list/modifiers)
-	if(!user.Adjacent(interacting_with))
-		return ITEM_INTERACT_BLOCKING
-	if(cell_cover_open)
-		balloon_alert(user, "close cover first!")
-		return ITEM_INTERACT_BLOCKING
-	if(!cell || !cell.use(INSPECTOR_ENERGY_USAGE_LOW))
-		balloon_alert(user, "check cell!")
-		return ITEM_INTERACT_BLOCKING
-
-	if(iscarbon(interacting_with)) //Prevents insta scanning people
-		if(!COOLDOWN_FINISHED(src, scanning_person))
-			return ITEM_INTERACT_BLOCKING
-
-		visible_message(span_warning("[user] starts scanning [interacting_with] with [src]"))
-		to_chat(interacting_with, span_userdanger("[user] is trying to scan you for contraband!"))
-		balloon_alert_to_viewers("scanning...")
-		playsound(src, 'sound/effects/genetics.ogg', 40, FALSE)
-		COOLDOWN_START(src, scanning_person, 4 SECONDS)
-		if(!do_after(user, 4 SECONDS, interacting_with))
-			return ITEM_INTERACT_BLOCKING
-
-	if(contraband_scan(interacting_with, user))
-		playsound(src, 'sound/machines/uplinkerror.ogg', 40)
-		balloon_alert(user, "contraband detected!")
-		return ITEM_INTERACT_SUCCESS
-	else
-		playsound(src, 'sound/machines/ping.ogg', 20)
-		balloon_alert(user, "clear")
-		return ITEM_INTERACT_SUCCESS
-
-
 /obj/item/inspector/add_context(atom/source, list/context, obj/item/held_item, mob/user)
 	var/update_context = FALSE
 	if(cell_cover_open && cell)
@@ -151,29 +119,6 @@
 		context[SCREENTIP_CONTEXT_LMB] = "Contraband Scan"
 		return CONTEXTUAL_SCREENTIP_SET
 	return NONE
-
-/**
- * Scans the carbon or item for contraband.
- *
- * Arguments:
- * - scanned - what or who is scanned?
- * - user - who is performing the scanning?
- */
-/obj/item/inspector/proc/contraband_scan(scanned, user)
-	if(iscarbon(scanned))
-		var/mob/living/carbon/scanned_carbon = scanned
-		for(var/obj/item/content in scanned_carbon.get_all_contents_skipping_traits(TRAIT_CONTRABAND_BLOCKER))
-			var/contraband_content = content.is_contraband()
-			if((contraband_content && scans_correctly) || (!contraband_content && !scans_correctly))
-				return TRUE
-
-	if(isitem(scanned))
-		var/obj/item/contraband_item = scanned
-		var/contraband_status = contraband_item.is_contraband()
-		if((contraband_status && scans_correctly) || (!contraband_status && !scans_correctly))
-			return TRUE
-
-	return FALSE
 
 /**
  * Create our report

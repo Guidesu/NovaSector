@@ -52,7 +52,6 @@
 	return random_eye_color()
 
 /datum/preference/choiced/facial_hairstyle
-	priority = PREFERENCE_PRORITY_LATE_BODY_TYPE
 	savefile_key = "facial_style_name"
 	savefile_identifier = PREFERENCE_CHARACTER
 	category = PREFERENCE_CATEGORY_FEATURES
@@ -94,7 +93,6 @@
 	return data
 
 /datum/preference/color/facial_hair_color
-	priority = PREFERENCE_PRORITY_LATE_BODY_TYPE // Need to happen after hair oclor is set so we can match by default
 	savefile_key = "facial_hair_color"
 	savefile_identifier = PREFERENCE_CHARACTER
 	category = PREFERENCE_CATEGORY_SUPPLEMENTAL_FEATURES
@@ -107,7 +105,6 @@
 	return preferences.read_preference(/datum/preference/color/hair_color) || random_hair_color()
 
 /datum/preference/choiced/facial_hair_gradient
-	priority = PREFERENCE_PRORITY_LATE_BODY_TYPE
 	category = PREFERENCE_CATEGORY_SECONDARY_FEATURES
 	savefile_identifier = PREFERENCE_CHARACTER
 	savefile_key = "facial_hair_gradient"
@@ -124,7 +121,6 @@
 	return /datum/sprite_accessory/gradient/none::name
 
 /datum/preference/color/facial_hair_gradient
-	priority = PREFERENCE_PRORITY_LATE_BODY_TYPE
 	category = PREFERENCE_CATEGORY_SECONDARY_FEATURES
 	savefile_identifier = PREFERENCE_CHARACTER
 	savefile_key = "facial_hair_gradient_color"

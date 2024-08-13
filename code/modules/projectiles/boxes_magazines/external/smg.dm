@@ -31,13 +31,13 @@
 	icon_state = "[base_icon_state]-[round(ammo_count(), 4)]"
 
 /obj/item/ammo_box/magazine/smartgun
-	name = "Abielle magazine (.160 Smart)"
+	name = "Abielle magazine (9mm Smart)"
 	icon_state = "smartgun"
 	base_icon_state = "smartgun"
 	ammo_type = /obj/item/ammo_casing/c160smart
 	multiple_sprites = AMMO_BOX_FULL_EMPTY
 	multiple_sprite_use_base = TRUE
-	caliber = CALIBER_160SMART
+	caliber = CALIBER_9MM
 	max_ammo = 50
 
 /obj/item/ammo_box/magazine/uzim9mm

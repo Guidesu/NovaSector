@@ -60,10 +60,10 @@
 // .160 Smart (Abielle smartgun)
 
 /obj/item/ammo_casing/c160smart
-	name = ".160 smart bullet casing"
-	desc = "A .160 smart bullet with a small charge of booster propellant at the bottom."
+	name = ".50AE smart bullet casing"
+	desc = "A .50AE smart bullet with a small charge of booster propellant at the bottom."
 	icon_state = "smartgun_casing"
-	caliber = CALIBER_160SMART
+	caliber = CALIBER_50AE
 	projectile_type = /obj/projectile/bullet/c160smart
 
 /obj/item/ammo_casing/c160smart/Initialize(mapload)

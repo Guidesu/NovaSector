@@ -1,5 +1,3 @@
-import { Placement } from '@popperjs/core';
-
 import { TabBay, TabDrop, TabPod } from './Tabs';
 import { PodDelay, PodEffect } from './types';
 
